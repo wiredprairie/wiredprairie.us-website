@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: SuperUser.com, and my rise to fame?	</title>
-	<atom:link href="/blog/index.php/archives/1603/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/1603/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/1603</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Tue, 22 May 2012 21:11:10 +0000</lastBuildDate>
@@ -32,7 +32,7 @@
 					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1603/comment-page-1#comment-4532&quot;&gt;saul&lt;/a&gt;.
 
 I have tried that and while it may work for some, it didn&#039;t work on my laptop unfortunately.]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/1603/comment-page-1#comment-4532">saul</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/1603/comment-page-1#comment-4532">saul</a>.</p>
 <p>I have tried that and while it may work for some, it didn&#8217;t work on my laptop unfortunately.</p>
 ]]></content:encoded>
 		

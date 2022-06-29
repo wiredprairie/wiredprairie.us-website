@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Silverlight: Dynamically creating XAML elements  at runtime	</title>
-	<atom:link href="/blog/index.php/archives/670/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/670/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/670</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Sun, 20 Jun 2010 23:58:33 +0000</lastBuildDate>

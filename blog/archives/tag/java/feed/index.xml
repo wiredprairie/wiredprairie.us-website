@@ -12,7 +12,7 @@
 
 <channel>
 	<title>Java &#8211; WiredPrairie</title>
-	<atom:link href="/blog/index.php/archives/tag/java/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/tag/java/feed" rel="self" type="application/rss+xml" />
 	<link>/blog</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Mon, 10 Jan 2011 00:09:17 +0000</lastBuildDate>
@@ -34,7 +34,7 @@
 		<guid isPermaLink="false">/blog/index.php/archives/1164</guid>
 
 					<description><![CDATA[By day, I mostly use Microsoft development tools, and have used them for YEARS. I’ve been experimenting with some Android development recently, and was annoyed by several missing handy tricks that Microsoft tools have done for years. So, I just coded one replacement. Commonly, in Microsoft platforms, when you create a user interface element (from [&#8230;]]]></description>
-										<content:encoded><![CDATA[<p><img loading="lazy" style="border-bottom: ; border-left: ; margin: ; padding-left: ; padding-right: ; display: inline; border-top: ; border-right: ; padding-top: " title="Android train, now boarding!" alt="All aboard the Android train!" src="/blog/wpcontent/uploads/2011/01/image.png" width="451" height="308" /></p>
+										<content:encoded><![CDATA[<p><img loading="lazy" style="border-bottom: ; border-left: ; margin: ; padding-left: ; padding-right: ; display: inline; border-top: ; border-right: ; padding-top: " title="Android train, now boarding!" alt="All aboard the Android train!" src="blog/wpcontent/uploads/2011/01/image.png" width="451" height="308" /></p>
 <p>By day, I mostly use Microsoft development tools, and have used them for YEARS. I’ve been experimenting with some Android development recently, and was annoyed by several missing handy tricks that Microsoft tools have done for years. So, I just coded one replacement.</p>
 <p>Commonly, in Microsoft platforms, when you create a user interface element (from VB3 to WPF and Silverlight) and give it an ID/Name, that named element is readily available in code-behind, without any extra effort. <strong>Nice</strong>.</p>
 <p>Android development, apparently, is lacking that feature. So, I created a simple pattern to make it convenient for me. Imagine the following UI element defined in an Android Layout:</p>

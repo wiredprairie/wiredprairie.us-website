@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Apple fails to listen to Safari &#034;Update&#034; on Windows issue&#8230;	</title>
-	<atom:link href="/blog/index.php/archives/137/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/137/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/137</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Fri, 30 Jan 2009 16:51:22 +0000</lastBuildDate>

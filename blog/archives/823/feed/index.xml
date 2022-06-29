@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Less opinions-only, more help please!	</title>
-	<atom:link href="/blog/index.php/archives/823/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/823/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/823</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Sun, 16 Aug 2009 18:42:06 +0000</lastBuildDate>

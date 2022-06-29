@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Blue Iris Security Camera DVR Software for Windows	</title>
-	<atom:link href="/blog/index.php/archives/26/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/26/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/26</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Fri, 30 Apr 2010 12:41:19 +0000</lastBuildDate>
@@ -32,7 +32,7 @@
 					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/26/comment-page-1#comment-3026&quot;&gt;Dave Puhlman&lt;/a&gt;.
 
 Yes, I have viewed the images from a mobile device -- iPod Touch and iPhone. It has a very simple web interface that updates the images frequently. You can view one camera or the grid of cameras. It&#039;s not fancy--it just works.]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/26/comment-page-1#comment-3026">Dave Puhlman</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/26/comment-page-1#comment-3026">Dave Puhlman</a>.</p>
 <p>Yes, I have viewed the images from a mobile device &#8212; iPod Touch and iPhone. It has a very simple web interface that updates the images frequently. You can view one camera or the grid of cameras. It&#8217;s not fancy&#8211;it just works.</p>
 ]]></content:encoded>
 		

@@ -12,7 +12,7 @@
 
 <channel>
 	<title>WindowsHomeServer &#8211; WiredPrairie</title>
-	<atom:link href="/blog/index.php/archives/tag/windowshomeserver/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/tag/windowshomeserver/feed" rel="self" type="application/rss+xml" />
 	<link>/blog</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Thu, 26 Apr 2012 12:49:55 +0000</lastBuildDate>
@@ -39,13 +39,13 @@
 <p>I love the “turn it on and forget about it” feature of WHS backup. Computers automatically wake, backup, and sleep. <strong>Nice</strong>.</p>
 <p>However, I noticed last week that at some point WHS2011 had an issue more than a month ago where it no longer was backing up ANY of the Windows PCs in our house (2 laptops, 2 desktops).</p>
 <p>No actionable errors had occurred in March that I could find, so I can’t pinpoint a reason. I needed to go to every Windows PC in our house and re-enable backups. Thankfully, it didn’t need to start over from scratch (it picked up where it left off). </p>
-<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wpcontent/uploads/2012/04/image27.png" width="472" height="534" /></p>
+<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="blog/wpcontent/uploads/2012/04/image27.png" width="472" height="534" /></p>
 <p>Needless to say, having your computer backups silently fail is a bit worrisome. As many WHS2011 users likely don’t routinely go to the WHS dashboard – you might want to occasionally and check that every thing is OK.</p>
 <p>I don’t use the LAUNCHPAD much as it tends to be the “software who cried wolf” too often. But, even if I had, I couldn’t see any indication in the Dashboard that I would have been alerted to this issue (since alerts are all saved until resolved or ignored).</p>
-<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="SNAGHTML7ba7bdb" border="0" alt="SNAGHTML7ba7bdb" src="/blog/wpcontent/uploads/2012/04/SNAGHTML7ba7bdb.png" width="282" height="402" /></p>
+<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="SNAGHTML7ba7bdb" border="0" alt="SNAGHTML7ba7bdb" src="blog/wpcontent/uploads/2012/04/SNAGHTML7ba7bdb.png" width="282" height="402" /></p>
 <p>(The two warnings shown in the screenshot are for: “Important updates should be installed.” and “Free space is low.” AKA, A drive has only 62GB free (10%)).</p>
 <p>If you do use the LAUNCHPAD, you can verify the last backup by clicking the “Backup” button. You should see something like this in the dialog that is opened:</p>
-<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wpcontent/uploads/2012/04/image28.png" width="263" height="100" /></p>
+<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="blog/wpcontent/uploads/2012/04/image28.png" width="263" height="100" /></p>
 ]]></content:encoded>
 					
 		

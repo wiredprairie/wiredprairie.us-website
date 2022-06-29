@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Anaconda Prompt	</title>
-	<atom:link href="/blog/index.php/archives/2257/anaconda-prompt/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/2257/anaconda-prompt/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/2257/anaconda-prompt</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Wed, 16 May 2018 00:15:51 +0000</lastBuildDate>

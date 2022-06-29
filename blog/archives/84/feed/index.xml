@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: I need a Jargon-Free Silverlight description/blurb	</title>
-	<atom:link href="/blog/index.php/archives/84/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/84/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/84</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Thu, 10 Apr 2008 12:09:10 +0000</lastBuildDate>

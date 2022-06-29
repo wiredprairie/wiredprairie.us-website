@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Nest Thermostat Review, Update #6	</title>
-	<atom:link href="/blog/index.php/archives/1420/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/1420/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/1420</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Mon, 30 Apr 2012 14:14:55 +0000</lastBuildDate>
@@ -65,7 +65,7 @@ Next week I&#039;m hoping to have time to play with your Nest client code.  I sh
 					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1420/comment-page-1#comment-4070&quot;&gt;MarCow&lt;/a&gt;.
 
 Thanks for the very thoughtful comment Marcow.  I still don&#039;t understand auto away and it&#039;s triggers. I&#039;d expect some consistency day to day, but it&#039;s not.]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/1420/comment-page-1#comment-4070">MarCow</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/1420/comment-page-1#comment-4070">MarCow</a>.</p>
 <p>Thanks for the very thoughtful comment Marcow.  I still don&#8217;t understand auto away and it&#8217;s triggers. I&#8217;d expect some consistency day to day, but it&#8217;s not.</p>
 ]]></content:encoded>
 		
@@ -164,7 +164,7 @@ Side note - interestingly, Nest support contacted me about my website submitted 
 					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1420/comment-page-1#comment-3849&quot;&gt;Marc&lt;/a&gt;.
 
 Thanks for the kind words Marc! My goal is to educate those who have not yet decided to drop the cash for one or more of these thermostats, so that they can make a more informed decision while the Nest thermostat is not ready for prime-time.]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/1420/comment-page-1#comment-3849">Marc</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/1420/comment-page-1#comment-3849">Marc</a>.</p>
 <p>Thanks for the kind words Marc! My goal is to educate those who have not yet decided to drop the cash for one or more of these thermostats, so that they can make a more informed decision while the Nest thermostat is not ready for prime-time.</p>
 ]]></content:encoded>
 		

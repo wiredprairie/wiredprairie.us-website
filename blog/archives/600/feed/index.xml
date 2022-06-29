@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Cameras and Lens, oh my!	</title>
-	<atom:link href="/blog/index.php/archives/600/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/600/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/600</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Tue, 25 Nov 2008 06:05:27 +0000</lastBuildDate>

@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Not a WPF Annoyance &#8212; IsOpen on Menus, etc.	</title>
-	<atom:link href="/blog/index.php/archives/276/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/276/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/276</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Sat, 24 May 2008 22:10:30 +0000</lastBuildDate>

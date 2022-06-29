@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Verify that I am a human?	</title>
-	<atom:link href="/blog/index.php/archives/774/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/774/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/774</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Fri, 29 May 2009 19:32:35 +0000</lastBuildDate>
@@ -46,7 +46,7 @@
 					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/774/comment-page-1#comment-2554&quot;&gt;Ben Vanik&lt;/a&gt;.
 
 Maybe a bot could do that -- although it would be easy enough to move the images around and then use a simple instruction like, click the pencil, then click the phone. I&#039;d certainly like to make the &quot;captchas&quot; easier as I find I can&#039;t read about 30-40% of them.  But, as you said, they can make the bot do pretty much anything so it really doesn&#039;t serve much purpose.]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/774/comment-page-1#comment-2554">Ben Vanik</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/774/comment-page-1#comment-2554">Ben Vanik</a>.</p>
 <p>Maybe a bot could do that &#8212; although it would be easy enough to move the images around and then use a simple instruction like, click the pencil, then click the phone. I&#8217;d certainly like to make the &#8220;captchas&#8221; easier as I find I can&#8217;t read about 30-40% of them.  But, as you said, they can make the bot do pretty much anything so it really doesn&#8217;t serve much purpose.</p>
 ]]></content:encoded>
 		

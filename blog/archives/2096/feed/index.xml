@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Ecobee’s ecobee3 Thermostat	</title>
-	<atom:link href="/blog/index.php/archives/2096/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/2096/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/2096</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Sun, 27 Nov 2016 17:30:50 +0000</lastBuildDate>

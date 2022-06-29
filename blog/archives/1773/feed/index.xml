@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: AV Club / Our home setup 2012	</title>
-	<atom:link href="/blog/index.php/archives/1773/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/1773/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/1773</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Sun, 20 Jan 2013 17:31:45 +0000</lastBuildDate>
@@ -49,7 +49,7 @@ Regarding streaming from the Storage Spaces pool, I set up my media folder withi
 					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1773/comment-page-1#comment-20361&quot;&gt;David Hollifield&lt;/a&gt;.
 
 I haven&#039;t had the problem you&#039;re having with streamed/ripped DVDs (as I haven&#039;t tried it). However, my thought on that would be to potentially store the DVD images on a non-Storage Space drive (so you get better speed potentially), and use File History to back them up to another drive. I&#039;m using File History in a similar way (but not for media files like you suggest).]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/1773/comment-page-1#comment-20361">David Hollifield</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/1773/comment-page-1#comment-20361">David Hollifield</a>.</p>
 <p>I haven&#8217;t had the problem you&#8217;re having with streamed/ripped DVDs (as I haven&#8217;t tried it). However, my thought on that would be to potentially store the DVD images on a non-Storage Space drive (so you get better speed potentially), and use File History to back them up to another drive. I&#8217;m using File History in a similar way (but not for media files like you suggest).</p>
 ]]></content:encoded>
 		

@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Silverlight ClipToBounds	</title>
-	<atom:link href="/blog/index.php/archives/847/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/847/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/847</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Fri, 13 Nov 2009 18:20:50 +0000</lastBuildDate>

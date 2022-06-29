@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Silverlight 2, RC available	</title>
-	<atom:link href="/blog/index.php/archives/571/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/571/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/571</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Fri, 26 Sep 2008 18:38:44 +0000</lastBuildDate>

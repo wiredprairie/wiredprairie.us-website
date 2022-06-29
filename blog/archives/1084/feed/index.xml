@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Silverlight Analog/Retro Flip Numbers	</title>
-	<atom:link href="/blog/index.php/archives/1084/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/1084/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/1084</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Tue, 28 Dec 2010 14:54:11 +0000</lastBuildDate>
@@ -71,7 +71,7 @@ ei:ExtendedVisualStateManager</p>
 					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1084/comment-page-1#comment-3317&quot;&gt;Jason&lt;/a&gt;.
 
 What? You didn&#039;t say what the problem you were having was .... :)]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/1084/comment-page-1#comment-3317">Jason</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/1084/comment-page-1#comment-3317">Jason</a>.</p>
 <p>What? You didn&#8217;t say what the problem you were having was &#8230;. :)</p>
 ]]></content:encoded>
 		

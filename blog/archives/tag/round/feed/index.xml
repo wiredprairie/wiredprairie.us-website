@@ -12,7 +12,7 @@
 
 <channel>
 	<title>Round &#8211; WiredPrairie</title>
-	<atom:link href="/blog/index.php/archives/tag/round/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/tag/round/feed" rel="self" type="application/rss+xml" />
 	<link>/blog</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Wed, 22 Aug 2012 12:36:55 +0000</lastBuildDate>
@@ -40,7 +40,7 @@
 
 					<description><![CDATA[Until browsers all agree on a technique for masking an image in HTML (like –web-kit-mask-image), I’ve got another option: using SVG. I’m creating a single page application to help sell some electronics and other goodies I’ve collected over the years. Rather than the traditional rectangular display of photos, I wanted to try something different. I [&#8230;]]]></description>
 										<content:encoded><![CDATA[<p>Until browsers all agree on a technique for masking an image in HTML (like –web-kit-mask-image), I’ve got another option: using SVG.</p>
-<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wpcontent/uploads/2012/08/image2.png" width="280" height="304" /></p>
+<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="blog/wpcontent/uploads/2012/08/image2.png" width="280" height="304" /></p>
 <p>I’m creating a single page application to help sell some electronics and other goodies I’ve collected over the years. Rather than the traditional rectangular display of photos, I wanted to try something different. I wanted the photos to be round. However, I didn’t want to create a bunch of round images. </p>
 <p>Enter SVG:</p>
 <div style="border-bottom: silver 1px solid; text-align: left; border-left: silver 1px solid; padding-bottom: 4px; line-height: 12pt; background-color: #f4f4f4; margin: 20px 0px 10px; padding-left: 4px; width: 97.5%; padding-right: 4px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; max-height: 200px; font-size: 8pt; overflow: auto; border-top: silver 1px solid; cursor: text; border-right: silver 1px solid; padding-top: 4px" id="codeSnippetWrapper">
@@ -48,9 +48,9 @@
 <p></div>
 <p>The original images aren’t square, so I tweaked the size and position of each so that it would completely fill the ellipse (150% and -25% for size and location).&#160; As a fall back, I’m going to add the CSS property and value “display:none” to a standard HTML img element that will be optionally displayed if the browser can’t do SVG (like IE8 and lower for example). I don’t want to lose a potential sale to images not showing up! I’ll use <a href="http://modernizr.com/docs/" target="_blank">modernizr</a> for SVG detection.</p>
 <p>And although the code above doesn’t demonstrate the technique, you can use CSS to decorate the SVG. Check <a href="http://jsfiddle.net/Uv2sZ/" target="_blank">this</a> demo out that I created:</p>
-<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wpcontent/uploads/2012/08/image3.png" width="216" height="214" /></p>
-<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wpcontent/uploads/2012/08/image4.png" width="607" height="211" /></p>
-<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wpcontent/uploads/2012/08/image5.png" width="206" height="76" /></p>
+<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="blog/wpcontent/uploads/2012/08/image3.png" width="216" height="214" /></p>
+<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="blog/wpcontent/uploads/2012/08/image4.png" width="607" height="211" /></p>
+<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="blog/wpcontent/uploads/2012/08/image5.png" width="206" height="76" /></p>
 ]]></content:encoded>
 					
 		

@@ -12,7 +12,7 @@
 
 <channel>
 	<title>made in america &#8211; WiredPrairie</title>
-	<atom:link href="/blog/index.php/archives/tag/made-in-america/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/tag/made-in-america/feed" rel="self" type="application/rss+xml" />
 	<link>/blog</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Wed, 23 Mar 2016 14:40:26 +0000</lastBuildDate>
@@ -51,7 +51,7 @@
 <p>&nbsp;</p>
 <p>I also need your help adding to the list (and keeping it up to date). It took me a surprisingly long time to collect this list and I’m sure I’ve missed some manufacturers. I’d really like to get them all!</p>
 <p>For suggestions please use <a href="https://docs.google.com/forms/d/1RAo019BPVR2Fsqw9y-nQBAHCTBUT8dzsDRoG2yL2uq4/viewform" target="_blank">this survey</a>.</p>
-<p><a href="https://docs.google.com/forms/d/1RAo019BPVR2Fsqw9y-nQBAHCTBUT8dzsDRoG2yL2uq4/viewform"><img loading="lazy" style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-width: 0px;" title="image" src="/blog/wpcontent/uploads/2016/03/image.png" alt="image" width="542" height="484" border="0" /></a></p>
+<p><a href="https://docs.google.com/forms/d/1RAo019BPVR2Fsqw9y-nQBAHCTBUT8dzsDRoG2yL2uq4/viewform"><img loading="lazy" style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-width: 0px;" title="image" src="blog/wpcontent/uploads/2016/03/image.png" alt="image" width="542" height="484" border="0" /></a></p>
 ]]></content:encoded>
 					
 		

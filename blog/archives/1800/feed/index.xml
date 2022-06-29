@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Named routing with Knockout, ASP.NET MVC, and AttributeRouting, from JavaScript	</title>
-	<atom:link href="/blog/index.php/archives/1800/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/1800/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/1800</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Sat, 26 Jan 2013 02:53:54 +0000</lastBuildDate>

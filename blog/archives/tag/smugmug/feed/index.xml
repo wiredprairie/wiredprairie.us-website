@@ -12,7 +12,7 @@
 
 <channel>
 	<title>SmugMug &#8211; WiredPrairie</title>
-	<atom:link href="/blog/index.php/archives/tag/smugmug/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/tag/smugmug/feed" rel="self" type="application/rss+xml" />
 	<link>/blog</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Thu, 15 Mar 2012 12:55:05 +0000</lastBuildDate>
@@ -35,7 +35,7 @@
 		<guid isPermaLink="false">/blog/?p=1570</guid>
 
 					<description><![CDATA[I needed a simple way to detect when a placeholder DIV (that would contain an image) had scrolled into the current viewport of the browser. I’ve seen a few solutions that worked, and a few that didn’t (hello? test your code!). Here’s my simple solution: function isScrolledIntoView(elem) { elem = $(elem); var win = $(window); [&#8230;]]]></description>
-										<content:encoded><![CDATA[<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; float: right; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" align="right" src="/blog/wpcontent/uploads/2012/03/image4.png" width="242" height="133" /></p>
+										<content:encoded><![CDATA[<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; float: right; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" align="right" src="blog/wpcontent/uploads/2012/03/image4.png" width="242" height="133" /></p>
 <p>I needed a simple way to detect when a placeholder DIV (that would contain an image) had scrolled into the current viewport of the browser. I’ve seen a few solutions that worked, and a few that didn’t (hello? test your code!). Here’s my simple solution:</p>
 <pre class="code"><span style="color: blue">function </span>isScrolledIntoView(elem) {
     elem = $(elem);
@@ -53,7 +53,7 @@
 }</pre>
 <p>Nothing fancy, except it does require jQuery.</p>
 <p>When one of the place holder DIVs scrolled into view, the code would trigger a queued load of the image.</p>
-<p><img loading="lazy" style="display: inline" title="SmugMupBrowser-live" alt="SmugMupBrowser-live" src="/blog/wpcontent/uploads/2012/03/SmugMupBrowser-live.gif" width="536" height="332" /></p>
+<p><img loading="lazy" style="display: inline" title="SmugMupBrowser-live" alt="SmugMupBrowser-live" src="blog/wpcontent/uploads/2012/03/SmugMupBrowser-live.gif" width="536" height="332" /></p>
 <p>As the SmugMug API is poorly designed in a few places, in particular as it relates to showing a thumbnail for a gallery/album, when an album/gallery is scrolled into view, the app loads a list of ALL of the images from the now visible album and selects one of them to show as the thumbnail.<strong> It’s extremely inefficient unfortunately. </strong>Instead, if they could have included that extra piece of data in the gallery list (thumbnail image and thumbnail image key), boom! </p>
 <p>I’ve also included a delay so that the auto loading only occurs after a 1 second pause (either the window being resized or scrolling occurring):</p>
 <pre class="code"><span style="color: blue">function </span>delayLoadNewVisible() {
@@ -64,7 +64,7 @@
         }, 1000);
     }
 }</pre>
-<p>I’m not going to post the code for the other useful aspect of this functionality, but I’ll tell you about it, and leave coding it as an exercise for the reader. <img style="border-bottom-style: none; border-left-style: none; border-top-style: none; border-right-style: none" class="wlEmoticon wlEmoticon-smile" alt="Smile" src="/blog/wpcontent/uploads/2012/03/wlEmoticon-smile2.png" /></p>
+<p>I’m not going to post the code for the other useful aspect of this functionality, but I’ll tell you about it, and leave coding it as an exercise for the reader. <img style="border-bottom-style: none; border-left-style: none; border-top-style: none; border-right-style: none" class="wlEmoticon wlEmoticon-smile" alt="Smile" src="blog/wpcontent/uploads/2012/03/wlEmoticon-smile2.png" /></p>
 <p>When the user scrolls new albums into view, after the pause, they’re added to a load queue. However, as it’s just as likely that the user will scroll the album off the screen, my load code also can remove something from the load queue if it hasn’t been loaded already. This way, visible albums are given precedence. By using the queue in this way, there are a manageable number of outstanding requests at any given time, and ideally only those that are relevant to what’s on the user’s screen. </p>
 ]]></content:encoded>
 					
@@ -88,9 +88,9 @@
 					<description><![CDATA[I’ve been doing some tinkering recently with SmugMug again. Through testing SnugUp for the past 4 years, I’ve made quite the mess of my SmugMug account. Literally hundreds of poorly organized and often completely junk albums. I’ve been wanting to clean it up, but SmugMug’s UI for that is so obnoxiously slow and tedious that [&#8230;]]]></description>
 										<content:encoded><![CDATA[<p>I’ve been doing some tinkering recently with SmugMug again.</p>
 <p>Through testing <a href="http://www.wiredprairie.us/SnugUp/">SnugUp</a> for the past 4 years, I’ve made quite the mess of my SmugMug account. Literally hundreds of poorly organized and often completely junk albums. I’ve been wanting to clean it up, but SmugMug’s UI for that is so obnoxiously slow and tedious that I decided I wanted to write a tool to make it easier to manage. </p>
-<p>Admittedly, given the amount of time I’ve spent on writing the tool (which I’m not yet finished with), I could have cleaned up my SmugMug account dozens of times. However, with my developer hat on, I thought, how fun would that be? <img style="border-bottom-style: none; border-left-style: none; border-top-style: none; border-right-style: none" class="wlEmoticon wlEmoticon-smile" alt="Smile" src="/blog/wpcontent/uploads/2012/03/wlEmoticon-smile.png" /></p>
+<p>Admittedly, given the amount of time I’ve spent on writing the tool (which I’m not yet finished with), I could have cleaned up my SmugMug account dozens of times. However, with my developer hat on, I thought, how fun would that be? <img style="border-bottom-style: none; border-left-style: none; border-top-style: none; border-right-style: none" class="wlEmoticon wlEmoticon-smile" alt="Smile" src="blog/wpcontent/uploads/2012/03/wlEmoticon-smile.png" /></p>
 <p>&#160;</p>
-<p> <a href="/blog/wpcontent/uploads/2012/03/image.png"><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wpcontent/uploads/2012/03/image_thumb.png" width="502" height="299" /></a>  </p>
+<p> <a href="blog/wpcontent/uploads/2012/03/image.png"><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="blog/wpcontent/uploads/2012/03/image_thumb.png" width="502" height="299" /></a>  </p>
 <p>So, I’ve started to create the SnugUp.Browser. It’s a bit of an interesting beast in that it is a Windows application that hosts a web browser to display its UI. I’d tried using WPF/XAML and just couldn’t get the look I was wanting in a reasonable amount of time and effort. </p>
 <p>&lt;RANT&gt;<strong>WPF desperately needs a VirtualizingWrapPanel. Microsoft needs to ship it. </strong>&lt;/RANT&gt;</p>
 <p>So, I created a WinForms project to host the IE Web Browser. (Arrgh, the WPF WebBrowser sucks still. It’s not nearly as feature complete as the one from WinForms!). Internally, the web pages are served via an HttpListener. </p>
@@ -212,11 +212,11 @@ http://www.CodeHighlighter.com/
 <p><!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com/ --></div>
 <p>It just looks up a request dynamically, maps to a method, and calls it (the response is eventually serialized as JSON).</p>
 <p>For UI, I’m currently using Bootstrap (although that may be removed), Knockout.JS, and jQuery. I’m doing a bit of trickery to make sure that only what’s visible on the screen is loaded (even when the user scrolls up and down … it’s pretty smart).&#160; I’ll likely post more about that in a future update.</p>
-<p>The app is becoming larger… and bloated a bit when compared to my original needs. <img style="border-bottom-style: none; border-left-style: none; border-top-style: none; border-right-style: none" class="wlEmoticon wlEmoticon-smile" alt="Smile" src="/blog/wpcontent/uploads/2012/03/wlEmoticon-smile.png" /></p>
+<p>The app is becoming larger… and bloated a bit when compared to my original needs. <img style="border-bottom-style: none; border-left-style: none; border-top-style: none; border-right-style: none" class="wlEmoticon wlEmoticon-smile" alt="Smile" src="blog/wpcontent/uploads/2012/03/wlEmoticon-smile.png" /></p>
 <p>&#160;</p>
-<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wpcontent/uploads/2012/03/image1.png" width="274" height="377" /></p>
-<p>It now can show the images from the gallery as well. <img style="border-bottom-style: none; border-left-style: none; border-top-style: none; border-right-style: none" class="wlEmoticon wlEmoticon-smile" alt="Smile" src="/blog/wpcontent/uploads/2012/03/wlEmoticon-smile.png" /></p>
-<p><a href="/blog/wpcontent/uploads/2012/03/image2.png"><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wpcontent/uploads/2012/03/image_thumb1.png" width="502" height="341" /></a></p>
+<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="blog/wpcontent/uploads/2012/03/image1.png" width="274" height="377" /></p>
+<p>It now can show the images from the gallery as well. <img style="border-bottom-style: none; border-left-style: none; border-top-style: none; border-right-style: none" class="wlEmoticon wlEmoticon-smile" alt="Smile" src="blog/wpcontent/uploads/2012/03/wlEmoticon-smile.png" /></p>
+<p><a href="blog/wpcontent/uploads/2012/03/image2.png"><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="blog/wpcontent/uploads/2012/03/image_thumb1.png" width="502" height="341" /></a></p>
 ]]></content:encoded>
 					
 		
@@ -235,7 +235,7 @@ http://www.CodeHighlighter.com/
 		<guid isPermaLink="false">/blog/?p=1520</guid>
 
 					<description><![CDATA[More than a few years ago, I created SnugUp version 1, which is a handy way of synchronizing folders of images with SmugMug for Windows users. I’ve made a number of changes in the last month based on some requests and the result is a significant update (yet the core features are all there – [&#8230;]]]></description>
-										<content:encoded><![CDATA[<p><a href="http://www.wiredprairie.us/SnugUp/"><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px 0px 0px 20px; padding-left: 0px; padding-right: 0px; display: inline; float: right; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" align="right" src="/blog/wpcontent/uploads/2012/01/image29.png" width="143" height="520" /></a>More than a few years ago, I created <a href="http://www.wiredprairie.us/SnugUp/">SnugUp</a> version 1, which is a handy way of synchronizing folders of images with <a href="http://www.smugmug.com/?referrer=75Bqi7vCzrwPY">SmugMug</a> for Windows users. I’ve made a number of changes in the last month based on some requests and the result is a significant update (yet the core features are all there – just improved!).</p>
+										<content:encoded><![CDATA[<p><a href="http://www.wiredprairie.us/SnugUp/"><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px 0px 0px 20px; padding-left: 0px; padding-right: 0px; display: inline; float: right; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" align="right" src="blog/wpcontent/uploads/2012/01/image29.png" width="143" height="520" /></a>More than a few years ago, I created <a href="http://www.wiredprairie.us/SnugUp/">SnugUp</a> version 1, which is a handy way of synchronizing folders of images with <a href="http://www.smugmug.com/?referrer=75Bqi7vCzrwPY">SmugMug</a> for Windows users. I’ve made a number of changes in the last month based on some requests and the result is a significant update (yet the core features are all there – just improved!).</p>
 <p>New features:</p>
 <ul>
 <li>(Changed to version 2)</li>
@@ -250,7 +250,7 @@ http://www.CodeHighlighter.com/
 </ul>
 <p>It does require .NET 4.0 Framework Client profile (which likely you’ve already got on your machine, but if you don’t the installer SHOULD make it easy to download).</p>
 <p>Go <a href="http://www.wiredprairie.us/SnugUp">here</a> (<a href="http://www.wiredprairie.us/SnugUp">http://www.wiredprairie.us/SnugUp</a>) for more information and to download. I’d recommend uninstalling the old version first.</p>
-<p><a href="http://www.wiredprairie.us/SnugUp"><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: block; float: none; margin-left: auto; border-top: 0px; margin-right: auto; border-right: 0px; padding-top: 0px" title="SNAGHTML1ffa6494" border="0" alt="SNAGHTML1ffa6494" src="/blog/wpcontent/uploads/2012/01/SNAGHTML1ffa6494.png" width="500" height="375" /></a></p>
+<p><a href="http://www.wiredprairie.us/SnugUp"><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: block; float: none; margin-left: auto; border-top: 0px; margin-right: auto; border-right: 0px; padding-top: 0px" title="SNAGHTML1ffa6494" border="0" alt="SNAGHTML1ffa6494" src="blog/wpcontent/uploads/2012/01/SNAGHTML1ffa6494.png" width="500" height="375" /></a></p>
 ]]></content:encoded>
 					
 		

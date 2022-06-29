@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: MSBuild Task Reference and Ajax Minification	</title>
-	<atom:link href="/blog/index.php/archives/1178/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/1178/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/1178</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Tue, 01 Mar 2011 15:56:19 +0000</lastBuildDate>

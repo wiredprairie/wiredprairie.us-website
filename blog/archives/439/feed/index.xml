@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: The new &#034;Cuil&#034; search &#8230; isn&#8217;t so cool.	</title>
-	<atom:link href="/blog/index.php/archives/439/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/439/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/439</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Mon, 28 Jul 2008 15:24:39 +0000</lastBuildDate>

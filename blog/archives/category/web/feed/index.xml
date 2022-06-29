@@ -12,7 +12,7 @@
 
 <channel>
 	<title>Web &#8211; WiredPrairie</title>
-	<atom:link href="/blog/index.php/archives/category/web/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/category/web/feed" rel="self" type="application/rss+xml" />
 	<link>/blog</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Sat, 21 Apr 2018 02:27:19 +0000</lastBuildDate>
@@ -109,7 +109,7 @@
 					<description><![CDATA[Now that the final v1 Windows Phone 7 is available, I performed a few browser tests using http://www.HTML5Test.com/ (which is a slick and easy way of testing browser support for some upcoming HTML5 features). Any guesses which is iOS 4.1? &#160; Biggest missing elements from the IE browser on Windows Phone 7: Input element types. [&#8230;]]]></description>
 										<content:encoded><![CDATA[<p>Now that the final v1 Windows Phone 7 is available, I performed a few browser tests using <a href="http://www.HTML5Test.com/">http://www.HTML5Test.com/</a> (which is a slick and easy way of testing browser support for some upcoming HTML5 features).</p>
 <p>Any guesses which is iOS 4.1?</p>
-<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: ; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wpcontent/uploads/2010/09/image5.png" width="163" height="214" />&#160;<img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: ; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wpcontent/uploads/2010/09/image6.png" width="163" height="240" /></p>
+<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: ; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="blog/wpcontent/uploads/2010/09/image5.png" width="163" height="214" />&#160;<img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: ; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="blog/wpcontent/uploads/2010/09/image6.png" width="163" height="240" /></p>
 <p>Biggest missing elements from the IE browser on Windows Phone 7:</p>
 <ul>
 <li>Input element types. The browser won’t be able to provide a keyboard/input panel that is appropriate for the data being requested. For example, a number field that automatically switches to a number only input pad. See <a href="http://diveintohtml5.org/detect.html#input-types">here</a> for some examples.</li>
@@ -120,9 +120,9 @@
 </ul>
 <p>It is a better browser than the CRAP in previous versions of the Windows Phone. But, the bar has been set much higher these days. I’m pleased that typical web sites work well, and that it’s reasonably fast. I can even understand why they stopped where they did – as it seemed sufficient for typical browsing needs on the go, especially given the development team obviously had deadlines. </p>
 <p>But with technology moving at such a rapid pace and the adoption of HTML5 proceeding regardless of standards, Microsoft must keep up to survive. This phone will get a lot of “hate” if it can’t adequately browse the web in a few years. Developers are tired of building in hacks to support browser X or Y. This is yet another browser that may need to be supported, if adoption rates are reasonable. </p>
-<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: ; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wpcontent/uploads/2010/09/image8.png" width="300" height="502" /></p>
+<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: ; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="blog/wpcontent/uploads/2010/09/image8.png" width="300" height="502" /></p>
 <p>IE9 Beta 1 scores only a 96.</p>
-<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: ; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wpcontent/uploads/2010/09/image7.png" width="359" height="214" /></p>
+<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: ; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="blog/wpcontent/uploads/2010/09/image7.png" width="359" height="214" /></p>
 <p>It’s missing <a href="http://www.w3.org/TR/html5/offline.html#offline">Web applications</a> (arrgh), and <a href="http://www.w3.org/TR/websockets/">websocket</a>s.</p>
 ]]></content:encoded>
 					

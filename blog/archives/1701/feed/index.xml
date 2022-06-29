@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Windows 8 WinRT/Metro Missing UpdateSourceTrigger	</title>
-	<atom:link href="/blog/index.php/archives/1701/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/1701/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/1701</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Mon, 08 Apr 2013 20:45:02 +0000</lastBuildDate>

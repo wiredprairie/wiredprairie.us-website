@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Disabling Apple Software Update on Vista	</title>
-	<atom:link href="/blog/index.php/archives/111/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/111/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/111</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Sat, 23 May 2009 06:36:45 +0000</lastBuildDate>

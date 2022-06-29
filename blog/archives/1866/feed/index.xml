@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Quilt Inspired by Microsoft Windows 8	</title>
-	<atom:link href="/blog/index.php/archives/1866/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/1866/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/1866</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Thu, 14 Mar 2013 14:17:06 +0000</lastBuildDate>
@@ -34,7 +34,7 @@
 Thanks for the kind words. 
 
 I&#039;ve suggested she start her own blog several times.  :)]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/1866/comment-page-1#comment-22365">Kay Stephenson</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/1866/comment-page-1#comment-22365">Kay Stephenson</a>.</p>
 <p>Thanks for the kind words. </p>
 <p>I&#8217;ve suggested she start her own blog several times.  :)</p>
 ]]></content:encoded>

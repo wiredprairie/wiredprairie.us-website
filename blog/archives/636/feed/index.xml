@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Freezing my beak off &#8230;	</title>
-	<atom:link href="/blog/index.php/archives/636/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/636/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/636</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Tue, 13 Jan 2009 00:38:20 +0000</lastBuildDate>

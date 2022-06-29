@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Nest Thermostat, Software Update 2.0	</title>
-	<atom:link href="/blog/index.php/archives/1631/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/1631/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/1631</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Sun, 27 May 2012 19:07:47 +0000</lastBuildDate>
@@ -32,7 +32,7 @@
 					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1631/comment-page-1#comment-4542&quot;&gt;Mike Bronner&lt;/a&gt;.
 
 Thanks for the great comment. I&#039;ll be interested to hear how they respond. According to their web site, they do not accept product enhancement suggestions.]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/1631/comment-page-1#comment-4542">Mike Bronner</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/1631/comment-page-1#comment-4542">Mike Bronner</a>.</p>
 <p>Thanks for the great comment. I&#8217;ll be interested to hear how they respond. According to their web site, they do not accept product enhancement suggestions.</p>
 ]]></content:encoded>
 		
@@ -83,7 +83,7 @@ Thanks again!
 ==========================<br />
 Dear Nest Support,</p>
 <p>I hope this email gets forwarded to the people who need to know. While I am only speaking for myself, I do believe my points outlined below reflect the needs and desires of many potential customers.</p>
-<p>First, I would like to thank Aaron for writing extensively on his experiences, and collecting feedback from others, on his blog at <a href="/blog/index.php/nest-thermostat-reviews" rel="nofollow ugc">/blog/index.php/nest-thermostat-reviews</a>. Please do take the time to read through his posts as well.</p>
+<p>First, I would like to thank Aaron for writing extensively on his experiences, and collecting feedback from others, on his blog at <a href="blog/index.php/nest-thermostat-reviews" rel="nofollow ugc">/blog/index.php/nest-thermostat-reviews</a>. Please do take the time to read through his posts as well.</p>
 <p>I would require the following points to be available on the Nest Thermostat prior to making a purchase, in order of importance:<br />
 &#8211; Settings should never be lost. Settings need to be stored in such a manner, that they will remain even after a power failure and the battery draining. The unit absolutely must be 100% dependable, especially in cold-weather climates, so that it does not loose connection with the servers due to a fault of its own. I must be able to rely on controlling the unit when away from the home at all times, especially in cold-weather climates.<br />
 &#8211; Power-saving algorithms need to be smarter. All factors need to be taken into account when calculating energy usage:<br />
@@ -136,7 +136,7 @@ I will let it sit for a couple days and see if it figures out the temp.]]></desc
 I offset the thermostat temperature readings by exchanging it for a new one. 
 
 A number of people have problems with the wifi apparently. Some suggest trying a different channel (like 11).]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/1631/comment-page-1#comment-4425">Austin Scaccia</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/1631/comment-page-1#comment-4425">Austin Scaccia</a>.</p>
 <p>I offset the thermostat temperature readings by exchanging it for a new one. </p>
 <p>A number of people have problems with the wifi apparently. Some suggest trying a different channel (like 11).</p>
 ]]></content:encoded>

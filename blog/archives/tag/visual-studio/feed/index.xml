@@ -12,7 +12,7 @@
 
 <channel>
 	<title>Visual Studio &#8211; WiredPrairie</title>
-	<atom:link href="/blog/index.php/archives/tag/visual-studio/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/tag/visual-studio/feed" rel="self" type="application/rss+xml" />
 	<link>/blog</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Fri, 11 Nov 2016 19:22:09 +0000</lastBuildDate>
@@ -35,11 +35,11 @@
 
 					<description><![CDATA[I have Visual Studio 2015 installed and when I launch a command prompt on Windows, it’s generally the Visual Studio 2015 Developer Command prompt (in fact, I have it pinned to my Windows 10 task bar). On Windows, using Visual Studio Code 1.7+, pressing SHIFT+CTRL+C opens a Windows Command prompt from the root directory of [&#8230;]]]></description>
 										<content:encoded><![CDATA[<p>I have Visual Studio 2015 installed and when I launch a command prompt on Windows, it’s generally the Visual Studio 2015 Developer Command prompt (in fact, I have it pinned to my Windows 10 task bar).</p>
-<p><a href="/blog/wpcontent/uploads/2016/11/image.png"><img loading="lazy" style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border: 0px;" title="image" src="/blog/wpcontent/uploads/2016/11/image_thumb.png" alt="image" width="380" height="271" border="0" /></a></p>
+<p><a href="blog/wpcontent/uploads/2016/11/image.png"><img loading="lazy" style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border: 0px;" title="image" src="blog/wpcontent/uploads/2016/11/image_thumb.png" alt="image" width="380" height="271" border="0" /></a></p>
 <p>On Windows, using Visual Studio Code 1.7+, pressing SHIFT+CTRL+C opens a Windows Command prompt from the root directory of your opened folder. It’s super useful.</p>
 <p>I wanted the Developer Command prompt to open instead of a standard command prompt.</p>
 <p>To change that, open the User Settings:</p>
-<p><a href="/blog/wpcontent/uploads/2016/11/image-1.png"><img loading="lazy" style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border: 0px;" title="image" src="/blog/wpcontent/uploads/2016/11/image_thumb-1.png" alt="image" width="400" height="460" border="0" /></a></p>
+<p><a href="blog/wpcontent/uploads/2016/11/image-1.png"><img loading="lazy" style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border: 0px;" title="image" src="blog/wpcontent/uploads/2016/11/image_thumb-1.png" alt="image" width="400" height="460" border="0" /></a></p>
 <p>Add the following:</p>
 <pre>
 "terminal.external.windowsExec": "C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\Tools\\VsDevCmd.bat"
@@ -66,7 +66,7 @@
 
 					<description><![CDATA[If you’re seeing a credentials prompt every time you launch a local IIS or IIS Express web application that requires Windows Authentication, you’ll likely grow as tired of typing in your password as I was. To add to the annoyance, the Remember my credentials checkbox doesn’t work (nothing is saved). The setup: Windows 8 Visual [&#8230;]]]></description>
 										<content:encoded><![CDATA[<p>If you’re seeing a credentials prompt every time you launch a local IIS or IIS Express web application that requires Windows Authentication, you’ll likely grow as tired of typing in your password as I was. To add to the annoyance, the <strong>Remember my credentials</strong> checkbox doesn’t work (nothing is saved).</p>
-<p><a href="/blog/wpcontent/uploads/2013/03/image.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wpcontent/uploads/2013/03/image_thumb.png" width="443" height="351" /></a></p>
+<p><a href="blog/wpcontent/uploads/2013/03/image.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="blog/wpcontent/uploads/2013/03/image_thumb.png" width="443" height="351" /></a></p>
 <p>The setup:</p>
 <ul>
 <li>Windows 8</li>
@@ -124,11 +124,11 @@
 <li>Close.</li>
 <li>Verify it’s now working.</li>
 </ol>
-<p><a href="/blog/wpcontent/uploads/2013/03/image1.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wpcontent/uploads/2013/03/image_thumb1.png" width="256" height="290" /></a></p>
-<p><a href="/blog/wpcontent/uploads/2013/03/image2.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wpcontent/uploads/2013/03/image_thumb2.png" width="425" height="544" /></a></p>
-<p><a href="/blog/wpcontent/uploads/2013/03/image3.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wpcontent/uploads/2013/03/image_thumb3.png" width="416" height="236" /></a></p>
-<p><a href="/blog/wpcontent/uploads/2013/03/image4.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wpcontent/uploads/2013/03/image_thumb4.png" width="396" height="351" /></a></p>
-<p><a href="/blog/wpcontent/uploads/2013/03/image5.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wpcontent/uploads/2013/03/image_thumb5.png" width="396" height="351" /></a></p>
+<p><a href="blog/wpcontent/uploads/2013/03/image1.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="blog/wpcontent/uploads/2013/03/image_thumb1.png" width="256" height="290" /></a></p>
+<p><a href="blog/wpcontent/uploads/2013/03/image2.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="blog/wpcontent/uploads/2013/03/image_thumb2.png" width="425" height="544" /></a></p>
+<p><a href="blog/wpcontent/uploads/2013/03/image3.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="blog/wpcontent/uploads/2013/03/image_thumb3.png" width="416" height="236" /></a></p>
+<p><a href="blog/wpcontent/uploads/2013/03/image4.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="blog/wpcontent/uploads/2013/03/image_thumb4.png" width="396" height="351" /></a></p>
+<p><a href="blog/wpcontent/uploads/2013/03/image5.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="blog/wpcontent/uploads/2013/03/image_thumb5.png" width="396" height="351" /></a></p>
 <p>Done.</p>
 <p>Alternatives welcomed. :)</p>
 ]]></content:encoded>

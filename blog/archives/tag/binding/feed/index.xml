@@ -12,7 +12,7 @@
 
 <channel>
 	<title>binding &#8211; WiredPrairie</title>
-	<atom:link href="/blog/index.php/archives/tag/binding/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/tag/binding/feed" rel="self" type="application/rss+xml" />
 	<link>/blog</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Thu, 05 Jan 2012 01:56:47 +0000</lastBuildDate>
@@ -38,8 +38,8 @@
 		<guid isPermaLink="false">/blog/?p=1377</guid>
 
 					<description><![CDATA[Previous post: Entity reference I’ve been extending my original post (above) in an effort to create a simple entity system using Ember.js (SproutCore 2.0). While it’s grown in sophistication, it is far from complete. The project is now located on GitHub. This is the introduction, from the readme on GitHub. EmberJS &#8211; EZData EZData is [&#8230;]]]></description>
-										<content:encoded><![CDATA[<p>Previous post: <a href="/blog/index.php/archives/1345">Entity reference</a></p>
-<p>I’ve been extending my original post (above) in an effort to create a simple entity system using <a href="http://emberjs.com/">Ember.js</a> (SproutCore 2.0). While it’s grown in sophistication, it is far from complete. <img style="border-bottom-style: none; border-left-style: none; border-top-style: none; border-right-style: none" class="wlEmoticon wlEmoticon-smile" alt="Smile" src="/blog/wpcontent/uploads/2012/01/wlEmoticon-smile.png" /></p>
+										<content:encoded><![CDATA[<p>Previous post: <a href="blog/index.php/archives/1345">Entity reference</a></p>
+<p>I’ve been extending my original post (above) in an effort to create a simple entity system using <a href="http://emberjs.com/">Ember.js</a> (SproutCore 2.0). While it’s grown in sophistication, it is far from complete. <img style="border-bottom-style: none; border-left-style: none; border-top-style: none; border-right-style: none" class="wlEmoticon wlEmoticon-smile" alt="Smile" src="blog/wpcontent/uploads/2012/01/wlEmoticon-smile.png" /></p>
 <p>The project is now located on G<a href="https://github.com/wiredprairie/ember-ezdata">itHub</a>.</p>
 <p>This is the introduction, from the readme on GitHub.</p>
 <h3>EmberJS &#8211; EZData</h3>

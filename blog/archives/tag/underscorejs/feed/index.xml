@@ -12,7 +12,7 @@
 
 <channel>
 	<title>underscorejs &#8211; WiredPrairie</title>
-	<atom:link href="/blog/index.php/archives/tag/underscorejs/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/tag/underscorejs/feed" rel="self" type="application/rss+xml" />
 	<link>/blog</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Wed, 13 Feb 2013 13:43:14 +0000</lastBuildDate>

@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Hello World &#8211; in 428+ ways!	</title>
-	<atom:link href="/blog/index.php/archives/811/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/811/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/811</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Tue, 01 Sep 2009 11:17:36 +0000</lastBuildDate>

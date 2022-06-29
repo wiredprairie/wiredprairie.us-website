@@ -12,7 +12,7 @@
 
 <channel>
 	<title>MacBook Pro &#8211; WiredPrairie</title>
-	<atom:link href="/blog/index.php/archives/tag/macbook-pro/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/tag/macbook-pro/feed" rel="self" type="application/rss+xml" />
 	<link>/blog</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Sat, 21 Jan 2012 19:27:15 +0000</lastBuildDate>
@@ -36,7 +36,7 @@
 					<description><![CDATA[The non replaceable battery on my Macbook Pro (2010) had discharged recently completely as I’d left the laptop unplugged for more than a month without turning it on. When I went to use it this morning, I plugged it in, and then turned it on. After a few minutes of use, the battery status still [&#8230;]]]></description>
 										<content:encoded><![CDATA[<p>The non replaceable battery on my Macbook Pro (2010) had discharged recently completely as I’d left the laptop unplugged for more than a month without turning it on. </p>
 <p>When I went to use it this morning, I plugged it in, and then turned it on. After a few minutes of use, the battery status still showed as “not charging.” </p>
-<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wpcontent/uploads/2012/01/image21.png" width="122" height="22" /></p>
+<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="blog/wpcontent/uploads/2012/01/image21.png" width="122" height="22" /></p>
 <p>The light on the mag-safe connection was green, as if the battery was completely charged. </p>
 <p>When I depressed the battery indicator button on the side of the MacBook Pro, the response was 5 quick green flashes on the first LED. <a href="http://support.apple.com/kb/HT3205">According</a> to Apple support, that indicates the battery hasn’t been charged to what’s required for a single indicator light yet. However, while my MacBook Pro had discharged like this before, it would normally start charging right away.</p>
 <p>So, apparently, before taking it in for a repair (which is what a lot of people in forums were recommending), you might try resetting the <a href="http://support.apple.com/kb/HT3964?viewlocale=en_US">System Management Controller</a>. One of the issues that a reset could fix is that the battery does not appear to be charging properly. </p>
@@ -50,7 +50,7 @@
 </ol>
 <p>A few moments after I performed the steps above, the mag safe LED light switched to an orange color (charging) and the battery indicator no longer blinked 5 times quickly.</p>
 <p>Problem resolved, and much simpler than taking it to a local Apple “Genius” bar.</p>
-<p><em>As this wasn’t an obvious fix, I’ve decided to put this on my blog in the hope that someone else might find it useful, and so when I have this happen again, I don’t need to go hunting for the solution! <img style="border-bottom-style: none; border-left-style: none; border-top-style: none; border-right-style: none" class="wlEmoticon wlEmoticon-smile" alt="Smile" src="/blog/wpcontent/uploads/2012/01/wlEmoticon-smile6.png" /></em></p>
+<p><em>As this wasn’t an obvious fix, I’ve decided to put this on my blog in the hope that someone else might find it useful, and so when I have this happen again, I don’t need to go hunting for the solution! <img style="border-bottom-style: none; border-left-style: none; border-top-style: none; border-right-style: none" class="wlEmoticon wlEmoticon-smile" alt="Smile" src="blog/wpcontent/uploads/2012/01/wlEmoticon-smile6.png" /></em></p>
 ]]></content:encoded>
 					
 		

@@ -12,7 +12,7 @@
 
 <channel>
 	<title>JSON &#8211; WiredPrairie</title>
-	<atom:link href="/blog/index.php/archives/tag/json/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/tag/json/feed" rel="self" type="application/rss+xml" />
 	<link>/blog</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Mon, 07 Feb 2011 12:01:59 +0000</lastBuildDate>
@@ -66,7 +66,7 @@
 <p>&#160;</p>
 <h3>Bonus</h3>
 <p>And, as a bonus, you did notice that if you’re using IE9, that the developer tools now have a network trace? Cool. (I’ll still use fiddler for many things, but this will be very handy on machines that don’t have fiddler installed).</p>
-<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: ; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="SNAGHTML51b4c85a" border="0" alt="SNAGHTML51b4c85a" src="/blog/wpcontent/uploads/2011/02/SNAGHTML51b4c85a.png" width="450" height="356" /></p>
+<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: ; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="SNAGHTML51b4c85a" border="0" alt="SNAGHTML51b4c85a" src="blog/wpcontent/uploads/2011/02/SNAGHTML51b4c85a.png" width="450" height="356" /></p>
 ]]></content:encoded>
 					
 		

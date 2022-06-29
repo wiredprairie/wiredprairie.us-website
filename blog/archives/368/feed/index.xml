@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Do we really need another Javascript framework for UI?	</title>
-	<atom:link href="/blog/index.php/archives/368/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/368/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/368</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Wed, 18 Jun 2008 18:09:21 +0000</lastBuildDate>

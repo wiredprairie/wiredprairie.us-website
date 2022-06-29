@@ -12,7 +12,7 @@
 
 <channel>
 	<title>Phone &#8211; WiredPrairie</title>
-	<atom:link href="/blog/index.php/archives/tag/phone/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/tag/phone/feed" rel="self" type="application/rss+xml" />
 	<link>/blog</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Tue, 24 Aug 2010 01:46:28 +0000</lastBuildDate>
@@ -53,7 +53,7 @@
 <li>Make it free for those who buy a copy of Visual Studio 2010 and Blend (like myself – I don’t use the Express editions).</li>
 <li>Make it free so that there’s no barrier to entry – that people and companies don’t need to worry about the extra fee – just jump on the Windows Phone 7 bandwagon.</li>
 </ul>
-<p>Without this change, I probably won’t buy a Windows Phone 7, and will start building more HTML 5 web apps, that will work just fine on my iPhone 3GS (powered by iOS4). <img style="border-bottom-style: none; border-right-style: none; border-top-style: none; border-left-style: none" class="wlEmoticon wlEmoticon-sadsmile" alt="Sad smile" src="/blog/wpcontent/uploads/2010/08/wlEmoticonsadsmile.png" /></p>
+<p>Without this change, I probably won’t buy a Windows Phone 7, and will start building more HTML 5 web apps, that will work just fine on my iPhone 3GS (powered by iOS4). <img style="border-bottom-style: none; border-right-style: none; border-top-style: none; border-left-style: none" class="wlEmoticon wlEmoticon-sadsmile" alt="Sad smile" src="blog/wpcontent/uploads/2010/08/wlEmoticonsadsmile.png" /></p>
 ]]></content:encoded>
 					
 					<wfw:commentRss>/blog/index.php/archives/1119/feed</wfw:commentRss>

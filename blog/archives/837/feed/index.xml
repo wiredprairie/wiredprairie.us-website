@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Transparent Window Sample in WPF	</title>
-	<atom:link href="/blog/index.php/archives/837/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/837/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/837</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Tue, 15 Dec 2009 03:47:46 +0000</lastBuildDate>
@@ -103,7 +103,7 @@ Tom]]></description>
 					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/837/comment-page-1#comment-2852&quot;&gt;Tshad&lt;/a&gt;.
 
 That&#039;s what the code does -- it moves the gradient to where ever the mouse is during the mouse down, exactly as it says in the blog post. Is that what you mean?]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/837/comment-page-1#comment-2852">Tshad</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/837/comment-page-1#comment-2852">Tshad</a>.</p>
 <p>That&#8217;s what the code does &#8212; it moves the gradient to where ever the mouse is during the mouse down, exactly as it says in the blog post. Is that what you mean?</p>
 ]]></content:encoded>
 		

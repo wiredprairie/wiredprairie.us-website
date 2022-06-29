@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: 5 Great Online Color Palette selection and design tools	</title>
-	<atom:link href="/blog/index.php/archives/706/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/706/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/706</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Sat, 14 Feb 2009 01:55:42 +0000</lastBuildDate>
@@ -32,7 +32,7 @@
 					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/706/comment-page-1#comment-2237&quot;&gt;Gareth J M Saunders&lt;/a&gt;.
 
 I&#039;ve tried that one in the past (and liked it!), but with the free ones that are available these days, I&#039;m seeing no reason to buy.]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/706/comment-page-1#comment-2237">Gareth J M Saunders</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/706/comment-page-1#comment-2237">Gareth J M Saunders</a>.</p>
 <p>I&#8217;ve tried that one in the past (and liked it!), but with the free ones that are available these days, I&#8217;m seeing no reason to buy.</p>
 ]]></content:encoded>
 		

@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Silverlight Game Programming: Playing an Audio File	</title>
-	<atom:link href="/blog/index.php/archives/577/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/577/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/577</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Wed, 24 Nov 2010 02:36:12 +0000</lastBuildDate>
@@ -32,7 +32,7 @@
 					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/577/comment-page-1#comment-3220&quot;&gt;Nate DeHaven&lt;/a&gt;.
 
 No idea. Never considered SL great for games anyway.]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/577/comment-page-1#comment-3220">Nate DeHaven</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/577/comment-page-1#comment-3220">Nate DeHaven</a>.</p>
 <p>No idea. Never considered SL great for games anyway.</p>
 ]]></content:encoded>
 		
@@ -77,7 +77,7 @@ No idea. Never considered SL great for games anyway.]]></description>
 					<description><![CDATA[@zproxy - my response is here:
 /blog/index.php/archives/579]]></description>
 			<content:encoded><![CDATA[<p>@zproxy &#8211; my response is here:<br />
-<a href="/blog/index.php/archives/579" rel="nofollow ugc">/blog/index.php/archives/579</a></p>
+<a href="blog/index.php/archives/579" rel="nofollow ugc">/blog/index.php/archives/579</a></p>
 ]]></content:encoded>
 		
 			</item>

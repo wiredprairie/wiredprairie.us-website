@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Nest Thermostat Wifi Connectivity Issues?	</title>
-	<atom:link href="/blog/index.php/archives/1799/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/1799/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/1799</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Mon, 09 Dec 2013 13:03:01 +0000</lastBuildDate>
@@ -32,7 +32,7 @@
 					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1799/comment-page-1#comment-39481&quot;&gt;Matthew Woodget&lt;/a&gt;.
 
 I continue to see dropped connections, even with approved wireless access equipment. It&#039;s very disappointing.]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/1799/comment-page-1#comment-39481">Matthew Woodget</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/1799/comment-page-1#comment-39481">Matthew Woodget</a>.</p>
 <p>I continue to see dropped connections, even with approved wireless access equipment. It&#8217;s very disappointing.</p>
 ]]></content:encoded>
 		

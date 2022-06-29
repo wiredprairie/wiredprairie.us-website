@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Don&#8217;t wait to chase your dream &#8230;.	</title>
-	<atom:link href="/blog/index.php/archives/460/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/460/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/460</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Mon, 18 Aug 2008 01:55:44 +0000</lastBuildDate>

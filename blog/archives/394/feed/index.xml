@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Some Simple Silverlight 2.0 Particles, with sticky tape &#8230;.	</title>
-	<atom:link href="/blog/index.php/archives/394/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/394/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/394</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Thu, 10 Jul 2008 09:16:36 +0000</lastBuildDate>

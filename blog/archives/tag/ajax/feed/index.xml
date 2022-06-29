@@ -12,7 +12,7 @@
 
 <channel>
 	<title>Ajax &#8211; WiredPrairie</title>
-	<atom:link href="/blog/index.php/archives/tag/ajax/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/tag/ajax/feed" rel="self" type="application/rss+xml" />
 	<link>/blog</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Sun, 17 Jan 2010 18:26:54 +0000</lastBuildDate>
@@ -46,7 +46,7 @@
 <pre class="code">Sys.activateElements(document.documentElement);</pre>
 <p>In the code line above, though I’ve specified that I want the entire HTML document activated, you could provide any element you want as a starting point (for example to optimize the use of the library and prevent unnecessary DOM searching for example).</p>
 <p>I’m adding the delay in some JavaScript code because I wanted to set up a few variables in advance of the attach occurring. I tend to write my JavaScript code in an object oriented fashion these days (using the prototype pattern), including code that is interacting with the DOM. In this case, I’ll create a class that represents the logic of the page rather than following the typical purely functional model that is done on many JavaScript pages. But, when using the “<strong>eval</strong>” syntax of the Microsoft Ajax library “{{ code }}”, occasionally, I’ll need to delay the <strong>eval</strong> or the page will crash. </p>
-<p>From my recent post on making a simple <a href="/blog/index.php/archives/885" target="_blank">command extension to the Microsoft Ajax library</a>, I wanted to make that more object oriented by referring to an instance of my class, rather than pointing directly to a function:</p>
+<p>From my recent post on making a simple <a href="blog/index.php/archives/885" target="_blank">command extension to the Microsoft Ajax library</a>, I wanted to make that more object oriented by referring to an instance of my class, rather than pointing directly to a function:</p>
 <pre class="code"><span style="color: blue">&lt;</span><span style="color: #a31515">body sys</span><span style="color: blue">:</span><span style="color: red">attach</span><span style="color: blue">=&quot;wpc&quot; 
     </span><span style="color: #a31515">wpc</span><span style="color: blue">:</span><span style="color: red">onbubbleevent</span><span style="color: blue">=&quot;{{$view.onCommand}}&quot;  
     </span><span style="color: #a31515">xmlns</span><span style="color: blue">:</span><span style="color: red">sys</span><span style="color: blue">=&quot;javascript:Sys&quot; </span><span style="color: #a31515">xmlns</span><span style="color: blue">:</span><span style="color: red">wpc</span><span style="color: blue">=&quot;javascript:WiredPrairie.Commanding&quot;&gt;

@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Technical Interview Question #8	</title>
-	<atom:link href="/blog/index.php/archives/332/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/332/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/332</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Thu, 12 Jun 2008 22:10:19 +0000</lastBuildDate>

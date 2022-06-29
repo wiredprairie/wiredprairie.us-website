@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Apple&#8217;s Store Policies Regarding Amateur Applications	</title>
-	<atom:link href="/blog/index.php/archives/1125/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/1125/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/1125</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Tue, 28 Sep 2010 15:25:55 +0000</lastBuildDate>

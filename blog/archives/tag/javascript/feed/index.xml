@@ -12,7 +12,7 @@
 
 <channel>
 	<title>JavaScript &#8211; WiredPrairie</title>
-	<atom:link href="/blog/index.php/archives/tag/javascript/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/tag/javascript/feed" rel="self" type="application/rss+xml" />
 	<link>/blog</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Wed, 29 Jun 2022 15:21:02 +0000</lastBuildDate>
@@ -36,7 +36,7 @@
 					<description><![CDATA[There was a question on StackOverflow about animating an element and I wanted to give it a shot, so here goes: http://jsfiddle.net/wiredprairie/5tFCZ/1/ &#160; Imagine nearly the simplest Angular JS application possible: &#60;div ng-app=&#34;App&#34;&#62; &#60;div ng-init=&#34;checked=true&#34;&#62; &#60;div&#62; &#60;label&#62; &#60;input type=&#34;checkbox&#34; ng-model=&#34;checked&#34; /&#62;Is Visible...&#60;/label&#62; &#60;/div&#62; &#60;div class=&#34;sample&#34; ng-class=&#34;{ hidden: !checked }&#34;&#62;Visible...&#60;/div&#62; &#60;/div&#62; &#60;/div&#62; There is only a [&#8230;]]]></description>
 										<content:encoded><![CDATA[<p>There was a question on StackOverflow about animating an element and I wanted to give it a shot, so here goes:</p>
 <p><a title="http://jsfiddle.net/wiredprairie/5tFCZ/1/" href="http://jsfiddle.net/wiredprairie/5tFCZ/1/">http://jsfiddle.net/wiredprairie/5tFCZ/1/</a></p>
-<p><a href="/blog/wpcontent/uploads/2014/01/image.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wpcontent/uploads/2014/01/image_thumb.png" width="192" height="113" /></a></p>
+<p><a href="blog/wpcontent/uploads/2014/01/image.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="blog/wpcontent/uploads/2014/01/image_thumb.png" width="192" height="113" /></a></p>
 <p>&#160;</p>
 <p>Imagine nearly the simplest Angular JS application possible:</p>
 <pre class="csharpcode"><span class="kwrd">&lt;</span><span class="html">div</span> <span class="attr">ng-app</span><span class="kwrd">=&quot;App&quot;</span><span class="kwrd">&gt;</span>
@@ -255,15 +255,15 @@ And then, in a file called <strong>socket_handler</strong>.<strong>js</strong> w
 										<content:encoded><![CDATA[<p>I was looking for an alternative to using Node.JS for a JavaScript build process today on a Windows machine. I wanted something that relied as much on natively installed elements of a modern Windows PC as possible so that the build process would be portable.</p>
 <p>So, I broke out my rusty <a href="http://msdn.microsoft.com/en-us/library/9bbdkx3k(v=vs.84).aspx" target="_blank">Windows Script Host</a> skills.</p>
 <p>First, I created a file called, <strong>compile.wsf </strong>with the following contents:</p>
-<p><a href="/blog/wpcontent/uploads/2013/03/image9.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wpcontent/uploads/2013/03/image_thumb8.png" width="548" height="186" /></a></p>
+<p><a href="blog/wpcontent/uploads/2013/03/image9.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="blog/wpcontent/uploads/2013/03/image_thumb8.png" width="548" height="186" /></a></p>
 <p>When using <strong>cscript.exe</strong>, you can execute a more complex combination of scripts and include other script files by using a <a href="http://msdn.microsoft.com/en-us/library/15x4407c(v=vs.84).aspx" target="_blank">Windows Script File</a>. The content of the file is an XML definition of jobs. A job represents a unit of work. If you only have one job in a file, the name won’t matter as the script engine will select it by default. If you do have more than one job you’d like to store in a single WSF file, you can use the <strong>/Job:{id}</strong> parameter of <strong>cscript.exe</strong> to run a single job.</p>
 <p> Using the WSF file, you can include other script files using a script element (much like the script tag in HTML). In the example above, I’ve referenced a local copy of <strong>handlebars.js</strong> and a custom script called <strong>compile.js</strong>.</p>
 <p>You can also inline script as shown above. After doing a basic check on the number of arguments provided to the script, <strong>compile</strong> is called, which is from the <strong>compile.js</strong> script reference.</p>
 <p><strong>Compile.js</strong> is simple:</p>
-<p><a href="/blog/wpcontent/uploads/2013/03/image10.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wpcontent/uploads/2013/03/image_thumb9.png" width="539" height="320" /></a></p>
+<p><a href="blog/wpcontent/uploads/2013/03/image10.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="blog/wpcontent/uploads/2013/03/image_thumb9.png" width="539" height="320" /></a></p>
 <p>Using an instance of the <a href="http://msdn.microsoft.com/en-us/library/6kxy1a51(v=vs.84).aspx" target="_blank">FileSystemObject</a>, first the input file is verified to exist. Next, both the input and output files are opened. The Handlebars object is available globally by including it in the WSF definition and is used to precompile the contents of the input file’s template definition. Once compiled, it’s written to the output file and both files are closed.</p>
 <p>I threw the three files in a folder called <strong>lib</strong>, and created a simple batch file called handlebars.bat which called the cscript executable with the Windows Script File shown above as the first parameter and then the values of the other parameters passed along:</p>
-<p><a href="/blog/wpcontent/uploads/2013/03/image11.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wpcontent/uploads/2013/03/image_thumb10.png" width="238" height="22" /></a></p>
+<p><a href="blog/wpcontent/uploads/2013/03/image11.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="blog/wpcontent/uploads/2013/03/image_thumb10.png" width="238" height="22" /></a></p>
 <p>While this solution only works on Windows, it doesn’t hurt to keep the Windows Script Host in mind when throwing together general repeatable tasks that you:</p>
 <ul>
 <li>consider too complex for a batch file</li>
@@ -486,7 +486,7 @@ __p+=<span class="str">'\r\n    &lt;div class=&quot;title&quot;&gt;'</span>+
 		<guid isPermaLink="false">/blog/?p=1820</guid>
 
 					<description><![CDATA[Part one. After the first round, I felt compelled to KnockOut the code a bit more. I’d mentioned I wasn’t pleased with the code exactly. It needed some refactoring. So, I’ve created a new Knockout binding handler. This binding handler replaces&#160; named parameters with a model’s properties in a path. For example, given this object: [&#8230;]]]></description>
-										<content:encoded><![CDATA[<p><a href="/blog/index.php/archives/1800">Part one.</a></p>
+										<content:encoded><![CDATA[<p><a href="blog/index.php/archives/1800">Part one.</a></p>
 <p>After the first round, I felt compelled to KnockOut the code a bit more. I’d mentioned I wasn’t pleased with the code exactly. It needed some refactoring.</p>
 <p>So, I’ve created a new Knockout binding handler. This binding handler replaces&#160; named parameters with a model’s properties in a path. </p>
 <p>For example, given this object:</p>
@@ -757,7 +757,7 @@ ko.bindingHandlers.route.options.fixUrl = app_url;</pre>
 	margin: 0em;
 }
 .csharpcode .lnum { color: #606060; }</style>
-<p>You’ll probably like the new way better syntactically at least compared to the <a href="/blog/index.php/archives/1800">old</a> way. A route binding requires one input when used in it’s most basic form:</p>
+<p>You’ll probably like the new way better syntactically at least compared to the <a href="blog/index.php/archives/1800">old</a> way. A route binding requires one input when used in it’s most basic form:</p>
 <ul>
 <li><strong>url = </strong>the URL or route name to use as the template for the replacement. It should contain (or later resolve to) curly-braced enclosed property name keys which will be substituted by values from the model. The value of the property could be either a route name (see options below) or a path.</li>
 </ul>
@@ -775,7 +775,7 @@ ko.bindingHandlers.route.options.fixUrl = app_url;</pre>
 <li><strong>map</strong> = {object} the object properties should be route names and set equal to the path. this optional lookup is performed before the routeNameToUrl function is called. </li>
 <li><strong>fixUrl</strong> = (function)(url) do anything here. this is called after the mapping and routeNameToUrl is optionally called. I use this to correct javascript Ajax request paths by appending the application virtual directory</li>
 </ul>
-<p>(Thanks to <a href="http://www.knockmeout.net/">Ryan</a> for the suggestion to use the $data on the bindingContext, and then again for the nudge to just use the 4th parameter. <img class="wlEmoticon wlEmoticon-smile" style="border-top-style: none; border-left-style: none; border-bottom-style: none; border-right-style: none" alt="Smile" src="/blog/wpcontent/uploads/2013/01/wlEmoticon-smile.png" /> )</p>
+<p>(Thanks to <a href="http://www.knockmeout.net/">Ryan</a> for the suggestion to use the $data on the bindingContext, and then again for the nudge to just use the 4th parameter. <img class="wlEmoticon wlEmoticon-smile" style="border-top-style: none; border-left-style: none; border-bottom-style: none; border-right-style: none" alt="Smile" src="blog/wpcontent/uploads/2013/01/wlEmoticon-smile.png" /> )</p>
 ]]></content:encoded>
 					
 					<wfw:commentRss>/blog/index.php/archives/1820/feed</wfw:commentRss>
@@ -850,7 +850,7 @@ if (username &amp;&amp; password) {<br />
 
 					<description><![CDATA[Per the request of an anonymous user on Bitbucket, I have: Moved the code for the Nest API to GitHub. While I did have a preference for Bitbucket (free private hosting!!!), I moved it anyway. I also created an npm called the unofficial-nest-api. Enjoy.]]></description>
 										<content:encoded><![CDATA[<p>Per the request of an anonymous user on Bitbucket, I have:</p>
-<p>Moved the code for the Nest API to <a href="https://github.com/wiredprairie/unofficial_nodejs_nest">GitHub</a>. While I did have a preference for Bitbucket (free private hosting!!!), I moved it anyway. <img class="wlEmoticon wlEmoticon-smile" style="border-top-style: none; border-left-style: none; border-bottom-style: none; border-right-style: none" alt="Smile" src="/blog/wpcontent/uploads/2012/12/wlEmoticon-smile.png" /></p>
+<p>Moved the code for the Nest API to <a href="https://github.com/wiredprairie/unofficial_nodejs_nest">GitHub</a>. While I did have a preference for Bitbucket (free private hosting!!!), I moved it anyway. <img class="wlEmoticon wlEmoticon-smile" style="border-top-style: none; border-left-style: none; border-bottom-style: none; border-right-style: none" alt="Smile" src="blog/wpcontent/uploads/2012/12/wlEmoticon-smile.png" /></p>
 <p>I also created an npm called the <strong><a href="https://npmjs.org/package/unofficial-nest-api">unofficial-nest-api</a>.</strong></p>
 <p>Enjoy.</p>
 ]]></content:encoded>
@@ -873,7 +873,7 @@ if (username &amp;&amp; password) {<br />
 					<description><![CDATA[Inspired by some modern applications (especially the “Metro” look and feel), I wanted to put together an animated tile reflow script for an HTML page I was creating. As the size of the page changes, the tiles move into their new positions. You can try it here, if you’re using a modern browser (IE9+, Chrome, [&#8230;]]]></description>
 										<content:encoded><![CDATA[<p>Inspired by some modern applications (especially the “Metro” look and feel), I wanted to put together an animated tile reflow script for an HTML page I was creating. </p>
 <p>As the size of the page changes, the tiles move into their new positions.</p>
-<p><a href="http://www.wiredprairie.us/examples/easeljs/reflow1/" target="_blank"><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="SNAGHTML113b633f[4]" border="0" alt="SNAGHTML113b633f[4]" src="/blog/wpcontent/uploads/2012/05/SNAGHTML113b633f4.png" width="502" height="408" /></a></p>
+<p><a href="http://www.wiredprairie.us/examples/easeljs/reflow1/" target="_blank"><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="SNAGHTML113b633f[4]" border="0" alt="SNAGHTML113b633f[4]" src="blog/wpcontent/uploads/2012/05/SNAGHTML113b633f4.png" width="502" height="408" /></a></p>
 <p>You can try it <a href="http://www.wiredprairie.us/examples/easeljs/reflow1/" target="_blank">here</a>, if you’re using a modern browser (IE9+, Chrome, FF, Safari, etc.).</p>
 <p>Dependencies:</p>
 <ol>
@@ -926,10 +926,10 @@ if (username &amp;&amp; password) {<br />
 		<guid isPermaLink="false">/blog/?p=1643</guid>
 
 					<description><![CDATA[Continuing on a theme of animating SVG, I’ve added a label in the center of the animation which contains the current angle of the ever-rotating marker (in fact in a centered horizontally and vertically SVG text node). (Click image below to try it.) At the bottom of the file from the previous post, I’ve added [&#8230;]]]></description>
-										<content:encoded><![CDATA[<p>Continuing on a <a href="/blog/index.php/archives/1638">theme</a> of animating SVG, I’ve added a label in the center of the animation which contains the current angle of the ever-rotating marker (in fact in a centered horizontally and vertically SVG text node). </p>
+										<content:encoded><![CDATA[<p>Continuing on a <a href="blog/index.php/archives/1638">theme</a> of animating SVG, I’ve added a label in the center of the animation which contains the current angle of the ever-rotating marker (in fact in a centered horizontally and vertically SVG text node). </p>
 <p>(Click image below to try it.)</p>
-<p><a href="http://www.wiredprairie.us/examples/svg/demo2.html" target="_blank"><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wpcontent/uploads/2012/04/image26.png" width="316" height="313" /></a></p>
-<p>At the bottom of the file from the <a href="/blog/index.php/archives/1638">previous</a> post, I’ve added the following:</p>
+<p><a href="http://www.wiredprairie.us/examples/svg/demo2.html" target="_blank"><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="blog/wpcontent/uploads/2012/04/image26.png" width="316" height="313" /></a></p>
+<p>At the bottom of the file from the <a href="blog/index.php/archives/1638">previous</a> post, I’ve added the following:</p>
 <pre class="code">    <span style="color: blue">&lt;</span><span style="color: maroon">text </span><span style="color: red">id</span><span style="color: blue">=&quot;currentValueAsText&quot; </span><span style="color: red">x</span><span style="color: blue">=&quot;300&quot; </span><span style="color: red">y</span><span style="color: blue">=&quot;300&quot; 
         </span><span style="color: red">style</span><span style="color: blue">=&quot;</span><span style="color: red">text-anchor</span><span style="color: blue">: middle;</span><span style="color: red">alignment-baseline</span><span style="color: blue">:middle&quot; 
         </span><span style="color: red">fill</span><span style="color: blue">=&quot;#FFFFFF&quot; </span><span style="color: red">font-family</span><span style="color: blue">=&quot;'Arial'&quot; </span><span style="color: red">font-size</span><span style="color: blue">=&quot;96&quot; </span><span style="color: red">opacity</span><span style="color: blue">=&quot;.6&quot;&gt;</span>0<span style="color: blue">&lt;/</span><span style="color: maroon">text</span><span style="color: blue">&gt;
@@ -964,7 +964,7 @@ if (username &amp;&amp; password) {<br />
     }
 })();</pre>
 <p>Use the <strong>textContent</strong> property of the SVG text node to set the text. </p>
-<p>Done. <img style="border-bottom-style: none; border-left-style: none; border-top-style: none; border-right-style: none" class="wlEmoticon wlEmoticon-smile" alt="Smile" src="/blog/wpcontent/uploads/2012/04/wlEmoticon-smile2.png" /></p>
+<p>Done. <img style="border-bottom-style: none; border-left-style: none; border-top-style: none; border-right-style: none" class="wlEmoticon wlEmoticon-smile" alt="Smile" src="blog/wpcontent/uploads/2012/04/wlEmoticon-smile2.png" /></p>
 ]]></content:encoded>
 					
 		

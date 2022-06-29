@@ -12,7 +12,7 @@
 
 <channel>
 	<title>Fitbit &#8211; WiredPrairie</title>
-	<atom:link href="/blog/index.php/archives/tag/fitbit/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/tag/fitbit/feed" rel="self" type="application/rss+xml" />
 	<link>/blog</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Fri, 30 Aug 2013 12:35:46 +0000</lastBuildDate>
@@ -37,7 +37,7 @@
 		<guid isPermaLink="false">/blog/?p=1933</guid>
 
 					<description><![CDATA[My wife and I both pre-ordered a Fitbit Flex. While it’s not a life-changing device, it’s been generally fun to wear. I’m always interested in the sleep tracking when I travel … “Awake 16x, slept 5 hours.” Last night though, my wife’s Flex had stopped working. The lights wouldn’t show up when the device was [&#8230;]]]></description>
-										<content:encoded><![CDATA[<p><a href="/blog/wpcontent/uploads/2013/08/image.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: right; padding-top: 0px; padding-left: 0px; border-left: 0px; display: inline; padding-right: 0px" border="0" alt="image" align="right" src="/blog/wpcontent/uploads/2013/08/image_thumb.png" width="106" height="138" /></a>My wife and I both pre-ordered a <a href="http://www.amazon.com/gp/product/B00BGO0Q9O/ref=as_li_ss_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B00BGO0Q9O&amp;linkCode=as2&amp;tag=wiredp-20" target="_blank">Fitbit Flex</a>. While it’s not a life-changing device, it’s been generally fun to wear. I’m always interested in the sleep tracking when I travel … “<em>Awake 16x, slept 5 hours.</em>”</p>
+										<content:encoded><![CDATA[<p><a href="blog/wpcontent/uploads/2013/08/image.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: right; padding-top: 0px; padding-left: 0px; border-left: 0px; display: inline; padding-right: 0px" border="0" alt="image" align="right" src="blog/wpcontent/uploads/2013/08/image_thumb.png" width="106" height="138" /></a>My wife and I both pre-ordered a <a href="http://www.amazon.com/gp/product/B00BGO0Q9O/ref=as_li_ss_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B00BGO0Q9O&amp;linkCode=as2&amp;tag=wiredp-20" target="_blank">Fitbit Flex</a>. While it’s not a life-changing device, it’s been generally fun to wear. I’m always interested in the sleep tracking when I travel … “<em>Awake 16x, slept 5 hours.</em>”</p>
 <p>Last night though, my wife’s Flex had stopped working. The lights wouldn’t show up when the device was tapped and when she used the charger, it wouldn’t begin to charge. I found a few recommendations to use rubber bands to hold the Flex into the charger, cleaning the contacts, and a few more. Cleaning the contacts didn’t help. The charger worked with my Flex, so that meant the rubber band trick wouldn’t help. </p>
 <p>I found though on the <a href="https://help.fitbit.com/customer/portal/articles/1041329" target="_blank">Fitbit support website</a> this morning though a suggestion that worked! Apparently, you can restart/reset the tracker without loosing data. The steps are easy:</p>
 <ol>

@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Vacation Photos from New York State	</title>
-	<atom:link href="/blog/index.php/archives/550/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/550/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/550</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Fri, 12 Sep 2008 20:05:48 +0000</lastBuildDate>

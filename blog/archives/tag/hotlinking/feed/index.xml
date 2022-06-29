@@ -12,7 +12,7 @@
 
 <channel>
 	<title>hotlinking &#8211; WiredPrairie</title>
-	<atom:link href="/blog/index.php/archives/tag/hotlinking/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/tag/hotlinking/feed" rel="self" type="application/rss+xml" />
 	<link>/blog</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Wed, 24 Jul 2013 12:22:57 +0000</lastBuildDate>

@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Nest Thermostat Review, Update #1	</title>
-	<atom:link href="/blog/index.php/archives/1340/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/1340/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/1340</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Thu, 26 Jan 2012 02:26:39 +0000</lastBuildDate>
@@ -122,7 +122,7 @@ WHY IS IT TOO HARD TO JUST TURN THE HEAT ON AT THE RIGHT TIME??]]></description>
 					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1340/comment-page-1#comment-3733&quot;&gt;GregN&lt;/a&gt;.
 
 Whoops -- by vacation I meant &quot;vacation day.&quot; I believe our previous wifi thermostat had the concept of a holiday/vacation day, where you were home and outside of a normal routine, so maybe on a weekday, you wanted the heat to be set higher for example, without futzing over using &quot;hold&quot; or some other similar feature.]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/1340/comment-page-1#comment-3733">GregN</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/1340/comment-page-1#comment-3733">GregN</a>.</p>
 <p>Whoops &#8212; by vacation I meant &#8220;vacation day.&#8221; I believe our previous wifi thermostat had the concept of a holiday/vacation day, where you were home and outside of a normal routine, so maybe on a weekday, you wanted the heat to be set higher for example, without futzing over using &#8220;hold&#8221; or some other similar feature.</p>
 ]]></content:encoded>
 		
@@ -159,7 +159,7 @@ Thanks for your comments. It&#039;s interesting to hear that others aren&#039;t 
 However, I&#039;d be disappointed to turn off learning mode as that&#039;s one of the supposedly awesome features. :(
 
 I noticed yesterday that the &quot;learning mode&quot; was again confused by a few days of different routines. It really needs a &quot;vacation&quot; mode. That would solve the majority of the issues I&#039;m having with the learning and auto adjustments it is making. I noticed yesterday that one of the thermostats announced, &quot;Auto away worked and saved X.&quot; Huh? Apparently, the furnace had run during the day for some strange reason (as it had on Monday and Tuesday). So, it &quot;saved&quot; us by running the furnace for 3 hours apparently while we were away and then deciding we weren&#039;t there, and turning the temperature down.]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/1340/comment-page-1#comment-3731">GregN</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/1340/comment-page-1#comment-3731">GregN</a>.</p>
 <p>Thanks for your comments. It&#8217;s interesting to hear that others aren&#8217;t enamored by the learning features yet.</p>
 <p>However, I&#8217;d be disappointed to turn off learning mode as that&#8217;s one of the supposedly awesome features. :(</p>
 <p>I noticed yesterday that the &#8220;learning mode&#8221; was again confused by a few days of different routines. It really needs a &#8220;vacation&#8221; mode. That would solve the majority of the issues I&#8217;m having with the learning and auto adjustments it is making. I noticed yesterday that one of the thermostats announced, &#8220;Auto away worked and saved X.&#8221; Huh? Apparently, the furnace had run during the day for some strange reason (as it had on Monday and Tuesday). So, it &#8220;saved&#8221; us by running the furnace for 3 hours apparently while we were away and then deciding we weren&#8217;t there, and turning the temperature down.</p>

@@ -12,7 +12,7 @@
 
 <channel>
 	<title>Mongoose &#8211; WiredPrairie</title>
-	<atom:link href="/blog/index.php/archives/tag/mongoose/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/tag/mongoose/feed" rel="self" type="application/rss+xml" />
 	<link>/blog</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Wed, 29 Jun 2022 15:26:05 +0000</lastBuildDate>

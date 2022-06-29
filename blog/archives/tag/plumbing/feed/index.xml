@@ -12,7 +12,7 @@
 
 <channel>
 	<title>Plumbing &#8211; WiredPrairie</title>
-	<atom:link href="/blog/index.php/archives/tag/plumbing/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/tag/plumbing/feed" rel="self" type="application/rss+xml" />
 	<link>/blog</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Sat, 18 May 2013 19:57:42 +0000</lastBuildDate>

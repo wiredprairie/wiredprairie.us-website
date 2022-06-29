@@ -12,7 +12,7 @@
 
 <channel>
 	<title>LINQ &#8211; WiredPrairie</title>
-	<atom:link href="/blog/index.php/archives/tag/linq/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/tag/linq/feed" rel="self" type="application/rss+xml" />
 	<link>/blog</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Sat, 26 Jan 2013 20:39:01 +0000</lastBuildDate>
@@ -244,7 +244,7 @@ query.DebugWriteMongoQueryText();</pre>
 }
 .csharpcode .lnum { color: #606060; }</style>
 <p>I added two extension methods to IQueryable. As the return type for the query in my sample is actually an anonymous type, it wasn’t something I could easily type in the Immediate Window in Visual Studio for example. </p>
-<p><a href="/blog/wpcontent/uploads/2013/01/image1.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; border-left: 0px; display: block; padding-right: 0px; margin-right: auto" border="0" alt="&lt;&gt;f__AnonymousType2&lt;string,string,System.DateTime&gt;" src="/blog/wpcontent/uploads/2013/01/image_thumb1.png" width="514" height="95" /></a></p>
+<p><a href="blog/wpcontent/uploads/2013/01/image1.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; border-left: 0px; display: block; padding-right: 0px; margin-right: auto" border="0" alt="&lt;&gt;f__AnonymousType2&lt;string,string,System.DateTime&gt;" src="blog/wpcontent/uploads/2013/01/image_thumb1.png" width="514" height="95" /></a></p>
 <p>No thanks&#160; &lt;&gt;f__AnonymousType2&lt;string,string,System.DateTime&gt;.</p>
 <p>I added the <a href="http://msdn.microsoft.com/en-us/library/system.diagnostics.conditionalattribute(v=vs.110).aspx">Conditional</a> Attribute so that the code would only execute in a Debug build of my application.</p>
 <pre class="csharpcode">query.DebugWriteMongoQueryText();</pre>

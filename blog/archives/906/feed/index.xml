@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Valid Trust Anchor?	</title>
-	<atom:link href="/blog/index.php/archives/906/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/906/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/906</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Wed, 22 Dec 2010 12:14:49 +0000</lastBuildDate>
@@ -32,7 +32,7 @@
 					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/906/comment-page-1#comment-3300&quot;&gt;Doug Bentley&lt;/a&gt;.
 
 Nope.  Nothing. ]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/906/comment-page-1#comment-3300">Doug Bentley</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/906/comment-page-1#comment-3300">Doug Bentley</a>.</p>
 <p>Nope.  Nothing. </p>
 ]]></content:encoded>
 		
@@ -63,7 +63,7 @@ Nope.  Nothing. ]]></description>
 					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/906/comment-page-1#comment-3125&quot;&gt;Windows7User&lt;/a&gt;.
 
 @Windows7User == this wasn&#039;t the problem I was having (as I commented on SuperUser).]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/906/comment-page-1#comment-3125">Windows7User</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/906/comment-page-1#comment-3125">Windows7User</a>.</p>
 <p>@Windows7User == this wasn&#8217;t the problem I was having (as I commented on SuperUser).</p>
 ]]></content:encoded>
 		

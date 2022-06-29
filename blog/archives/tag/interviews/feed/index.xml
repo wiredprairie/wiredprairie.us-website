@@ -12,7 +12,7 @@
 
 <channel>
 	<title>Interviews &#8211; WiredPrairie</title>
-	<atom:link href="/blog/index.php/archives/tag/interviews/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/tag/interviews/feed" rel="self" type="application/rss+xml" />
 	<link>/blog</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Fri, 09 May 2008 01:51:46 +0000</lastBuildDate>
@@ -34,7 +34,7 @@
 		<guid isPermaLink="false">/blog/index.php/archives/216</guid>
 
 					<description><![CDATA[Interview Series Write code which determines if 2 arrays of Points (x, y), in a two-dimensional coordinate system, could likely represent a &#8220;pinching&#8221; motion made famous by the iPhone. Consider the Points to represent a series of touch-coordinates by a user. Bonus: Make it so that the code works for either as a pinch or [&#8230;]]]></description>
-										<content:encoded><![CDATA[<p><a href="/blog/index.php/archives/128">Interview Series</a></p>
+										<content:encoded><![CDATA[<p><a href="blog/index.php/archives/128">Interview Series</a></p>
 <p>Write code which determines if 2 arrays of Points (x, y), in a two-dimensional coordinate system, could likely represent a &#8220;pinching&#8221; motion made famous by the iPhone. Consider the Points to represent a series of touch-coordinates by a user.</p>
 <p><strong>Bonus: </strong>Make it so that the code works for either as a pinch or a pinch-to-expand.</p>
 ]]></content:encoded>

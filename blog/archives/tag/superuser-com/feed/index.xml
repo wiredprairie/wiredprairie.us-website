@@ -12,7 +12,7 @@
 
 <channel>
 	<title>superuser.com &#8211; WiredPrairie</title>
-	<atom:link href="/blog/index.php/archives/tag/superuser-com/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/tag/superuser-com/feed" rel="self" type="application/rss+xml" />
 	<link>/blog</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Tue, 03 Apr 2012 01:43:54 +0000</lastBuildDate>
@@ -39,7 +39,7 @@
 					<description><![CDATA[Or not really. I joined SuperUser.com last year to ask one question that was unresolved at work. It has been my first and only question. I find it funny that this yet unanswered question has given me a gold badge. I apparently am not the only person who needed help with this issue. Now, if [&#8230;]]]></description>
 										<content:encoded><![CDATA[<p>Or not really. </p>
 <p>I joined SuperUser.com last year to ask <a href="http://superuser.com/questions/116541/what-is-a-valid-trust-anchor-in-windows-7-relating-to-wifi">one question</a> that was unresolved at work. It has been my <strong>first and only</strong> question.</p>
-<p><a href="/blog/wpcontent/uploads/2012/04/image10.png"><img loading="lazy" style="background-image: none; border-right-width: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wpcontent/uploads/2012/04/image_thumb.png" width="502" height="275" /></a></p>
+<p><a href="blog/wpcontent/uploads/2012/04/image10.png"><img loading="lazy" style="background-image: none; border-right-width: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="image" border="0" alt="image" src="blog/wpcontent/uploads/2012/04/image_thumb.png" width="502" height="275" /></a></p>
 <p>I find it funny that this yet unanswered question has given me a gold badge. I apparently am not the only person who needed help with this issue. </p>
 <p><a href="http://www.xkcd.com/979/"><img style="display: block; float: none; margin-left: auto; margin-right: auto" alt="Wisdom of the Ancients" src="http://imgs.xkcd.com/comics/wisdom_of_the_ancients.png" /></a></p>
 <p>Now, if only these badges could be turned into some real coin, or prizes like in an arcade ….</p>

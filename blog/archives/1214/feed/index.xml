@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Setup for the Asante VoyagerIP Cameras: Wireless Woes	</title>
-	<atom:link href="/blog/index.php/archives/1214/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/1214/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/1214</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Wed, 21 Mar 2012 19:48:31 +0000</lastBuildDate>
@@ -32,7 +32,7 @@
 					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1214/comment-page-1#comment-4297&quot;&gt;lukebudi&lt;/a&gt;.
 
 I&#039;ve not found one.]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/1214/comment-page-1#comment-4297">lukebudi</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/1214/comment-page-1#comment-4297">lukebudi</a>.</p>
 <p>I&#8217;ve not found one.</p>
 ]]></content:encoded>
 		

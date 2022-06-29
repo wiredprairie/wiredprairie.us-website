@@ -12,7 +12,7 @@
 
 <channel>
 	<title>Windows 8 &#8211; WiredPrairie</title>
-	<atom:link href="/blog/index.php/archives/tag/windows-8/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/tag/windows-8/feed" rel="self" type="application/rss+xml" />
 	<link>/blog</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Sun, 01 Sep 2013 20:09:35 +0000</lastBuildDate>
@@ -42,9 +42,9 @@
 <p>What seemed like it should have been a common example on MSDN was not …, and after a bit of searching and reading, I believe the above code represents at least a common and safe way of loading data. </div>
 </div>
 <p>I’ve got a file called <strong>data.json</strong> stored in an <strong>Assets</strong> folder:</p>
-<p><a href="/blog/wpcontent/uploads/2013/09/image.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wpcontent/uploads/2013/09/image_thumb.png" width="272" height="237" /></a></p>
+<p><a href="blog/wpcontent/uploads/2013/09/image.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="blog/wpcontent/uploads/2013/09/image_thumb.png" width="272" height="237" /></a></p>
 <p>And the file’s <strong>Build Action</strong> is set to <strong>Content:</strong></p>
-<p><a href="/blog/wpcontent/uploads/2013/09/image1.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wpcontent/uploads/2013/09/image_thumb1.png" width="546" height="212" /></a></p>
+<p><a href="blog/wpcontent/uploads/2013/09/image1.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="blog/wpcontent/uploads/2013/09/image_thumb1.png" width="546" height="212" /></a></p>
 <p>Change the value passed to the <strong>Uri</strong> constructor and … the file will be loaded successfully. Once loaded, I used the strongly typed generic <strong>DeserializeObject</strong> method to convert the Json data to a class called <strong>DemoData</strong>.</p>
 ]]></content:encoded>
 					
@@ -67,9 +67,9 @@
 					<description><![CDATA[Assuming you’re trying to use Jekyll on Windows, you may encounter an error similar to this: Liquid Exception: incompatible character encodings: IBM437 and UTF-8 in css.html My solution was to temporarily change the code page to UTF-8: chcp 65001 This temporarily changes the code page of the current Command window to UTF-8.]]></description>
 										<content:encoded><![CDATA[<p>Assuming you’re trying to use <a href="https://github.com/mojombo/jekyll">Jekyll</a> on Windows, you may encounter an error similar to this:</p>
 <p>Liquid Exception: incompatible character encodings: IBM437 and UTF-8 in css.html</p>
-<p><a href="/blog/wpcontent/uploads/2013/03/image6.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wpcontent/uploads/2013/03/image_thumb6.png" width="684" height="137" /></a></p>
+<p><a href="blog/wpcontent/uploads/2013/03/image6.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="blog/wpcontent/uploads/2013/03/image_thumb6.png" width="684" height="137" /></a></p>
 <p>My solution was to temporarily change the code page to UTF-8:</p>
-<p><a href="/blog/wpcontent/uploads/2013/03/image7.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wpcontent/uploads/2013/03/image_thumb7.png" width="510" height="27" /></a></p>
+<p><a href="blog/wpcontent/uploads/2013/03/image7.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="blog/wpcontent/uploads/2013/03/image_thumb7.png" width="510" height="27" /></a></p>
 <p><strong>chcp 65001</strong></p>
 <p>This temporarily changes the code page of the current Command window to UTF-8. </p>
 ]]></content:encoded>
@@ -93,7 +93,7 @@
 
 					<description><![CDATA[If you’re seeing a credentials prompt every time you launch a local IIS or IIS Express web application that requires Windows Authentication, you’ll likely grow as tired of typing in your password as I was. To add to the annoyance, the Remember my credentials checkbox doesn’t work (nothing is saved). The setup: Windows 8 Visual [&#8230;]]]></description>
 										<content:encoded><![CDATA[<p>If you’re seeing a credentials prompt every time you launch a local IIS or IIS Express web application that requires Windows Authentication, you’ll likely grow as tired of typing in your password as I was. To add to the annoyance, the <strong>Remember my credentials</strong> checkbox doesn’t work (nothing is saved).</p>
-<p><a href="/blog/wpcontent/uploads/2013/03/image.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wpcontent/uploads/2013/03/image_thumb.png" width="443" height="351" /></a></p>
+<p><a href="blog/wpcontent/uploads/2013/03/image.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="blog/wpcontent/uploads/2013/03/image_thumb.png" width="443" height="351" /></a></p>
 <p>The setup:</p>
 <ul>
 <li>Windows 8</li>
@@ -151,11 +151,11 @@
 <li>Close.</li>
 <li>Verify it’s now working.</li>
 </ol>
-<p><a href="/blog/wpcontent/uploads/2013/03/image1.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wpcontent/uploads/2013/03/image_thumb1.png" width="256" height="290" /></a></p>
-<p><a href="/blog/wpcontent/uploads/2013/03/image2.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wpcontent/uploads/2013/03/image_thumb2.png" width="425" height="544" /></a></p>
-<p><a href="/blog/wpcontent/uploads/2013/03/image3.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wpcontent/uploads/2013/03/image_thumb3.png" width="416" height="236" /></a></p>
-<p><a href="/blog/wpcontent/uploads/2013/03/image4.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wpcontent/uploads/2013/03/image_thumb4.png" width="396" height="351" /></a></p>
-<p><a href="/blog/wpcontent/uploads/2013/03/image5.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wpcontent/uploads/2013/03/image_thumb5.png" width="396" height="351" /></a></p>
+<p><a href="blog/wpcontent/uploads/2013/03/image1.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="blog/wpcontent/uploads/2013/03/image_thumb1.png" width="256" height="290" /></a></p>
+<p><a href="blog/wpcontent/uploads/2013/03/image2.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="blog/wpcontent/uploads/2013/03/image_thumb2.png" width="425" height="544" /></a></p>
+<p><a href="blog/wpcontent/uploads/2013/03/image3.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="blog/wpcontent/uploads/2013/03/image_thumb3.png" width="416" height="236" /></a></p>
+<p><a href="blog/wpcontent/uploads/2013/03/image4.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="blog/wpcontent/uploads/2013/03/image_thumb4.png" width="396" height="351" /></a></p>
+<p><a href="blog/wpcontent/uploads/2013/03/image5.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="blog/wpcontent/uploads/2013/03/image_thumb5.png" width="396" height="351" /></a></p>
 <p>Done.</p>
 <p>Alternatives welcomed. :)</p>
 ]]></content:encoded>
@@ -263,7 +263,7 @@
     }            
 }</span></pre>
 <p>You’ll get results like this:</p>
-<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wpcontent/uploads/2012/09/image.png" width="497" height="582" /></p>
+<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="blog/wpcontent/uploads/2012/09/image.png" width="497" height="582" /></p>
 ]]></content:encoded>
 					
 					<wfw:commentRss>/blog/index.php/archives/1730/feed</wfw:commentRss>

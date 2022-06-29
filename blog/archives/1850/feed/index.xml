@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Windows 8 IIS Express with Windows Authentication Prompts for Credentials	</title>
-	<atom:link href="/blog/index.php/archives/1850/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/1850/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/1850</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Fri, 06 Sep 2013 16:04:21 +0000</lastBuildDate>

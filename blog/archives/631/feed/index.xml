@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Netflix lays off people because Silverlight works&#8230;	</title>
-	<atom:link href="/blog/index.php/archives/631/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/631/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/631</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Mon, 22 Dec 2008 23:32:29 +0000</lastBuildDate>

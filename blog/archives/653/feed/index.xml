@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Commodore 64 Emulator, Written in ActionScript 3 (Flash)	</title>
-	<atom:link href="/blog/index.php/archives/653/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/653/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/653</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Sun, 11 Jan 2009 21:53:20 +0000</lastBuildDate>

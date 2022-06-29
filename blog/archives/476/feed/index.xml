@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Why is VMware Workstation 6.5RC1 a 544MB download?	</title>
-	<atom:link href="/blog/index.php/archives/476/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/476/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/476</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Mon, 13 Oct 2008 03:28:10 +0000</lastBuildDate>

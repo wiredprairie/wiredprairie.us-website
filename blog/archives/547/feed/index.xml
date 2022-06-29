@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Oslo &#8212; what?	</title>
-	<atom:link href="/blog/index.php/archives/547/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/547/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/547</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Wed, 24 Sep 2008 14:02:49 +0000</lastBuildDate>

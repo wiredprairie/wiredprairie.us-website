@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Nest Thermostat Review, Update #10: Wifi Settings Missing	</title>
-	<atom:link href="/blog/index.php/archives/1576/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/1576/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/1576</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Fri, 14 Dec 2012 13:41:03 +0000</lastBuildDate>
@@ -32,7 +32,7 @@
 					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1576/comment-page-1#comment-20287&quot;&gt;Tannhauer Gate&lt;/a&gt;.
 
 Tannhauer -- I wouldn&#039;t have bought a Nest if I hadn&#039;t had the C wire for power. While I consider their solution to power novel, I wouldn&#039;t recommend a Nest thermostat for an HVAC system without a compatible and reasonable power supply.]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/1576/comment-page-1#comment-20287">Tannhauer Gate</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/1576/comment-page-1#comment-20287">Tannhauer Gate</a>.</p>
 <p>Tannhauer &#8212; I wouldn&#8217;t have bought a Nest if I hadn&#8217;t had the C wire for power. While I consider their solution to power novel, I wouldn&#8217;t recommend a Nest thermostat for an HVAC system without a compatible and reasonable power supply.</p>
 ]]></content:encoded>
 		

@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: carcassonne	</title>
-	<atom:link href="/blog/index.php/archives/2124/carcassonne/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/2124/carcassonne/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/2124/carcassonne</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Sat, 26 Nov 2016 20:58:08 +0000</lastBuildDate>

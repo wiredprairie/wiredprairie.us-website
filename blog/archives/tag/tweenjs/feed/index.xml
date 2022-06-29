@@ -12,7 +12,7 @@
 
 <channel>
 	<title>TweenJS &#8211; WiredPrairie</title>
-	<atom:link href="/blog/index.php/archives/tag/tweenjs/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/tag/tweenjs/feed" rel="self" type="application/rss+xml" />
 	<link>/blog</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Sun, 13 May 2012 16:59:55 +0000</lastBuildDate>
@@ -37,7 +37,7 @@
 					<description><![CDATA[Inspired by some modern applications (especially the “Metro” look and feel), I wanted to put together an animated tile reflow script for an HTML page I was creating. As the size of the page changes, the tiles move into their new positions. You can try it here, if you’re using a modern browser (IE9+, Chrome, [&#8230;]]]></description>
 										<content:encoded><![CDATA[<p>Inspired by some modern applications (especially the “Metro” look and feel), I wanted to put together an animated tile reflow script for an HTML page I was creating. </p>
 <p>As the size of the page changes, the tiles move into their new positions.</p>
-<p><a href="http://www.wiredprairie.us/examples/easeljs/reflow1/" target="_blank"><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="SNAGHTML113b633f[4]" border="0" alt="SNAGHTML113b633f[4]" src="/blog/wpcontent/uploads/2012/05/SNAGHTML113b633f4.png" width="502" height="408" /></a></p>
+<p><a href="http://www.wiredprairie.us/examples/easeljs/reflow1/" target="_blank"><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="SNAGHTML113b633f[4]" border="0" alt="SNAGHTML113b633f[4]" src="blog/wpcontent/uploads/2012/05/SNAGHTML113b633f4.png" width="502" height="408" /></a></p>
 <p>You can try it <a href="http://www.wiredprairie.us/examples/easeljs/reflow1/" target="_blank">here</a>, if you’re using a modern browser (IE9+, Chrome, FF, Safari, etc.).</p>
 <p>Dependencies:</p>
 <ol>

@@ -12,7 +12,7 @@
 
 <channel>
 	<title>MVC &#8211; WiredPrairie</title>
-	<atom:link href="/blog/index.php/archives/tag/mvc/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/tag/mvc/feed" rel="self" type="application/rss+xml" />
 	<link>/blog</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Sat, 02 Mar 2013 16:50:53 +0000</lastBuildDate>
@@ -38,7 +38,7 @@
 
 					<description><![CDATA[If you’re seeing a credentials prompt every time you launch a local IIS or IIS Express web application that requires Windows Authentication, you’ll likely grow as tired of typing in your password as I was. To add to the annoyance, the Remember my credentials checkbox doesn’t work (nothing is saved). The setup: Windows 8 Visual [&#8230;]]]></description>
 										<content:encoded><![CDATA[<p>If you’re seeing a credentials prompt every time you launch a local IIS or IIS Express web application that requires Windows Authentication, you’ll likely grow as tired of typing in your password as I was. To add to the annoyance, the <strong>Remember my credentials</strong> checkbox doesn’t work (nothing is saved).</p>
-<p><a href="/blog/wpcontent/uploads/2013/03/image.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wpcontent/uploads/2013/03/image_thumb.png" width="443" height="351" /></a></p>
+<p><a href="blog/wpcontent/uploads/2013/03/image.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="blog/wpcontent/uploads/2013/03/image_thumb.png" width="443" height="351" /></a></p>
 <p>The setup:</p>
 <ul>
 <li>Windows 8</li>
@@ -96,11 +96,11 @@
 <li>Close.</li>
 <li>Verify it’s now working.</li>
 </ol>
-<p><a href="/blog/wpcontent/uploads/2013/03/image1.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wpcontent/uploads/2013/03/image_thumb1.png" width="256" height="290" /></a></p>
-<p><a href="/blog/wpcontent/uploads/2013/03/image2.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wpcontent/uploads/2013/03/image_thumb2.png" width="425" height="544" /></a></p>
-<p><a href="/blog/wpcontent/uploads/2013/03/image3.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wpcontent/uploads/2013/03/image_thumb3.png" width="416" height="236" /></a></p>
-<p><a href="/blog/wpcontent/uploads/2013/03/image4.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wpcontent/uploads/2013/03/image_thumb4.png" width="396" height="351" /></a></p>
-<p><a href="/blog/wpcontent/uploads/2013/03/image5.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wpcontent/uploads/2013/03/image_thumb5.png" width="396" height="351" /></a></p>
+<p><a href="blog/wpcontent/uploads/2013/03/image1.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="blog/wpcontent/uploads/2013/03/image_thumb1.png" width="256" height="290" /></a></p>
+<p><a href="blog/wpcontent/uploads/2013/03/image2.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="blog/wpcontent/uploads/2013/03/image_thumb2.png" width="425" height="544" /></a></p>
+<p><a href="blog/wpcontent/uploads/2013/03/image3.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="blog/wpcontent/uploads/2013/03/image_thumb3.png" width="416" height="236" /></a></p>
+<p><a href="blog/wpcontent/uploads/2013/03/image4.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="blog/wpcontent/uploads/2013/03/image_thumb4.png" width="396" height="351" /></a></p>
+<p><a href="blog/wpcontent/uploads/2013/03/image5.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="blog/wpcontent/uploads/2013/03/image_thumb5.png" width="396" height="351" /></a></p>
 <p>Done.</p>
 <p>Alternatives welcomed. :)</p>
 ]]></content:encoded>
@@ -125,7 +125,7 @@
 		<guid isPermaLink="false">/blog/?p=1820</guid>
 
 					<description><![CDATA[Part one. After the first round, I felt compelled to KnockOut the code a bit more. I’d mentioned I wasn’t pleased with the code exactly. It needed some refactoring. So, I’ve created a new Knockout binding handler. This binding handler replaces&#160; named parameters with a model’s properties in a path. For example, given this object: [&#8230;]]]></description>
-										<content:encoded><![CDATA[<p><a href="/blog/index.php/archives/1800">Part one.</a></p>
+										<content:encoded><![CDATA[<p><a href="blog/index.php/archives/1800">Part one.</a></p>
 <p>After the first round, I felt compelled to KnockOut the code a bit more. I’d mentioned I wasn’t pleased with the code exactly. It needed some refactoring.</p>
 <p>So, I’ve created a new Knockout binding handler. This binding handler replaces&#160; named parameters with a model’s properties in a path. </p>
 <p>For example, given this object:</p>
@@ -396,7 +396,7 @@ ko.bindingHandlers.route.options.fixUrl = app_url;</pre>
 	margin: 0em;
 }
 .csharpcode .lnum { color: #606060; }</style>
-<p>You’ll probably like the new way better syntactically at least compared to the <a href="/blog/index.php/archives/1800">old</a> way. A route binding requires one input when used in it’s most basic form:</p>
+<p>You’ll probably like the new way better syntactically at least compared to the <a href="blog/index.php/archives/1800">old</a> way. A route binding requires one input when used in it’s most basic form:</p>
 <ul>
 <li><strong>url = </strong>the URL or route name to use as the template for the replacement. It should contain (or later resolve to) curly-braced enclosed property name keys which will be substituted by values from the model. The value of the property could be either a route name (see options below) or a path.</li>
 </ul>
@@ -414,7 +414,7 @@ ko.bindingHandlers.route.options.fixUrl = app_url;</pre>
 <li><strong>map</strong> = {object} the object properties should be route names and set equal to the path. this optional lookup is performed before the routeNameToUrl function is called. </li>
 <li><strong>fixUrl</strong> = (function)(url) do anything here. this is called after the mapping and routeNameToUrl is optionally called. I use this to correct javascript Ajax request paths by appending the application virtual directory</li>
 </ul>
-<p>(Thanks to <a href="http://www.knockmeout.net/">Ryan</a> for the suggestion to use the $data on the bindingContext, and then again for the nudge to just use the 4th parameter. <img class="wlEmoticon wlEmoticon-smile" style="border-top-style: none; border-left-style: none; border-bottom-style: none; border-right-style: none" alt="Smile" src="/blog/wpcontent/uploads/2013/01/wlEmoticon-smile.png" /> )</p>
+<p>(Thanks to <a href="http://www.knockmeout.net/">Ryan</a> for the suggestion to use the $data on the bindingContext, and then again for the nudge to just use the 4th parameter. <img class="wlEmoticon wlEmoticon-smile" style="border-top-style: none; border-left-style: none; border-bottom-style: none; border-right-style: none" alt="Smile" src="blog/wpcontent/uploads/2013/01/wlEmoticon-smile.png" /> )</p>
 ]]></content:encoded>
 					
 					<wfw:commentRss>/blog/index.php/archives/1820/feed</wfw:commentRss>
@@ -583,7 +583,7 @@ ko.bindingHandlers.route.options.fixUrl = app_url;</pre>
 <p>&#160;</p>
 <h3>Bonus</h3>
 <p>And, as a bonus, you did notice that if you’re using IE9, that the developer tools now have a network trace? Cool. (I’ll still use fiddler for many things, but this will be very handy on machines that don’t have fiddler installed).</p>
-<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: ; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="SNAGHTML51b4c85a" border="0" alt="SNAGHTML51b4c85a" src="/blog/wpcontent/uploads/2011/02/SNAGHTML51b4c85a.png" width="450" height="356" /></p>
+<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: ; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="SNAGHTML51b4c85a" border="0" alt="SNAGHTML51b4c85a" src="blog/wpcontent/uploads/2011/02/SNAGHTML51b4c85a.png" width="450" height="356" /></p>
 ]]></content:encoded>
 					
 		

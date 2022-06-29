@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Coding Challenge #13	</title>
-	<atom:link href="/blog/index.php/archives/400/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/400/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/400</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Thu, 24 Jul 2008 00:18:54 +0000</lastBuildDate>

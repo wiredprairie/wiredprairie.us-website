@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Blue Iris 3 and Samsung SmartCam SNH-1011N	</title>
-	<atom:link href="/blog/index.php/archives/1963/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/1963/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/1963</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Mon, 26 May 2014 14:13:56 +0000</lastBuildDate>
@@ -32,7 +32,7 @@
 					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1963/comment-page-1#comment-43112&quot;&gt;Allison Rose&lt;/a&gt;.
 
 OK? &quot;Every camera model?&quot; I&#039;m extremely skeptical.]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/1963/comment-page-1#comment-43112">Allison Rose</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/1963/comment-page-1#comment-43112">Allison Rose</a>.</p>
 <p>OK? &#8220;Every camera model?&#8221; I&#8217;m extremely skeptical.</p>
 ]]></content:encoded>
 		
@@ -63,7 +63,7 @@ OK? &quot;Every camera model?&quot; I&#039;m extremely skeptical.]]></descriptio
 					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1963/comment-page-1#comment-42047&quot;&gt;Jon&lt;/a&gt;.
 
 Excellent question -- I thought I&#039;d mentioned it ... I looked at the network traffic using a tool called Wireshark. That may have been unnecessarily complex, but I knew how to use it. :)]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/1963/comment-page-1#comment-42047">Jon</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/1963/comment-page-1#comment-42047">Jon</a>.</p>
 <p>Excellent question &#8212; I thought I&#8217;d mentioned it &#8230; I looked at the network traffic using a tool called Wireshark. That may have been unnecessarily complex, but I knew how to use it. :)</p>
 ]]></content:encoded>
 		
@@ -94,7 +94,7 @@ Excellent question -- I thought I&#039;d mentioned it ... I looked at the networ
 					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1963/comment-page-1#comment-42041&quot;&gt;Jon&lt;/a&gt;.
 
 Odd, I don&#039;t have an unreasonable delay in the first place in my setup. However, thanks for the tip as it might help someone else! :)]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/1963/comment-page-1#comment-42041">Jon</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/1963/comment-page-1#comment-42041">Jon</a>.</p>
 <p>Odd, I don&#8217;t have an unreasonable delay in the first place in my setup. However, thanks for the tip as it might help someone else! :)</p>
 ]]></content:encoded>
 		

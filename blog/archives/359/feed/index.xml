@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Why Opera 9.5 still isn&#8217;t my default browser	</title>
-	<atom:link href="/blog/index.php/archives/359/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/359/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/359</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Fri, 13 Jun 2008 15:09:55 +0000</lastBuildDate>

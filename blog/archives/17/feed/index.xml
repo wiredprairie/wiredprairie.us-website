@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Remote Desktop &#8212; Does not exist?	</title>
-	<atom:link href="/blog/index.php/archives/17/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/17/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/17</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Sat, 05 Apr 2008 19:35:44 +0000</lastBuildDate>

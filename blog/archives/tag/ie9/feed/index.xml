@@ -12,7 +12,7 @@
 
 <channel>
 	<title>IE9 &#8211; WiredPrairie</title>
-	<atom:link href="/blog/index.php/archives/tag/ie9/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/tag/ie9/feed" rel="self" type="application/rss+xml" />
 	<link>/blog</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Thu, 16 Sep 2010 12:51:39 +0000</lastBuildDate>
@@ -39,9 +39,9 @@
 <p>So, I pinned Twitter. </p>
 <p>I had read about it, and watched it demo – and still couldn’t figure out how to do it without hitting the web site above (as the drag to tab method doesn’t look like it will work until you try it – and the screen shots on the web don’t match what I was experiencing).</p>
 <p>What I heard was that pinning would make the web application front and center. </p>
-<p><img loading="lazy" style="background-image: none; border-right-width: 0px; margin: ; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="SNAGHTML1f2ecd" border="0" alt="SNAGHTML1f2ecd" src="/blog/wpcontent/uploads/2010/09/SNAGHTML1f2ecd.png" width="450" height="65"/></p>
+<p><img loading="lazy" style="background-image: none; border-right-width: 0px; margin: ; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="SNAGHTML1f2ecd" border="0" alt="SNAGHTML1f2ecd" src="blog/wpcontent/uploads/2010/09/SNAGHTML1f2ecd.png" width="450" height="65"/></p>
 <p>There’s still too much browser though when launching the web site through the pinned icon.</p>
-<p><img loading="lazy" style="background-image: none; border-right-width: 0px; margin: ; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wpcontent/uploads/2010/09/image4.png" width="62" height="30"/></p>
+<p><img loading="lazy" style="background-image: none; border-right-width: 0px; margin: ; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="image" border="0" alt="image" src="blog/wpcontent/uploads/2010/09/image4.png" width="62" height="30"/></p>
 <p>It’s trying to remain a browser window, but also play an “application.” What about providing an option in the meta msapplication-task for being able to control the browser “chrome?” Hide tabs, hide address bar, etc? (Just hide them, don’t make them unavailable). </p>
 <pre class="code"><span style="color: blue">&lt;</span><span style="color: #a31515">meta </span><span style="color: red">name</span><span style="color: blue">="msapplication-task" </span><span style="color: red">content</span><span style="color: blue">="name=New Tweet; action-uri=http://twitter.com/home; icon-uri=images/ie/tweet.ico" /&gt;
   &lt;</span><span style="color: #a31515">meta </span><span style="color: red">name</span><span style="color: blue">="msapplication-task" </span><span style="color: red">content</span><span style="color: blue">="name=Direct Messages; action-uri=http://twitter.com/inbox; icon-uri=images/ie/dm.ico" /&gt;

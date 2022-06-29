@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Return of syntax highlighting and code completion for KnockoutJS in VS2010 (when using Razor)	</title>
-	<atom:link href="/blog/index.php/archives/1204/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/1204/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/1204</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Thu, 28 Jul 2011 14:22:34 +0000</lastBuildDate>

@@ -12,7 +12,7 @@
 
 <channel>
 	<title>Jekyll &#8211; WiredPrairie</title>
-	<atom:link href="/blog/index.php/archives/tag/jekyll/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/tag/jekyll/feed" rel="self" type="application/rss+xml" />
 	<link>/blog</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Sat, 02 Mar 2013 22:48:03 +0000</lastBuildDate>
@@ -38,9 +38,9 @@
 					<description><![CDATA[Assuming you’re trying to use Jekyll on Windows, you may encounter an error similar to this: Liquid Exception: incompatible character encodings: IBM437 and UTF-8 in css.html My solution was to temporarily change the code page to UTF-8: chcp 65001 This temporarily changes the code page of the current Command window to UTF-8.]]></description>
 										<content:encoded><![CDATA[<p>Assuming you’re trying to use <a href="https://github.com/mojombo/jekyll">Jekyll</a> on Windows, you may encounter an error similar to this:</p>
 <p>Liquid Exception: incompatible character encodings: IBM437 and UTF-8 in css.html</p>
-<p><a href="/blog/wpcontent/uploads/2013/03/image6.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wpcontent/uploads/2013/03/image_thumb6.png" width="684" height="137" /></a></p>
+<p><a href="blog/wpcontent/uploads/2013/03/image6.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="blog/wpcontent/uploads/2013/03/image_thumb6.png" width="684" height="137" /></a></p>
 <p>My solution was to temporarily change the code page to UTF-8:</p>
-<p><a href="/blog/wpcontent/uploads/2013/03/image7.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wpcontent/uploads/2013/03/image_thumb7.png" width="510" height="27" /></a></p>
+<p><a href="blog/wpcontent/uploads/2013/03/image7.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="blog/wpcontent/uploads/2013/03/image_thumb7.png" width="510" height="27" /></a></p>
 <p><strong>chcp 65001</strong></p>
 <p>This temporarily changes the code page of the current Command window to UTF-8. </p>
 ]]></content:encoded>

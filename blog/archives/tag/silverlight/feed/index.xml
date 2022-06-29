@@ -12,7 +12,7 @@
 
 <channel>
 	<title>Silverlight &#8211; WiredPrairie</title>
-	<atom:link href="/blog/index.php/archives/tag/silverlight/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/tag/silverlight/feed" rel="self" type="application/rss+xml" />
 	<link>/blog</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Sat, 24 Apr 2010 16:46:00 +0000</lastBuildDate>
@@ -207,7 +207,7 @@
 <p>Above, you’ll see the panel declaration, the width and height of the tile, and the brush that is used as the tiled image.</p>
 <p>The TilePanel handles all of the details. </p>
 <p>I created a small demo program to show off the tile support.</p>
-<p><a target="_blank" href="http://www.wiredprairie.us/examples/silverlight/LEDDemo/default.html"><img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" src="/blog/wpcontent/uploads/2008/12/image1.png" width="317" height="316" /></a> </p>
+<p><a target="_blank" href="http://www.wiredprairie.us/examples/silverlight/LEDDemo/default.html"><img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" src="blog/wpcontent/uploads/2008/12/image1.png" width="317" height="316" /></a> </p>
 <p>We have an exercise bicycle with an LED style display that inspired the simple demo program. It displays statistics and messages through the use of the bicycle. The demo allows you to change the text and the shape of the LED. Additionally, it shows how the tiles can be semi-transparent (the images used are 24-bit PNGs), allowing the content underneath to show through. In this case, it’s a large TextBlock which is animated within a clipped Canvas.</p>
 <pre class="code"><span style="color: #2b91af">DispatcherTimer </span>tmr = <span style="color: blue">new </span><span style="color: #2b91af">DispatcherTimer</span>();
 tmr.Interval = <span style="color: #2b91af">TimeSpan</span>.FromMilliseconds(250);
@@ -343,7 +343,7 @@ tmr.Start();</pre>
 
 					<description><![CDATA[Demonstration available here. (You&#8217;ll need to wait for a moment while it loads the first time). I&#8217;ve created a reasonably simple, yet multi-technology (and discipline) demonstration using Silverlight for the user interface and ASP.NET as the back-end. The demonstration uses: Silverlight 2.0 Data binding Delayed downloading of images &#8220;Web services&#8221; ASP.NET LINQ Extension Methods Value [&#8230;]]]></description>
 										<content:encoded><![CDATA[<p>Demonstration available <a href="http://www.wiredprairie.us/examples/weather/default.aspx">here</a>. (You&#8217;ll need to wait for a moment while it loads the first time).</p>
-<p><a href="http://www.wiredprairie.us/examples/weather/default.aspx"><img loading="lazy" style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="318" alt="Stale Weather data for Madison Wisconsin as this isn't live ..." src="/blog/wpcontent/uploads/2008/06/image21.png" width="320" border="0"/></a> </p>
+<p><a href="http://www.wiredprairie.us/examples/weather/default.aspx"><img loading="lazy" style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="318" alt="Stale Weather data for Madison Wisconsin as this isn't live ..." src="blog/wpcontent/uploads/2008/06/image21.png" width="320" border="0"/></a> </p>
 <p>I&#8217;ve created a reasonably simple, yet multi-technology (and discipline) demonstration using Silverlight for the user interface and ASP.NET as the back-end. The demonstration uses:</p>
 <ul>
 <li>Silverlight 2.0  </li>
@@ -566,7 +566,7 @@ bi.UriSource = <span style="color: blue">new </span><span style="color: #2b91af"
 <p>The images are stored on the web server rather than being embedded directly into the XAP file. Note that for this to work, the images must be stored in the ClientBin/Images folder, &#8230; <strong>not</strong> the /Images folder of the web server (as the path is relative to the location of the Silverlight download, not to the web application).</p>
 <p>One issue that I ran into that had me puzzled for a while. AG_E_NETWORK_ERROR. This error occurred when trying to directly download the images Google uses for weather icons. That error had me baffled, until I realized that Silverlight cannot download images from other domains, unless they have the cross domain XML files properly configured for remote access. Google, sadly, does not have them, so I created my own images using Expression Design. The original file can be found in the download if you&#8217;re interested (as a series of layers). </p>
 <p>Download source code for entire project (including graphics) <a href="http://www.wiredprairie.us/examples/weather/WeatherForYou.zip">here</a>. </p>
-<p><a href="/blog/wpcontent/uploads/2008/06/image22.png"><img loading="lazy" style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="203" alt="image" src="/blog/wpcontent/uploads/2008/06/image-thumb18.png" width="208" border="0"/></a> <a href="/blog/wpcontent/uploads/2008/06/image23.png"><img loading="lazy" style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="203" alt="image" src="/blog/wpcontent/uploads/2008/06/image-thumb19.png" width="208" border="0"/></a>&nbsp;<a href="/blog/wpcontent/uploads/2008/06/image24.png"><img loading="lazy" style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="203" alt="image" src="/blog/wpcontent/uploads/2008/06/image-thumb20.png" width="209" border="0"/></a> </p>
+<p><a href="blog/wpcontent/uploads/2008/06/image22.png"><img loading="lazy" style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="203" alt="image" src="blog/wpcontent/uploads/2008/06/image-thumb18.png" width="208" border="0"/></a> <a href="blog/wpcontent/uploads/2008/06/image23.png"><img loading="lazy" style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="203" alt="image" src="blog/wpcontent/uploads/2008/06/image-thumb19.png" width="208" border="0"/></a>&nbsp;<a href="blog/wpcontent/uploads/2008/06/image24.png"><img loading="lazy" style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="203" alt="image" src="blog/wpcontent/uploads/2008/06/image-thumb20.png" width="209" border="0"/></a> </p>
 <p>Enjoy!</p>
 ]]></content:encoded>
 					
@@ -588,7 +588,7 @@ bi.UriSource = <span style="color: blue">new </span><span style="color: #2b91af"
 					<description><![CDATA[Try it here. See a picture below: :) I ran into one odd issue when using Silverlight 2.0 Beta 2&#8230;. &#160; void Page_Loaded(object sender, RoutedEventArgs e) { // if you don't invoke this asynchronously, you can't add at load time // (seems to be a silverlight 2.0 issue) Dispatcher.BeginInvoke(delegate() { consoleCanvas.AnimateNewChild( string.Format("Welcome!\nThe time right now [&#8230;]]]></description>
 										<content:encoded><![CDATA[<p>Try it <a href="http://www.wiredprairie.us/examples/ohconsole/default.html" target="_blank">here</a>.</p>
 <p>See a picture below: :)</p>
-<p><a href="http://www.wiredprairie.us/examples/ohconsole/default.html"><img loading="lazy" style="border-right: 0px; border-top: 0px; border-left: 0px; border-bottom: 0px" height="358" alt="image" src="/blog/wpcontent/uploads/2008/06/image20.png" width="470" border="0"/></a> </p>
+<p><a href="http://www.wiredprairie.us/examples/ohconsole/default.html"><img loading="lazy" style="border-right: 0px; border-top: 0px; border-left: 0px; border-bottom: 0px" height="358" alt="image" src="blog/wpcontent/uploads/2008/06/image20.png" width="470" border="0"/></a> </p>
 <p>I ran into one odd issue when using Silverlight 2.0 Beta 2&#8230;.</p>
 <p>&nbsp;</p>
 <pre class="code"><span style="color: blue">void </span>Page_Loaded(<span style="color: blue">object </span>sender, <span style="color: #2b91af">RoutedEventArgs </span>e)

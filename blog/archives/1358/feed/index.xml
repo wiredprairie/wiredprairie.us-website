@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Nest Thermostat Review, Update #2	</title>
-	<atom:link href="/blog/index.php/archives/1358/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/1358/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/1358</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Thu, 05 Jan 2012 16:07:18 +0000</lastBuildDate>
@@ -32,7 +32,7 @@
 					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1358/comment-page-1#comment-3812&quot;&gt;Joel&lt;/a&gt;.
 
 @Joel -- I&#039;d hold off. While they claim it can adapt you unusual schedules, at this point, I&#039;m highly skeptical. It can&#039;t even keep simple schedules correctly. At best, you could probably turn off the learning mode and rely (if it worked in your thermostat location) on auto-away to help save you some money (in theory).]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/1358/comment-page-1#comment-3812">Joel</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/1358/comment-page-1#comment-3812">Joel</a>.</p>
 <p>@Joel &#8212; I&#8217;d hold off. While they claim it can adapt you unusual schedules, at this point, I&#8217;m highly skeptical. It can&#8217;t even keep simple schedules correctly. At best, you could probably turn off the learning mode and rely (if it worked in your thermostat location) on auto-away to help save you some money (in theory).</p>
 ]]></content:encoded>
 		
@@ -112,7 +112,7 @@ I like your idea of informing me somehow that it&#039;s made some adjustments to
 If Nest hadn&#039;t described the learning phase in such magical terms, my expectations would probably be more reasonable. &quot;Nest even notices when you get home late on Tuesdays after bowling&quot; or something like that one of their videos suggests. 
 
 Thanks for the cool suggestion. I hope they&#039;re listening!]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/1358/comment-page-1#comment-3741">Brian Stormont</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/1358/comment-page-1#comment-3741">Brian Stormont</a>.</p>
 <p>I like your idea of informing me somehow that it&#8217;s made some adjustments to the schedule. It could be either via the thermostat itself (&#8220;Hey! I&#8217;ve just adjusted your schedule! Check online for more details.&#8221;) or via an e-mail as you suggested. My thermostat apparently is still learning after having it installed for 12 days. :) If it were as cold as it should be here in Wisconsin during December, having the furnace run unexpectedly for hours is very expensive. So, I&#8217;d like the thermostat to make smarter choices and as you suggested, tell me. </p>
 <p>If Nest hadn&#8217;t described the learning phase in such magical terms, my expectations would probably be more reasonable. &#8220;Nest even notices when you get home late on Tuesdays after bowling&#8221; or something like that one of their videos suggests. </p>
 <p>Thanks for the cool suggestion. I hope they&#8217;re listening!</p>
@@ -232,7 +232,7 @@ Thanks again for commenting!]]></description>
 I&#039;m sure it&#039;s the &quot;learning.&quot; 
 
 Unfortunately, right now, &lt;strong&gt;it&#039;s wasting energy more than it&#039;s saving&lt;/strong&gt; as it&#039;s running when we&#039;re not there. :( I&#039;m sure I&#039;m not alone in not wanting to micro-manage the thermostats. I&#039;m surprised by the major decisions it makes even with so little data to go on.]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/1358/comment-page-1#comment-3737">dave</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/1358/comment-page-1#comment-3737">dave</a>.</p>
 <p>I&#8217;m sure it&#8217;s the &#8220;learning.&#8221; </p>
 <p>Unfortunately, right now, <strong>it&#8217;s wasting energy more than it&#8217;s saving</strong> as it&#8217;s running when we&#8217;re not there. :( I&#8217;m sure I&#8217;m not alone in not wanting to micro-manage the thermostats. I&#8217;m surprised by the major decisions it makes even with so little data to go on.</p>
 ]]></content:encoded>

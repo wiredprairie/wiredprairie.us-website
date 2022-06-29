@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Source Analysis for C# Released From Microsoft	</title>
-	<atom:link href="/blog/index.php/archives/285/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/285/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/285</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Tue, 08 Jul 2008 12:28:57 +0000</lastBuildDate>

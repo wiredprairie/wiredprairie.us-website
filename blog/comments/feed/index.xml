@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments for WiredPrairie	</title>
-	<atom:link href="/blog/index.php/comments/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/comments/feed" rel="self" type="application/rss+xml" />
 	<link>/blog</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Mon, 23 Apr 2018 12:49:02 +0000</lastBuildDate>
@@ -32,7 +32,7 @@
 					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/2241/comment-page-1#comment-63888&quot;&gt;Michael Foltz&lt;/a&gt;.
 
 Thanks for the info.]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/2241/comment-page-1#comment-63888">Michael Foltz</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/2241/comment-page-1#comment-63888">Michael Foltz</a>.</p>
 <p>Thanks for the info.</p>
 ]]></content:encoded>
 		
@@ -68,7 +68,7 @@ foltz</p>
 					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/2224/comment-page-1#comment-63886&quot;&gt;Michael Thomsen&lt;/a&gt;.
 
 Thanks for the comment Michael and suggestion. It&#039;s better, but I still find it too noisy and it takes too much vertical space. Lines starting with child: or children take away the focus of the type of child or children.]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/2224/comment-page-1#comment-63886">Michael Thomsen</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/2224/comment-page-1#comment-63886">Michael Thomsen</a>.</p>
 <p>Thanks for the comment Michael and suggestion. It&#8217;s better, but I still find it too noisy and it takes too much vertical space. Lines starting with child: or children take away the focus of the type of child or children.</p>
 ]]></content:encoded>
 		
@@ -175,7 +175,7 @@ WDYT?]]></description>
 					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1933/comment-page-1#comment-45777&quot;&gt;christian&lt;/a&gt;.
 
 It&#039;s not on the fitbit itself. It&#039;s in the charging cradle near the bottom of the back. Just a small round hole.]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/1933/comment-page-1#comment-45777">christian</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/1933/comment-page-1#comment-45777">christian</a>.</p>
 <p>It&#8217;s not on the fitbit itself. It&#8217;s in the charging cradle near the bottom of the back. Just a small round hole.</p>
 ]]></content:encoded>
 		

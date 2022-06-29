@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Evil Space Alien Attack (A Silverlight Game)	</title>
-	<atom:link href="/blog/index.php/archives/574/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/574/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/574</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Sun, 12 Oct 2008 16:40:05 +0000</lastBuildDate>

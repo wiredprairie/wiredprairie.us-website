@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: DistrustedIot	</title>
-	<atom:link href="/blog/index.php/archives/2278/distrustediot/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/2278/distrustediot/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/2278/distrustediot</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Tue, 24 Jul 2018 12:32:06 +0000</lastBuildDate>

@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: VLAN (2)	</title>
-	<atom:link href="/blog/index.php/archives/2278/vlan-2/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/2278/vlan-2/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/2278/vlan-2</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Wed, 25 Jul 2018 00:32:47 +0000</lastBuildDate>

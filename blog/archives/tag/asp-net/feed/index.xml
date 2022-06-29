@@ -12,7 +12,7 @@
 
 <channel>
 	<title>ASP.NET &#8211; WiredPrairie</title>
-	<atom:link href="/blog/index.php/archives/tag/asp-net/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/tag/asp-net/feed" rel="self" type="application/rss+xml" />
 	<link>/blog</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Sat, 02 Mar 2013 16:50:53 +0000</lastBuildDate>
@@ -38,7 +38,7 @@
 
 					<description><![CDATA[If you’re seeing a credentials prompt every time you launch a local IIS or IIS Express web application that requires Windows Authentication, you’ll likely grow as tired of typing in your password as I was. To add to the annoyance, the Remember my credentials checkbox doesn’t work (nothing is saved). The setup: Windows 8 Visual [&#8230;]]]></description>
 										<content:encoded><![CDATA[<p>If you’re seeing a credentials prompt every time you launch a local IIS or IIS Express web application that requires Windows Authentication, you’ll likely grow as tired of typing in your password as I was. To add to the annoyance, the <strong>Remember my credentials</strong> checkbox doesn’t work (nothing is saved).</p>
-<p><a href="/blog/wpcontent/uploads/2013/03/image.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wpcontent/uploads/2013/03/image_thumb.png" width="443" height="351" /></a></p>
+<p><a href="blog/wpcontent/uploads/2013/03/image.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="blog/wpcontent/uploads/2013/03/image_thumb.png" width="443" height="351" /></a></p>
 <p>The setup:</p>
 <ul>
 <li>Windows 8</li>
@@ -96,11 +96,11 @@
 <li>Close.</li>
 <li>Verify it’s now working.</li>
 </ol>
-<p><a href="/blog/wpcontent/uploads/2013/03/image1.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wpcontent/uploads/2013/03/image_thumb1.png" width="256" height="290" /></a></p>
-<p><a href="/blog/wpcontent/uploads/2013/03/image2.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wpcontent/uploads/2013/03/image_thumb2.png" width="425" height="544" /></a></p>
-<p><a href="/blog/wpcontent/uploads/2013/03/image3.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wpcontent/uploads/2013/03/image_thumb3.png" width="416" height="236" /></a></p>
-<p><a href="/blog/wpcontent/uploads/2013/03/image4.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wpcontent/uploads/2013/03/image_thumb4.png" width="396" height="351" /></a></p>
-<p><a href="/blog/wpcontent/uploads/2013/03/image5.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wpcontent/uploads/2013/03/image_thumb5.png" width="396" height="351" /></a></p>
+<p><a href="blog/wpcontent/uploads/2013/03/image1.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="blog/wpcontent/uploads/2013/03/image_thumb1.png" width="256" height="290" /></a></p>
+<p><a href="blog/wpcontent/uploads/2013/03/image2.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="blog/wpcontent/uploads/2013/03/image_thumb2.png" width="425" height="544" /></a></p>
+<p><a href="blog/wpcontent/uploads/2013/03/image3.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="blog/wpcontent/uploads/2013/03/image_thumb3.png" width="416" height="236" /></a></p>
+<p><a href="blog/wpcontent/uploads/2013/03/image4.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="blog/wpcontent/uploads/2013/03/image_thumb4.png" width="396" height="351" /></a></p>
+<p><a href="blog/wpcontent/uploads/2013/03/image5.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="blog/wpcontent/uploads/2013/03/image_thumb5.png" width="396" height="351" /></a></p>
 <p>Done.</p>
 <p>Alternatives welcomed. :)</p>
 ]]></content:encoded>
@@ -125,7 +125,7 @@
 		<guid isPermaLink="false">/blog/?p=1820</guid>
 
 					<description><![CDATA[Part one. After the first round, I felt compelled to KnockOut the code a bit more. I’d mentioned I wasn’t pleased with the code exactly. It needed some refactoring. So, I’ve created a new Knockout binding handler. This binding handler replaces&#160; named parameters with a model’s properties in a path. For example, given this object: [&#8230;]]]></description>
-										<content:encoded><![CDATA[<p><a href="/blog/index.php/archives/1800">Part one.</a></p>
+										<content:encoded><![CDATA[<p><a href="blog/index.php/archives/1800">Part one.</a></p>
 <p>After the first round, I felt compelled to KnockOut the code a bit more. I’d mentioned I wasn’t pleased with the code exactly. It needed some refactoring.</p>
 <p>So, I’ve created a new Knockout binding handler. This binding handler replaces&#160; named parameters with a model’s properties in a path. </p>
 <p>For example, given this object:</p>
@@ -396,7 +396,7 @@ ko.bindingHandlers.route.options.fixUrl = app_url;</pre>
 	margin: 0em;
 }
 .csharpcode .lnum { color: #606060; }</style>
-<p>You’ll probably like the new way better syntactically at least compared to the <a href="/blog/index.php/archives/1800">old</a> way. A route binding requires one input when used in it’s most basic form:</p>
+<p>You’ll probably like the new way better syntactically at least compared to the <a href="blog/index.php/archives/1800">old</a> way. A route binding requires one input when used in it’s most basic form:</p>
 <ul>
 <li><strong>url = </strong>the URL or route name to use as the template for the replacement. It should contain (or later resolve to) curly-braced enclosed property name keys which will be substituted by values from the model. The value of the property could be either a route name (see options below) or a path.</li>
 </ul>
@@ -414,7 +414,7 @@ ko.bindingHandlers.route.options.fixUrl = app_url;</pre>
 <li><strong>map</strong> = {object} the object properties should be route names and set equal to the path. this optional lookup is performed before the routeNameToUrl function is called. </li>
 <li><strong>fixUrl</strong> = (function)(url) do anything here. this is called after the mapping and routeNameToUrl is optionally called. I use this to correct javascript Ajax request paths by appending the application virtual directory</li>
 </ul>
-<p>(Thanks to <a href="http://www.knockmeout.net/">Ryan</a> for the suggestion to use the $data on the bindingContext, and then again for the nudge to just use the 4th parameter. <img class="wlEmoticon wlEmoticon-smile" style="border-top-style: none; border-left-style: none; border-bottom-style: none; border-right-style: none" alt="Smile" src="/blog/wpcontent/uploads/2013/01/wlEmoticon-smile.png" /> )</p>
+<p>(Thanks to <a href="http://www.knockmeout.net/">Ryan</a> for the suggestion to use the $data on the bindingContext, and then again for the nudge to just use the 4th parameter. <img class="wlEmoticon wlEmoticon-smile" style="border-top-style: none; border-left-style: none; border-bottom-style: none; border-right-style: none" alt="Smile" src="blog/wpcontent/uploads/2013/01/wlEmoticon-smile.png" /> )</p>
 ]]></content:encoded>
 					
 					<wfw:commentRss>/blog/index.php/archives/1820/feed</wfw:commentRss>
@@ -548,7 +548,7 @@ ko.bindingHandlers.route.options.fixUrl = app_url;</pre>
 
 </span></pre>
 <p>This should work without modification on IIS7+ and Visual Studio 2010.</p>
-<p><img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" src="/blog/wpcontent/uploads/2010/03/image3.png" width="400" height="291" /></p>
+<p><img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" src="blog/wpcontent/uploads/2010/03/image3.png" width="400" height="291" /></p>
 ]]></content:encoded>
 					
 		
@@ -578,7 +578,7 @@ ko.bindingHandlers.route.options.fixUrl = app_url;</pre>
 <pre class="code">Sys.activateElements(document.documentElement);</pre>
 <p>In the code line above, though I’ve specified that I want the entire HTML document activated, you could provide any element you want as a starting point (for example to optimize the use of the library and prevent unnecessary DOM searching for example).</p>
 <p>I’m adding the delay in some JavaScript code because I wanted to set up a few variables in advance of the attach occurring. I tend to write my JavaScript code in an object oriented fashion these days (using the prototype pattern), including code that is interacting with the DOM. In this case, I’ll create a class that represents the logic of the page rather than following the typical purely functional model that is done on many JavaScript pages. But, when using the “<strong>eval</strong>” syntax of the Microsoft Ajax library “{{ code }}”, occasionally, I’ll need to delay the <strong>eval</strong> or the page will crash. </p>
-<p>From my recent post on making a simple <a href="/blog/index.php/archives/885" target="_blank">command extension to the Microsoft Ajax library</a>, I wanted to make that more object oriented by referring to an instance of my class, rather than pointing directly to a function:</p>
+<p>From my recent post on making a simple <a href="blog/index.php/archives/885" target="_blank">command extension to the Microsoft Ajax library</a>, I wanted to make that more object oriented by referring to an instance of my class, rather than pointing directly to a function:</p>
 <pre class="code"><span style="color: blue">&lt;</span><span style="color: #a31515">body sys</span><span style="color: blue">:</span><span style="color: red">attach</span><span style="color: blue">=&quot;wpc&quot; 
     </span><span style="color: #a31515">wpc</span><span style="color: blue">:</span><span style="color: red">onbubbleevent</span><span style="color: blue">=&quot;{{$view.onCommand}}&quot;  
     </span><span style="color: #a31515">xmlns</span><span style="color: blue">:</span><span style="color: red">sys</span><span style="color: blue">=&quot;javascript:Sys&quot; </span><span style="color: #a31515">xmlns</span><span style="color: blue">:</span><span style="color: red">wpc</span><span style="color: blue">=&quot;javascript:WiredPrairie.Commanding&quot;&gt;

@@ -12,7 +12,7 @@
 
 <channel>
 	<title>Protocol &#8211; WiredPrairie</title>
-	<atom:link href="/blog/index.php/archives/tag/protocol/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/tag/protocol/feed" rel="self" type="application/rss+xml" />
 	<link>/blog</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Wed, 29 Jun 2022 16:00:40 +0000</lastBuildDate>
@@ -41,7 +41,7 @@
 										<content:encoded><![CDATA[<p>While Nest Labs hasn’t released a formal (documented &amp; supported) API, I thought I’d do a bit of digging to see how they’re using the network and what might be achievable.</p>
 <p>A few things are going on, the majority as you’d probably expect.</p>
 <p>The web interface is using a long polling technique apparently to watch for updates to the schedule, temperature, etc.</p>
-<p><a href="/blog/wpcontent/uploads/2012/01/image7.png"><img loading="lazy" style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-width: 0px;" title="image" src="/blog/wpcontent/uploads/2012/01/image_thumb7.png" alt="image" width="381" height="225" border="0"/></a></p>
+<p><a href="blog/wpcontent/uploads/2012/01/image7.png"><img loading="lazy" style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-width: 0px;" title="image" src="blog/wpcontent/uploads/2012/01/image_thumb7.png" alt="image" width="381" height="225" border="0"/></a></p>
 <p>I haven’t determined what the frequency is though, or the wait time. It’s very inconsistent, even when I wouldn’t expect much new “live” data to be available on the network, it frequently updates and polls again.</p>
 <p>There are a few constants set in the HOME page script:</p>
 <pre class="csharpcode">C.ABSENT_USER_THRESHOLD     = +(<span class="str">'300'</span>) || 0;  <span class="rem">// seconds</span>
@@ -52,7 +52,7 @@ C.WEATHER_POLLING_INTERVAL  = +(<span class="str">'120000'</span>) || 0; <span c
 <p>If the C.pollingInterval value were for the subscribe endpoint mentioned above, I’d see a LOT more calls than I do – so I’m still not clear how the polling interval is decided.</p>
 <p>The API calls, for the most part are using JSONP syntax over an HTTPS connection.</p>
 <p>The most frequent request is to “subscribe.” It sends as part of the GET request a large block of encoded JSON (using encodeURIComponent and then JSON.stringify).</p>
-<p>I&#8217;m not familiar with the key/value system that they’re using (it may just be something they’ve constructed in-house – although given the number of <a href="/blog/index.php/archives/1397">open source JavaScript</a> libraries they’re using, I thought someone might recognize it):</p>
+<p>I&#8217;m not familiar with the key/value system that they’re using (it may just be something they’ve constructed in-house – although given the number of <a href="blog/index.php/archives/1397">open source JavaScript</a> libraries they’re using, I thought someone might recognize it):</p>
 <p>“<strong>key</strong>”, “{<strong>actualkey</strong>}.{<strong>value</strong>}”</p>
 <p>I don’t understand why they’ve redundantly specified “key” in a list of keys when it’s evident that the <em>actual key </em>is contained within the value as a delimited string. It’s more data to send and more data to parse this way. So, again, maybe it’s based on some DB or model system I’m not familiar with. (Anyone recognize it?)</p>
 <p>I’ve substituted the actual values (as they are serial numbers of my devices) with text representations of what the value represented below:</p>
@@ -264,7 +264,7 @@ C.WEATHER_POLLING_INTERVAL  = +(<span class="str">'120000'</span>) || 0; <span c
 <p>&nbsp;</p>
 <p>It’s a basic table structure. The first set point of the day is at 0, and is a “continuation.” These don’t show up in the UI.</p>
 <p>Here’s what the day 1 looks like on the Nest thermostat UI:</p>
-<p><a href="/blog/wpcontent/uploads/2012/01/image8.png"><img loading="lazy" style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-width: 0px;" title="image" src="/blog/wpcontent/uploads/2012/01/image_thumb8.png" alt="image" width="500" height="37" border="0"/></a></p>
+<p><a href="blog/wpcontent/uploads/2012/01/image8.png"><img loading="lazy" style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-width: 0px;" title="image" src="blog/wpcontent/uploads/2012/01/image_thumb8.png" alt="image" width="500" height="37" border="0"/></a></p>
 <p>When changing a temperature setpoint, I’m a bit disappointed to see that the entire schedule is sent with every request apparently. I just wouldn’t have expected that given that the more setpoints that there are, the bigger the payload must be. The UI is often sluggish when rapidly making adjustments in the schedule, and this could be one of the factors.</p>
 <p>In the example below (which I’ve snipped most of the payload sent again as a JSONP request), I’ve set the first set point to 57F.</p>
 <pre class="csharpcode">    <span class="str">"payload"</span>: {
@@ -320,7 +320,7 @@ C.WEATHER_POLLING_INTERVAL  = +(<span class="str">'120000'</span>) || 0; <span c
 <li>sessionid == used in X-nl-session-id in headers</li>
 <li>cztoken == used as the Authorization in headers (prepended with the text “Basic “</li>
 </ol>
-<p>FYI: I also have a <a href="/blog/index.php/archives/1754">Node</a> version of the API that is more up to date than this.</li>
+<p>FYI: I also have a <a href="blog/index.php/archives/1754">Node</a> version of the API that is more up to date than this.</li>
 </ul>
 ]]></content:encoded>
 					

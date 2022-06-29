@@ -12,7 +12,7 @@
 
 <channel>
 	<title>Ajax; JavaScript &#8211; WiredPrairie</title>
-	<atom:link href="/blog/index.php/archives/tag/ajax-javascript/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/tag/ajax-javascript/feed" rel="self" type="application/rss+xml" />
 	<link>/blog</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Tue, 08 Feb 2011 14:18:37 +0000</lastBuildDate>
@@ -34,7 +34,7 @@
 		<guid isPermaLink="false">/blog/index.php/archives/1178</guid>
 
 					<description><![CDATA[I’m not one for dumping all scripts into a single folder and calling it a day. The template project for ASP.NET MVC 3 does that unfortunately. So, after a bit of cleanup and adding a few more JavaScript libraries that I needed, I’m left with a reasonably organized folder structure. I’ve added a folder for [&#8230;]]]></description>
-										<content:encoded><![CDATA[<p><img loading="lazy" style="background-image: none; border-right-width: 0px; margin: ; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wpcontent/uploads/2011/02/image2.png" width="470" height="318" /></p>
+										<content:encoded><![CDATA[<p><img loading="lazy" style="background-image: none; border-right-width: 0px; margin: ; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="image" border="0" alt="image" src="blog/wpcontent/uploads/2011/02/image2.png" width="470" height="318" /></p>
 <p>I’m not one for dumping all scripts into a single folder and calling it a day. </p>
 <p>The template project for ASP.NET MVC 3 does that unfortunately. So, after a bit of cleanup and adding a few more JavaScript libraries that I needed, I’m left with a reasonably organized folder structure. </p>
 <p>I’ve added a folder for JavaScript files associated with Views, in this case, it’s located here: Scripts\Views\ViewName\…</p>

@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Are web developers &#8220;stupid and arrogant&#8221;?	</title>
-	<atom:link href="/blog/index.php/archives/861/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/861/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/861</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Sat, 28 Nov 2009 15:32:39 +0000</lastBuildDate>
@@ -32,7 +32,7 @@
 					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/861/comment-page-1#comment-2842&quot;&gt;Neil Weber&lt;/a&gt;.
 
 What about Flash/Flex or Silverlight as the new &quot;Java&quot; -- a better Java?]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/861/comment-page-1#comment-2842">Neil Weber</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/861/comment-page-1#comment-2842">Neil Weber</a>.</p>
 <p>What about Flash/Flex or Silverlight as the new &#8220;Java&#8221; &#8212; a better Java?</p>
 ]]></content:encoded>
 		

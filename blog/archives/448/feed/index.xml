@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Silverlight 2.0 &#8212; Adjusting UI when Animation completes	</title>
-	<atom:link href="/blog/index.php/archives/448/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/448/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/448</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Sun, 03 Aug 2008 21:22:19 +0000</lastBuildDate>

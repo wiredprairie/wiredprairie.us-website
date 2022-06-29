@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Silverlight Weather Demonstration	</title>
-	<atom:link href="/blog/index.php/archives/388/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/388/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/388</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Sat, 19 Mar 2011 15:33:28 +0000</lastBuildDate>
@@ -34,7 +34,7 @@
 How are you hosting this?
 
 You&#039;ll either need to host it and have the GetWeather.ashx on the same domain or use a cross domain file to access the data.]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/388/comment-page-1#comment-3417">Malli</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/388/comment-page-1#comment-3417">Malli</a>.</p>
 <p>How are you hosting this?</p>
 <p>You&#8217;ll either need to host it and have the GetWeather.ashx on the same domain or use a cross domain file to access the data.</p>
 ]]></content:encoded>

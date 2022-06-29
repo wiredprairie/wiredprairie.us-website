@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Impressive Silverlight game engine? Or something else entirely&#8230;.?	</title>
-	<atom:link href="/blog/index.php/archives/864/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/864/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/864</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Tue, 01 Dec 2009 13:13:37 +0000</lastBuildDate>

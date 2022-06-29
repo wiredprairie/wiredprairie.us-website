@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: WinRT/Xaml/AKA Metro DataTemplate selection based on Data Types	</title>
-	<atom:link href="/blog/index.php/archives/1705/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/1705/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/1705</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Sat, 20 Oct 2012 23:39:10 +0000</lastBuildDate>

@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Moral Challenge #1	</title>
-	<atom:link href="/blog/index.php/archives/531/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/531/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/531</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Wed, 03 Sep 2008 18:17:22 +0000</lastBuildDate>

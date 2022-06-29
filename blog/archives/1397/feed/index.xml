@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: A post not related to Nest thermostat hardware&#8230;.	</title>
-	<atom:link href="/blog/index.php/archives/1397/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/1397/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/1397</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Tue, 10 Jan 2012 11:48:45 +0000</lastBuildDate>
@@ -32,7 +32,7 @@
 					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1397/comment-page-1#comment-3855&quot;&gt;Brian Stormont&lt;/a&gt;.
 
 You are a braver man than I sir! ;) thanks for detailing your findings.]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/1397/comment-page-1#comment-3855">Brian Stormont</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/1397/comment-page-1#comment-3855">Brian Stormont</a>.</p>
 <p>You are a braver man than I sir! ;) thanks for detailing your findings.</p>
 ]]></content:encoded>
 		

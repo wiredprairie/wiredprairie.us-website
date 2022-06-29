@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Resource Intensive WPF Progress Bar (animation)	</title>
-	<atom:link href="/blog/index.php/archives/891/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/index.php/archives/891/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/891</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Tue, 26 Jan 2010 12:34:38 +0000</lastBuildDate>
