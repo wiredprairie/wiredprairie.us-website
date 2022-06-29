@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: TS2688 with TypeScript, React Native, and MobX	</title>
-	<atom:link href="blog/index.php/archives/2241/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/2241/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/2241</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Sun, 11 Mar 2018 12:05:13 +0000</lastBuildDate>
@@ -32,7 +32,7 @@
 					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/2241/comment-page-1#comment-63888&quot;&gt;Michael Foltz&lt;/a&gt;.
 
 Thanks for the info.]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/2241/comment-page-1#comment-63888">Michael Foltz</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/archives/2241/comment-page-1#comment-63888">Michael Foltz</a>.</p>
 <p>Thanks for the info.</p>
 ]]></content:encoded>
 		

@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Announcing digtstat.com	</title>
-	<atom:link href="blog/index.php/archives/1488/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/1488/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/1488</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Tue, 17 Jan 2012 01:20:53 +0000</lastBuildDate>

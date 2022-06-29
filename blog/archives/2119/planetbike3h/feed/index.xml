@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: PlanetBike Blinky 3H	</title>
-	<atom:link href="blog/index.php/archives/2119/planetbike3h/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/2119/planetbike3h/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/2119/planetbike3h</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Sat, 26 Nov 2016 17:46:04 +0000</lastBuildDate>

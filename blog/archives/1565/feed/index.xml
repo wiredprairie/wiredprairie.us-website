@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Knockout.JS: Dictionary/Index and ObservableArray, Part 2	</title>
-	<atom:link href="blog/index.php/archives/1565/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/1565/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/1565</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Sat, 20 Oct 2012 21:36:05 +0000</lastBuildDate>

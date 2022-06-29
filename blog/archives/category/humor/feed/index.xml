@@ -12,7 +12,7 @@
 
 <channel>
 	<title>Humor &#8211; WiredPrairie</title>
-	<atom:link href="blog/index.php/archives/category/humor/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/category/humor/feed" rel="self" type="application/rss+xml" />
 	<link>/blog</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Thu, 05 Apr 2012 12:55:44 +0000</lastBuildDate>

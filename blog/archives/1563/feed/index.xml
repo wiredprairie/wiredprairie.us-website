@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Knockout.JS: AsDictionary	</title>
-	<atom:link href="blog/index.php/archives/1563/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/1563/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/1563</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Sat, 10 Mar 2012 15:51:03 +0000</lastBuildDate>

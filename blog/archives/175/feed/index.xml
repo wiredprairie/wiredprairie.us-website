@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: What&#8217;s the perfect API?	</title>
-	<atom:link href="blog/index.php/archives/175/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/175/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/175</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Sun, 11 May 2008 20:40:04 +0000</lastBuildDate>

@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: PRTG Network Monitor for Windows	</title>
-	<atom:link href="blog/index.php/archives/1901/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/1901/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/1901</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Fri, 19 Jul 2013 12:52:37 +0000</lastBuildDate>

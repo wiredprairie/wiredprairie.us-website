@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Velocity &#8212; a rockin&#8217; distributed in memory cache for ASP.NET	</title>
-	<atom:link href="blog/index.php/archives/331/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/331/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/331</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Wed, 13 May 2009 01:02:31 +0000</lastBuildDate>
@@ -34,7 +34,7 @@
 &quot;Jack&quot; -- I removed your URL. 
 
 They can&#039;t be compared as they don&#039;t serve the same purposes. It&#039;s like asking if grabbing a value from RAM is faster than pulling it from disk. It all depends. Velocity is a distributed cache, designed to provide high availability. ASP.NET Cache -- not at all.]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/331/comment-page-1#comment-2493">Jack</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/archives/331/comment-page-1#comment-2493">Jack</a>.</p>
 <p>&#8220;Jack&#8221; &#8212; I removed your URL. </p>
 <p>They can&#8217;t be compared as they don&#8217;t serve the same purposes. It&#8217;s like asking if grabbing a value from RAM is faster than pulling it from disk. It all depends. Velocity is a distributed cache, designed to provide high availability. ASP.NET Cache &#8212; not at all.</p>
 ]]></content:encoded>

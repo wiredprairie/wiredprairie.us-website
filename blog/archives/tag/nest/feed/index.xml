@@ -12,7 +12,7 @@
 
 <channel>
 	<title>Nest &#8211; WiredPrairie</title>
-	<atom:link href="blog/index.php/archives/tag/nest/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/tag/nest/feed" rel="self" type="application/rss+xml" />
 	<link>/blog</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Wed, 12 Jun 2013 01:34:38 +0000</lastBuildDate>
@@ -387,9 +387,9 @@ function subscribeDone(deviceId, data) {
 <p><img loading="lazy" style="background-image: none; border-right-width: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="IMG_0637" border="0" alt="IMG_0637" src="blog/wpcontent/uploads/2012/10/IMG_0637.png" width="502" height="335" /></p>
 <p>I’m very pleased with the upgrade to the firmware and smart phone/tablet software. It adds some absolutely needed features.</p>
 <p>As an update to my experience with Nest, I’ve definitely had fewer problems lately than I had during the first 6 to 8 months. While I still don’t applaud Nest for their activity in social media and reaching out to their customers proactively (as they never responded to any of the comments here), they have been active behind the scenes.</p>
-<p>The wireless connectivity to the thermostats has improved. I haven’t noticed the same problems as before and I <strong>THANKFULLY</strong> haven’t had to <a href="blog/index.php/archives/1576" target="_blank">re-add</a> my account or Wifi information in months to any of our thermostats.</p>
+<p>The wireless connectivity to the thermostats has improved. I haven’t noticed the same problems as before and I <strong>THANKFULLY</strong> haven’t had to <a href="blog/archives/1576" target="_blank">re-add</a> my account or Wifi information in months to any of our thermostats.</p>
 <p>I’ve had enough good success recently to change my recommendation on Nest Thermostats. If you’re in the market for a new thermostat, and you’ve got $249US to spend, I’d say it should definitely be a <strong>strong contender.</strong></p>
-<p>Read through the <a href="blog/index.php/nest-thermostat-reviews" target="_blank">comments and the issues</a> – but understand a lot of the issues have been resolved.</p>
+<p>Read through the <a href="blog/nest-thermostat-reviews" target="_blank">comments and the issues</a> – but understand a lot of the issues have been resolved.</p>
 <p>You can buy the <a href="http://www.amazon.com/gp/product/B006ML9J4O/ref=as_li_ss_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B006ML9J4O&amp;linkCode=as2&amp;tag=wiredp-20" target="_blank">older model</a> while supplies last for $229.</p>
 <p><strong>The second generation is available for preorder from </strong><a href="http://www.amazon.com/gp/product/B009GDHYPQ/ref=as_li_ss_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B009GDHYPQ&amp;linkCode=as2&amp;tag=wiredp-20" target="_blank"><strong>Amazon</strong></a><strong> today</strong>.</p>
 <p>I think it’s ready to be part of your house (after you check your system’s <a href="http://store.nest.com/us/#compatibility" target="_blank">compatibility</a>).</p>
@@ -507,7 +507,7 @@ function subscribeDone(deviceId, data) {
 
 					<description><![CDATA[One more brief update about our Nest thermostats. After a few weeks of limited use of our HVAC system due to a very unusually warm late winter and early spring, I’d set the whole house to AWAY mode last evening. However, a bit later, I heard the furnace running. Odd. I walked to the thermostat [&#8230;]]]></description>
 										<content:encoded><![CDATA[<p>One more brief update about our Nest thermostats. After a few weeks of limited use of our HVAC system due to a very unusually warm late winter and early spring, I’d set the whole house to AWAY mode last evening. However, a bit later, I heard the furnace running. Odd. I walked to the thermostat that I’d set to away and confirmed it was still “AWAY.”</p>
-<p><img loading="lazy" style="background-image: none; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; float: right; padding-top: 0px; border: 0px;" title="image" src="blog/wpcontent/uploads/2012/03/image6.png" alt="image" width="107" height="131" align="right" border="0" />I grabbed the iPad and used the Nest app. The thermostat that I had set AWAY to was reporting the same error that I’d seen back in <a href="blog/index.php/archives/1508">January</a>: the giant question mark. Tapping the image resulted in the message:</p>
+<p><img loading="lazy" style="background-image: none; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; float: right; padding-top: 0px; border: 0px;" title="image" src="blog/wpcontent/uploads/2012/03/image6.png" alt="image" width="107" height="131" align="right" border="0" />I grabbed the iPad and used the Nest app. The thermostat that I had set AWAY to was reporting the same error that I’d seen back in <a href="blog/archives/1508">January</a>: the giant question mark. Tapping the image resulted in the message:</p>
 <p><strong>Thermostat Disconnected – The thermostat First Floor last connected to the nest.com more than 3 days ago.</strong></p>
 <p>Three days?</p>
 <p><img loading="lazy" style="display: inline; float: left;" src="blog/wpcontent/uploads/2012/01/image_thumb3.png" alt="image" width="132" height="136" align="left" /></p>
@@ -540,7 +540,7 @@ function subscribeDone(deviceId, data) {
 		<guid isPermaLink="false">/blog/?p=1508</guid>
 
 					<description><![CDATA[Summary/Index When I woke up this morning, I decided that I’d use the remote features of my Nest Thermostat to increase the temperature of the first floor as the normal schedule hadn’t started yet. Here’s what I saw on my iPad: Basement: ? First Floor: ? When I tapped the Basement image, this alert was [&#8230;]]]></description>
-										<content:encoded><![CDATA[<p><a href="blog/index.php/nest-thermostat-reviews">Summary/Index</a></p>
+										<content:encoded><![CDATA[<p><a href="blog/nest-thermostat-reviews">Summary/Index</a></p>
 <p>When I woke up this morning, I decided that I’d use the remote features of my Nest Thermostat to increase the temperature of the first floor as the normal schedule hadn’t started yet.</p>
 <p>Here’s what I saw on my iPad:</p>
 <p><img loading="lazy" style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto; padding-top: 0px" title="image" border="0" alt="image" src="blog/wpcontent/uploads/2012/01/image22.png" width="500" height="194" /></p>

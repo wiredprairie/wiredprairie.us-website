@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Windows Home Server 2011 &#038; &#8220;the server appears to be offline&#8221; when trying to connect to the LaunchPad	</title>
-	<atom:link href="blog/index.php/archives/1222/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/1222/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/1222</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Mon, 26 Mar 2012 12:16:10 +0000</lastBuildDate>
@@ -32,7 +32,7 @@
 					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1222/comment-page-1#comment-4339&quot;&gt;Sean&lt;/a&gt;.
 
 Unfortunately nope. It&#039;s some odd combination of hardware, drivers, and sun flares that cause it. :)]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/1222/comment-page-1#comment-4339">Sean</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/archives/1222/comment-page-1#comment-4339">Sean</a>.</p>
 <p>Unfortunately nope. It&#8217;s some odd combination of hardware, drivers, and sun flares that cause it. :)</p>
 ]]></content:encoded>
 		
@@ -65,7 +65,7 @@ Unfortunately nope. It&#039;s some odd combination of hardware, drivers, and sun
 For some, there&#039;s a secondary solution apparently (see the blog post below)
 
 http://newleaserelease.wordpress.com/2011/11/18/windows-home-server-2011-launchpad-offline-and-net-tcp-port-sharing-service-timeout/]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/1222/comment-page-1#comment-4051">DL</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/archives/1222/comment-page-1#comment-4051">DL</a>.</p>
 <p>For some, there&#8217;s a secondary solution apparently (see the blog post below)</p>
 <p><a href="http://newleaserelease.wordpress.com/2011/11/18/windows-home-server-2011-launchpad-offline-and-net-tcp-port-sharing-service-timeout/" rel="nofollow ugc">http://newleaserelease.wordpress.com/2011/11/18/windows-home-server-2011-launchpad-offline-and-net-tcp-port-sharing-service-timeout/</a></p>
 ]]></content:encoded>

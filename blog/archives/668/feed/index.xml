@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Silverlight Stars/Sparkles	</title>
-	<atom:link href="blog/index.php/archives/668/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/668/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/668</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Thu, 27 Aug 2009 10:08:18 +0000</lastBuildDate>
@@ -46,7 +46,7 @@
 					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/668/comment-page-1#comment-2188&quot;&gt;Bryant Likes&lt;/a&gt;.
 
 D&#039;oh!  Fixed the image link as well.]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/668/comment-page-1#comment-2188">Bryant Likes</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/archives/668/comment-page-1#comment-2188">Bryant Likes</a>.</p>
 <p>D&#8217;oh!  Fixed the image link as well.</p>
 ]]></content:encoded>
 		
@@ -77,7 +77,7 @@ D&#039;oh!  Fixed the image link as well.]]></description>
 					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/668/comment-page-1#comment-2150&quot;&gt;Ben Vanik&lt;/a&gt;.
 
 Oops! Fixed.]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/668/comment-page-1#comment-2150">Ben Vanik</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/archives/668/comment-page-1#comment-2150">Ben Vanik</a>.</p>
 <p>Oops! Fixed.</p>
 ]]></content:encoded>
 		

@@ -12,7 +12,7 @@
 
 <channel>
 	<title>Silverlight &#8211; WiredPrairie</title>
-	<atom:link href="blog/index.php/archives/tag/silverlight/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/tag/silverlight/feed" rel="self" type="application/rss+xml" />
 	<link>/blog</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Sat, 24 Apr 2010 16:46:00 +0000</lastBuildDate>

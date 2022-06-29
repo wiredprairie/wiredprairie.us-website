@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Some free icons &#8230;	</title>
-	<atom:link href="blog/index.php/archives/267/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/267/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/267</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Sat, 10 Oct 2009 10:40:22 +0000</lastBuildDate>

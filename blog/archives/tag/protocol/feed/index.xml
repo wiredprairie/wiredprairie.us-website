@@ -12,7 +12,7 @@
 
 <channel>
 	<title>Protocol &#8211; WiredPrairie</title>
-	<atom:link href="blog/index.php/archives/tag/protocol/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/tag/protocol/feed" rel="self" type="application/rss+xml" />
 	<link>/blog</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Wed, 29 Jun 2022 16:00:40 +0000</lastBuildDate>
@@ -52,7 +52,7 @@ C.WEATHER_POLLING_INTERVAL  = +(<span class="str">'120000'</span>) || 0; <span c
 <p>If the C.pollingInterval value were for the subscribe endpoint mentioned above, I’d see a LOT more calls than I do – so I’m still not clear how the polling interval is decided.</p>
 <p>The API calls, for the most part are using JSONP syntax over an HTTPS connection.</p>
 <p>The most frequent request is to “subscribe.” It sends as part of the GET request a large block of encoded JSON (using encodeURIComponent and then JSON.stringify).</p>
-<p>I&#8217;m not familiar with the key/value system that they’re using (it may just be something they’ve constructed in-house – although given the number of <a href="blog/index.php/archives/1397">open source JavaScript</a> libraries they’re using, I thought someone might recognize it):</p>
+<p>I&#8217;m not familiar with the key/value system that they’re using (it may just be something they’ve constructed in-house – although given the number of <a href="blog/archives/1397">open source JavaScript</a> libraries they’re using, I thought someone might recognize it):</p>
 <p>“<strong>key</strong>”, “{<strong>actualkey</strong>}.{<strong>value</strong>}”</p>
 <p>I don’t understand why they’ve redundantly specified “key” in a list of keys when it’s evident that the <em>actual key </em>is contained within the value as a delimited string. It’s more data to send and more data to parse this way. So, again, maybe it’s based on some DB or model system I’m not familiar with. (Anyone recognize it?)</p>
 <p>I’ve substituted the actual values (as they are serial numbers of my devices) with text representations of what the value represented below:</p>
@@ -320,7 +320,7 @@ C.WEATHER_POLLING_INTERVAL  = +(<span class="str">'120000'</span>) || 0; <span c
 <li>sessionid == used in X-nl-session-id in headers</li>
 <li>cztoken == used as the Authorization in headers (prepended with the text “Basic “</li>
 </ol>
-<p>FYI: I also have a <a href="blog/index.php/archives/1754">Node</a> version of the API that is more up to date than this.</li>
+<p>FYI: I also have a <a href="blog/archives/1754">Node</a> version of the API that is more up to date than this.</li>
 </ul>
 ]]></content:encoded>
 					

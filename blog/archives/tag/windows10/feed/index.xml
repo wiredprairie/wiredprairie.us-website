@@ -12,7 +12,7 @@
 
 <channel>
 	<title>windows10 &#8211; WiredPrairie</title>
-	<atom:link href="blog/index.php/archives/tag/windows10/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/tag/windows10/feed" rel="self" type="application/rss+xml" />
 	<link>/blog</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Wed, 05 Apr 2017 12:09:38 +0000</lastBuildDate>
@@ -46,10 +46,10 @@
 <p>For the action, I selected <strong>&#8220;Start a program&#8221;</strong> for program/script, I entered: <strong>&#8220;powershell.exe&#8221;</strong>, and then added the arguments &#8220;<strong>-File</strong>&#8221; and the full path to the file name, like:</p>
 <pre>-File c:\Users\aaron\Documents\reconnect-iscsi-targets.ps1</pre>
 <p>If there are spaces in the path to the PowerShell file, be sure to add quotes around the full path and file name.</p>
-<p><img data-attachment-id="2168" data-permalink="blog/index.php/archives/2165/2017-04-04_19-07-23" data-orig-file="blog/wpcontent/uploads/2017/04/2017-04-04_19-07-23.png" data-orig-size="460,500" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Action properties for Task" data-image-description="" data-image-caption="" data-medium-file="blog/wpcontent/uploads/2017/04/2017-04-04_19-07-23-276x300.png" data-large-file="blog/wpcontent/uploads/2017/04/2017-04-04_19-07-23.png" loading="lazy" class="aligncenter wp-image-2168 size-full" src="blog/wpcontent/uploads/2017/04/2017-04-04_19-07-23.png" alt="" width="460" height="500" srcset="blog/wpcontent/uploads/2017/04/2017-04-04_19-07-23.png 460w, /blog/wpcontent/uploads/2017/04/2017-04-04_19-07-23-276x300.png 276w" sizes="(max-width: 460px) 100vw, 460px" /></p>
+<p><img data-attachment-id="2168" data-permalink="blog/archives/2165/2017-04-04_19-07-23" data-orig-file="blog/wpcontent/uploads/2017/04/2017-04-04_19-07-23.png" data-orig-size="460,500" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Action properties for Task" data-image-description="" data-image-caption="" data-medium-file="blog/wpcontent/uploads/2017/04/2017-04-04_19-07-23-276x300.png" data-large-file="blog/wpcontent/uploads/2017/04/2017-04-04_19-07-23.png" loading="lazy" class="aligncenter wp-image-2168 size-full" src="blog/wpcontent/uploads/2017/04/2017-04-04_19-07-23.png" alt="" width="460" height="500" srcset="blog/wpcontent/uploads/2017/04/2017-04-04_19-07-23.png 460w, /blog/wpcontent/uploads/2017/04/2017-04-04_19-07-23-276x300.png 276w" sizes="(max-width: 460px) 100vw, 460px" /></p>
 <p>You shouldn&#8217;t need the <strong>start in</strong> option set (leave it empty if you&#8217;d like).</p>
 <p>On the General tab of the task, make sure you&#8217;ve set the &#8220;<strong>Run whether user is logged on or not</strong>&#8221; option and &#8220;<strong>Run with highest privileges</strong>.&#8221;</p>
-<p>Next up &#8212; how to quickly<a href="blog/index.php/archives/2170"> create a Self-Signed Code-Signing</a> certificate. And, how to actually allow scripts to run!</p>
+<p>Next up &#8212; how to quickly<a href="blog/archives/2170"> create a Self-Signed Code-Signing</a> certificate. And, how to actually allow scripts to run!</p>
 ]]></content:encoded>
 					
 					<wfw:commentRss>/blog/index.php/archives/2165/feed</wfw:commentRss>

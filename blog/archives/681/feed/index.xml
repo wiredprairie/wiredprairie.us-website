@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Please vote for my Silverlight Mix09 Entry!	</title>
-	<atom:link href="blog/index.php/archives/681/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/681/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/681</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Fri, 13 Mar 2009 01:53:47 +0000</lastBuildDate>

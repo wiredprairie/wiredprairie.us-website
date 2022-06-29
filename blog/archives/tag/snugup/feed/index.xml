@@ -12,7 +12,7 @@
 
 <channel>
 	<title>SnugUp &#8211; WiredPrairie</title>
-	<atom:link href="blog/index.php/archives/tag/snugup/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/tag/snugup/feed" rel="self" type="application/rss+xml" />
 	<link>/blog</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Wed, 07 Mar 2012 03:04:09 +0000</lastBuildDate>

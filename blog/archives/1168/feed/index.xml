@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Screen resolutions	</title>
-	<atom:link href="blog/index.php/archives/1168/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/1168/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/1168</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Wed, 26 Jan 2011 13:18:53 +0000</lastBuildDate>
@@ -32,7 +32,7 @@
 					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1168/comment-page-1#comment-3345&quot;&gt;Michael C. Neel&lt;/a&gt;.
 
 I really like VMware Workstation 7+, as it intelligently supports multi-monitors. (The VM is aware of the configuration and isn&#039;t just artificially stretched).]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/1168/comment-page-1#comment-3345">Michael C. Neel</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/archives/1168/comment-page-1#comment-3345">Michael C. Neel</a>.</p>
 <p>I really like VMware Workstation 7+, as it intelligently supports multi-monitors. (The VM is aware of the configuration and isn&#8217;t just artificially stretched).</p>
 ]]></content:encoded>
 		
@@ -51,7 +51,7 @@ I really like VMware Workstation 7+, as it intelligently supports multi-monitors
 Robert -- it doesn&#039;t seem to be that. My total screen resolution isn&#039;t listed. It&#039;s only the resolution for the &quot;current&quot; screen. 
 
 There is no meaningful resolution for multiple monitors other than a total number of pixels. Unless you have identical resolutions and exact alignment -- you might end up with dimensions that far exceed your monitors capabilities. (I have a 1920x1280 + 1280x1024 monitor). One sits lower than the other due to the stands. Further, I can&#039;t draw a bounding rectangle and compute a total screen resolution (especially since my primary monitor has more pixels in height than my secondary monitor).]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/1168/comment-page-1#comment-3349">Robert MacLean</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/archives/1168/comment-page-1#comment-3349">Robert MacLean</a>.</p>
 <p>Robert &#8212; it doesn&#8217;t seem to be that. My total screen resolution isn&#8217;t listed. It&#8217;s only the resolution for the &#8220;current&#8221; screen. </p>
 <p>There is no meaningful resolution for multiple monitors other than a total number of pixels. Unless you have identical resolutions and exact alignment &#8212; you might end up with dimensions that far exceed your monitors capabilities. (I have a 1920&#215;1280 + 1280&#215;1024 monitor). One sits lower than the other due to the stands. Further, I can&#8217;t draw a bounding rectangle and compute a total screen resolution (especially since my primary monitor has more pixels in height than my secondary monitor).</p>
 ]]></content:encoded>

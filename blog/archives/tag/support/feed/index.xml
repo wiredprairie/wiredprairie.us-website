@@ -12,7 +12,7 @@
 
 <channel>
 	<title>Support &#8211; WiredPrairie</title>
-	<atom:link href="blog/index.php/archives/tag/support/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/tag/support/feed" rel="self" type="application/rss+xml" />
 	<link>/blog</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Fri, 30 Aug 2013 12:35:46 +0000</lastBuildDate>

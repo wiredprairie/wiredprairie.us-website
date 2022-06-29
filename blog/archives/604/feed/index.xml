@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Post PDC 2008 Wrap-up	</title>
-	<atom:link href="blog/index.php/archives/604/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/604/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/604</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Tue, 02 Dec 2008 23:15:38 +0000</lastBuildDate>

@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: How to find an element in a DataTemplate in WinRT/XAML.	</title>
-	<atom:link href="blog/index.php/archives/1730/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/1730/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/1730</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Wed, 05 Jun 2013 07:50:14 +0000</lastBuildDate>

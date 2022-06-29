@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Great Silverlight technology demonstration	</title>
-	<atom:link href="blog/index.php/archives/214/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/214/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/214</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Thu, 08 May 2008 21:27:56 +0000</lastBuildDate>

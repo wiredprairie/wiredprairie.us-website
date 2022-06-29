@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: OK, One more shot of the Orioles &#8230;	</title>
-	<atom:link href="blog/index.php/archives/193/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/193/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/193</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Wed, 07 May 2008 14:20:12 +0000</lastBuildDate>

@@ -12,7 +12,7 @@
 
 <channel>
 	<title>index &#8211; WiredPrairie</title>
-	<atom:link href="blog/index.php/archives/tag/index/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/tag/index/feed" rel="self" type="application/rss+xml" />
 	<link>/blog</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Sat, 10 Mar 2012 15:50:58 +0000</lastBuildDate>
@@ -38,7 +38,7 @@
 		<guid isPermaLink="false">/blog/?p=1565</guid>
 
 					<description><![CDATA[Ryan suggested an alternative in a comment (and corresponding jsFiddle) to the technique that I’d used in my previous Knockout.JS post. Following his suggestion, I made a few tweaks to my original function (and renamed it yet again): ko.observableArray.fn.withIndex = function (keyName) { var index = ko.computed(function () { var list = this() &#124;&#124; []; [&#8230;]]]></description>
-										<content:encoded><![CDATA[<p><a href="http://www.knockmeout.net/">Ryan</a> suggested an alternative in a comment (and corresponding jsFiddle) to the technique that I’d used in my previous Knockout.JS <a href="blog/index.php/archives/1563">post</a>.</p>
+										<content:encoded><![CDATA[<p><a href="http://www.knockmeout.net/">Ryan</a> suggested an alternative in a comment (and corresponding jsFiddle) to the technique that I’d used in my previous Knockout.JS <a href="blog/archives/1563">post</a>.</p>
 <p>Following his suggestion, I made a few tweaks to my original function (and renamed it yet again):</p>
 <pre class="code">ko.observableArray.fn.withIndex = <span style="color: blue">function </span>(keyName) {        
     <span style="color: blue">var </span>index = ko.computed(<span style="color: blue">function </span>() {

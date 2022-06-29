@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Knockout binding for JavaScript route fixup	</title>
-	<atom:link href="blog/index.php/archives/1820/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/1820/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/1820</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Sat, 26 Jan 2013 16:46:08 +0000</lastBuildDate>
@@ -77,7 +77,7 @@ Just an insignificant clarification that the 4th argument, &quot;viewModel&quot;
 					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1820/comment-page-1#comment-21123&quot;&gt;Ryan Niemeyer&lt;/a&gt;.
 
 Good suggestion Ryan. I kept changing how it worked last night and never looked for something like that.]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/1820/comment-page-1#comment-21123">Ryan Niemeyer</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/archives/1820/comment-page-1#comment-21123">Ryan Niemeyer</a>.</p>
 <p>Good suggestion Ryan. I kept changing how it worked last night and never looked for something like that.</p>
 ]]></content:encoded>
 		

@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Google&#8217;s Chrome Operating System	</title>
-	<atom:link href="blog/index.php/archives/805/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/805/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/805</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Thu, 09 Jul 2009 12:25:55 +0000</lastBuildDate>
@@ -32,7 +32,7 @@
 					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/805/comment-page-1#comment-2691&quot;&gt;Dave&lt;/a&gt;.
 
 True -- it&#039;s interesting to see that many people are already asking the question: &quot;what other applications will I be able to install -- it&#039;s Linux, so anything should work....&quot; and so on. My understanding is that Google doesn&#039;t want that initially -- they want it pure, and fast -- and WEB. (Plus, I believe it&#039;s a different window system, so it wouldn&#039;t necessarily work with KDE, etc. based applications).]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/805/comment-page-1#comment-2691">Dave</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/archives/805/comment-page-1#comment-2691">Dave</a>.</p>
 <p>True &#8212; it&#8217;s interesting to see that many people are already asking the question: &#8220;what other applications will I be able to install &#8212; it&#8217;s Linux, so anything should work&#8230;.&#8221; and so on. My understanding is that Google doesn&#8217;t want that initially &#8212; they want it pure, and fast &#8212; and WEB. (Plus, I believe it&#8217;s a different window system, so it wouldn&#8217;t necessarily work with KDE, etc. based applications).</p>
 ]]></content:encoded>
 		

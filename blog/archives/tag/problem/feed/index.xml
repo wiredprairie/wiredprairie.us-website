@@ -12,7 +12,7 @@
 
 <channel>
 	<title>Problem &#8211; WiredPrairie</title>
-	<atom:link href="blog/index.php/archives/tag/problem/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/tag/problem/feed" rel="self" type="application/rss+xml" />
 	<link>/blog</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Mon, 04 Jun 2012 12:12:06 +0000</lastBuildDate>
@@ -72,7 +72,7 @@
 		<guid isPermaLink="false">/blog/?p=1508</guid>
 
 					<description><![CDATA[Summary/Index When I woke up this morning, I decided that I’d use the remote features of my Nest Thermostat to increase the temperature of the first floor as the normal schedule hadn’t started yet. Here’s what I saw on my iPad: Basement: ? First Floor: ? When I tapped the Basement image, this alert was [&#8230;]]]></description>
-										<content:encoded><![CDATA[<p><a href="blog/index.php/nest-thermostat-reviews">Summary/Index</a></p>
+										<content:encoded><![CDATA[<p><a href="blog/nest-thermostat-reviews">Summary/Index</a></p>
 <p>When I woke up this morning, I decided that I’d use the remote features of my Nest Thermostat to increase the temperature of the first floor as the normal schedule hadn’t started yet.</p>
 <p>Here’s what I saw on my iPad:</p>
 <p><img loading="lazy" style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto; padding-top: 0px" title="image" border="0" alt="image" src="blog/wpcontent/uploads/2012/01/image22.png" width="500" height="194" /></p>
@@ -123,7 +123,7 @@
 		<guid isPermaLink="false">/blog/?p=1482</guid>
 
 					<description><![CDATA[Summary/Index A few new things have occurred since I last posted. January 11, 2012: Nest Labs updated the firmware of the thermostat to version 1.0.6. There isn’t any publically available information about what was updated however other than “bug fixes.” Thanks to GregN for pointing it out. Here’s a link to their current software releases [&#8230;]]]></description>
-										<content:encoded><![CDATA[<p><a href="blog/index.php/nest-thermostat-reviews">Summary/Index</a></p>
+										<content:encoded><![CDATA[<p><a href="blog/nest-thermostat-reviews">Summary/Index</a></p>
 <p>A few new things have occurred since I last posted.</p>
 <p><a href="blog/wpcontent/uploads/2012/01/image19.png"><img loading="lazy" style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; float: right; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="image" border="0" alt="image" align="right" src="blog/wpcontent/uploads/2012/01/image_thumb15.png" width="240" height="74" /></a>January 11, 2012: Nest Labs updated the firmware of the thermostat to version 1.0.6. There isn’t any publically available information about what was updated however other than “bug fixes.” Thanks to <strong>GregN</strong> for pointing it out. Here’s a link to their current software releases and updates for anyone interested:</p>
 <p><a href="http://support.nest.com/customer/portal/articles/246009-nest-learning-thermostat-nest-mobile-software-updates">http://support.nest.com/customer/portal/articles/246009-nest-learning-thermostat-nest-mobile-software-updates</a></p>
@@ -166,12 +166,12 @@
 		<guid isPermaLink="false">/blog/?p=1432</guid>
 
 					<description><![CDATA[Update #6, Update #5, Update #4, Update #3, Update #2, Update #1, Install I received a replacement thermostat earlier this week as promised by Nest Labs. I had time this afternoon to do a swap and reinstall. Nest had asked me to swap the thermostats between two floors experimentally to determine whether a temperature reading [&#8230;]]]></description>
-										<content:encoded><![CDATA[<p><a href="blog/index.php/archives/1420">Update #6</a>, <a href="blog/index.php/archives/1404">Update #5</a>, <a href="blog/index.php/archives/1382">Update #4</a>, <a href="blog/index.php/archives/1360">Update #3</a>, <a href="blog/index.php/archives/1358">Update #2</a>, <a href="blog/index.php/archives/1340">Update #1</a>, <a href="blog/index.php/archives/1329">Install</a></p>
-<p>I received a <a href="blog/index.php/archives/1360">replacement thermostat</a> earlier this week as promised by Nest Labs. I had time this afternoon to do a swap and reinstall. Nest had asked me to swap the thermostats between two floors experimentally to determine whether a temperature reading issue was related to the location or the thermostat. It was the thermostat. </p>
+										<content:encoded><![CDATA[<p><a href="blog/archives/1420">Update #6</a>, <a href="blog/archives/1404">Update #5</a>, <a href="blog/archives/1382">Update #4</a>, <a href="blog/archives/1360">Update #3</a>, <a href="blog/archives/1358">Update #2</a>, <a href="blog/archives/1340">Update #1</a>, <a href="blog/archives/1329">Install</a></p>
+<p>I received a <a href="blog/archives/1360">replacement thermostat</a> earlier this week as promised by Nest Labs. I had time this afternoon to do a swap and reinstall. Nest had asked me to swap the thermostats between two floors experimentally to determine whether a temperature reading issue was related to the location or the thermostat. It was the thermostat. </p>
 <p>As part of the swap, I had to reprogram the two thermostats.</p>
 <p>I’d swapped the defective thermostat with one from the basement. Apparently, the base has the S/N on it of the thermostat and they’re intended to be “paired” so I decided to return the thermostat to the basement and install the new thermostat on the first floor (replacing the original defective unit).</p>
 <p>I removed the old unit and replaced the wires. Depending on the type of wires you’re using, you may find that it’s far more difficult to do than you would expect. I ‘d forgotten how much I hated trying to stick the very stiff HVAC wires into the thermostat’s base! </p>
-<p>I replaced everything and activated the unit. You can look at the <a href="blog/index.php/archives/1329">installation experience post</a> for more information about the general setup. </p>
+<p>I replaced everything and activated the unit. You can look at the <a href="blog/archives/1329">installation experience post</a> for more information about the general setup. </p>
 <p>Past the wifi connection, rebooting, waiting, waiting, waiting, then “ERROR.” “No Rc or Rh” connection.</p>
 <p><img alt="20111218-IMG_0138" src="blog/wpcontent/uploads/2011/12/20111218-IMG_0138_thumb.jpg" /></p>
 <p><strong>Crud</strong>. So, I popped the thermostat off the base and looked at the wires. They all appeared to be fine. So, I reseated the Rc connection and replaced the thermostat. Success! I find that a tiny tug on the wire after you believe it has been seated does the trick. The rest of the <em>install</em> went without issue. </p>
@@ -202,7 +202,7 @@
 		<guid isPermaLink="false">/blog/?p=1420</guid>
 
 					<description><![CDATA[Update #5, Update #4, Update #3, Update #2, Update #1, Install I didn’t expect to have another post so soon. But, the Nest experience continues to frustrate and baffle. On the 3rd of January, I took the following screen shot of our basement schedule for heating: Tonight (one day later on the 4th), we headed [&#8230;]]]></description>
-										<content:encoded><![CDATA[<p><a href="blog/index.php/archives/1404">Update #5</a>, <a href="blog/index.php/archives/1382">Update #4</a>, <a href="blog/index.php/archives/1360">Update #3</a>, <a href="blog/index.php/archives/1358">Update #2</a>, <a href="blog/index.php/archives/1340">Update #1</a>, <a href="blog/index.php/archives/1329">Install</a></p>
+										<content:encoded><![CDATA[<p><a href="blog/archives/1404">Update #5</a>, <a href="blog/archives/1382">Update #4</a>, <a href="blog/archives/1360">Update #3</a>, <a href="blog/archives/1358">Update #2</a>, <a href="blog/archives/1340">Update #1</a>, <a href="blog/archives/1329">Install</a></p>
 <p>I didn’t expect to have another post so soon. But, the Nest experience continues to frustrate and baffle.</p>
 <p>On the 3rd of January, I took the following screen shot of our basement schedule for heating:</p>
 <p><a href="blog/wpcontent/uploads/2012/01/image4.png"><img loading="lazy" style="background-image: none; padding-left: 0px; padding-right: 0px; display: block; float: none; margin-left: auto; margin-right: auto; padding-top: 0px; border: 0px;" title="image" src="blog/wpcontent/uploads/2012/01/image_thumb4.png" alt="image" width="285" height="313" border="0" /></a></p>
@@ -239,8 +239,8 @@
 		<guid isPermaLink="false">/blog/?p=1404</guid>
 
 					<description><![CDATA[Update #6, Update #5, Update #4, Update #3, Update #2, Update #1, Install I got my replacement Nest thermostat today via FedEx. I was surprised to open the box and find a complete sealed package. Honestly, I expected they’d ship just the display and the base (as the support engineer hadn’t set any expectations, I [&#8230;]]]></description>
-										<content:encoded><![CDATA[<p><a title="Nest Thermostat Review, Update #6" href="blog/index.php/archives/1420">Update #6</a>, <a href="blog/index.php/archives/1404">Update #5</a>, <a href="blog/index.php/archives/1382">Update #4</a>, <a href="blog/index.php/archives/1360">Update #3</a>, <a href="blog/index.php/archives/1358">Update #2</a>, <a href="blog/index.php/archives/1340">Update #1</a>, <a href="blog/index.php/archives/1329">Install</a></p>
-<p>I got my <a href="blog/index.php/archives/1360">replacement</a> Nest thermostat today via FedEx.</p>
+										<content:encoded><![CDATA[<p><a title="Nest Thermostat Review, Update #6" href="blog/archives/1420">Update #6</a>, <a href="blog/archives/1404">Update #5</a>, <a href="blog/archives/1382">Update #4</a>, <a href="blog/archives/1360">Update #3</a>, <a href="blog/archives/1358">Update #2</a>, <a href="blog/archives/1340">Update #1</a>, <a href="blog/archives/1329">Install</a></p>
+<p>I got my <a href="blog/archives/1360">replacement</a> Nest thermostat today via FedEx.</p>
 <p>I was surprised to open the box and find a complete sealed package. Honestly, I expected they’d ship just the display and the base (as the support engineer hadn’t set any expectations, I apparently just made up my own!). But, I suppose at this point in the company, they just aren’t setup to ship just the two pieces. It has the unfortunate side effect of producing extra waste (as I can’t imagine that extra wall plates are going to come in handy anywhere). The little screw driver could be given away but the rest likely will end up in a landfill. I’ll ship them all of the unused parts back as I don’t want them – hopefully they don’t just trash them.</p>
 <p>There’ve been some really <strong>awesome commenters </strong>in the past few days and I wanted to take a moment to highlight a few key comments.</p>
 <p>From Curt:</p>
@@ -304,7 +304,7 @@
 		<guid isPermaLink="false">/blog/?p=1382</guid>
 
 					<description><![CDATA[Update #6, Update #5, Update #4, Update #3, Update #2, Update #1, Install A bit more about my Nest thermostat experiences. On the weekend, I spoke with a support engineer from Nest regarding the issue I was having with one of the Nest units failing to properly read the room temperature. I swapped one of [&#8230;]]]></description>
-										<content:encoded><![CDATA[<p><a title="Nest Thermostat Review, Update #6" href="blog/index.php/archives/1420">Update #6</a>, <a href="blog/index.php/archives/1404">Update #5</a>, <a href="blog/index.php/archives/1382">Update #4</a>, <a href="blog/index.php/archives/1360">Update #3</a>, <a href="blog/index.php/archives/1358">Update #2</a>, <a href="blog/index.php/archives/1340">Update #1</a>, <a href="blog/index.php/archives/1329">Install</a></p>
+										<content:encoded><![CDATA[<p><a title="Nest Thermostat Review, Update #6" href="blog/archives/1420">Update #6</a>, <a href="blog/archives/1404">Update #5</a>, <a href="blog/archives/1382">Update #4</a>, <a href="blog/archives/1360">Update #3</a>, <a href="blog/archives/1358">Update #2</a>, <a href="blog/archives/1340">Update #1</a>, <a href="blog/archives/1329">Install</a></p>
 <p>A bit more about my Nest thermostat experiences.</p>
 <p>On the weekend, I spoke with a support engineer from Nest regarding the issue I was having with one of the Nest units failing to properly read the room temperature. I swapped one of the thermostats with a thermostat from a different floor in our house and then monitored the results over the weekend. I noticed the same problem in the new location: the thermostat would regularly read a temperature that was 3 to 4 degrees warmer than the actual room temperature. As it doesn’t consistently exhibit the problem, it makes heating a room to a comfortable temperature somewhat challenging (and now that it’s 19F outside, I’d like it if it was a bit more on the mark).</p>
 <p>I spoke again with the same support engineer from Nest today (Mark). He called back as promised at the telephone number I left with him. He agreed that it was the thermostat that had a problem and decided to ship me a new one immediately (overnight). As today was an “observed” holiday for most shipping companies in the USA, the new thermostat won’t ship till tomorrow.</p>
@@ -318,7 +318,7 @@
 <p>I definitely can’t give high marks to this product and wouldn’t recommend it right now. I know others are apparently having decent success, but until the kinks are worked out or they do a lot more explaining, I’d recommend anyone thinking about buying one <strong>to wait </strong>(maybe for v2 or a significant software upgrade).</p>
 <p><strong><span style="background-color: #ffff00">If anyone from Nest is listening, please speak up! </span></strong></p>
 <p>(And anyone else with comments, questions, etc., feel free to leave them! I enjoy your comments and feedback and I know others are finding your comments very useful!)</p>
-<p><strong>I’ve created a new home for discussions about digital thermostats. </strong><a href="blog/index.php/archives/1488"><strong>Here</strong></a><strong>’s a bit more information and </strong><a href="http://www.digtstat.com/forums"><strong>here</strong></a><strong>’s the site (digtstat.com). (And thanks for your help in getting it started!)</strong></p>
+<p><strong>I’ve created a new home for discussions about digital thermostats. </strong><a href="blog/archives/1488"><strong>Here</strong></a><strong>’s a bit more information and </strong><a href="http://www.digtstat.com/forums"><strong>here</strong></a><strong>’s the site (digtstat.com). (And thanks for your help in getting it started!)</strong></p>
 ]]></content:encoded>
 					
 					<wfw:commentRss>/blog/index.php/archives/1382/feed</wfw:commentRss>
@@ -359,7 +359,7 @@
 <p><strong>Update December 31, 2011</strong></p>
 <p>About six hours from my original request for support, I received a phone call from a Nest support engineer. (Note to Nest: you said the wait would be 1 to 2 hours …, <strong>manage expectations</strong>!)</p>
 <p>We talked through the problem and he had me swap the thermostat from one floor to another. It’s relatively easy to do – but I did need to adjust the programming for both thermostats then. He promised to call me back Monday afternoon to see if things have improved (or changed at least). Of course, the issue should show up now in the basement (which is the thermostat I swapped the problem thermostat with).</p>
-<p><a title="Nest Thermostat Review, Update #6" href="blog/index.php/archives/1420">Update #6</a>, <a href="blog/index.php/archives/1404">Update #5</a>, <a href="blog/index.php/archives/1382">Update #4</a>, <a href="blog/index.php/archives/1360">Update #3</a>, <a href="blog/index.php/archives/1358">Update #2</a>, <a href="blog/index.php/archives/1340">Update #1</a>, <a href="blog/index.php/archives/1329">Install</a></p>
+<p><a title="Nest Thermostat Review, Update #6" href="blog/archives/1420">Update #6</a>, <a href="blog/archives/1404">Update #5</a>, <a href="blog/archives/1382">Update #4</a>, <a href="blog/archives/1360">Update #3</a>, <a href="blog/archives/1358">Update #2</a>, <a href="blog/archives/1340">Update #1</a>, <a href="blog/archives/1329">Install</a></p>
 ]]></content:encoded>
 					
 					<wfw:commentRss>/blog/index.php/archives/1360/feed</wfw:commentRss>
@@ -386,7 +386,7 @@
 
 					<description><![CDATA[I’ve discussed my Nest thermostat experience a few times and am slowly becoming less convinced that it is ready for the market if you’re at all technically savvy and you’re easily frustrated by things not working the way you’d expect (like, you know how to setup e-mail on your phone). Update #6, Update #5, Update #4, Update #3, Update [&#8230;]]]></description>
 										<content:encoded><![CDATA[<p>I’ve discussed my Nest thermostat experience a few times and am slowly becoming less convinced that it is ready for the market if you’re at all technically savvy and you’re easily frustrated by things not working the way you’d expect (like, you know how to setup e-mail on your phone).</p>
-<p><a title="Nest Thermostat Review, Update #6" href="blog/index.php/archives/1420">Update #6</a>, <a href="blog/index.php/archives/1404">Update #5</a>, <a href="blog/index.php/archives/1382">Update #4</a>, <a href="blog/index.php/archives/1360">Update #3</a>, <a href="blog/index.php/archives/1358">Update #2</a>, <a href="blog/index.php/archives/1340">Update #1</a>, <a href="blog/index.php/archives/1329">Install</a></p>
+<p><a title="Nest Thermostat Review, Update #6" href="blog/archives/1420">Update #6</a>, <a href="blog/archives/1404">Update #5</a>, <a href="blog/archives/1382">Update #4</a>, <a href="blog/archives/1360">Update #3</a>, <a href="blog/archives/1358">Update #2</a>, <a href="blog/archives/1340">Update #1</a>, <a href="blog/archives/1329">Install</a></p>
 <p>Here’s a image of the schedule for the second floor, where my computer/den is located.</p>
 <p><a href="blog/wpcontent/uploads/2011/12/image8.png"><img loading="lazy" style="background-image: none; padding-left: 0px; padding-right: 0px; display: block; float: none; margin-left: auto; margin-right: auto; padding-top: 0px; border-width: 0px;" title="image" src="blog/wpcontent/uploads/2011/12/image_thumb8.png" alt="image" width="422" height="162" border="0" /></a></p>
 <p><a href="blog/wpcontent/uploads/2011/12/image9.png"><img loading="lazy" style="background-image: none; padding-left: 0px; padding-right: 0px; display: block; float: none; margin-left: auto; margin-right: auto; padding-top: 0px; border-width: 0px;" title="image" src="blog/wpcontent/uploads/2011/12/image_thumb9.png" alt="image" width="446" height="288" border="0" /></a></p>
@@ -433,7 +433,7 @@
 		<guid isPermaLink="false">/blog/?p=1340</guid>
 
 					<description><![CDATA[After a few weeks of using the Nest thermostat, I’ve got a few more comments that I’d like to share. (Here’s my post about the installation). The learning feature honestly hasn’t been very useful in the first few weeks. It’s apparently easily confused by days that you&#8217;re home unexpectedly (for example, a holiday or vacation). [&#8230;]]]></description>
-										<content:encoded><![CDATA[<p>After a few weeks of using the <a href="http://www.nest.com/why-we-made-it/">Nest thermostat</a>, I’ve got a few more comments that I’d like to share. (Here’s my <a href="blog/index.php/archives/1329">post</a> about the installation).</p>
+										<content:encoded><![CDATA[<p>After a few weeks of using the <a href="http://www.nest.com/why-we-made-it/">Nest thermostat</a>, I’ve got a few more comments that I’d like to share. (Here’s my <a href="blog/archives/1329">post</a> about the installation).</p>
 <p>The learning feature honestly hasn’t been very useful in the first few weeks. It’s apparently easily confused by days that you&#8217;re home unexpectedly (for example, a holiday or vacation). If these days are early in the learning process, it makes some very poor choices as to when to activate the HVAC system. I’d recommend not installing it during periods of very inconsistent schedules for this reason.</p>
 <p><a href="blog/wpcontent/uploads/2011/12/image3.png"><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="blog/wpcontent/uploads/2011/12/image_thumb3.png" width="422" height="287" /></a></p>
 <p>It doesn’t have a “I’m on vacation today” mode which would be extremely useful and ideally would help while it’s learning (and other days).</p>

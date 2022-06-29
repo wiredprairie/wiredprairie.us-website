@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Nest Thermostat Review, Update #8	</title>
-	<atom:link href="blog/index.php/archives/1482/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/1482/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/1482</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Tue, 03 Apr 2012 17:05:17 +0000</lastBuildDate>
@@ -32,7 +32,7 @@
 					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1482/comment-page-1#comment-4389&quot;&gt;Charlie&lt;/a&gt;.
 
 The thermostat has a display to show when various &quot;power saving&quot; events occurred. I&#039;m not aware of any way to see the information from their web application though.]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/1482/comment-page-1#comment-4389">Charlie</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/archives/1482/comment-page-1#comment-4389">Charlie</a>.</p>
 <p>The thermostat has a display to show when various &#8220;power saving&#8221; events occurred. I&#8217;m not aware of any way to see the information from their web application though.</p>
 ]]></content:encoded>
 		
@@ -85,7 +85,7 @@ I installed my NEST about two weeks ago. I&#8217;m experiencing the scheduled da
 					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1482/comment-page-1#comment-3943&quot;&gt;David&lt;/a&gt;.
 
 If you&#039;d like to post the pictures on some free photo site of your choosing, you could add a link to them in a comment if you&#039;d like.]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/1482/comment-page-1#comment-3943">David</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/archives/1482/comment-page-1#comment-3943">David</a>.</p>
 <p>If you&#8217;d like to post the pictures on some free photo site of your choosing, you could add a link to them in a comment if you&#8217;d like.</p>
 ]]></content:encoded>
 		
@@ -123,7 +123,7 @@ David, did you try any tests where you made certain the display both wasn&#039;t
 It will be interesting to hear how they respond, but I would expect that all thermostats and thermometers have some margin of inaccuracy in all but the most expensive devices. So, their response will likely be tempered (ha!) by a statement like that. 
 
 The unit I returned was reading 6 degrees off inconsistently, which made it totally unpredictable and useless.]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/1482/comment-page-1#comment-3941">David Porter</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/archives/1482/comment-page-1#comment-3941">David Porter</a>.</p>
 <p>David, did you try any tests where you made certain the display both wasn&#8217;t on and hadn&#8217;t been on recently (use the phone or web interface to compare temps)?</p>
 <p>It will be interesting to hear how they respond, but I would expect that all thermostats and thermometers have some margin of inaccuracy in all but the most expensive devices. So, their response will likely be tempered (ha!) by a statement like that. </p>
 <p>The unit I returned was reading 6 degrees off inconsistently, which made it totally unpredictable and useless.</p>
@@ -165,7 +165,7 @@ Let me know if you would like the pictures..]]></description>
 					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1482/comment-page-1#comment-3938&quot;&gt;David&lt;/a&gt;.
 
 On all of my units when I checked &lt;strong&gt;this evening&lt;/strong&gt;, they all report within a half degree (F) of what the surface temperature is reading.]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/1482/comment-page-1#comment-3938">David</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/archives/1482/comment-page-1#comment-3938">David</a>.</p>
 <p>On all of my units when I checked <strong>this evening</strong>, they all report within a half degree (F) of what the surface temperature is reading.</p>
 ]]></content:encoded>
 		

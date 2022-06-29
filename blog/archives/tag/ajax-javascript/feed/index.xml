@@ -12,7 +12,7 @@
 
 <channel>
 	<title>Ajax; JavaScript &#8211; WiredPrairie</title>
-	<atom:link href="blog/index.php/archives/tag/ajax-javascript/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/tag/ajax-javascript/feed" rel="self" type="application/rss+xml" />
 	<link>/blog</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Tue, 08 Feb 2011 14:18:37 +0000</lastBuildDate>

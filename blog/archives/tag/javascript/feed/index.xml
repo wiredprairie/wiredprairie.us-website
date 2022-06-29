@@ -12,7 +12,7 @@
 
 <channel>
 	<title>JavaScript &#8211; WiredPrairie</title>
-	<atom:link href="blog/index.php/archives/tag/javascript/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/tag/javascript/feed" rel="self" type="application/rss+xml" />
 	<link>/blog</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Wed, 29 Jun 2022 15:21:02 +0000</lastBuildDate>
@@ -486,7 +486,7 @@ __p+=<span class="str">'\r\n    &lt;div class=&quot;title&quot;&gt;'</span>+
 		<guid isPermaLink="false">/blog/?p=1820</guid>
 
 					<description><![CDATA[Part one. After the first round, I felt compelled to KnockOut the code a bit more. I’d mentioned I wasn’t pleased with the code exactly. It needed some refactoring. So, I’ve created a new Knockout binding handler. This binding handler replaces&#160; named parameters with a model’s properties in a path. For example, given this object: [&#8230;]]]></description>
-										<content:encoded><![CDATA[<p><a href="blog/index.php/archives/1800">Part one.</a></p>
+										<content:encoded><![CDATA[<p><a href="blog/archives/1800">Part one.</a></p>
 <p>After the first round, I felt compelled to KnockOut the code a bit more. I’d mentioned I wasn’t pleased with the code exactly. It needed some refactoring.</p>
 <p>So, I’ve created a new Knockout binding handler. This binding handler replaces&#160; named parameters with a model’s properties in a path. </p>
 <p>For example, given this object:</p>
@@ -757,7 +757,7 @@ ko.bindingHandlers.route.options.fixUrl = app_url;</pre>
 	margin: 0em;
 }
 .csharpcode .lnum { color: #606060; }</style>
-<p>You’ll probably like the new way better syntactically at least compared to the <a href="blog/index.php/archives/1800">old</a> way. A route binding requires one input when used in it’s most basic form:</p>
+<p>You’ll probably like the new way better syntactically at least compared to the <a href="blog/archives/1800">old</a> way. A route binding requires one input when used in it’s most basic form:</p>
 <ul>
 <li><strong>url = </strong>the URL or route name to use as the template for the replacement. It should contain (or later resolve to) curly-braced enclosed property name keys which will be substituted by values from the model. The value of the property could be either a route name (see options below) or a path.</li>
 </ul>
@@ -926,10 +926,10 @@ if (username &amp;&amp; password) {<br />
 		<guid isPermaLink="false">/blog/?p=1643</guid>
 
 					<description><![CDATA[Continuing on a theme of animating SVG, I’ve added a label in the center of the animation which contains the current angle of the ever-rotating marker (in fact in a centered horizontally and vertically SVG text node). (Click image below to try it.) At the bottom of the file from the previous post, I’ve added [&#8230;]]]></description>
-										<content:encoded><![CDATA[<p>Continuing on a <a href="blog/index.php/archives/1638">theme</a> of animating SVG, I’ve added a label in the center of the animation which contains the current angle of the ever-rotating marker (in fact in a centered horizontally and vertically SVG text node). </p>
+										<content:encoded><![CDATA[<p>Continuing on a <a href="blog/archives/1638">theme</a> of animating SVG, I’ve added a label in the center of the animation which contains the current angle of the ever-rotating marker (in fact in a centered horizontally and vertically SVG text node). </p>
 <p>(Click image below to try it.)</p>
 <p><a href="http://www.wiredprairie.us/examples/svg/demo2.html" target="_blank"><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="blog/wpcontent/uploads/2012/04/image26.png" width="316" height="313" /></a></p>
-<p>At the bottom of the file from the <a href="blog/index.php/archives/1638">previous</a> post, I’ve added the following:</p>
+<p>At the bottom of the file from the <a href="blog/archives/1638">previous</a> post, I’ve added the following:</p>
 <pre class="code">    <span style="color: blue">&lt;</span><span style="color: maroon">text </span><span style="color: red">id</span><span style="color: blue">=&quot;currentValueAsText&quot; </span><span style="color: red">x</span><span style="color: blue">=&quot;300&quot; </span><span style="color: red">y</span><span style="color: blue">=&quot;300&quot; 
         </span><span style="color: red">style</span><span style="color: blue">=&quot;</span><span style="color: red">text-anchor</span><span style="color: blue">: middle;</span><span style="color: red">alignment-baseline</span><span style="color: blue">:middle&quot; 
         </span><span style="color: red">fill</span><span style="color: blue">=&quot;#FFFFFF&quot; </span><span style="color: red">font-family</span><span style="color: blue">=&quot;'Arial'&quot; </span><span style="color: red">font-size</span><span style="color: blue">=&quot;96&quot; </span><span style="color: red">opacity</span><span style="color: blue">=&quot;.6&quot;&gt;</span>0<span style="color: blue">&lt;/</span><span style="color: maroon">text</span><span style="color: blue">&gt;

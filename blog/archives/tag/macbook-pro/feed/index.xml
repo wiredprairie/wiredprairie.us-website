@@ -12,7 +12,7 @@
 
 <channel>
 	<title>MacBook Pro &#8211; WiredPrairie</title>
-	<atom:link href="blog/index.php/archives/tag/macbook-pro/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/tag/macbook-pro/feed" rel="self" type="application/rss+xml" />
 	<link>/blog</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Sat, 21 Jan 2012 19:27:15 +0000</lastBuildDate>

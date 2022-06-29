@@ -12,7 +12,7 @@
 
 <channel>
 	<title>Rails &#8211; WiredPrairie</title>
-	<atom:link href="blog/index.php/archives/tag/rails/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/tag/rails/feed" rel="self" type="application/rss+xml" />
 	<link>/blog</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Sat, 07 Jan 2012 19:39:24 +0000</lastBuildDate>
@@ -37,7 +37,7 @@
 		<guid isPermaLink="false">/blog/?p=1430</guid>
 
 					<description><![CDATA[I’ve been trying to do some additional work on my ember.js extension for data management. At the same time though, I’ve been trying (to learn and) build a simple Ruby on Rails web demo application using the new JavaScript library. There have been more than a few things that have mystified me about the framework [&#8230;]]]></description>
-										<content:encoded><![CDATA[<p>I’ve been trying to do some additional work on my <a href="blog/index.php/archives/1377">ember.js extension for data</a> management. At the same time though, I’ve been trying (to learn and) build a simple <a href="http://rubyonrails.org/">Ruby on Rails</a> web demo application using the new JavaScript library. There have been more than a few things that have mystified me about the framework and the structuring of an application. One aspect in particular was how to best manage foreign keys and join tables with the ActiveRecord class (and the corresponding SQL tables). So many tutorials have the same lame example of: a CART, an ORDER, a CUSTOMER …, that it’s often difficult to apply the same patterns to a more interesting system. </p>
+										<content:encoded><![CDATA[<p>I’ve been trying to do some additional work on my <a href="blog/archives/1377">ember.js extension for data</a> management. At the same time though, I’ve been trying (to learn and) build a simple <a href="http://rubyonrails.org/">Ruby on Rails</a> web demo application using the new JavaScript library. There have been more than a few things that have mystified me about the framework and the structuring of an application. One aspect in particular was how to best manage foreign keys and join tables with the ActiveRecord class (and the corresponding SQL tables). So many tutorials have the same lame example of: a CART, an ORDER, a CUSTOMER …, that it’s often difficult to apply the same patterns to a more interesting system. </p>
 <p>I started simple this time. </p>
 <p>I wanted a PERSON class and a GIFT class.</p>
 <p><a href="blog/wpcontent/uploads/2012/01/image6.png"><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: block; float: none; margin-left: auto; border-top: 0px; margin-right: auto; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="blog/wpcontent/uploads/2012/01/image_thumb6.png" width="399" height="159" /></a></p>

@@ -12,7 +12,7 @@
 
 <channel>
 	<title>Jekyll &#8211; WiredPrairie</title>
-	<atom:link href="blog/index.php/archives/tag/jekyll/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/tag/jekyll/feed" rel="self" type="application/rss+xml" />
 	<link>/blog</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Sat, 02 Mar 2013 22:48:03 +0000</lastBuildDate>

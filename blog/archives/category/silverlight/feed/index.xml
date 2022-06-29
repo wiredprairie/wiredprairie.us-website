@@ -12,7 +12,7 @@
 
 <channel>
 	<title>Silverlight &#8211; WiredPrairie</title>
-	<atom:link href="blog/index.php/archives/category/silverlight/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/category/silverlight/feed" rel="self" type="application/rss+xml" />
 	<link>/blog</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Thu, 02 Aug 2012 15:29:56 +0000</lastBuildDate>
@@ -648,7 +648,7 @@
 		<guid isPermaLink="false">/blog/index.php/archives/1030</guid>
 
 					<description><![CDATA[I recently made a fix to a Silverlight stopwatch class I wrote last year. In doing so, I decided to kick it up a notch. using (new StopwatchPlus("Constructor")) { //Debug.WriteLine("Initialized: Ellapsed Ticks: {0}, Ellapsed Milliseconds: {1}", sw.EllapsedTicks, sw.EllapsedMilliseconds); InitializeComponent(); Thread.Sleep(600); } Instead of just a simple Stopwatch class, I added functionality to make it easy [&#8230;]]]></description>
-										<content:encoded><![CDATA[<p>I recently made a fix to a <a href="blog/index.php/archives/723">Silverlight stopwatch</a> class I wrote last year.</p>
+										<content:encoded><![CDATA[<p>I recently made a fix to a <a href="blog/archives/723">Silverlight stopwatch</a> class I wrote last year.</p>
 <p>In doing so, I decided to kick it up a notch.</p>
 <pre class="code"><span style="color: blue;">using </span>(<span style="color: blue;">new </span><span style="color: #2b91af;">StopwatchPlus</span>(<span style="color: #a31515;">"Constructor"</span>))
 {

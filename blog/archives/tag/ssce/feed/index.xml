@@ -12,7 +12,7 @@
 
 <channel>
 	<title>SSCE &#8211; WiredPrairie</title>
-	<atom:link href="blog/index.php/archives/tag/ssce/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/tag/ssce/feed" rel="self" type="application/rss+xml" />
 	<link>/blog</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Sun, 01 Apr 2012 19:18:25 +0000</lastBuildDate>

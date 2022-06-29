@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Nest Thermostat Review, Update #5	</title>
-	<atom:link href="blog/index.php/archives/1404/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/1404/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/1404</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Tue, 17 Jan 2012 01:19:51 +0000</lastBuildDate>

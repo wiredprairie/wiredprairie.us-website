@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Silverlight Stopwatch class in C#	</title>
-	<atom:link href="blog/index.php/archives/723/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/723/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/723</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Thu, 29 Apr 2010 20:02:52 +0000</lastBuildDate>
@@ -32,7 +32,7 @@
 					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/723/comment-page-1#comment-3018&quot;&gt;claudio&lt;/a&gt;.
 
 @claudio: Whoops! Must have done a search/replace and managed to spell it wrong. Need to spell check my APIs! :)  I&#039;ve fixed the problem. Thanks for the heads-up!]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/723/comment-page-1#comment-3018">claudio</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/archives/723/comment-page-1#comment-3018">claudio</a>.</p>
 <p>@claudio: Whoops! Must have done a search/replace and managed to spell it wrong. Need to spell check my APIs! :)  I&#8217;ve fixed the problem. Thanks for the heads-up!</p>
 ]]></content:encoded>
 		
@@ -85,7 +85,7 @@ Anyway Thanx<br />
 					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/723/comment-page-1#comment-2964&quot;&gt;Vincent&lt;/a&gt;.
 
 I&#039;ve updated the code, and tested it.  Thanks all for the suggestions. Not sure why my tests worked when I wrote it.]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/723/comment-page-1#comment-2964">Vincent</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/archives/723/comment-page-1#comment-2964">Vincent</a>.</p>
 <p>I&#8217;ve updated the code, and tested it.  Thanks all for the suggestions. Not sure why my tests worked when I wrote it.</p>
 ]]></content:encoded>
 		

@@ -12,7 +12,7 @@
 
 <channel>
 	<title>superuser.com &#8211; WiredPrairie</title>
-	<atom:link href="blog/index.php/archives/tag/superuser-com/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/tag/superuser-com/feed" rel="self" type="application/rss+xml" />
 	<link>/blog</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Tue, 03 Apr 2012 01:43:54 +0000</lastBuildDate>

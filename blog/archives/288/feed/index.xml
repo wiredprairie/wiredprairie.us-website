@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: WPF and Powershell Series &#8212; I don&#8217;t get it.	</title>
-	<atom:link href="blog/index.php/archives/288/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/288/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/288</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Tue, 03 Jun 2008 13:55:32 +0000</lastBuildDate>
@@ -90,7 +90,7 @@ My only complaint about Powershell is that I can&#039;t use it to develop web ap
 		<guid isPermaLink="false">/blog/index.php/archives/288#comment-181</guid>
 
 					<description><![CDATA[[...] /blog/index.php/archives/288   Monday, May 26, 2008 3:51 PM by Aaron [...]]]></description>
-			<content:encoded><![CDATA[<p>[&#8230;] <a href="blog/index.php/archives/288" rel="nofollow ugc">/blog/index.php/archives/288</a>   Monday, May 26, 2008 3:51 PM by Aaron [&#8230;]</p>
+			<content:encoded><![CDATA[<p>[&#8230;] <a href="blog/archives/288" rel="nofollow ugc">/blog/index.php/archives/288</a>   Monday, May 26, 2008 3:51 PM by Aaron [&#8230;]</p>
 ]]></content:encoded>
 		
 			</item>

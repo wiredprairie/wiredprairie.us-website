@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: jQuery 1.5, jquery.validate and Ajax/getJSON	</title>
-	<atom:link href="blog/index.php/archives/1181/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/1181/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/1181</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Tue, 01 Mar 2011 14:53:37 +0000</lastBuildDate>

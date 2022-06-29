@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Data Binding and Tooltips in Silverlight	</title>
-	<atom:link href="blog/index.php/archives/568/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/568/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/568</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Tue, 28 Aug 2012 14:03:27 +0000</lastBuildDate>
@@ -99,7 +99,7 @@ Hope MS will fix this in SL3.</p>
 		<guid isPermaLink="false">/blog/index.php/archives/568#comment-2378</guid>
 
 					<description><![CDATA[[...] As it turns out Microsoft doesn’t set the DataContext property of the tooltip control. Rendering databinding completely useless. Luckely people in the community have come up with a very good solution to this problem: /blog/index.php/archives/568 [...]]]></description>
-			<content:encoded><![CDATA[<p>[&#8230;] As it turns out Microsoft doesn’t set the DataContext property of the tooltip control. Rendering databinding completely useless. Luckely people in the community have come up with a very good solution to this problem: <a href="blog/index.php/archives/568" rel="nofollow ugc">/blog/index.php/archives/568</a> [&#8230;]</p>
+			<content:encoded><![CDATA[<p>[&#8230;] As it turns out Microsoft doesn’t set the DataContext property of the tooltip control. Rendering databinding completely useless. Luckely people in the community have come up with a very good solution to this problem: <a href="blog/archives/568" rel="nofollow ugc">/blog/index.php/archives/568</a> [&#8230;]</p>
 ]]></content:encoded>
 		
 			</item>

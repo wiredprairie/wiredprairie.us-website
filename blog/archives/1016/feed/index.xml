@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Silverlight vs. Flash vs. Photoshop Text Rendering	</title>
-	<atom:link href="blog/index.php/archives/1016/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/1016/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/1016</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Thu, 09 Jun 2011 01:45:05 +0000</lastBuildDate>
@@ -93,7 +93,7 @@ Nice work documenting this clearly Aaron.]]></description>
 You be your own judge. 
 
 I think I&#039;ve demonstrated that Silverlight 4.0, with a few tweaks to the foreground color of the font can emulate the often complimented Flash 10 text rendering capabilities. However, some people don&#039;t like that look. So ...]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/1016/comment-page-1#comment-2943">Ravi Gokulgandhi</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/archives/1016/comment-page-1#comment-2943">Ravi Gokulgandhi</a>.</p>
 <p>You be your own judge. </p>
 <p>I think I&#8217;ve demonstrated that Silverlight 4.0, with a few tweaks to the foreground color of the font can emulate the often complimented Flash 10 text rendering capabilities. However, some people don&#8217;t like that look. So &#8230;</p>
 ]]></content:encoded>

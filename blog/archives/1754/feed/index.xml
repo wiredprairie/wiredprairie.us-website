@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Nest Thermostat API using Node JS and Nest API Update	</title>
-	<atom:link href="blog/index.php/archives/1754/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/1754/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/1754</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Fri, 26 Apr 2013 18:05:59 +0000</lastBuildDate>
@@ -55,7 +55,7 @@ Thanks again for turning me on to the Nest API and providing the details needed 
 					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1754/comment-page-1#comment-23651&quot;&gt;Tim Nicholson&lt;/a&gt;.
 
 The time stamps I&#039;ve looked at are all JavaScript friendly time stamps: new Date(1349697004000).toString() =&gt; &#039;Mon Oct 08 2012 06:50:04 GMT-0500 (Central Daylight Time)&#039;  This post on stackoverflow might help: http://stackoverflow.com/questions/11897331/javascript-gettime-to-php-date  (JavaScript includes milliseconds)]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/1754/comment-page-1#comment-23651">Tim Nicholson</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/archives/1754/comment-page-1#comment-23651">Tim Nicholson</a>.</p>
 <p>The time stamps I&#8217;ve looked at are all JavaScript friendly time stamps: new Date(1349697004000).toString() => &#8216;Mon Oct 08 2012 06:50:04 GMT-0500 (Central Daylight Time)&#8217;  This post on stackoverflow might help: <a href="http://stackoverflow.com/questions/11897331/javascript-gettime-to-php-date" rel="nofollow ugc">http://stackoverflow.com/questions/11897331/javascript-gettime-to-php-date</a>  (JavaScript includes milliseconds)</p>
 ]]></content:encoded>
 		
@@ -89,7 +89,7 @@ I&#039;m finding very strange timestamp values in the json response, though. Do 
 					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1754/comment-page-1#comment-20512&quot;&gt;Charlie&lt;/a&gt;.
 
 That&#039;s very cool Charlie!]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/1754/comment-page-1#comment-20512">Charlie</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/archives/1754/comment-page-1#comment-20512">Charlie</a>.</p>
 <p>That&#8217;s very cool Charlie!</p>
 ]]></content:encoded>
 		
@@ -120,7 +120,7 @@ That&#039;s very cool Charlie!]]></description>
 					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1754/comment-page-1#comment-20508&quot;&gt;Charlie&lt;/a&gt;.
 
 I&#039;ve never seen it set to anything other than 0.]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/1754/comment-page-1#comment-20508">Charlie</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/archives/1754/comment-page-1#comment-20508">Charlie</a>.</p>
 <p>I&#8217;ve never seen it set to anything other than 0.</p>
 ]]></content:encoded>
 		
@@ -137,7 +137,7 @@ I&#039;ve never seen it set to anything other than 0.]]></description>
 					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1754/comment-page-1#comment-20509&quot;&gt;Charlie&lt;/a&gt;.
 
 D&#039;oh! Parens added by WebStorm&#039;s auto function-needs-parens feature. I guess I must have done that after the last test. Fixed on GitHub and npm.]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/1754/comment-page-1#comment-20509">Charlie</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/archives/1754/comment-page-1#comment-20509">Charlie</a>.</p>
 <p>D&#8217;oh! Parens added by WebStorm&#8217;s auto function-needs-parens feature. I guess I must have done that after the last test. Fixed on GitHub and npm.</p>
 ]]></content:encoded>
 		

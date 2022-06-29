@@ -12,7 +12,7 @@
 
 <channel>
 	<title>WinForms &#8211; WiredPrairie</title>
-	<atom:link href="blog/index.php/archives/tag/winforms/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/tag/winforms/feed" rel="self" type="application/rss+xml" />
 	<link>/blog</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Wed, 01 Feb 2012 13:52:33 +0000</lastBuildDate>

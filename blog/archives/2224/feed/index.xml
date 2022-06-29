@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Flutter Demo application linking to BoardGameGeek.Com&#8217;s Hot Game List	</title>
-	<atom:link href="blog/index.php/archives/2224/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/2224/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/2224</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Thu, 01 Mar 2018 17:57:16 +0000</lastBuildDate>
@@ -32,7 +32,7 @@
 					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/2224/comment-page-1#comment-63886&quot;&gt;Michael Thomsen&lt;/a&gt;.
 
 Thanks for the comment Michael and suggestion. It&#039;s better, but I still find it too noisy and it takes too much vertical space. Lines starting with child: or children take away the focus of the type of child or children.]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/2224/comment-page-1#comment-63886">Michael Thomsen</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/archives/2224/comment-page-1#comment-63886">Michael Thomsen</a>.</p>
 <p>Thanks for the comment Michael and suggestion. It&#8217;s better, but I still find it too noisy and it takes too much vertical space. Lines starting with child: or children take away the focus of the type of child or children.</p>
 ]]></content:encoded>
 		

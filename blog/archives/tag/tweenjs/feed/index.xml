@@ -12,7 +12,7 @@
 
 <channel>
 	<title>TweenJS &#8211; WiredPrairie</title>
-	<atom:link href="blog/index.php/archives/tag/tweenjs/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/tag/tweenjs/feed" rel="self" type="application/rss+xml" />
 	<link>/blog</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Sun, 13 May 2012 16:59:55 +0000</lastBuildDate>

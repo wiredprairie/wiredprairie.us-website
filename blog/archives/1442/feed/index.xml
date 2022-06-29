@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Nest Thermostat API/Protocol	</title>
-	<atom:link href="blog/index.php/archives/1442/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/1442/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/1442</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Wed, 29 Jun 2022 16:00:40 +0000</lastBuildDate>
@@ -85,7 +85,7 @@ Maybe someone could try Fiddler to test?]]></description>
 I don&#039;t understand what you mean? Their &quot;IP Range&quot;? 
 
 It&#039;s possible they&#039;ve changed the protocol or authentication since I wrote this up. I was just doing some stuff recently with a node.js based API that I was working on. It was working, but I admit I was rethinking auth.]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/1442/comment-page-1#comment-4784">Suman</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/archives/1442/comment-page-1#comment-4784">Suman</a>.</p>
 <p>I don&#8217;t understand what you mean? Their &#8220;IP Range&#8221;? </p>
 <p>It&#8217;s possible they&#8217;ve changed the protocol or authentication since I wrote this up. I was just doing some stuff recently with a node.js based API that I was working on. It was working, but I admit I was rethinking auth.</p>
 ]]></content:encoded>
@@ -145,7 +145,7 @@ It&#039;s possible they&#039;ve changed the protocol or authentication since I w
 					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1442/comment-page-1#comment-3881&quot;&gt;Randal&lt;/a&gt;.
 
 @Randal - thanks for the link. One thermostat was definitely defective as it read incorrectly in two locations in our house and consistently read much higher than 2 proven thermometers (4-6 degrees F warmer). It would report 74F when it was impossible that it was 74F (as it&#039;s a cool enough winter that our house is never that warm and the thermostat was set to 68F). I certainly can believe that there&#039;s some inaccuracy in other thermostats.]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/1442/comment-page-1#comment-3881">Randal</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/archives/1442/comment-page-1#comment-3881">Randal</a>.</p>
 <p>@Randal &#8211; thanks for the link. One thermostat was definitely defective as it read incorrectly in two locations in our house and consistently read much higher than 2 proven thermometers (4-6 degrees F warmer). It would report 74F when it was impossible that it was 74F (as it&#8217;s a cool enough winter that our house is never that warm and the thermostat was set to 68F). I certainly can believe that there&#8217;s some inaccuracy in other thermostats.</p>
 ]]></content:encoded>
 		
@@ -176,7 +176,7 @@ It&#039;s possible they&#039;ve changed the protocol or authentication since I w
 					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1442/comment-page-1#comment-3856&quot;&gt;Brian Stormont&lt;/a&gt;.
 
 Interesting find.  From a quick glance on my iPad, it looks like low level Linux modules.]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/1442/comment-page-1#comment-3856">Brian Stormont</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/archives/1442/comment-page-1#comment-3856">Brian Stormont</a>.</p>
 <p>Interesting find.  From a quick glance on my iPad, it looks like low level Linux modules.</p>
 ]]></content:encoded>
 		

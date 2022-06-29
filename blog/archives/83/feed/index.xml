@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: The Podcasts I listen to (somewhat) regularly&#8230;	</title>
-	<atom:link href="blog/index.php/archives/83/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/83/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/83</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Fri, 12 Sep 2008 21:58:04 +0000</lastBuildDate>

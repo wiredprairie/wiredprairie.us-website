@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Sending a socket to a forked process in Node.JS	</title>
-	<atom:link href="blog/index.php/archives/1930/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/1930/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/1930</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Wed, 29 Jun 2022 15:21:02 +0000</lastBuildDate>
@@ -45,7 +45,7 @@ And by now, the answer to your second question should be more obvious as fork cr
 &lt;/ol&gt;
 
 I believe the &lt;a href=&quot;http://nodejs.org/api/cluster.html&quot; title=&quot;cluster module&quot; rel=&quot;nofollow&quot;&gt;cluster module&lt;/a&gt; of Node uses forks to manage multiple processes.]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/1930/comment-page-1#comment-31603">Rajkamal</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/archives/1930/comment-page-1#comment-31603">Rajkamal</a>.</p>
 <p>There are a lot of good resources on the internet that explain forking reasonably well in far more detail than I&#8217;ll provide here. :)  </p>
 <p>Quick answer: </p>
 <ol>

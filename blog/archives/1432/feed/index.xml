@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Nest Thermostat Review, Update #7	</title>
-	<atom:link href="blog/index.php/archives/1432/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/1432/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/1432</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Wed, 18 Jan 2012 17:54:32 +0000</lastBuildDate>
@@ -128,7 +128,7 @@ Sorry about not making the connection!
 I can say that none of the thermostats in our house have done that in the last day (and they are all updated). Yesterday, the house thought we were away during the day and shut down all normal schedules, so our house was very cold during dinner. The day time set points match the away temps. 
 
 I know that this morning neither of the normal schedules activated until their normal set points time as I was awake already when the furnace turned on.]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/1432/comment-page-1#comment-3887">Curt</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/archives/1432/comment-page-1#comment-3887">Curt</a>.</p>
 <p>Sorry about not making the connection! </p>
 <p>I can say that none of the thermostats in our house have done that in the last day (and they are all updated). Yesterday, the house thought we were away during the day and shut down all normal schedules, so our house was very cold during dinner. The day time set points match the away temps. </p>
 <p>I know that this morning neither of the normal schedules activated until their normal set points time as I was awake already when the furnace turned on.</p>
@@ -163,7 +163,7 @@ So, it certainly is a good question: Does 1.06 implement anticipation of set poi
 					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1432/comment-page-1#comment-3883&quot;&gt;Rick&lt;/a&gt;.
 
 @rick-- did you confirm your schedule hadn&#039;t changed? Someone earlier had confirmed with nest that it wouldn&#039;t warm to a set point before the time (it was set to had passed). While I&#039;d really like to have that feature, they&#039;d need to adjust the schedule setting experience to make it an option as many have schedules based on guesswork of how long it will take to reach a set point.]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/1432/comment-page-1#comment-3883">Rick</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/archives/1432/comment-page-1#comment-3883">Rick</a>.</p>
 <p>@rick&#8211; did you confirm your schedule hadn&#8217;t changed? Someone earlier had confirmed with nest that it wouldn&#8217;t warm to a set point before the time (it was set to had passed). While I&#8217;d really like to have that feature, they&#8217;d need to adjust the schedule setting experience to make it an option as many have schedules based on guesswork of how long it will take to reach a set point.</p>
 ]]></content:encoded>
 		
@@ -200,7 +200,7 @@ Wonder if that was part of the initial design, or a result of the firmware updat
 					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1432/comment-page-1#comment-3876&quot;&gt;Brian&lt;/a&gt;.
 
 I did notice this morning that there was a new version on my thermostats. I&#039;ll post updates if something changes for the better or worse.]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/1432/comment-page-1#comment-3876">Brian</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/archives/1432/comment-page-1#comment-3876">Brian</a>.</p>
 <p>I did notice this morning that there was a new version on my thermostats. I&#8217;ll post updates if something changes for the better or worse.</p>
 ]]></content:encoded>
 		

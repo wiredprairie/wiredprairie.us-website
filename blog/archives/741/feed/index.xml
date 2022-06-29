@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: How to set Internet Explorer 8 View Source Tool/Editor	</title>
-	<atom:link href="blog/index.php/archives/741/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/741/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/741</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Tue, 16 Nov 2010 15:55:22 +0000</lastBuildDate>
@@ -60,7 +60,7 @@
 					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/741/comment-page-1#comment-2340&quot;&gt;Stephen Streufert&lt;/a&gt;.
 
 That one exists on Vista as well -- but I found that it had no impact on Vista when trying to reset it back to the default view.]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/741/comment-page-1#comment-2340">Stephen Streufert</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/archives/741/comment-page-1#comment-2340">Stephen Streufert</a>.</p>
 <p>That one exists on Vista as well &#8212; but I found that it had no impact on Vista when trying to reset it back to the default view.</p>
 ]]></content:encoded>
 		

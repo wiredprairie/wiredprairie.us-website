@@ -12,7 +12,7 @@
 
 <channel>
 	<title>Angular &#8211; WiredPrairie</title>
-	<atom:link href="blog/index.php/archives/tag/angular/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/tag/angular/feed" rel="self" type="application/rss+xml" />
 	<link>/blog</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Sat, 01 Feb 2014 02:51:22 +0000</lastBuildDate>

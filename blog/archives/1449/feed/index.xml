@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: .NET API for Nest Thermostat	</title>
-	<atom:link href="blog/index.php/archives/1449/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/1449/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/1449</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Sat, 22 Dec 2012 01:28:17 +0000</lastBuildDate>
@@ -32,7 +32,7 @@
 					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1449/comment-page-1#comment-20362&quot;&gt;Spotty&lt;/a&gt;.
 
 Hmm. Surprised it doesn&#039;t work on WP8 (as that&#039;s supposed to be IE9, basically). Are you trying to create an WP7/8 App, or a web site that you can browse from your phone?]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/1449/comment-page-1#comment-20362">Spotty</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/archives/1449/comment-page-1#comment-20362">Spotty</a>.</p>
 <p>Hmm. Surprised it doesn&#8217;t work on WP8 (as that&#8217;s supposed to be IE9, basically). Are you trying to create an WP7/8 App, or a web site that you can browse from your phone?</p>
 ]]></content:encoded>
 		
@@ -82,7 +82,7 @@ I&#039;ve done .net development - just not much in the way of web stuff.]]></des
 @spotty -- do you have a question/comment? 
 
 I&#039;m guessing Nest won&#039;t have a WP experience. Does the web site via the mobile browser work on WP7/8?]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/1449/comment-page-1#comment-20359">Spotty</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/archives/1449/comment-page-1#comment-20359">Spotty</a>.</p>
 <p>@spotty &#8212; do you have a question/comment? </p>
 <p>I&#8217;m guessing Nest won&#8217;t have a WP experience. Does the web site via the mobile browser work on WP7/8?</p>
 ]]></content:encoded>
@@ -119,7 +119,7 @@ I&#039;m trying to get some basic functionality working as Nest seem to not fort
 					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1449/comment-page-1#comment-17061&quot;&gt;Spotty&lt;/a&gt;.
 
 Where are you seeing those files mentioned (I&#039;m not seeing the reference).]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/1449/comment-page-1#comment-17061">Spotty</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/archives/1449/comment-page-1#comment-17061">Spotty</a>.</p>
 <p>Where are you seeing those files mentioned (I&#8217;m not seeing the reference).</p>
 ]]></content:encoded>
 		
@@ -150,7 +150,7 @@ Where are you seeing those files mentioned (I&#039;m not seeing the reference).]
 					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1449/comment-page-1#comment-4888&quot;&gt;JP&lt;/a&gt;.
 
 No, sorry, there&#039;s not a simple way to connect the two without more work. I&#039;ve never tried it on the Mac. In theory, using Mono (.NET for Mac), it might work with some tweaks. Not sure.]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/1449/comment-page-1#comment-4888">JP</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/archives/1449/comment-page-1#comment-4888">JP</a>.</p>
 <p>No, sorry, there&#8217;s not a simple way to connect the two without more work. I&#8217;ve never tried it on the Mac. In theory, using Mono (.NET for Mac), it might work with some tweaks. Not sure.</p>
 ]]></content:encoded>
 		
@@ -188,7 +188,7 @@ Thanks in advance for your patience.
 		<guid isPermaLink="false">/blog/?p=1449#comment-4512</guid>
 
 					<description><![CDATA[[...] the web and came across a few other projects. One was a .net API written by Aaron at WiredPrarie (/blog/index.php/archives/1449). The other was a Siri plugin written in Ruby by Chris Burris [...]]]></description>
-			<content:encoded><![CDATA[<p>[&#8230;] the web and came across a few other projects. One was a .net API written by Aaron at WiredPrarie (<a href="blog/index.php/archives/1449" rel="nofollow ugc">/blog/index.php/archives/1449</a>). The other was a Siri plugin written in Ruby by Chris Burris [&#8230;]</p>
+			<content:encoded><![CDATA[<p>[&#8230;] the web and came across a few other projects. One was a .net API written by Aaron at WiredPrarie (<a href="blog/archives/1449" rel="nofollow ugc">/blog/index.php/archives/1449</a>). The other was a Siri plugin written in Ruby by Chris Burris [&#8230;]</p>
 ]]></content:encoded>
 		
 			</item>

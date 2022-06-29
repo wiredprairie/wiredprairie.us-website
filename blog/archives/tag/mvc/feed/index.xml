@@ -12,7 +12,7 @@
 
 <channel>
 	<title>MVC &#8211; WiredPrairie</title>
-	<atom:link href="blog/index.php/archives/tag/mvc/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/tag/mvc/feed" rel="self" type="application/rss+xml" />
 	<link>/blog</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Sat, 02 Mar 2013 16:50:53 +0000</lastBuildDate>
@@ -125,7 +125,7 @@
 		<guid isPermaLink="false">/blog/?p=1820</guid>
 
 					<description><![CDATA[Part one. After the first round, I felt compelled to KnockOut the code a bit more. I’d mentioned I wasn’t pleased with the code exactly. It needed some refactoring. So, I’ve created a new Knockout binding handler. This binding handler replaces&#160; named parameters with a model’s properties in a path. For example, given this object: [&#8230;]]]></description>
-										<content:encoded><![CDATA[<p><a href="blog/index.php/archives/1800">Part one.</a></p>
+										<content:encoded><![CDATA[<p><a href="blog/archives/1800">Part one.</a></p>
 <p>After the first round, I felt compelled to KnockOut the code a bit more. I’d mentioned I wasn’t pleased with the code exactly. It needed some refactoring.</p>
 <p>So, I’ve created a new Knockout binding handler. This binding handler replaces&#160; named parameters with a model’s properties in a path. </p>
 <p>For example, given this object:</p>
@@ -396,7 +396,7 @@ ko.bindingHandlers.route.options.fixUrl = app_url;</pre>
 	margin: 0em;
 }
 .csharpcode .lnum { color: #606060; }</style>
-<p>You’ll probably like the new way better syntactically at least compared to the <a href="blog/index.php/archives/1800">old</a> way. A route binding requires one input when used in it’s most basic form:</p>
+<p>You’ll probably like the new way better syntactically at least compared to the <a href="blog/archives/1800">old</a> way. A route binding requires one input when used in it’s most basic form:</p>
 <ul>
 <li><strong>url = </strong>the URL or route name to use as the template for the replacement. It should contain (or later resolve to) curly-braced enclosed property name keys which will be substituted by values from the model. The value of the property could be either a route name (see options below) or a path.</li>
 </ul>

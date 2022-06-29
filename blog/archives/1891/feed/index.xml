@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: RewriteCond for web based RSS readers	</title>
-	<atom:link href="blog/index.php/archives/1891/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/1891/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/1891</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Wed, 24 Jul 2013 12:22:57 +0000</lastBuildDate>
@@ -32,7 +32,7 @@
 					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1891/comment-page-1#comment-26556&quot;&gt;Kevin&lt;/a&gt;.
 
 Thanks Kevin, added.]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/1891/comment-page-1#comment-26556">Kevin</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/archives/1891/comment-page-1#comment-26556">Kevin</a>.</p>
 <p>Thanks Kevin, added.</p>
 ]]></content:encoded>
 		

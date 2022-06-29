@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: The ReaderWriterLock Slims down &#8230;. (in .NET 3.5)	</title>
-	<atom:link href="blog/index.php/archives/215/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/215/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/215</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Thu, 15 Jan 2009 13:24:51 +0000</lastBuildDate>

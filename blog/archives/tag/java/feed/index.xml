@@ -12,7 +12,7 @@
 
 <channel>
 	<title>Java &#8211; WiredPrairie</title>
-	<atom:link href="blog/index.php/archives/tag/java/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/tag/java/feed" rel="self" type="application/rss+xml" />
 	<link>/blog</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Mon, 10 Jan 2011 00:09:17 +0000</lastBuildDate>

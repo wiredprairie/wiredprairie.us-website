@@ -12,7 +12,7 @@
 
 <channel>
 	<title>View Source &#8211; WiredPrairie</title>
-	<atom:link href="blog/index.php/archives/tag/view-source/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/tag/view-source/feed" rel="self" type="application/rss+xml" />
 	<link>/blog</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Sun, 22 Mar 2009 17:00:17 +0000</lastBuildDate>

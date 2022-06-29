@@ -12,7 +12,7 @@
 
 <channel>
 	<title>typescript &#8211; WiredPrairie</title>
-	<atom:link href="blog/index.php/archives/tag/typescript/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/tag/typescript/feed" rel="self" type="application/rss+xml" />
 	<link>/blog</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Wed, 26 Oct 2016 01:27:07 +0000</lastBuildDate>

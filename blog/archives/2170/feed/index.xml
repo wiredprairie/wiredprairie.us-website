@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: How to sign Powershell scripts with self-signed certificates in Windows 10	</title>
-	<atom:link href="blog/index.php/archives/2170/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/2170/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/2170</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Mon, 23 Apr 2018 12:49:02 +0000</lastBuildDate>

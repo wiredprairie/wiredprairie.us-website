@@ -12,7 +12,7 @@
 
 <channel>
 	<title>Security &#8211; WiredPrairie</title>
-	<atom:link href="blog/index.php/archives/tag/security/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/tag/security/feed" rel="self" type="application/rss+xml" />
 	<link>/blog</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Wed, 09 Oct 2013 12:44:35 +0000</lastBuildDate>

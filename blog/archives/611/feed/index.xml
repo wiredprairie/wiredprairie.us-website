@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Adventure in the Park!	</title>
-	<atom:link href="blog/index.php/archives/611/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/611/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/611</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Mon, 01 Dec 2008 06:54:47 +0000</lastBuildDate>

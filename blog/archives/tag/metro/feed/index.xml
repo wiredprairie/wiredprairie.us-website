@@ -12,7 +12,7 @@
 
 <channel>
 	<title>Metro &#8211; WiredPrairie</title>
-	<atom:link href="blog/index.php/archives/tag/metro/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/tag/metro/feed" rel="self" type="application/rss+xml" />
 	<link>/blog</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Wed, 29 Aug 2012 01:20:36 +0000</lastBuildDate>

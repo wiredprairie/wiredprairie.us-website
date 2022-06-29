@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: How to play an Audio File in Silverlight, Part 2	</title>
-	<atom:link href="blog/index.php/archives/579/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/579/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/579</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Tue, 21 Apr 2009 03:12:16 +0000</lastBuildDate>

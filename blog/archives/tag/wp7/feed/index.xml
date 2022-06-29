@@ -12,7 +12,7 @@
 
 <channel>
 	<title>WP7 &#8211; WiredPrairie</title>
-	<atom:link href="blog/index.php/archives/tag/wp7/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/tag/wp7/feed" rel="self" type="application/rss+xml" />
 	<link>/blog</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Fri, 17 Sep 2010 12:49:55 +0000</lastBuildDate>

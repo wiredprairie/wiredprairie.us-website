@@ -12,7 +12,7 @@
 
 <channel>
 	<title>made in the usa &#8211; WiredPrairie</title>
-	<atom:link href="blog/index.php/archives/tag/made-in-the-usa/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/tag/made-in-the-usa/feed" rel="self" type="application/rss+xml" />
 	<link>/blog</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Wed, 23 Mar 2016 14:40:26 +0000</lastBuildDate>

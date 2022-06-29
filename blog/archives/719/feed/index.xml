@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Why write your own rendering engine anymore?	</title>
-	<atom:link href="blog/index.php/archives/719/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/719/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/719</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Mon, 09 Mar 2009 01:11:10 +0000</lastBuildDate>

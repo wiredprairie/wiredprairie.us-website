@@ -12,7 +12,7 @@
 
 <channel>
 	<title>Web &#8211; WiredPrairie</title>
-	<atom:link href="blog/index.php/archives/category/web/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/category/web/feed" rel="self" type="application/rss+xml" />
 	<link>/blog</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Sat, 21 Apr 2018 02:27:19 +0000</lastBuildDate>

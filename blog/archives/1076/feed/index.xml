@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: How to embed and use the Google Web Fonts in Silverlight	</title>
-	<atom:link href="blog/index.php/archives/1076/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/1076/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/1076</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Sat, 14 May 2011 17:34:47 +0000</lastBuildDate>

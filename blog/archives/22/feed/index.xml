@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Converting a mapped drive letter to a network path using C#	</title>
-	<atom:link href="blog/index.php/archives/22/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/22/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/22</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Mon, 18 Jun 2012 18:27:46 +0000</lastBuildDate>
@@ -34,7 +34,7 @@
 While that&#039;s true it would be more correct, on Windows, it&#039;s hard coded in the .NET 4.0 framework to be a &quot;:&quot;. :)
 
 (And this call wouldn&#039;t make sense on anything but Windows with a mapped drive letter, so portability really isn&#039;t an issue).]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/22/comment-page-1#comment-4591">Suggestor</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/archives/22/comment-page-1#comment-4591">Suggestor</a>.</p>
 <p>While that&#8217;s true it would be more correct, on Windows, it&#8217;s hard coded in the .NET 4.0 framework to be a &#8220;:&#8221;. :)</p>
 <p>(And this call wouldn&#8217;t make sense on anything but Windows with a mapped drive letter, so portability really isn&#8217;t an issue).</p>
 ]]></content:encoded>

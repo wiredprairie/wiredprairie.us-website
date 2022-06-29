@@ -12,7 +12,7 @@
 
 <channel>
 	<title>Grab &#8211; WiredPrairie</title>
-	<atom:link href="blog/index.php/archives/tag/grab/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/tag/grab/feed" rel="self" type="application/rss+xml" />
 	<link>/blog</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Tue, 21 Aug 2012 01:29:21 +0000</lastBuildDate>

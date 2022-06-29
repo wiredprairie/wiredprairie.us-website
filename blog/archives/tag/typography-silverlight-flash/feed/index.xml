@@ -12,7 +12,7 @@
 
 <channel>
 	<title>Typography Silverlight Flash &#8211; WiredPrairie</title>
-	<atom:link href="blog/index.php/archives/tag/typography-silverlight-flash/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/tag/typography-silverlight-flash/feed" rel="self" type="application/rss+xml" />
 	<link>/blog</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Wed, 24 Mar 2010 15:54:26 +0000</lastBuildDate>

@@ -12,7 +12,7 @@
 
 <channel>
 	<title>WHS2011 &#8211; WiredPrairie</title>
-	<atom:link href="blog/index.php/archives/tag/whs2011/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/tag/whs2011/feed" rel="self" type="application/rss+xml" />
 	<link>/blog</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Thu, 26 Apr 2012 12:49:55 +0000</lastBuildDate>

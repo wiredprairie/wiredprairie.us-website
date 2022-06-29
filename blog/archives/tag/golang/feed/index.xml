@@ -12,7 +12,7 @@
 
 <channel>
 	<title>GoLang &#8211; WiredPrairie</title>
-	<atom:link href="blog/index.php/archives/tag/golang/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/tag/golang/feed" rel="self" type="application/rss+xml" />
 	<link>/blog</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Sat, 29 Apr 2017 01:14:45 +0000</lastBuildDate>

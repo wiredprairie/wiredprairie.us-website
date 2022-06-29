@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: PostBox Tweaks	</title>
-	<atom:link href="blog/index.php/archives/1025/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/1025/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/1025</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Fri, 26 Mar 2010 21:11:19 +0000</lastBuildDate>
@@ -32,7 +32,7 @@
 					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1025/comment-page-1#comment-2938&quot;&gt;Waseem Sadiq&lt;/a&gt;.
 
 I sent you an e-mail directly about some of the performance issues I&#039;m having with inbox2. It&#039;s hitting the CPU too hard right now.]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/1025/comment-page-1#comment-2938">Waseem Sadiq</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/archives/1025/comment-page-1#comment-2938">Waseem Sadiq</a>.</p>
 <p>I sent you an e-mail directly about some of the performance issues I&#8217;m having with inbox2. It&#8217;s hitting the CPU too hard right now.</p>
 ]]></content:encoded>
 		
@@ -69,7 +69,7 @@ Waseem]]></description>
 					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1025/comment-page-1#comment-2938&quot;&gt;Waseem Sadiq&lt;/a&gt;.
 
 I had seen inbox2 (and I&#039;ve got it installed) -- but having just purchased PostBox, I&#039;m not too compelled to switch to something else. I just started it up as a reminder -- and it has hung on the splash screen for more than a minute. :(]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="blog/index.php/archives/1025/comment-page-1#comment-2938">Waseem Sadiq</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="blog/archives/1025/comment-page-1#comment-2938">Waseem Sadiq</a>.</p>
 <p>I had seen inbox2 (and I&#8217;ve got it installed) &#8212; but having just purchased PostBox, I&#8217;m not too compelled to switch to something else. I just started it up as a reminder &#8212; and it has hung on the splash screen for more than a minute. :(</p>
 ]]></content:encoded>
 		

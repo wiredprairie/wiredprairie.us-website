@@ -11,7 +11,7 @@
 <channel>
 	<title>
 	Comments on: Where do you &#034;event&#034;?	</title>
-	<atom:link href="blog/index.php/archives/543/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/543/feed" rel="self" type="application/rss+xml" />
 	<link>/blog/index.php/archives/543</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Sat, 06 Sep 2008 11:34:19 +0000</lastBuildDate>

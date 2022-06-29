@@ -12,7 +12,7 @@
 
 <channel>
 	<title>Flex &#8211; WiredPrairie</title>
-	<atom:link href="blog/index.php/archives/tag/flex/feed" rel="self" type="application/rss+xml" />
+	<atom:link href="blog/archives/tag/flex/feed" rel="self" type="application/rss+xml" />
 	<link>/blog</link>
 	<description>Yet another tech blog.</description>
 	<lastBuildDate>Thu, 13 May 2010 12:47:23 +0000</lastBuildDate>
