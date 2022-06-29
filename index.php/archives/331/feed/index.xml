@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Velocity &#8212; a rockin&#8217; distributed in memory cache for ASP.NET	</title>
+	<atom:link href="/blog/index.php/archives/331/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/331</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Wed, 13 May 2009 01:02:31 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/331/comment-page-1#comment-2494</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Wed, 13 May 2009 01:02:31 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/331#comment-2494</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/331/comment-page-1#comment-2493&quot;&gt;Jack&lt;/a&gt;.
+
+&quot;Jack&quot; -- I removed your URL. 
+
+They can&#039;t be compared as they don&#039;t serve the same purposes. It&#039;s like asking if grabbing a value from RAM is faster than pulling it from disk. It all depends. Velocity is a distributed cache, designed to provide high availability. ASP.NET Cache -- not at all.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/331/comment-page-1#comment-2493">Jack</a>.</p>
+<p>&#8220;Jack&#8221; &#8212; I removed your URL. </p>
+<p>They can&#8217;t be compared as they don&#8217;t serve the same purposes. It&#8217;s like asking if grabbing a value from RAM is faster than pulling it from disk. It all depends. Velocity is a distributed cache, designed to provide high availability. ASP.NET Cache &#8212; not at all.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Jack		</title>
+		<link>/blog/index.php/archives/331/comment-page-1#comment-2493</link>
+
+		<dc:creator><![CDATA[Jack]]></dc:creator>
+		<pubDate>Tue, 12 May 2009 10:27:16 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/331#comment-2493</guid>
+
+					<description><![CDATA[Do you know the performance compared with System.web.Caching.Cache?]]></description>
+			<content:encoded><![CDATA[<p>Do you know the performance compared with System.web.Caching.Cache?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Paul on Distributed Cache		</title>
+		<link>/blog/index.php/archives/331/comment-page-1#comment-1432</link>
+
+		<dc:creator><![CDATA[Paul on Distributed Cache]]></dc:creator>
+		<pubDate>Wed, 05 Nov 2008 13:44:01 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/331#comment-1432</guid>
+
+					<description><![CDATA[Although Velocity has made progress from CTP1 to CTP2, it still leaves much to be desired. It will be some time before they provide all the important features in a distributed cache and even longer before it is tested in the market. I wish them good luck.
+
+In the meantime, NCache already provides all CTP2 &#038; V1, and many more features. NCache is the first, the most mature, and the most feature-rich distributed cache in the .NET space. NCache is an enterprise level in-memory distributed cache for .NET and also provides a distributed ASP.NET Session State. Check it out at http://www.alachisoft.com./
+
+NCache Express is a totally free version of NCache. Check it out at http://www.alachisoft.com/rp.php?dest=/ncache/ncache_express.html]]></description>
+			<content:encoded><![CDATA[<p>Although Velocity has made progress from CTP1 to CTP2, it still leaves much to be desired. It will be some time before they provide all the important features in a distributed cache and even longer before it is tested in the market. I wish them good luck.</p>
+<p>In the meantime, NCache already provides all CTP2 &amp; V1, and many more features. NCache is the first, the most mature, and the most feature-rich distributed cache in the .NET space. NCache is an enterprise level in-memory distributed cache for .NET and also provides a distributed ASP.NET Session State. Check it out at <a href="http://www.alachisoft.com/" rel="nofollow ugc">http://www.alachisoft.com/</a>.</p>
+<p>NCache Express is a totally free version of NCache. Check it out at <a href="http://www.alachisoft.com/rp.php?dest=/ncache/ncache_express.html" rel="nofollow ugc">http://www.alachisoft.com/rp.php?dest=/ncache/ncache_express.html</a></p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: WiredPrairie - Tech Ed 2008 Developer Wrap-Up		</title>
+		<link>/blog/index.php/archives/331/comment-page-1#comment-351</link>
+
+		<dc:creator><![CDATA[WiredPrairie - Tech Ed 2008 Developer Wrap-Up]]></dc:creator>
+		<pubDate>Sat, 07 Jun 2008 00:59:34 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/331#comment-351</guid>
+
+					<description><![CDATA[[...] Velocity (Dare describes it in some detail here). [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] Velocity (Dare describes it in some detail here). [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Technical Interview Question #2	</title>
+	<atom:link href="/blog/index.php/archives/144/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/144</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Tue, 13 May 2008 02:08:14 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: scheffler		</title>
+		<link>/blog/index.php/archives/144/comment-page-1#comment-119</link>
+
+		<dc:creator><![CDATA[scheffler]]></dc:creator>
+		<pubDate>Tue, 13 May 2008 02:08:14 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/144#comment-119</guid>
+
+					<description><![CDATA[I&#039;m no algorithm guru by any stretch of the imagination, but I have enjoyed working on these questions you&#039;ve been throwing out there.  
+
+I came up with a solution which I *think* is reasonable and was performant over huge sets.  Seems deceptively simple though.  So, I was curious what other solutions there were to this problem.  
+
+My approach, in a nutshell, was to iterate over the list, once.  For each element in the array I requested a new random number and used that number as an index into the array.  I then swapped the contents of that index value with the current slot.  Lather, rinse, repeat.  
+
+The problem statement didn&#039;t specify whether I could shuffle the contents of the passed in array or whether I had to make a copy.  I opted for shuffling in place to keep things easier.
+
+Since my approach comment kinda spoils the interview question format I&#039;m not sure you&#039;ll want to post this.  But I would be interested in knowing how others approach this.
+
+Love your blog, keep em coming!]]></description>
+			<content:encoded><![CDATA[<p>I&#8217;m no algorithm guru by any stretch of the imagination, but I have enjoyed working on these questions you&#8217;ve been throwing out there.  </p>
+<p>I came up with a solution which I *think* is reasonable and was performant over huge sets.  Seems deceptively simple though.  So, I was curious what other solutions there were to this problem.  </p>
+<p>My approach, in a nutshell, was to iterate over the list, once.  For each element in the array I requested a new random number and used that number as an index into the array.  I then swapped the contents of that index value with the current slot.  Lather, rinse, repeat.  </p>
+<p>The problem statement didn&#8217;t specify whether I could shuffle the contents of the passed in array or whether I had to make a copy.  I opted for shuffling in place to keep things easier.</p>
+<p>Since my approach comment kinda spoils the interview question format I&#8217;m not sure you&#8217;ll want to post this.  But I would be interested in knowing how others approach this.</p>
+<p>Love your blog, keep em coming!</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

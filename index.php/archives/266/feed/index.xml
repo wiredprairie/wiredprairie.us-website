@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: WPF Binding Expression Alternatives	</title>
+	<atom:link href="/blog/index.php/archives/266/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/266</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Thu, 15 Jan 2009 13:25:11 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: WPF Binding Expression Alternatives - Zuker On Foundations		</title>
+		<link>/blog/index.php/archives/266/comment-page-1#comment-2134</link>
+
+		<dc:creator><![CDATA[WPF Binding Expression Alternatives - Zuker On Foundations]]></dc:creator>
+		<pubDate>Thu, 15 Jan 2009 13:25:11 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/266#comment-2134</guid>
+
+					<description><![CDATA[[...] this post from WiredPrairie [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] this post from WiredPrairie [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: WPF Binding Expression Alternatives - Zuker On Foundations		</title>
+		<link>/blog/index.php/archives/266/comment-page-1#comment-127</link>
+
+		<dc:creator><![CDATA[WPF Binding Expression Alternatives - Zuker On Foundations]]></dc:creator>
+		<pubDate>Wed, 14 May 2008 07:03:17 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/266#comment-127</guid>
+
+					<description><![CDATA[[...] Binding Expression Alternatives Via this post from WiredPrairie [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] Binding Expression Alternatives Via this post from WiredPrairie [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Philipp		</title>
+		<link>/blog/index.php/archives/266/comment-page-1#comment-121</link>
+
+		<dc:creator><![CDATA[Philipp]]></dc:creator>
+		<pubDate>Tue, 13 May 2008 13:38:29 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/266#comment-121</guid>
+
+					<description><![CDATA[Attached properties are a viable and often preferable alternative to markup extensions (as a matter of fact, the lookup example at hardcodet.net could be implemented that easily with an AP that I even mentioned it). You rarely need to mess with markup extensions, but they can come in handy. I&#039;m thinking about simplified XAML (a lot of controls that use the same bindings, converters etc.) and scenarios where you would have to use several attached properties (which might cause you headache when it comes to state management). Apart from that, I&#039;d say you probably know that you need an extension if all alternatives just suck :).]]></description>
+			<content:encoded><![CDATA[<p>Attached properties are a viable and often preferable alternative to markup extensions (as a matter of fact, the lookup example at hardcodet.net could be implemented that easily with an AP that I even mentioned it). You rarely need to mess with markup extensions, but they can come in handy. I&#8217;m thinking about simplified XAML (a lot of controls that use the same bindings, converters etc.) and scenarios where you would have to use several attached properties (which might cause you headache when it comes to state management). Apart from that, I&#8217;d say you probably know that you need an extension if all alternatives just suck :).</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

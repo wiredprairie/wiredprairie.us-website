@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="/blog/xmlrpc.php">
+
+<title>ASP.NET &#8211; WiredPrairie</title>
+<meta name="robots" content="max-image-preview:large">
+<link rel="dns-prefetch" href="//secure.gravatar.com">
+<link rel="dns-prefetch" href="//www.wiredprairie.us">
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//s.w.org">
+<link rel="dns-prefetch" href="//v0.wordpress.com">
+<link rel="dns-prefetch" href="//widgets.wp.com">
+<link rel="dns-prefetch" href="//s0.wp.com">
+<link rel="dns-prefetch" href="//0.gravatar.com">
+<link rel="dns-prefetch" href="//1.gravatar.com">
+<link rel="dns-prefetch" href="//2.gravatar.com">
+<link rel="dns-prefetch" href="//jetpack.wordpress.com">
+<link rel="dns-prefetch" href="//public-api.wordpress.com">
+<link rel="alternate" type="application/rss+xml" title="WiredPrairie &raquo; Feed" href="/blog/index.php/feed">
+<link rel="alternate" type="application/rss+xml" title="WiredPrairie &raquo; Comments Feed" href="/blog/index.php/comments/feed">
+<link rel="alternate" type="application/rss+xml" title="WiredPrairie &raquo; ASP.NET Tag Feed" href="/blog/index.php/archives/tag/asp-net/feed">
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.0"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode,e=(p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0),i.toDataURL());return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([129777,127995,8205,129778,127999],[129777,127995,8203,129778,127999])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style type="text/css">img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="/blog/wp-includes/css/dist/block-library/style.min.css?ver=6.0" type="text/css" media="all">
+<style id="wp-block-library-inline-css" type="text/css">.has-text-align-justify{text-align:justify;}</style>
+<link rel="stylesheet" id="mediaelement-css" href="/blog/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.16" type="text/css" media="all">
+<link rel="stylesheet" id="wp-mediaelement-css" href="/blog/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.0" type="text/css" media="all">
+<style id="global-styles-inline-css" type="text/css">body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}</style>
+<link rel="stylesheet" id="editor-style-css" href="/blog/wp-content/themes/editor/style.css?ver=6.0" type="text/css" media="all">
+<link rel="stylesheet" id="editor-font-awesome-css-css" href="/blog/wp-content/themes/editor/inc/fontawesome/font-awesome.css?ver=4.1.0" type="text/css" media="screen">
+<!--[if IE]>
+<link rel='stylesheet' id='ie7-style-css'  href='/wp-content/themes/editor/inc/styles/ie.css?ver=6.0' type='text/css' media='all' />
+<![endif]-->
+<link rel="stylesheet" id="editor-fonts-css" href="//fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C600%2C700%2C400italic%2C600italic%2C700italic%7CRoboto+Condensed%3A300%2C400%2C700%2C300italic%2C400italic%2C700italic&#038;subset=latin%2Clatin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="jetpack_css-css" href="/blog/wp-content/plugins/jetpack/css/jetpack.css?ver=11.0" type="text/css" media="all">
+<script type="text/javascript" src="/blog/wp-includes/js/jquery/jquery.min.js?ver=3.6.0" id="jquery-core-js"></script>
+<script type="text/javascript" src="/blog/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
+<link rel="https://api.w.org/" href="/blog/index.php/wp-json/">
+<link rel="alternate" type="application/json" href="/blog/index.php/wp-json/wp/v2/tags/22">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/blog/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/blog/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 6.0">
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#000"
+    },
+    "button": {
+      "background": "#f1d600"
+    }
+  }
+})});
+</script><style>img#wpstats{display:none}</style>
+	
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="ASP.NET &#8211; WiredPrairie">
+<meta property="og:url" content="/index.php/archives/tag/asp-net">
+<meta property="og:site_name" content="WiredPrairie">
+<meta property="og:image" content="https://s0.wp.com/i/blank.jpg">
+<meta property="og:image:alt" content="">
+<meta property="og:locale" content="en_US">
+
+<!-- End Jetpack Open Graph Tags -->
+</head>
+
+<body class="archive tag tag-asp-net tag-22 group-blog">
+
+<div id="page" class="hfeed site container">
+
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+	<!-- Get sidebar color option (Appearance -> Customize -> Theme Options) -->
+		<header id="masthead" class="site-header light" role="banner">
+		<!-- Tab navigation -->
+		<ul class="toggle-bar" role="tablist">
+			<!-- Main navigation -->
+			<li id="panel-1" class="current" role="presentation">
+				<a href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true" class="current nav-toggle" data-tab="tab-1"><i class="fa fa-bars"></i><span class="screen-reader-text">View menu</span></a>
+			</li>
+
+			<!-- Featured Posts navigation -->
+							<li id="panel-2" role="presentation">
+					<a href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false" data-tab="tab-2"><i class="fa fa-thumb-tack"></i><span class="screen-reader-text">View featured posts</span></a>
+				</li>
+			
+			<!-- Sidebar widgets navigation -->
+			<li id="panel-3" role="presentation">
+				<a href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false" class="folder-toggle" data-tab="tab-3"><i class="fa fa-folder"></i><i class="fa fa-folder-open"></i><span class="screen-reader-text">View sidebar</span></a>
+			</li>
+		</ul>
+
+		<div id="tabs" class="toggle-tabs">
+			<div class="site-header-inside">
+				<!-- Logo, description and main navigation -->
+				<div id="tab-1" class="tab-content current fadeIn">
+					<div class="site-branding">
+						<!-- Get the site branding -->
+													<h1 class="site-title"><a href="/blog/" rel="home">WiredPrairie</a></h1>
+							<h2 class="site-description">Yet another tech blog.</h2>
+											</div>
+
+					<nav id="site-navigation" class="main-navigation" role="navigation">
+						<div class="menu"><ul>
+<li><a href="/blog/">Home</a></li>
+<li class="page_item page-item-2"><a href="/blog/index.php/about">About</a></li>
+<li class="page_item page-item-28"><a href="/blog/index.php/contact">Contact Me</a></li>
+</ul></div>
+					</nav><!-- #site-navigation -->
+
+									</div>
+<!-- #tab-1 -->
+
+				<!-- Featured Posts template (template-featured-posts.php) -->
+				
+									<div id="tab-2" class="widget-area tab-content animated fadeIn">
+						<div class="widget featured-posts-widget">
+							<h2 class="widget-title">Recommendations</h2>
+
+							<div class="featured-posts">
+							    
+																	<div class="featured-post">
+																	            	<a class="featured-post-image" href="/blog/index.php/archives/2278" rel="bookmark"><img width="600" height="400" src="/blog/wp-content/uploads/2018/07/Photo-Jul-23-7-23-26-PM-600x400.jpg" class="attachment-featured-post-image size-featured-post-image wp-post-image" alt="" loading="lazy" data-attachment-id="2292" data-permalink="/index.php/archives/2278/photo-jul-23-7-23-26-pm" data-orig-file="/wp-content/uploads/2018/07/Photo-Jul-23-7-23-26-PM.jpg" data-orig-size="4032,3024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;2.2&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;iPhone 6s&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;1532373806&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;4.15&quot;,&quot;iso&quot;:&quot;320&quot;,&quot;shutter_speed&quot;:&quot;0.066666666666667&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="Photo Jul 23, 7 23 26 PM" data-image-description="" data-image-caption="" data-medium-file="/wp-content/uploads/2018/07/Photo-Jul-23-7-23-26-PM-300x225.jpg" data-large-file="/wp-content/uploads/2018/07/Photo-Jul-23-7-23-26-PM-1024x768.jpg"></a>
+							            							            <h3><a href="/blog/index.php/archives/2278" rel="bookmark">You don&#8217;t need it, but you might want it any way: Ubiquiti Unifi</a></h3>
+
+							            <div class="featured-post-meta">
+								            <div class="featured-post-date">
+								            	<i class="fa fa-clock-o"></i>
+								            	<span class="posted-on"><a href="/blog/index.php/archives/2278" rel="bookmark"><time class="entry-date published" datetime="2018-07-25T20:27:43-05:00">July 25, 2018</time></a></span><span class="byline"> by </span> <span class="author vcard"><a class="url fn n" href="/blog/index.php/archives/author/aaron">Aaron</a></span>								            </div>
+							            </div>
+									</div>
+																	<div class="featured-post">
+																	            	<a class="featured-post-image" href="/blog/index.php/archives/2197" rel="bookmark"><img width="600" height="400" src="/blog/wp-content/uploads/2018/02/2018-02-16-20_23_15-AmazonSmile_-Pure-Green-100-Natural-Latex-Mattress-Topper-Firm-3_-King-Size-600x400.png" class="attachment-featured-post-image size-featured-post-image wp-post-image" alt="Mattress-Firm" loading="lazy" data-attachment-id="2198" data-permalink="/index.php/archives/2197/2018-02-16-20_23_15-amazonsmile_-pure-green-100-natural-latex-mattress-topper-firm-3_-king-size" data-orig-file="/wp-content/uploads/2018/02/2018-02-16-20_23_15-AmazonSmile_-Pure-Green-100-Natural-Latex-Mattress-Topper-Firm-3_-King-Size.png" data-orig-size="1067,807" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Pure Green 100% Natural Latex Mattress Topper &#8211; Firm" data-image-description="" data-image-caption="&lt;p&gt;Pure Green 100% Natural Latex Mattress Topper &#8211; Firm&lt;/p&gt;
+" data-medium-file="/wp-content/uploads/2018/02/2018-02-16-20_23_15-AmazonSmile_-Pure-Green-100-Natural-Latex-Mattress-Topper-Firm-3_-King-Size-300x227.png" data-large-file="/wp-content/uploads/2018/02/2018-02-16-20_23_15-AmazonSmile_-Pure-Green-100-Natural-Latex-Mattress-Topper-Firm-3_-King-Size-1024x774.png"></a>
+							            							            <h3><a href="/blog/index.php/archives/2197" rel="bookmark">How to make your too soft Tempur-pedic Bed comfortable</a></h3>
+
+							            <div class="featured-post-meta">
+								            <div class="featured-post-date">
+								            	<i class="fa fa-clock-o"></i>
+								            	<span class="posted-on"><a href="/blog/index.php/archives/2197" rel="bookmark"><time class="entry-date published" datetime="2018-02-17T09:59:38-06:00">February 17, 2018</time><time class="updated" datetime="2018-02-17T12:05:52-06:00">February 17, 2018</time></a></span><span class="byline"> by </span> <span class="author vcard"><a class="url fn n" href="/blog/index.php/archives/author/aaron">Aaron</a></span>								            </div>
+							            </div>
+									</div>
+																	<div class="featured-post">
+																	            	<a class="featured-post-image" href="/blog/index.php/archives/2124" rel="bookmark"><img width="600" height="400" src="/blog/wp-content/uploads/2016/11/TicketToRideBanner-600x400.jpg" class="attachment-featured-post-image size-featured-post-image wp-post-image" alt="" loading="lazy" data-attachment-id="2138" data-permalink="/index.php/archives/2124/tickettoridebanner" data-orig-file="/wp-content/uploads/2016/11/TicketToRideBanner.jpg" data-orig-size="1920,873" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;2.2&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;iPhone 6s&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;4.2&quot;,&quot;iso&quot;:&quot;320&quot;,&quot;shutter_speed&quot;:&quot;0.066666666666667&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="tickettoridebanner" data-image-description="" data-image-caption="" data-medium-file="/wp-content/uploads/2016/11/TicketToRideBanner-300x136.jpg" data-large-file="/wp-content/uploads/2016/11/TicketToRideBanner-1024x466.jpg"></a>
+							            							            <h3><a href="/blog/index.php/archives/2124" rel="bookmark">Alternatives to Monopoly: Some table-top board games you should try</a></h3>
+
+							            <div class="featured-post-meta">
+								            <div class="featured-post-date">
+								            	<i class="fa fa-clock-o"></i>
+								            	<span class="posted-on"><a href="/blog/index.php/archives/2124" rel="bookmark"><time class="entry-date published" datetime="2016-11-28T07:25:48-06:00">November 28, 2016</time><time class="updated" datetime="2017-04-04T20:19:50-05:00">April 4, 2017</time></a></span><span class="byline"> by </span> <span class="author vcard"><a class="url fn n" href="/blog/index.php/archives/author/aaron">Aaron</a></span>								            </div>
+							            </div>
+									</div>
+																	<div class="featured-post">
+																	            <h3><a href="/blog/index.php/archives/2119" rel="bookmark">Geek gift ideas 2016</a></h3>
+
+							            <div class="featured-post-meta">
+								            <div class="featured-post-date">
+								            	<i class="fa fa-clock-o"></i>
+								            	<span class="posted-on"><a href="/blog/index.php/archives/2119" rel="bookmark"><time class="entry-date published" datetime="2016-11-27T11:30:00-06:00">November 27, 2016</time><time class="updated" datetime="2017-04-04T20:20:17-05:00">April 4, 2017</time></a></span><span class="byline"> by </span> <span class="author vcard"><a class="url fn n" href="/blog/index.php/archives/author/aaron">Aaron</a></span>								            </div>
+							            </div>
+									</div>
+																	<div class="featured-post">
+																	            <h3><a href="/blog/index.php/archives/2115" rel="bookmark">Changing password requirements in Linux Subsystem for Windows (or Bash on Ubuntu on Windows)</a></h3>
+
+							            <div class="featured-post-meta">
+								            <div class="featured-post-date">
+								            	<i class="fa fa-clock-o"></i>
+								            	<span class="posted-on"><a href="/blog/index.php/archives/2115" rel="bookmark"><time class="entry-date published" datetime="2016-11-23T07:47:54-06:00">November 23, 2016</time></a></span><span class="byline"> by </span> <span class="author vcard"><a class="url fn n" href="/blog/index.php/archives/author/aaron">Aaron</a></span>								            </div>
+							            </div>
+									</div>
+																	<div class="featured-post">
+																	            	<a class="featured-post-image" href="/blog/index.php/archives/2096" rel="bookmark"><img width="600" height="400" src="/blog/wp-content/uploads/2016/11/02_ecobee3_family2-600x400.jpg" class="attachment-featured-post-image size-featured-post-image wp-post-image" alt="" loading="lazy" data-attachment-id="2112" data-permalink="/index.php/archives/2096/02_ecobee3_family2" data-orig-file="/wp-content/uploads/2016/11/02_ecobee3_family2.jpg" data-orig-size="1198,400" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="02_ecobee3_family2" data-image-description="" data-image-caption="" data-medium-file="/wp-content/uploads/2016/11/02_ecobee3_family2-300x100.jpg" data-large-file="/wp-content/uploads/2016/11/02_ecobee3_family2-1024x342.jpg"></a>
+							            							            <h3><a href="/blog/index.php/archives/2096" rel="bookmark">Ecobee’s ecobee3 Thermostat</a></h3>
+
+							            <div class="featured-post-meta">
+								            <div class="featured-post-date">
+								            	<i class="fa fa-clock-o"></i>
+								            	<span class="posted-on"><a href="/blog/index.php/archives/2096" rel="bookmark"><time class="entry-date published" datetime="2016-11-19T09:10:36-06:00">November 19, 2016</time><time class="updated" datetime="2016-11-19T09:17:51-06:00">November 19, 2016</time></a></span><span class="byline"> by </span> <span class="author vcard"><a class="url fn n" href="/blog/index.php/archives/author/aaron">Aaron</a></span>								            </div>
+							            </div>
+									</div>
+																	<div class="featured-post">
+																	            <h3><a href="/blog/index.php/archives/2039" rel="bookmark">Made in the USA Camera Bag Manufacturers</a></h3>
+
+							            <div class="featured-post-meta">
+								            <div class="featured-post-date">
+								            	<i class="fa fa-clock-o"></i>
+								            	<span class="posted-on"><a href="/blog/index.php/archives/2039" rel="bookmark"><time class="entry-date published" datetime="2016-03-21T20:26:43-05:00">March 21, 2016</time><time class="updated" datetime="2016-03-23T09:40:26-05:00">March 23, 2016</time></a></span><span class="byline"> by </span> <span class="author vcard"><a class="url fn n" href="/blog/index.php/archives/author/aaron">Aaron</a></span>								            </div>
+							            </div>
+									</div>
+																	<div class="featured-post">
+																	            <h3><a href="/blog/index.php/archives/2020" rel="bookmark">My Raspberry Pi 2 Model B setup</a></h3>
+
+							            <div class="featured-post-meta">
+								            <div class="featured-post-date">
+								            	<i class="fa fa-clock-o"></i>
+								            	<span class="posted-on"><a href="/blog/index.php/archives/2020" rel="bookmark"><time class="entry-date published" datetime="2015-03-09T20:48:37-05:00">March 9, 2015</time></a></span><span class="byline"> by </span> <span class="author vcard"><a class="url fn n" href="/blog/index.php/archives/author/aaron">Aaron</a></span>								            </div>
+							            </div>
+									</div>
+																	<div class="featured-post">
+																	            <h3><a href="/blog/index.php/archives/2011" rel="bookmark">Kenu Airframe Portable Car Mount</a></h3>
+
+							            <div class="featured-post-meta">
+								            <div class="featured-post-date">
+								            	<i class="fa fa-clock-o"></i>
+								            	<span class="posted-on"><a href="/blog/index.php/archives/2011" rel="bookmark"><time class="entry-date published" datetime="2015-01-18T11:21:50-06:00">January 18, 2015</time></a></span><span class="byline"> by </span> <span class="author vcard"><a class="url fn n" href="/blog/index.php/archives/author/aaron">Aaron</a></span>								            </div>
+							            </div>
+									</div>
+																	<div class="featured-post">
+																	            <h3><a href="/blog/index.php/archives/2006" rel="bookmark">Attaching a GoPro Hero with Aero Bars from RedShift</a></h3>
+
+							            <div class="featured-post-meta">
+								            <div class="featured-post-date">
+								            	<i class="fa fa-clock-o"></i>
+								            	<span class="posted-on"><a href="/blog/index.php/archives/2006" rel="bookmark"><time class="entry-date published" datetime="2014-08-07T20:48:50-05:00">August 7, 2014</time></a></span><span class="byline"> by </span> <span class="author vcard"><a class="url fn n" href="/blog/index.php/archives/author/aaron">Aaron</a></span>								            </div>
+							            </div>
+									</div>
+																							</div>
+<!-- .featured-posts -->
+						</div>
+<!-- .featured-posts-widget -->
+					</div>
+<!-- #tab-2 .widget-area -->
+				
+				<!-- Sidebar widgets -->
+				<div id="tab-3" class="tab-content animated fadeIn" role="tabpanel" aria-labelledby="panel-3" aria-hidden="true">
+						<div id="secondary" class="widget-area" role="complementary">
+		<aside id="pages-2" class="widget widget_pages"><h2 class="widget-title">Pages</h2>
+			<ul>
+				<li class="page_item page-item-2"><a href="/blog/index.php/about">About</a></li>
+<li class="page_item page-item-28"><a href="/blog/index.php/contact">Contact Me</a></li>
+			</ul>
+
+			</aside><aside id="archives-2" class="widget widget_archive"><h2 class="widget-title">Archives</h2>
+			<ul>
+					<li><a href="/blog/index.php/archives/date/2019/10">October 2019</a></li>
+	<li><a href="/blog/index.php/archives/date/2018/07">July 2018</a></li>
+	<li><a href="/blog/index.php/archives/date/2018/05">May 2018</a></li>
+	<li><a href="/blog/index.php/archives/date/2018/04">April 2018</a></li>
+	<li><a href="/blog/index.php/archives/date/2018/03">March 2018</a></li>
+	<li><a href="/blog/index.php/archives/date/2018/02">February 2018</a></li>
+	<li><a href="/blog/index.php/archives/date/2017/04">April 2017</a></li>
+	<li><a href="/blog/index.php/archives/date/2017/01">January 2017</a></li>
+	<li><a href="/blog/index.php/archives/date/2016/11">November 2016</a></li>
+	<li><a href="/blog/index.php/archives/date/2016/10">October 2016</a></li>
+	<li><a href="/blog/index.php/archives/date/2016/03">March 2016</a></li>
+	<li><a href="/blog/index.php/archives/date/2016/02">February 2016</a></li>
+	<li><a href="/blog/index.php/archives/date/2015/03">March 2015</a></li>
+	<li><a href="/blog/index.php/archives/date/2015/01">January 2015</a></li>
+	<li><a href="/blog/index.php/archives/date/2014/08">August 2014</a></li>
+	<li><a href="/blog/index.php/archives/date/2014/05">May 2014</a></li>
+	<li><a href="/blog/index.php/archives/date/2014/01">January 2014</a></li>
+	<li><a href="/blog/index.php/archives/date/2013/12">December 2013</a></li>
+	<li><a href="/blog/index.php/archives/date/2013/10">October 2013</a></li>
+	<li><a href="/blog/index.php/archives/date/2013/09">September 2013</a></li>
+	<li><a href="/blog/index.php/archives/date/2013/08">August 2013</a></li>
+	<li><a href="/blog/index.php/archives/date/2013/07">July 2013</a></li>
+	<li><a href="/blog/index.php/archives/date/2013/06">June 2013</a></li>
+	<li><a href="/blog/index.php/archives/date/2013/05">May 2013</a></li>
+	<li><a href="/blog/index.php/archives/date/2013/03">March 2013</a></li>
+	<li><a href="/blog/index.php/archives/date/2013/02">February 2013</a></li>
+	<li><a href="/blog/index.php/archives/date/2013/01">January 2013</a></li>
+	<li><a href="/blog/index.php/archives/date/2012/12">December 2012</a></li>
+	<li><a href="/blog/index.php/archives/date/2012/10">October 2012</a></li>
+	<li><a href="/blog/index.php/archives/date/2012/09">September 2012</a></li>
+	<li><a href="/blog/index.php/archives/date/2012/08">August 2012</a></li>
+	<li><a href="/blog/index.php/archives/date/2012/07">July 2012</a></li>
+	<li><a href="/blog/index.php/archives/date/2012/06">June 2012</a></li>
+	<li><a href="/blog/index.php/archives/date/2012/05">May 2012</a></li>
+	<li><a href="/blog/index.php/archives/date/2012/04">April 2012</a></li>
+	<li><a href="/blog/index.php/archives/date/2012/03">March 2012</a></li>
+	<li><a href="/blog/index.php/archives/date/2012/02">February 2012</a></li>
+	<li><a href="/blog/index.php/archives/date/2012/01">January 2012</a></li>
+	<li><a href="/blog/index.php/archives/date/2011/12">December 2011</a></li>
+	<li><a href="/blog/index.php/archives/date/2011/11">November 2011</a></li>
+	<li><a href="/blog/index.php/archives/date/2011/08">August 2011</a></li>
+	<li><a href="/blog/index.php/archives/date/2011/07">July 2011</a></li>
+	<li><a href="/blog/index.php/archives/date/2011/06">June 2011</a></li>
+	<li><a href="/blog/index.php/archives/date/2011/05">May 2011</a></li>
+	<li><a href="/blog/index.php/archives/date/2011/03">March 2011</a></li>
+	<li><a href="/blog/index.php/archives/date/2011/02">February 2011</a></li>
+	<li><a href="/blog/index.php/archives/date/2011/01">January 2011</a></li>
+	<li><a href="/blog/index.php/archives/date/2010/11">November 2010</a></li>
+	<li><a href="/blog/index.php/archives/date/2010/10">October 2010</a></li>
+	<li><a href="/blog/index.php/archives/date/2010/09">September 2010</a></li>
+	<li><a href="/blog/index.php/archives/date/2010/08">August 2010</a></li>
+	<li><a href="/blog/index.php/archives/date/2010/07">July 2010</a></li>
+	<li><a href="/blog/index.php/archives/date/2010/06">June 2010</a></li>
+	<li><a href="/blog/index.php/archives/date/2010/05">May 2010</a></li>
+	<li><a href="/blog/index.php/archives/date/2010/04">April 2010</a></li>
+	<li><a href="/blog/index.php/archives/date/2010/03">March 2010</a></li>
+	<li><a href="/blog/index.php/archives/date/2010/02">February 2010</a></li>
+	<li><a href="/blog/index.php/archives/date/2010/01">January 2010</a></li>
+	<li><a href="/blog/index.php/archives/date/2009/12">December 2009</a></li>
+	<li><a href="/blog/index.php/archives/date/2009/11">November 2009</a></li>
+	<li><a href="/blog/index.php/archives/date/2009/10">October 2009</a></li>
+	<li><a href="/blog/index.php/archives/date/2009/09">September 2009</a></li>
+	<li><a href="/blog/index.php/archives/date/2009/08">August 2009</a></li>
+	<li><a href="/blog/index.php/archives/date/2009/07">July 2009</a></li>
+	<li><a href="/blog/index.php/archives/date/2009/06">June 2009</a></li>
+	<li><a href="/blog/index.php/archives/date/2009/05">May 2009</a></li>
+	<li><a href="/blog/index.php/archives/date/2009/04">April 2009</a></li>
+	<li><a href="/blog/index.php/archives/date/2009/03">March 2009</a></li>
+	<li><a href="/blog/index.php/archives/date/2009/02">February 2009</a></li>
+	<li><a href="/blog/index.php/archives/date/2009/01">January 2009</a></li>
+	<li><a href="/blog/index.php/archives/date/2008/12">December 2008</a></li>
+	<li><a href="/blog/index.php/archives/date/2008/11">November 2008</a></li>
+	<li><a href="/blog/index.php/archives/date/2008/10">October 2008</a></li>
+	<li><a href="/blog/index.php/archives/date/2008/09">September 2008</a></li>
+	<li><a href="/blog/index.php/archives/date/2008/08">August 2008</a></li>
+	<li><a href="/blog/index.php/archives/date/2008/07">July 2008</a></li>
+	<li><a href="/blog/index.php/archives/date/2008/06">June 2008</a></li>
+	<li><a href="/blog/index.php/archives/date/2008/05">May 2008</a></li>
+	<li><a href="/blog/index.php/archives/date/2008/04">April 2008</a></li>
+	<li><a href="/blog/index.php/archives/date/2008/03">March 2008</a></li>
+	<li><a href="/blog/index.php/archives/date/2008/02">February 2008</a></li>
+			</ul>
+
+			</aside>	</div>
+<!-- #secondary -->
+				</div>
+<!-- #tab-3 -->
+			</div>
+<!-- .site-header-inside -->
+		</div>
+<!-- #tabs -->
+	</header><!-- #masthead -->
+
+	<div id="content" class="site-content fadeInFast">
+
+	<section id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+		
+			
+			<header class="page-header ">
+				<h1 class="page-title">
+					Tag / ASP.NET				</h1>
+							</header><!-- .page-header -->
+
+			<!-- If author has a bio, show it. -->
+			
+						
+				
+<article id="post-1850" class="post post-1850 type-post status-publish format-standard hentry category-general tag-asp-net tag-mvc tag-visual-studio tag-windows-8">
+	<!-- Grab the featured image -->
+	
+	<header class="entry-header">
+				<div class="entry-date">
+			<span class="posted-on"><a href="/blog/index.php/archives/1850" rel="bookmark"><time class="entry-date published" datetime="2013-03-02T10:50:52-06:00">March 2, 2013</time><time class="updated" datetime="2013-03-02T10:50:53-06:00">March 2, 2013</time></a></span><span class="byline"> by </span> <span class="author vcard"><a class="url fn n" href="/blog/index.php/archives/author/aaron">Aaron</a></span>		</div>
+<!-- .entry-meta -->
+		
+		<h1 class="entry-title"><a href="/blog/index.php/archives/1850" rel="bookmark">Windows 8 IIS Express with Windows Authentication Prompts for Credentials</a></h1>	</header><!-- .entry-header -->
+
+	
+<div class="entry-meta">
+	
+	<ul class="meta-list">
+					<li class="meta-cat"><a href="/blog/index.php/archives/category/general" rel="category tag">General</a></li>
+							<li class="meta-tag">
+<a href="/blog/index.php/archives/tag/asp-net" rel="tag">ASP.NET</a>, <a href="/blog/index.php/archives/tag/mvc" rel="tag">MVC</a>, <a href="/blog/index.php/archives/tag/visual-studio" rel="tag">Visual Studio</a>, <a href="/blog/index.php/archives/tag/windows-8" rel="tag">Windows 8</a>
+</li>
+						<li class="meta-comment">
+			<span class="comments-link"><a href="/blog/index.php/archives/1850#comments">1 Comment</a></span>
+		</li>
+					</ul>
+</div>
+	<div class="entry-content">
+		<p>If you’re seeing a credentials prompt every time you launch a local IIS or IIS Express web application that requires Windows Authentication, you’ll likely grow as tired of typing in your password as I was. To add to the annoyance, the <strong>Remember my credentials</strong> checkbox doesn’t work (nothing is saved).</p>
+<p><a href="/blog/wp-content/uploads/2013/03/image.png"><img title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wp-content/uploads/2013/03/image_thumb.png" width="443" height="351"></a></p>
+<p>The setup:</p>
+<ul>
+<li>Windows 8</li>
+<li>Visual Studio 2012, .NET 4.5, </li>
+<li>ASP.NET MVC web application</li>
+<li>Non domain-joined computer (it’s on my home network)</li>
+<li>Using a Microsoft account (FKA Live ID) as the local account</li>
+<li>Using IIS Express/IIS</li>
+<li>Windows Authentication <strong>Enabled</strong>
+</li>
+<li>Anonymous Logon <strong>Disabled</strong>
+</li>
+</ul>
+<pre class="csharpcode"><span class="kwrd">&lt;</span><span class="html">system.webServer</span><span class="kwrd">&gt;</span>
+    <span class="kwrd">&lt;</span><span class="html">security</span><span class="kwrd">&gt;</span>
+        <span class="kwrd">&lt;</span><span class="html">authentication</span><span class="kwrd">&gt;</span>
+            <span class="kwrd">&lt;</span><span class="html">windowsAuthentication</span> <span class="attr">enabled</span><span class="kwrd">=&quot;true&quot;</span> <span class="kwrd">/&gt;</span>
+            <span class="kwrd">&lt;</span><span class="html">anonymousAuthentication</span> <span class="attr">enabled</span><span class="kwrd">=&quot;false&quot;</span> <span class="kwrd">/&gt;</span>
+        <span class="kwrd">&lt;/</span><span class="html">authentication</span><span class="kwrd">&gt;</span>
+    <span class="kwrd">&lt;/</span><span class="html">security</span><span class="kwrd">&gt;</span>
+<span class="kwrd">&lt;/</span><span class="html">system.webServer</span><span class="kwrd">&gt;</span></pre>
+<style type="text/css">.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }</style>
+<p>While there are a few proposed solutions, this is the only one that worked for me so far.</p>
+<ol>
+<li>Start Internet Explorer</li>
+<li>Click the settings Menu</li>
+<li>Select <strong>Internet options</strong>
+</li>
+<li>Click the <strong>Security </strong>tab</li>
+<li>Select <strong>Local intranet</strong>
+</li>
+<li>Click <strong>Sites</strong>
+</li>
+<li>Click <strong>Advanced</strong>
+</li>
+<li>Add <a href="http://localhost/">http://localhost</a> to the Local intranet zone</li>
+<li>Close.</li>
+<li>Verify it’s now working.</li>
+</ol>
+<p><a href="/blog/wp-content/uploads/2013/03/image1.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wp-content/uploads/2013/03/image_thumb1.png" width="256" height="290"></a></p>
+<p><a href="/blog/wp-content/uploads/2013/03/image2.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wp-content/uploads/2013/03/image_thumb2.png" width="425" height="544"></a></p>
+<p><a href="/blog/wp-content/uploads/2013/03/image3.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wp-content/uploads/2013/03/image_thumb3.png" width="416" height="236"></a></p>
+<p><a href="/blog/wp-content/uploads/2013/03/image4.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wp-content/uploads/2013/03/image_thumb4.png" width="396" height="351"></a></p>
+<p><a href="/blog/wp-content/uploads/2013/03/image5.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wp-content/uploads/2013/03/image_thumb5.png" width="396" height="351"></a></p>
+<p>Done.</p>
+<p>Alternatives welcomed. :)</p>
+			</div>
+<!-- .entry-content -->
+
+</article><!-- #post-## -->
+
+			<div class="code-block code-block-1" style="margin: 8px 0; clear: both;">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-fg+5r+6l-ft+4e" data-ad-client="ca-pub-2328055154157951" data-ad-slot="9395646477"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+				
+<article id="post-1820" class="post post-1820 type-post status-publish format-standard hentry category-coding tag-asp-net tag-javascript tag-knockout tag-mvc">
+	<!-- Grab the featured image -->
+	
+	<header class="entry-header">
+				<div class="entry-date">
+			<span class="posted-on"><a href="/blog/index.php/archives/1820" rel="bookmark"><time class="entry-date published" datetime="2013-01-25T20:48:30-06:00">January 25, 2013</time><time class="updated" datetime="2013-01-26T10:44:23-06:00">January 26, 2013</time></a></span><span class="byline"> by </span> <span class="author vcard"><a class="url fn n" href="/blog/index.php/archives/author/aaron">Aaron</a></span>		</div>
+<!-- .entry-meta -->
+		
+		<h1 class="entry-title"><a href="/blog/index.php/archives/1820" rel="bookmark">Knockout binding for JavaScript route fixup</a></h1>	</header><!-- .entry-header -->
+
+	
+<div class="entry-meta">
+	
+	<ul class="meta-list">
+					<li class="meta-cat"><a href="/blog/index.php/archives/category/coding" rel="category tag">Coding</a></li>
+							<li class="meta-tag">
+<a href="/blog/index.php/archives/tag/asp-net" rel="tag">ASP.NET</a>, <a href="/blog/index.php/archives/tag/javascript" rel="tag">JavaScript</a>, <a href="/blog/index.php/archives/tag/knockout" rel="tag">Knockout</a>, <a href="/blog/index.php/archives/tag/mvc" rel="tag">MVC</a>
+</li>
+						<li class="meta-comment">
+			<span class="comments-link"><a href="/blog/index.php/archives/1820#comments">5 Comments</a></span>
+		</li>
+					</ul>
+</div>
+	<div class="entry-content">
+		<p><a href="/blog/index.php/archives/1800">Part one.</a></p>
+<p>After the first round, I felt compelled to KnockOut the code a bit more. I’d mentioned I wasn’t pleased with the code exactly. It needed some refactoring.</p>
+<p>So, I’ve created a new Knockout binding handler. This binding handler replaces&#160; named parameters with a model’s properties in a path. </p>
+<p>For example, given this object:</p>
+<table cellspacing="0" cellpadding="2" width="400" border="1">
+<tbody>
+<tr>
+<td valign="top" width="200"><strong>Property Name</strong></td>
+<td valign="top" width="200"><strong>Value</strong></td>
+</tr>
+<tr>
+<td valign="top" width="200">id</td>
+<td valign="top" width="200">A123</td>
+</tr>
+<tr>
+<td valign="top" width="200">first_name</td>
+<td valign="top" width="200">Aaron</td>
+</tr>
+<tr>
+<td valign="top" width="200">state</td>
+<td valign="top" width="200">WI</td>
+</tr>
+</tbody>
+</table>
+<p>The following paths would be converted thusly:</p>
+<table cellspacing="0" cellpadding="2" width="400" border="1">
+<tbody>
+<tr>
+<td valign="top" width="200"><strong>Original</strong></td>
+<td valign="top" width="200"><strong>Replaced</strong></td>
+</tr>
+<tr>
+<td valign="top" width="200">/person/{id}</td>
+<td valign="top" width="200">/person/A123</td>
+</tr>
+<tr>
+<td valign="top" width="200">/person/{state}/{id}</td>
+<td valign="top" width="200">/person/WI/A123</td>
+</tr>
+</tbody>
+</table>
+<p>You get the idea. Here’s the JavaScript code:</p>
+<pre class="csharpcode">ko.bindingHandlers[<span class="str">'route'</span>] = {
+    <span class="rem">// Examples: </span>
+    <span class="rem">//      &lt;a data-bind=&quot;route: {model: $data, url: 'person_details', attr: 'href' }&quot; &gt;</span>
+    <span class="rem">// or, you can shortcut the syntax to default to the currently bound object and just pass </span>
+    <span class="rem">// the url or the route name as a string directly</span>
+    <span class="rem">//      &lt;a data-bind=&quot;route: 'person_details' }&quot; &gt;</span>
+    update: <span class="kwrd">function</span> (element, valueAccessor, allBindingsAccessor, $data) {
+        <span class="kwrd">var</span> valueUnwrapped = ko.utils.unwrapObservable(valueAccessor());
+        <span class="kwrd">var</span> options = ko.bindingHandlers.route.options || {};
+
+        <span class="rem">// look for the model property </span>
+        <span class="kwrd">var</span> model = ko.utils.unwrapObservable(valueUnwrapped[<span class="str">'model'</span>]);
+        <span class="kwrd">if</span> (<span class="kwrd">typeof</span> model !== <span class="str">'object'</span>) {
+
+            model = ko.utils.unwrapObservable($data);
+            <span class="kwrd">if</span> (<span class="kwrd">typeof</span> model === <span class="str">'undefined'</span> || model === <span class="kwrd">null</span>) {
+                <span class="kwrd">throw</span> <span class="kwrd">new</span> Error(<span class="str">'set route model to object (or nothing bound?)'</span>);
+            }
+        }
+
+        <span class="rem">// look for the url property first</span>
+        <span class="kwrd">var</span> url = ko.utils.unwrapObservable(valueUnwrapped[<span class="str">'url'</span>]);
+        <span class="rem">// validate we've got something as a url (might be a name, might be a full url)        </span>
+        <span class="kwrd">if</span> (<span class="kwrd">typeof</span> url !== <span class="str">'string'</span> || url == <span class="str">&quot;&quot;</span>) {
+            url = valueUnwrapped;
+            <span class="kwrd">if</span> (<span class="kwrd">typeof</span> url !== <span class="str">'string'</span> || url == <span class="str">&quot;&quot;</span>) {
+                <span class="kwrd">throw</span> <span class="kwrd">new</span> Error(<span class="str">&quot;set route url property to route name or url directly&quot;</span>);
+            }
+        }
+
+        <span class="rem">// is it on the keyed collection?</span>
+        <span class="kwrd">var</span> map = options.map;
+        <span class="kwrd">if</span> (<span class="kwrd">typeof</span> map !== <span class="str">'undefined'</span> &amp;&amp; map !== <span class="kwrd">null</span>) {
+            <span class="kwrd">if</span> (map.hasOwnProperty(url)) {
+                url = map[url];
+            }
+        }
+        <span class="rem">// check for a routing function as well</span>
+        <span class="kwrd">var</span> fn = options.routeNameToUrl;
+        <span class="kwrd">if</span> (<span class="kwrd">typeof</span> fn === <span class="str">'function'</span>) { url = fn.call(<span class="kwrd">null</span>, url); }
+        <span class="rem">// did we get something meaningful?</span>
+        <span class="kwrd">if</span> (url !== <span class="kwrd">null</span> &amp;&amp; url !== <span class="str">''</span> &amp;&amp; url.length &gt; 0) {
+            url = ko.bindingHandlers.route.buildUrl(url, model);            
+        }
+        <span class="rem">// the url might need some fixin after a routing, anything goes here (might just be a default)</span>
+        fn = options.fixUrl;
+        <span class="kwrd">if</span> (<span class="kwrd">typeof</span> fn === <span class="str">'function'</span>) { url = fn.call(<span class="kwrd">null</span>, url); }
+        element.setAttribute(ko.utils.unwrapObservable(valueUnwrapped[<span class="str">'attr'</span>]) || <span class="str">'href'</span>, url);
+    },    
+
+    <span class="rem">// given a model, this function replaces named parameters in a simple string </span>
+    <span class="rem">// with values from the model</span>
+    <span class="rem">//     /path/to/some/{id}/{category}</span>
+    <span class="rem">// with object { 'id' : 'abc', 'category' : 'cars' }</span>
+    <span class="rem">// becomes</span>
+    <span class="rem">//     /path/to/some/abc/cars</span>
+    buildUrl : <span class="kwrd">function</span>(url, model) {
+        <span class="rem">// unfixed if there's not a thing</span>
+        <span class="kwrd">if</span> (<span class="kwrd">typeof</span> model === <span class="str">'undefined'</span> || model === <span class="kwrd">null</span>) { <span class="kwrd">return</span> url; }
+
+        <span class="kwrd">var</span> propValue;
+        <span class="kwrd">for</span> (<span class="kwrd">var</span> propName <span class="kwrd">in</span> model) {                
+            <span class="kwrd">if</span> (model.hasOwnProperty(propName)) {
+                propValue = model[propName];
+                <span class="kwrd">if</span> (ko) { propValue = ko.utils.unwrapObservable(propValue); }
+
+                <span class="kwrd">if</span> (<span class="kwrd">typeof</span> propValue === <span class="str">'undefined'</span> || propValue === <span class="kwrd">null</span>) {
+                    propValue = <span class="str">&quot;&quot;</span>;
+                } <span class="kwrd">else</span> {
+                    propValue = propValue.toString();
+                }
+                url = url.replace(<span class="str">'{'</span> + propName.toLowerCase() + <span class="str">'}'</span>, propValue);
+            }
+        }
+        <span class="kwrd">return</span> url;
+    },
+
+    options: {
+        <span class="rem">// ** convert a route name to a url through whatever means you'd like</span>
+        <span class="rem">// routeNameToUrl : function(routeName) { return url; } </span>
+
+        <span class="rem">// ** anything you want, called after routeNameToUrl, might add a virtual directory</span>
+        <span class="rem">// ** for example</span>
+        <span class="rem">// fixUrl: function(url) { return url;  }  </span>
+
+        <span class="rem">// ** A map route names to URLs **</span>
+        <span class="rem">// all other functions are called if set (to possibly override this)</span>
+        <span class="rem">// this is not required if you use one of the other functions</span>
+        <span class="rem">// map : { 'a_route_name' : '/path/to/something/{id}/{action}' }        </span>
+    }
+};</pre>
+<style type="text/css">.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }</style>
+<style type="text/css">.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }</style>
+<p>In another JavaScript file, I did initialize some of the options:</p>
+<pre class="csharpcode">ko.bindingHandlers.route.options.routeNameToUrl = getRoute;
+ko.bindingHandlers.route.options.fixUrl = app_url;</pre>
+<style type="text/css">.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }</style>
+<p>The <strong>getRoute</strong> function just maps a route name to a path, and the <strong>app_url</strong> prepends the virtual directory to the path as needed.</p>
+<p>Here it is in use:</p>
+<pre class="csharpcode"><span class="kwrd">&lt;</span><span class="html">div</span> <span class="attr">data-bind</span><span class="kwrd">=&quot;foreach: data.persons&quot;</span><span class="kwrd">&gt;</span>
+    <span class="kwrd">&lt;</span><span class="html">h3</span> <span class="attr">class</span><span class="kwrd">=&quot;title&quot;</span> <span class="attr">data-bind</span><span class="kwrd">=&quot;text: Title&quot;</span><span class="kwrd">&gt;&lt;/</span><span class="html">h3</span><span class="kwrd">&gt;</span>
+    <span class="kwrd">&lt;</span><span class="html">div</span><span class="kwrd">&gt;</span>
+        <span class="kwrd">&lt;</span><span class="html">a</span> <span class="attr">data-bind</span><span class="kwrd">=&quot;route: { model: $data, url: 'person_details', attr: 'href' } &quot;</span><span class="kwrd">&gt;</span>Details2<span class="kwrd">&lt;/</span><span class="html">a</span><span class="kwrd">&gt;</span>
+        <span class="kwrd">&lt;</span><span class="html">a</span> <span class="attr">data-bind</span><span class="kwrd">=&quot;route: '/data/details/{id}/{title}' &quot;</span><span class="kwrd">&gt;</span>Details<span class="kwrd">&lt;/</span><span class="html">a</span><span class="kwrd">&gt;</span>
+        <span class="kwrd">&lt;</span><span class="html">a</span> <span class="attr">data-bind</span><span class="kwrd">=&quot;route: 'person_details' &quot;</span><span class="kwrd">&gt;</span>Details<span class="kwrd">&lt;/</span><span class="html">a</span><span class="kwrd">&gt;</span>
+    <span class="kwrd">&lt;/</span><span class="html">div</span><span class="kwrd">&gt;</span>
+<span class="kwrd">&lt;/</span><span class="html">div&gt;</span></pre>
+<style type="text/css">.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }</style>
+<style type="text/css">.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }</style>
+<p>You’ll probably like the new way better syntactically at least compared to the <a href="/blog/index.php/archives/1800">old</a> way. A route binding requires one input when used in it’s most basic form:</p>
+<ul>
+<li>
+<strong>url = </strong>the URL or route name to use as the template for the replacement. It should contain (or later resolve to) curly-braced enclosed property name keys which will be substituted by values from the model. The value of the property could be either a route name (see options below) or a path.</li>
+</ul>
+<p>When using just the basic form you can use the shortened syntax:</p>
+<pre class="csharpcode"><span class="kwrd">&lt;</span><span class="html">a</span> <span class="attr">data-bind</span><span class="kwrd">=&quot;route: 'research_details' &quot;</span><span class="kwrd">&gt;</span>Details<span class="kwrd">&lt;/</span><span class="html">a</span><span class="kwrd">&gt;</span></pre>
+<p>This handily binds to the current object (via the bindingContext.$data property of the bindingHandler update function call, which is <strong>also </strong>the fourth parameter, which I’ve renamed to $data rather than the typical viewModel). So, you won’t need to necessarily (explicitly) set the model for the binding.</p>
+<p>If you need a a bit more control, you can change the syntax and get access to a few other options (including direct access to the model you want to bind to if the current item isn’t directly what you want to use).</p>
+<ul>
+<li>
+<strong>model</strong> = this is the object that contains the properties and values to be used as replacements within the url </li>
+<li>
+<strong>attr </strong>(optional) = the name of the attribute to set the generated url into. Defaults to href if not set.</li>
+</ul>
+<p>There are a few global options you can control as well:</p>
+<ul>
+<li>
+<strong>routeNameToUrl </strong>= (function)(routeName) optionally, given a route name, should return the path (or the original value). Here you can do a lookup of routeName to path. </li>
+<li>
+<strong>map</strong> = {object} the object properties should be route names and set equal to the path. this optional lookup is performed before the routeNameToUrl function is called. </li>
+<li>
+<strong>fixUrl</strong> = (function)(url) do anything here. this is called after the mapping and routeNameToUrl is optionally called. I use this to correct javascript Ajax request paths by appending the application virtual directory</li>
+</ul>
+<p>(Thanks to <a href="http://www.knockmeout.net/">Ryan</a> for the suggestion to use the $data on the bindingContext, and then again for the nudge to just use the 4th parameter. <img class="wlEmoticon wlEmoticon-smile" style="border-top-style: none; border-left-style: none; border-bottom-style: none; border-right-style: none" alt="Smile" src="/blog/wp-content/uploads/2013/01/wlEmoticon-smile.png"> )</p>
+			</div>
+<!-- .entry-content -->
+
+</article><!-- #post-## -->
+
+			<div class="code-block code-block-1" style="margin: 8px 0; clear: both;">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-fg+5r+6l-ft+4e" data-ad-client="ca-pub-2328055154157951" data-ad-slot="9395646477"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+				
+<article id="post-921" class="post post-921 type-post status-publish format-standard hentry category-coding tag-asp-net">
+	<!-- Grab the featured image -->
+	
+	<header class="entry-header">
+				<div class="entry-date">
+			<span class="posted-on"><a href="/blog/index.php/archives/921" rel="bookmark"><time class="entry-date published" datetime="2010-03-11T20:34:00-06:00">March 11, 2010</time></a></span><span class="byline"> by </span> <span class="author vcard"><a class="url fn n" href="/blog/index.php/archives/author/aaron">Aaron</a></span>		</div>
+<!-- .entry-meta -->
+		
+		<h1 class="entry-title"><a href="/blog/index.php/archives/921" rel="bookmark">Custom RouteHandler in ASP.NET 4.0</a></h1>	</header><!-- .entry-header -->
+
+	
+<div class="entry-meta">
+	
+	<ul class="meta-list">
+					<li class="meta-cat"><a href="/blog/index.php/archives/category/coding" rel="category tag">Coding</a></li>
+							<li class="meta-tag"><a href="/blog/index.php/archives/tag/asp-net" rel="tag">ASP.NET</a></li>
+							</ul>
+</div>
+	<div class="entry-content">
+		<p>It’s great that some of the innovations from ASP.NET MVC 1.0 were moved into the ASP.NET 4.0 platform. One of those was the <strong>RouteTable</strong>. I hadn’t written a custom RouteHandler before, so I thought I’d do a simple one as a demo for myself (and any others who are interested).</p>
+<p>This is just an example of how to build one – <strong>it’s not secure</strong>. </p>
+<pre class="code"><span style="color: blue">using </span>System;
+<span style="color: blue">using </span>System.Collections.Generic;
+<span style="color: blue">using </span>System.Linq;
+<span style="color: blue">using </span>System.Web;
+<span style="color: blue">using </span>System.Web.Security;
+<span style="color: blue">using </span>System.Web.SessionState;
+<span style="color: blue">using </span>System.Web.Routing;
+<span style="color: blue">using </span>System.IO;
+
+<span style="color: blue">namespace </span>TestWebApplication1
+{
+    <span style="color: blue">public class </span><span style="color: #2b91af">Global </span>: System.Web.<span style="color: #2b91af">HttpApplication
+    </span>{
+        <span style="color: blue">void </span>Application_Start(<span style="color: blue">object </span>sender, <span style="color: #2b91af">EventArgs </span>e)
+        {
+            <span style="color: #2b91af">RouteTable</span>.Routes.Add(<span style="color: blue">new </span><span style="color: #2b91af">Route</span>(<span style="color: #a31515">&quot;Assets/{locale}/{assetID}&quot;</span>, <span style="color: blue">new </span><span style="color: #2b91af">CustomRouteHandler</span>()));
+        }
+    }
+
+    <span style="color: blue">public class </span><span style="color: #2b91af">CustomRouteHandler </span>: <span style="color: #2b91af">IRouteHandler
+    </span>{
+        <span style="color: blue">public </span><span style="color: #2b91af">IHttpHandler </span>GetHttpHandler(<span style="color: #2b91af">RequestContext </span>requestContext)
+        {            
+            <span style="color: blue">return new </span><span style="color: #2b91af">SimpleFileHttpHandler</span>(requestContext);
+        }
+    }
+
+    <span style="color: blue">public class </span><span style="color: #2b91af">SimpleFileHttpHandler </span>: <span style="color: #2b91af">IHttpHandler
+    </span>{
+        <span style="color: blue">private </span><span style="color: #2b91af">RequestContext </span>_requestContext;
+        <span style="color: blue">private </span><span style="color: #2b91af">HttpContext </span>_httpContext;
+
+        <span style="color: blue">public </span><span style="color: #2b91af">RequestContext </span>RequestContext { <span style="color: blue">get</span>; <span style="color: blue">private set</span>; }
+
+        <span style="color: blue">public </span>SimpleFileHttpHandler(<span style="color: #2b91af">RequestContext </span>requestContext)
+        {
+            _requestContext = requestContext;
+        }
+
+        <span style="color: blue">public bool </span>IsReusable
+        {
+            <span style="color: blue">get </span>{ <span style="color: blue">return false</span>; }
+        }
+
+        <span style="color: blue">public void </span>ProcessRequest(<span style="color: #2b91af">HttpContext </span>context)
+        {
+            _httpContext = context;
+
+            <span style="color: blue">string </span>assetID = _requestContext.RouteData.Values[<span style="color: #a31515">&quot;assetID&quot;</span>].ToString();
+            <span style="color: blue">string </span>locale = _requestContext.RouteData.Values[<span style="color: #a31515">&quot;locale&quot;</span>].ToString();
+
+            <span style="color: blue">if </span>(<span style="color: blue">string</span>.IsNullOrWhiteSpace(assetID) || <span style="color: blue">string</span>.IsNullOrWhiteSpace(locale)) {
+                <span style="color: blue">throw new </span><span style="color: #2b91af">ArgumentException</span>();
+            }
+            <span style="color: green">// this is not adaquate and definitely not secure as it would allow any file to be selected and downloaded
+            // needs to prevent any sort of hack attempts using encoded paths, etc. should just be a relative path within the
+            // folder that contains the content and no more. 
+            </span><span style="color: blue">string </span>path = _httpContext.Request.MapPath(<span style="color: #a31515">&quot;~/Content/&quot; </span>+ assetID, <span style="color: #a31515">&quot;&quot;</span>, <span style="color: blue">false</span>);
+            <span style="color: blue">if </span>(<span style="color: #2b91af">File</span>.Exists(path))
+            {               
+                <span style="color: green">// hard coded to the image/jpg type (obviously needs to adjust)
+                </span>context.Response.AddHeader(<span style="color: #a31515">&quot;Content-Type&quot;</span>, <span style="color: #a31515">&quot;image/jpg&quot;</span>);
+                context.Response.AddHeader(<span style="color: #a31515">&quot;Content-Length&quot;</span>, <span style="color: blue">new </span><span style="color: #2b91af">FileInfo</span>(path).Length.ToString());
+                context.Response.WriteFile(path);
+            }
+        }
+    }
+
+
+}</pre>
+<p>To use it, I created a folder called Content and copied one of the sample photos included with Windows into the folder, and then modified Default.aspx:</p>
+<pre class="code"><span style="background: yellow">&lt;%</span><span style="color: blue">@ </span><span style="color: maroon">Page </span><span style="color: red">Title</span><span style="color: blue">=&quot;Home Page&quot; </span><span style="color: red">Language</span><span style="color: blue">=&quot;C#&quot; </span><span style="color: red">MasterPageFile</span><span style="color: blue">=&quot;~/Site.master&quot; </span><span style="color: red">AutoEventWireup</span><span style="color: blue">=&quot;true&quot;
+    </span><span style="color: red">CodeBehind</span><span style="color: blue">=&quot;Default.aspx.cs&quot; </span><span style="color: red">Inherits</span><span style="color: blue">=&quot;TestWebApplication1._Default&quot; </span><span style="background: yellow">%&gt;
+
+</span><span style="color: blue">&lt;</span><span style="color: maroon">asp</span><span style="color: blue">:</span><span style="color: maroon">Content </span><span style="color: red">ID</span><span style="color: blue">=&quot;HeaderContent&quot; </span><span style="color: red">runat</span><span style="color: blue">=&quot;server&quot; </span><span style="color: red">ContentPlaceHolderID</span><span style="color: blue">=&quot;HeadContent&quot;&gt;
+&lt;/</span><span style="color: maroon">asp</span><span style="color: blue">:</span><span style="color: maroon">Content</span><span style="color: blue">&gt;
+&lt;</span><span style="color: maroon">asp</span><span style="color: blue">:</span><span style="color: maroon">Content </span><span style="color: red">ID</span><span style="color: blue">=&quot;BodyContent&quot; </span><span style="color: red">runat</span><span style="color: blue">=&quot;server&quot; </span><span style="color: red">ContentPlaceHolderID</span><span style="color: blue">=&quot;MainContent&quot;&gt;
+    &lt;</span><span style="color: maroon">h2</span><span style="color: blue">&gt;
+        </span>Welcome to the Route Table Demonstrator
+    <span style="color: blue">&lt;/</span><span style="color: maroon">h2</span><span style="color: blue">&gt;
+    &lt;</span><span style="color: maroon">h3</span><span style="color: blue">&gt;</span>This one should work as it's using the not-so-magical route table and a custom iroutehandler.<span style="color: blue">&lt;/</span><span style="color: maroon">h3</span><span style="color: blue">&gt;
+    &lt;</span><span style="color: maroon">p</span><span style="color: blue">&gt;
+        </span><span style="color: red">&amp;lt;</span>img src=<span style="color: red">&amp;quot;</span>/Assets/en-us/Penguins.jpg<span style="color: red">&amp;quot; </span>width=<span style="color: red">&amp;quot;</span>320<span style="color: red">&amp;quot; </span>height=<span style="color: red">&amp;quot;</span>200<span style="color: red">&amp;quot; </span>/<span style="color: red">&amp;gt;
+    </span><span style="color: blue">&lt;/</span><span style="color: maroon">p</span><span style="color: blue">&gt;
+    &lt;</span><span style="color: maroon">p</span><span style="color: blue">&gt;
+        &lt;</span><span style="color: maroon">img </span><span style="color: red">src</span><span style="color: blue">=&quot;/Assets/en-us/Penguins.jpg&quot; </span><span style="color: red">width</span><span style="color: blue">=&quot;320&quot; </span><span style="color: red">height</span><span style="color: blue">=&quot;200&quot; /&gt;
+    &lt;/</span><span style="color: maroon">p</span><span style="color: blue">&gt;
+    &lt;</span><span style="color: maroon">h3</span><span style="color: blue">&gt;</span>THis one shouldn't work due to security in web.config for the folder<span style="color: blue">&lt;/</span><span style="color: maroon">h3</span><span style="color: blue">&gt;
+    &lt;</span><span style="color: maroon">p</span><span style="color: blue">&gt;</span><span style="color: red">&amp;lt;</span>img src=<span style="color: red">&amp;quot;</span>/Content/Penguins.jpg<span style="color: red">&amp;quot; </span>/<span style="color: red">&amp;gt;</span><span style="color: blue">&lt;/</span><span style="color: maroon">p</span><span style="color: blue">&gt;
+    &lt;</span><span style="color: maroon">p</span><span style="color: blue">&gt;
+        &lt;</span><span style="color: maroon">img </span><span style="color: red">src</span><span style="color: blue">=&quot;/Content/Penguins.jpg&quot; /&gt;
+    &lt;/</span><span style="color: maroon">p</span><span style="color: blue">&gt;    
+&lt;/</span><span style="color: maroon">asp</span><span style="color: blue">:</span><span style="color: maroon">Content</span><span style="color: blue">&gt;
+
+</span></pre>
+<p><a href="http://11011.net/software/vspaste"></a>In the Content Folder, I added a web.config file to prevent direct access to the content within the folder:</p>
+<pre class="code"><span style="color: blue">&lt;?</span><span style="color: #a31515">xml </span><span style="color: red">version</span><span style="color: blue">=</span>&quot;<span style="color: blue">1.0</span>&quot;<span style="color: blue">?&gt;
+&lt;</span><span style="color: #a31515">configuration</span><span style="color: blue">&gt;
+
+  &lt;</span><span style="color: #a31515">system.web</span><span style="color: blue">&gt;
+    &lt;</span><span style="color: #a31515">authorization</span><span style="color: blue">&gt;
+      &lt;</span><span style="color: #a31515">deny </span><span style="color: red">users</span><span style="color: blue">=</span>&quot;<span style="color: blue">*</span>&quot;<span style="color: blue">/&gt;
+    &lt;/</span><span style="color: #a31515">authorization</span><span style="color: blue">&gt;
+ 
+  &lt;/</span><span style="color: #a31515">system.web</span><span style="color: blue">&gt;
+
+  &lt;</span><span style="color: #a31515">system.webServer</span><span style="color: blue">&gt;
+     &lt;</span><span style="color: #a31515">modules </span><span style="color: red">runAllManagedModulesForAllRequests</span><span style="color: blue">=</span>&quot;<span style="color: blue">true</span>&quot;<span style="color: blue">/&gt;
+  &lt;/</span><span style="color: #a31515">system.webServer</span><span style="color: blue">&gt;
+&lt;/</span><span style="color: #a31515">configuration</span><span style="color: blue">&gt;
+
+</span></pre>
+<p>This should work without modification on IIS7+ and Visual Studio 2010.</p>
+<p><img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2010/03/image3.png" width="400" height="291"></p>
+			</div>
+<!-- .entry-content -->
+
+</article><!-- #post-## -->
+
+			<div class="code-block code-block-1" style="margin: 8px 0; clear: both;">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-fg+5r+6l-ft+4e" data-ad-client="ca-pub-2328055154157951" data-ad-slot="9395646477"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+				
+<article id="post-890" class="post post-890 type-post status-publish format-standard hentry category-coding tag-ajax tag-asp-net">
+	<!-- Grab the featured image -->
+	
+	<header class="entry-header">
+				<div class="entry-date">
+			<span class="posted-on"><a href="/blog/index.php/archives/890" rel="bookmark"><time class="entry-date published" datetime="2010-01-17T13:26:54-06:00">January 17, 2010</time></a></span><span class="byline"> by </span> <span class="author vcard"><a class="url fn n" href="/blog/index.php/archives/author/aaron">Aaron</a></span>		</div>
+<!-- .entry-meta -->
+		
+		<h1 class="entry-title"><a href="/blog/index.php/archives/890" rel="bookmark">Disabling automatic Sys.UI.Control attachment</a></h1>	</header><!-- .entry-header -->
+
+	
+<div class="entry-meta">
+	
+	<ul class="meta-list">
+					<li class="meta-cat"><a href="/blog/index.php/archives/category/coding" rel="category tag">Coding</a></li>
+							<li class="meta-tag">
+<a href="/blog/index.php/archives/tag/ajax" rel="tag">Ajax</a>, <a href="/blog/index.php/archives/tag/asp-net" rel="tag">ASP.NET</a>
+</li>
+							</ul>
+</div>
+	<div class="entry-content">
+		<p>If you’re using the Microsoft Ajax Library (<a href="http://www.asp.net/ajaxlibrary/learn.ashx" target="_blank">learn</a>), you may not always want to start the automatic “attach” process that takes place when the page loads. It’s easy to disable, but not yet documented any place I could find easily.</p>
+<pre class="code"><span style="color: blue">&lt;</span><span style="color: #a31515">script </span><span style="color: red">src</span><span style="color: blue">=&quot;Scripts/MicrosoftAjax/Start.debug.js&quot; </span><span style="color: red">type</span><span style="color: blue">=&quot;text/javascript&quot;&gt;&lt;/</span><span style="color: #a31515">script</span><span style="color: blue">&gt;
+&lt;</span><span style="color: #a31515">script </span><span style="color: red">type</span><span style="color: blue">=&quot;text/javascript&quot;&gt;
+
+    var </span>ajaxPath = <span style="color: #a31515">&quot;&quot;</span>;
+
+    Sys.activateDom = <span style="color: blue">false</span>;</pre>
+<p>All you must do is set <strong>Sys.activateDom</strong> to <strong>false</strong> as shown above (make sure this is set <strong>after</strong> the new Start.js JavaScript file loads, otherwise your code will crash when you try to set the Sys object before it has been properly constructed). </p>
+<p>Then, to begin the attach process, just call <strong>Sys.activateElements</strong>:</p>
+<pre class="code">Sys.activateElements(document.documentElement);</pre>
+<p>In the code line above, though I’ve specified that I want the entire HTML document activated, you could provide any element you want as a starting point (for example to optimize the use of the library and prevent unnecessary DOM searching for example).</p>
+<p>I’m adding the delay in some JavaScript code because I wanted to set up a few variables in advance of the attach occurring. I tend to write my JavaScript code in an object oriented fashion these days (using the prototype pattern), including code that is interacting with the DOM. In this case, I’ll create a class that represents the logic of the page rather than following the typical purely functional model that is done on many JavaScript pages. But, when using the “<strong>eval</strong>” syntax of the Microsoft Ajax library “{{ code }}”, occasionally, I’ll need to delay the <strong>eval</strong> or the page will crash. </p>
+<p>From my recent post on making a simple <a href="/blog/index.php/archives/885" target="_blank">command extension to the Microsoft Ajax library</a>, I wanted to make that more object oriented by referring to an instance of my class, rather than pointing directly to a function:</p>
+<pre class="code"><span style="color: blue">&lt;</span><span style="color: #a31515">body sys</span><span style="color: blue">:</span><span style="color: red">attach</span><span style="color: blue">=&quot;wpc&quot; 
+    </span><span style="color: #a31515">wpc</span><span style="color: blue">:</span><span style="color: red">onbubbleevent</span><span style="color: blue">=&quot;{{$view.onCommand}}&quot;  
+    </span><span style="color: #a31515">xmlns</span><span style="color: blue">:</span><span style="color: red">sys</span><span style="color: blue">=&quot;javascript:Sys&quot; </span><span style="color: #a31515">xmlns</span><span style="color: blue">:</span><span style="color: red">wpc</span><span style="color: blue">=&quot;javascript:WiredPrairie.Commanding&quot;&gt;
+</span></pre>
+<p><a href="http://11011.net/software/vspaste"></a></p>
+<p><strong>$view </strong>represents the instance of my page’s behavior. However, if the attach were to occur too early, this variable is not yet set. I’m using the slick <a href="http://www.asp.net/ajaxlibrary/HOW%20TO%20Load%20a%20Custom%20Script%20with%20Dependencies.ashx">script loading functionality</a> of the ajax library, specifying the various JavaScript libraries and their dependencies, including my page’s behavior. It’s not until that JavaScript code is loaded that the code can create an instance – and that could be AFTER the page has already done the attach logic. The attach happens before <strong>Sys.onReady</strong> for example. (Sys.<strong>onDomReady</strong> happens before <strong>onReady</strong>, but not all JavaScript files may have been downloaded).</p>
+<pre class="code">Sys.onReady(<span style="color: blue">function</span>() {
+    $view = <span style="color: blue">new </span>WiredPrairie.MainView();
+    
+    Sys.activateElements(document.documentElement);</pre>
+<p><a href="http://11011.net/software/vspaste"></a></p>
+<p>When using the <strong>sys:attach</strong> attribute, note that the attach and instantiation process happens <strong>before</strong> any code you’ve specified in <strong>onReady</strong> is executed (Microsoft currently uses the same method for determining when everything is ready by adding a function call to <strong>onReady</strong> – but their call is first in the queue). </p>
+			</div>
+<!-- .entry-content -->
+
+</article><!-- #post-## -->
+
+			
+			
+		
+		</main><!-- #main -->
+	</section><!-- #primary -->
+
+
+	</div>
+<!-- #content -->
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+		<div class="site-info">
+			<a class="powered-by" href="http://wordpress.org/">Proudly powered by WordPress</a>
+			<span class="sep"> | </span>
+			Theme: editor by <a href="https://array.is/">Array</a>		</div>
+<!-- .site-info -->
+	</footer><!-- #colophon -->
+</div>
+<!-- #page -->
+
+<script type="text/javascript" src="/blog/wp-content/themes/editor/js/jquery.fitvids.js?ver=20140820" id="fitvids-js"></script>
+<script type="text/javascript" src="/blog/wp-content/themes/editor/js/editor.js?ver=20120206" id="editor-js-js"></script>
+<script src="https://stats.wp.com/e-202226.js" defer></script>
+<script>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:11.0',blog:'193486638',post:'0',tz:'-5',srv:'www.wiredprairie.us'} ]);
+	_stq.push([ 'clickTrackerInit', '193486638', '0' ]);
+</script>
+
+</body>
+</html>

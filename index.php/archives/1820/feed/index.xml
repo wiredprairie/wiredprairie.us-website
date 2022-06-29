@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Knockout binding for JavaScript route fixup	</title>
+	<atom:link href="/blog/index.php/archives/1820/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/1820</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Sat, 26 Jan 2013 16:46:08 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/1820/comment-page-1#comment-21138</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sat, 26 Jan 2013 16:46:08 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1820#comment-21138</guid>
+
+					<description><![CDATA[Good golly I&#039;m a slow learner. Updated to use 4th parameter. I named it $data as a reminder to myself that it&#039;s the same as the 5th parameter&#039;s $data property. :)]]></description>
+			<content:encoded><![CDATA[<p>Good golly I&#8217;m a slow learner. Updated to use 4th parameter. I named it $data as a reminder to myself that it&#8217;s the same as the 5th parameter&#8217;s $data property. :)</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Ryan Niemeyer		</title>
+		<link>/blog/index.php/archives/1820/comment-page-1#comment-21137</link>
+
+		<dc:creator><![CDATA[Ryan Niemeyer]]></dc:creator>
+		<pubDate>Sat, 26 Jan 2013 16:29:42 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1820#comment-21137</guid>
+
+					<description><![CDATA[Nice! Looks good in the markup now. 
+
+Just an insignificant clarification that the 4th argument, &quot;viewModel&quot;, to the init/update functions is actually the same as bindingContext.$data.  Despite the name, it is not the overall view model and is the data that was bound at that level.  Many times I will use &quot;data&quot; for the argument name to make sure that it is not confusing.]]></description>
+			<content:encoded><![CDATA[<p>Nice! Looks good in the markup now. </p>
+<p>Just an insignificant clarification that the 4th argument, &#8220;viewModel&#8221;, to the init/update functions is actually the same as bindingContext.$data.  Despite the name, it is not the overall view model and is the data that was bound at that level.  Many times I will use &#8220;data&#8221; for the argument name to make sure that it is not confusing.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/1820/comment-page-1#comment-21135</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sat, 26 Jan 2013 14:49:20 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1820#comment-21135</guid>
+
+					<description><![CDATA[Changed the syntax to use the $data property. :)]]></description>
+			<content:encoded><![CDATA[<p>Changed the syntax to use the $data property. :)</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/1820/comment-page-1#comment-21129</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sat, 26 Jan 2013 12:22:45 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1820#comment-21129</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1820/comment-page-1#comment-21123&quot;&gt;Ryan Niemeyer&lt;/a&gt;.
+
+Good suggestion Ryan. I kept changing how it worked last night and never looked for something like that.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/1820/comment-page-1#comment-21123">Ryan Niemeyer</a>.</p>
+<p>Good suggestion Ryan. I kept changing how it worked last night and never looked for something like that.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Ryan Niemeyer		</title>
+		<link>/blog/index.php/archives/1820/comment-page-1#comment-21123</link>
+
+		<dc:creator><![CDATA[Ryan Niemeyer]]></dc:creator>
+		<pubDate>Sat, 26 Jan 2013 05:10:41 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1820#comment-21123</guid>
+
+					<description><![CDATA[One suggestion that I would have is that it might be nice to also support just passing the &quot;url&quot; option directly to the binding handler and defaulting to using $data for the model (the 4th argument to the &quot;update&quot; function is the same as $data).  
+
+Then, you would be able to reduce the syntax to data-bind=&quot;route: &#039;person_details&#039;&quot;. The binding handler would just have to recognize the options object with model/url vs. the url directly.]]></description>
+			<content:encoded><![CDATA[<p>One suggestion that I would have is that it might be nice to also support just passing the &#8220;url&#8221; option directly to the binding handler and defaulting to using $data for the model (the 4th argument to the &#8220;update&#8221; function is the same as $data).  </p>
+<p>Then, you would be able to reduce the syntax to data-bind=&#8221;route: &#8216;person_details'&#8221;. The binding handler would just have to recognize the options object with model/url vs. the url directly.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

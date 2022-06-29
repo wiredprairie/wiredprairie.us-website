@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Visual Studio 2010 Remote Desktop Performance Tips	</title>
+	<atom:link href="/blog/index.php/archives/902/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/902</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Wed, 04 Aug 2010 16:02:11 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: Adam		</title>
+		<link>/blog/index.php/archives/902/comment-page-1#comment-3129</link>
+
+		<dc:creator><![CDATA[Adam]]></dc:creator>
+		<pubDate>Wed, 04 Aug 2010 16:02:11 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/902#comment-3129</guid>
+
+					<description><![CDATA[If you need to access graphics-heavy applications over RDP, you may want to look at Ericom Blaze, a software product that accelerates AND compresses standard Microsoft RDP, so it speeds RDP while conserving bandwidth. Blaze accelerates RDP performance by as much as 10-25 times, and helps deliver higher frame rates and reduce screen freezes and choppiness.
+
+You can read more about Blaze and download a free evaluation at:
+http://www.ericom.com/ericom_blaze.asp?URL_ID=708
+
+Adam]]></description>
+			<content:encoded><![CDATA[<p>If you need to access graphics-heavy applications over RDP, you may want to look at Ericom Blaze, a software product that accelerates AND compresses standard Microsoft RDP, so it speeds RDP while conserving bandwidth. Blaze accelerates RDP performance by as much as 10-25 times, and helps deliver higher frame rates and reduce screen freezes and choppiness.</p>
+<p>You can read more about Blaze and download a free evaluation at:<br />
+<a href="http://www.ericom.com/ericom_blaze.asp?URL_ID=708" rel="nofollow ugc">http://www.ericom.com/ericom_blaze.asp?URL_ID=708</a></p>
+<p>Adam</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

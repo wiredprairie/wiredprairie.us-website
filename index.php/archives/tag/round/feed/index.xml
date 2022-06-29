@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>Round &#8211; WiredPrairie</title>
+	<atom:link href="/blog/index.php/archives/tag/round/feed" rel="self" type="application/rss+xml" />
+	<link>/blog</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Wed, 22 Aug 2012 12:36:55 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+<site xmlns="com-wordpress:feed-additions:1">193486638</site>	<item>
+		<title>How to mask an image in HTML/CSS</title>
+		<link>/blog/index.php/archives/1713</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Wed, 22 Aug 2012 12:03:00 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[Circle]]></category>
+		<category><![CDATA[CSS]]></category>
+		<category><![CDATA[Ellipse]]></category>
+		<category><![CDATA[Html]]></category>
+		<category><![CDATA[Mask]]></category>
+		<category><![CDATA[Round]]></category>
+		<category><![CDATA[SVG]]></category>
+		<guid isPermaLink="false">/blog/?p=1713</guid>
+
+					<description><![CDATA[Until browsers all agree on a technique for masking an image in HTML (like –web-kit-mask-image), I’ve got another option: using SVG. I’m creating a single page application to help sell some electronics and other goodies I’ve collected over the years. Rather than the traditional rectangular display of photos, I wanted to try something different. I [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Until browsers all agree on a technique for masking an image in HTML (like –web-kit-mask-image), I’ve got another option: using SVG.</p>
+<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2012/08/image2.png" width="280" height="304" /></p>
+<p>I’m creating a single page application to help sell some electronics and other goodies I’ve collected over the years. Rather than the traditional rectangular display of photos, I wanted to try something different. I wanted the photos to be round. However, I didn’t want to create a bunch of round images. </p>
+<p>Enter SVG:</p>
+<div style="border-bottom: silver 1px solid; text-align: left; border-left: silver 1px solid; padding-bottom: 4px; line-height: 12pt; background-color: #f4f4f4; margin: 20px 0px 10px; padding-left: 4px; width: 97.5%; padding-right: 4px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; max-height: 200px; font-size: 8pt; overflow: auto; border-top: silver 1px solid; cursor: text; border-right: silver 1px solid; padding-top: 4px" id="codeSnippetWrapper">
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: #f4f4f4; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px" id="codeSnippet">&lt;svg width=<span style="color: #006080">&quot;220&quot;</span> height=<span style="color: #006080">&quot;220&quot;</span>&gt;<br />                    &lt;mask id=<span style="color: #006080">&quot;m1&quot;</span>&gt;&lt;ellipse cx=<span style="color: #006080">&quot;110&quot;</span> cy=<span style="color: #006080">&quot;110&quot;</span> rx=<span style="color: #006080">&quot;98&quot;</span> ry=<span style="color: #006080">&quot;98&quot;</span> style=<span style="color: #006080">&quot;fill:white;stroke-width:0;fill-opacity: 1.0&quot;</span>&gt;&lt;/ellipse&gt;&lt;/mask&gt;<br />                    &lt;g&gt;<br />                        &lt;ellipse cx=<span style="color: #006080">&quot;110&quot;</span> cy=<span style="color: #006080">&quot;110&quot;</span> rx=<span style="color: #006080">&quot;100&quot;</span> ry=<span style="color: #006080">&quot;100&quot;</span> style=<span style="color: #006080">&quot;stroke-width:10;stroke:#222&quot;</span>&gt;&lt;/ellipse&gt;<br />                        &lt;image href=<span style="color: #006080">&quot;img/sales/lenovo/IMG_0468.jpg&quot;</span> x=<span style="color: #006080">&quot;-25%&quot;</span> y=<span style="color: #006080">&quot;-25%&quot;</span> height=<span style="color: #006080">&quot;150%&quot;</span> width=<span style="color: #006080">&quot;150%&quot;</span> style=<span style="color: #006080">&quot;mask: url(#m1)&quot;</span>&gt;&lt;/image&gt;&lt;/g&gt;&lt;/svg&gt;</pre>
+<p></div>
+<p>The original images aren’t square, so I tweaked the size and position of each so that it would completely fill the ellipse (150% and -25% for size and location).&#160; As a fall back, I’m going to add the CSS property and value “display:none” to a standard HTML img element that will be optionally displayed if the browser can’t do SVG (like IE8 and lower for example). I don’t want to lose a potential sale to images not showing up! I’ll use <a href="http://modernizr.com/docs/" target="_blank">modernizr</a> for SVG detection.</p>
+<p>And although the code above doesn’t demonstrate the technique, you can use CSS to decorate the SVG. Check <a href="http://jsfiddle.net/Uv2sZ/" target="_blank">this</a> demo out that I created:</p>
+<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2012/08/image3.png" width="216" height="214" /></p>
+<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2012/08/image4.png" width="607" height="211" /></p>
+<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2012/08/image5.png" width="206" height="76" /></p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1713</post-id>	</item>
+	</channel>
+</rss>

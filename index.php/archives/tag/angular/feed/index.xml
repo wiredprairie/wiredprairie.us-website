@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>Angular &#8211; WiredPrairie</title>
+	<atom:link href="/blog/index.php/archives/tag/angular/feed" rel="self" type="application/rss+xml" />
+	<link>/blog</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Sat, 01 Feb 2014 02:51:22 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+<site xmlns="com-wordpress:feed-additions:1">193486638</site>	<item>
+		<title>Animating an element&#8217;s visibility using AngularJS</title>
+		<link>/blog/index.php/archives/1996</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sat, 01 Feb 2014 02:51:22 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[Angular]]></category>
+		<category><![CDATA[JavaScript]]></category>
+		<guid isPermaLink="false">/blog/?p=1996</guid>
+
+					<description><![CDATA[There was a question on StackOverflow about animating an element and I wanted to give it a shot, so here goes: http://jsfiddle.net/wiredprairie/5tFCZ/1/ &#160; Imagine nearly the simplest Angular JS application possible: &#60;div ng-app=&#34;App&#34;&#62; &#60;div ng-init=&#34;checked=true&#34;&#62; &#60;div&#62; &#60;label&#62; &#60;input type=&#34;checkbox&#34; ng-model=&#34;checked&#34; /&#62;Is Visible...&#60;/label&#62; &#60;/div&#62; &#60;div class=&#34;sample&#34; ng-class=&#34;{ hidden: !checked }&#34;&#62;Visible...&#60;/div&#62; &#60;/div&#62; &#60;/div&#62; There is only a [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>There was a question on StackOverflow about animating an element and I wanted to give it a shot, so here goes:</p>
+<p><a title="http://jsfiddle.net/wiredprairie/5tFCZ/1/" href="http://jsfiddle.net/wiredprairie/5tFCZ/1/">http://jsfiddle.net/wiredprairie/5tFCZ/1/</a></p>
+<p><a href="/blog/wp-content/uploads/2014/01/image.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wp-content/uploads/2014/01/image_thumb.png" width="192" height="113" /></a></p>
+<p>&#160;</p>
+<p>Imagine nearly the simplest Angular JS application possible:</p>
+<pre class="csharpcode"><span class="kwrd">&lt;</span><span class="html">div</span> <span class="attr">ng-app</span><span class="kwrd">=&quot;App&quot;</span><span class="kwrd">&gt;</span>
+    <span class="kwrd">&lt;</span><span class="html">div</span> <span class="attr">ng-init</span><span class="kwrd">=&quot;checked=true&quot;</span><span class="kwrd">&gt;</span>
+        <span class="kwrd">&lt;</span><span class="html">div</span><span class="kwrd">&gt;</span>
+            <span class="kwrd">&lt;</span><span class="html">label</span><span class="kwrd">&gt;</span>
+                <span class="kwrd">&lt;</span><span class="html">input</span> <span class="attr">type</span><span class="kwrd">=&quot;checkbox&quot;</span> <span class="attr">ng-model</span><span class="kwrd">=&quot;checked&quot;</span> <span class="kwrd">/&gt;</span>Is Visible...<span class="kwrd">&lt;/</span><span class="html">label</span><span class="kwrd">&gt;</span>
+        <span class="kwrd">&lt;/</span><span class="html">div</span><span class="kwrd">&gt;</span>
+        <span class="kwrd">&lt;</span><span class="html">div</span> <span class="attr">class</span><span class="kwrd">=&quot;sample&quot;</span> <span class="attr">ng-class</span><span class="kwrd">=&quot;{ hidden: !checked }&quot;</span><span class="kwrd">&gt;</span>Visible...<span class="kwrd">&lt;/</span><span class="html">div</span><span class="kwrd">&gt;</span>
+    <span class="kwrd">&lt;/</span><span class="html">div</span><span class="kwrd">&gt;</span>
+<span class="kwrd">&lt;/</span><span class="html">div</span><span class="kwrd">&gt;</span></pre>
+<p><style type="text/css">
+.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }</style>
+</p>
+<p>There is only a single property called <strong>checked</strong> as part of the data model. There’s a <strong>checkbox </strong>that when unchecked, will cause the text “Visible” to be hidden.</p>
+<p>I’m going to use jQuery as the simple animation engine, but you could use what ever you’d like. The latest versions of jQuery, angular, and angular-animate are needed:</p>
+<pre class="csharpcode"><span class="kwrd">&lt;</span><span class="html">script</span> <span class="attr">src</span><span class="kwrd">=&quot;http://code.jquery.com/jquery-1.10.1.min.js&quot;</span><span class="kwrd">&gt;&lt;/</span><span class="html">script</span><span class="kwrd">&gt;</span>
+&lt;script src=<span class="str">&quot;http://code.angularjs.org/1.2.10/angular.min.js&quot;</span>&gt;&lt;/script&gt;
+&lt;script src=<span class="str">&quot;http://code.angularjs.org/1.2.10/angular-animate.min.js&quot;</span>&gt;<span class="kwrd">&lt;/</span><span class="html">script</span><span class="kwrd">&gt;</span></pre>
+<style type="text/css">
+.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }</style>
+<p>Using the <strong>ng-class</strong> directive (<a href="http://docs.angularjs.org/api/ng.directive:ngClass" target="_blank">reference</a>), a CSS <strong>class </strong>named <strong>hidden</strong> is added when the <strong>checkbox </strong>is <strong>not </strong>checked. </p>
+<p>The application module and animation API are defined:</p>
+<pre class="csharpcode">angular.module(<span class="str">'App'</span>, [<span class="str">'ngAnimate'</span>]).animation(<span class="str">'.sample'</span>, <span class="kwrd">function</span> () {
+    <span class="kwrd">return</span> {
+        addClass: <span class="kwrd">function</span> (element, className, done) {
+            <span class="kwrd">if</span> (className === <span class="str">'hidden'</span>) {
+                jQuery(element)
+                    .css({
+                    opacity: 1
+                })
+                    .animate({
+                    opacity: 0
+                }, 500, done);
+            } <span class="kwrd">else</span> {
+                done();
+            }
+        },
+        removeClass: <span class="kwrd">function</span> (element, className, done) {
+            <span class="kwrd">if</span> (className === <span class="str">'hidden'</span>) {
+                jQuery(element)
+                    .css({
+                    opacity: 0
+                })
+                    .animate({
+                    opacity: 1
+                }, 500, done);
+            } <span class="kwrd">else</span> {
+                done();
+            }
+        }
+    }
+});</pre>
+<p>&#160;</p>
+<p>The only element animated on the page is using a CSS <strong>class </strong>name of <strong>sample. </strong>Whenever Angular adds or removes a CSS <strong>class</strong> from a matching HTML element, the corresponding code is executed. As it’s possible for multiple class names to be passed to the functions, per the guidelines, I’ve made sure that the code only executes when appropriate by filtering on the class name of <strong>hidden</strong>. As it’s toggling the state, the first action taken is to fully make opaque or transparent, then animate to zero or one depending on whether the <strong>class</strong> is being added or removed.</p>
+<p>And that’s it! Of course, the code could have been more sophisticated, but it was all I needed.</p>
+<p>By the way, there’s no need for a CSS class named hidden that has any CSS properties (it can be undefined completely). The animation code handles the visibility properly. </p>
+<style type="text/css">
+.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }</style></p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1996</post-id>	</item>
+	</channel>
+</rss>

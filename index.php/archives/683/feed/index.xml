@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: XMRadio Account Updates &#8211; Yikes!	</title>
+	<atom:link href="/blog/index.php/archives/683/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/683</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Fri, 23 Jan 2009 07:50:59 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: Miha Markic		</title>
+		<link>/blog/index.php/archives/683/comment-page-1#comment-2163</link>
+
+		<dc:creator><![CDATA[Miha Markic]]></dc:creator>
+		<pubDate>Fri, 23 Jan 2009 07:50:59 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/683#comment-2163</guid>
+
+					<description><![CDATA[You deserve it. Why are you torturing the poor system with personal changes? Leave it alone, will you! :-P]]></description>
+			<content:encoded><![CDATA[<p>You deserve it. Why are you torturing the poor system with personal changes? Leave it alone, will you! :-P</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

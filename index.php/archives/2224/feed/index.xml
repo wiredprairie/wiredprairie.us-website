@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Flutter Demo application linking to BoardGameGeek.Com&#8217;s Hot Game List	</title>
+	<atom:link href="/blog/index.php/archives/2224/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/2224</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Thu, 01 Mar 2018 17:57:16 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/2224/comment-page-1#comment-63887</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Thu, 01 Mar 2018 17:57:16 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=2224#comment-63887</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/2224/comment-page-1#comment-63886&quot;&gt;Michael Thomsen&lt;/a&gt;.
+
+Thanks for the comment Michael and suggestion. It&#039;s better, but I still find it too noisy and it takes too much vertical space. Lines starting with child: or children take away the focus of the type of child or children.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/2224/comment-page-1#comment-63886">Michael Thomsen</a>.</p>
+<p>Thanks for the comment Michael and suggestion. It&#8217;s better, but I still find it too noisy and it takes too much vertical space. Lines starting with child: or children take away the focus of the type of child or children.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Michael Thomsen		</title>
+		<link>/blog/index.php/archives/2224/comment-page-1#comment-63886</link>
+
+		<dc:creator><![CDATA[Michael Thomsen]]></dc:creator>
+		<pubDate>Thu, 01 Mar 2018 14:10:30 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=2224#comment-63886</guid>
+
+					<description><![CDATA[Hi, Flutter team member here just offering a few comments.
+
+First of all, thanks for the write up. We really do appreciate feedback!
+
+About the formatting concerns, are you aware of how trailing commas affect automatic formatting? See the details here: https://flutter.io/formatting/#using-trailing-commas
+
+I would also recommend splitting long build methods using some local variables. 
+
+Finally, we are working on support for optional new/const (a new feature in Dart 2).
+
+When I combine these three techniques, I get this (which was auto formatted):
+https://gist.github.com/mit-mit/dccc56a94faf49a5070eee09f19e6865
+
+WDYT?]]></description>
+			<content:encoded><![CDATA[<p>Hi, Flutter team member here just offering a few comments.</p>
+<p>First of all, thanks for the write up. We really do appreciate feedback!</p>
+<p>About the formatting concerns, are you aware of how trailing commas affect automatic formatting? See the details here: <a href="https://flutter.io/formatting/#using-trailing-commas" rel="nofollow ugc">https://flutter.io/formatting/#using-trailing-commas</a></p>
+<p>I would also recommend splitting long build methods using some local variables. </p>
+<p>Finally, we are working on support for optional new/const (a new feature in Dart 2).</p>
+<p>When I combine these three techniques, I get this (which was auto formatted):<br />
+<a href="https://gist.github.com/mit-mit/dccc56a94faf49a5070eee09f19e6865" rel="nofollow ugc">https://gist.github.com/mit-mit/dccc56a94faf49a5070eee09f19e6865</a></p>
+<p>WDYT?</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

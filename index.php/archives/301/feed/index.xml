@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Adobe PDF files, not printable anymore?	</title>
+	<atom:link href="/blog/index.php/archives/301/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/301</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Tue, 03 Jun 2008 10:37:07 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/301/comment-page-1#comment-287</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Tue, 03 Jun 2008 10:37:07 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/301#comment-287</guid>
+
+					<description><![CDATA[Thaink aiddy for the confirmation. I didn&#039;t think it supported multimedia. 
+
+I wonder if it should to compete?]]></description>
+			<content:encoded><![CDATA[<p>Thaink aiddy for the confirmation. I didn&#8217;t think it supported multimedia. </p>
+<p>I wonder if it should to compete?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: aiddy		</title>
+		<link>/blog/index.php/archives/301/comment-page-1#comment-281</link>
+
+		<dc:creator><![CDATA[aiddy]]></dc:creator>
+		<pubDate>Tue, 03 Jun 2008 01:58:03 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/301#comment-281</guid>
+
+					<description><![CDATA[Hi Aaron, XPS doesn&#039;t support something similar since XPS is designed to be *just* what you need for electronic paper. Supporting stuff that&#039;s beyond what you can print to, or scan from, physical paper is beyond the scenarios that XPS addresses.
+
+/aiddy]]></description>
+			<content:encoded><![CDATA[<p>Hi Aaron, XPS doesn&#8217;t support something similar since XPS is designed to be *just* what you need for electronic paper. Supporting stuff that&#8217;s beyond what you can print to, or scan from, physical paper is beyond the scenarios that XPS addresses.</p>
+<p>/aiddy</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/301/comment-page-1#comment-280</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Tue, 03 Jun 2008 01:27:34 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/301#comment-280</guid>
+
+					<description><![CDATA[Yogesh -- but how would you print a video? :-)]]></description>
+			<content:encoded><![CDATA[<p>Yogesh &#8212; but how would you print a video? :-)</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Yogesh A		</title>
+		<link>/blog/index.php/archives/301/comment-page-1#comment-271</link>
+
+		<dc:creator><![CDATA[Yogesh A]]></dc:creator>
+		<pubDate>Mon, 02 Jun 2008 14:50:07 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/301#comment-271</guid>
+
+					<description><![CDATA[I just learnt that Adobe Acrobat reader 9 is announced along with Acrobat.com. This might solve the printing problem.
+I visited Acrobat.com. Contains great features. But i got somewhat confused. But i got detailed information about it later here - &lt;a href=&quot;http://forums.techarena.in/showthread.php?t=979534&quot; rel=&quot;nofollow&quot;&gt;Adobe introduces Acrobat 9 &#038; Acrobat.com&lt;/a&gt;
+It also contains detailed and fabulous review of Acrobat 9 and Acrobat.com which was a lot helpful.
+
+&lt;a href=&quot;http://forums.techarena.in/showthread.php?t=979588&quot; rel=&quot;nofollow&quot;&gt;Adobe Acrobat 9 - Preview&lt;/a&gt;
+&lt;a href=&quot;http://forums.techarena.in/showthread.php?t=979550&quot; rel=&quot;nofollow&quot;&gt;Acrobat.com (BETA)&lt;/a&gt;]]></description>
+			<content:encoded><![CDATA[<p>I just learnt that Adobe Acrobat reader 9 is announced along with Acrobat.com. This might solve the printing problem.<br />
+I visited Acrobat.com. Contains great features. But i got somewhat confused. But i got detailed information about it later here &#8211; <a href="http://forums.techarena.in/showthread.php?t=979534" rel="nofollow">Adobe introduces Acrobat 9 &amp; Acrobat.com</a><br />
+It also contains detailed and fabulous review of Acrobat 9 and Acrobat.com which was a lot helpful.</p>
+<p><a href="http://forums.techarena.in/showthread.php?t=979588" rel="nofollow">Adobe Acrobat 9 &#8211; Preview</a><br />
+<a href="http://forums.techarena.in/showthread.php?t=979550" rel="nofollow">Acrobat.com (BETA)</a></p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

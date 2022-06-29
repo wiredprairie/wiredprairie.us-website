@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>Flex &#8211; WiredPrairie</title>
+	<atom:link href="/blog/index.php/archives/tag/flex/feed" rel="self" type="application/rss+xml" />
+	<link>/blog</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Thu, 13 May 2010 12:47:23 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+<site xmlns="com-wordpress:feed-additions:1">193486638</site>	<item>
+		<title>Impressive LiveCycle Data Services Numbers</title>
+		<link>/blog/index.php/archives/1059</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Thu, 13 May 2010 12:47:23 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[Silverlight]]></category>
+		<category><![CDATA[Flash]]></category>
+		<category><![CDATA[Flex]]></category>
+		<guid isPermaLink="false">/blog/index.php/archives/1059</guid>
+
+					<description><![CDATA[My knowledge of Adobe’s LiveCycle Data Services platform is very limited as I’ve experimented with it only once. However, I’m impressed with the ability of the LiveCycle Data Services (LCDS) to push what seems like a massive amount of messages per second to client machines running Adobe Flash/AIR applications. http://www.dcooper.org/blog/client/index.cfm?mode=entry&#38;entry=084D6DDA-4E22-1671-5EFB301D42924692 LCDS in their scenario was [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>My knowledge of Adobe’s LiveCycle Data Services platform is very limited as I’ve experimented with it only once. However, I’m impressed with the ability of the LiveCycle Data Services (LCDS) to push what seems like a massive amount of messages per second to client machines running Adobe Flash/AIR applications. </p>
+<p><a href="http://www.dcooper.org/blog/client/index.cfm?mode=entry&amp;entry=084D6DDA-4E22-1671-5EFB301D42924692">http://www.dcooper.org/blog/client/index.cfm?mode=entry&amp;entry=084D6DDA-4E22-1671-5EFB301D42924692</a></p>
+<p>LCDS in their scenario was able to push 400,000 messages to 500 concurrent clients with an average latency of less than 15 milliseconds on a single dual-processor Intel machine.</p>
+<p>I know there were some <a href="http://tomasz.janczuk.org/2010/03/comparison-of-http-polling-duplex-and.html">big improvements</a> in the network stack and polling API in Silverlight 4 (in particular the http stack added multiple messages per poll) – but I don’t know how it compares from a performance perspective to the Adobe options. </p>
+<p>Anyone know of any real-world comparisons?</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1059</post-id>	</item>
+		<item>
+		<title>Custom chrome with Adobe AIR</title>
+		<link>/blog/index.php/archives/391</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sat, 28 Jun 2008 02:15:24 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[Flex]]></category>
+		<guid isPermaLink="false">/blog/index.php/archives/391</guid>
+
+					<description><![CDATA[You can create custom chrome with WPF &#8212; but WPF won&#8217;t run on OS X. Microsoft &#8212; please extend Silverlight beyond the browser, thank you. :) Here&#8217;s a link to a video demonstrating how easy it is to do &#8230; (it&#8217;s nearly the same steps in WPF). From Digital Back Country, &#8220;Creating AIR Applications with [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>You can create custom chrome with WPF &#8212; but WPF won&#8217;t run on OS X. Microsoft &#8212; please extend Silverlight beyond the browser, thank you. :)</p>
+<p>Here&#8217;s a link to a video demonstrating how easy it is to do &#8230; (it&#8217;s nearly the same steps in WPF).</p>
+<p><a href="http://tv.adobe.com/#v=http%3A//adobe.edgeboss.net/flash/adobe/adobetvprod/adc_presents/64_adc_006.flv%3Frss_feedid%3D1216%26xmlvers%3D2"><img loading="lazy" style="border-right: 0px; border-top: 0px; border-left: 0px; border-bottom: 0px" height="366" alt="image" src="/blog/wp-content/uploads/2008/06/image25.png" width="425" border="0"/></a> </p>
+<p>From Digital Back Country, &#8220;<a href="http://blog.digitalbackcountry.com/?p=1466">Creating AIR Applications with Custom Chrome</a>.&#8221;</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">391</post-id>	</item>
+	</channel>
+</rss>

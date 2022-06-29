@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Commodore 64 Emulator, Written in ActionScript 3 (Flash)	</title>
+	<atom:link href="/blog/index.php/archives/653/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/653</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Sun, 11 Jan 2009 21:53:20 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: Dave Quick		</title>
+		<link>/blog/index.php/archives/653/comment-page-1#comment-2127</link>
+
+		<dc:creator><![CDATA[Dave Quick]]></dc:creator>
+		<pubDate>Sun, 11 Jan 2009 21:53:20 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/653#comment-2127</guid>
+
+					<description><![CDATA[320 x 200 is right. It also had a whopping 16 color pallette!]]></description>
+			<content:encoded><![CDATA[<p>320 x 200 is right. It also had a whopping 16 color pallette!</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Seriously Awesome Best Battery Charger (for AA &#038; AA batteries)	</title>
+	<atom:link href="/blog/index.php/archives/1145/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/1145</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Wed, 13 Oct 2010 08:58:23 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: Dave A		</title>
+		<link>/blog/index.php/archives/1145/comment-page-1#comment-3157</link>
+
+		<dc:creator><![CDATA[Dave A]]></dc:creator>
+		<pubDate>Wed, 13 Oct 2010 08:58:23 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/1145#comment-3157</guid>
+
+					<description><![CDATA[thanks for that, I&#039;ve had trouble with my batteries and charger recently (particularly for the camera) and was wondering what the problem might be. 
+
+Love the look of the display, being able to see the charge is great.]]></description>
+			<content:encoded><![CDATA[<p>thanks for that, I&#8217;ve had trouble with my batteries and charger recently (particularly for the camera) and was wondering what the problem might be. </p>
+<p>Love the look of the display, being able to see the charge is great.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: RSS Feeds for Press Releases	</title>
+	<atom:link href="/blog/index.php/archives/274/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/274</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Sat, 17 May 2008 03:36:05 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/274/comment-page-1#comment-136</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sat, 17 May 2008 03:36:05 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/274#comment-136</guid>
+
+					<description><![CDATA[Thanks for the pointer -- but there isn&#039;t a &quot;press&quot; RSS feed unless I&#039;m totally overlooking it. 
+
+Some companies don&#039;t even do press releases. :)]]></description>
+			<content:encoded><![CDATA[<p>Thanks for the pointer &#8212; but there isn&#8217;t a &#8220;press&#8221; RSS feed unless I&#8217;m totally overlooking it. </p>
+<p>Some companies don&#8217;t even do press releases. :)</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: jwiese		</title>
+		<link>/blog/index.php/archives/274/comment-page-1#comment-135</link>
+
+		<dc:creator><![CDATA[jwiese]]></dc:creator>
+		<pubDate>Fri, 16 May 2008 15:31:01 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/274#comment-135</guid>
+
+					<description><![CDATA[Here&#039;s where Adobe has there RSS feeds:  http://www.adobe.com/support/rss/
+
+To find it I searched on their site for &quot;RSS&quot;.
+
+BTW, I don&#039;t see any feed off of your companies site ;)]]></description>
+			<content:encoded><![CDATA[<p>Here&#8217;s where Adobe has there RSS feeds:  <a href="http://www.adobe.com/support/rss/" rel="nofollow ugc">http://www.adobe.com/support/rss/</a></p>
+<p>To find it I searched on their site for &#8220;RSS&#8221;.</p>
+<p>BTW, I don&#8217;t see any feed off of your companies site ;)</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Freezing my beak off &#8230;	</title>
+	<atom:link href="/blog/index.php/archives/636/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/636</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Tue, 13 Jan 2009 00:38:20 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: sallen		</title>
+		<link>/blog/index.php/archives/636/comment-page-1#comment-2128</link>
+
+		<dc:creator><![CDATA[sallen]]></dc:creator>
+		<pubDate>Tue, 13 Jan 2009 00:38:20 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/636#comment-2128</guid>
+
+					<description><![CDATA[Ah, I knew there had to be a downside to that lush green landscape I saw this year :)]]></description>
+			<content:encoded><![CDATA[<p>Ah, I knew there had to be a downside to that lush green landscape I saw this year :)</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: smackfoo		</title>
+		<link>/blog/index.php/archives/636/comment-page-1#comment-2092</link>
+
+		<dc:creator><![CDATA[smackfoo]]></dc:creator>
+		<pubDate>Mon, 22 Dec 2008 23:34:30 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/636#comment-2092</guid>
+
+					<description><![CDATA[Poor bird.
+
+It was -40º F here yesterday [with wind chill] - this really is the &quot;windy city&quot;. It was terrible.]]></description>
+			<content:encoded><![CDATA[<p>Poor bird.</p>
+<p>It was -40º F here yesterday [with wind chill] &#8211; this really is the &#8220;windy city&#8221;. It was terrible.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

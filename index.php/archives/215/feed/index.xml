@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: The ReaderWriterLock Slims down &#8230;. (in .NET 3.5)	</title>
+	<atom:link href="/blog/index.php/archives/215/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/215</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Thu, 15 Jan 2009 13:24:51 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: ReaderWriterLockSlim .NET v3.5 - Zuker On Foundations		</title>
+		<link>/blog/index.php/archives/215/comment-page-1#comment-2133</link>
+
+		<dc:creator><![CDATA[ReaderWriterLockSlim .NET v3.5 - Zuker On Foundations]]></dc:creator>
+		<pubDate>Thu, 15 Jan 2009 13:24:51 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/215#comment-2133</guid>
+
+					<description><![CDATA[[...] Via this post. [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] Via this post. [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: ReaderWriterLockSlim .NET v3.5 - Zuker On Foundations		</title>
+		<link>/blog/index.php/archives/215/comment-page-1#comment-106</link>
+
+		<dc:creator><![CDATA[ReaderWriterLockSlim .NET v3.5 - Zuker On Foundations]]></dc:creator>
+		<pubDate>Sun, 11 May 2008 04:37:03 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/215#comment-106</guid>
+
+					<description><![CDATA[[...] ReaderWriterLockSlim .NET v3.5 Via this post. [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] ReaderWriterLockSlim .NET v3.5 Via this post. [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

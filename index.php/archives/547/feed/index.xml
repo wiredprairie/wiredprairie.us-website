@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Oslo &#8212; what?	</title>
+	<atom:link href="/blog/index.php/archives/547/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/547</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Wed, 24 Sep 2008 14:02:49 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: indyfromoz		</title>
+		<link>/blog/index.php/archives/547/comment-page-1#comment-829</link>
+
+		<dc:creator><![CDATA[indyfromoz]]></dc:creator>
+		<pubDate>Wed, 24 Sep 2008 14:02:49 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/547#comment-829</guid>
+
+					<description><![CDATA[waw, nice post, thanks again]]></description>
+			<content:encoded><![CDATA[<p>waw, nice post, thanks again</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Dave Quick		</title>
+		<link>/blog/index.php/archives/547/comment-page-1#comment-745</link>
+
+		<dc:creator><![CDATA[Dave Quick]]></dc:creator>
+		<pubDate>Thu, 11 Sep 2008 00:18:33 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/547#comment-745</guid>
+
+					<description><![CDATA[I think their best description is:
+&quot;The tool enables users to capture domain knowledge in domain-specific views, said Lovering. And the tool also will be useful for more advanced diagramming, such as enabling the development of BPMN (business process modeling notification) workflows and UML (Unified Modeling Language) services, he added.&quot;
+
+It would be very good for most businesses to have an easier way to capture information from business people about how a business actually works.  And, to capture it in a form that makes it easier for programmers to understand and validate. While this will make it easier to write applications that deliver what businesses need, you will still need programmers and IT folks to make things actually work in a distributed environment.
+
+Reserving judgement until you see something working is always a good strategy for tools like this.
+
+I&#039;ll see you at the PDC.
+
+Dave]]></description>
+			<content:encoded><![CDATA[<p>I think their best description is:<br />
+&#8220;The tool enables users to capture domain knowledge in domain-specific views, said Lovering. And the tool also will be useful for more advanced diagramming, such as enabling the development of BPMN (business process modeling notification) workflows and UML (Unified Modeling Language) services, he added.&#8221;</p>
+<p>It would be very good for most businesses to have an easier way to capture information from business people about how a business actually works.  And, to capture it in a form that makes it easier for programmers to understand and validate. While this will make it easier to write applications that deliver what businesses need, you will still need programmers and IT folks to make things actually work in a distributed environment.</p>
+<p>Reserving judgement until you see something working is always a good strategy for tools like this.</p>
+<p>I&#8217;ll see you at the PDC.</p>
+<p>Dave</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

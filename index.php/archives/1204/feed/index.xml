@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Return of syntax highlighting and code completion for KnockoutJS in VS2010 (when using Razor)	</title>
+	<atom:link href="/blog/index.php/archives/1204/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/1204</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Thu, 28 Jul 2011 14:22:34 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: DotNetShoutout		</title>
+		<link>/blog/index.php/archives/1204/comment-page-1#comment-3531</link>
+
+		<dc:creator><![CDATA[DotNetShoutout]]></dc:creator>
+		<pubDate>Thu, 28 Jul 2011 14:22:34 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/1204#comment-3531</guid>
+
+					<description><![CDATA[&lt;strong&gt;Syntax highlighting and code completion for jQuery Templates in VS2010 (when using Razor)...&lt;/strong&gt;
+
+Thank you for submitting this cool story - Trackback from DotNetShoutout...]]></description>
+			<content:encoded><![CDATA[<p><strong>Syntax highlighting and code completion for jQuery Templates in VS2010 (when using Razor)&#8230;</strong></p>
+<p>Thank you for submitting this cool story &#8211; Trackback from DotNetShoutout&#8230;</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Arkadin		</title>
+		<link>/blog/index.php/archives/1204/comment-page-1#comment-3436</link>
+
+		<dc:creator><![CDATA[Arkadin]]></dc:creator>
+		<pubDate>Thu, 28 Apr 2011 17:15:07 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/1204#comment-3436</guid>
+
+					<description><![CDATA[Why is your blog like 4&quot; wide? Almost the worst possible format to post code snippets in. Gone are the days of 12&quot; computer screens. At least it&#039;s not bright white text on a pure black background, though.
+
+Good content, though; thoroughly enjoy it. Keep it up!]]></description>
+			<content:encoded><![CDATA[<p>Why is your blog like 4&#8243; wide? Almost the worst possible format to post code snippets in. Gone are the days of 12&#8243; computer screens. At least it&#8217;s not bright white text on a pure black background, though.</p>
+<p>Good content, though; thoroughly enjoy it. Keep it up!</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>npm &#8211; WiredPrairie</title>
+	<atom:link href="/blog/index.php/archives/tag/npm/feed" rel="self" type="application/rss+xml" />
+	<link>/blog</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Sat, 07 Dec 2013 02:44:35 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+<site xmlns="com-wordpress:feed-additions:1">193486638</site>	<item>
+		<title>How to list all dependents of a Node package</title>
+		<link>/blog/index.php/archives/1990</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sat, 07 Dec 2013 02:44:34 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[Node]]></category>
+		<category><![CDATA[NodeJs]]></category>
+		<category><![CDATA[npm]]></category>
+		<guid isPermaLink="false">/blog/?p=1990</guid>
+
+					<description><![CDATA[You can use the web npm web site as it lists the dependents for any given package. Like coffee-script for example: http://npmjs.org/browse/depended/coffee-script Or, you could get JSON results for the same query (using curl) (just substitute the name of the package with &#34;sql&#34; in the example: &#62; curl -g 'http://registry.npmjs.org/-/_view/dependedUpon?group_level=2&#38;startkey=[&#34;sql&#34;]&#38;endkey=[&#34;sql&#34;,&#34;ZZZZZZZZZZZZZ&#34;]&#38;skip=0&#38;limit=1000' Results: {&#34;rows&#34;:[ {&#34;key&#34;:[&#34;sql&#34;,&#34;anydb-sql&#34;],&#34;value&#34;:1}, {&#34;key&#34;:[&#34;sql&#34;,&#34;dbal&#34;],&#34;value&#34;:1}, {&#34;key&#34;:[&#34;sql&#34;,&#34;ectypes-downstairs&#34;],&#34;value&#34;:1}, [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>You can use the web npm web site as it lists the dependents for any given package. </p>
+<p>Like coffee-script for example:</p>
+<pre><code>http://npmjs.org/browse/depended/coffee-script</code></pre>
+<p>Or, you could get JSON results for the same query (using <code>curl</code>) (just substitute the name of the package with &quot;sql&quot; in the example:</p>
+<pre><code>&gt; curl -g 'http://registry.npmjs.org/-/_view/dependedUpon?group_level=2&amp;startkey=[&quot;sql&quot;]&amp;endkey=[&quot;sql&quot;,&quot;ZZZZZZZZZZZZZ&quot;]&amp;skip=0&amp;limit=1000'</code></pre>
+<p>Results:</p>
+<pre><code>{&quot;rows&quot;:[
+{&quot;key&quot;:[&quot;sql&quot;,&quot;anydb-sql&quot;],&quot;value&quot;:1},
+{&quot;key&quot;:[&quot;sql&quot;,&quot;dbal&quot;],&quot;value&quot;:1},
+{&quot;key&quot;:[&quot;sql&quot;,&quot;ectypes-downstairs&quot;],&quot;value&quot;:1},
+{&quot;key&quot;:[&quot;sql&quot;,&quot;fixr&quot;],&quot;value&quot;:1},
+{&quot;key&quot;:[&quot;sql&quot;,&quot;fixr-compiled&quot;],&quot;value&quot;:1},
+{&quot;key&quot;:[&quot;sql&quot;,&quot;forerunner-postgres-store&quot;],&quot;value&quot;:1}
+{&quot;key&quot;:[&quot;sql&quot;,&quot;pg-dal&quot;],&quot;value&quot;:1},
+{&quot;key&quot;:[&quot;sql&quot;,&quot;relational&quot;],&quot;value&quot;:1},
+{&quot;key&quot;:[&quot;sql&quot;,&quot;sequelize&quot;],&quot;value&quot;:1},
+{&quot;key&quot;:[&quot;sql&quot;,&quot;sql-generate&quot;],&quot;value&quot;:1},
+{&quot;key&quot;:[&quot;sql&quot;,&quot;sqlbox&quot;],&quot;value&quot;:1},
+{&quot;key&quot;:[&quot;sql&quot;,&quot;triplie&quot;],&quot;value&quot;:1},
+{&quot;key&quot;:[&quot;sql&quot;,&quot;voltron-postgres-adapter&quot;],&quot;value&quot;:1},
+{&quot;key&quot;:[&quot;sql&quot;,&quot;worm&quot;],&quot;value&quot;:1}
+]}</code></pre>
+<p>The second value in the key array is the name of the package dependent on the <code>sql</code> package.</p>
+<p>This of course only will find other published packages, and doesn&#8217;t help find applications, etc. that are using a specific package.</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1990</post-id>	</item>
+		<item>
+		<title>Loading Models in NodeJS</title>
+		<link>/blog/index.php/archives/1974</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Mon, 02 Dec 2013 13:40:07 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[Node]]></category>
+		<category><![CDATA[NodeJs]]></category>
+		<category><![CDATA[npm]]></category>
+		<guid isPermaLink="false">/blog/?p=1974</guid>
+
+					<description><![CDATA[I’d answered a question on StackOverflow about where to put “models” in a NodeJS project. I wanted to elaborate on the simple auto loader I use to load a folder full of models (and I use this pattern other places as well). Normally, I create a folder called models: Inside the Models folder, I have [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I’d <a href="http://stackoverflow.com/a/20327684/95190" target="_blank">answered a question</a> on StackOverflow about where to put “models” in a NodeJS project. I wanted to elaborate on the simple auto loader I use to load a folder full of models (and I use this pattern other places as well). Normally, I create a folder called <strong>models</strong>:</p>
+<p><a href="/blog/wp-content/uploads/2013/12/image.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wp-content/uploads/2013/12/image_thumb.png" width="182" height="293" /></a></p>
+<p>Inside the Models folder, I have a file called, <strong>models.js</strong>. </p>
+<p>Inside another module (like <strong>app.js</strong>), I’ve got a line of code that looks like this:</p>
+<pre class="csharpcode">
+<span class="kwrd">var</span> models = require(<span class="str">'./models'</span>).initialize(app, services);</pre>
+<style type="text/css">
+.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }</style>
+<style type="text/css">
+.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }</style>
+<p>While the <strong>require</strong> (<a href="http://nodejs.org/api/all.html#all_require" target="_blank">reference</a>) by default looks for a file called <strong>index.js</strong> in the folder <strong>models</strong>, I’ve in this case added a simple <strong>package.json </strong>file with an override:</p>
+<pre class="csharpcode">{
+    <span class="str">&quot;main&quot;</span>: <span class="str">&quot;./models.js&quot;</span>
+}</pre>
+<style type="text/css">
+.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }</style>
+<p>The reason I do this is that in a tabbed source code editor, having several <strong>index.js</strong> files can be confusing to see. So, this allows me to name the file something that is more memorable and understandable at a glance. </p>
+<p>Inside of the <strong>models.js</strong> class, I’ve written code to automatically load all of the models (and call an <strong>initialize </strong>function once for each module):</p>
+<pre class="csharpcode"><span class="kwrd">var</span> initialize = <span class="kwrd">function</span>(app, services) {
+    <span class="kwrd">var</span> models = {};
+    <span class="kwrd">var</span> currentFile = path.basename(__filename); <span class="rem">// just file name</span>
+    <span class="kwrd">var</span> modelFiles = fs.readdirSync(__dirname);
+    <span class="rem">// loop through all of the files in the current directory</span>
+    <span class="kwrd">for</span>(<span class="kwrd">var</span> i= 0, len = modelFiles.length; i &lt; len; i++) {
+        <span class="rem">// ignore this file (via global NodeJS variable)</span>
+        <span class="kwrd">if</span>(modelFiles[i] === currentFile ||
+            path.extname(modelFiles[i]).toLowerCase() !== <span class="str">'.js'</span>) {
+            <span class="kwrd">continue</span>;  <span class="rem">// skip the current file and anything without a &quot;JS&quot; extension</span>
+        }
+        <span class="rem">// require it</span>
+        <span class="kwrd">var</span> model = require(path.join(__dirname, modelFiles[i]));
+        <span class="rem">// call its intialize</span>
+        model.initialize(services, models);
+    }
+    exports.models = models;
+    <span class="kwrd">return</span> models;
+};
+
+exports.initialize = initialize;</pre>
+<style type="text/css">
+.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }</style>
+<style type="text/css">
+.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }</style>
+<p>The logic is simple enough – grab all of the files in the current path, then loop through each, filtering the current file and any that don’t end with “js”. This logic could be adjusted of course to reflect other coding styles and requirements.</p>
+<p>Finally, each module is loaded and then an initialize method is called (admittedly, I could make it more robust by checking for the existence of the <strong>initialize</strong> function before calling it (but in this case, I know each module should be initialized in a particular way).</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1974</post-id>	</item>
+		<item>
+		<title>Added Away/Home to unofficial-nest-api</title>
+		<link>/blog/index.php/archives/1788</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sun, 30 Dec 2012 23:13:00 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[JavaScript]]></category>
+		<category><![CDATA[Nest]]></category>
+		<category><![CDATA[Node]]></category>
+		<category><![CDATA[npm]]></category>
+		<category><![CDATA[Thermostat]]></category>
+		<guid isPermaLink="false">/blog/?p=1788</guid>
+
+					<description><![CDATA[I just finished adding a new simple feature to control the away status for a structure to my unofficial-nest-api published on GitHub and available as a node package (npm). Usage is simple as calling setAway or setHome on the nest instance after authentication and a successful status has been returned (see commented calls below). [javascript] [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I just finished adding a new simple feature to control the away status for a structure to my unofficial-nest-api published on <a href="https://github.com/wiredprairie/unofficial_nodejs_nest">GitHub</a> and available as a node package (<a href="https://npmjs.org/package/unofficial-nest-api">npm</a>).</p>
+<p>Usage is simple as calling <strong>setAway </strong>or <strong>setHome</strong> on the nest instance after authentication and a successful status has been returned (see commented calls below).</p>
+<p>[javascript]<br />
+if (username &amp;&amp; password) {<br />
+    username = trimQuotes(username);<br />
+    password = trimQuotes(password);<br />
+    nest.login(username, password, function (data) {<br />
+        if (!data) {<br />
+            console.log(&#8216;Login failed.&#8217;);<br />
+            process.exit(1);<br />
+            return;<br />
+        }<br />
+        console.log(&#8216;Logged in.&#8217;);<br />
+        nest.fetchStatus(function (data) {<br />
+            for (var deviceId in data.device) {<br />
+                if (data.device.hasOwnProperty(deviceId)) {<br />
+                    var device = data.shared[deviceId];<br />
+                    console.log(util.format(&quot;%s [%s], Current temperature = %d F target=%d&quot;,<br />
+                        device.name, deviceId,<br />
+                        nest.ctof(device.current_temperature),<br />
+                        nest.ctof(device.target_temperature)));<br />
+                }<br />
+            }<br />
+            subscribe();<br />
+            //nest.setAway();<br />
+            //nest.setHome();<br />
+        });<br />
+    });<br />
+}<br />
+[/javascript]</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1788</post-id>	</item>
+		<item>
+		<title>Unofficial Nest API for Node JS as an NPM</title>
+		<link>/blog/index.php/archives/1784</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Fri, 21 Dec 2012 01:54:36 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[JavaScript]]></category>
+		<category><![CDATA[Nest]]></category>
+		<category><![CDATA[Node]]></category>
+		<category><![CDATA[npm]]></category>
+		<category><![CDATA[Thermostat]]></category>
+		<guid isPermaLink="false">/blog/?p=1784</guid>
+
+					<description><![CDATA[Per the request of an anonymous user on Bitbucket, I have: Moved the code for the Nest API to GitHub. While I did have a preference for Bitbucket (free private hosting!!!), I moved it anyway. I also created an npm called the unofficial-nest-api. Enjoy.]]></description>
+										<content:encoded><![CDATA[<p>Per the request of an anonymous user on Bitbucket, I have:</p>
+<p>Moved the code for the Nest API to <a href="https://github.com/wiredprairie/unofficial_nodejs_nest">GitHub</a>. While I did have a preference for Bitbucket (free private hosting!!!), I moved it anyway. <img class="wlEmoticon wlEmoticon-smile" style="border-top-style: none; border-left-style: none; border-bottom-style: none; border-right-style: none" alt="Smile" src="/blog/wp-content/uploads/2012/12/wlEmoticon-smile.png" /></p>
+<p>I also created an npm called the <strong><a href="https://npmjs.org/package/unofficial-nest-api">unofficial-nest-api</a>.</strong></p>
+<p>Enjoy.</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1784</post-id>	</item>
+	</channel>
+</rss>

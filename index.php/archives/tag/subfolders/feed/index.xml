@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>subfolders &#8211; WiredPrairie</title>
+	<atom:link href="/blog/index.php/archives/tag/subfolders/feed" rel="self" type="application/rss+xml" />
+	<link>/blog</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Thu, 09 Feb 2012 02:47:06 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+<site xmlns="com-wordpress:feed-additions:1">193486638</site>	<item>
+		<title>Adobe Lightroom and exporting to subfolders</title>
+		<link>/blog/index.php/archives/1541</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Thu, 09 Feb 2012 02:33:58 +0000</pubDate>
+				<category><![CDATA[Photography]]></category>
+		<category><![CDATA[Software]]></category>
+		<category><![CDATA[directories]]></category>
+		<category><![CDATA[export]]></category>
+		<category><![CDATA[Lightroom]]></category>
+		<category><![CDATA[subfolders]]></category>
+		<guid isPermaLink="false">/blog/?p=1541</guid>
+
+					<description><![CDATA[For some reason, versions 1 – 3 of Adobe Lightroom cannot export images in a way that mirrors the original structure of your photo library. I can’t offer a reason why other than it was missed by the development and design teams. There’s been enough interest in it apparently that there are more than a [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>For some reason, versions 1 – 3 of Adobe Lightroom cannot export images in a way that mirrors the original structure of your photo library. I can’t offer a reason why other than it was missed by the development and design teams. There’s been enough interest in it apparently that there are more than a few free and pay solutions to the problem. </p>
+<p>I looked at a few of the options and for one reason or another, I decided that I didn’t want to use the plug-ins/extensions and came up with a simple solution using a bit of naming trickery. I use this technique for <a href="http://www.wiredprairie.us/SnugUp/">SnugUp</a>.</p>
+<p>Here’s what I did in Lightroom version 3.</p>
+<ol>
+<li>I selected the photos I wanted to export.&#160; (I generally use the <strong>Quick Collection Feature</strong>) </li>
+<li><strong>File</strong> &gt; <strong>Export </strong>(CTRL + SHIFT + E) </li>
+<li>Adjust the <strong>Export To</strong> option to point to a specific folder of your choosing (in the example below, I set the folder as E:\PhotosBackupJPG       <br /><img loading="lazy" style="background-image: none; border-right-width: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2012/02/image1.png" width="502" height="146" /> </li>
+<li>You may optionally put them in a subfolder of your choice (I did not) </li>
+<li>Next click the <strong>Rename To</strong> option and select &quot;<strong>Edit…</strong>”       <br /><img loading="lazy" style="background-image: none; border-right-width: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2012/02/image2.png" width="502" height="245" /> </li>
+<li>Clear any value that may already be in the text box below the <strong>Example</strong> (just highlight the text and press delete).       <br /><img loading="lazy" style="background-image: none; border-right-width: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2012/02/image3.png" width="483" height="119" /> </li>
+<li>Then, edit the template to be <strong>Folder Name </strong>and then <strong>Original filename</strong>. Select those by using the Image Name grouping. Click the <strong>Insert </strong>button after each.       <br /><img loading="lazy" style="background-image: none; border-right-width: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="SNAGHTML5521140b" border="0" alt="SNAGHTML5521140b" src="/blog/wp-content/uploads/2012/02/SNAGHTML5521140b.png" width="424" height="482" /> </li>
+<li>Then, I added some text that I knew would be unique to be used as a separator (<strong>=-= </strong>equals minus equals). To add the text, just click with your mouse&#160; between the two values you just inserted. I know that none of the file names in my library have this exact combination of characters in them. It’s important later. You can confirm this by using the search feature in Lightroom if you’re not sure.       <br /><img loading="lazy" style="background-image: none; border-right-width: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="SNAGHTML5522af12" border="0" alt="SNAGHTML5522af12" src="/blog/wp-content/uploads/2012/02/SNAGHTML5522af12.png" width="509" height="197" /> </li>
+<li>Click on the <strong>Preset</strong> (yours may say something else) and then click “<strong>Save Current Settings as New Preset</strong>”       <br /><img loading="lazy" style="background-image: none; border-right-width: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2012/02/image4.png" width="415" height="367" /> </li>
+<li>Give it a name that you’ll remember (I called mine Folder-Filename) and hit <strong>Create</strong>.       <br /><img loading="lazy" style="background-image: none; border-right-width: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="SNAGHTML5524784a" border="0" alt="SNAGHTML5524784a" src="/blog/wp-content/uploads/2012/02/SNAGHTML5524784a.png" width="395" height="137" /> </li>
+<li>Adjust the remaining settings per your export needs and begin the process by clicking the <strong>Export</strong> button. </li>
+<li>Wait patiently. Then go do something else as you realize it’s going to take a <strong>lot </strong>longer than you had expected/wanted. </li>
+<li>Now, the next step is the simple trickery. What we’ve done is named all of the files so that they include the folder name as well. So, using a Powershell 2.0 script (Powershell is available for all modern versions of Windows as part of a package download <a href="http://support.microsoft.com/kb/968929">here</a>). So, download it now if you don’t already have it. (You can check for it by looking for Powershell ISE as described in the next step if you’re not sure. You probably have it if you’re using Windows 7). </li>
+<li>Start <strong>Windows Powershell ISE</strong> (in Vista and Windows 7, just type “power” into the Start menu search):       <br /><img loading="lazy" style="background-image: none; border-right-width: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2012/02/image5.png" width="383" height="71" />The reason I suggest the ISE (integrated scripting environment) is that it’s easy to just get stuff running without a lot of hassle. </li>
+<li>The ISE will start:      <br /><img loading="lazy" style="background-image: none; border-right-width: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="SNAGHTML552c2cf8" border="0" alt="SNAGHTML552c2cf8" src="/blog/wp-content/uploads/2012/02/SNAGHTML552c2cf8.png" width="502" height="456" /> </li>
+<li>I performed the move/rename in two steps so I could verify things between each step. If you’re familiar with Powershell, feel free to combine them into one step. It’s simple enough. First grab the entire script below and paste it into the top pane (under the tab labeled <strong>Untitled1.ps1</strong>):       <br /> 
+<div style="padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; float: none; padding-top: 0px" id="scid:9D7513F9-C04C-4721-824A-2B34F0212519:5a85fa65-074e-4c61-8b04-2f7cdb8d2b3d" class="wlWriterEditableSmartContent">
+<pre style=" width: 540px; height: 268px;background-color:White;overflow: auto;;font-family:Courier New;font-size:8.25"><div><!--
+
+Code highlighting produced by Actipro CodeHighlighter (freeware)
+http://www.CodeHighlighter.com/
+
+--><span style="color: #800080;">$root</span><span style="color: #000000;"> </span><span style="color: #000000;">=</span><span style="color: #000000;"> </span><span style="color: #008000;">#</span><span style="color: #008000;">&quot;E:\PhotosBackupJPG&quot;</span><span style="color: #008000;">
+</span><span style="color: #800080;">$items</span><span style="color: #000000;"> </span><span style="color: #000000;">=</span><span style="color: #000000;"> Get</span><span style="color: #000000;">-</span><span style="color: #000000;">ChildItem </span><span style="color: #800080;">$root</span><span style="color: #000000;"> 
+</span><span style="color: #0000FF;">foreach</span><span style="color: #000000;">(</span><span style="color: #800080;">$item</span><span style="color: #000000;"> </span><span style="color: #0000FF;">in</span><span style="color: #000000;"> </span><span style="color: #800080;">$items</span><span style="color: #000000;">) {
+    </span><span style="color: #800080;">$path</span><span style="color: #000000;"> </span><span style="color: #000000;">=</span><span style="color: #000000;"> [regex]</span><span style="color: #000000;">::</span><span style="color: #000000;">split(</span><span style="color: #800080;">$item</span><span style="color: #000000;">.Name, </span><span style="color: #800000;">&quot;</span><span style="color: #800000;">(=-=)</span><span style="color: #800000;">&quot;</span><span style="color: #000000;">)
+    </span><span style="color: #0000FF;">if</span><span style="color: #000000;"> (</span><span style="color: #800080;">$path</span><span style="color: #000000;">.length </span><span style="color: #008080;">-eq</span><span style="color: #000000;"> </span><span style="color: #000000;">3</span><span style="color: #000000;">) {
+        </span><span style="color: #800080;">$destPath</span><span style="color: #000000;"> </span><span style="color: #000000;">=</span><span style="color: #000000;"> </span><span style="color: #800080;">$root</span><span style="color: #000000;"> </span><span style="color: #000000;">+</span><span style="color: #000000;"> </span><span style="color: #800000;">&quot;</span><span style="color: #800000;">\</span><span style="color: #800000;">&quot;</span><span style="color: #000000;"> </span><span style="color: #000000;">+</span><span style="color: #000000;"> </span><span style="color: #800080;">$path</span><span style="color: #000000;">[</span><span style="color: #000000;">0</span><span style="color: #000000;">]
+        </span><span style="color: #0000FF;">if</span><span style="color: #000000;"> (</span><span style="color: #000000;">!</span><span style="color: #000000;">(Test</span><span style="color: #000000;">-</span><span style="color: #000000;">Path </span><span style="color: #000000;">-</span><span style="color: #000000;">path </span><span style="color: #800080;">$destPath</span><span style="color: #000000;">))
+        {
+            New</span><span style="color: #000000;">-</span><span style="color: #000000;">Item </span><span style="color: #800080;">$destPath</span><span style="color: #000000;"> </span><span style="color: #000000;">-</span><span style="color: #000000;">type directory
+            </span><span style="color: #800000;">&quot;</span><span style="color: #800000;">New folder: </span><span style="color: #800000;">&quot;</span><span style="color: #000000;"> </span><span style="color: #000000;">+</span><span style="color: #000000;"> </span><span style="color: #800080;">$destPath</span><span style="color: #000000;">
+        }    
+        Move</span><span style="color: #000000;">-</span><span style="color: #000000;">Item </span><span style="color: #800080;">$item</span><span style="color: #000000;">.FullName </span><span style="color: #800080;">$destPath</span><span style="color: #000000;">
+    }
+}</span></div></pre>
+<p><!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com/ --></div>
+<p>I’ve intentionally left an error in the file so that you’re forced to make the change. Unless you have an “E” drive and the path, “PhotosBackupJPG”, the script needs a tiny modification to make it work. </li>
+<li>The first line of the script, $root = #”E:\PhotosBackupJPG” needs to be changed to match with the export location you selected earlier AND also the “#” needs to be removed (it’s a comment character in Powershell script). So, if you exported your photos to C:\Users\Steve\ExportedPhotos, remove the “#” and remove the text inside of the quotes on the first line and replace it with your photo location. </li>
+<li>After confirming the location points to where you exported your photos (and videos), hit the <strong>Run </strong>button (the green arrow in the screen shot below). Or hit the F5 key on your keyboard.
+<p><img loading="lazy" style="background-image: none; border-right-width: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2012/02/image6.png" width="341" height="128" /> </li>
+<li>The output (or any errors if you made a typo) appears in the light blue box in the center and when it’s complete, the word “Completed” appears in the status bar at the bottom of the application. It may take a few minutes to complete. I’d suggest looking at your export directory using Windows explorer to confirm everything looks fine before continuing. At this point, you should have some subfolders and all of the files should have been moved into the proper subfolder. Next, renaming. </li>
+<li>Click the “New” icon (first icon on left shown above) to create a new Powershell script file (or just replace the existing one, you won’t need it again for this process). In the new file, copy this Powershell script and paste it:<br />
+    </p>
+<div style="padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; float: none; padding-top: 0px" id="scid:9D7513F9-C04C-4721-824A-2B34F0212519:c4e3b1bf-1197-4bdd-a09b-3f4388016aeb" class="wlWriterEditableSmartContent">
+<pre style=" width: 540px; height: 183px;background-color:White;overflow: auto;;font-family:Courier New;font-size:8.25"><div><!--
+
+Code highlighting produced by Actipro CodeHighlighter (freeware)
+http://www.CodeHighlighter.com/
+
+--><span style="color: #800080;">$root</span><span style="color: #000000;"> </span><span style="color: #000000;">=</span><span style="color: #000000;"> </span><span style="color: #008000;">#</span><span style="color: #008000;">&quot;E:\PhotosBackupJPG&quot;</span><span style="color: #008000;">
+</span><span style="color: #800080;">$items</span><span style="color: #000000;"> </span><span style="color: #000000;">=</span><span style="color: #000000;"> Get</span><span style="color: #000000;">-</span><span style="color: #000000;">ChildItem </span><span style="color: #800080;">$root</span><span style="color: #000000;"> </span><span style="color: #000000;">-</span><span style="color: #000000;">recurse 
+</span><span style="color: #0000FF;">foreach</span><span style="color: #000000;">(</span><span style="color: #800080;">$item</span><span style="color: #000000;"> </span><span style="color: #0000FF;">in</span><span style="color: #000000;"> </span><span style="color: #800080;">$items</span><span style="color: #000000;">) {
+    </span><span style="color: #800080;">$path</span><span style="color: #000000;"> </span><span style="color: #000000;">=</span><span style="color: #000000;"> [regex]</span><span style="color: #000000;">::</span><span style="color: #000000;">split(</span><span style="color: #800080;">$item</span><span style="color: #000000;">.Name, </span><span style="color: #800000;">&quot;</span><span style="color: #800000;">(=-=)</span><span style="color: #800000;">&quot;</span><span style="color: #000000;">)
+    </span><span style="color: #0000FF;">if</span><span style="color: #000000;"> (</span><span style="color: #800080;">$path</span><span style="color: #000000;">.length </span><span style="color: #008080;">-eq</span><span style="color: #000000;"> </span><span style="color: #000000;">3</span><span style="color: #000000;">) {
+        </span><span style="color: #008000;">#</span><span style="color: #008000;"> $destPath = $root + &quot;\&quot; + $path[0]</span><span style="color: #008000;">
+</span><span style="color: #000000;">        Rename</span><span style="color: #000000;">-</span><span style="color: #000000;">Item </span><span style="color: #800080;">$item</span><span style="color: #000000;">.FullName </span><span style="color: #800080;">$path</span><span style="color: #000000;">[</span><span style="color: #000000;">2</span><span style="color: #000000;">]        
+    }
+}</span></div></pre>
+<p><!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com/ --></div>
+<p></li>
+<li>Again, fix the $root to match with the export folder you created. </li>
+<li>Confirm it, and hit the <strong>Run</strong> button. </li>
+<li>All of your photos (and videos) will be renamed to only the original file name. The extra folder name and =-= are removed. </li>
+<li>Bask in the glory of Powershell and your file wizardy. No plug-ins necessary. </li>
+</ol>
+<p>If you’d like to use something other than =-= as the delimiter between the folder and file names, you’ll need to fix the Powershell scripts. The delimiter is on the line: </p>
+<p>$path = [regex]::split($item.Name, <span style="color: #006080">&quot;(=-=)&quot;</span>) </p>
+<p></p>
+<p>But, unless you understand how Regular Expressions in Powershell work, you may want to avoid this change … it’s not necessarily as simple as just replacing the text.</p>
+<p>The scripts above do these things with each file:</p>
+<ol>
+<li>Check to see if it has the right pattern </li>
+<li>If so, grab the folder name and check to see if the folder exists. </li>
+<li>If it does not, create it. </li>
+<li>Move the file to the new folder. </li>
+<li>Rename the file name, removing the folder and delimiter </li>
+</ol>
+<p>If you have questions, please leave a comment.</p>
+<p>While this shouldn’t cause any harm, (especially if you just point it at a folder of exported photos and videos, which worse case you just re-export), <strong>you use technique and code this at your own risk</strong>. I can say I successfully used the script on over 30,000 exported photos without a single problem. <img style="border-bottom-style: none; border-left-style: none; border-top-style: none; border-right-style: none" class="wlEmoticon wlEmoticon-smile" alt="Smile" src="/blog/wp-content/uploads/2012/02/wlEmoticon-smile1.png" /></p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1541</post-id>	</item>
+	</channel>
+</rss>

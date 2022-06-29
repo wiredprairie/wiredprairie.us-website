@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Windows 8 IIS Express with Windows Authentication Prompts for Credentials	</title>
+	<atom:link href="/blog/index.php/archives/1850/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/1850</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Fri, 06 Sep 2013 16:04:21 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: Anders		</title>
+		<link>/blog/index.php/archives/1850/comment-page-1#comment-32476</link>
+
+		<dc:creator><![CDATA[Anders]]></dc:creator>
+		<pubDate>Fri, 06 Sep 2013 16:04:21 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1850#comment-32476</guid>
+
+					<description><![CDATA[Thanks. Helped me out.
+
+I am running on Windows 7 and suddently Windows Authentication on IIS Express stopped working.
+
+I wonder if this issue i caused by some change in the way that Intranet zones are detected.]]></description>
+			<content:encoded><![CDATA[<p>Thanks. Helped me out.</p>
+<p>I am running on Windows 7 and suddently Windows Authentication on IIS Express stopped working.</p>
+<p>I wonder if this issue i caused by some change in the way that Intranet zones are detected.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

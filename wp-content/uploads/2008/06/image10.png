@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Redirecting...</title>
+		<meta http-equiv="refresh" content="0;url=https://wiredprairie.us/blog/wp-content/uploads/2008/06/image10.png">
+	</head>
+	<body>
+		<script type="text/javascript">
+			window.location = "https://wiredprairie.us/blog/wp-content/uploads/2008/06/image10.png";
+		</script>
+
+		<p>You are being redirected to <a href="https://wiredprairie.us/blog/wp-content/uploads/2008/06/image10.png">https://wiredprairie.us/blog/wp-content/uploads/2008/06/image10.png</a></p>
+	</body>
+</html>

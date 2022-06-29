@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Silverlight Game Programming: Playing an Audio File	</title>
+	<atom:link href="/blog/index.php/archives/577/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/577</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Wed, 24 Nov 2010 02:36:12 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/577/comment-page-1#comment-3221</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Wed, 24 Nov 2010 02:36:12 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/577#comment-3221</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/577/comment-page-1#comment-3220&quot;&gt;Nate DeHaven&lt;/a&gt;.
+
+No idea. Never considered SL great for games anyway.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/577/comment-page-1#comment-3220">Nate DeHaven</a>.</p>
+<p>No idea. Never considered SL great for games anyway.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Nate DeHaven		</title>
+		<link>/blog/index.php/archives/577/comment-page-1#comment-3220</link>
+
+		<dc:creator><![CDATA[Nate DeHaven]]></dc:creator>
+		<pubDate>Tue, 23 Nov 2010 21:28:53 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/577#comment-3220</guid>
+
+					<description><![CDATA[This is a good tut. My question is - in the world of increasingly online-based games, and with MS&#039;s online division hemorrhaging hundreds of millions per quarter, how long will SL be relevant for game programming?]]></description>
+			<content:encoded><![CDATA[<p>This is a good tut. My question is &#8211; in the world of increasingly online-based games, and with MS&#8217;s online division hemorrhaging hundreds of millions per quarter, how long will SL be relevant for game programming?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: SasyBoy		</title>
+		<link>/blog/index.php/archives/577/comment-page-1#comment-2149</link>
+
+		<dc:creator><![CDATA[SasyBoy]]></dc:creator>
+		<pubDate>Mon, 19 Jan 2009 13:02:19 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/577#comment-2149</guid>
+
+					<description><![CDATA[Just wanted to say HI.  Enjoy reading your blog I look at it each day.  Keep it up really like your silverlight posts.]]></description>
+			<content:encoded><![CDATA[<p>Just wanted to say HI.  Enjoy reading your blog I look at it each day.  Keep it up really like your silverlight posts.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/577/comment-page-1#comment-976</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Mon, 13 Oct 2008 12:43:43 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/577#comment-976</guid>
+
+					<description><![CDATA[@zproxy - my response is here:
+/blog/index.php/archives/579]]></description>
+			<content:encoded><![CDATA[<p>@zproxy &#8211; my response is here:<br />
+<a href="/blog/index.php/archives/579" rel="nofollow ugc">/blog/index.php/archives/579</a></p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: WiredPrairie - How to play an Audio File in Silverlight, Part 2		</title>
+		<link>/blog/index.php/archives/577/comment-page-1#comment-975</link>
+
+		<dc:creator><![CDATA[WiredPrairie - How to play an Audio File in Silverlight, Part 2]]></dc:creator>
+		<pubDate>Mon, 13 Oct 2008 12:42:09 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/577#comment-975</guid>
+
+					<description><![CDATA[[...] was asked in a comment how to play a sound from a stream, from an embedded resource in Silverlight or [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] was asked in a comment how to play a sound from a stream, from an embedded resource in Silverlight or [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: zproxy		</title>
+		<link>/blog/index.php/archives/577/comment-page-1#comment-971</link>
+
+		<dc:creator><![CDATA[zproxy]]></dc:creator>
+		<pubDate>Mon, 13 Oct 2008 06:15:23 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/577#comment-971</guid>
+
+					<description><![CDATA[Do you know how to play a sound from a stream, from an embedded resource? In flash that&#039;s really easy, yet I have found that feature in WPF/silverlight.]]></description>
+			<content:encoded><![CDATA[<p>Do you know how to play a sound from a stream, from an embedded resource? In flash that&#8217;s really easy, yet I have found that feature in WPF/silverlight.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

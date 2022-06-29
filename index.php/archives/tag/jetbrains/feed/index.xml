@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>JetBrains &#8211; WiredPrairie</title>
+	<atom:link href="/blog/index.php/archives/tag/jetbrains/feed" rel="self" type="application/rss+xml" />
+	<link>/blog</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Fri, 27 Apr 2012 12:58:18 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+<site xmlns="com-wordpress:feed-additions:1">193486638</site>	<item>
+		<title>Adding an External Tool for Compiling LESS files in WebStorm (on Windows)</title>
+		<link>/blog/index.php/archives/1656</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Fri, 27 Apr 2012 12:57:34 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[JetBrains]]></category>
+		<category><![CDATA[Less]]></category>
+		<category><![CDATA[WebStorm]]></category>
+		<guid isPermaLink="false">/blog/?p=1656</guid>
+
+					<description><![CDATA[Interested in converting/compiling LESS files into their CSS counterparts? Here are the steps (from version 4 of WebStorm from JetBrains). 1. Install Node JS 2. Install the node package (using npm) for less (remember where you install this as you’ll need the path later): npm install less 3. In WebStorm, File &#62; Settings, then under [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Interested in converting/compiling <a href="http://lesscss.org/" target="_blank">LESS</a> files into their CSS counterparts?</p>
+<p>Here are the steps (from version 4 of <a href="http://www.jetbrains.com/webstorm/" target="_blank">WebStorm from JetBrains</a>).</p>
+<p>1. Install <a href="http://nodejs.org/#download" target="_blank">Node JS</a></p>
+<p>2. Install the node package (using npm) for less (remember where you install this as you’ll need the path later):   </p>
+<ol>
+<pre><code>npm install less</code></pre>
+</ol>
+<p>3. In WebStorm, <strong>File</strong> &gt; <strong>Settings</strong>, then under the IDE Settings heading, select <strong>External Tools</strong>.</p>
+<p>4. Click on the + icon to add a new tool:</p>
+<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2012/04/image29.png" width="84" height="65" /></p>
+<p>5. You’ll see a dialog very much like this:</p>
+<p><a href="/blog/wp-content/uploads/2012/04/SNAGHTMLcd7f5f51.png"><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="SNAGHTMLcd7f5f5" border="0" alt="SNAGHTMLcd7f5f5" src="/blog/wp-content/uploads/2012/04/SNAGHTMLcd7f5f5_thumb.png" width="502" height="243" /></a></p>
+<p>6. Fill it out like this (substitute whatever you’d like of course):</p>
+<p><a href="/blog/wp-content/uploads/2012/04/SNAGHTMLceae4a71.png"><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="SNAGHTMLceae4a7" border="0" alt="SNAGHTMLceae4a7" src="/blog/wp-content/uploads/2012/04/SNAGHTMLceae4a7_thumb.png" width="502" height="243" /></a></p>
+<p>I chose not to have the console window open every time the compilation occurs. </p>
+<p>The only things you’ll need to change is the path to the file <strong>lessc</strong>. That file is actually JavaScript file (minus the extension). So, replace the first quoted parameter in “Parameters” above with the location that you installed the package for less in. </p>
+<p>As it’s a JavaScript file you need to be executed, the “Program” is set to the node executable. Provide the full path (when I didn’t, it <em>sometimes </em>wouldn’t work and would complain that a path didn’t exist).</p>
+<p>&quot;###YOUR PATH TO LESSC###\lessc&quot; $FilePath$ &quot;$FileDir$\$FileNameWithoutExtension$.css&quot;</p>
+<p>I tried using the Working Directory option and it also worked inconsistently with Node. So, I used the options you see above and it seemed to work more consistently.</p>
+<p>7. I also added a shortcut so I could execute it on demand:</p>
+<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="SNAGHTMLcdbd3f4" border="0" alt="SNAGHTMLcdbd3f4" src="/blog/wp-content/uploads/2012/04/SNAGHTMLcdbd3f4.png" width="545" height="674" /></p>
+<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="SNAGHTMLcdc51ca" border="0" alt="SNAGHTMLcdc51ca" src="/blog/wp-content/uploads/2012/04/SNAGHTMLcdc51ca.png" width="322" height="369" /></p>
+<p>I picked Ctrl+Alt+L, as it was memorable (and available!).</p>
+<p>While this is not using a file watcher technique (you could do that if you’d like instead), it works well enough for my workflow.</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1656</post-id>	</item>
+	</channel>
+</rss>

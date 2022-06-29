@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>DishNetwork &#8211; WiredPrairie</title>
+	<atom:link href="/blog/index.php/archives/tag/dishnetwork/feed" rel="self" type="application/rss+xml" />
+	<link>/blog</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Sun, 30 Dec 2012 20:59:30 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+<site xmlns="com-wordpress:feed-additions:1">193486638</site>	<item>
+		<title>[PSA] Discovery channel Velocity available on Dish Network</title>
+		<link>/blog/index.php/archives/1787</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sun, 30 Dec 2012 20:59:30 +0000</pubDate>
+				<category><![CDATA[General]]></category>
+		<category><![CDATA[Recommendations]]></category>
+		<category><![CDATA[DishNetwork]]></category>
+		<guid isPermaLink="false">/blog/?p=1787</guid>
+
+					<description><![CDATA[Public Service Announcement: If you’re looking for Discovery’s Velocity on Dish Network – they do have it. It’s available only by subscribing to Blockbuster. Blockbuster includes one DVD/Blu-ray at a time plus the following additional channels for $10 additional a month (and an extra $5 for 2 discs at a time). (We looked around for [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Public Service Announcement:</p>
+<p>If you’re looking for Discovery’s <a href="http://velocity.discovery.com/">Velocity</a> on Dish Network – they do have it. It’s available only by subscribing to <a href="http://www.dish.com/entertainment/blockbuster/">Blockbuster</a>.</p>
+<p>Blockbuster includes one DVD/Blu-ray at a time plus the following additional channels for $10 additional a month (and an extra $5 for 2 discs at a time).</p>
+<p><a href="/blog/wp-content/uploads/2012/12/image3.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; border-left: 0px; display: inline; padding-right: 0px" border="0" alt="image" src="/blog/wp-content/uploads/2012/12/image_thumb3.png" width="644" height="239" /></a></p>
+<p>(We looked around for quite a while to find this. There are many many pages that contain out of date information as they were written while it was transitioning from different programming, and also in a trial, so I hope others find this useful).</p>
+<p>If you’re mildly into cars, it looks like a fun channel. </p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1787</post-id>	</item>
+	</channel>
+</rss>

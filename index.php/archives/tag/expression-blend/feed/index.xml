@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>Expression Blend &#8211; WiredPrairie</title>
+	<atom:link href="/blog/index.php/archives/tag/expression-blend/feed" rel="self" type="application/rss+xml" />
+	<link>/blog</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Sat, 24 Apr 2010 16:46:00 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+<site xmlns="com-wordpress:feed-additions:1">193486638</site>	<item>
+		<title>Silverlight ChildWindows and VisualStates</title>
+		<link>/blog/index.php/archives/1037</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sat, 24 Apr 2010 16:46:00 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[Expression Blend]]></category>
+		<category><![CDATA[Silverlight]]></category>
+		<guid isPermaLink="false">/blog/index.php/archives/1037</guid>
+
+					<description><![CDATA[Unfortunately, as of the latest version of Silverlight 4 and Blend 4, there’s a feature supportability mismatch. Blend 4’s designer may lead to you to believe and expect that VisualStates will work within a Silverlight 4 application. (It led me down that path). In fact, VisualStates do not work directly inside of a ChildWindow. VisualStates [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Unfortunately, as of the latest version of Silverlight 4 and Blend 4, there’s a feature supportability mismatch. Blend 4’s designer may lead to you to believe and expect that <a href="http://msdn.microsoft.com/en-us/library/system.windows.visualstate(v=VS.95).aspx">VisualStates</a> will work within a Silverlight 4 application. (It led me down that path).</p>
+<p>In fact, <a href="http://msdn.microsoft.com/en-us/library/system.windows.visualstate(v=VS.95).aspx">VisualStates</a> do not work directly inside of a <a href="http://msdn.microsoft.com/en-us/library/system.windows.controls.childwindow(VS.95).aspx">ChildWindow</a>. VisualStates are only applicable on the root element of a <a href="http://msdn.microsoft.com/en-us/library/system.windows.controls.controltemplate(VS.95).aspx">ControlTemplate</a> or <a href="http://msdn.microsoft.com/en-us/library/system.windows.controls.usercontrol(VS.95).aspx">UserControl</a> (as described <a href="http://msdn.microsoft.com/en-us/library/system.windows.visualstatemanager(VS.95).aspx">here</a>). I just spent the last 20 minutes learning about this limitation the hard way – by trying it, over and over. :)&#160; It’s not a bug, it just isn’t supported. </p>
+<p>If you want to use VisualStates within a ChildWindow, the simplest workaround for this problem is to wrap the content of the child window into a new UserControl and place that UserControl in the ChildWindow (as a child). You’ll need to do a little more work to expose the functionality of the UserControl to the containing ChildWindow (like OK/Cancel button handling for example), but it’s simple work. I added an event which indicates the child window should be closed:</p>
+<pre class="code"><span style="color: blue">public event </span><span style="color: #2b91af">EventHandler</span>&lt;<span style="color: #2b91af">CloseDialogEventArgs</span>&gt; CloseDialog;</pre>
+<pre class="code"><span style="color: blue">public class </span><span style="color: #2b91af">CloseDialogEventArgs </span>: <span style="color: #2b91af">EventArgs
+</span>{
+    <span style="color: blue">public bool</span>? DialogResult { <span style="color: blue">get</span>; <span style="color: blue">set</span>; }
+
+    <span style="color: blue">private </span>CloseDialogEventArgs()
+    {
+
+    }
+    <span style="color: blue">public </span>CloseDialogEventArgs(<span style="color: blue">bool</span>? dialogResult)
+    {
+        DialogResult = dialogResult;
+    }
+
+    <span style="color: blue">public static new </span><span style="color: #2b91af">CloseDialogEventArgs </span>Empty = <span style="color: blue">new </span><span style="color: #2b91af">CloseDialogEventArgs</span>();
+}</pre>
+<p>Then, it can be closed:</p>
+<pre class="code"><span style="color: blue">private void </span>CancelButton_Click(<span style="color: blue">object </span>sender, <span style="color: #2b91af">RoutedEventArgs </span>e)
+{
+    <span style="color: blue">if </span>(CloseDialog != <span style="color: blue">null</span>)
+    {
+        CloseDialog(<span style="color: blue">this</span>, <span style="color: blue">new </span><span style="color: #2b91af">CloseDialogEventArgs</span>(<span style="color: blue">false</span>));
+    }
+}</pre>
+<p><a href="http://11011.net/software/vspaste"></a></p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1037</post-id>	</item>
+	</channel>
+</rss>

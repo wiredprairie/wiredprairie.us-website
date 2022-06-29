@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Some WPF stuff&#8230;	</title>
+	<atom:link href="/blog/index.php/archives/477/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/477</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Tue, 24 Mar 2009 12:34:28 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: commenter		</title>
+		<link>/blog/index.php/archives/477/comment-page-1#comment-2343</link>
+
+		<dc:creator><![CDATA[commenter]]></dc:creator>
+		<pubDate>Tue, 24 Mar 2009 12:34:28 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/477#comment-2343</guid>
+
+					<description><![CDATA[I&#039;ve been using WPF a little recently and agree that it&#039;s far too complex. I&#039;m constantly gob-smacked when looking at WPF examples.
+Setting the backcolor of a control to a systemcolor, for example, required googling to find the ridiculously unguessable binding string that I needed to do the job. ...and then it didnt display properly in the VS designer.]]></description>
+			<content:encoded><![CDATA[<p>I&#8217;ve been using WPF a little recently and agree that it&#8217;s far too complex. I&#8217;m constantly gob-smacked when looking at WPF examples.<br />
+Setting the backcolor of a control to a systemcolor, for example, required googling to find the ridiculously unguessable binding string that I needed to do the job. &#8230;and then it didnt display properly in the VS designer.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/477/comment-page-1#comment-622</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sat, 23 Aug 2008 16:00:40 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/477#comment-622</guid>
+
+					<description><![CDATA[Indyfromoz --
+
+No, I haven&#039;t watched the video you referred to. 
+
+I looked at ScrumDesk -- it&#039;s not as much a line of business application as I was thinking -- it&#039;s less data entry focused.
+
+I can do simple animations, etc. on the web. Why should I do a thick install, with a heavy framework like WPF? I still stand behind my comment that WPF is too difficult for most to succeed at. It&#039;s just too complex. Silverlight 2.0 stands to be a better WPF in some ways as they&#039;ve removed some of the complexity.]]></description>
+			<content:encoded><![CDATA[<p>Indyfromoz &#8212;</p>
+<p>No, I haven&#8217;t watched the video you referred to. </p>
+<p>I looked at ScrumDesk &#8212; it&#8217;s not as much a line of business application as I was thinking &#8212; it&#8217;s less data entry focused.</p>
+<p>I can do simple animations, etc. on the web. Why should I do a thick install, with a heavy framework like WPF? I still stand behind my comment that WPF is too difficult for most to succeed at. It&#8217;s just too complex. Silverlight 2.0 stands to be a better WPF in some ways as they&#8217;ve removed some of the complexity.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: indyfromoz		</title>
+		<link>/blog/index.php/archives/477/comment-page-1#comment-618</link>
+
+		<dc:creator><![CDATA[indyfromoz]]></dc:creator>
+		<pubDate>Sat, 23 Aug 2008 11:00:04 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/477#comment-618</guid>
+
+					<description><![CDATA[Have you watched the first 25 minutes of the show by Billy Hollis available on DNRTv? If no, I suggest you spend half an hour watching the video, you will realise what I said above is true. Also look at www.scrumdesk.com.
+
+cheers,
+indyfromoz]]></description>
+			<content:encoded><![CDATA[<p>Have you watched the first 25 minutes of the show by Billy Hollis available on DNRTv? If no, I suggest you spend half an hour watching the video, you will realise what I said above is true. Also look at <a href="http://www.scrumdesk.com/" rel="nofollow ugc">http://www.scrumdesk.com/</a>.</p>
+<p>cheers,<br />
+indyfromoz</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/477/comment-page-1#comment-616</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sat, 23 Aug 2008 03:04:21 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/477#comment-616</guid>
+
+					<description><![CDATA[I see a few examples on your web site. I&#039;m looking for a real set of real-world, in use, WPF applications. Or, even better, consumer-oriented stuff, with some complexity. The more complex the UI, the more difficult WPF becomes.]]></description>
+			<content:encoded><![CDATA[<p>I see a few examples on your web site. I&#8217;m looking for a real set of real-world, in use, WPF applications. Or, even better, consumer-oriented stuff, with some complexity. The more complex the UI, the more difficult WPF becomes.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: indyfromoz		</title>
+		<link>/blog/index.php/archives/477/comment-page-1#comment-615</link>
+
+		<dc:creator><![CDATA[indyfromoz]]></dc:creator>
+		<pubDate>Sat, 23 Aug 2008 02:09:18 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/477#comment-615</guid>
+
+					<description><![CDATA[There are numerous examples available which illustrate the power of WPF. Yes, WPF is perhaps not the technology to use if the LOB application does not some fancy eye candy, for complex UIs, WPF is the way to go (imagine fade-in/fade-out transitions in Winforms!).
+
+my two cents.
+indyfromoz]]></description>
+			<content:encoded><![CDATA[<p>There are numerous examples available which illustrate the power of WPF. Yes, WPF is perhaps not the technology to use if the LOB application does not some fancy eye candy, for complex UIs, WPF is the way to go (imagine fade-in/fade-out transitions in Winforms!).</p>
+<p>my two cents.<br />
+indyfromoz</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

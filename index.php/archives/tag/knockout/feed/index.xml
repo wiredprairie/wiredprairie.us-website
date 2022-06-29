@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>Knockout &#8211; WiredPrairie</title>
+	<atom:link href="/blog/index.php/archives/tag/knockout/feed" rel="self" type="application/rss+xml" />
+	<link>/blog</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Sat, 26 Jan 2013 16:44:23 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+<site xmlns="com-wordpress:feed-additions:1">193486638</site>	<item>
+		<title>Knockout binding for JavaScript route fixup</title>
+		<link>/blog/index.php/archives/1820</link>
+					<comments>/blog/index.php/archives/1820#comments</comments>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sat, 26 Jan 2013 02:48:30 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[ASP.NET]]></category>
+		<category><![CDATA[JavaScript]]></category>
+		<category><![CDATA[Knockout]]></category>
+		<category><![CDATA[MVC]]></category>
+		<guid isPermaLink="false">/blog/?p=1820</guid>
+
+					<description><![CDATA[Part one. After the first round, I felt compelled to KnockOut the code a bit more. I’d mentioned I wasn’t pleased with the code exactly. It needed some refactoring. So, I’ve created a new Knockout binding handler. This binding handler replaces&#160; named parameters with a model’s properties in a path. For example, given this object: [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="/blog/index.php/archives/1800">Part one.</a></p>
+<p>After the first round, I felt compelled to KnockOut the code a bit more. I’d mentioned I wasn’t pleased with the code exactly. It needed some refactoring.</p>
+<p>So, I’ve created a new Knockout binding handler. This binding handler replaces&#160; named parameters with a model’s properties in a path. </p>
+<p>For example, given this object:</p>
+<table cellspacing="0" cellpadding="2" width="400" border="1">
+<tbody>
+<tr>
+<td valign="top" width="200"><strong>Property Name</strong></td>
+<td valign="top" width="200"><strong>Value</strong></td>
+</tr>
+<tr>
+<td valign="top" width="200">id</td>
+<td valign="top" width="200">A123</td>
+</tr>
+<tr>
+<td valign="top" width="200">first_name</td>
+<td valign="top" width="200">Aaron</td>
+</tr>
+<tr>
+<td valign="top" width="200">state</td>
+<td valign="top" width="200">WI</td>
+</tr>
+</tbody>
+</table>
+<p>The following paths would be converted thusly:</p>
+<table cellspacing="0" cellpadding="2" width="400" border="1">
+<tbody>
+<tr>
+<td valign="top" width="200"><strong>Original</strong></td>
+<td valign="top" width="200"><strong>Replaced</strong></td>
+</tr>
+<tr>
+<td valign="top" width="200">/person/{id}</td>
+<td valign="top" width="200">/person/A123</td>
+</tr>
+<tr>
+<td valign="top" width="200">/person/{state}/{id}</td>
+<td valign="top" width="200">/person/WI/A123</td>
+</tr>
+</tbody>
+</table>
+<p>You get the idea. Here’s the JavaScript code:</p>
+<pre class="csharpcode">ko.bindingHandlers[<span class="str">'route'</span>] = {
+    <span class="rem">// Examples: </span>
+    <span class="rem">//      &lt;a data-bind=&quot;route: {model: $data, url: 'person_details', attr: 'href' }&quot; &gt;</span>
+    <span class="rem">// or, you can shortcut the syntax to default to the currently bound object and just pass </span>
+    <span class="rem">// the url or the route name as a string directly</span>
+    <span class="rem">//      &lt;a data-bind=&quot;route: 'person_details' }&quot; &gt;</span>
+    update: <span class="kwrd">function</span> (element, valueAccessor, allBindingsAccessor, $data) {
+        <span class="kwrd">var</span> valueUnwrapped = ko.utils.unwrapObservable(valueAccessor());
+        <span class="kwrd">var</span> options = ko.bindingHandlers.route.options || {};
+
+        <span class="rem">// look for the model property </span>
+        <span class="kwrd">var</span> model = ko.utils.unwrapObservable(valueUnwrapped[<span class="str">'model'</span>]);
+        <span class="kwrd">if</span> (<span class="kwrd">typeof</span> model !== <span class="str">'object'</span>) {
+
+            model = ko.utils.unwrapObservable($data);
+            <span class="kwrd">if</span> (<span class="kwrd">typeof</span> model === <span class="str">'undefined'</span> || model === <span class="kwrd">null</span>) {
+                <span class="kwrd">throw</span> <span class="kwrd">new</span> Error(<span class="str">'set route model to object (or nothing bound?)'</span>);
+            }
+        }
+
+        <span class="rem">// look for the url property first</span>
+        <span class="kwrd">var</span> url = ko.utils.unwrapObservable(valueUnwrapped[<span class="str">'url'</span>]);
+        <span class="rem">// validate we've got something as a url (might be a name, might be a full url)        </span>
+        <span class="kwrd">if</span> (<span class="kwrd">typeof</span> url !== <span class="str">'string'</span> || url == <span class="str">&quot;&quot;</span>) {
+            url = valueUnwrapped;
+            <span class="kwrd">if</span> (<span class="kwrd">typeof</span> url !== <span class="str">'string'</span> || url == <span class="str">&quot;&quot;</span>) {
+                <span class="kwrd">throw</span> <span class="kwrd">new</span> Error(<span class="str">&quot;set route url property to route name or url directly&quot;</span>);
+            }
+        }
+
+        <span class="rem">// is it on the keyed collection?</span>
+        <span class="kwrd">var</span> map = options.map;
+        <span class="kwrd">if</span> (<span class="kwrd">typeof</span> map !== <span class="str">'undefined'</span> &amp;&amp; map !== <span class="kwrd">null</span>) {
+            <span class="kwrd">if</span> (map.hasOwnProperty(url)) {
+                url = map[url];
+            }
+        }
+        <span class="rem">// check for a routing function as well</span>
+        <span class="kwrd">var</span> fn = options.routeNameToUrl;
+        <span class="kwrd">if</span> (<span class="kwrd">typeof</span> fn === <span class="str">'function'</span>) { url = fn.call(<span class="kwrd">null</span>, url); }
+        <span class="rem">// did we get something meaningful?</span>
+        <span class="kwrd">if</span> (url !== <span class="kwrd">null</span> &amp;&amp; url !== <span class="str">''</span> &amp;&amp; url.length &gt; 0) {
+            url = ko.bindingHandlers.route.buildUrl(url, model);            
+        }
+        <span class="rem">// the url might need some fixin after a routing, anything goes here (might just be a default)</span>
+        fn = options.fixUrl;
+        <span class="kwrd">if</span> (<span class="kwrd">typeof</span> fn === <span class="str">'function'</span>) { url = fn.call(<span class="kwrd">null</span>, url); }
+        element.setAttribute(ko.utils.unwrapObservable(valueUnwrapped[<span class="str">'attr'</span>]) || <span class="str">'href'</span>, url);
+    },    
+
+    <span class="rem">// given a model, this function replaces named parameters in a simple string </span>
+    <span class="rem">// with values from the model</span>
+    <span class="rem">//     /path/to/some/{id}/{category}</span>
+    <span class="rem">// with object { 'id' : 'abc', 'category' : 'cars' }</span>
+    <span class="rem">// becomes</span>
+    <span class="rem">//     /path/to/some/abc/cars</span>
+    buildUrl : <span class="kwrd">function</span>(url, model) {
+        <span class="rem">// unfixed if there's not a thing</span>
+        <span class="kwrd">if</span> (<span class="kwrd">typeof</span> model === <span class="str">'undefined'</span> || model === <span class="kwrd">null</span>) { <span class="kwrd">return</span> url; }
+
+        <span class="kwrd">var</span> propValue;
+        <span class="kwrd">for</span> (<span class="kwrd">var</span> propName <span class="kwrd">in</span> model) {                
+            <span class="kwrd">if</span> (model.hasOwnProperty(propName)) {
+                propValue = model[propName];
+                <span class="kwrd">if</span> (ko) { propValue = ko.utils.unwrapObservable(propValue); }
+
+                <span class="kwrd">if</span> (<span class="kwrd">typeof</span> propValue === <span class="str">'undefined'</span> || propValue === <span class="kwrd">null</span>) {
+                    propValue = <span class="str">&quot;&quot;</span>;
+                } <span class="kwrd">else</span> {
+                    propValue = propValue.toString();
+                }
+                url = url.replace(<span class="str">'{'</span> + propName.toLowerCase() + <span class="str">'}'</span>, propValue);
+            }
+        }
+        <span class="kwrd">return</span> url;
+    },
+
+    options: {
+        <span class="rem">// ** convert a route name to a url through whatever means you'd like</span>
+        <span class="rem">// routeNameToUrl : function(routeName) { return url; } </span>
+
+        <span class="rem">// ** anything you want, called after routeNameToUrl, might add a virtual directory</span>
+        <span class="rem">// ** for example</span>
+        <span class="rem">// fixUrl: function(url) { return url;  }  </span>
+
+        <span class="rem">// ** A map route names to URLs **</span>
+        <span class="rem">// all other functions are called if set (to possibly override this)</span>
+        <span class="rem">// this is not required if you use one of the other functions</span>
+        <span class="rem">// map : { 'a_route_name' : '/path/to/something/{id}/{action}' }        </span>
+    }
+};</pre>
+<style type="text/css">
+.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }</style>
+<style type="text/css">
+.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }</style>
+<p>In another JavaScript file, I did initialize some of the options:</p>
+<pre class="csharpcode">ko.bindingHandlers.route.options.routeNameToUrl = getRoute;
+ko.bindingHandlers.route.options.fixUrl = app_url;</pre>
+<style type="text/css">
+.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }</style>
+<p>The <strong>getRoute</strong> function just maps a route name to a path, and the <strong>app_url</strong> prepends the virtual directory to the path as needed.</p>
+<p>Here it is in use:</p>
+<pre class="csharpcode"><span class="kwrd">&lt;</span><span class="html">div</span> <span class="attr">data-bind</span><span class="kwrd">=&quot;foreach: data.persons&quot;</span><span class="kwrd">&gt;</span>
+    <span class="kwrd">&lt;</span><span class="html">h3</span> <span class="attr">class</span><span class="kwrd">=&quot;title&quot;</span> <span class="attr">data-bind</span><span class="kwrd">=&quot;text: Title&quot;</span><span class="kwrd">&gt;&lt;/</span><span class="html">h3</span><span class="kwrd">&gt;</span>
+    <span class="kwrd">&lt;</span><span class="html">div</span><span class="kwrd">&gt;</span>
+        <span class="kwrd">&lt;</span><span class="html">a</span> <span class="attr">data-bind</span><span class="kwrd">=&quot;route: { model: $data, url: 'person_details', attr: 'href' } &quot;</span><span class="kwrd">&gt;</span>Details2<span class="kwrd">&lt;/</span><span class="html">a</span><span class="kwrd">&gt;</span>
+        <span class="kwrd">&lt;</span><span class="html">a</span> <span class="attr">data-bind</span><span class="kwrd">=&quot;route: '/data/details/{id}/{title}' &quot;</span><span class="kwrd">&gt;</span>Details<span class="kwrd">&lt;/</span><span class="html">a</span><span class="kwrd">&gt;</span>
+        <span class="kwrd">&lt;</span><span class="html">a</span> <span class="attr">data-bind</span><span class="kwrd">=&quot;route: 'person_details' &quot;</span><span class="kwrd">&gt;</span>Details<span class="kwrd">&lt;/</span><span class="html">a</span><span class="kwrd">&gt;</span>
+    <span class="kwrd">&lt;/</span><span class="html">div</span><span class="kwrd">&gt;</span>
+<span class="kwrd">&lt;/</span><span class="html">div&gt;</span></pre>
+<style type="text/css">
+.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }</style>
+<style type="text/css">
+.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }</style>
+<p>You’ll probably like the new way better syntactically at least compared to the <a href="/blog/index.php/archives/1800">old</a> way. A route binding requires one input when used in it’s most basic form:</p>
+<ul>
+<li><strong>url = </strong>the URL or route name to use as the template for the replacement. It should contain (or later resolve to) curly-braced enclosed property name keys which will be substituted by values from the model. The value of the property could be either a route name (see options below) or a path.</li>
+</ul>
+<p>When using just the basic form you can use the shortened syntax:</p>
+<pre class="csharpcode"><span class="kwrd">&lt;</span><span class="html">a</span> <span class="attr">data-bind</span><span class="kwrd">=&quot;route: 'research_details' &quot;</span><span class="kwrd">&gt;</span>Details<span class="kwrd">&lt;/</span><span class="html">a</span><span class="kwrd">&gt;</span></pre>
+<p>This handily binds to the current object (via the bindingContext.$data property of the bindingHandler update function call, which is <strong>also </strong>the fourth parameter, which I’ve renamed to $data rather than the typical viewModel). So, you won’t need to necessarily (explicitly) set the model for the binding.</p>
+<p>If you need a a bit more control, you can change the syntax and get access to a few other options (including direct access to the model you want to bind to if the current item isn’t directly what you want to use).</p>
+<ul>
+<li><strong>model</strong> = this is the object that contains the properties and values to be used as replacements within the url </li>
+<li><strong>attr </strong>(optional) = the name of the attribute to set the generated url into. Defaults to href if not set.</li>
+</ul>
+<p>There are a few global options you can control as well:</p>
+<ul>
+<li><strong>routeNameToUrl </strong>= (function)(routeName) optionally, given a route name, should return the path (or the original value). Here you can do a lookup of routeName to path. </li>
+<li><strong>map</strong> = {object} the object properties should be route names and set equal to the path. this optional lookup is performed before the routeNameToUrl function is called. </li>
+<li><strong>fixUrl</strong> = (function)(url) do anything here. this is called after the mapping and routeNameToUrl is optionally called. I use this to correct javascript Ajax request paths by appending the application virtual directory</li>
+</ul>
+<p>(Thanks to <a href="http://www.knockmeout.net/">Ryan</a> for the suggestion to use the $data on the bindingContext, and then again for the nudge to just use the 4th parameter. <img class="wlEmoticon wlEmoticon-smile" style="border-top-style: none; border-left-style: none; border-bottom-style: none; border-right-style: none" alt="Smile" src="/blog/wp-content/uploads/2013/01/wlEmoticon-smile.png" /> )</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/blog/index.php/archives/1820/feed</wfw:commentRss>
+			<slash:comments>5</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1820</post-id>	</item>
+	</channel>
+</rss>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>Web &#8211; WiredPrairie</title>
+	<atom:link href="/blog/index.php/archives/category/web/feed" rel="self" type="application/rss+xml" />
+	<link>/blog</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Sat, 21 Apr 2018 02:27:19 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+<site xmlns="com-wordpress:feed-additions:1">193486638</site>	<item>
+		<title>Class Decorator with TypeScript and React</title>
+		<link>/blog/index.php/archives/2247</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sat, 21 Apr 2018 02:27:19 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[Web]]></category>
+		<guid isPermaLink="false">/blog/?p=2247</guid>
+
+					<description><![CDATA[The syntax for creation and use of a class decorator written in TypeScript that works with a React.js component wasn&#8217;t obvious &#8230;, so I thought I&#8217;d document it here. The decorator takes a constructor/class which could be used how ever you&#8217;d like (or substituted for something else entirely). View the code on Gist. &#160;]]></description>
+										<content:encoded><![CDATA[<p>The syntax for creation and use of a class decorator written in TypeScript that works with a React.js component wasn&#8217;t obvious &#8230;, so I thought I&#8217;d document it here.</p>
+<p>The decorator takes a constructor/class which could be used how ever you&#8217;d like (or substituted for something else entirely).</p>
+<p>View the code on <a href="https://gist.github.com/wiredprairie/a405d3eda19b8ceccb26f67ffe84b3fe">Gist</a>.</p>
+<p>&nbsp;</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2247</post-id>	</item>
+		<item>
+		<title>Social-up your Business</title>
+		<link>/blog/index.php/archives/2036</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Wed, 03 Feb 2016 13:46:46 +0000</pubDate>
+				<category><![CDATA[General]]></category>
+		<category><![CDATA[Web]]></category>
+		<guid isPermaLink="false">/blog/?p=2036</guid>
+
+					<description><![CDATA[Dear Small Business Owner, As a potential customer of your small business, I’m frustrated by your lack of response to my email, tweet, Facebook post, Instagram Message, text message, Skype chat, etc. I think I know what happened that led to my frustration. &#160; You&#8217;ve got an established or new business. At some point in [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><strong>Dear Small Business Owner,</strong></p>
+<p>As a potential customer of your small business, I’m <strong>frustrated</strong> by your lack of response to my email, tweet, Facebook post, Instagram Message, text message, Skype chat, etc.</p>
+<p><em>I think I know what happened that led to my frustration.</em></p>
+<hr />
+<p>&nbsp;</p>
+<p>You&#8217;ve got an established or new business.</p>
+<p>At some point in the business life cycle, you decide to build a web site. (“<em>Hey! You totally need a web site to drive more traffic!</em>”). As you realize building web sites is not core to your business, you spend some hard earned income to invest $200 in a web site.</p>
+<p>To your untrained eye, you may not recognize the Microsoft FrontPage style template that $200 bought.</p>
+<p>Not only has the web designer created some static content, they’ve thoughtfully created:</p>
+<ul>
+<li>A blog</li>
+<li>An e-mail address</li>
+<li>A “Contact me” form</li>
+<li>The Full Social-Package<img src="https://s.w.org/images/core/emoji/14.0.0/72x72/2122.png" alt="™" class="wp-smiley" style="height: 1em; max-height: 1em;" />, including but not limited to: Twitter, Facebook Pages, Instagram, and Skype.</li>
+</ul>
+<p>After an all-too-brief explanation, you, sit back and wait for new business opportunities to arrive, <em>digitally.</em></p>
+<p><em>And nothing happens. </em></p>
+<p>Maybe a blog post will help. So, you create the first (and last) blog post.</p>
+<p><em>And still nothing happens.<br />
+</em></p>
+<p>So, business resumes as normal. The web site goes unmodified. The blog post remains, dull, and outdated.</p>
+<p>E-mails aren&#8217;t flooding in, so the e-mail address that was set up isn’t checked frequently or at all.</p>
+<p>So, when a potential customer uses one of the social options or an email to contact your business, there is no timely response (if there&#8217;s one at all).</p>
+<p><strong>And then…, you&#8217;ve lost a customer. </strong></p>
+<p>Sorry, but I&#8217;m going to find a different business that meets my needs.</p>
+<hr />
+<p>&nbsp;</p>
+<p>If a small business doesn’t check and respond to voice mails once a (work) day, they may loose business. If that same business does not check their email, social accounts, MySpace pages, etc., they also may loose business.</p>
+<p>I’m sure they meant well by having a web site with an email address, etc., but if it’s not used, it’s no different than not answering the phone.</p>
+<p>So, what happened? It started with <strong>unreasonable</strong> expectations.</p>
+<p>A blog, social-media accounts, email accounts, do not directly create new business opportunities. They are simply new channels for communication. It&#8217;s two-way. If your business doesn&#8217;t have a plan for these new forms of communication, they will fail.</p>
+<p>You will miss out on new customer opportunities. And <strong>worse,</strong> you may lose existing customers who may transition to using the other forms of communication you&#8217;ve claimed to offer. Spend an extra $100 to have a daily (or more frequently) plan developed to consistently use these communication options. Delete and remove any that don&#8217;t fit your business needs or that sit unused. If you don&#8217;t understand these forms of communication or how to integrate them effectively, there are lots of on line resources that can help, both paid and free.</p>
+<p>I like buying local and will support businesses that work best with my lifestyle and communication preferences.</p>
+<p>Small business owners can do better. Please.</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2036</post-id>	</item>
+		<item>
+		<title>HTML 5 Support: iOS 4.1 Browser vs. Windows Phone 7 Browser</title>
+		<link>/blog/index.php/archives/1140</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Fri, 17 Sep 2010 12:41:41 +0000</pubDate>
+				<category><![CDATA[Phone]]></category>
+		<category><![CDATA[Software]]></category>
+		<category><![CDATA[Web]]></category>
+		<category><![CDATA[Safari]]></category>
+		<category><![CDATA[WindowsPhone7]]></category>
+		<category><![CDATA[WP7]]></category>
+		<guid isPermaLink="false">/blog/index.php/archives/1140</guid>
+
+					<description><![CDATA[Now that the final v1 Windows Phone 7 is available, I performed a few browser tests using http://www.HTML5Test.com/ (which is a slick and easy way of testing browser support for some upcoming HTML5 features). Any guesses which is iOS 4.1? &#160; Biggest missing elements from the IE browser on Windows Phone 7: Input element types. [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Now that the final v1 Windows Phone 7 is available, I performed a few browser tests using <a href="http://www.HTML5Test.com/">http://www.HTML5Test.com/</a> (which is a slick and easy way of testing browser support for some upcoming HTML5 features).</p>
+<p>Any guesses which is iOS 4.1?</p>
+<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: ; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2010/09/image5.png" width="163" height="214" />&#160;<img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: ; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2010/09/image6.png" width="163" height="240" /></p>
+<p>Biggest missing elements from the IE browser on Windows Phone 7:</p>
+<ul>
+<li>Input element types. The browser won’t be able to provide a keyboard/input panel that is appropriate for the data being requested. For example, a number field that automatically switches to a number only input pad. See <a href="http://diveintohtml5.org/detect.html#input-types">here</a> for some examples.</li>
+<li><a href="http://dev.w3.org/geo/api/spec-source.html">Geo-location</a>. Seriously. The phone has a GPS. Why not expose it? (IE9 doesn’t either unfortunately, but that bothers me less).</li>
+<li><a href="http://dev.w3.org/html5/spec/Overview.html">Canvas</a>. IE9 can do it, why not you? There are so many UIs that can be enhanced by use of a canvas,without resorting to server side rendering and other messy hacks.</li>
+<li><a href="http://www.w3.org/TR/WAPF-REQ/">Web applications</a> (cache). Then, we could package a web application into an offline application and use the browser to drive the UI rather than SL/XNA. That’d be a win in my book as it would be easier to build cross platform phone solutions. </li>
+<li>Session storage and <a href="http://dev.w3.org/html5/webstorage/">local storage</a>. See previous point. It also makes using cookies less necessary in some scenarios.</li>
+</ul>
+<p>It is a better browser than the CRAP in previous versions of the Windows Phone. But, the bar has been set much higher these days. I’m pleased that typical web sites work well, and that it’s reasonably fast. I can even understand why they stopped where they did – as it seemed sufficient for typical browsing needs on the go, especially given the development team obviously had deadlines. </p>
+<p>But with technology moving at such a rapid pace and the adoption of HTML5 proceeding regardless of standards, Microsoft must keep up to survive. This phone will get a lot of “hate” if it can’t adequately browse the web in a few years. Developers are tired of building in hacks to support browser X or Y. This is yet another browser that may need to be supported, if adoption rates are reasonable. </p>
+<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: ; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2010/09/image8.png" width="300" height="502" /></p>
+<p>IE9 Beta 1 scores only a 96.</p>
+<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: ; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2010/09/image7.png" width="359" height="214" /></p>
+<p>It’s missing <a href="http://www.w3.org/TR/html5/offline.html#offline">Web applications</a> (arrgh), and <a href="http://www.w3.org/TR/websockets/">websocket</a>s.</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1140</post-id>	</item>
+	</channel>
+</rss>

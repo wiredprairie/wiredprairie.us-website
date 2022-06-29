@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Technical Interview Question #8	</title>
+	<atom:link href="/blog/index.php/archives/332/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/332</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Thu, 12 Jun 2008 22:10:19 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: WiredPrairie - Technical Interview Series		</title>
+		<link>/blog/index.php/archives/332/comment-page-1#comment-374</link>
+
+		<dc:creator><![CDATA[WiredPrairie - Technical Interview Series]]></dc:creator>
+		<pubDate>Thu, 12 Jun 2008 22:10:19 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/332#comment-374</guid>
+
+					<description><![CDATA[[...] Question #8 [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] Question #8 [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

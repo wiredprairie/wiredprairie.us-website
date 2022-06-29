@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Google&#8217;s Chrome Operating System	</title>
+	<atom:link href="/blog/index.php/archives/805/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/805</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Thu, 09 Jul 2009 12:25:55 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/805/comment-page-1#comment-2694</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Thu, 09 Jul 2009 12:25:55 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/805#comment-2694</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/805/comment-page-1#comment-2691&quot;&gt;Dave&lt;/a&gt;.
+
+True -- it&#039;s interesting to see that many people are already asking the question: &quot;what other applications will I be able to install -- it&#039;s Linux, so anything should work....&quot; and so on. My understanding is that Google doesn&#039;t want that initially -- they want it pure, and fast -- and WEB. (Plus, I believe it&#039;s a different window system, so it wouldn&#039;t necessarily work with KDE, etc. based applications).]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/805/comment-page-1#comment-2691">Dave</a>.</p>
+<p>True &#8212; it&#8217;s interesting to see that many people are already asking the question: &#8220;what other applications will I be able to install &#8212; it&#8217;s Linux, so anything should work&#8230;.&#8221; and so on. My understanding is that Google doesn&#8217;t want that initially &#8212; they want it pure, and fast &#8212; and WEB. (Plus, I believe it&#8217;s a different window system, so it wouldn&#8217;t necessarily work with KDE, etc. based applications).</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Dave		</title>
+		<link>/blog/index.php/archives/805/comment-page-1#comment-2691</link>
+
+		<dc:creator><![CDATA[Dave]]></dc:creator>
+		<pubDate>Wed, 08 Jul 2009 17:00:32 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/805#comment-2691</guid>
+
+					<description><![CDATA[As far as hardware support goes, I think the answer might simply be that those who want to do that kind of thing should look elsewhere. They aren&#039;t required to handle all the hardware thrown at them. Then again, perhaps hardware manufacturers will have to take Linux seriously if the OS grabs a decent market share.
+
+The Netbook market quickly went from being &quot;small, internet capable PCs&quot; to &quot;small, full featured laptop&quot; and I think Google recognizes that. 
+
+In addition, I think that Google&#039;s Native Client has something to do with this venture in to Linux and a largely web based OS. http://code.google.com/p/nativeclient/]]></description>
+			<content:encoded><![CDATA[<p>As far as hardware support goes, I think the answer might simply be that those who want to do that kind of thing should look elsewhere. They aren&#8217;t required to handle all the hardware thrown at them. Then again, perhaps hardware manufacturers will have to take Linux seriously if the OS grabs a decent market share.</p>
+<p>The Netbook market quickly went from being &#8220;small, internet capable PCs&#8221; to &#8220;small, full featured laptop&#8221; and I think Google recognizes that. </p>
+<p>In addition, I think that Google&#8217;s Native Client has something to do with this venture in to Linux and a largely web based OS. <a href="http://code.google.com/p/nativeclient/" rel="nofollow ugc">http://code.google.com/p/nativeclient/</a></p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

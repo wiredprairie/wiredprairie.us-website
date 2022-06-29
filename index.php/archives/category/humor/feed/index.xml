@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>Humor &#8211; WiredPrairie</title>
+	<atom:link href="/blog/index.php/archives/category/humor/feed" rel="self" type="application/rss+xml" />
+	<link>/blog</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Thu, 05 Apr 2012 12:55:44 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+<site xmlns="com-wordpress:feed-additions:1">193486638</site>	<item>
+		<title>You&#8217;re doing it wrong, alt text and title attributes</title>
+		<link>/blog/index.php/archives/1607</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Thu, 05 Apr 2012 12:55:44 +0000</pubDate>
+				<category><![CDATA[Humor]]></category>
+		<category><![CDATA[Html]]></category>
+		<guid isPermaLink="false">/blog/?p=1607</guid>
+
+					<description><![CDATA[I had moved my mouse over an image on a local bank’s web site, and was surprised to see the name of the file pop-up. The reason is that their web developer apparently doesn’t understand the meaning or intention behind the alt or title attribute of an HTML element. Not that it isn’t handy to [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I had moved my mouse over an image on a local bank’s web site, and was surprised to see the name of the file pop-up. </p>
+<p><a href="http://www.anchorbank.com/business/splash.aspx"><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="SNAGHTML3867720c" border="0" alt="SNAGHTML3867720c" src="/blog/wp-content/uploads/2012/04/SNAGHTML3867720c.png" width="378" height="114" /></a></p>
+<p>The reason is that their web developer apparently doesn’t understand the meaning or intention behind the <a href="http://en.wikipedia.org/wiki/Alt_attribute">alt</a> or title attribute of an HTML element. </p>
+<p>Not that it isn’t handy to know the name of the file…. <img style="border-bottom-style: none; border-left-style: none; border-top-style: none; border-right-style: none" class="wlEmoticon wlEmoticon-smile" alt="Smile" src="/blog/wp-content/uploads/2012/04/wlEmoticon-smile1.png" /></p>
+<p>Maybe they could have used:</p>
+<ul>
+<li>Passionate bank web site user</li>
+<li>Man with loose tie</li>
+<li>Man having good hair day</li>
+<li>Or …. ?</li>
+</ul>
+<p>(I noticed that they have this problem in many areas of their web site. Maybe their Banking skills are better than their web site skills?)</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1607</post-id>	</item>
+		<item>
+		<title>SuperUser.com, and my rise to fame?</title>
+		<link>/blog/index.php/archives/1603</link>
+					<comments>/blog/index.php/archives/1603#comments</comments>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Tue, 03 Apr 2012 01:43:54 +0000</pubDate>
+				<category><![CDATA[General]]></category>
+		<category><![CDATA[Humor]]></category>
+		<category><![CDATA[fame]]></category>
+		<category><![CDATA[superuser.com]]></category>
+		<category><![CDATA[xkcd]]></category>
+		<guid isPermaLink="false">/blog/?p=1603</guid>
+
+					<description><![CDATA[Or not really. I joined SuperUser.com last year to ask one question that was unresolved at work. It has been my first and only question. I find it funny that this yet unanswered question has given me a gold badge. I apparently am not the only person who needed help with this issue. Now, if [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Or not really. </p>
+<p>I joined SuperUser.com last year to ask <a href="http://superuser.com/questions/116541/what-is-a-valid-trust-anchor-in-windows-7-relating-to-wifi">one question</a> that was unresolved at work. It has been my <strong>first and only</strong> question.</p>
+<p><a href="/blog/wp-content/uploads/2012/04/image10.png"><img loading="lazy" style="background-image: none; border-right-width: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2012/04/image_thumb.png" width="502" height="275" /></a></p>
+<p>I find it funny that this yet unanswered question has given me a gold badge. I apparently am not the only person who needed help with this issue. </p>
+<p><a href="http://www.xkcd.com/979/"><img style="display: block; float: none; margin-left: auto; margin-right: auto" alt="Wisdom of the Ancients" src="http://imgs.xkcd.com/comics/wisdom_of_the_ancients.png" /></a></p>
+<p>Now, if only these badges could be turned into some real coin, or prizes like in an arcade ….</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/blog/index.php/archives/1603/feed</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1603</post-id>	</item>
+		<item>
+		<title>Captcha, gone wrong</title>
+		<link>/blog/index.php/archives/1573</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Mon, 19 Mar 2012 12:20:20 +0000</pubDate>
+				<category><![CDATA[Humor]]></category>
+		<guid isPermaLink="false">/blog/?p=1573</guid>
+
+					<description><![CDATA[On a Google site this morning, Captcha: As I have a US English keyboard – I was unable to type the first word. (Anyone know what language that is? I thought Greek at first, but the “n” didn’t make sense.) I then proceeded to skip through 8 more captcha’s before I found one I could [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>On a Google site this morning, Captcha:</p>
+<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2012/03/image5.png" width="307" height="69" /></p>
+<p>As I have a US English keyboard – I was unable to type the first word. (Anyone know what language that is? I thought Greek at first, but the “n” didn’t make sense.)</p>
+<p>I then proceeded to skip through 8 more captcha’s before I found one I could actually recognize. Sigh.</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1573</post-id>	</item>
+		<item>
+		<title>Microsoft&#8217;s Windows 7 Start Menu</title>
+		<link>/blog/index.php/archives/1133</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Tue, 14 Sep 2010 12:26:19 +0000</pubDate>
+				<category><![CDATA[Humor]]></category>
+		<category><![CDATA[Software]]></category>
+		<guid isPermaLink="false">/blog/index.php/archives/1133</guid>
+
+					<description><![CDATA[OK, this is broken: I’m thankful I don’t need to use the old cascading menus anymore, but this just ain’t right. What’s in your start menu from Microsoft (or other companies)?]]></description>
+										<content:encoded><![CDATA[<p>OK, this is broken:</p>
+<p><img loading="lazy" style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2010/09/image3.png" width="250" height="418" /></p>
+<p>I’m thankful I don’t need to use the old cascading menus anymore, but this just ain’t right.</p>
+<p>What’s in your start menu from Microsoft (or other companies)?</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1133</post-id>	</item>
+		<item>
+		<title>Silverlight installer doesn&#8217;t like Adobe Updater</title>
+		<link>/blog/index.php/archives/1108</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Fri, 02 Jul 2010 00:07:36 +0000</pubDate>
+				<category><![CDATA[Humor]]></category>
+		<guid isPermaLink="false">/blog/index.php/archives/1108</guid>
+
+					<description><![CDATA[I found this experience quite amusing today…]]></description>
+										<content:encoded><![CDATA[<p>I found this experience quite amusing today…</p>
+<p><img loading="lazy" style="border-bottom: 0px; border-left: 0px; margin: 0px; display: inline; border-top: 0px; border-right: 0px" class="wlDisabledImage" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2010/07/image.png" width="450" height="213" /></p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1108</post-id>	</item>
+		<item>
+		<title>Things that made me laugh today</title>
+		<link>/blog/index.php/archives/1103</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sun, 27 Jun 2010 23:48:00 +0000</pubDate>
+				<category><![CDATA[Humor]]></category>
+		<guid isPermaLink="false">/blog/index.php/archives/1103</guid>
+
+					<description><![CDATA[#1) Our cat, on our screened back porch, (who by the way, has only been allowed on the screen porch a few times) … apparently, things on the inside are better than being on the outside. She often sits on a desk that is on the inside of the window, longingly looking out the window. [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>#1) Our cat, on our screened back porch, (who by the way, has only been allowed on the screen porch a few times) … apparently, things on the inside are better than being on the outside. She often sits on a desk that is on the inside of the window, longingly looking out the window. Apparently, she’d like to know what it looks like from the other side. </p>
+<p><img alt="Iphone" src="http://s3.amazonaws.com/cjapps/images/373951/iphone.jpg" /></p>
+<p>#2) <a href="http://feedproxy.google.com/~r/Inquisitr/~3/ejcWOajzvHQ/" target="_blank">Best Break up Letter, Ever?</a></p>
+<p>#3) <a href="http://www.explosm.net/comics/2083/" target="_blank">Highlight what’s bad</a></p>
+<p>And a whole different type of humor:</p>
+<p>#4) <a href="http://hackaday.com/2010/06/15/real-stargate-built-in-backyard/" target="_blank">Stargate, built in backyard</a></p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1103</post-id>	</item>
+		<item>
+		<title>404 &#8211; Programmers to Blame?</title>
+		<link>/blog/index.php/archives/1094</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sat, 12 Jun 2010 01:31:48 +0000</pubDate>
+				<category><![CDATA[Humor]]></category>
+		<guid isPermaLink="false">/blog/index.php/archives/1094</guid>
+
+					<description><![CDATA[From Kayak.com Page not found (404) Sorry, we could not find that page. Probably one of our &#34;genius&#34; programmers made a boo-boo. What can you do about it?]]></description>
+										<content:encoded><![CDATA[<p>From <a href="http://www.kayak.com/" target="_blank">Kayak.com</a></p>
+<p><img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2010/06/image7.png" width="363" height="214" /> </p>
+<h4>Page not found (404)</h4>
+<p>Sorry, we could not find that page. Probably one of our &quot;genius&quot; programmers made a boo-boo. What can you do about it?</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1094</post-id>	</item>
+		<item>
+		<title>Web Programmers who hate their jobs</title>
+		<link>/blog/index.php/archives/1039</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Tue, 27 Apr 2010 19:16:27 +0000</pubDate>
+				<category><![CDATA[General]]></category>
+		<category><![CDATA[Humor]]></category>
+		<guid isPermaLink="false">/blog/index.php/archives/1039</guid>
+
+					<description><![CDATA[&#160; From http://www.webdirections.org/sotw10/results/ IE5?!?!?]]></description>
+										<content:encoded><![CDATA[<p>&#160;</p>
+<p>From <a href="http://www.webdirections.org/sotw10/results/">http://www.webdirections.org/sotw10/results/</a></p>
+<p> <img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2010/04/image2.png" width="452" height="488" />   </p>
+<p>IE5?!?!?</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1039</post-id>	</item>
+		<item>
+		<title>I see invisible windows &#8230;</title>
+		<link>/blog/index.php/archives/1036</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Wed, 21 Apr 2010 12:50:47 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[Humor]]></category>
+		<guid isPermaLink="false">/blog/index.php/archives/1036</guid>
+
+					<description><![CDATA[]]></description>
+										<content:encoded><![CDATA[<p><img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2010/04/image1.png" width="416" height="296" /></p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1036</post-id>	</item>
+		<item>
+		<title>Electronical Products . . . !? Awesome!</title>
+		<link>/blog/index.php/archives/1032</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Tue, 06 Apr 2010 00:46:00 +0000</pubDate>
+				<category><![CDATA[General]]></category>
+		<category><![CDATA[Humor]]></category>
+		<guid isPermaLink="false">/blog/index.php/archives/1032</guid>
+
+					<description><![CDATA[From a message that wasn’t marked as spam in my inbox: “They can offer you all kinds of electronical products which you need like laptops, gps, TV LCD, cell phones, ps3, MP3/4, motorcycles, etc….” I’m as a big of a fan of electronical products as the next guy, but I’m really excited about the electronical [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>From a message that wasn’t marked as spam in my inbox:</p>
+<p><img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2010/04/image.png" width="450" height="136" /> </p>
+<p>“They can offer you all kinds of electronical products which you need like laptops, gps, TV LCD, cell phones, ps3, MP3/4, motorcycles, etc….”</p>
+<p>I’m as a big of a fan of <strong>electronical </strong>products as the next guy, but I’m really excited about the <strong>electronical </strong>motorcycle! I’m in a good mood in shopping right now, so I should be set!</p>
+<p>(Yes, I’m aware of the fact that there are <a href="http://www.google.com/search?sourceid=chrome&amp;ie=UTF-8&amp;q=electric+motorcycle">electric motorcycles</a> – I’m just skeptical they did and that they meant to specifically mention it).</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1032</post-id>	</item>
+	</channel>
+</rss>

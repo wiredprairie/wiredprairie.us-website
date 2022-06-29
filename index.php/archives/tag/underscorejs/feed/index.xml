@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>underscorejs &#8211; WiredPrairie</title>
+	<atom:link href="/blog/index.php/archives/tag/underscorejs/feed" rel="self" type="application/rss+xml" />
+	<link>/blog</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Wed, 13 Feb 2013 13:43:14 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+<site xmlns="com-wordpress:feed-additions:1">193486638</site>	<item>
+		<title>How to debug an underscore.js template</title>
+		<link>/blog/index.php/archives/1837</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Wed, 13 Feb 2013 20:00:00 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[JavaScript]]></category>
+		<category><![CDATA[underscorejs]]></category>
+		<guid isPermaLink="false">/blog/?p=1837</guid>
+
+					<description><![CDATA[Given a simple template like this: &#60;div class=&#34;solution&#34; data-question-id=&#34;&#60;%= model.get('Id') %&#62;&#34;&#62; &#60;div class=&#34;title&#34;&#62;&#60;%= model.get('Name') %&#62;&#60;/div&#62; &#60;div class=&#34;company&#34;&#62;&#60;%= model.get('Company') %&#62;&#60;/div&#62; &#60;div class=&#34;version&#34;&#62;&#60;%= model.get('Version') %&#62;&#60;/div&#62; &#60;div class=&#34;detail&#34;&#62;&#60;%= model.get('Summary') %&#62;&#60;/div&#62; &#60;div class=&#34;actions&#34;&#62; &#60;a href=&#34;/#solution/&#60;%= Id %&#62;/&#60;%= model.get('Id') %&#62;&#34;&#62;Detail&#60;/a&#62; &#60;/div&#62; &#60;/div&#62; And using your favorite JavaScript interactive debugger (Visual Studio 2012 is my favorite when I’m doing MVC 4 [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Given a simple template like this:</p>
+<pre class="csharpcode"><span class="kwrd">&lt;</span><span class="html">div</span> <span class="attr">class</span><span class="kwrd">=&quot;solution&quot;</span> <span class="attr">data-question-id</span><span class="kwrd">=&quot;&lt;%= model.get('Id') %&gt;&quot;</span><span class="kwrd">&gt;</span>    
+    <span class="kwrd">&lt;</span><span class="html">div</span> <span class="attr">class</span><span class="kwrd">=&quot;title&quot;</span><span class="kwrd">&gt;</span><span class="asp">&lt;%</span>= model.get(<span class="str">'Name'</span>) <span class="asp">%&gt;</span><span class="kwrd">&lt;/</span><span class="html">div</span><span class="kwrd">&gt;</span>
+    <span class="kwrd">&lt;</span><span class="html">div</span> <span class="attr">class</span><span class="kwrd">=&quot;company&quot;</span><span class="kwrd">&gt;</span><span class="asp">&lt;%</span>= model.get(<span class="str">'Company'</span>) <span class="asp">%&gt;</span><span class="kwrd">&lt;/</span><span class="html">div</span><span class="kwrd">&gt;</span>
+    <span class="kwrd">&lt;</span><span class="html">div</span> <span class="attr">class</span><span class="kwrd">=&quot;version&quot;</span><span class="kwrd">&gt;</span><span class="asp">&lt;%</span>= model.get(<span class="str">'Version'</span>) <span class="asp">%&gt;</span><span class="kwrd">&lt;/</span><span class="html">div</span><span class="kwrd">&gt;</span>
+    <span class="kwrd">&lt;</span><span class="html">div</span> <span class="attr">class</span><span class="kwrd">=&quot;detail&quot;</span><span class="kwrd">&gt;</span><span class="asp">&lt;%</span>= model.get(<span class="str">'Summary'</span>) <span class="asp">%&gt;</span><span class="kwrd">&lt;/</span><span class="html">div</span><span class="kwrd">&gt;</span>
+    <span class="kwrd">&lt;</span><span class="html">div</span> <span class="attr">class</span><span class="kwrd">=&quot;actions&quot;</span><span class="kwrd">&gt;</span>
+        <span class="kwrd">&lt;</span><span class="html">a</span> <span class="attr">href</span><span class="kwrd">=&quot;/#solution/&lt;%= Id %&gt;/&lt;%= model.get('Id') %&gt;&quot;</span><span class="kwrd">&gt;</span>Detail<span class="kwrd">&lt;/</span><span class="html">a</span><span class="kwrd">&gt;</span>
+    <span class="kwrd">&lt;/</span><span class="html">div</span><span class="kwrd">&gt;</span>
+<span class="kwrd">&lt;/</span><span class="html">div</span><span class="kwrd">&gt;</span></pre>
+<p>And using your favorite JavaScript interactive debugger (Visual Studio 2012 is my favorite when I’m doing MVC 4 Razor development), just add a debugger statement within your template temporarily:</p>
+<pre class="csharpcode"><span class="kwrd">&lt;</span><span class="html">div</span> <span class="attr">class</span><span class="kwrd">=&quot;solution&quot;</span> <span class="attr">data-question-id</span><span class="kwrd">=&quot;&lt;%= model.get('Id') %&gt;&quot;</span><span class="kwrd">&gt;</span>
+    <span class="asp">&lt;%</span> debugger; <span class="asp">%&gt;</span>
+    <span class="kwrd">&lt;</span><span class="html">div</span> <span class="attr">class</span><span class="kwrd">=&quot;title&quot;</span><span class="kwrd">&gt;</span><span class="asp">&lt;%</span>= model.get(<span class="str">'Name'</span>) <span class="asp">%&gt;</span><span class="kwrd">&lt;/</span><span class="html">div</span><span class="kwrd">&gt;</span></pre>
+<style type="text/css">
+.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }</style>
+<p>Assuming debugging is enabled, this will break (in Visual Studio for example) on the debugger line whenever your code template is executed.</p>
+<p>The emitted template code thankfully has line feeds embedded so it’s readable:</p>
+<pre class="csharpcode"><span class="kwrd">function</span> anonymous(obj,_) {
+<span class="kwrd">var</span> __t,__p=<span class="str">''</span>,__j=Array.prototype.join,print=<span class="kwrd">function</span>(){__p+=__j.call(arguments,<span class="str">''</span>);};
+with(obj||{}){
+__p+=<span class="str">'&lt;div class=&quot;solution&quot; data-question-id=&quot;'</span>+
+((__t=( model.get(<span class="str">'Id'</span>) ))==<span class="kwrd">null</span>?<span class="str">''</span>:__t)+
+<span class="str">'&quot;&gt;\r\n    '</span>;
+ debugger; 
+__p+=<span class="str">'\r\n    &lt;div class=&quot;title&quot;&gt;'</span>+
+((__t=( model.get(<span class="str">'Name'</span>) ))==<span class="kwrd">null</span>?<span class="str">''</span>:__t)+
+<span class="str">'&lt;/div&gt;\r\n    &lt;div class=&quot;company&quot;&gt;'</span>+
+((__t=( model.get(<span class="str">'Company'</span>) ))==<span class="kwrd">null</span>?<span class="str">''</span>:__t)+
+<span class="str">'&lt;/div&gt;\r\n    &lt;div class=&quot;version&quot;&gt;'</span>+
+((__t=( model.get(<span class="str">'Version'</span>) ))==<span class="kwrd">null</span>?<span class="str">''</span>:__t)+
+<span class="str">'&lt;/div&gt;\r\n    &lt;div class=&quot;detail&quot;&gt;'</span>+
+((__t=( model.get(<span class="str">'Summary'</span>) ))==<span class="kwrd">null</span>?<span class="str">''</span>:__t)+
+<span class="str">'&lt;/div&gt;\r\n    &lt;div class=&quot;actions&quot;&gt;\r\n        &lt;a href=&quot;/#solution/'</span>+
+((__t=( Id ))==<span class="kwrd">null</span>?<span class="str">''</span>:__t)+
+<span class="str">'/'</span>+
+((__t=( model.get(<span class="str">'Id'</span>) ))==<span class="kwrd">null</span>?<span class="str">''</span>:__t)+
+<span class="str">'&quot;&gt;Detail&lt;/a&gt;\r\n    &lt;/div&gt;\r\n&lt;/div&gt;\r\n'</span>;
+}
+<span class="kwrd">return</span> __p;
+
+}</pre>
+<p>You&#8217;ll see the debugger emitted in-line. It’s very handy for inspect the values of variables, objects, etc. In the example above, I wanted to confirm that the model being passed was in the proper format. </p>
+<p>I’ve used it many times to help debug a template that wasn’t working the way I’d expected.</p>
+<p>This also works well in Chrome’s debugger. </p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1837</post-id>	</item>
+	</channel>
+</rss>

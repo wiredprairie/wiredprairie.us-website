@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: On Twitter, follow wiredprairie.	</title>
+	<atom:link href="/blog/index.php/archives/1121/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/1121</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Tue, 28 Sep 2010 17:07:15 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: Pramod Pallath Vasudevan		</title>
+		<link>/blog/index.php/archives/1121/comment-page-1#comment-3149</link>
+
+		<dc:creator><![CDATA[Pramod Pallath Vasudevan]]></dc:creator>
+		<pubDate>Fri, 24 Sep 2010 13:19:38 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/1121#comment-3149</guid>
+
+					<description><![CDATA[Started following but ur link is a bit way off... it now points to &quot;/blog/www.twitter.com/wiredprairie&quot; :D
+
+
+[fixed!]]]></description>
+			<content:encoded><![CDATA[<p>Started following but ur link is a bit way off&#8230; it now points to &#8220;/blog/www.twitter.com/wiredprairie&#8221; :D</p>
+<p>[fixed!]</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

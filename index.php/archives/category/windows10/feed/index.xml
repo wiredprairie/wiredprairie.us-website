@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>Windows10 &#8211; WiredPrairie</title>
+	<atom:link href="/blog/index.php/archives/category/windows10/feed" rel="self" type="application/rss+xml" />
+	<link>/blog</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Mon, 23 Apr 2018 12:49:02 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+<site xmlns="com-wordpress:feed-additions:1">193486638</site>	<item>
+		<title>How to sign Powershell scripts with self-signed certificates in Windows 10</title>
+		<link>/blog/index.php/archives/2170</link>
+					<comments>/blog/index.php/archives/2170#comments</comments>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Wed, 05 Apr 2017 00:57:32 +0000</pubDate>
+				<category><![CDATA[General]]></category>
+		<category><![CDATA[Windows10]]></category>
+		<guid isPermaLink="false">/blog/?p=2170</guid>
+
+					<description><![CDATA[I wanted to allow all signed Powershell scripts to run on a PC in our house on Windows 10. To do that, I needed a code-signing certificate. Unfortunately, the days of easily obtaining a free code signing certificate seem to have ended. Have no fear! You can create a self-signed certificate if you don&#8217;t expect [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I wanted to allow all signed Powershell scripts to run on a PC in our house on Windows 10. To do that, I needed a code-signing certificate.</p>
+<p>Unfortunately, the days of easily obtaining a free code signing certificate seem to have ended. Have no fear! You can create a self-signed certificate if you don&#8217;t expect to use the certificate anywhere but on the PC where the certificate was created.</p>
+<p>First, I enabled Powershell scripts to run. From an administrative Powershell command prompt:</p>
+<pre>&gt; Set-ExecutionPolicy AllSigned</pre>
+<p>Acknowledge the warning and you&#8217;re ready to execute only signed scripts.</p>
+<p>But, if you create your own script, you&#8217;ll need to sign it. To create the necessary code-signing certificate, you&#8217;ll again use Powershell. From an administrative Powershell command prompt:</p>
+<pre>PS C:\Dev&gt;New-SelfSignedCertificate -CertStoreLocation Cert:\LocalMachine\ -Type CodeSigningCert -Subject "CN=PowershellScripts" -NotAfter (Get-Date).AddYears(10)</pre>
+<p>You can change the Common Name (<strong>CN</strong>) to anything you&#8217;d like, or adjust the expiration date (using <strong>-NotAfter</strong>). I&#8217;ve got the expiration as 10 years from today.</p>
+<p>Once you&#8217;ve got the code signing certificate created as shown above, you&#8217;ll need to move the certificate to the Trusted Root Certification Authorities. If you don&#8217;t, when you sign the powershell script, it still won&#8217;t be allowed to run (and the act of signing will produce an UnknownError).</p>
+<p>Start the certificate manager (press Windows key, type cert, and select &#8220;<strong>Manage computer certificates</strong>&#8220;, or hit Windows+R, then type: &#8220;<strong>certmgr.msc</strong>&#8220;).</p>
+<p><img data-attachment-id="2172" data-permalink="/blog/index.php/archives/2170/dragcertificateintotrusted-2" data-orig-file="/blog/wp-content/uploads/2017/04/DragCertificateIntoTrusted-1.gif" data-orig-size="640,397" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Drag Certificate Into Trusted Root" data-image-description="" data-image-caption="" data-medium-file="/blog/wp-content/uploads/2017/04/DragCertificateIntoTrusted-1-300x186.gif" data-large-file="/blog/wp-content/uploads/2017/04/DragCertificateIntoTrusted-1.gif" loading="lazy" class="aligncenter wp-image-2172 size-full" src="/blog/wp-content/uploads/2017/04/DragCertificateIntoTrusted-1.gif" alt="Drag Certificate Into Trusted Root Certification Authorities" width="640" height="397" /></p>
+<p>Expand Trusted Root Certification Authorities first, then expand Personal &gt; Certificates and select the PowershellScripts Code Signing certificate and then drag it into the Trusted Certificates list as shown above (or you can right click, cut, and then paste it as well).</p>
+<p>Now that you&#8217;ve got a trusted code signing cetificate, you can sign your Powershell scripts.</p>
+<p>If you&#8217;ve only got one code signing certificate (which I presume you do otherwise you wouldn&#8217;t have needed a new one), from an administrative Powershell command prompt first switch directories to where the script you want to sign is located, then do these commands:</p>
+<pre>&gt; $cert = (Get-ChildItem Cert:\LocalMachine\my -CodeSigningCert)[0]</pre>
+<pre>&gt; Set-AuthenticodeSignature .\reconnect-iscsi-targets.ps1 $cert</pre>
+<p>You should then see a table with the <strong>SignerCertificate</strong>, <strong>Status</strong>, and the <strong>Path</strong>. If everything went well, the Status should be <strong>Valid.</strong></p>
+<p><a href="/blog/index.php/archives/2165">Here&#8217;s</a> something interesting you can do with iSCSI targets and PowerShell using a signed PowerShell script.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/blog/index.php/archives/2170/feed</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2170</post-id>	</item>
+		<item>
+		<title>Automatic Reconnection of iSCSI Targets in Windows 10 using PowerShell</title>
+		<link>/blog/index.php/archives/2165</link>
+					<comments>/blog/index.php/archives/2165#comments</comments>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Wed, 05 Apr 2017 00:56:26 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[General]]></category>
+		<category><![CDATA[Windows10]]></category>
+		<category><![CDATA[certificates]]></category>
+		<category><![CDATA[powershell]]></category>
+		<category><![CDATA[windows10]]></category>
+		<guid isPermaLink="false">/blog/?p=2165</guid>
+
+					<description><![CDATA[When my highly recommended Synology Disk Station reboots for a required update (I&#8217;ve got it set to automatically reboot), a shared Windows 10 PC in our house cannot always successfully reconnect to the iSCSI targets without manual intervention. Unfortunately, I haven&#8217;t always noticed which has led to several features of Windows not functioning the way [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>When my highly recommended <strong><a href="http://amzn.to/2n932GE">Synology </a>Disk Station</strong> reboots for a required update (I&#8217;ve got it set to automatically reboot), a shared Windows 10 PC in our house cannot always successfully reconnect to the iSCSI targets without manual intervention. Unfortunately, I haven&#8217;t always noticed which has led to several features of Windows not functioning the way I want (I have mapped the iSCSI drives/disks via Windows and made them into network shares for the other PCs/laptops in our house &#8212; this way I can use Windows bitlocker encryption on the iSCSI drive contents).</p>
+<p>To make the connection more automatic, I created a simple one line PowerShell script that periodically attempts to connect to any disconnected iSCSI targets using the Windows Task Scheduler.</p>
+<p>I saved this into a script file called <strong>reconnect-iscsi-targets.ps1</strong>:</p>
+<pre>Get-IscsiTarget | where ($_.isConnected -eq $false) | Connect-IscsiTarget</pre>
+<p>Then, in the Task Scheduler, I created a new task set to run every 10 minutes daily. The script just gets all iSCSI targets, filters only those that aren&#8217;t connected, and then passes the results to the connection cmdlet.</p>
+<p>For the action, I selected <strong>&#8220;Start a program&#8221;</strong> for program/script, I entered: <strong>&#8220;powershell.exe&#8221;</strong>, and then added the arguments &#8220;<strong>-File</strong>&#8221; and the full path to the file name, like:</p>
+<pre>-File c:\Users\aaron\Documents\reconnect-iscsi-targets.ps1</pre>
+<p>If there are spaces in the path to the PowerShell file, be sure to add quotes around the full path and file name.</p>
+<p><img data-attachment-id="2168" data-permalink="/blog/index.php/archives/2165/2017-04-04_19-07-23" data-orig-file="/blog/wp-content/uploads/2017/04/2017-04-04_19-07-23.png" data-orig-size="460,500" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Action properties for Task" data-image-description="" data-image-caption="" data-medium-file="/blog/wp-content/uploads/2017/04/2017-04-04_19-07-23-276x300.png" data-large-file="/blog/wp-content/uploads/2017/04/2017-04-04_19-07-23.png" loading="lazy" class="aligncenter wp-image-2168 size-full" src="/blog/wp-content/uploads/2017/04/2017-04-04_19-07-23.png" alt="" width="460" height="500" srcset="/blog/wp-content/uploads/2017/04/2017-04-04_19-07-23.png 460w, /blog/wp-content/uploads/2017/04/2017-04-04_19-07-23-276x300.png 276w" sizes="(max-width: 460px) 100vw, 460px" /></p>
+<p>You shouldn&#8217;t need the <strong>start in</strong> option set (leave it empty if you&#8217;d like).</p>
+<p>On the General tab of the task, make sure you&#8217;ve set the &#8220;<strong>Run whether user is logged on or not</strong>&#8221; option and &#8220;<strong>Run with highest privileges</strong>.&#8221;</p>
+<p>Next up &#8212; how to quickly<a href="/blog/index.php/archives/2170"> create a Self-Signed Code-Signing</a> certificate. And, how to actually allow scripts to run!</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/blog/index.php/archives/2165/feed</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2165</post-id>	</item>
+	</channel>
+</rss>

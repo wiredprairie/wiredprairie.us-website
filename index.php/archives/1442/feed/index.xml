@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Nest Thermostat API/Protocol	</title>
+	<atom:link href="/blog/index.php/archives/1442/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/1442</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Wed, 29 Jun 2022 16:00:40 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: Curt Hostetter		</title>
+		<link>/blog/index.php/archives/1442/comment-page-1#comment-4808</link>
+
+		<dc:creator><![CDATA[Curt Hostetter]]></dc:creator>
+		<pubDate>Mon, 27 Aug 2012 20:58:20 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1442#comment-4808</guid>
+
+					<description><![CDATA[@Suman: If you are making a request via JavaScript, then yes, you won&#039;t be able to do it. Your browser has &quot;origin&quot; restrictions and the Nest servers  do too. Meaning, you can&#039;t make a cross-site request.
+
+If you are making the request with a server side language, the request are fairly straight to make. I&#039;ve been working on a PHP library the last few days to encapsulate some of the requests.]]></description>
+			<content:encoded><![CDATA[<p>@Suman: If you are making a request via JavaScript, then yes, you won&#8217;t be able to do it. Your browser has &#8220;origin&#8221; restrictions and the Nest servers  do too. Meaning, you can&#8217;t make a cross-site request.</p>
+<p>If you are making the request with a server side language, the request are fairly straight to make. I&#8217;ve been working on a PHP library the last few days to encapsulate some of the requests.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Suman		</title>
+		<link>/blog/index.php/archives/1442/comment-page-1#comment-4793</link>
+
+		<dc:creator><![CDATA[Suman]]></dc:creator>
+		<pubDate>Wed, 22 Aug 2012 20:32:12 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1442#comment-4793</guid>
+
+					<description><![CDATA[You&#039;ve got the auth spot-on, btw. You can see the headers when you use Chrome to make the request. The post has username/password/next/ where token name is some token that is passed on the initial request to the page.]]></description>
+			<content:encoded><![CDATA[<p>You&#8217;ve got the auth spot-on, btw. You can see the headers when you use Chrome to make the request. The post has username/password/next/ where token name is some token that is passed on the initial request to the page.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Suman		</title>
+		<link>/blog/index.php/archives/1442/comment-page-1#comment-4792</link>
+
+		<dc:creator><![CDATA[Suman]]></dc:creator>
+		<pubDate>Wed, 22 Aug 2012 20:30:47 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1442#comment-4792</guid>
+
+					<description><![CDATA[Sorry, by IP range, I mean they are probably doing IP filtering, but come to think of it, that can&#039;t be right since I&#039;m able to reach the web site.
+
+I&#039;ve even written a utility to read the initial hit and add all the sent cookies to the request. I&#039;m still unable to make the request work.
+
+Maybe someone could try Fiddler to test?]]></description>
+			<content:encoded><![CDATA[<p>Sorry, by IP range, I mean they are probably doing IP filtering, but come to think of it, that can&#8217;t be right since I&#8217;m able to reach the web site.</p>
+<p>I&#8217;ve even written a utility to read the initial hit and add all the sent cookies to the request. I&#8217;m still unable to make the request work.</p>
+<p>Maybe someone could try Fiddler to test?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/1442/comment-page-1#comment-4785</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Tue, 21 Aug 2012 20:18:58 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1442#comment-4785</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1442/comment-page-1#comment-4784&quot;&gt;Suman&lt;/a&gt;.
+
+I don&#039;t understand what you mean? Their &quot;IP Range&quot;? 
+
+It&#039;s possible they&#039;ve changed the protocol or authentication since I wrote this up. I was just doing some stuff recently with a node.js based API that I was working on. It was working, but I admit I was rethinking auth.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/1442/comment-page-1#comment-4784">Suman</a>.</p>
+<p>I don&#8217;t understand what you mean? Their &#8220;IP Range&#8221;? </p>
+<p>It&#8217;s possible they&#8217;ve changed the protocol or authentication since I wrote this up. I was just doing some stuff recently with a node.js based API that I was working on. It was working, but I admit I was rethinking auth.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Suman		</title>
+		<link>/blog/index.php/archives/1442/comment-page-1#comment-4784</link>
+
+		<dc:creator><![CDATA[Suman]]></dc:creator>
+		<pubDate>Tue, 21 Aug 2012 20:10:36 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1442#comment-4784</guid>
+
+					<description><![CDATA[I think they block anything that&#039;s not from their IP range, unfortunately, so you can&#039;t really connect unless you packet sniff from your host device. I&#039;ve tried to connect and although I&#039;ve set up all the right stuff, it won&#039;t connect. :(]]></description>
+			<content:encoded><![CDATA[<p>I think they block anything that&#8217;s not from their IP range, unfortunately, so you can&#8217;t really connect unless you packet sniff from your host device. I&#8217;ve tried to connect and although I&#8217;ve set up all the right stuff, it won&#8217;t connect. :(</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Suman		</title>
+		<link>/blog/index.php/archives/1442/comment-page-1#comment-4783</link>
+
+		<dc:creator><![CDATA[Suman]]></dc:creator>
+		<pubDate>Tue, 21 Aug 2012 16:45:12 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1442#comment-4783</guid>
+
+					<description><![CDATA[Awesome! I was looking for this detail. You rock!]]></description>
+			<content:encoded><![CDATA[<p>Awesome! I was looking for this detail. You rock!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: John Smith		</title>
+		<link>/blog/index.php/archives/1442/comment-page-1#comment-4646</link>
+
+		<dc:creator><![CDATA[John Smith]]></dc:creator>
+		<pubDate>Tue, 03 Jul 2012 14:47:51 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1442#comment-4646</guid>
+
+					<description><![CDATA[The 1832 degrees F is just 1000 degrees celcius. At least it shows that high limit was not a random number.]]></description>
+			<content:encoded><![CDATA[<p>The 1832 degrees F is just 1000 degrees celcius. At least it shows that high limit was not a random number.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/1442/comment-page-1#comment-3882</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Fri, 13 Jan 2012 01:50:54 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1442#comment-3882</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1442/comment-page-1#comment-3881&quot;&gt;Randal&lt;/a&gt;.
+
+@Randal - thanks for the link. One thermostat was definitely defective as it read incorrectly in two locations in our house and consistently read much higher than 2 proven thermometers (4-6 degrees F warmer). It would report 74F when it was impossible that it was 74F (as it&#039;s a cool enough winter that our house is never that warm and the thermostat was set to 68F). I certainly can believe that there&#039;s some inaccuracy in other thermostats.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/1442/comment-page-1#comment-3881">Randal</a>.</p>
+<p>@Randal &#8211; thanks for the link. One thermostat was definitely defective as it read incorrectly in two locations in our house and consistently read much higher than 2 proven thermometers (4-6 degrees F warmer). It would report 74F when it was impossible that it was 74F (as it&#8217;s a cool enough winter that our house is never that warm and the thermostat was set to 68F). I certainly can believe that there&#8217;s some inaccuracy in other thermostats.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Randal		</title>
+		<link>/blog/index.php/archives/1442/comment-page-1#comment-3881</link>
+
+		<dc:creator><![CDATA[Randal]]></dc:creator>
+		<pubDate>Fri, 13 Jan 2012 01:37:54 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1442#comment-3881</guid>
+
+					<description><![CDATA[Not that this directly relates to your case, Aaron, it looks like your issue was isolated to your Nest thermostat. But I found an article from another blog that might explain some, not all, of these temperature readings you&#039;re seeing. http://davidwallen.net/2012/01/nest-learning-thermostat-initial-data/]]></description>
+			<content:encoded><![CDATA[<p>Not that this directly relates to your case, Aaron, it looks like your issue was isolated to your Nest thermostat. But I found an article from another blog that might explain some, not all, of these temperature readings you&#8217;re seeing. <a href="http://davidwallen.net/2012/01/nest-learning-thermostat-initial-data/" rel="nofollow ugc">http://davidwallen.net/2012/01/nest-learning-thermostat-initial-data/</a></p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/1442/comment-page-1#comment-3857</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Tue, 10 Jan 2012 11:47:13 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1442#comment-3857</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1442/comment-page-1#comment-3856&quot;&gt;Brian Stormont&lt;/a&gt;.
+
+Interesting find.  From a quick glance on my iPad, it looks like low level Linux modules.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/1442/comment-page-1#comment-3856">Brian Stormont</a>.</p>
+<p>Interesting find.  From a quick glance on my iPad, it looks like low level Linux modules.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

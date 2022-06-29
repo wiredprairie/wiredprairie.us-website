@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Remote Desktop &#8212; Does not exist?	</title>
+	<atom:link href="/blog/index.php/archives/17/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/17</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Sat, 05 Apr 2008 19:35:44 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/17/comment-page-1#comment-2</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sat, 05 Apr 2008 19:35:44 +0000</pubDate>
+		<guid isPermaLink="false">/blog/post.aspx?id=82cce7e0-7a8b-43e0-bdd4-b016a25bca20#comment-2</guid>
+
+					<description><![CDATA[Just starting things off with a comment -- otherwise the theme gets funky. :)]]></description>
+			<content:encoded><![CDATA[<p>Just starting things off with a comment &#8212; otherwise the theme gets funky. :)</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

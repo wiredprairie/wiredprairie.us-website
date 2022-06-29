@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Impressive Silverlight game engine? Or something else entirely&#8230;.?	</title>
+	<atom:link href="/blog/index.php/archives/864/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/864</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Tue, 01 Dec 2009 13:13:37 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: alamiye@163.com		</title>
+		<link>/blog/index.php/archives/864/comment-page-1#comment-2846</link>
+
+		<dc:creator><![CDATA[alamiye@163.com]]></dc:creator>
+		<pubDate>Tue, 01 Dec 2009 06:31:14 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/864#comment-2846</guid>
+
+					<description><![CDATA[These buttons from left to right are: the number of the enemy and restore life and magic (resurrection), clothing, weapons, magic level, right button magic, sound
+Right button now only one in the IE browser that can be supported]]></description>
+			<content:encoded><![CDATA[<p>These buttons from left to right are: the number of the enemy and restore life and magic (resurrection), clothing, weapons, magic level, right button magic, sound<br />
+Right button now only one in the IE browser that can be supported</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Ben Vanik		</title>
+		<link>/blog/index.php/archives/864/comment-page-1#comment-2845</link>
+
+		<dc:creator><![CDATA[Ben Vanik]]></dc:creator>
+		<pubDate>Mon, 30 Nov 2009 17:00:08 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/864#comment-2845</guid>
+
+					<description><![CDATA[I love the totally ripped Assassin&#039;s Creed background :)
+http://images.fanpop.com/images/image_uploads/Assassin-s-Creed-assassins-creed-467021_1024_768.jpg]]></description>
+			<content:encoded><![CDATA[<p>I love the totally ripped Assassin&#8217;s Creed background :)<br />
+<a href="http://images.fanpop.com/images/image_uploads/Assassin-s-Creed-assassins-creed-467021_1024_768.jpg" rel="nofollow ugc">http://images.fanpop.com/images/image_uploads/Assassin-s-Creed-assassins-creed-467021_1024_768.jpg</a></p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

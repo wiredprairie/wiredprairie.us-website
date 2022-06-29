@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Disabling Apple Software Update on Vista	</title>
+	<atom:link href="/blog/index.php/archives/111/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/111</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Sat, 23 May 2009 06:36:45 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: Anonymous		</title>
+		<link>/blog/index.php/archives/111/comment-page-1#comment-2530</link>
+
+		<dc:creator><![CDATA[Anonymous]]></dc:creator>
+		<pubDate>Sat, 23 May 2009 06:36:45 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/111#comment-2530</guid>
+
+					<description><![CDATA[Freaking awesome! Could not figure it out before, I thought it disabled through startup or services.]]></description>
+			<content:encoded><![CDATA[<p>Freaking awesome! Could not figure it out before, I thought it disabled through startup or services.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: WiredPrairie - Apple fails to listen to Safari &#34;Update&#34; on Windows issue&#8230;		</title>
+		<link>/blog/index.php/archives/111/comment-page-1#comment-22</link>
+
+		<dc:creator><![CDATA[WiredPrairie - Apple fails to listen to Safari &#34;Update&#34; on Windows issue&#8230;]]></dc:creator>
+		<pubDate>Sat, 19 Apr 2008 13:34:46 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/111#comment-22</guid>
+
+					<description><![CDATA[[...] recall my complaint though included the fact that Apple was &#034;pre-selecting&#034; Safari for download, rather than [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] recall my complaint though included the fact that Apple was &quot;pre-selecting&quot; Safari for download, rather than [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Stu Smith		</title>
+		<link>/blog/index.php/archives/111/comment-page-1#comment-9</link>
+
+		<dc:creator><![CDATA[Stu Smith]]></dc:creator>
+		<pubDate>Fri, 11 Apr 2008 09:47:17 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/111#comment-9</guid>
+
+					<description><![CDATA[Ahhhh, thankyou! This one has been bugging me for a while, but what with one thing and another I simply haven&#039;t had the time to properly investigate where it was getting triggered from.
+
+I think it&#039;s a good indication of the philosophical differences between the Apple and PC worlds - on the Apple side, Apple &quot;owns&quot; your computer and looks after it for you, while on the PC side, you own it, but woe betide if you forget some patches. Neither side is better than the other (just different) but culture shock ensues whenever someone crosses worlds.]]></description>
+			<content:encoded><![CDATA[<p>Ahhhh, thankyou! This one has been bugging me for a while, but what with one thing and another I simply haven&#8217;t had the time to properly investigate where it was getting triggered from.</p>
+<p>I think it&#8217;s a good indication of the philosophical differences between the Apple and PC worlds &#8211; on the Apple side, Apple &#8220;owns&#8221; your computer and looks after it for you, while on the PC side, you own it, but woe betide if you forget some patches. Neither side is better than the other (just different) but culture shock ensues whenever someone crosses worlds.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

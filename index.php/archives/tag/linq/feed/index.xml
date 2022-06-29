@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>LINQ &#8211; WiredPrairie</title>
+	<atom:link href="/blog/index.php/archives/tag/linq/feed" rel="self" type="application/rss+xml" />
+	<link>/blog</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Sat, 26 Jan 2013 20:39:01 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+<site xmlns="com-wordpress:feed-additions:1">193486638</site>	<item>
+		<title>How to rewrite a MongoDB C# LINQ with a Projection Requirement using a MongoCursor</title>
+		<link>/blog/index.php/archives/1835</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sat, 26 Jan 2013 22:56:00 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[C#]]></category>
+		<category><![CDATA[LINQ]]></category>
+		<category><![CDATA[MongoDB]]></category>
+		<guid isPermaLink="false">/blog/?p=1835</guid>
+
+					<description><![CDATA[The LINQ Provider for MongoDB does not currently take into account data projections efficiently when returning data. This could mean that you’re unnecessarily returning more data from the database than is needed. So, I’m going to show you the pattern I applied as a replacement for the LINQ queries when I need to use a [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p align="left">The LINQ Provider for MongoDB does not <a href="https://jira.mongodb.org/browse/CSHARP-456">currently</a> take into account data projections efficiently when returning data. This could mean that you’re unnecessarily returning more data from the database than is needed. </p>
+<p>So, I’m going to show you the pattern I applied as a replacement for the LINQ queries when I need to use a projection.</p>
+<p>Given the following simple LINQ statement:</p>
+<pre class="csharpcode">var query = 
+    (from r <span class="kwrd">in</span> DataLayer.Database
+         .GetCollection&lt;Research&gt;()
+         .AsQueryable&lt;Research&gt;()
+        <span class="kwrd">where</span> !r.Deleted
+        select <span class="kwrd">new</span>
+        {
+            Id = r.Id,
+            Title = r.Title,
+            Created = r.Created
+        }).Skip(PageSize * page).Take(PageSize);</pre>
+<p><style type="text/css">
+.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }</style>
+<p>it can be converted to a MongoCursor style search like this:</p>
+<pre class="csharpcode">var cursor = DataLayer.Database.GetCollection&lt;Research&gt;()
+    .FindAs&lt;Research&gt;(Query&lt;Research&gt;.NE(r =&gt; r.Deleted, <span class="kwrd">true</span>))
+        .SetFields(
+            Fields&lt;Research&gt;.Include(
+                r =&gt; r.Id, 
+                r =&gt; r.Title, 
+                r =&gt; r.Created))
+        .SetLimit(PageSize)
+        .SetSkip(PageSize * page);           </pre>
+<p><style type="text/css">
+.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }</style>
+<p>I’ve attempted to format it in a similar way mostly for my own sanity. As you see, both queries first get access to the database collection. But, instead of using <strong>AsQueryable&lt;T&gt;</strong>, you’ll use the <strong>FindAs&lt;T&gt;</strong> method. The query is more verbose in the second example, although not overly so. I chose to keep it strongly typed by using the generic version <strong>Query&lt;Research&gt;</strong>. By doing so, it meant that I could use an Expression to set the field/property that was being queried, rather than rely on a string (I could have just passed “Deleted” as a string in the code). </p>
+<p>By strongly typing the parameters in this way, it meant that the compile process can catch things like type mismatches (verifying that the value being compared is a Boolean for example as is the Deleted property).</p>
+<p>Secondly, and this addresses the requirement of a <a href="http://docs.mongodb.org/manual/core/read-operations/#result-projections">result projection</a>, I’ve included just those fields that are required by the UI rather than all of the fields in the document. One of the fields is potentially quite long (up to 1MB of text), and in this case, unnecessary in a summary list display in my web application. Here, I used the <strong>SetFields </strong>method of the MongoCursor.</p>
+<p>The C# driver includes a static class called <strong>Fields</strong> (in a generic and non-generic form) which can be used to express the set of fields to be included/excluded. I’ll point out that there is an option to just pass in a list of strings to <strong>SetFields</strong>, but it’s not strongly typed. So again, no compile-time checking that I’ve got the property names correct. I’m going for safety here, so I chose the strongly-typed generic implementation of <strong>Fields&lt;Research&gt;</strong>. Then, using the <strong>Expression</strong> syntax again, I’ve selected the fields I needed as a parameter list.</p>
+<p>Finally, I added some code to limit the result size and set the skip equivalent to the original LINQ query. </p>
+<p>There are a number of other Query methods that you can use to build more complex operations.</p>
+<p>For example:</p>
+<pre class="csharpcode">var q = Query.And(
+    Query&lt;Research&gt;.Exists(r =&gt; r.Title), 
+    Query&lt;Research&gt;.Matches(
+        r =&gt; r.Title, BsonRegularExpression.Create(<span class="kwrd">new</span> Regex(<span class="str">&quot;^R&quot;</span>))));</pre>
+<p><style type="text/css">
+.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }</style>
+<p>The above maps to the following MongoDB query:</p>
+<pre class="csharpcode">{ <span class="str">&quot;$and&quot;</span> : [{ <span class="str">&quot;Title&quot;</span> : { <span class="str">&quot;$exists&quot;</span> : <span class="kwrd">true</span> } }, { <span class="str">&quot;Title&quot;</span> : /^R/ }] }</pre>
+<p>Title field exists and the Title field starts with an uppercase “R”.</p>
+<p>While the Query style syntax is more verbose than the equivalent LINQ statement, the result still is expressive and very readable and maintainable.</p>
+<p>FYI: If there’s an index on Title, then the /^R/ syntax returns the results the most <a href="http://docs.mongodb.org/manual/reference/operator/regex/#_S_regex">efficiently</a> in MongoDB (as it stops searching after the first character).</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1835</post-id>	</item>
+		<item>
+		<title>How to view the MongoDB Query when using the C# LINQ Provider</title>
+		<link>/blog/index.php/archives/1833</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sat, 26 Jan 2013 17:04:46 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[C#]]></category>
+		<category><![CDATA[IQueryable]]></category>
+		<category><![CDATA[LINQ]]></category>
+		<category><![CDATA[MongoDB]]></category>
+		<guid isPermaLink="false">/blog/?p=1833</guid>
+
+					<description><![CDATA[If you’re using the Official MongoDB C# Driver from 10gen, you may want to occasionally verify that the generated query matches your LINQ query (or at least that it’s building something efficient). Take for example this query: var query = (from r in DataLayer.Database.GetCollection&#60;Research&#62;().AsQueryable&#60;Research&#62;() where !r.Deleted select new { Id = r.Id, Title = r.Title, [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>If you’re using the <a href="http://www.mongodb.org/display/DOCS/CSharp+Language+Center">Official MongoDB C# Driver</a> from 10gen, you may want to occasionally verify that the generated query matches your LINQ query (or at least that it’s building something efficient). </p>
+<p>Take for example this query:</p>
+<pre class="csharpcode">var query = 
+    (from r <span class="kwrd">in</span> DataLayer.Database.GetCollection&lt;Research&gt;().AsQueryable&lt;Research&gt;()
+        <span class="kwrd">where</span> !r.Deleted
+        select <span class="kwrd">new</span>
+        {
+            Id = r.Id,
+            Title = r.Title,
+            Created = r.Created
+        }).Skip(PageSize * page).Take(PageSize);
+
+query.DebugWriteMongoQueryText();</pre>
+<p><style type="text/css">
+.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }</style>
+<p>I wanted to verify that the query was checking the Deleted property, and see if the projection was considered as part of the query, so a few lines of code later …</p>
+<pre class="csharpcode"><span class="kwrd">public</span> <span class="kwrd">static</span> <span class="kwrd">string</span> ToMongoQueryText&lt;TQueryable&gt;(<span class="kwrd">this</span> IQueryable&lt;TQueryable&gt; query)
+{
+    <span class="kwrd">return</span> (query <span class="kwrd">as</span> MongoQueryable&lt;TQueryable&gt;).GetMongoQuery().ToString();            
+}
+
+[Conditional(<span class="str">&quot;DEBUG&quot;</span>)]
+<span class="kwrd">public</span> <span class="kwrd">static</span> <span class="kwrd">void</span> DebugWriteMongoQueryText&lt;TQuerable&gt;(<span class="kwrd">this</span> IQueryable&lt;TQuerable&gt; query)
+{
+    Debug.WriteLine(<span class="str">&quot;QUERY: &quot;</span> + query.ToMongoQueryText());
+}</pre>
+<p><style type="text/css">
+.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }</style>
+<p>I added two extension methods to IQueryable. As the return type for the query in my sample is actually an anonymous type, it wasn’t something I could easily type in the Immediate Window in Visual Studio for example. </p>
+<p><a href="/blog/wp-content/uploads/2013/01/image1.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; border-left: 0px; display: block; padding-right: 0px; margin-right: auto" border="0" alt="&lt;&gt;f__AnonymousType2&lt;string,string,System.DateTime&gt;" src="/blog/wp-content/uploads/2013/01/image_thumb1.png" width="514" height="95" /></a></p>
+<p>No thanks&#160; &lt;&gt;f__AnonymousType2&lt;string,string,System.DateTime&gt;.</p>
+<p>I added the <a href="http://msdn.microsoft.com/en-us/library/system.diagnostics.conditionalattribute(v=vs.110).aspx">Conditional</a> Attribute so that the code would only execute in a Debug build of my application.</p>
+<pre class="csharpcode">query.DebugWriteMongoQueryText();</pre>
+<p>The output of the query above was:</p>
+<pre class="csharpcode">QUERY: { <span class="str">&quot;Deleted&quot;</span> : { <span class="str">&quot;$ne&quot;</span> : <span class="kwrd">true</span> } }</pre>
+<p><style type="text/css">
+.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }</style>
+<p>As you’ll see, the anonymous projection wasn’t considered. Unfortunately, that’s a <a href="https://jira.mongodb.org/browse/CSHARP-456">known issue</a> with the current driver. This mattered in my above example, as some of the fields could contain a large amount of data that wasn’t needed by the current display. </p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1833</post-id>	</item>
+	</channel>
+</rss>

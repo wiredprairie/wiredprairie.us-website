@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Where&#8217;s the Ignore Option Apple?	</title>
+	<atom:link href="/blog/index.php/archives/55/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/55</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Thu, 10 Apr 2008 12:46:37 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: Daniel		</title>
+		<link>/blog/index.php/archives/55/comment-page-1#comment-8</link>
+
+		<dc:creator><![CDATA[Daniel]]></dc:creator>
+		<pubDate>Thu, 10 Apr 2008 12:46:37 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/55#comment-8</guid>
+
+					<description><![CDATA[I think Microsoft, Google, Adobe(?) do the very same thing. Yet, nobody complains? Anyway, I think you&#039;re absolutely right that something like that requires opt-in.
+
+I don&#039;t have a Windows computer here right now, but I think I read that option is somewhere in the menubar of the auto updater.]]></description>
+			<content:encoded><![CDATA[<p>I think Microsoft, Google, Adobe(?) do the very same thing. Yet, nobody complains? Anyway, I think you&#8217;re absolutely right that something like that requires opt-in.</p>
+<p>I don&#8217;t have a Windows computer here right now, but I think I read that option is somewhere in the menubar of the auto updater.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

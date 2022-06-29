@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>Sqlite &#8211; WiredPrairie</title>
+	<atom:link href="/blog/index.php/archives/tag/sqlite/feed" rel="self" type="application/rss+xml" />
+	<link>/blog</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Wed, 29 Jun 2022 15:26:41 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+<site xmlns="com-wordpress:feed-additions:1">193486638</site>	<item>
+		<title>Using Sqlite and C# to determine if a specified table exists</title>
+		<link>/blog/index.php/archives/1926</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Tue, 13 Aug 2013 01:18:27 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[C#]]></category>
+		<category><![CDATA[Sqlite]]></category>
+		<guid isPermaLink="false">/blog/?p=1926</guid>
+
+					<description><![CDATA[I had need of a bit of code in C# to determine whether several tables in a Sqlite database had been created, so … public static class DbExtensions { /// &#60;summary&#62; /// Determines whether the table exists /// &#60;/summary&#62; /// &#60;param name="connection"&#62;Existing, opened, database connection&#60;/param&#62; /// &#60;param name="tableName"&#62;The name of the table to test for.&#60;/param&#62; [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>I had need of a bit of code in C# to determine whether several tables in a Sqlite database had been created, so …</p>
+
+
+
+<pre class="wp-block-preformatted"><span class="kwrd">public</span> <span class="kwrd">static</span> <span class="kwrd">class</span> DbExtensions
+{
+    <span class="rem">/// &lt;summary&gt;</span>
+    <span class="rem">/// Determines whether the table exists</span>
+    <span class="rem">/// &lt;/summary&gt;</span>
+    <span class="rem">/// &lt;param name="connection"&gt;Existing, opened, database connection&lt;/param&gt;</span>
+    <span class="rem">/// &lt;param name="tableName"&gt;The name of the table to test for.&lt;/param&gt;</span>
+    <span class="rem">/// &lt;returns&gt;True if table exists.&lt;/returns&gt;</span>
+    <span class="kwrd">public</span> <span class="kwrd">static</span> <span class="kwrd">bool</span> TableExists(<span class="kwrd">this</span> IDbConnection connection, <span class="kwrd">string</span> tableName)
+    {
+        Debug.Assert(connection != <span class="kwrd">null</span>);
+        Debug.Assert(!<span class="kwrd">string</span>.IsNullOrWhiteSpace(tableName));
+
+        var cmd = connection.CreateCommand();
+        cmd.CommandText = <span class="str">@"SELECT COUNT(*) FROM sqlite_master WHERE <a href="mailto:name=@TableName&quot;;">name=@TableName"</a></span>;
+        var p1 = cmd.CreateParameter();
+        p1.DbType = DbType.String;
+        p1.ParameterName = <span class="str">"TableName"</span>;
+        p1.Value = tableName;
+        cmd.Parameters.Add(p1);
+
+        var result = cmd.ExecuteScalar();
+        <span class="kwrd">return</span> ((<span class="kwrd">long</span>)result) == 1;
+    }
+}</pre>
+
+
+
+<p></p>
+
+
+
+<p>Nothing too complex … only determining that the list of tables is stored in <strong>a </strong>system table named <strong>sqlite_master</strong>. If you want to find all indexes that have dependencies on a specific table, you can instead use the column <strong>tbl_name</strong>.</p>
+
+
+
+<p>If you’re using Dapper and the DapperExtensions, you might find this useful:</p>
+
+
+
+<pre class="wp-block-preformatted">_connection = <span class="kwrd">new</span> System.Data.SQLite.SQLiteConnection();
+DapperExtensions.DapperExtensions.SqlDialect = <span class="kwrd">new</span> DapperExtensions.Sql.SqliteDialect();
+_connection.ConnectionString = <span class="kwrd">new</span> DbConnectionStringBuilder()
+{
+    {<span class="str">"Data Source"</span>, <span class="str">"thumbnailer.db"</span>},
+    {<span class="str">"Version"</span>, <span class="str">"3"</span>},
+    {<span class="str">"FailIfMissing"</span>, <span class="str">"False"</span>},
+}.ConnectionString;</pre>
+
+
+
+<p></p>
+
+
+
+<p>First, it creates the SQLite connection (<a href="http://www.nuget.org/packages/System.Data.SQLite" target="_blank" rel="noopener">nuget</a>) and then configures the DapperExtensions to use the SqliteDialect. What that means is that the extensions will generate SQL that actually works! :) Finally, in my case, I wanted the DB to be created if it didn’t exist, so I set <strong>FailIfMissing</strong> to <strong>False</strong>.</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1926</post-id>	</item>
+	</channel>
+</rss>

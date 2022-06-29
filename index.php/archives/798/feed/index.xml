@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: An innovative kitchen scale &#8230; how cool!	</title>
+	<atom:link href="/blog/index.php/archives/798/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/798</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Wed, 08 Jul 2009 12:32:40 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: Amelie Rencontres		</title>
+		<link>/blog/index.php/archives/798/comment-page-1#comment-2690</link>
+
+		<dc:creator><![CDATA[Amelie Rencontres]]></dc:creator>
+		<pubDate>Wed, 08 Jul 2009 12:32:40 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/798#comment-2690</guid>
+
+					<description><![CDATA[Like a good wife I love to cook, because I make my husband happy and that is all I need :)) sometimes I have troubles with the quantity and this innovative scale will help me:)) it looks great :)]]></description>
+			<content:encoded><![CDATA[<p>Like a good wife I love to cook, because I make my husband happy and that is all I need :)) sometimes I have troubles with the quantity and this innovative scale will help me:)) it looks great :)</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

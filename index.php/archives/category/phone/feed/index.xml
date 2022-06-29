@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>Phone &#8211; WiredPrairie</title>
+	<atom:link href="/blog/index.php/archives/category/phone/feed" rel="self" type="application/rss+xml" />
+	<link>/blog</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Tue, 27 Feb 2018 01:49:44 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+<site xmlns="com-wordpress:feed-additions:1">193486638</site>	<item>
+		<title>Flutter Demo application linking to BoardGameGeek.Com&#8217;s Hot Game List</title>
+		<link>/blog/index.php/archives/2224</link>
+					<comments>/blog/index.php/archives/2224#comments</comments>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Tue, 27 Feb 2018 01:49:12 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[General]]></category>
+		<category><![CDATA[Mobile]]></category>
+		<category><![CDATA[Phone]]></category>
+		<guid isPermaLink="false">/blog/?p=2224</guid>
+
+					<description><![CDATA[I&#8217;ve built a slightly more interesting application using Flutter.  Using an XML feed from BoardGameGeek&#8217;s API, the application displays a list of the current hot games complete with thumbnail images. Here&#8216;s the code. I used a standard Flutter app template and also added a few packages to the project. I&#8217;ve coded a substantial amount of [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;ve built a slightly more interesting application using Flutter.  Using an XML feed from <a href="https://boardgamegeek.com/wiki/page/BGG_XML_API2">BoardGameGeek&#8217;s API</a>, the application displays a list of the current hot games complete with thumbnail images.</p>
+<p><a href="/blog/wp-content/uploads/2018/02/2018-02-25-15_41_40-Android-Emulator-Nexus_5X_API_26_-_Flutter_5554.png"><img data-attachment-id="2225" data-permalink="/blog/index.php/archives/2224/2018-02-25-15_41_40-android-emulator-nexus_5x_api_26_-_flutter_5554" data-orig-file="/blog/wp-content/uploads/2018/02/2018-02-25-15_41_40-Android-Emulator-Nexus_5X_API_26_-_Flutter_5554.png" data-orig-size="324,650" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Android Screen" data-image-description="" data-image-caption="" data-medium-file="/blog/wp-content/uploads/2018/02/2018-02-25-15_41_40-Android-Emulator-Nexus_5X_API_26_-_Flutter_5554-150x300.png" data-large-file="/blog/wp-content/uploads/2018/02/2018-02-25-15_41_40-Android-Emulator-Nexus_5X_API_26_-_Flutter_5554.png" loading="lazy" class="aligncenter wp-image-2225 size-full" src="/blog/wp-content/uploads/2018/02/2018-02-25-15_41_40-Android-Emulator-Nexus_5X_API_26_-_Flutter_5554.png" alt="Android Screen" width="324" height="650" srcset="/blog/wp-content/uploads/2018/02/2018-02-25-15_41_40-Android-Emulator-Nexus_5X_API_26_-_Flutter_5554.png 324w, /blog/wp-content/uploads/2018/02/2018-02-25-15_41_40-Android-Emulator-Nexus_5X_API_26_-_Flutter_5554-150x300.png 150w" sizes="(max-width: 324px) 100vw, 324px" /></a></p>
+<p><a href="https://github.com/wiredprairie/flutter_app1">Here</a>&#8216;s the code. I used a standard Flutter app template and also added a few <a href="https://github.com/wiredprairie/flutter_app1/blob/master/pubspec.yaml">packages</a> to the project.</p>
+<p>I&#8217;ve coded a substantial amount of Windows Presentation Foundation (WPF) and Silverlight code over the years. One of the concerns that often came up was the UI tree &#8230;, the more complex it was, the slower the app often was without lots of tricks. Using the new inspector for Flutter apps, I selected one of the images in the UI. Needless to say, there are a <strong>few</strong> objects created to represent the UI tree. In fact, I had trouble capturing the image for this blog post. :)</p>
+<p><a href="/blog/wp-content/uploads/2018/02/2018-02-25-15_57_02-Flutter-Inspector.png"><br />
+<img data-attachment-id="2226" data-permalink="/blog/index.php/archives/2224/2018-02-25-15_57_02-flutter-inspector" data-orig-file="/blog/wp-content/uploads/2018/02/2018-02-25-15_57_02-Flutter-Inspector.png" data-orig-size="2014,2024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="2018-02-25 15_57_02-Flutter Inspector" data-image-description="" data-image-caption="" data-medium-file="/blog/wp-content/uploads/2018/02/2018-02-25-15_57_02-Flutter-Inspector-300x300.png" data-large-file="/blog/wp-content/uploads/2018/02/2018-02-25-15_57_02-Flutter-Inspector-1019x1024.png" loading="lazy" class="aligncenter size-medium wp-image-2226" src="/blog/wp-content/uploads/2018/02/2018-02-25-15_57_02-Flutter-Inspector-300x300.png" alt="Flutter Nesting" width="300" height="300" srcset="/blog/wp-content/uploads/2018/02/2018-02-25-15_57_02-Flutter-Inspector-300x300.png 300w, /blog/wp-content/uploads/2018/02/2018-02-25-15_57_02-Flutter-Inspector-150x150.png 150w, /blog/wp-content/uploads/2018/02/2018-02-25-15_57_02-Flutter-Inspector-1019x1024.png 1019w, /blog/wp-content/uploads/2018/02/2018-02-25-15_57_02-Flutter-Inspector.png 2014w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>I don&#8217;t have evidence that this generally will be a performance problem. Maybe with relatively simple mobile applications, a deep rich object based UI hierarchy won&#8217;t affect performance as much as it might in a desktop application of reasonable complexity. Regardless, it&#8217;s worth considering as you build a UI.</p>
+<p>Back to what I built. When a user taps on a board game in the list, I&#8217;ve wired the code to call the <strong>_showGameItem</strong> below. I appreciate that there&#8217;s an easy way to navigate to a new page on the stack and show a UI, all within a single function. Of course, I could have split it into multiple builder functions if needed.</p>
+<p>View the code on <a href="https://gist.github.com/wiredprairie/c0af9bb18c1460b6cfb4c61386e8dfda">Gist</a>.</p>
+<p>To register an event callback for the <strong>onTap</strong>, I&#8217;d tried finding a Widget that exposed it directly. I&#8217;m accustomed to elements having events (often bubbling events) that would have exposed something like <strong>onTap</strong>. However, with the exception of specialized widgets like Buttons for example, it&#8217;s not exposed on most Widgets (even those that have UI). So, at the outer layer of the items being shown in the <strong>ListView</strong>, I used a <strong>GestureDetector </strong>to capture the tap event:</p>
+<p>View the code on <a href="https://gist.github.com/wiredprairie/990d80ecf69700a2cd430032de29db28">Gist</a>.</p>
+<p>I would have preferred that the <strong>Container</strong> to have the event available. Maybe it&#8217;s not as <em>pure, </em>but, meh. I&#8217;d like to reduce the noise of building a UI and adding yet another layer just to capture an event is a distraction.</p>
+<blockquote><p>Architectural elegance does not always lead to a framework that is easy or friendly.</p></blockquote>
+<p>While I wasn&#8217;t really concerned about performance of my application or the possible impact from hitting the BoardGameGeek API a few times, I used application storage to cache a copy of the XML data that&#8217;s retrieved from BoardGameGeek just to get some experience with the APIs. Further, I added code to store the next time the file can be updated to the SharedPreferences object instance (to prevent it from being updated too frequently). I liked the simple exception handling in Dart as it&#8217;s relatively low impact to handle a specific exception type without caring about the details by using the <strong>on</strong> clause (just by dropping the <strong>catch(e)</strong>).</p>
+<p>View the code on <a href="https://gist.github.com/wiredprairie/dde9e1dde91fc35de9f1d42e37903cf7">Gist</a>.</p>
+<p>I noticed that the exception handler can specify one or two parameters. The first is always the exception and the second is the stack trace (<a href="https://api.dartlang.org/stable/dart-core/StackTrace-class.html">StackTrace</a>).  I&#8217;m not sure why the stack trace isn&#8217;t part of the exception object though.</p>
+<p>When the file is cached completely and successfully, the Widget state is updated, which triggers an application refresh, which is what happens on lines 29-32.</p>
+<p>Had Flutter been an option in the earlier days of Android, it would have been a strong contender in the application building space, especially that it runs on Android and iOS. From reading some of the issues on Github, the general consensus is that the cross-platform Flutter competitor to beat is React Native. In fact, I&#8217;m surprised that it has taken Google this long to produce a potentially viable alternative to the Java Android development tools. I&#8217;d honestly thought they&#8217;d announce something several years ago (I&#8217;ve watched Google I/O for many years for the announcement).</p>
+<p>If Android devices were upgraded more routinely (as are iOS devices), web technologies such as installed progressive web applications could be a serious contender and alternative for many application types. But, modern Android operating system versions are very slow to roll out (if ever) to the majority of devices.  Over half of Android devices are running Android 6.0 or earlier.</p>
+<p><a href="/blog/wp-content/uploads/2018/02/2018-02-26-19_19_35-Dashboards-_-Android-Developers.png"><img data-attachment-id="2233" data-permalink="/blog/index.php/archives/2224/2018-02-26-19_19_35-dashboards-_-android-developers" data-orig-file="/blog/wp-content/uploads/2018/02/2018-02-26-19_19_35-Dashboards-_-Android-Developers.png" data-orig-size="352,532" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Android Developer Version Distribution" data-image-description="" data-image-caption="" data-medium-file="/blog/wp-content/uploads/2018/02/2018-02-26-19_19_35-Dashboards-_-Android-Developers-198x300.png" data-large-file="/blog/wp-content/uploads/2018/02/2018-02-26-19_19_35-Dashboards-_-Android-Developers.png" loading="lazy" class="aligncenter wp-image-2233 size-full" src="/blog/wp-content/uploads/2018/02/2018-02-26-19_19_35-Dashboards-_-Android-Developers.png" alt="Android Developer Version Distribution" width="352" height="532" srcset="/blog/wp-content/uploads/2018/02/2018-02-26-19_19_35-Dashboards-_-Android-Developers.png 352w, /blog/wp-content/uploads/2018/02/2018-02-26-19_19_35-Dashboards-_-Android-Developers-198x300.png 198w" sizes="(max-width: 352px) 100vw, 352px" /></a></p>
+<p>Until the Android OEM ecosystem delivers timely updates to all phones newer than 5 years, solutions like Flutter (and competitors) remain a potentially reasonable way to reach a large variety of devices without needing to update to recent OS releases. However, it may be that the hardware hosting older versions, such as 6.0/Marshmallow and earlier are not capable of adequately executing a modern app built with technology like is used by Flutter.</p>
+<h3>Continued concerns</h3>
+<p>I still find the syntax of building a UI to be cumbersome and frustrating for several reasons:</p>
+<ol>
+<li>Using code to describe the UI is not effective for me. I can&#8217;t as quickly look at a block of code and determine what the UI is likely to be. It&#8217;s just too noisy.</li>
+<li>I&#8217;m constantly frustrated by getting the right number of closing parentheses to match the open parentheses. Using the auto formatting tools of Android Studio for Dart doesn&#8217;t make it easier. There are 10 lines that are marking the closing of some block. I&#8217;ll add an example below of how messy it starts to look if they&#8217;re combined in a way that the auto formatter suggests.</li>
+<li>In fact, if it were easy, I&#8217;d want to lines to start with the Widget type rather than <strong>child: new WidgetName</strong>(. But, there&#8217;s not an obvious way to format the code that way as the named parameters (<strong>child</strong>) are needed to provide the widget instance.</li>
+<li>Layout is a mess of classes and initialization. The examples on the web site make general sense, but when I&#8217;ve tried to innovate on my own and understand how to build other UI patterns, I&#8217;ve struggled to find the right combination of Widget classes that represent a desired layout. I imagine that with practice I&#8217;d get better, but I also would likely create multiple stateless Widgets to make some of the common patterns I&#8217;d expect to use routinely.</li>
+</ol>
+<p><a href="/blog/wp-content/uploads/2018/02/2018-02-26-19_45_39-Hulk-Smash-Meme-Generator-Imgflip.png"><img data-attachment-id="2239" data-permalink="/blog/index.php/archives/2224/2018-02-26-19_45_39-hulk-smash-meme-generator-imgflip" data-orig-file="/blog/wp-content/uploads/2018/02/2018-02-26-19_45_39-Hulk-Smash-Meme-Generator-Imgflip.png" data-orig-size="487,579" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Hulk Smash" data-image-description="" data-image-caption="" data-medium-file="/blog/wp-content/uploads/2018/02/2018-02-26-19_45_39-Hulk-Smash-Meme-Generator-Imgflip-252x300.png" data-large-file="/blog/wp-content/uploads/2018/02/2018-02-26-19_45_39-Hulk-Smash-Meme-Generator-Imgflip.png" loading="lazy" class="aligncenter size-full wp-image-2239" src="/blog/wp-content/uploads/2018/02/2018-02-26-19_45_39-Hulk-Smash-Meme-Generator-Imgflip.png" alt="Hulk Smash Layout" width="487" height="579" srcset="/blog/wp-content/uploads/2018/02/2018-02-26-19_45_39-Hulk-Smash-Meme-Generator-Imgflip.png 487w, /blog/wp-content/uploads/2018/02/2018-02-26-19_45_39-Hulk-Smash-Meme-Generator-Imgflip-252x300.png 252w" sizes="(max-width: 487px) 100vw, 487px" /></a></p>
+<p>Does Flutter have a future? Would you want to build an app that you wanted to still be building on 3-4 years from now? As it&#8217;s still in Alpha form, I wouldn&#8217;t do anything but explore.</p>
+<p>Then, there&#8217;s Dart. The strength of many development options for mobile and web development is the ability to concentrate on one programming language and have it work on client and server. With Flutter and Dart, if you don&#8217;t have a serverless-style architecture in place, you&#8217;ll need to use a second programming language. And that may limit its adoption. Of course, developers that work on multiple app platforms today have accepted this is just the price they have to pay, so maybe that&#8217;s not a big deal. If you&#8217;ve got a development shop that can have developers specialize, then this may be a non-issue entirely. For startups and very small teams, it&#8217;s a potential obstacle that must be considered.</p>
+<p>&nbsp;</p>
+<h3>Notes</h3>
+<p>If you try the code as I&#8217;ve put it on GitHub, you may encounter an error with a codec. This is actually a bug in the Flutter framework and apparently is fixed already and will be available generally at some point in a mainline branch. You&#8217;ll just need to rerun it.</p>
+<h3>Example of Auto Formatting</h3>
+<p>Note the parentheses on lines 20 and 21. That style causes me to just keep adding closing parentheses until the syntax is correct or the error is different. They&#8217;re very difficult to count.</p>
+<p>View the code on <a href="https://gist.github.com/wiredprairie/cb6362a3a125bea1b65994a837035bd6">Gist</a>.</p>
+<h3>Android Studio</h3>
+<p>Android Studio is an acquired taste from a theme and style perspective. With a few adjustments, it&#8217;s tolerable.</p>
+<p><a href="/blog/wp-content/uploads/2018/02/2018-02-26-19_29_41-Settings.png"><img data-attachment-id="2234" data-permalink="/blog/index.php/archives/2224/2018-02-26-19_29_41-settings" data-orig-file="/blog/wp-content/uploads/2018/02/2018-02-26-19_29_41-Settings.png" data-orig-size="782,694" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="2018-02-26 19_29_41-Settings" data-image-description="" data-image-caption="" data-medium-file="/blog/wp-content/uploads/2018/02/2018-02-26-19_29_41-Settings-300x266.png" data-large-file="/blog/wp-content/uploads/2018/02/2018-02-26-19_29_41-Settings.png" loading="lazy" class="aligncenter size-medium wp-image-2234" src="/blog/wp-content/uploads/2018/02/2018-02-26-19_29_41-Settings-300x266.png" alt="Android Studio Font and Color Settings" width="300" height="266" srcset="/blog/wp-content/uploads/2018/02/2018-02-26-19_29_41-Settings-300x266.png 300w, /blog/wp-content/uploads/2018/02/2018-02-26-19_29_41-Settings-768x682.png 768w, /blog/wp-content/uploads/2018/02/2018-02-26-19_29_41-Settings.png 782w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>I&#8217;m not sure why Keywords in the Darcula theme are bright, bolded orange. While keywords are important, they&#8217;re unnecessarily vibrant, especially in code blocks describing the UI:</p>
+<p><a href="/blog/wp-content/uploads/2018/02/2018-02-26-19_31_36-2018-02-26-07_18_26-flutter_app1e.png-‎-Photos.png"><img data-attachment-id="2235" data-permalink="/blog/index.php/archives/2224/2018-02-26-19_31_36-2018-02-26-07_18_26-flutter_app1e-png-%e2%80%8e-photos" data-orig-file="/blog/wp-content/uploads/2018/02/2018-02-26-19_31_36-2018-02-26-07_18_26-flutter_app1e.png-‎-Photos.png" data-orig-size="440,304" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Code Block Example" data-image-description="" data-image-caption="" data-medium-file="/blog/wp-content/uploads/2018/02/2018-02-26-19_31_36-2018-02-26-07_18_26-flutter_app1e.png-‎-Photos-300x207.png" data-large-file="/blog/wp-content/uploads/2018/02/2018-02-26-19_31_36-2018-02-26-07_18_26-flutter_app1e.png-‎-Photos.png" loading="lazy" class="aligncenter size-full wp-image-2235" src="/blog/wp-content/uploads/2018/02/2018-02-26-19_31_36-2018-02-26-07_18_26-flutter_app1e.png-‎-Photos.png" alt="Bright Bold Orange Code Block" width="440" height="304" srcset="/blog/wp-content/uploads/2018/02/2018-02-26-19_31_36-2018-02-26-07_18_26-flutter_app1e.png-‎-Photos.png 440w, /blog/wp-content/uploads/2018/02/2018-02-26-19_31_36-2018-02-26-07_18_26-flutter_app1e.png-‎-Photos-300x207.png 300w" sizes="(max-width: 440px) 100vw, 440px" /></a></p>
+<p>I turned off the bold minimally and changed the color of class names as an experiment &#8230; it&#8217;s better, but not right yet.</p>
+<p><a href="/blog/wp-content/uploads/2018/02/2018-02-26-19_33_37-flutter_app1-C__Users_Aaron_Dev_AndroidStudioProjects_flutter_app1-flutte.png"><img data-attachment-id="2236" data-permalink="/blog/index.php/archives/2224/2018-02-26-19_33_37-flutter_app1-c__users_aaron_dev_androidstudioprojects_flutter_app1-flutte" data-orig-file="/blog/wp-content/uploads/2018/02/2018-02-26-19_33_37-flutter_app1-C__Users_Aaron_Dev_AndroidStudioProjects_flutter_app1-flutte.png" data-orig-size="420,325" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Android Studio with custom class name" data-image-description="" data-image-caption="" data-medium-file="/blog/wp-content/uploads/2018/02/2018-02-26-19_33_37-flutter_app1-C__Users_Aaron_Dev_AndroidStudioProjects_flutter_app1-flutte-300x232.png" data-large-file="/blog/wp-content/uploads/2018/02/2018-02-26-19_33_37-flutter_app1-C__Users_Aaron_Dev_AndroidStudioProjects_flutter_app1-flutte.png" loading="lazy" class="aligncenter size-full wp-image-2236" src="/blog/wp-content/uploads/2018/02/2018-02-26-19_33_37-flutter_app1-C__Users_Aaron_Dev_AndroidStudioProjects_flutter_app1-flutte.png" alt="Android Studio with custom class name" width="420" height="325" srcset="/blog/wp-content/uploads/2018/02/2018-02-26-19_33_37-flutter_app1-C__Users_Aaron_Dev_AndroidStudioProjects_flutter_app1-flutte.png 420w, /blog/wp-content/uploads/2018/02/2018-02-26-19_33_37-flutter_app1-C__Users_Aaron_Dev_AndroidStudioProjects_flutter_app1-flutte-300x232.png 300w" sizes="(max-width: 420px) 100vw, 420px" /></a></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/blog/index.php/archives/2224/feed</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2224</post-id>	</item>
+		<item>
+		<title>Geek gift ideas 2016</title>
+		<link>/blog/index.php/archives/2119</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sun, 27 Nov 2016 17:30:00 +0000</pubDate>
+				<category><![CDATA[General]]></category>
+		<category><![CDATA[Phone]]></category>
+		<category><![CDATA[Photography]]></category>
+		<category><![CDATA[Recommendations]]></category>
+		<guid isPermaLink="false">/blog/?p=2119</guid>
+
+					<description><![CDATA[If you&#8217;re looking to buy yourself, I mean someone else some gifts for the upcoming holiday season, here are some items that I&#8217;ve found useful or handy around the house. It&#8217;s all stuff that I use and would recommend. KMASHI 400A Peak 14.8V 800mAh Compact Car Jump Starter It&#8217;s around $40. Our cars normally start [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>If you&#8217;re looking to buy <del>yourself, I mean</del> someone else some gifts for the upcoming holiday season, here are some items that I&#8217;ve found useful or handy around the house. It&#8217;s all stuff that I use and would recommend.</p>
+<h3><a href="http://amzn.to/2g3HE0y">KMASHI 400A Peak 14.8V 800mAh Compact Car Jump Starter</a></h3>
+<p><a href="https://www.amazon.com/gp/product/B015KFGV52/ref=as_li_ss_il?ie=UTF8&amp;psc=1&amp;linkCode=li3&amp;tag=wiredp-20&amp;linkId=d3b29c83fb96f3ebc7210ba5ff72aaea" target="_blank"><img class="alignleft" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;ASIN=B015KFGV52&amp;Format=_SL250_&amp;ID=AsinImage&amp;MarketPlace=US&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=wiredp-20" border="0" /></a></p>
+<p>It&#8217;s around $40. Our cars normally start without issue. Occasionally however, we&#8217;ve had a dead battery in an inopportune time or location and needed to call someone for a jump. Now, rather than carrying a giant jump battery in the car, we carry this.</p>
+<p>More frequently, I use it to jump start our riding lawn tractor that often has a depleted battery (that I&#8217;ve not been able to successfully troubleshoot). I&#8217;ve had this for more than a year and used it more than 6 times without any trouble (thankfully, I haven&#8217;t needed it more than that). The convenience of it is awesome. It&#8217;s so small! <img loading="lazy" style="border: none !important; margin: 0px !important;" src="https://ir-na.amazon-adsystem.com/e/ir?t=wiredp-20&amp;l=li3&amp;o=1&amp;a=B015KFGV52" alt="" width="1" height="1" border="0" />Of course, it can also be used as just a USB charger. It charges with an included micro-USB cable.</p>
+<h3 id="title" class="a-size-large a-spacing-none"><a href="http://amzn.to/2gsDH6q"><span id="productTitle" class="a-size-large">Tripp Lite 1 Outlet Portable Surge Protector/Suppressor with Timer</span></a></h3>
+<p class="a-size-large a-spacing-none"><a href="https://www.amazon.com/gp/product/B00DHKIWQY/ref=as_li_ss_il?ie=UTF8&amp;psc=1&amp;linkCode=li2&amp;tag=wiredp-20&amp;linkId=403d68ad3e0aa214a50c412fe0574a01" target="_blank"><img class="alignleft" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;ASIN=B00DHKIWQY&amp;Format=_SL160_&amp;ID=AsinImage&amp;MarketPlace=US&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=wiredp-20" border="0" /></a>Many Li-ion battery chargers for outdoor equipment do not recommend leaving the battery charging at all times. So, I bought this simple single outlet surge protector and timer combination from Tripp Lite.</p>
+<p class="a-size-large a-spacing-none"><img loading="lazy" style="border: none !important; margin: 0px !important;" src="https://ir-na.amazon-adsystem.com/e/ir?t=wiredp-20&amp;l=li2&amp;o=1&amp;a=B00DHKIWQY" alt="" width="1" height="1" border="0" /></p>
+<p>It costs about $22. I plug a <a href="http://amzn.to/2gvb6tp">power strip </a>into it and the chargers into the power strip and generally set it to 3 hours if I&#8217;ve used the battery powered equipment for very long. At the end of 3 hours, it automatically turns the power off (and to the entire strip) so I don&#8217;t need to worry about whether the batteries have charged too long.</p>
+<h3 id="title" class="a-size-large a-spacing-none"><a href="http://amzn.to/2g3F3Ee"><span id="productTitle" class="a-size-large">Wago 221-413 LEVER-NUTS 3 Conductor Compact Connectors 50 PK</span></a></h3>
+<p><a href="https://www.amazon.com/gp/product/B017NQWDY4/ref=as_li_ss_il?ie=UTF8&amp;psc=1&amp;linkCode=li2&amp;tag=wiredp-20&amp;linkId=7437d5ad799c19076e33a9b5cc06432f" target="_blank"><img class="alignleft" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;ASIN=B017NQWDY4&amp;Format=_SL160_&amp;ID=AsinImage&amp;MarketPlace=US&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=wiredp-20" border="0" /></a> I didn&#8217;t know these existed until a year ago. While they&#8217;re a luxury item for sure, they make common electrical connections painless (for me at least). I&#8217;m sure some of you swear by the old traditional wire-nut. But, after I tried these, I&#8217;ll never go back. They make them in a few configurations that are worth looking into.</p>
+<p>&nbsp;</p>
+<p><img loading="lazy" style="border: none !important; margin: 0px !important;" src="https://ir-na.amazon-adsystem.com/e/ir?t=wiredp-20&amp;l=li2&amp;o=1&amp;a=B017NQWDY4" alt="" width="1" height="1" border="0" />The price varies depending on what type you buy, but they average between 20 to 50 cents each.</p>
+<p>I&#8217;ve used a lot of the 2 conductor version.</p>
+<p><a href="https://www.amazon.com/Wago-221-412-LEVER-NUTS-Conductor-Connectors/dp/B017NQWGDC/ref=as_li_ss_il?_encoding=UTF8&amp;psc=1&amp;refRID=9GQSWDS9G6PW5VD5WK3Z&amp;linkCode=li2&amp;tag=wiredp-20&amp;linkId=0b8ca6ad365b66856ba3718a6de84b3b" target="_blank"><img class="aligncenter" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;ASIN=B017NQWGDC&amp;Format=_SL160_&amp;ID=AsinImage&amp;MarketPlace=US&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=wiredp-20" border="0" /></a><img loading="lazy" style="border: none !important; margin: 0px !important;" src="https://ir-na.amazon-adsystem.com/e/ir?t=wiredp-20&amp;l=li2&amp;o=1&amp;a=B017NQWGDC" alt="" width="1" height="1" border="0" /></p>
+<h3 id="title" class="a-size-large a-spacing-none"><a href="http://amzn.to/2g3ykdh"><span id="productTitle" class="a-size-large">Bike Peddler Take A Look Cycling Eyeglass Mirror</span></a></h3>
+<p><a href="https://www.amazon.com/gp/product/B000C17M26/ref=as_li_ss_il?ie=UTF8&amp;psc=1&amp;linkCode=li2&amp;tag=wiredp-20&amp;linkId=c6e75b403bc27e8d104cdf63be90e003" target="_blank"><img class="alignleft" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;ASIN=B000C17M26&amp;Format=_SL160_&amp;ID=AsinImage&amp;MarketPlace=US&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=wiredp-20" border="0" /></a>Almost 1500 reviews on Amazon and nearly an average of 5 stars. <strong>These things are great.</strong> I&#8217;ve had one for 3+ years and if you wear glasses and ride a bike and haven&#8217;t liked whatever mirror option you currently use, &#8230; I love these. They&#8217;re simple and effective.<br />
+<img loading="lazy" style="border: none !important; margin: 0px !important;" src="https://ir-na.amazon-adsystem.com/e/ir?t=wiredp-20&amp;l=li2&amp;o=1&amp;a=B000C17M26" alt="" width="1" height="1" border="0" /></p>
+<p>They&#8217;re around $12 usually (and you shouldn&#8217;t need to pay more than that).</p>
+<h3 id="title" class="a-size-large a-spacing-none"><a href="http://amzn.to/2fzbd6t"><span id="productTitle" class="a-size-large">Planet Bike Blinky &#8220;3H&#8221; 3-Led Rear Bicycle Light with Self Leveling Helmet Mount</span></a></h3>
+<p><img loading="lazy" style="border: none !important; margin: 0px !important;" src="https://ir-na.amazon-adsystem.com/e/ir?t=wiredp-20&amp;l=li2&amp;o=1&amp;a=B000793NY4" alt="" width="1" height="1" border="0" /><a href="http://amzn.to/2fzbd6t"><img data-attachment-id="2120" data-permalink="/blog/index.php/archives/2119/planetbike3h" data-orig-file="/blog/wp-content/uploads/2016/11/PlanetBike3H.png" data-orig-size="250,215" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="PlanetBike Blinky 3H" data-image-description="" data-image-caption="" data-medium-file="/blog/wp-content/uploads/2016/11/PlanetBike3H.png" data-large-file="/blog/wp-content/uploads/2016/11/PlanetBike3H.png" loading="lazy" class="size-full wp-image-2120 alignleft" src="/blog/wp-content/uploads/2016/11/PlanetBike3H.png" alt="PlanetBike Blinky 3H" width="250" height="215" /></a></p>
+<p>Bike safety is very important to me. And it should be for you too. This novel little light attaches securely to the rear of your bike helmet and self levels so that it&#8217;s always pointing vertically in a reasonable direction. While you could attach it to your bike, there are better and brighter lights available for your bike that I&#8217;d recommend instead. Use this as a secondary bike light. It&#8217;s lightweight. I don&#8217;t notice its there. It&#8217;s about $20.</p>
+<h3 id="title" class="a-size-large a-spacing-none a-color-secondary"><a href="http://amzn.to/2g3Eavh"><span id="productTitle" class="a-size-large">GMS Optical Premium Grade Comfortable Silicone Anti-slip Holder for Glasses, Ear Hook, Eyeglass Temple Tip</span></a></h3>
+<p><a href="https://www.amazon.com/gp/product/B00DQOLADS/ref=as_li_ss_il?ie=UTF8&amp;psc=1&amp;linkCode=li2&amp;tag=wiredp-20&amp;linkId=4cf6e00c0c05b56d443d33108bdc5417" target="_blank"><img class="alignleft" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;ASIN=B00DQOLADS&amp;Format=_SL160_&amp;ID=AsinImage&amp;MarketPlace=US&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=wiredp-20" border="0" /></a><img loading="lazy" style="border: none !important; margin: 0px !important;" src="https://ir-na.amazon-adsystem.com/e/ir?t=wiredp-20&amp;l=li2&amp;o=1&amp;a=B00DQOLADS" alt="" width="1" height="1" border="0" /><br />
+If you have sports glasses (I&#8217;ve got a pair of prescription <a href="http://amzn.to/2fzkpaQ">Adidas sports glasses</a> for example), you may have situations where you&#8217;d like to have a bit more confidence that your glasses aren&#8217;t going to hurtle off your face at some point due to unexpected motion, sweat, etc. I&#8217;d tried some of the bands that attach to glasses and found them distracting, especially when riding my bike (either too loose or too tight). These simple and inexpensive (around $6) holders give me the confidence to wear my glasses in situations where I was concerned about them falling off my face.</p>
+<p>This was especially true while riding my bicycle. When I was looking down while riding (even for a moment to look at the GPS, etc.), I often had the distinct feeling that my glasses were sliding off my face. On hotter days, this was exacerbated by perspiration. No more! While I wouldn&#8217;t be brave (or dumb) enough to think that these would hold my glasses on while riding a loop on a modern roller-coaster, they perform well enough for more typical day-to-day sports. As you&#8217;ll see from their ratings, I&#8217;m not the only person that likes them.</p>
+<p><strong>They&#8217;re under $6.</strong></p>
+<h3 id="title" class="a-size-large a-spacing-none a-color-secondary"><a href="http://amzn.to/2gsEeW6"><span id="productTitle" class="a-size-large">Shacke Hidden Travel Belt Wallet w/ RFID Blocker</span></a></h3>
+<p><a href="https://www.amazon.com/gp/product/B00Z2AKO3G/ref=as_li_ss_il?ie=UTF8&amp;psc=1&amp;linkCode=li2&amp;tag=wiredp-20&amp;linkId=7ce7b00b5c34a0d2d68c7b802b91a7d6" target="_blank"><img class="alignleft" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;ASIN=B00Z2AKO3G&amp;Format=_SL160_&amp;ID=AsinImage&amp;MarketPlace=US&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=wiredp-20" border="0" /></a><img loading="lazy" style="border: none !important; margin: 0px !important;" src="https://ir-na.amazon-adsystem.com/e/ir?t=wiredp-20&amp;l=li2&amp;o=1&amp;a=B00Z2AKO3G" alt="" width="1" height="1" border="0" /></p>
+<p>When traveling internationally, my wife and I always carry our passports on us while out and about (I know that some people leave them in the hotel room). I&#8217;ve tried a few different ways to carry my passport over the years, and this is my current favorite discrete carrying option. It&#8217;s lightweight and fits well in the front of one of your legs. Occasionally, you&#8217;ll notice it, but it&#8217;s not distracting. It&#8217;s got room for a few more things, but it&#8217;s not intended to carry everything; just stuff you don&#8217;t frequently need. I put spare cash, a paper map, and often our ATM card inside. Apparently, there were/are gray wallets of this, but unless you have a gray belt, it will show. By the way, this definitely requires that you wear a belt and is about $16.</p>
+<h3 id="title" class="a-size-large a-spacing-none"><a href="http://amzn.to/2fzdBKv"><span id="productTitle" class="a-size-large">Canon PowerShot G7 X Mark II (Black)</span></a></h3>
+<p><a href="https://www.amazon.com/Canon-PowerShot-G7-Mark-Black/dp/B01BV14OXA/ref=as_li_ss_il?s=electronics&amp;ie=UTF8&amp;qid=1480183260&amp;sr=1-1&amp;keywords=canon+gx+7+mark+ii&amp;linkCode=li2&amp;tag=wiredp-20&amp;linkId=a5d0ed707565c0f910c58767fc2c4c9f" target="_blank"><img class="alignleft" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;ASIN=B01BV14OXA&amp;Format=_SL160_&amp;ID=AsinImage&amp;MarketPlace=US&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=wiredp-20" border="0" /></a><img loading="lazy" style="border: none !important; margin: 0px !important;" src="https://ir-na.amazon-adsystem.com/e/ir?t=wiredp-20&amp;l=li2&amp;o=1&amp;a=B01BV14OXA" alt="" width="1" height="1" border="0" /></p>
+<p>I&#8217;m sure many of you have decided that your phone takes great pictures and that&#8217;s all that you need. Fine. I accept that you&#8217;re missing out. OK, seriously. Your smart phone probably does take some great pictures. But, some images just can&#8217;t be captured by your smart phone. Occasionally, you&#8217;ll be able to walk closer to something you want to capture to emulate &#8220;zoom&#8221;, but often, you&#8217;ll find that the picture you captured isn&#8217;t the way you remembered it. This is where a nice point-and-shoot + more camera comes into play. I&#8217;ll take pictures when I&#8217;m on vacation with both this camera and my smart phone. I&#8217;m not going to bore you with a long list of features. That&#8217;s available on the web.</p>
+<p>Here&#8217;s why I bought this model:</p>
+<ul>
+<li>RAW mode + JPEG</li>
+<li>Touch screen (tap to take a picture)</li>
+<li>Size / weight</li>
+<li>Pop-up flash</li>
+<li>Good battery life (definitely buy spare batteries though)</li>
+<li>Good bokeh (for a point-and-shoot)</li>
+<li>24-100mm zoom. Means I can take adjust zoom.</li>
+<li>Can attach to my tripod (or mini-tripod) and my Really Right Stuff equipment</li>
+<li>Easy to adjust f-stop/aperture, etc.</li>
+</ul>
+<p>It&#8217;s by no means an inexpensive camera. However, I do not foresee any reason I&#8217;ll want or need to replace it any time soon. So, for now, I consider it a long term camera.</p>
+<p>I would strongly recommend you buy a backup battery, regardless of the camera you choose. I bought some cheaper replacement batteries, not from Canon. I bought the <a href="http://amzn.to/2fQjkN7">DSTE NB-13L </a>batteries. I bought 2 for 50% of the price of a Canon OEM battery. I&#8217;ll warn you, as does the camera when it detects these the first time, that these are not Canon batteries. You&#8217;ll need to acknowledge a warning that they are not Original Canon Batteries. They work fine though and I&#8217;ve not noticed any significant difference from the standard Canon batteries. They last a reasonable amount of time. Some combinations of extra batteries include an extra charger. Having lost a charger on my last trip to Finland, I was glad I&#8217;d brought a spare along.</p>
+<p>Also, so that I could use a quick release plate with my <a href="http://www.reallyrightstuff.com/">Really Right Stuff</a> tripod ballhead, I bought a quick release L plate from Desmond. (I usually buy from Really Right Stuff, but they didn&#8217;t have a great inexpensive option for this camera).</p>
+<p><a href="https://www.amazon.com/gp/product/B00WOU7OT4/ref=as_li_ss_il?ie=UTF8&amp;psc=1&amp;linkCode=li1&amp;tag=wiredp-20&amp;linkId=014dd68181f330136ae77f298a7267fa" target="_blank"><img class="aligncenter" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;ASIN=B00WOU7OT4&amp;Format=_SL110_&amp;ID=AsinImage&amp;MarketPlace=US&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=wiredp-20" border="0" /></a><img loading="lazy" style="border: none !important; margin: 0px !important;" src="https://ir-na.amazon-adsystem.com/e/ir?t=wiredp-20&amp;l=li1&amp;o=1&amp;a=B00WOU7OT4" alt="" width="1" height="1" border="0" /></p>
+<p>The model I bought fits the camera very well and is easy to attach and remove. It does make flipping the screen around more of a challenge, but I accept that limitation and rarely is it an issue (as I can always remove the L plate quickly).</p>
+<h3 id="title" class="a-size-large a-spacing-none"><a href="http://amzn.to/2gxkUoa"><span id="productTitle" class="a-size-large">SUNWAYFOTO Table Top Mini Aluminum Tripod T1A10 Tabletop Sunway</span></a></h3>
+<p>I attach my <a href="http://www.reallyrightstuff.com/Heads/Ballheads/BH-25-Ultra-Light-Ballhead">Really Right Stuff BH-25 Ballhead</a> to this little tripod. It works really well.</p>
+<p><a href="https://www.amazon.com/gp/product/B00PU6FPEU/ref=as_li_ss_il?ie=UTF8&amp;psc=1&amp;linkCode=li2&amp;tag=wiredp-20&amp;linkId=747bec03097dd9ea8a5025daca0c8863" target="_blank"><img src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;ASIN=B00PU6FPEU&amp;Format=_SL160_&amp;ID=AsinImage&amp;MarketPlace=US&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=wiredp-20" border="0" /></a><img loading="lazy" style="border: none !important; margin: 0px !important;" src="https://ir-na.amazon-adsystem.com/e/ir?t=wiredp-20&amp;l=li2&amp;o=1&amp;a=B00PU6FPEU" alt="" width="1" height="1" border="0" /></p>
+<p>It&#8217;s about $35 and fits nearly anywhere (from a small bag to a large pocket). I find a spot usually on a table, nature (like a rock), etc., snap the camera to it, and take a few pictures. It&#8217;s really handy and I take it on all trips where I take a camera other than my smart phone.</p>
+<h3>AmazonBasics Thermal Laminator</h3>
+<p><a href="https://www.amazon.com/AmazonBasics-PL9-US-Thermal-Laminator/dp/B00BUI5QWS/ref=as_li_ss_il?ie=UTF8&amp;qid=1480260452&amp;sr=8-1&amp;keywords=amazonbasics+laminator&amp;linkCode=li3&amp;tag=wiredp-20&amp;linkId=adbc023e705a31d5b5597116e3b0fc47" target="_blank"><img class="alignleft" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;ASIN=B00BUI5QWS&amp;Format=_SL250_&amp;ID=AsinImage&amp;MarketPlace=US&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=wiredp-20" border="0" /></a><img loading="lazy" style="border: none !important; margin: 0px !important;" src="https://ir-na.amazon-adsystem.com/e/ir?t=wiredp-20&amp;l=li3&amp;o=1&amp;a=B00BUI5QWS" alt="" width="1" height="1" border="0" /><br />
+This $22 laminator is great. I had no idea how useful this would be. We bought it initially to protect a bunch of table-top board game cheat sheets we&#8217;d made or copied. We print them out on our inkjet on regular paper and then laminate them in a <a href="http://amzn.to/2g6Wgwt">3 mil thermal laminating pouch</a>. The laminator takes 4-5 minutes to warm up at first so there&#8217;s no <em>instant gratification</em> that comes with it&#8217;s use. Once it heats though, you can feed sheets in with nearly wild abandon (there&#8217;s no reason to wait between sheets). In addition to the cheat sheets, we&#8217;ve protected copies of important travel and legal documents, copies of instructions (often that we want to hang near the equipment like our furnace or water filtration system). I&#8217;ve made small signs and placards for various events and even cleaning instructions for a few things around our house. The laminating pouches are often found in 3 and 5 mil. The 5 mil sheets are very thick and we don&#8217;t use them nearly as often.</p>
+<p>I&#8217;ve also found that using our paper trimmer for items smaller than a full page works really well (rather than trying to cut with scissors). We&#8217;ve got something like this (although not this exact one as I can&#8217;t find the model we have). Just buy something with replacement blades in case they dull.<br />
+<a href="https://www.amazon.com/Fiskars-SureCut-Deluxe-Trimmer-152490-1004/dp/B0038F1A0S/ref=as_li_ss_il?ie=UTF8&amp;qid=1480260922&amp;sr=8-1&amp;keywords=paper+cutter+guide&amp;linkCode=li2&amp;tag=wiredp-20&amp;linkId=7170f41e24b6e2f6e1018aa313093dbd" target="_blank"><img class="aligncenter" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;ASIN=B0038F1A0S&amp;Format=_SL160_&amp;ID=AsinImage&amp;MarketPlace=US&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=wiredp-20" border="0" /></a><img loading="lazy" style="border: none !important; margin: 0px !important;" src="https://ir-na.amazon-adsystem.com/e/ir?t=wiredp-20&amp;l=li2&amp;o=1&amp;a=B0038F1A0S" alt="" width="1" height="1" border="0" /></p>
+<p>And, I just blogged about it a week ago, the <a href="/blog/index.php/archives/2096">Ecobee ecobee3 thermostat</a> is also on my list.</p>
+<p>Next time, I&#8217;ll post about some table top board games I&#8217;ve enjoyed recently.</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2119</post-id>	</item>
+		<item>
+		<title>HTML 5 Support: iOS 4.1 Browser vs. Windows Phone 7 Browser</title>
+		<link>/blog/index.php/archives/1140</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Fri, 17 Sep 2010 12:41:41 +0000</pubDate>
+				<category><![CDATA[Phone]]></category>
+		<category><![CDATA[Software]]></category>
+		<category><![CDATA[Web]]></category>
+		<category><![CDATA[Safari]]></category>
+		<category><![CDATA[WindowsPhone7]]></category>
+		<category><![CDATA[WP7]]></category>
+		<guid isPermaLink="false">/blog/index.php/archives/1140</guid>
+
+					<description><![CDATA[Now that the final v1 Windows Phone 7 is available, I performed a few browser tests using http://www.HTML5Test.com/ (which is a slick and easy way of testing browser support for some upcoming HTML5 features). Any guesses which is iOS 4.1? &#160; Biggest missing elements from the IE browser on Windows Phone 7: Input element types. [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Now that the final v1 Windows Phone 7 is available, I performed a few browser tests using <a href="http://www.HTML5Test.com/">http://www.HTML5Test.com/</a> (which is a slick and easy way of testing browser support for some upcoming HTML5 features).</p>
+<p>Any guesses which is iOS 4.1?</p>
+<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: ; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2010/09/image5.png" width="163" height="214" />&#160;<img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: ; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2010/09/image6.png" width="163" height="240" /></p>
+<p>Biggest missing elements from the IE browser on Windows Phone 7:</p>
+<ul>
+<li>Input element types. The browser won’t be able to provide a keyboard/input panel that is appropriate for the data being requested. For example, a number field that automatically switches to a number only input pad. See <a href="http://diveintohtml5.org/detect.html#input-types">here</a> for some examples.</li>
+<li><a href="http://dev.w3.org/geo/api/spec-source.html">Geo-location</a>. Seriously. The phone has a GPS. Why not expose it? (IE9 doesn’t either unfortunately, but that bothers me less).</li>
+<li><a href="http://dev.w3.org/html5/spec/Overview.html">Canvas</a>. IE9 can do it, why not you? There are so many UIs that can be enhanced by use of a canvas,without resorting to server side rendering and other messy hacks.</li>
+<li><a href="http://www.w3.org/TR/WAPF-REQ/">Web applications</a> (cache). Then, we could package a web application into an offline application and use the browser to drive the UI rather than SL/XNA. That’d be a win in my book as it would be easier to build cross platform phone solutions. </li>
+<li>Session storage and <a href="http://dev.w3.org/html5/webstorage/">local storage</a>. See previous point. It also makes using cookies less necessary in some scenarios.</li>
+</ul>
+<p>It is a better browser than the CRAP in previous versions of the Windows Phone. But, the bar has been set much higher these days. I’m pleased that typical web sites work well, and that it’s reasonably fast. I can even understand why they stopped where they did – as it seemed sufficient for typical browsing needs on the go, especially given the development team obviously had deadlines. </p>
+<p>But with technology moving at such a rapid pace and the adoption of HTML5 proceeding regardless of standards, Microsoft must keep up to survive. This phone will get a lot of “hate” if it can’t adequately browse the web in a few years. Developers are tired of building in hacks to support browser X or Y. This is yet another browser that may need to be supported, if adoption rates are reasonable. </p>
+<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: ; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2010/09/image8.png" width="300" height="502" /></p>
+<p>IE9 Beta 1 scores only a 96.</p>
+<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: ; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2010/09/image7.png" width="359" height="214" /></p>
+<p>It’s missing <a href="http://www.w3.org/TR/html5/offline.html#offline">Web applications</a> (arrgh), and <a href="http://www.w3.org/TR/websockets/">websocket</a>s.</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1140</post-id>	</item>
+		<item>
+		<title>My first Windows Phone 7 Experiment</title>
+		<link>/blog/index.php/archives/925</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Mon, 15 Mar 2010 22:36:22 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[Phone]]></category>
+		<category><![CDATA[Silverlight]]></category>
+		<guid isPermaLink="false">/blog/index.php/archives/925</guid>
+
+					<description><![CDATA[OK, It doesn’t look like much. It’s not. I was experimenting with some CompositionTarget Rendering and WriteableBitmap stuff on the plane ride out to Mix 2010 on Sunday and created a little animating blue line thing. (I don’t know what to to call it). But it was a work in progress. I took the code [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>OK, It doesn’t look like much. It’s not. I was experimenting with some CompositionTarget Rendering and WriteableBitmap stuff on the plane ride out to Mix 2010 on Sunday and created a little animating blue line thing. (I don’t know what to to call it). But it was a work in progress. </p>
+<p>I took the code and copied it into a Windows Phone 7 Silverlight application and hit run. It worked right out of the box. (Using the CTP download from <a href="http://www.microsoft.com/downloads/details.aspx?FamilyID=2338b5d1-79d8-46af-b828-380b0f854203&amp;displaylang=en#filelist">here</a>).</p>
+<p><img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2010/03/image5.png" width="300" height="584" /></p>
+<pre class="code"><span style="color: #2b91af">CompositionTarget</span>.Rendering += <span style="color: blue">new </span><span style="color: #2b91af">EventHandler</span>(CompositionTarget_Rendering);</pre>
+<p>The event:</p>
+<pre class="code"><span style="color: blue">void </span>CompositionTarget_Rendering(<span style="color: blue">object </span>sender, <span style="color: #2b91af">EventArgs </span>e)
+{
+    <span style="color: blue">int </span>indx = _shapes.Count - 1;
+    <span style="color: blue">double </span>littleCircleHeight = littleCircle.ActualHeight;
+
+    <span style="color: blue">while </span>(indx &gt;= 0)
+    {
+        <span style="color: #2b91af">Sparkle </span>sparkle = _shapes[indx];
+        sparkle.Y += sparkle.VY;
+        sparkle.X += sparkle.VX;
+        <span style="color: blue">if </span>(sparkle.Y - (littleCircleHeight / 2) &gt; _rect.Height)
+        {
+            _shapes.RemoveAt(indx);
+        }
+        <span style="color: blue">else
+        </span>{
+            <span style="color: green">// grab the cached one
+            </span><span style="color: #2b91af">TranslateTransform </span>t = sparkle.Transform <span style="color: blue">as </span><span style="color: #2b91af">TranslateTransform</span>;
+            t.X = sparkle.X - (littleCircle.ActualWidth / 2);
+            t.Y = sparkle.Y - (littleCircleHeight / 2);
+            _bitmap.Render(littleCircle, sparkle.Transform);
+        }
+        indx--;
+
+    }
+
+    <span style="color: blue">int </span>x = _random.Next(_bitmap.PixelWidth);
+    <span style="color: blue">int </span>y = 0; 
+
+    <span style="color: #2b91af">Sparkle </span>newsparkle = <span style="color: blue">new </span><span style="color: #2b91af">Sparkle</span>();
+    newsparkle.X = x;
+    newsparkle.Y = y;
+    newsparkle.VX = _random.NextDouble() + .001;
+    newsparkle.VX = (_random.Next(10) &gt; 5 ? newsparkle.VX : newsparkle.VX * -1.0);
+    newsparkle.VY = _random.NextDouble() * 5 + 1.0;
+    newsparkle.Transform = <span style="color: blue">new </span><span style="color: #2b91af">TranslateTransform</span>() { Y = newsparkle.Y, X = newsparkle.X };
+
+    _shapes.Add(newsparkle);
+    _bitmap.Invalidate();
+}</pre>
+<p><a href="http://11011.net/software/vspaste"></a></p>
+<p>Sizing:</p>
+<pre class="code"><span style="color: blue">void </span>MainPage_SizeChanged(<span style="color: blue">object </span>sender, <span style="color: #2b91af">SizeChangedEventArgs </span>e)
+{
+    _bitmap = <span style="color: blue">new </span><span style="color: #2b91af">WriteableBitmap</span>((<span style="color: blue">int</span>)e.NewSize.Width, (<span style="color: blue">int</span>)e.NewSize.Height);
+    _bitmap.Clear(<span style="color: #2b91af">Colors</span>.Black);
+    _rect = <span style="color: blue">new </span><span style="color: #2b91af">Rect</span>(0, 0, e.NewSize.Width, e.NewSize.Height);
+    dest.Source = _bitmap;
+}</pre>
+<p><a href="http://11011.net/software/vspaste"></a></p>
+<p>The sparkle class:</p>
+<pre class="code"><span style="color: blue">public class </span><span style="color: #2b91af">Sparkle
+</span>{
+    <span style="color: blue">public double </span>X { <span style="color: blue">get</span>; <span style="color: blue">set</span>; }
+    <span style="color: blue">public double </span>Y { <span style="color: blue">get</span>; <span style="color: blue">set</span>; }
+
+    <span style="color: blue">public double </span>VX { <span style="color: blue">get</span>; <span style="color: blue">set</span>; }
+    <span style="color: blue">public double </span>VY { <span style="color: blue">get</span>; <span style="color: blue">set</span>; }
+
+    <span style="color: blue">public </span><span style="color: #2b91af">Transform </span>Transform { <span style="color: blue">get</span>; <span style="color: blue">set</span>; }
+}</pre>
+<p><a href="http://11011.net/software/vspaste"></a>And it also uses a few functions from the <a href="http://writeablebitmapex.codeplex.com/">WriteableBitmap</a> extension classes on CodePlex.</p>
+<p>It doesn’t perform nearly as well as it does in stand-alone Silverlight – but it’s running in a VM on my laptop, without accelerated graphics ….. I blame my hardware. </p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">925</post-id>	</item>
+	</channel>
+</rss>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Knockout.JS: AsDictionary	</title>
+	<atom:link href="/blog/index.php/archives/1563/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/1563</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Sat, 10 Mar 2012 15:51:03 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: Knockout.JS: Dictionary/Index and ObservableArray, Part 2 - WiredPrairie		</title>
+		<link>/blog/index.php/archives/1563/comment-page-1#comment-4177</link>
+
+		<dc:creator><![CDATA[Knockout.JS: Dictionary/Index and ObservableArray, Part 2 - WiredPrairie]]></dc:creator>
+		<pubDate>Sat, 10 Mar 2012 15:51:03 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1563#comment-4177</guid>
+
+					<description><![CDATA[[...] Ryan suggested an alternative in a comment (and corresponding jsFiddle) to the technique that I’d used in my previous Knockout.JS post. [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] Ryan suggested an alternative in a comment (and corresponding jsFiddle) to the technique that I’d used in my previous Knockout.JS post. [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/1563/comment-page-1#comment-4176</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sat, 10 Mar 2012 14:51:53 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1563#comment-4176</guid>
+
+					<description><![CDATA[I&#039;d pondered adding the index to the original array and couldn&#039;t decide which way I really liked it. Thanks for pointing out an alternative and providing the code.]]></description>
+			<content:encoded><![CDATA[<p>I&#8217;d pondered adding the index to the original array and couldn&#8217;t decide which way I really liked it. Thanks for pointing out an alternative and providing the code.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Ryan Niemeyer		</title>
+		<link>/blog/index.php/archives/1563/comment-page-1#comment-4173</link>
+
+		<dc:creator><![CDATA[Ryan Niemeyer]]></dc:creator>
+		<pubDate>Sat, 10 Mar 2012 03:46:50 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1563#comment-4173</guid>
+
+					<description><![CDATA[Nice.  One thing that I like to do in this type of situation is to define the computed observable as a sub-observable of the original (the observableArray is a function and can have its own properties/methods).  This works well to keep the view model tidy (as this is created as more of a utility than as part of the view model), but it also is nice when you need to convert it back into JSON as ko.toJSON will naturally drop any sub-observables when it unwraps the main observable.  
+
+It would be something like this: http://jsfiddle.net/rniemeyer/T6nPP/ or the index can be kept private and a &quot;findByKey&quot; function could be exposed to retrieve the value like: http://jsfiddle.net/rniemeyer/T6nPP/2/]]></description>
+			<content:encoded><![CDATA[<p>Nice.  One thing that I like to do in this type of situation is to define the computed observable as a sub-observable of the original (the observableArray is a function and can have its own properties/methods).  This works well to keep the view model tidy (as this is created as more of a utility than as part of the view model), but it also is nice when you need to convert it back into JSON as ko.toJSON will naturally drop any sub-observables when it unwraps the main observable.  </p>
+<p>It would be something like this: <a href="http://jsfiddle.net/rniemeyer/T6nPP/" rel="nofollow ugc">http://jsfiddle.net/rniemeyer/T6nPP/</a> or the index can be kept private and a &#8220;findByKey&#8221; function could be exposed to retrieve the value like: <a href="http://jsfiddle.net/rniemeyer/T6nPP/2/" rel="nofollow ugc">http://jsfiddle.net/rniemeyer/T6nPP/2/</a></p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

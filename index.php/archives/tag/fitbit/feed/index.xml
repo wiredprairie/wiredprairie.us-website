@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>Fitbit &#8211; WiredPrairie</title>
+	<atom:link href="/blog/index.php/archives/tag/fitbit/feed" rel="self" type="application/rss+xml" />
+	<link>/blog</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Fri, 30 Aug 2013 12:35:46 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+<site xmlns="com-wordpress:feed-additions:1">193486638</site>	<item>
+		<title>Fitbit Flex, dead and won&#8217;t charge?</title>
+		<link>/blog/index.php/archives/1933</link>
+					<comments>/blog/index.php/archives/1933#comments</comments>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Fri, 30 Aug 2013 12:35:45 +0000</pubDate>
+				<category><![CDATA[General]]></category>
+		<category><![CDATA[Recommendations]]></category>
+		<category><![CDATA[Fitbit]]></category>
+		<category><![CDATA[health]]></category>
+		<category><![CDATA[Support]]></category>
+		<guid isPermaLink="false">/blog/?p=1933</guid>
+
+					<description><![CDATA[My wife and I both pre-ordered a Fitbit Flex. While it’s not a life-changing device, it’s been generally fun to wear. I’m always interested in the sleep tracking when I travel … “Awake 16x, slept 5 hours.” Last night though, my wife’s Flex had stopped working. The lights wouldn’t show up when the device was [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="/blog/wp-content/uploads/2013/08/image.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: right; padding-top: 0px; padding-left: 0px; border-left: 0px; display: inline; padding-right: 0px" border="0" alt="image" align="right" src="/blog/wp-content/uploads/2013/08/image_thumb.png" width="106" height="138" /></a>My wife and I both pre-ordered a <a href="http://www.amazon.com/gp/product/B00BGO0Q9O/ref=as_li_ss_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B00BGO0Q9O&amp;linkCode=as2&amp;tag=wiredp-20" target="_blank">Fitbit Flex</a>. While it’s not a life-changing device, it’s been generally fun to wear. I’m always interested in the sleep tracking when I travel … “<em>Awake 16x, slept 5 hours.</em>”</p>
+<p>Last night though, my wife’s Flex had stopped working. The lights wouldn’t show up when the device was tapped and when she used the charger, it wouldn’t begin to charge. I found a few recommendations to use rubber bands to hold the Flex into the charger, cleaning the contacts, and a few more. Cleaning the contacts didn’t help. The charger worked with my Flex, so that meant the rubber band trick wouldn’t help. </p>
+<p>I found though on the <a href="https://help.fitbit.com/customer/portal/articles/1041329" target="_blank">Fitbit support website</a> this morning though a suggestion that worked! Apparently, you can restart/reset the tracker without loosing data. The steps are easy:</p>
+<ol>
+<li>Plug your charging cable into a USB port and insert your Flex as you normally would.</li>
+<li>Insert a paperclip into the small pinhole on the back of the charger (<em>I’d never noticed it before, it’s small!</em>)</li>
+<li>Press gently on the pinhole for 3-4 seconds. You’ll feel a gentle ‘click’ when you’ve depressed it far enough (although my “one-thousand, two-thousand, three-thousand” count actually got to 6). The lights flashed a few times, and it started charging a few seconds later.</li>
+</ol>
+<p>I’m posting this here as my searching the night before hadn’t turned up that specific support web site page. It may be because the web page is poorly titled and applies to four of their trackers.</p>
+<p>Hope this helps someone else.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/blog/index.php/archives/1933/feed</wfw:commentRss>
+			<slash:comments>16</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1933</post-id>	</item>
+	</channel>
+</rss>

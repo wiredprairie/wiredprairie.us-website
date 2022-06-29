@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>Windows8 &#8211; WiredPrairie</title>
+	<atom:link href="/blog/index.php/archives/tag/windows8/feed" rel="self" type="application/rss+xml" />
+	<link>/blog</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Tue, 21 Aug 2012 01:02:03 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+<site xmlns="com-wordpress:feed-additions:1">193486638</site>	<item>
+		<title>WinRT/Xaml/AKA Metro DataTemplate selection based on Data Types</title>
+		<link>/blog/index.php/archives/1705</link>
+					<comments>/blog/index.php/archives/1705#comments</comments>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Tue, 21 Aug 2012 01:02:03 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[C#]]></category>
+		<category><![CDATA[Metro]]></category>
+		<category><![CDATA[Windows]]></category>
+		<category><![CDATA[Windows8]]></category>
+		<category><![CDATA[Xaml]]></category>
+		<guid isPermaLink="false">/blog/?p=1705</guid>
+
+					<description><![CDATA[You may have noticed that WinRT does not have automatic resolution of a DataTemplate based on the data type of object added to an ItemsControl. While unfortunate as this behavior is quite handy, it’s not too difficult to replicate the functionality using a DataTemplateSelector. WPF for example, could do something like this: &#60;DataTemplate DataType=&#34;{x:Type local:Task}&#34;&#62; [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>You may have noticed that WinRT does not have automatic resolution of a DataTemplate based on the data type of object added to an <a href="http://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.controls.itemscontrol.aspx" target="_blank">ItemsControl</a>. While unfortunate as this behavior is quite handy, it’s not too difficult to replicate the functionality using a <a href="http://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.controls.datatemplateselector" target="_blank">DataTemplateSelector</a>.</p>
+<p>WPF for example, could do something like this: </p>
+<div style="border-bottom: silver 1px solid; text-align: left; border-left: silver 1px solid; padding-bottom: 4px; line-height: 12pt; background-color: #f4f4f4; margin: 20px 0px 10px; padding-left: 4px; width: 97.5%; padding-right: 4px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; max-height: 200px; font-size: 8pt; overflow: auto; border-top: silver 1px solid; cursor: text; border-right: silver 1px solid; padding-top: 4px" id="codeSnippetWrapper">
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: #f4f4f4; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px" id="codeSnippet">&lt;DataTemplate DataType=<span style="color: #006080">&quot;{x:Type local:Task}&quot;</span>&gt;<br />  &lt;StackPanel&gt;<br />    &lt;TextBlock Text=<span style="color: #006080">&quot;{Binding Path=TaskName}&quot;</span> /&gt;<br />    &lt;TextBlock Text=<span style="color: #006080">&quot;{Binding Path=Description}&quot;</span>/&gt;<br />    &lt;TextBlock Text=<span style="color: #006080">&quot;{Binding Path=Priority}&quot;</span>/&gt;<br />  &lt;/StackPanel&gt;<br />&lt;/DataTemplate&gt;</pre>
+<p></div>
+<p>When the Task type as shown above was found in a list, it would have been rendered as a <a href="http://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.controls.stackpanel.aspx" target="_blank">StackPanel</a> with three <a href="http://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.controls.textblock.aspx" target="_blank">TextBlock</a>s automatically. That rocked.</p>
+<p>WinRT (Metro/Xaml, Windows 8 applications) are missing the DataType property of DataTemplates. Yes, some of you might say it’s not missing as it’s V1, but given the heritage of Windows 8 Xaml applications, I consider it missing.</p>
+<p>While an exact duplicate of the functionality isn’t possible, it’s relatively simple to get close.</p>
+<pre class="code"><span style="background: white; color: blue">&lt;</span><span style="background: white; color: #a31515">GridView
+    </span><span style="background: white; color: red">x</span><span style="background: white; color: blue">:</span><span style="background: white; color: red">Name</span><span style="background: white; color: blue">=&quot;itemGridView&quot;
+</span><span style="background: white; color: blue">    </span><span style="background: white; color: red">ItemsSource</span><span style="background: white; color: blue">=&quot;{</span><span style="background: white; color: #a31515">Binding </span><span style="background: white; color: red">Source</span><span style="background: white; color: blue">={</span><span style="background: white; color: #a31515">StaticResource </span><span style="background: white; color: red">groupedItemsViewSource</span><span style="background: white; color: blue">}}&quot;
+    </span><span style="background: white; color: red">ItemTemplateSelector</span><span style="background: white; color: blue">=&quot;{</span><span style="background: white; color: #a31515">StaticResource </span><span style="background: white; color: red">typedTemplateSelector</span><span style="background: white; color: blue">}&quot;
+    </span><span style="background: white; color: red">SelectionMode</span><span style="background: white; color: blue">=&quot;None&quot;
+    </span><span style="background: white; color: red">IsItemClickEnabled</span><span style="background: white; color: blue">=&quot;True&quot;</span><span style="background: white; color: blue">&gt;</span></pre>
+<p>Take the GridView above for example (using the template project in Visual Studio 2012).</p>
+<p>I’ve assigned the ItemTemplateSelector to an instance of the TypedTemplateSelector class I’ve created.</p>
+<p>In the Resources for the Page, I added a custom DataTemplate:</p>
+<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2012/08/image.png" width="323" height="186" /></p>
+<p>I’ve added a DataTemplate with a Key called <strong>Type : SampleDataItem</strong> (without the spaces though – they’re auto converted by my WordPress theme to a squiggle face: <img style="border-bottom-style: none; border-left-style: none; border-top-style: none; border-right-style: none" class="wlEmoticon wlEmoticon-confusedsmile" alt="Confused smile" src="/blog/wp-content/uploads/2012/08/wlEmoticon-confusedsmile.png" />).</p>
+<p>There’s nothing special about the Template, just the name. It must start with <strong>Type:.</strong></p>
+<p>Here the custom template selector is being constructed in the Resources:</p>
+<pre class="code"><span style="background: white; color: black">    </span><span style="background: white; color: blue">&lt;</span><span style="background: white; color: #a31515">local</span><span style="background: white; color: blue">:</span><span style="background: white; color: #a31515">TypedTemplateSelector </span><span style="background: white; color: red">x</span><span style="background: white; color: blue">:</span><span style="background: white; color: red">Key</span><span style="background: white; color: blue">=&quot;typedTemplateSelector&quot;
+                                 </span><span style="background: white; color: red">DefaultTemplateKey</span><span style="background: white; color: blue">=&quot;Standard250x250ItemTemplate&quot; /&gt;
+&lt;/</span><span style="background: white; color: #a31515">Page.Resources</span><span style="background: white; color: blue">&gt;</span></pre>
+<p>Here’s the class that you’d need below. It has a caching feature (<strong>IsCacheEnabled</strong>) to prevent the search from occurring more than once for a key. It’s set to True by default. When used, the object searches from the current Item through all Parents trying to match the type of the object (via the <a href="http://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.media.visualtreehelper.aspx" target="_blank">VisualTreeHelper</a>). Only the ClassName is used as programmed below (and not the full namespace). You could easily change this behavior by removing the <strong>Split </strong>and <strong>Last </strong>calls.</p>
+<pre class="code"><span style="background: white; color: blue">using </span><span style="background: white; color: black">System;
+</span><span style="background: white; color: blue">using </span><span style="background: white; color: black">System.Collections.Generic;
+</span><span style="background: white; color: blue">using </span><span style="background: white; color: black">System.Linq;
+</span><span style="background: white; color: blue">using </span><span style="background: white; color: black">System.Text;
+</span><span style="background: white; color: blue">using </span><span style="background: white; color: black">System.Threading.Tasks;
+</span><span style="background: white; color: blue">using </span><span style="background: white; color: black">Windows.UI.Xaml;
+</span><span style="background: white; color: blue">using </span><span style="background: white; color: black">Windows.UI.Xaml.Controls;
+</span><span style="background: white; color: blue">using </span><span style="background: white; color: black">Windows.UI.Xaml.Media;
+
+</span><span style="background: white; color: blue">namespace </span><span style="background: white; color: black">WiredPrairie.TemplateSelector
+{
+    </span><span style="background: white; color: blue">public class </span><span style="background: white; color: #2b91af">TypedTemplateSelector </span><span style="background: white; color: black">: </span><span style="background: white; color: #2b91af">DataTemplateSelector
+    </span><span style="background: white; color: black">{
+        </span><span style="background: white; color: blue">private </span><span style="background: white; color: #2b91af">Dictionary</span><span style="background: white; color: black">&lt;</span><span style="background: white; color: blue">string</span><span style="background: white; color: black">, </span><span style="background: white; color: #2b91af">DataTemplate</span><span style="background: white; color: black">&gt; _cachedDataTemplates;
+
+        </span><span style="background: white; color: gray">/// &lt;summary&gt;
+        /// </span><span style="background: white; color: green">Fallback value for DataTemplate
+        </span><span style="background: white; color: gray">/// &lt;/summary&gt;
+        </span><span style="background: white; color: blue">public string </span><span style="background: white; color: black">DefaultTemplateKey { </span><span style="background: white; color: blue">get</span><span style="background: white; color: black">; </span><span style="background: white; color: blue">set</span><span style="background: white; color: black">; }
+
+        </span><span style="background: white; color: gray">/// &lt;summary&gt;
+        /// </span><span style="background: white; color: green">Cache search results for a type (defaults to Enabled)
+        </span><span style="background: white; color: gray">/// &lt;/summary&gt;
+        </span><span style="background: white; color: blue">public bool </span><span style="background: white; color: black">IsCacheEnabled { </span><span style="background: white; color: blue">get</span><span style="background: white; color: black">; </span><span style="background: white; color: blue">set</span><span style="background: white; color: black">; }
+
+        </span><span style="background: white; color: blue">public </span><span style="background: white; color: black">TypedTemplateSelector()
+        {
+            IsCacheEnabled = </span><span style="background: white; color: blue">true</span><span style="background: white; color: black">;
+        }
+
+        </span><span style="background: white; color: blue">protected override </span><span style="background: white; color: black">Windows.UI.Xaml.</span><span style="background: white; color: #2b91af">DataTemplate </span><span style="background: white; color: black">SelectTemplateCore(</span><span style="background: white; color: blue">object </span><span style="background: white; color: black">item, Windows.UI.Xaml.</span><span style="background: white; color: #2b91af">DependencyObject </span><span style="background: white; color: black">container)
+        {
+            </span><span style="background: white; color: green">// grab the Type name. Type will be searched as Type:NAME as shown below
+            /*
+                &lt;DataTemplate x:Key=&quot;Type:SampleDataItem&quot;&gt;
+                    &lt;Grid HorizontalAlignment=&quot;Left&quot; Width=&quot;250&quot; Height=&quot;250&quot;&gt;
+                        &lt;TextBlock Text=&quot;{Binding Title}&quot; /&gt;
+                    &lt;/Grid&gt;
+                &lt;/DataTemplate&gt;
+             */
+            </span><span style="background: white; color: blue">string </span><span style="background: white; color: black">key = item != </span><span style="background: white; color: blue">null </span><span style="background: white; color: black">? </span><span style="background: white; color: blue">string</span><span style="background: white; color: black">.Format(</span><span style="background: white; color: #a31515">&quot;Type:{0}&quot;</span><span style="background: white; color: black">, item.GetType().Name.Split(</span><span style="background: white; color: #a31515">'.'</span><span style="background: white; color: black">).Last()) : DefaultTemplateKey;
+            </span><span style="background: white; color: #2b91af">DataTemplate </span><span style="background: white; color: black">dt = GetCachedDataTemplate(key);
+            </span><span style="background: white; color: blue">try
+            </span><span style="background: white; color: black">{
+                </span><span style="background: white; color: blue">if </span><span style="background: white; color: black">(dt != </span><span style="background: white; color: blue">null</span><span style="background: white; color: black">) { </span><span style="background: white; color: blue">return </span><span style="background: white; color: black">dt; }
+
+                </span><span style="background: white; color: green">// look at all parents (visual parents)
+                </span><span style="background: white; color: #2b91af">FrameworkElement </span><span style="background: white; color: black">fe = container </span><span style="background: white; color: blue">as </span><span style="background: white; color: #2b91af">FrameworkElement</span><span style="background: white; color: black">;
+                </span><span style="background: white; color: blue">while </span><span style="background: white; color: black">(fe != </span><span style="background: white; color: blue">null</span><span style="background: white; color: black">)
+                {
+                    dt = FindTemplate(fe, key);
+                    </span><span style="background: white; color: blue">if </span><span style="background: white; color: black">(dt != </span><span style="background: white; color: blue">null</span><span style="background: white; color: black">) { </span><span style="background: white; color: blue">return </span><span style="background: white; color: black">dt; }
+                    </span><span style="background: white; color: green">// if you were to just look at logical parents,
+                    // you'd find that there isn't a Parent for Items set
+                    </span><span style="background: white; color: black">fe = </span><span style="background: white; color: #2b91af">VisualTreeHelper</span><span style="background: white; color: black">.GetParent(fe) </span><span style="background: white; color: blue">as </span><span style="background: white; color: #2b91af">FrameworkElement</span><span style="background: white; color: black">;
+                }
+
+                dt = FindTemplate(</span><span style="background: white; color: blue">null</span><span style="background: white; color: black">, key);
+                </span><span style="background: white; color: blue">return </span><span style="background: white; color: black">dt;
+            }
+            </span><span style="background: white; color: blue">finally
+            </span><span style="background: white; color: black">{
+                </span><span style="background: white; color: blue">if </span><span style="background: white; color: black">(dt != </span><span style="background: white; color: blue">null</span><span style="background: white; color: black">)
+                {
+                    AddCachedDataTemplate(key, dt);
+                }
+            }
+        }
+
+        </span><span style="background: white; color: blue">private </span><span style="background: white; color: #2b91af">DataTemplate </span><span style="background: white; color: black">GetCachedDataTemplate(</span><span style="background: white; color: blue">string </span><span style="background: white; color: black">key)
+        {
+            </span><span style="background: white; color: blue">if </span><span style="background: white; color: black">(!IsCacheEnabled) { </span><span style="background: white; color: blue">return null</span><span style="background: white; color: black">; }
+            VerifyCachedDataTemplateStorage();
+            </span><span style="background: white; color: blue">if </span><span style="background: white; color: black">(_cachedDataTemplates.ContainsKey(key))
+            {
+                </span><span style="background: white; color: blue">return </span><span style="background: white; color: black">_cachedDataTemplates[key];
+            }
+
+            </span><span style="background: white; color: blue">return null</span><span style="background: white; color: black">;
+        }
+
+        </span><span style="background: white; color: blue">private void </span><span style="background: white; color: black">AddCachedDataTemplate(</span><span style="background: white; color: blue">string </span><span style="background: white; color: black">key, </span><span style="background: white; color: #2b91af">DataTemplate </span><span style="background: white; color: black">dt)
+        {
+            </span><span style="background: white; color: blue">if </span><span style="background: white; color: black">(!IsCacheEnabled) { </span><span style="background: white; color: blue">return</span><span style="background: white; color: black">; }
+            VerifyCachedDataTemplateStorage();
+            _cachedDataTemplates[key] = dt;
+        }
+
+        </span><span style="background: white; color: gray">/// &lt;summary&gt;
+        /// </span><span style="background: white; color: green">Delay creates storage
+        </span><span style="background: white; color: gray">/// &lt;/summary&gt;
+        </span><span style="background: white; color: blue">private void </span><span style="background: white; color: black">VerifyCachedDataTemplateStorage()
+        {
+            </span><span style="background: white; color: blue">if </span><span style="background: white; color: black">(_cachedDataTemplates == </span><span style="background: white; color: blue">null</span><span style="background: white; color: black">)
+            {
+                _cachedDataTemplates = </span><span style="background: white; color: blue">new </span><span style="background: white; color: #2b91af">Dictionary</span><span style="background: white; color: black">&lt;</span><span style="background: white; color: blue">string</span><span style="background: white; color: black">, </span><span style="background: white; color: #2b91af">DataTemplate</span><span style="background: white; color: black">&gt;();
+            }
+
+        }
+
+        </span><span style="background: white; color: gray">/// &lt;summary&gt;
+        /// </span><span style="background: white; color: green">Returns a template
+        </span><span style="background: white; color: gray">/// &lt;/summary&gt;
+        /// &lt;param name=&quot;source&quot;&gt;</span><span style="background: white; color: green">Pass null to search entire app</span><span style="background: white; color: gray">&lt;/param&gt;
+        /// &lt;param name=&quot;key&quot;&gt;&lt;/param&gt;
+        /// &lt;returns&gt;&lt;/returns&gt;
+        </span><span style="background: white; color: blue">private static </span><span style="background: white; color: #2b91af">DataTemplate </span><span style="background: white; color: black">FindTemplate(</span><span style="background: white; color: blue">object </span><span style="background: white; color: black">source, </span><span style="background: white; color: blue">string </span><span style="background: white; color: black">key)
+        {
+            </span><span style="background: white; color: blue">var </span><span style="background: white; color: black">fe = source </span><span style="background: white; color: blue">as </span><span style="background: white; color: #2b91af">FrameworkElement</span><span style="background: white; color: black">;
+            </span><span style="background: white; color: blue">object </span><span style="background: white; color: black">obj;
+            </span><span style="background: white; color: #2b91af">ResourceDictionary </span><span style="background: white; color: black">rd = fe != </span><span style="background: white; color: blue">null </span><span style="background: white; color: black">? fe.Resources : </span><span style="background: white; color: #2b91af">App</span><span style="background: white; color: black">.Current.Resources;
+            </span><span style="background: white; color: blue">if </span><span style="background: white; color: black">(rd.TryGetValue(key, </span><span style="background: white; color: blue">out </span><span style="background: white; color: black">obj))
+            {
+                </span><span style="background: white; color: #2b91af">DataTemplate </span><span style="background: white; color: black">dt = obj </span><span style="background: white; color: blue">as </span><span style="background: white; color: #2b91af">DataTemplate</span><span style="background: white; color: black">;
+                </span><span style="background: white; color: blue">if </span><span style="background: white; color: black">(dt != </span><span style="background: white; color: blue">null</span><span style="background: white; color: black">)
+                {
+                    </span><span style="background: white; color: blue">return </span><span style="background: white; color: black">dt;
+                }
+            }
+            </span><span style="background: white; color: blue">return null</span><span style="background: white; color: black">;
+
+        }
+    }
+}
+</span></pre>
+]]></content:encoded>
+					
+					<wfw:commentRss>/blog/index.php/archives/1705/feed</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1705</post-id>	</item>
+	</channel>
+</rss>

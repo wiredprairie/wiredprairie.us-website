@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Post PDC 2008 Wrap-up	</title>
+	<atom:link href="/blog/index.php/archives/604/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/604</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Tue, 02 Dec 2008 23:15:38 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: Mike		</title>
+		<link>/blog/index.php/archives/604/comment-page-1#comment-1921</link>
+
+		<dc:creator><![CDATA[Mike]]></dc:creator>
+		<pubDate>Tue, 02 Dec 2008 23:15:38 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/604#comment-1921</guid>
+
+					<description><![CDATA[Azure strikes me as a collection of best practices for hosting services, not only from the cloud, but ideally from a larger scale enterprise.  At present, I am most intrigued by the Fabric Manager.  It manages load, compares it to SLA&#039;s and then ramps up or down servers appropriately.
+
+Check out http://mschnlnine.vo.llnwd.net/d1/pdc08/WMV-HQ/ES19.wmv]]></description>
+			<content:encoded><![CDATA[<p>Azure strikes me as a collection of best practices for hosting services, not only from the cloud, but ideally from a larger scale enterprise.  At present, I am most intrigued by the Fabric Manager.  It manages load, compares it to SLA&#8217;s and then ramps up or down servers appropriately.</p>
+<p>Check out <a href="http://mschnlnine.vo.llnwd.net/d1/pdc08/WMV-HQ/ES19.wmv" rel="nofollow ugc">http://mschnlnine.vo.llnwd.net/d1/pdc08/WMV-HQ/ES19.wmv</a></p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>Interview &#8211; WiredPrairie</title>
+	<atom:link href="/blog/index.php/archives/category/interview/feed" rel="self" type="application/rss+xml" />
+	<link>/blog</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Wed, 03 Sep 2008 12:20:23 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+<site xmlns="com-wordpress:feed-additions:1">193486638</site>	<item>
+		<title>Coding Challenge #22</title>
+		<link>/blog/index.php/archives/532</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Wed, 10 Sep 2008 12:29:11 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[Interview]]></category>
+		<guid isPermaLink="false">/blog/index.php/archives/532</guid>
+
+					<description><![CDATA[Coding Challenge Series / Technical Interview Series Now that you&#8217;ve become an expert in efficiently copying bytes (you did solve the last challenge, didn&#8217;t you?), I have an even more challenging question&#8230;. You have a large block of byte oriented data representing a 256-color LCD panel. Each byte represents the color of the pixel. You&#8217;ll [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="/blog/index.php/archives/128">Coding Challenge Series</a> / <a href="/blog/index.php/archives/128">Technical Interview Series</a></p>
+<p>Now that you&#8217;ve become an expert in efficiently copying bytes (you did solve the <a href="/blog/index.php/archives/533">last challenge</a>, didn&#8217;t you?), I have an even more challenging question&#8230;.</p>
+<p>You have a large block of byte oriented data representing a 256-color LCD panel. Each byte represents the color of the pixel. </p>
+<p>You&#8217;ll need to write a Copy Image function for me &#8230;</p>
+<p>Your function is provided: width and height of the LCD panel, a reference (or pointer) to the LCD pixel storage, an array with the new colors to set, and a rectangle with the bounds for the new pixels.</p>
+<p>The LCD display&#8217;s size may not be evenly divisible by 8, yet a pixel row must end on a boundary that is evenly divisible by 8. The image bytes as being provided do not have this behavior.</p>
+<p>Copy the new pixels/colors into the LCD storage.</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">532</post-id>	</item>
+		<item>
+		<title>Coding Challenge #21</title>
+		<link>/blog/index.php/archives/533</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Wed, 03 Sep 2008 12:19:52 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[Interview]]></category>
+		<guid isPermaLink="false">/blog/index.php/archives/533</guid>
+
+					<description><![CDATA[Coding Challenge Series / Technical Interview Series Create a function which copies byte data from a source location to a destination location (you might use pointers or an array depending on the programming language). The function must copy using this pattern: 8 bytes, skip 8 bytes, 4 bytes, skip 8 bytes, 8 bytes, &#8230; repeat [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="/blog/index.php/archives/128">Coding Challenge Series</a> / <a href="/blog/index.php/archives/128">Technical Interview Series</a></p>
+<p>Create a function which copies byte data from a source location to a destination location (you might use pointers or an array depending on the programming language). The function must copy using this pattern: 8 bytes, skip 8 bytes, 4 bytes, skip 8 bytes, 8 bytes, &#8230; repeat (+8,-8,+4,-8&#8230;.). </p>
+<p>Bonus points for really nailing the performance of this one.</p>
+<p>&nbsp;</p>
+<p>(Are you enjoying this series? I&#8217;d appreciate a comment if you&#8217;d like me to continue the series. It takes more time than I&#8217;d like to admit to create and post these entries every week.)</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">533</post-id>	</item>
+		<item>
+		<title>Coding Challenge #20!</title>
+		<link>/blog/index.php/archives/493</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Wed, 27 Aug 2008 12:29:15 +0000</pubDate>
+				<category><![CDATA[Interview]]></category>
+		<guid isPermaLink="false">/blog/index.php/archives/493</guid>
+
+					<description><![CDATA[Coding Challenge Series / Technical Interview Series Write a function to return a specified number of words from a string (as a new string), up to a maximum of specified characters total. Your function is passed the original string, the number of words to return, and the maximum number of characters allowed. Make sure that [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="/blog/index.php/archives/128">Coding Challenge Series</a> / <a href="/blog/index.php/archives/128">Technical Interview Series</a></p>
+<p>Write a function to return a specified number of words from a string (as a new string), up to a maximum of specified characters total.</p>
+<p>Your function is passed the original string, the number of words to return, and the maximum number of characters allowed.</p>
+<p>Make sure that you consider unusual strings, delimiters, etc. </p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">493</post-id>	</item>
+		<item>
+		<title>Coding Challenge #19</title>
+		<link>/blog/index.php/archives/473</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Wed, 20 Aug 2008 12:29:50 +0000</pubDate>
+				<category><![CDATA[Interview]]></category>
+		<guid isPermaLink="false">/blog/index.php/archives/473</guid>
+
+					<description><![CDATA[Coding Challenge Series / Technical Interview Series I have 4 bytes (a double-word) represented in little-endian format. Each byte contains the usual 8 bits. Write the function necessary the individual bits on a console screen as 1s or 0s &#8212; as one giant bit string (which properly represents the total number). As a bonus, display [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="/blog/index.php/archives/128">Coding Challenge Series</a> / <a href="/blog/index.php/archives/128">Technical Interview Series</a></p>
+<p>I have 4 bytes (a double-word) represented in little-endian format. Each byte contains the usual 8 bits. </p>
+<p>Write the function necessary the individual bits on a console screen as 1s or 0s &#8212; as one giant bit string (which properly represents the total number). As a bonus, display the actual decimal number (base-10) as well.</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">473</post-id>	</item>
+		<item>
+		<title>Deceptive Resume&#8230;. just be honest.</title>
+		<link>/blog/index.php/archives/470</link>
+					<comments>/blog/index.php/archives/470#comments</comments>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Tue, 19 Aug 2008 12:20:02 +0000</pubDate>
+				<category><![CDATA[General]]></category>
+		<category><![CDATA[Humor]]></category>
+		<category><![CDATA[Interview]]></category>
+		<guid isPermaLink="false">/blog/index.php/archives/470</guid>
+
+					<description><![CDATA[Ten tall tales told on resumes. Have you caught people in lies on the résumés? I was interviewing a candidate for a documentation position years ago and while out at lunch she seemed to say things which contradicted some of the information on her printed résumé. Her tales of a &#8220;current&#8221; job and the reason [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="http://www.cnn.com/2008/LIVING/worklife/08/13/cb.lies.on.resumes/index.html">Ten tall tales told on resumes</a>.</p>
+<p>Have you caught people in lies on the résumés? I was interviewing a candidate for a documentation position years ago and while out at lunch she seemed to say things which contradicted some of the information on her printed résumé. Her tales of a &#8220;current&#8221; job and the reason she was seeking new employment didn&#8217;t quite feel right. </p>
+<p>One call to the employer later by our HR department confirmed my suspicions. She did not have the skills nor role she was claiming. Plus, she had already left that job. Of course, <strong>she wasn&#8217;t hired</strong>.</p>
+<p>I interviewed a guy once who had 4 or 5 years of time unaccounted for right in the middle of several other jobs. Thankfully, he had a good answer. He had decided to join the military and felt it wasn&#8217;t relevant to the current position, so he had removed it. (I suggested he put it back).</p>
+<p>I see technical resumes which pad skills and knowledge far too often; programming language padding seem to be the most common on developer resumes. Just because your office neighbor has a book on the programming language Python shouldn&#8217;t give you reason to include it on your resume! :)&nbsp; I enjoy asking developers about these skills &#8212; making them sweat when they realize they shouldn&#8217;t have put a specific technology on their resume. </p>
+<p>Have you padded your resume? Do you include every programming language technology that you&#8217;ve encountered, regardless of your level of experience/knowledge?</p>
+<p>Do you still include &#8220;Microsoft Office&#8221;? :)</p>
+<p>What&#8217;s the funniest thing you&#8217;ve encountered in interviews or on resumes?</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/blog/index.php/archives/470/feed</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">470</post-id>	</item>
+		<item>
+		<title>Coding Challenge #18</title>
+		<link>/blog/index.php/archives/459</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Wed, 13 Aug 2008 12:29:17 +0000</pubDate>
+				<category><![CDATA[Interview]]></category>
+		<guid isPermaLink="false">/blog/index.php/archives/459</guid>
+
+					<description><![CDATA[Coding Challenge Series / Technical Interview Series Compare two strings ignoring spaces, line feeds, and carriage returns. You may not change or make a copy of either string. Strings are identical if all characters are exactly the same (ignoring the previously mentioned characters). (Yes, this may not be terribly difficult, but you do need to [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="/blog/index.php/archives/128">Coding Challenge Series</a> / <a href="/blog/index.php/archives/128">Technical Interview Series</a></p>
+<p>Compare two strings ignoring spaces, line feeds, and carriage returns. You may not change or make a copy of either string. Strings are identical if all characters are exactly the same (ignoring the previously mentioned characters). </p>
+<p>(Yes, this may not be terribly difficult, but you do need to be careful to get it 100% right without bugs.). :)</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">459</post-id>	</item>
+		<item>
+		<title>Coding Challenge #17</title>
+		<link>/blog/index.php/archives/449</link>
+					<comments>/blog/index.php/archives/449#comments</comments>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Wed, 06 Aug 2008 12:30:05 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[Interview]]></category>
+		<guid isPermaLink="false">/blog/index.php/archives/449</guid>
+
+					<description><![CDATA[Coding Challenge Series / Technical Interview Series You are writing code for an embedded system. There are some restrictions on memory and I/O that you must follow. Your challenge is to create a file search function. The function is provided an ASCII string and the name of the file. The file API follows this pattern: [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="/blog/index.php/archives/128">Coding Challenge Series</a> / <a href="/blog/index.php/archives/128">Technical Interview Series</a></p>
+<p>You are writing code for an embedded system. There are some restrictions on memory and I/O that you must follow. </p>
+<p>Your challenge is to create a file search function. The function is provided an ASCII string and the name of the file. The file API follows this pattern:</p>
+<p>array = ReadFile(filename, startindex)</p>
+<p>Notice how there isn&#8217;t a length? :)&nbsp; The ReadFile function returns 64 bytes at a time (as possible). You may not keep more than 64 bytes of the file in memory at any time. (No double buffering, etc.). The data in the file is represented as ASCII characters. Additionally, a block of memory may only be read once.</p>
+<p>To get the file length, a function is provided:</p>
+<p>length (integer) = FileLength(filename)</p>
+<p>The search string may be longer than 64 characters. </p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/blog/index.php/archives/449/feed</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">449</post-id>	</item>
+		<item>
+		<title>Coding Challenge #16</title>
+		<link>/blog/index.php/archives/447</link>
+					<comments>/blog/index.php/archives/447#comments</comments>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Wed, 30 Jul 2008 12:29:00 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[Interview]]></category>
+		<guid isPermaLink="false">/blog/index.php/archives/447</guid>
+
+					<description><![CDATA[Coding Challenge Series / Technical Interview Series You&#8217;re given the size of a rectangle, with a width and a height. The X = 0 and Y = 0 point is located in the upper left with the width and height in the lower right. The function you must write takes an array of rectangles (left, [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="/blog/index.php/archives/128">Coding Challenge Series</a> / <a href="/blog/index.php/archives/128">Technical Interview Series</a></p>
+<p>You&#8217;re given the size of a rectangle, with a width and a height. The X = 0 and Y = 0 point is located in the upper left with the width and height in the lower right. The function you must write takes an array of rectangles (left, top, width, height). Return a list of intersecting rectangle groups. If, for a example, a rectangle is not overlapping, it should be considered a group of one. If two rectangles overlap/intersect, create a rectangle which is inclusive of all points within the two rectangles, and return that as a group, and so on.</p>
+<p>A rectangle can be in only one group/set.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/blog/index.php/archives/447/feed</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">447</post-id>	</item>
+		<item>
+		<title>Coding Challenge #15</title>
+		<link>/blog/index.php/archives/429</link>
+					<comments>/blog/index.php/archives/429#comments</comments>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Wed, 23 Jul 2008 22:31:21 +0000</pubDate>
+				<category><![CDATA[Interview]]></category>
+		<guid isPermaLink="false">/blog/index.php/archives/429</guid>
+
+					<description><![CDATA[Coding Challenge Series / Technical Interview Series Create a structure which represents a binary tree. Iterate through all of the elements of the tree in any order, without using recursion. Update: Your function is only provided the root of the constructed tree. A tree node should contain no more than the child node pointers and [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="/blog/index.php/archives/128">Coding Challenge Series</a> / <a href="/blog/index.php/archives/128">Technical Interview Series</a></p>
+<p>Create a structure which represents a binary tree. Iterate through all of the elements of the tree in any order, <strong>without</strong> using recursion.</p>
+<p>Update: Your function is only provided the root of the constructed tree. A tree node should contain no more than the child node pointers and the data.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/blog/index.php/archives/429/feed</wfw:commentRss>
+			<slash:comments>6</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">429</post-id>	</item>
+		<item>
+		<title>Coding Challenge #14</title>
+		<link>/blog/index.php/archives/417</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Wed, 16 Jul 2008 12:27:46 +0000</pubDate>
+				<category><![CDATA[Interview]]></category>
+		<guid isPermaLink="false">/blog/index.php/archives/417</guid>
+
+					<description><![CDATA[Coding Challenge Series / Technical Interview Series Efficiently parse the following string into corresponding key-value pairs: Content-Type: text/xml; Content-Length: 246; Connection: Keep-Alive; Security-Token: &#8216;F52AB22B890E22:55AB072CF&#8217;; (The above string is an example of the types of strings that might be encountered).]]></description>
+										<content:encoded><![CDATA[<p><a href="/blog/index.php/archives/128">Coding Challenge Series</a> / <a href="/blog/index.php/archives/128">Technical Interview Series</a></p>
+<p><strong>Efficiently </strong>parse the following string into corresponding key-value pairs:</p>
+<p><font face="Courier New">Content-Type: text/xml;</font></p>
+<p><font face="Courier New">Content-Length: 246;</font></p>
+<p><font face="Courier New">Connection: Keep-Alive;</font></p>
+<p><font face="Courier New">Security-Token: &#8216;F52AB22B890E22:55AB072CF&#8217;;</font></p>
+<p>(The above string is an example of the types of strings that might be encountered).</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">417</post-id>	</item>
+	</channel>
+</rss>

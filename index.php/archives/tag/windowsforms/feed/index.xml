@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>WindowsForms &#8211; WiredPrairie</title>
+	<atom:link href="/blog/index.php/archives/tag/windowsforms/feed" rel="self" type="application/rss+xml" />
+	<link>/blog</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Tue, 04 Sep 2012 15:28:50 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+<site xmlns="com-wordpress:feed-additions:1">193486638</site>	<item>
+		<title>Forcing IE to run as IE9 with embedded web browser</title>
+		<link>/blog/index.php/archives/1720</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Tue, 28 Aug 2012 12:49:56 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[C#]]></category>
+		<category><![CDATA[Internet Explorer]]></category>
+		<category><![CDATA[Windows]]></category>
+		<category><![CDATA[WindowsForms]]></category>
+		<category><![CDATA[WPF]]></category>
+		<guid isPermaLink="false">/blog/?p=1720</guid>
+
+					<description><![CDATA[If you embed IE in a windows application, you may notice that it runs in IE7 Emulated mode. This is likely NOT what you want. I’ve added code like below to solve the problem: string appName = &#34;&#34;; try { appName = Path.GetFileName(Assembly.GetEntryAssembly().Location); const string IE_EMULATION = @&#34;Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_BROWSER_EMULATION&#34;;  using (var fbeKey = Registry.CurrentUser.OpenSubKey(IE_EMULATION, true))  [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>If you embed IE in a windows application, you may notice that it runs in IE7 Emulated mode. This is likely NOT what you want.</p>
+<p>I’ve added code like below to solve the problem:</p>
+<pre class="code"><p><span style="color: blue">string </span>appName = <span style="color: #a31515">&quot;&quot;</span>;
+<span style="color: blue">try
+</span>{
+    appName = <span style="color: #2b91af">Path</span>.GetFileName(<span style="color: #2b91af">Assembly</span>.GetEntryAssembly().Location);
+</p><p>    <span style="color: blue">const string </span>IE_EMULATION = <span style="color: #900312">@&quot;Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_BROWSER_EMULATION&quot;</span>; <br /><span style="color: blue">    using </span>(<span style="color: blue">var </span>fbeKey = <span style="color: #257f9f">Registry</span>.CurrentUser.OpenSubKey(IE_EMULATION, <span style="color: blue">true</span>)) <br />    {  <br />        fbeKey.SetValue(appName, 9000, <span style="color: #257f9f">RegistryValueKind</span>.DWord);  <br />    }<br />}</p><span style="color: blue">catch</span>(<span style="color: #2b91af">Exception </span>ex)
+{
+    <span style="color: #2b91af">MessageBox</span>.Show(appName + <span style="color: #a31515">&quot;\n&quot; </span>+ ex.ToString(), <span style="color: #a31515">&quot;Unexpected error setting browser mode!&quot;</span>);
+}</pre>
+<p>There’s a special registry key that must be set before IE9 loads and is navigated … it must be set to the name of your application. Oddly, not the full path to your application, just the name of your executable.</p>
+<p>You may want to delete this registry setting when your application exits.</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1720</post-id>	</item>
+	</channel>
+</rss>

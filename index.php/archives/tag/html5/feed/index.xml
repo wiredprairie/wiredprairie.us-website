@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>HTML5 &#8211; WiredPrairie</title>
+	<atom:link href="/blog/index.php/archives/tag/html5/feed" rel="self" type="application/rss+xml" />
+	<link>/blog</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Tue, 17 Apr 2012 02:05:54 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+<site xmlns="com-wordpress:feed-additions:1">193486638</site>	<item>
+		<title>SVG Setting Text Content Dynamically</title>
+		<link>/blog/index.php/archives/1643</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Tue, 17 Apr 2012 12:53:00 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[Html]]></category>
+		<category><![CDATA[HTML5]]></category>
+		<category><![CDATA[JavaScript]]></category>
+		<category><![CDATA[SVG]]></category>
+		<guid isPermaLink="false">/blog/?p=1643</guid>
+
+					<description><![CDATA[Continuing on a theme of animating SVG, I’ve added a label in the center of the animation which contains the current angle of the ever-rotating marker (in fact in a centered horizontally and vertically SVG text node). (Click image below to try it.) At the bottom of the file from the previous post, I’ve added [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Continuing on a <a href="/blog/index.php/archives/1638">theme</a> of animating SVG, I’ve added a label in the center of the animation which contains the current angle of the ever-rotating marker (in fact in a centered horizontally and vertically SVG text node). </p>
+<p>(Click image below to try it.)</p>
+<p><a href="http://www.wiredprairie.us/examples/svg/demo2.html" target="_blank"><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2012/04/image26.png" width="316" height="313" /></a></p>
+<p>At the bottom of the file from the <a href="/blog/index.php/archives/1638">previous</a> post, I’ve added the following:</p>
+<pre class="code">    <span style="color: blue">&lt;</span><span style="color: maroon">text </span><span style="color: red">id</span><span style="color: blue">=&quot;currentValueAsText&quot; </span><span style="color: red">x</span><span style="color: blue">=&quot;300&quot; </span><span style="color: red">y</span><span style="color: blue">=&quot;300&quot; 
+        </span><span style="color: red">style</span><span style="color: blue">=&quot;</span><span style="color: red">text-anchor</span><span style="color: blue">: middle;</span><span style="color: red">alignment-baseline</span><span style="color: blue">:middle&quot; 
+        </span><span style="color: red">fill</span><span style="color: blue">=&quot;#FFFFFF&quot; </span><span style="color: red">font-family</span><span style="color: blue">=&quot;'Arial'&quot; </span><span style="color: red">font-size</span><span style="color: blue">=&quot;96&quot; </span><span style="color: red">opacity</span><span style="color: blue">=&quot;.6&quot;&gt;</span>0<span style="color: blue">&lt;/</span><span style="color: maroon">text</span><span style="color: blue">&gt;
+
+</span></pre>
+<p>It’s a new text node. It’s set to centered both horizontally and vertically (using the text-anchor and alignment-baseline style properties respectively) at 300,300. </p>
+<p>Setting the content is simple as well:</p>
+<pre class="code">(<span style="color: blue">function </span>() {
+    window.onload = loaded;
+    <span style="color: blue">function </span>loaded() {
+        <span style="color: blue">var </span>colorTemp = document.getElementById(<span style="color: maroon">&quot;color-temp&quot;</span>);
+        <span style="color: blue">var </span>reading = document.getElementById(<span style="color: maroon">'current-reading'</span>);
+<font style="background-color: #ffff00">        <span style="color: blue">var </span>currentVal = document.getElementById(<span style="color: maroon">&quot;currentValueAsText&quot;</span>);
+</font>        <span style="color: blue">var </span>currentAngle = 0;
+        <span style="color: blue">var </span>fill;
+
+        <span style="color: blue">var </span>direction = 1;
+        setInterval(<span style="color: blue">function </span>() {
+            currentAngle += direction;
+            <span style="color: blue">if </span>(currentAngle &gt;= 120 || currentAngle &lt;= -120) {
+                direction *= -1;
+            } <span style="color: blue">else if </span>(currentAngle === 0) {
+                fill = direction === 1 ? <span style="color: maroon">&quot;#BE1E2D&quot; </span>: <span style="color: maroon">&quot;#10A2DC&quot;</span>;
+                colorTemp.setAttribute(<span style="color: maroon">&quot;fill&quot;</span>, fill);
+            }
+            <span style="color: #006400">// adjust the opacity
+            </span>colorTemp.setAttribute(<span style="color: maroon">&quot;opacity&quot;</span>, Math.abs(currentAngle) / 120.0);
+            reading.setAttribute(<span style="color: maroon">&quot;transform&quot;</span>, <span style="color: maroon">&quot;rotate(&quot; </span>+ currentAngle + <span style="color: maroon">&quot;)&quot;</span>);
+<font style="background-color: #ffff00">            currentValueAsText.textContent = currentAngle.toString();
+</font>
+        }, 25);
+    }
+})();</pre>
+<p>Use the <strong>textContent</strong> property of the SVG text node to set the text. </p>
+<p>Done. <img style="border-bottom-style: none; border-left-style: none; border-top-style: none; border-right-style: none" class="wlEmoticon wlEmoticon-smile" alt="Smile" src="/blog/wp-content/uploads/2012/04/wlEmoticon-smile2.png" /></p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1643</post-id>	</item>
+	</channel>
+</rss>

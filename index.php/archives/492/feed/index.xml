@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Your data submission contains illegal characters	</title>
+	<atom:link href="/blog/index.php/archives/492/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/492</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Wed, 27 Aug 2008 12:19:30 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/492/comment-page-1#comment-651</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Wed, 27 Aug 2008 12:19:30 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/492#comment-651</guid>
+
+					<description><![CDATA[I definitely wouldn&#039;t store photos in a database, instead I&#039;d store them in a file system. But as you suggested, they could easily rename the incoming files and store the new file name only in the database.]]></description>
+			<content:encoded><![CDATA[<p>I definitely wouldn&#8217;t store photos in a database, instead I&#8217;d store them in a file system. But as you suggested, they could easily rename the incoming files and store the new file name only in the database.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: tensync		</title>
+		<link>/blog/index.php/archives/492/comment-page-1#comment-649</link>
+
+		<dc:creator><![CDATA[tensync]]></dc:creator>
+		<pubDate>Wed, 27 Aug 2008 03:35:38 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/492#comment-649</guid>
+
+					<description><![CDATA[Perhaps they&#039;re not storing the images in the database but as an actual file and is just saving the file pathname in the database.  I&#039;ve heard pros/cons of storing large objects such as pictures vs. storing them on the file system to it to keep the database small and fast.
+
+However, I guess they could&#039;ve just stored the filename you want in the database, and generate a GUID or something for the actual filename -- if they&#039;re saving it outside of the database.]]></description>
+			<content:encoded><![CDATA[<p>Perhaps they&#8217;re not storing the images in the database but as an actual file and is just saving the file pathname in the database.  I&#8217;ve heard pros/cons of storing large objects such as pictures vs. storing them on the file system to it to keep the database small and fast.</p>
+<p>However, I guess they could&#8217;ve just stored the filename you want in the database, and generate a GUID or something for the actual filename &#8212; if they&#8217;re saving it outside of the database.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

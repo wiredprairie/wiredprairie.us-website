@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Sending a socket to a forked process in Node.JS	</title>
+	<atom:link href="/blog/index.php/archives/1930/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/1930</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Wed, 29 Jun 2022 15:21:02 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/1930/comment-page-1#comment-31678</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Wed, 28 Aug 2013 12:35:26 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1930#comment-31678</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1930/comment-page-1#comment-31603&quot;&gt;Rajkamal&lt;/a&gt;.
+
+There are a lot of good resources on the internet that explain forking reasonably well in far more detail than I&#039;ll provide here. :)  
+
+Quick answer: 
+
+&lt;ol&gt;
+&lt;li&gt;
+ Node.JS is single threaded. There may be situations where using more than one process/thread could improve the performance of an application. Forking is the act of creating a child process that is a clone of the parent. It has all of the state/etc. of the parent, but in it&#039;s own isolated container. Using an interprocess communication channel (often Pipes), the parent and child can communicate as necessary. That&#039;s Linux/OSX. Now, Windows has a different model and doesn&#039;t have the same functionality. In Windows, you can create a new process (CreateProcess) or a new thread (CreateThread). The difference when calling CreateProcess is that the child process does not inherit the state of of the parent. So, for Node.JS, when using child_process.fork, on Windows it&#039;s going to create a new process and then initialize the Node engine in the new process. As it&#039;s a new instance of the V8 engine anyway, the functional difference between the two operating systems is subtle. 
+&lt;/li&gt;
+&lt;li&gt;
+And by now, the answer to your second question should be more obvious as fork creates a new process on each operating system, just the technique is different.
+&lt;/li&gt;
+&lt;/ol&gt;
+
+I believe the &lt;a href=&quot;http://nodejs.org/api/cluster.html&quot; title=&quot;cluster module&quot; rel=&quot;nofollow&quot;&gt;cluster module&lt;/a&gt; of Node uses forks to manage multiple processes.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/1930/comment-page-1#comment-31603">Rajkamal</a>.</p>
+<p>There are a lot of good resources on the internet that explain forking reasonably well in far more detail than I&#8217;ll provide here. :)  </p>
+<p>Quick answer: </p>
+<ol>
+<li>
+ Node.JS is single threaded. There may be situations where using more than one process/thread could improve the performance of an application. Forking is the act of creating a child process that is a clone of the parent. It has all of the state/etc. of the parent, but in it&#8217;s own isolated container. Using an interprocess communication channel (often Pipes), the parent and child can communicate as necessary. That&#8217;s Linux/OSX. Now, Windows has a different model and doesn&#8217;t have the same functionality. In Windows, you can create a new process (CreateProcess) or a new thread (CreateThread). The difference when calling CreateProcess is that the child process does not inherit the state of of the parent. So, for Node.JS, when using child_process.fork, on Windows it&#8217;s going to create a new process and then initialize the Node engine in the new process. As it&#8217;s a new instance of the V8 engine anyway, the functional difference between the two operating systems is subtle.
+</li>
+<li>
+And by now, the answer to your second question should be more obvious as fork creates a new process on each operating system, just the technique is different.
+</li>
+</ol>
+<p>I believe the <a href="http://nodejs.org/api/cluster.html" title="cluster module" rel="nofollow">cluster module</a> of Node uses forks to manage multiple processes.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Rajkamal		</title>
+		<link>/blog/index.php/archives/1930/comment-page-1#comment-31603</link>
+
+		<dc:creator><![CDATA[Rajkamal]]></dc:creator>
+		<pubDate>Wed, 28 Aug 2013 03:30:17 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1930#comment-31603</guid>
+
+					<description><![CDATA[Hello WiredPrairie,
+
+I have few questions on forking.
+1) What is the use of forking, why should we be using it ?
+2) Does the forked process is same as the main process ?
+
+Thanks
+Rajkamal]]></description>
+			<content:encoded><![CDATA[<p>Hello WiredPrairie,</p>
+<p>I have few questions on forking.<br />
+1) What is the use of forking, why should we be using it ?<br />
+2) Does the forked process is same as the main process ?</p>
+<p>Thanks<br />
+Rajkamal</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

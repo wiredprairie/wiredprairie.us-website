@@ -1,0 +1,652 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>Silverlight &#8211; WiredPrairie</title>
+	<atom:link href="/blog/index.php/archives/tag/silverlight/feed" rel="self" type="application/rss+xml" />
+	<link>/blog</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Sat, 24 Apr 2010 16:46:00 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+<site xmlns="com-wordpress:feed-additions:1">193486638</site>	<item>
+		<title>Silverlight ChildWindows and VisualStates</title>
+		<link>/blog/index.php/archives/1037</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sat, 24 Apr 2010 16:46:00 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[Expression Blend]]></category>
+		<category><![CDATA[Silverlight]]></category>
+		<guid isPermaLink="false">/blog/index.php/archives/1037</guid>
+
+					<description><![CDATA[Unfortunately, as of the latest version of Silverlight 4 and Blend 4, there’s a feature supportability mismatch. Blend 4’s designer may lead to you to believe and expect that VisualStates will work within a Silverlight 4 application. (It led me down that path). In fact, VisualStates do not work directly inside of a ChildWindow. VisualStates [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Unfortunately, as of the latest version of Silverlight 4 and Blend 4, there’s a feature supportability mismatch. Blend 4’s designer may lead to you to believe and expect that <a href="http://msdn.microsoft.com/en-us/library/system.windows.visualstate(v=VS.95).aspx">VisualStates</a> will work within a Silverlight 4 application. (It led me down that path).</p>
+<p>In fact, <a href="http://msdn.microsoft.com/en-us/library/system.windows.visualstate(v=VS.95).aspx">VisualStates</a> do not work directly inside of a <a href="http://msdn.microsoft.com/en-us/library/system.windows.controls.childwindow(VS.95).aspx">ChildWindow</a>. VisualStates are only applicable on the root element of a <a href="http://msdn.microsoft.com/en-us/library/system.windows.controls.controltemplate(VS.95).aspx">ControlTemplate</a> or <a href="http://msdn.microsoft.com/en-us/library/system.windows.controls.usercontrol(VS.95).aspx">UserControl</a> (as described <a href="http://msdn.microsoft.com/en-us/library/system.windows.visualstatemanager(VS.95).aspx">here</a>). I just spent the last 20 minutes learning about this limitation the hard way – by trying it, over and over. :)&#160; It’s not a bug, it just isn’t supported. </p>
+<p>If you want to use VisualStates within a ChildWindow, the simplest workaround for this problem is to wrap the content of the child window into a new UserControl and place that UserControl in the ChildWindow (as a child). You’ll need to do a little more work to expose the functionality of the UserControl to the containing ChildWindow (like OK/Cancel button handling for example), but it’s simple work. I added an event which indicates the child window should be closed:</p>
+<pre class="code"><span style="color: blue">public event </span><span style="color: #2b91af">EventHandler</span>&lt;<span style="color: #2b91af">CloseDialogEventArgs</span>&gt; CloseDialog;</pre>
+<pre class="code"><span style="color: blue">public class </span><span style="color: #2b91af">CloseDialogEventArgs </span>: <span style="color: #2b91af">EventArgs
+</span>{
+    <span style="color: blue">public bool</span>? DialogResult { <span style="color: blue">get</span>; <span style="color: blue">set</span>; }
+
+    <span style="color: blue">private </span>CloseDialogEventArgs()
+    {
+
+    }
+    <span style="color: blue">public </span>CloseDialogEventArgs(<span style="color: blue">bool</span>? dialogResult)
+    {
+        DialogResult = dialogResult;
+    }
+
+    <span style="color: blue">public static new </span><span style="color: #2b91af">CloseDialogEventArgs </span>Empty = <span style="color: blue">new </span><span style="color: #2b91af">CloseDialogEventArgs</span>();
+}</pre>
+<p>Then, it can be closed:</p>
+<pre class="code"><span style="color: blue">private void </span>CancelButton_Click(<span style="color: blue">object </span>sender, <span style="color: #2b91af">RoutedEventArgs </span>e)
+{
+    <span style="color: blue">if </span>(CloseDialog != <span style="color: blue">null</span>)
+    {
+        CloseDialog(<span style="color: blue">this</span>, <span style="color: blue">new </span><span style="color: #2b91af">CloseDialogEventArgs</span>(<span style="color: blue">false</span>));
+    }
+}</pre>
+<p><a href="http://11011.net/software/vspaste"></a></p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1037</post-id>	</item>
+		<item>
+		<title>Silverlight&#8217;s ItemsPanelTemplate, Horizontal Only?</title>
+		<link>/blog/index.php/archives/640</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Mon, 22 Dec 2008 02:41:34 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[Silverlight]]></category>
+		<guid isPermaLink="false">/blog/index.php/archives/640</guid>
+
+					<description><![CDATA[Have you tried to create a horizontally oriented ListBox in Silverlight with a custom ItemsPaneltemplate, with a Panel of type other than StackPanel? If you have, you’ll likely have run into the same problem I have – you can’t really do it. Unfortunately, the ItemsControl (which the ListBox derives from), eventually checks the Panel type [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Have you tried to create a horizontally oriented ListBox in Silverlight with a custom ItemsPaneltemplate, with a Panel of type other than StackPanel? If you have, you’ll likely have run into the same problem I have – you can’t really do it. Unfortunately, the ItemsControl (which the ListBox derives from), eventually checks the Panel type of the ItemsPanel (the ItemsHost), and it only reacts properly to a Vertical orientation if the Panel type is a StackPanel. </p>
+<pre>internal <a href="http://www.aisto.com/roeder/dotnet/Default.aspx?Target=code://mscorlib:2.0.5.0:7cec85d7bea7798e/System.Boolean">bool</a> <b><a href="http://www.aisto.com/roeder/dotnet/Default.aspx?Target=code://System.Windows:2.0.5.0:7cec85d7bea7798e/System.Windows.Controls.Primitives.Selector/IsVerticalOrientation():Boolean">IsVerticalOrientation</a></b>()
+{
+    <a href="http://www.aisto.com/roeder/dotnet/Default.aspx?Target=code://System.Windows:2.0.5.0:7cec85d7bea7798e/System.Windows.Controls.StackPanel">StackPanel</a> <b>itemsHost</b> = base.<a href="http://www.aisto.com/roeder/dotnet/Default.aspx?Target=code://System.Windows:2.0.5.0:7cec85d7bea7798e/System.Windows.Controls.ItemsControl/property:ItemsHost:System.Windows.Controls.Panel">ItemsHost</a> as <a href="http://www.aisto.com/roeder/dotnet/Default.aspx?Target=code://System.Windows:2.0.5.0:7cec85d7bea7798e/System.Windows.Controls.StackPanel">StackPanel</a>;
+    if (<a>itemsHost</a> != null)
+    {
+        return (<a>itemsHost</a>.<a href="http://www.aisto.com/roeder/dotnet/Default.aspx?Target=code://System.Windows:2.0.5.0:7cec85d7bea7798e/System.Windows.Controls.StackPanel/property:Orientation:System.Windows.Controls.Orientation">Orientation</a> == <a href="http://www.aisto.com/roeder/dotnet/Default.aspx?Target=code://System.Windows:2.0.5.0:7cec85d7bea7798e/System.Windows.Controls.Orientation">Orientation</a>.<a href="http://www.aisto.com/roeder/dotnet/Default.aspx?Target=code://System.Windows:2.0.5.0:7cec85d7bea7798e/System.Windows.Controls.Orientation/Vertical">Vertical</a>);
+    }
+    return true;
+}</pre>
+<p>You might try deriving from StackPanel, but unfortunately, ArrangeOverride and MeasureOverride are both sealed methods on the StackPanel. So, you can’t. This behavior certainly limits what you can do with a ListBox layout. </p>
+<p>What happens if you try something vertically oriented without a StackPanel host? The behavior is that the ListBox won’t properly scroll and activate the current ListBoxItem. Calling ScrollIntoView has no impact (as the math doesn’t work correctly when the IsVerticalOrientation isn’t properly handled). </p>
+<p>Yet another feature of WPF that you’ll need to ignore for the time being. :)</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">640</post-id>	</item>
+		<item>
+		<title>Converting RESTful XML output to formatted XML in Silverlight</title>
+		<link>/blog/index.php/archives/634</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Mon, 15 Dec 2008 22:40:07 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[Silverlight]]></category>
+		<guid isPermaLink="false">/blog/index.php/archives/634</guid>
+
+					<description><![CDATA[Ever debugged output from a RESTful web service and was driven absolutely mad by the lack of formatting of the XML? Seriously, how much fun is it to stare at XML that has no line breaks or indentation whatsoever? I haven’t tried to solve the problem within the IDE as that’s a different problem. However, [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Ever debugged output from a <a target="_blank" href="http://en.wikipedia.org/wiki/Representational_State_Transfer">RESTful</a> web service and was driven absolutely mad by the lack of formatting of the XML? Seriously, how much fun is it to stare at XML that has no line breaks or indentation whatsoever? </p>
+<p>I haven’t tried to solve the problem within the IDE as that’s a different problem. However, I have written the code to convert the output into something that you could stuff into a TextBox for example (which is what I’ve done in my Silverlight application – I’ve created a small debug window for RESTFul web service calls).</p>
+<p>&#160;</p>
+<p> <a href="http://11011.net/software/vspaste"></a>  </p>
+<pre class="code"><span style="color: #2b91af">HttpWebRequest </span>request = (<span style="color: #2b91af">HttpWebRequest</span>)
+    <span style="color: #2b91af">HttpWebRequest</span>.Create(<span style="color: blue">new </span><span style="color: #2b91af">Uri</span>(<span style="color: #a31515">&quot;http://localhost:12345/MyWebService.asmx&quot;</span>));</pre>
+<p><a href="http://11011.net/software/vspaste"></a></p>
+<pre class="code">request.BeginGetResponse(<span style="color: blue">delegate</span>(<span style="color: #2b91af">IAsyncResult </span>ar)
+{
+    <span style="color: #2b91af">HttpWebRequest </span>req = (<span style="color: #2b91af">HttpWebRequest</span>)ar.AsyncState;
+    <span style="color: #2b91af">HttpWebResponse </span>webResponse = req.EndGetResponse(ar) <span style="color: blue">as </span><span style="color: #2b91af">HttpWebResponse</span>;
+    <span style="color: blue">try
+    </span>{
+        <span style="color: blue">using </span>(<span style="color: #2b91af">Stream </span>stream = webResponse.GetResponseStream())
+        {
+            <span style="color: #2b91af">XmlReader </span>xmlReader = <span style="color: #2b91af">XmlReader</span>.Create(stream);
+            <span style="color: blue">try
+            </span>{
+                <span style="color: #2b91af">XmlWriterSettings </span>settings = <span style="color: blue">new </span><span style="color: #2b91af">XmlWriterSettings</span>();                            
+                settings.Indent = <span style="color: blue">true</span>;
+                settings.Encoding = System.Text.<span style="color: #2b91af">Encoding</span>.Unicode;
+                <span style="color: blue">using </span>(<span style="color: #2b91af">StringWriter </span>strWriter = <span style="color: blue">new </span><span style="color: #2b91af">StringWriter</span>())
+                {
+                    <span style="color: #2b91af">XmlWriter </span>xmlWriter = <span style="color: #2b91af">XmlWriter</span>.Create(strWriter, settings);
+                    <span style="color: blue">try
+                    </span>{
+                        <span style="color: green">// cool, this recursively writes all of the nodes!
+                        </span>xmlWriter.WriteNode(xmlReader, <span style="color: blue">false</span>);
+
+                        <span style="color: green">// output it to the UI as a string 
+                        </span>Dispatcher.BeginInvoke(<span style="color: blue">delegate</span>()
+                        {
+                            txtRawResults.Text = strWriter.ToString();
+                        });
+                    }
+                    <span style="color: blue">finally
+                    </span>{
+                        xmlWriter.Close();
+                    }
+                }
+            }
+            <span style="color: blue">finally
+            </span>{
+                xmlReader.Close();
+            }
+
+            stream.Close();
+        }
+    }
+    <span style="color: blue">finally
+    </span>{
+        webResponse.Close();
+    }
+}, request);</pre>
+<p><a href="http://11011.net/software/vspaste"></a></p>
+<p><strong>Replace the Uri in the first line with a call to your web service that returns XML. </strong></p>
+<p>Steps:</p>
+<ol>
+<li>The Response is requested asynchronously (as is the only option with Silverlight)</li>
+<li>Within the anonymous method, the request is retrieved from the IAyncResult object instance (ar)</li>
+<li>The async request is properly ended (EndGetResponse) and retreieved</li>
+<li>The stream is fetched from the response and passed to a new XmlReader instance.</li>
+<li>Create a new instance of the XmlWriterSettings object with indentation activated (Indent = True)</li>
+<li>Create a new XmlWriter instance using a new instance of a string writer and the settings created in step #5</li>
+<li>Recursively (thanks to the WriteNode method), write the entire document to the writer, formatted with indentations as requested!</li>
+<li>Invoke back to the UI thread with the result of the formatted, recursive WriteNode call.</li>
+<li>Clean up.</li>
+</ol>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">634</post-id>	</item>
+		<item>
+		<title>A Silverlight 2 TilePanel</title>
+		<link>/blog/index.php/archives/633</link>
+					<comments>/blog/index.php/archives/633#comments</comments>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sun, 14 Dec 2008 21:47:04 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[Silverlight]]></category>
+		<guid isPermaLink="false">/blog/index.php/archives/633</guid>
+
+					<description><![CDATA[You may notice that the Silverlight TileBrush is missing some key properties which would enable it to actually tile a brush. The WPF TileBrush has properties such as TileMode, Viewbox, and ViewportUnits that can be used to tile an image as a fill or as a background for a UIElement. For some reason, they’re not [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>You may notice that the Silverlight <a href="http://msdn.microsoft.com/en-us/library/system.windows.media.tilebrush(VS.95).aspx">TileBrush</a> is missing some key properties which would enable it to actually tile a brush. The WPF <a href="http://msdn.microsoft.com/en-us/library/system.windows.media.tilebrush.aspx">TileBrush</a> has properties such as TileMode, Viewbox, and ViewportUnits that can be used to tile an image as a fill or as a background for a UIElement. For some reason, they’re not implemented in Silverlight. </p>
+<p>The Silverlight object framework is far more closed than the equivalent WPF framework. There are <strong>many </strong>more sealed class types and methods in Silverlight than in WPF. For example, Canvas in Silverlight is sealed. If you want to make a more interesting Canvas of some sort, you need to implement it from a base Panel. It’s not clear why classes such as Canvas are sealed in Silverlight.</p>
+<p>Back to the TileBrush. </p>
+<p>It’s not practical to try to extend the existing TileBrush in Silverlight to provide the tiling support offered by WPF so I took a very different approach.</p>
+<p>As my tiling needs were straightforward, I created a new control, derived from Panel. The new control is called TilePanel. The TilePanel’s one and only task is, given an ImageBrush, and a few tile size values, tiles the brush to fill it’s container completely.</p>
+<p>The use of the TilePanel is straightforward:</p>
+<pre class="code"><span style="color: blue">&lt;</span><span style="color: #a31515">local</span><span style="color: blue">:</span><span style="color: #a31515">TilePanel </span><span style="color: red">x</span><span style="color: blue">:</span><span style="color: red">Name</span><span style="color: blue">=&quot;pnlTile&quot; </span><span style="color: red">TileWidth</span><span style="color: blue">=&quot;32&quot; </span><span style="color: red">TileHeight</span><span style="color: blue">=&quot;16&quot;&gt;
+    &lt;</span><span style="color: #a31515">local</span><span style="color: blue">:</span><span style="color: #a31515">TilePanel.Image</span><span style="color: blue">&gt;
+        &lt;</span><span style="color: #a31515">ImageBrush </span><span style="color: red">ImageSource</span><span style="color: blue">=&quot;LED64x32-rect.png&quot; /&gt;
+    &lt;/</span><span style="color: #a31515">local</span><span style="color: blue">:</span><span style="color: #a31515">TilePanel.Image</span><span style="color: blue">&gt;                   
+&lt;/</span><span style="color: #a31515">local</span><span style="color: blue">:</span><span style="color: #a31515">TilePanel</span><span style="color: blue">&gt;</span></pre>
+<p><a href="http://11011.net/software/vspaste"></a></p>
+<p>Above, you’ll see the panel declaration, the width and height of the tile, and the brush that is used as the tiled image.</p>
+<p>The TilePanel handles all of the details. </p>
+<p>I created a small demo program to show off the tile support.</p>
+<p><a target="_blank" href="http://www.wiredprairie.us/examples/silverlight/LEDDemo/default.html"><img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2008/12/image1.png" width="317" height="316" /></a> </p>
+<p>We have an exercise bicycle with an LED style display that inspired the simple demo program. It displays statistics and messages through the use of the bicycle. The demo allows you to change the text and the shape of the LED. Additionally, it shows how the tiles can be semi-transparent (the images used are 24-bit PNGs), allowing the content underneath to show through. In this case, it’s a large TextBlock which is animated within a clipped Canvas.</p>
+<pre class="code"><span style="color: #2b91af">DispatcherTimer </span>tmr = <span style="color: blue">new </span><span style="color: #2b91af">DispatcherTimer</span>();
+tmr.Interval = <span style="color: #2b91af">TimeSpan</span>.FromMilliseconds(250);
+tmr.Tick += <span style="color: blue">new </span><span style="color: #2b91af">EventHandler</span>(UpdateCharacterPosition);
+tmr.Start();</pre>
+<p><a href="http://11011.net/software/vspaste"></a></p>
+<p>Any time the overall canvas changes size, the code adjusts the Clip property to a new rectangle (otherwise the text appears outside of the boundaries of the LED display).</p>
+<pre class="code"><span style="color: blue">private void </span>TextHolderSizeChanged(<span style="color: blue">object </span>sender, <br /><span style="color: #2b91af">SizeChangedEventArgs </span>e)
+{
+    <span style="color: blue">if </span>(sender <span style="color: blue">is </span><span style="color: #2b91af">Canvas</span>)
+    {
+        <span style="color: #2b91af">Canvas </span>c = sender <span style="color: blue">as </span><span style="color: #2b91af">Canvas</span>;
+        <span style="color: #2b91af">RectangleGeometry </span>rc = <span style="color: blue">new </span><span style="color: #2b91af">RectangleGeometry</span>();
+        rc.Rect = <span style="color: blue">new </span><span style="color: #2b91af">Rect</span>(<span style="color: blue">new </span><span style="color: #2b91af">Point</span>(0, 0), e.NewSize);
+        c.Clip = rc;
+    }
+}</pre>
+<p><a href="http://11011.net/software/vspaste"></a></p>
+<p>To more efficiently update the TilePanel when multiple properties are being set at one time, I took a queued approach to the update:</p>
+<pre class="code"><span style="color: blue">protected void </span>TileAdjustmentNeededAsync()
+{
+    <span style="color: green">// by doing this sync, we can queue up several request
+    // but then really only handle the last one.
+    </span>_needsUpdate = <span style="color: blue">true</span>;
+    <span style="color: green">// async call the adjust tiles
+    </span><span style="color: blue">this</span>.Dispatcher.BeginInvoke(<span style="color: blue">delegate
+    </span>{
+        AdjustTiles();
+    });
+}</pre>
+<p><a href="http://11011.net/software/vspaste"></a></p>
+<p>This way, a few properties can be set together, without the TilePanel needlessly recalculating and rebuilding the tiles.</p>
+<p>The demo and the source code are located <a target="_blank" href="http://www.wiredprairie.us/downloads/TilePanel.zip">here</a> (zip). </p>
+<p><strong>A few notes for those interested …</strong></p>
+<p>For maximum efficiency, if you use the TilePanel, try to make the Tiles sized so that fewer tiles are actually necessary to tile (create the tiles so that there are tiles within the brush you use). Instead of a tile that has only one image in it for example, consider building a tile which is really a 2 x 2 set of tiles.</p>
+<p>One detail of the implementation that is important: you cannot reliably add new controls/UIElements to the Children collection of a Panel within the MeasureOverride or ArrangeOverride methods. Although the child UIElements are added without error, they typically will not render or display correctly. Building something like this TilePanel required a trick where the actual updates to the tiles always happen outside of the scope of an measure-arrange pass.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/blog/index.php/archives/633/feed</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">633</post-id>	</item>
+		<item>
+		<title>Where do you &#034;event&#034;?</title>
+		<link>/blog/index.php/archives/543</link>
+					<comments>/blog/index.php/archives/543#comments</comments>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Fri, 05 Sep 2008 01:07:46 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[Silverlight]]></category>
+		<guid isPermaLink="false">/blog/index.php/archives/543</guid>
+
+					<description><![CDATA[From JohnPapa.net, &#8220;Siliverlight 2-Tip &#8211; Declaring Events.&#8221; He thinks that the place to wire up an event is always in code rather than in markup (like XAML). &#8220;What’s my opinion? I firmly believe the handlers belong in the code and not in the XAML.&#8221; I&#8217;d suggest that&#8217;s not always right either (and maybe not the [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>From JohnPapa.net, &#8220;<a href="http://johnpapa.net/all/silverlight-2-tip-ndash-declaring-events">Siliverlight 2-Tip &#8211; Declaring Events</a>.&#8221;</p>
+<p>He thinks that the place to wire up an event is always in code rather than in markup (like XAML). </p>
+<blockquote>
+<p>&#8220;What’s my opinion? I firmly believe the handlers belong in the code and not in the XAML.&#8221;</p>
+</blockquote>
+<p>I&#8217;d suggest that&#8217;s not always right either (and maybe not the right question to ask). This technique doesn&#8217;t allow the designer to have freedom to decide how to build the interface freely. If you wire up to a &#8220;button&#8221; click, then the designer has to implement a certain UI feature as a button. Maybe that&#8217;s not what they wanted. The UI/code are wound together extremely tightly when using this pattern. </p>
+<p>A command/message driven architecture that splits the actual implementation as much as possible is the best pattern for growth and true separation of roles. That being said, it&#8217;s not always practical to build a system like that. </p>
+<p>I like the CONCEPT of WPF&#8217;s <a href="http://msdn.microsoft.com/en-us/library/system.windows.input.routedcommand.aspx">RoutedCommand</a> system which is a way in WPF to handle this pattern, but I don&#8217;t care for the way that things are enabled and disabled via the <a href="http://msdn.microsoft.com/en-us/library/system.windows.input.commandbinding.canexecute.aspx">CanExecute</a> event handlers. The event handlers can be called hundreds of times a minute depending on your user interface. </p>
+<p>The bad news is that Silverlight doesn&#8217;t lend itself easily to a message/command driven architecture (as the RoutedCommand system isn&#8217;t available in Silverlight 2.0). So what&#8217;s a developer to do? :)</p>
+<p>I like the &#8216;toolability&#8217; of doing inline (in XAML) wire-up of events. If the developer just provides a common set of end-points (events) to the UI designer, then they may have an opportunity to more freely control and adjust the user interface as needed without requiring code changes. </p>
+<p>So in John&#8217;s example code, instead of </p>
+<p>btnAddToCard.Click += new RoutedEventHandler(btnAddToCard_Click);</p>
+<p>It might be better to provide a method called:</p>
+<p>AddToCard(object sender, RoutedEventArgs e) {</p>
+<p>}</p>
+<p>That way, the designer can wire-up any way they want. </p>
+<p>Or, I suppose one could build a rudimentary message/command system by using <a href="http://msdn.microsoft.com/en-us/library/cc265152(VS.95).aspx">attached properties</a> and a common event handler which handles all command driven user interface elements. (And now that I think about that more &#8212; I think that could end up being quite slick if done carefully). </p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/blog/index.php/archives/543/feed</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">543</post-id>	</item>
+		<item>
+		<title>Linking to functionality within a Silverlight application</title>
+		<link>/blog/index.php/archives/402</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Thu, 10 Jul 2008 02:01:43 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[Silverlight]]></category>
+		<guid isPermaLink="false">/blog/index.php/archives/402</guid>
+
+					<description><![CDATA[When the ASP.NET 3.5 Extensions are released, it will be easier to manage the history of your Silverlight application, and provide working links to areas of functionality. Raj demonstrates a technique using the beta extensions from Silverlight. The technique uses the new addHistoryPoint method of Sys.Application. Yahoo has some code to support history control as [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>When the ASP.NET 3.5 Extensions are released, it will be easier to manage the history of your Silverlight application, and provide working links to areas of functionality. Raj <a href="http://weblogs.asp.net/rajbk/archive/2008/07/09/implementing-deeplinking-in-silverlight.aspx">demonstrates</a> a technique using the beta extensions from Silverlight. The technique uses the new addHistoryPoint method of Sys.Application. Yahoo has some code to support history control as well, but you&#8217;d need to wrap the functionality in a similar manner (and if you&#8217;re already using ASP.NET AJAX, you&#8217;re users may need to download even more Javascript just to use your Silverlight page &#8230; :) ).</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">402</post-id>	</item>
+		<item>
+		<title>Silverlight (and Flex), not for LOB applications?</title>
+		<link>/blog/index.php/archives/389</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sat, 28 Jun 2008 00:51:41 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[Silverlight]]></category>
+		<guid isPermaLink="false">/blog/index.php/archives/389</guid>
+
+					<description><![CDATA[Shawn suggests that line of business applications should not be written using Silverlight (and hence Flex), instead XBAPs (the run in browser Windows-only WPF solution). IT shops, with trimmed budgets and staff, have little time to maintain workstations and troubleshoot interactions between various installed applications. Web applications, although they may be more challenging to write [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Shawn <a href="http://adoguy.com/2008/06/26/Silverlight_and_Line_of_Business_Applications.aspx">suggests</a> that line of business applications should not be written using Silverlight (and hence Flex), instead <a href="http://msdn.microsoft.com/en-us/library/aa970060.aspx">XBAP</a>s (the run in browser Windows-only WPF solution). </p>
+<p>IT shops, with trimmed budgets and staff, have little time to maintain workstations and troubleshoot interactions between various installed applications. Web applications, although they may be more challenging to write (regardless of adding complex RIA components), offer long term benefits for maintenance, updates, deployment and access control that are extremely difficult to emulate using any modern non-browser based alternative, from terminal servers to WPF XBAPs.</p>
+<p>And no, I am not a firm believer that a user&#8217;s needs should be weighed less than the needs of the IT shop. <strong>By no means</strong>. But, I do believe that the experience and requirements of many LOB applications can be readily constructed within a web application. Moreover, many LOB applications should be web applications for portability and access reasons. </p>
+<p>Not all LOB applications will benefit from the added functionality that would be provided by a Silverlight or Flash/Flex component. In fact, many users may needlessly suffer from a nearly pointless developer adventure into new technology explorations rather than being able to perform the same business task more efficiently with what might amount to a fully functional, yet boring LOB application. </p>
+<p>Many applications would benefit however from added pizzazz. There&#8217;s plenty of power brewing within the likes of Silverlight and Flex. It needs to be measured and watched carefully, so that it doesn&#8217;t explode into the user&#8217;s face though. </p>
+<p>I do take issue with suggesting that an XBAP is typically a better solution. WPF, even in its most reduced form, is heavy weight and complex. Being browser embedded, it also won&#8217;t behave like either a browser application or a fully installed application. So, neither experience is fully replicated for the end user. Eventually, it may be that every desktop has the latest and greatest version of the .NET runtime to allow for the latest XBAPs to work &#8212; but there in lies more of the problem &#8212; the desktop is making a key decision into whether an application may run, rather than the deploying machine. That stinks &#8212; and fewer companies <strong>and users </strong>want that.</p>
+<p>Yes, a WPF application using XBAPs may, at some levels, be easier to write. It depends a lot on the developer and on the application needed. Many WPF applications are as hard to write as a web application (if not harder). It&#8217;s give and take. Some features are easier in one and vice versa. RIA code using Silverlight is easier to create than their WPF counterparts in some ways, only because the functionality is limited (and a few things simplified). But, throw in the web mix for interaction, and I agree that the complexities increase.</p>
+<p>So much depends on the expectations and <strong>needs of the user</strong>. If you want a web experience with pages, etc., I wouldn&#8217;t consider an XBAP to be an ideal choice. If it&#8217;s mostly a single page where much of the interaction occurs, I could see XBAPs being a reasonable choice for Windows-only organizations. But, those must consider deployment, hardware requirements, .NET versioning, and more. </p>
+<p>(Don&#8217;t get me wrong, I really like WPF &#8212; just installed as a traditional application. :) ).</p>
+<p>Oh &#8212; and more importantly &#8212; don&#8217;t switch to either technology if there&#8217;s no business reason (sorry developers).</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">389</post-id>	</item>
+		<item>
+		<title>Silverlight Weather Demonstration</title>
+		<link>/blog/index.php/archives/388</link>
+					<comments>/blog/index.php/archives/388#comments</comments>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Fri, 27 Jun 2008 02:04:56 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[Silverlight]]></category>
+		<guid isPermaLink="false">/blog/index.php/archives/388</guid>
+
+					<description><![CDATA[Demonstration available here. (You&#8217;ll need to wait for a moment while it loads the first time). I&#8217;ve created a reasonably simple, yet multi-technology (and discipline) demonstration using Silverlight for the user interface and ASP.NET as the back-end. The demonstration uses: Silverlight 2.0 Data binding Delayed downloading of images &#8220;Web services&#8221; ASP.NET LINQ Extension Methods Value [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Demonstration available <a href="http://www.wiredprairie.us/examples/weather/default.aspx">here</a>. (You&#8217;ll need to wait for a moment while it loads the first time).</p>
+<p><a href="http://www.wiredprairie.us/examples/weather/default.aspx"><img loading="lazy" style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="318" alt="Stale Weather data for Madison Wisconsin as this isn't live ..." src="/blog/wp-content/uploads/2008/06/image21.png" width="320" border="0"/></a> </p>
+<p>I&#8217;ve created a reasonably simple, yet multi-technology (and discipline) demonstration using Silverlight for the user interface and ASP.NET as the back-end. The demonstration uses:</p>
+<ul>
+<li>Silverlight 2.0  </li>
+<li>Data binding  </li>
+<li>Delayed downloading of images  </li>
+<li>&#8220;Web services&#8221;  </li>
+<li>ASP.NET  </li>
+<li>LINQ  </li>
+<li>Extension Methods  </li>
+<li>Value Converters  </li>
+<li>XAML  </li>
+<li>IHttpAsyncHandler  </li>
+<li>HttpWebRequest  </li>
+<li>Google&#8217;s Weather Web Service (more of a weather XML end point)  </li>
+<li>and more!!! :)</li>
+</ul>
+<p>&nbsp;</p>
+<p>The Silverlight Weather control is a UserControl with a few bound TextBlocks, an Image, and a few rectangles, and the data input controls.</p>
+<pre class="code"><span style="color: blue">&lt;</span><span style="color: #a31515">TextBlock </span><span style="color: red">Margin</span><span style="color: blue">="8,10,0,10" 
+           </span><span style="color: red">Grid.ColumnSpan</span><span style="color: blue">="2" 
+           </span><span style="color: red">Grid.Row</span><span style="color: blue">="5" 
+           </span><span style="color: red">Text</span><span style="color: blue">="{</span><span style="color: #a31515">Binding </span><span style="color: red">CurrentWeather</span><span style="color: blue">.</span><span style="color: red">Location</span><span style="color: blue">}" 
+           </span><span style="color: red">TextWrapping</span><span style="color: blue">="Wrap" 
+           </span><span style="color: red">x</span><span style="color: blue">:</span><span style="color: red">Name</span><span style="color: blue">="txtLocation1" 
+           </span><span style="color: red">VerticalAlignment</span><span style="color: blue">="Center" 
+           </span><span style="color: red">Foreground</span><span style="color: blue">="#FFF1F1F1" 
+           </span><span style="color: red">FontSize</span><span style="color: blue">="12" 
+           </span><span style="color: red">FontWeight</span><span style="color: blue">="Normal"/&gt;
+</span></pre>
+<p><a href="http://11011.net/software/vspaste"></a>&nbsp;</p>
+<p>Standard Silverlight data binding &#8230; grabbing the CurrentWeather&#8217;s Location property (which in the example in the screen shot is Madison, WI). What I continue to find is that Silverlight does not allow data binding to the UserControl itself &#8212; which is a common trick I use in WPF all the time. I don&#8217;t know if it&#8217;s a bug or a feature though. So, <strong>instead of</strong> simple code like this:</p>
+<pre class="code"><span style="color: blue">public </span>Page()
+{
+    InitializeComponent();
+    <span style="color: blue">this</span>.Loaded += <span style="color: blue">new </span><span style="color: #2b91af">RoutedEventHandler</span>(Page_Loaded);
+}
+
+<span style="color: blue">void </span>Page_Loaded(<span style="color: blue">object </span>sender, <span style="color: #2b91af">RoutedEventArgs </span>e)
+{
+    this.DataContext = <span style="color: blue">this</span>;
+}
+</pre>
+<p>I&#8217;m forced to rely on a secondary layer for binding:</p>
+<p><pre class="code"><span style="color: blue">public </span>Page()<br />{<br />&nbsp;&nbsp;&nbsp; InitializeComponent();<br />&nbsp;&nbsp;&nbsp; <span style="color: blue">this</span>.Loaded += <span style="color: blue">new</span><span style="color: #2b91af">RoutedEventHandler</span>(Page_Loaded);<br />&nbsp;&nbsp;&nbsp; _binding = <span style="color: blue">new</span><span style="color: #2b91af">PageDataBinding</span>();<br />}<br /><br /><span style="color: blue">void </span>Page_Loaded(<span style="color: blue">object</span>sender, <span style="color: #2b91af">RoutedEventArgs </span>e)<br />{<br />&nbsp;&nbsp;&nbsp; LayoutRoot.DataContext = _binding;<br />}<br /></pre>
+</p>
+<p>This technique adds what isn&#8217;t a terribly useful layer for a project like this, but it shouldn&#8217;t be necessary. To work around the issue, I created a new class, called PageDataBinding which has the few properties I wanted to expose to the user interface:</p>
+<pre class="code"><span style="color: blue">public class </span><span style="color: #2b91af">PageDataBinding</span>: <span style="color: #2b91af">INotifyPropertyChanged
+</span>{
+    <span style="color: blue">private </span><span style="color: #2b91af">WeatherCondition </span>_currentWeather;
+
+    <span style="color: blue">public </span><span style="color: #2b91af">WeatherCondition </span>CurrentWeather
+    {
+        <span style="color: blue">get </span>{ <span style="color: blue">return </span>_currentWeather; }
+        <span style="color: blue">set
+        </span>{
+            <span style="color: blue">if </span>(_currentWeather != <span style="color: blue">value</span>)
+            {
+                _currentWeather = <span style="color: blue">value</span>;
+                RaisePropertyChanged(<span style="color: #a31515">"CurrentWeather"</span>);
+            }
+        }
+    }
+
+    <span style="color: blue">#region </span>INotifyPropertyChanged Members
+
+    <span style="color: blue">protected void </span>RaisePropertyChanged(<span style="color: blue">string </span>name)
+    {
+        <span style="color: blue">if </span>(PropertyChanged != <span style="color: blue">null</span>)
+        {
+            PropertyChanged(<span style="color: blue">this</span>, <span style="color: blue">new </span><span style="color: #2b91af">PropertyChangedEventArgs</span>(name));
+        }
+    }
+    <span style="color: blue">public event </span><span style="color: #2b91af">PropertyChangedEventHandler </span>PropertyChanged;
+
+    <span style="color: blue">#endregion
+    
+</span>}</pre>
+<p><a href="http://11011.net/software/vspaste"></a></p>
+<p>Above you should see the CurrentWeather property which I&#8217;ve used in the Silverlight UI. In addition to the typical button for activating the control, I&#8217;ve made the Enter key also trigger the weather fetching. </p>
+<pre class="code"><span style="color: blue">private void </span>txtLocation_KeyDown(<span style="color: blue">object </span>sender, <span style="color: #2b91af">KeyEventArgs </span>e)
+{
+    <span style="color: blue">if </span>(e.Key == <span style="color: #2b91af">Key</span>.Enter)
+    {
+        FetchWeather();
+        e.Handled = <span style="color: blue">true</span>;
+    }
+}
+</pre>
+<p><a href="http://11011.net/software/vspaste"></a>Above, after (starting the process of) fetching the weather, I&#8217;ve set the Handled property to true, which indicates no further processing of the key is needed.</p>
+<p>I wrapped the basic request to Google into a class called Weather. It&#8217;s the job of the Weather class to package the request and submit it to my exposed web service. Google&#8217;s web servers do not have any of the cross domain permission files needed by Silverlight for it to directly access them; so, I created a proxy web service just for the purpose. </p>
+<p>Using the HttpWebRequest object is quite simple:</p>
+<pre class="code"><span style="color: blue">public void </span>Download()
+{
+    <span style="color: blue">try
+    </span>{
+        <span style="color: #2b91af">HttpWebRequest </span>request = <span style="color: #2b91af">WebRequest</span>.Create(
+            <span style="color: blue">new </span><span style="color: #2b91af">Uri</span>(<span style="color: #2b91af">Application</span>.Current.Host.Source,
+                <span style="color: blue">string</span>.Format(
+                <span style="color: #a31515">"../GetWeather.ashx?location={0}"</span>, _location))) <span style="color: blue">as </span><span style="color: #2b91af">HttpWebRequest</span>;
+        request.Method = <span style="color: #a31515">"GET"</span>;
+        <span style="color: blue">this</span>._responseResult = 
+            request.BeginGetResponse(<span style="color: blue">new </span><span style="color: #2b91af">AsyncCallback</span>(RequestCallback), request);
+    }
+    <span style="color: blue">catch </span>(<span style="color: #2b91af">Exception </span>ex)
+    {
+        <span style="color: #2b91af">Debug</span>.WriteLine(ex);
+    }
+}
+</pre>
+<p><a href="http://11011.net/software/vspaste"></a>I&#8217;ve just made the request to my web server and passed the location parameter directly. If it&#8217;s gibberish, Google just returns an error, so I don&#8217;t bother with any special processing (and in the end, it&#8217;s just a demonstration).</p>
+<p>When the response is received, the RequestCallback method is called:</p>
+<pre class="code"><span style="color: blue">private void </span>RequestCallback(<span style="color: #2b91af">IAsyncResult </span>result)
+{
+    <span style="color: #2b91af">HttpWebRequest </span>request = result.AsyncState <span style="color: blue">as </span><span style="color: #2b91af">HttpWebRequest</span>;
+
+    <span style="color: #2b91af">HttpWebResponse </span>response = (<span style="color: #2b91af">HttpWebResponse</span>) request.EndGetResponse(result);
+
+    <span style="color: #2b91af">Stream </span>s = response.GetResponseStream();
+
+    <span style="color: #2b91af">StreamReader </span>reader = <span style="color: blue">new </span><span style="color: #2b91af">StreamReader</span>(s);
+    <span style="color: blue">string </span>webResult = reader.ReadToEnd();
+    <span style="color: #2b91af">Debug</span>.WriteLine(webResult);
+    reader.Close();
+    response.Close();
+
+    <span style="color: blue">if </span>(WeatherDataDownloaded != <span style="color: blue">null</span>)
+    {
+        WeatherDataDownloaded(<span style="color: blue">this</span>, <span style="color: blue">new </span><span style="color: #2b91af">WeatherDataDownloadedEventArgs</span>(webResult));
+    }
+}
+</pre>
+<p><a href="http://11011.net/software/vspaste"></a></p>
+<p>Not necessarily production ready code, but it works for this demo. The result is returned, and gathered into a string. Once complete, the Weather class raises an event with the result to the host user interface. </p>
+<p>I won&#8217;t replicate all the code here, but once the user interface event code is called, it begins to parse the XML data:</p>
+<pre class="code"><span style="color: blue">void </span>WeatherDataDownloaded(<span style="color: blue">object </span>sender, <span style="color: #2b91af">WeatherDataDownloadedEventArgs </span>e)
+{
+    <span style="color: #2b91af">XElement </span>xd = <span style="color: #2b91af">XElement</span>.Parse( e.Data, <span style="color: #2b91af">LoadOptions</span>.None);
+
+    <span style="color: blue">var </span>conditions = <span style="color: blue">from </span>current_condition <span style="color: blue">in </span>xd.Descendants(<span style="color: #a31515">"current_conditions"</span>)
+                     <span style="color: blue">select new </span><span style="color: #2b91af">WeatherCondition</span>()
+                     {
+                         Condition = current_condition.GetChildElementAttributeValue(<span style="color: #a31515">"condition"</span>, <span style="color: #a31515">"data"</span>),
+                         TemperatureF = current_condition.GetChildElementAttributeValue(<span style="color: #a31515">"temp_f"</span>, <span style="color: #a31515">"data"</span>),
+                         TemperatureC = current_condition.GetChildElementAttributeValue(<span style="color: #a31515">"temp_c"</span>, <span style="color: #a31515">"data"</span>),
+                         Humidity = current_condition.GetChildElementAttributeValue(<span style="color: #a31515">"humidity"</span>, <span style="color: #a31515">"data"</span>),
+                         IconPath = current_condition.GetChildElementAttributeValue(<span style="color: #a31515">"icon"</span>, <span style="color: #a31515">"data"</span>),
+                         Wind = current_condition.GetChildElementAttributeValue(<span style="color: #a31515">"wind_condition"</span>, <span style="color: #a31515">"data"</span>)
+                     };
+</pre>
+<p><a href="http://11011.net/software/vspaste"></a>As you can see, I use LINQ and an extension method I frequently use to obtain a named attribute from an element. The extension method, GetChildElementAttributeValue doesn&#8217;t do much really:</p>
+<pre class="code"><span style="color: blue">public static string </span>GetChildElementAttributeValue(
+    <span style="color: blue">this </span><span style="color: #2b91af">XElement </span>element, <span style="color: #2b91af">XName </span>elementName, <span style="color: #2b91af">XName </span>attributeName)
+{
+    <span style="color: #2b91af">XElement </span>subElement = element.Element(elementName);
+    <span style="color: blue">if </span>(subElement != <span style="color: blue">null</span>)
+    {
+        <span style="color: #2b91af">XAttribute </span>attr = subElement.Attribute(attributeName);
+        <span style="color: blue">if </span>(attr != <span style="color: blue">null</span>)
+        {
+            <span style="color: blue">return </span>attr.Value;
+        }
+    }
+
+    <span style="color: blue">return null</span>;
+}</pre>
+<p>The primary function (of this function!) is to protect against null elements when trying to read an attribute value. </p>
+<p>The attribute values are stored in a WeatherCondition object. Once the object has been created, and a little more work is done, the code must notify the UI&#8217;s bound objects. </p>
+<p><strong>WAIT</strong>! If the notification happens now (on the currently executing thread), the Silverlight runtime will absolutely throw an exception, just like WPF would. The current executing thread is not the user interface thread, so I&#8217;ve used the Dispatcher to execute the update on the user interface thread:</p>
+<pre class="code">Dispatcher.BeginInvoke(<span style="color: blue">delegate</span>()
+{
+    _binding.CurrentWeather = conditions.First&lt;<span style="color: #2b91af">WeatherCondition</span>&gt;();
+});
+</pre>
+<p><a href="http://11011.net/software/vspaste"></a></p>
+<p>The remainder of the Silverlight code is mostly basic plumbing and user interface manipulation. There should be more error trapping than there is &#8230; but, I&#8217;m leaving that for another day (or for you!).</p>
+<p>Rather than introducing a true web service into the project, I instead created an IHttpAsyncHandler in ASP.NET. This way, the handler could efficiently make requests of the Google Weather API and return them, without blocking further requests. In an ideal world, I&#8217;d add caching and more error handling &#8230;.</p>
+<p>Here&#8217;s nearly the entire handler &#8212; as I think it&#8217;s useful to demonstrate a live, working usage of an ASP.NET async HttpHandler. If you&#8217;re not familiar with <a href="http://msdn.microsoft.com/en-us/library/system.web.ihttpasynchandler.aspx">IHttpAsyncHandler</a>, and you&#8217;re writing HttpHandlers, &#8230; get familiar with it if you care about scalability/performance. </p>
+<pre class="code"><span style="color: blue">public </span><span style="color: #2b91af">IAsyncResult </span>BeginProcessRequest(<span style="color: #2b91af">HttpContext </span>context,<br /> <span style="color: #2b91af">AsyncCallback </span>cb, <span style="color: blue">object </span>extraData)
+{
+    _context = context;
+    <span style="color: #2b91af">HttpWebRequest </span>request = <span style="color: #2b91af">WebRequest</span>.Create(
+        <span style="color: blue">new </span><span style="color: #2b91af">Uri</span>(
+            <span style="color: blue">string</span>.Format(
+            <span style="color: #a31515"><a href="http://www.google.com/ig/api?weather={0}">http://www.google.com/ig/api?weather={0}</a></span>, <br />          context.Request.QueryString[<span style="color: #a31515">"location"</span>]))
+            ) <span style="color: blue">as </span><span style="color: #2b91af">HttpWebRequest</span>;
+
+    _completedCallback = cb;        
+    <span style="color: blue">return </span>request.BeginGetResponse(<br />       <span style="color: blue">new </span><span style="color: #2b91af">AsyncCallback</span>(GetResponseCallback), request); 
+}
+
+<span style="color: blue">private void </span>GetResponseCallback(<span style="color: #2b91af">IAsyncResult </span>result)
+{
+    <span style="color: #2b91af">Debug</span>.WriteLine(<span style="color: #a31515">"GetResponseCallback"</span>);
+    <span style="color: #2b91af">HttpWebRequest </span>request = result.AsyncState <span style="color: blue">as </span><span style="color: #2b91af">HttpWebRequest</span>;
+    <span style="color: #2b91af">HttpWebResponse </span>response = request.EndGetResponse(result) <span style="color: blue">as </span><span style="color: #2b91af">HttpWebResponse</span>;
+    <span style="color: #2b91af">Stream </span>s = response.GetResponseStream();
+    <span style="color: #2b91af">StreamReader </span>reader = <span style="color: blue">new </span><span style="color: #2b91af">StreamReader</span>(s);
+
+    <span style="color: blue">string </span>responseOutput = reader.ReadToEnd();
+    reader.Close();
+    response.Close();
+
+    _context.Response.ContentType = <span style="color: #a31515">"text/xml"</span>;
+    _context.Response.Write(responseOutput);
+
+    _completedCallback.Invoke(result);
+}
+
+<span style="color: blue">public void </span>EndProcessRequest(<span style="color: #2b91af">IAsyncResult </span>result)
+{
+    _context.Response.End();
+    
+}
+</pre>
+<p><a href="http://11011.net/software/vspaste"></a></p>
+<p>I&#8217;ve also created an IValueConverter to take the path to an image and convert it to a bitmap image. </p>
+<pre class="code"><span style="color: #2b91af">BitmapImage </span>bi = <span style="color: blue">new </span><span style="color: #2b91af">BitmapImage</span>();
+bi.UriSource = <span style="color: blue">new </span><span style="color: #2b91af">Uri</span>(<span style="color: #a31515">"/Images/" </span>+ path, <span style="color: #2b91af">UriKind</span>.Relative);  
+</pre>
+<p>The images are stored on the web server rather than being embedded directly into the XAP file. Note that for this to work, the images must be stored in the ClientBin/Images folder, &#8230; <strong>not</strong> the /Images folder of the web server (as the path is relative to the location of the Silverlight download, not to the web application).</p>
+<p>One issue that I ran into that had me puzzled for a while. AG_E_NETWORK_ERROR. This error occurred when trying to directly download the images Google uses for weather icons. That error had me baffled, until I realized that Silverlight cannot download images from other domains, unless they have the cross domain XML files properly configured for remote access. Google, sadly, does not have them, so I created my own images using Expression Design. The original file can be found in the download if you&#8217;re interested (as a series of layers). </p>
+<p>Download source code for entire project (including graphics) <a href="http://www.wiredprairie.us/examples/weather/WeatherForYou.zip">here</a>. </p>
+<p><a href="/blog/wp-content/uploads/2008/06/image22.png"><img loading="lazy" style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="203" alt="image" src="/blog/wp-content/uploads/2008/06/image-thumb18.png" width="208" border="0"/></a> <a href="/blog/wp-content/uploads/2008/06/image23.png"><img loading="lazy" style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="203" alt="image" src="/blog/wp-content/uploads/2008/06/image-thumb19.png" width="208" border="0"/></a>&nbsp;<a href="/blog/wp-content/uploads/2008/06/image24.png"><img loading="lazy" style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="203" alt="image" src="/blog/wp-content/uploads/2008/06/image-thumb20.png" width="209" border="0"/></a> </p>
+<p>Enjoy!</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/blog/index.php/archives/388/feed</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">388</post-id>	</item>
+		<item>
+		<title>Oh Silverlight 2.0 Console (Example and Source code)</title>
+		<link>/blog/index.php/archives/379</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sat, 21 Jun 2008 16:54:23 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[Silverlight]]></category>
+		<guid isPermaLink="false">/blog/index.php/archives/379</guid>
+
+					<description><![CDATA[Try it here. See a picture below: :) I ran into one odd issue when using Silverlight 2.0 Beta 2&#8230;. &#160; void Page_Loaded(object sender, RoutedEventArgs e) { // if you don't invoke this asynchronously, you can't add at load time // (seems to be a silverlight 2.0 issue) Dispatcher.BeginInvoke(delegate() { consoleCanvas.AnimateNewChild( string.Format("Welcome!\nThe time right now [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Try it <a href="http://www.wiredprairie.us/examples/ohconsole/default.html" target="_blank">here</a>.</p>
+<p>See a picture below: :)</p>
+<p><a href="http://www.wiredprairie.us/examples/ohconsole/default.html"><img loading="lazy" style="border-right: 0px; border-top: 0px; border-left: 0px; border-bottom: 0px" height="358" alt="image" src="/blog/wp-content/uploads/2008/06/image20.png" width="470" border="0"/></a> </p>
+<p>I ran into one odd issue when using Silverlight 2.0 Beta 2&#8230;.</p>
+<p>&nbsp;</p>
+<pre class="code"><span style="color: blue">void </span>Page_Loaded(<span style="color: blue">object </span>sender, <span style="color: #2b91af">RoutedEventArgs </span>e)
+{
+    <span style="color: green">// if you don't invoke this asynchronously, you can't add at load time
+    // (seems to be a silverlight 2.0 issue)
+    </span>Dispatcher.BeginInvoke(<span style="color: blue">delegate</span>()
+    {
+        consoleCanvas.AnimateNewChild(
+                <span style="color: blue">string</span>.Format(<span style="color: #a31515">"Welcome!\nThe time right now is {0}."</span>, 
+                <span style="color: #2b91af">DateTime</span>.Now.ToLocalTime()));
+        consoleCanvas.AnimateNewChild(<span style="color: #a31515">"\n\nThanks for stopping by WiredPrairie.us. "
+            </span>+ <span style="color: #a31515">"This code may be used for only for good, not evil."</span>);
+    });
+}
+</pre>
+<p><a href="http://11011.net/software/vspaste"></a></p>
+<p>The code above for example &#8212; if the ConsoleCanvas control (the simple base control for the console output-like functionality) performs any UpdateLayout calls within the context of the Load event, the entire Silverlight control fails to load, silently. The only work-around I could discover was to delay what I wanted to occur by using the asynchronous invoke method on the Dispatcher object.</p>
+<p>The easiest way to force a UIElement to measure itself is to use a little trick:</p>
+<pre class="code">_holder.Width = <span style="color: blue">this</span>.ActualWidth;
+child.Width = <span style="color: blue">this</span>.ActualWidth;
+_holder.Children.Add(child);
+_holder.UpdateLayout();
+
+child.Width = child.DesiredSize.Width;
+child.Height = child.DesiredSize.Height;
+</pre>
+<p><a href="http://11011.net/software/vspaste"></a></p>
+<p>The console control maintains a visible (yet opacity is set to 0.0) StackPanel. Each time a new line of output is added via the AnimateNewChild method, it&#8217;s placed in the StackPanel. The StackPanel (_holder) is resized to fit the current width of the entire ConsoleCavnas control. Next, the UpdateLayout method of the StackPanel is called &#8212; which forces an immediate measure of all of the children (and thus forces any children of the TextPanel to potentially re-layout). The width and height are grabbed and permanently stored as the new size for the child. </p>
+<p>Instead of using Storyboards and various animations, I found it more convenient to simply use a DispatchTimer and do the animations manually. </p>
+<pre class="code"><span style="color: #2b91af">List</span>&lt;<span style="color: #2b91af">FrameworkElement</span>&gt; remove = <span style="color: blue">new </span><span style="color: #2b91af">List</span>&lt;<span style="color: #2b91af">FrameworkElement</span>&gt;();</pre>
+<p><a href="http://11011.net/software/vspaste"></a></p>
+<pre class="code"><span style="color: blue">for</span>(<span style="color: blue">int </span>childIndex = 0; childIndex &lt; <span style="color: blue">this</span>.Children.Count; childIndex++)
+{
+    <span style="color: #2b91af">FrameworkElement </span>child = <span style="color: blue">this</span>.Children[childIndex] <span style="color: blue">as </span><span style="color: #2b91af">FrameworkElement</span>;
+
+    <span style="color: blue">if </span>(!child.Equals(_holder))
+    {                        
+        child.Arrange(<span style="color: blue">new </span><span style="color: #2b91af">Rect</span>(0, <span style="color: #2b91af">Canvas</span>.GetTop(child), 0, 0));
+        <span style="color: blue">double </span>top = <span style="color: #2b91af">Canvas</span>.GetTop(child);
+        top -= 2.0;
+        <span style="color: #2b91af">Canvas</span>.SetTop(child, top);                       
+        <span style="color: blue">if </span>(top + child.Height &lt; 0.0)
+        {
+            remove.Add(child);
+        }
+    }    
+}
+<span style="color: green">// remove them all 
+</span>remove.ForEach(fe =&gt; <span style="color: blue">this</span>.Children.Remove(fe <span style="color: blue">as </span><span style="color: #2b91af">UIElement</span>));                
+</pre>
+<p><a href="http://11011.net/software/vspaste"></a></p>
+<p>If an element is no longer visible on the screen, it is removed using a Lambda expression and the ForEach method on the List object instance named <strong>remove</strong> (after the repositioning loop has completed). </p>
+<p>Download source, etc. <a href="http://www.wiredprairie.us/examples/ohconsole/OhConsole.zip" target="_blank">here</a>.</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">379</post-id>	</item>
+	</channel>
+</rss>

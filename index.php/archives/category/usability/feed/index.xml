@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>Usability &#8211; WiredPrairie</title>
+	<atom:link href="/blog/index.php/archives/category/usability/feed" rel="self" type="application/rss+xml" />
+	<link>/blog</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Sun, 15 Sep 2013 16:19:42 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+<site xmlns="com-wordpress:feed-additions:1">193486638</site>	<item>
+		<title>Universal and Ultraviolet, protecting their content?</title>
+		<link>/blog/index.php/archives/1943</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sun, 15 Sep 2013 16:19:40 +0000</pubDate>
+				<category><![CDATA[General]]></category>
+		<category><![CDATA[Usability]]></category>
+		<guid isPermaLink="false">/blog/?p=1943</guid>
+
+					<description><![CDATA[I was redeeming an Ultraviolet authorization code for a Universal movie, and needed to create an account. Passwords must be between 6 and 8 characters and letters or numbers! I thought the movie industry cared about protecting their assets more than this? It’s hard to believe in 2013 that there’s a software developer and project [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I was redeeming an Ultraviolet authorization code for a Universal movie, and needed to create an account.</p>
+<p><a href="/blog/wp-content/uploads/2013/09/image2.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wp-content/uploads/2013/09/image_thumb2.png" width="491" height="308" /></a></p>
+<p><strong>Passwords must be between 6 and 8 characters and letters or numbers!</strong> I thought the movie industry cared about protecting their assets more than this?</p>
+<p>It’s hard to believe in 2013 that there’s a software developer and project manager that went ahead with this idiotic password requirement. </p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1943</post-id>	</item>
+		<item>
+		<title>Nest Thermostat, Software Update 2.0</title>
+		<link>/blog/index.php/archives/1631</link>
+					<comments>/blog/index.php/archives/1631#comments</comments>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Tue, 10 Apr 2012 13:00:05 +0000</pubDate>
+				<category><![CDATA[General]]></category>
+		<category><![CDATA[Software]]></category>
+		<category><![CDATA[Usability]]></category>
+		<category><![CDATA[Nest]]></category>
+		<category><![CDATA[Review]]></category>
+		<category><![CDATA[Thermostat]]></category>
+		<guid isPermaLink="false">/blog/?p=1631</guid>
+
+					<description><![CDATA[Nest recently released a new update to the software of the thermostat device (as well as their corresponding web and mobile applications). Some of the details may be found on their blog. A few of the new features include an historical view of the heating/cooling usage: On Friday, April 6th for example, you can see [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Nest recently released a new update to the software of the thermostat device (as well as their corresponding web and mobile applications). </p>
+<p>Some of the details may be found on their <a href="http://www.nest.com/2012/04/05/nest_thermostat_software_brings_more_info_savings_access/">blog</a>.</p>
+<p>A few of the new features include an <a href="http://www.nest.com/2012/04/05/saving-energy-with-energy-history/">historical view</a> of the heating/cooling usage:</p>
+<p><a href="/blog/wp-content/uploads/2012/04/image11.png"><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2012/04/image_thumb1.png" width="449" height="482" /></a></p>
+<p>On Friday, April 6th for example, you can see when the heat turned on and what the set points were for the day for my First Floor thermostat. The data isn’t as interesting during our Midwest Spring as the furnace doesn’t run nearly as much. </p>
+<p>Here’s from another day:</p>
+<p><a href="/blog/wp-content/uploads/2012/04/image12.png"><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2012/04/image_thumb2.png" width="502" height="46" /></a></p>
+<p>I doubt I’ll use this feature much. It only has 10 days of information available apparently right now, so I just can’t see this being very useful. I’m skeptical that this will affect my choices as it comes to how we use our HVAC system. I could see potentially how aggregate data of many users (in a similar geographical area) could become more compelling and potentially a source of data that Nest might be able to sell. </p>
+<p>The settings for a thermostat have been tweaked visually. The same basic data is available as before:</p>
+<p><a href="/blog/wp-content/uploads/2012/04/image13.png"><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2012/04/image_thumb3.png" width="502" height="215" /></a></p>
+<p>The learning tab has been cleaned up as well:</p>
+<p><a href="/blog/wp-content/uploads/2012/04/image14.png"><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2012/04/image_thumb4.png" width="502" height="202" /></a></p>
+<p>For some reason, our thermostat that we’ve had for four months is apparently still in training (Time to Temp). That seems like an issue that maybe I’ll look into. Although I don’t really care much about the “time to temp” feature normally as I don’t manually adjust the affected thermostat much.</p>
+<p>The “Away” tab changed:</p>
+<p><a href="/blog/wp-content/uploads/2012/04/image15.png"><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2012/04/image_thumb5.png" width="502" height="202" /></a></p>
+<p>Not a big improvement for usability. Probably more touch friendly (and it’s logically correct as it heats when less than 58 degrees for example), but it feels wrong. Thermostats aren’t normally left to right oriented (temp goes up and down), so this breaks a typical UX model. </p>
+<p>On the Equipment tab, they’ve tweaked the UI as well:</p>
+<p><a href="/blog/wp-content/uploads/2012/04/image16.png"><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2012/04/image_thumb6.png" width="502" height="163" /></a></p>
+<p><font style="style">I clicked on the <strong>Safety Temp</strong> word (? it’s not a button, nor a link, so I don’t know what to call it) and the above UI displayed. The same temperature range UX is displayed, but here I like it even less. I suppose we don’t have a maximum temperature in the house during cooling season, but this is clunky. (And given that it’s safety related, I wish it were more clear). I can hear some of you say, “but it’s clear to me.” I do understand it, but I’m confident there is a better way of displaying and adjusting these temperatures that would be more obvious.</font></p>
+<p>(And Nest Labs, go ahead and spell out “TEMP” please? Thanks!)</p>
+<p> The technical info tab is the same basically. </p>
+<p>There’s now a lock feature (which I have no need for, and am not going to experiment with right now):</p>
+<p><a href="/blog/wp-content/uploads/2012/04/image17.png"><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2012/04/image_thumb7.png" width="502" height="193" /></a></p>
+<p>One of the big new TM’ed features is called <a href="http://support.nest.com/customer/portal/articles/453244-">Airwave</a><img src="https://s.w.org/images/core/emoji/14.0.0/72x72/2122.png" alt="™" class="wp-smiley" style="height: 1em; max-height: 1em;" />. Apparently, when it’s hot and the humidity is low (not typical for Wisconsin, as our summers are usually hot and humid), the thermostat apparently will try to do more cooling by turning off the air conditioning system early and using the fan more. (I always thought our air conditioner already did that as the compressor turns off before the fans). If it helps lower our electricity bill, awesome. I’ll report back if I can tell that it is working and helping (without historical data though, it will be difficult for us, especially as we added solar panels to our house last fall).</p>
+<p>The scheduling tab looks basically unchanged. The support tab has more content, so you don’t have to go to their web site to read the information. That’s a nice improvement.</p>
+<hr />
+<p><font style="style">OK, this was very strange. As I was writing this post (and in the middle of using the application), I saw the following:</font></p>
+<p><a href="/blog/wp-content/uploads/2012/04/image18.png"><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2012/04/image_thumb8.png" width="502" height="478" /></a></p>
+<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2012/04/image19.png" width="502" height="478" /></p>
+<p><a href="/blog/wp-content/uploads/2012/04/image20.png"><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2012/04/image_thumb9.png" width="502" height="478" /></a></p>
+<p>Now, the thermostats are all disconnected in some odd way:</p>
+<p><a href="/blog/wp-content/uploads/2012/04/image21.png"><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2012/04/image_thumb10.png" width="502" height="210" /></a></p>
+<p>A few minutes later, things improved (but not perfect):</p>
+<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2012/04/image22.png" width="365" height="244" />&#160;</p>
+<p>Twenty minutes later, the BASEMENT thermostat is still disconnected. I reset the thermostat and it’s back now. </p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/blog/index.php/archives/1631/feed</wfw:commentRss>
+			<slash:comments>5</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1631</post-id>	</item>
+		<item>
+		<title>Nest Thermostat Review, Update #5</title>
+		<link>/blog/index.php/archives/1404</link>
+					<comments>/blog/index.php/archives/1404#comments</comments>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Thu, 05 Jan 2012 01:55:42 +0000</pubDate>
+				<category><![CDATA[General]]></category>
+		<category><![CDATA[Recommendations]]></category>
+		<category><![CDATA[Usability]]></category>
+		<category><![CDATA[Experience]]></category>
+		<category><![CDATA[Issue]]></category>
+		<category><![CDATA[Nest]]></category>
+		<category><![CDATA[Problem]]></category>
+		<category><![CDATA[Review]]></category>
+		<guid isPermaLink="false">/blog/?p=1404</guid>
+
+					<description><![CDATA[Update #6, Update #5, Update #4, Update #3, Update #2, Update #1, Install I got my replacement Nest thermostat today via FedEx. I was surprised to open the box and find a complete sealed package. Honestly, I expected they’d ship just the display and the base (as the support engineer hadn’t set any expectations, I [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a title="Nest Thermostat Review, Update #6" href="/blog/index.php/archives/1420">Update #6</a>, <a href="/blog/index.php/archives/1404">Update #5</a>, <a href="/blog/index.php/archives/1382">Update #4</a>, <a href="/blog/index.php/archives/1360">Update #3</a>, <a href="/blog/index.php/archives/1358">Update #2</a>, <a href="/blog/index.php/archives/1340">Update #1</a>, <a href="/blog/index.php/archives/1329">Install</a></p>
+<p>I got my <a href="/blog/index.php/archives/1360">replacement</a> Nest thermostat today via FedEx.</p>
+<p>I was surprised to open the box and find a complete sealed package. Honestly, I expected they’d ship just the display and the base (as the support engineer hadn’t set any expectations, I apparently just made up my own!). But, I suppose at this point in the company, they just aren’t setup to ship just the two pieces. It has the unfortunate side effect of producing extra waste (as I can’t imagine that extra wall plates are going to come in handy anywhere). The little screw driver could be given away but the rest likely will end up in a landfill. I’ll ship them all of the unused parts back as I don’t want them – hopefully they don’t just trash them.</p>
+<p>There’ve been some really <strong>awesome commenters </strong>in the past few days and I wanted to take a moment to highlight a few key comments.</p>
+<p>From Curt:</p>
+<blockquote>
+<p>I finally called Nest and spoke to a pleasant fellow. First off, it turns out the Nest does NOT anticipate a temperature set point. It will not turn on the furnace ahead of time. If you train it to go from the night setting of 60 to the daytime setting of 68 by turning it to 68 when you get up, it will always be 60 when you get up.</p>
+</blockquote>
+<p>Wow, that’s a super disappointment. Honestly, I really thought it could do that.</p>
+<p>Another from Curt:</p>
+<blockquote>
+<p>It does not keep as steady a temperature as the primitive Honeywell round thermostat it replaced.</p>
+</blockquote>
+<p>From Mark:</p>
+<blockquote>
+<p>I’ve had my Nest for about 10 days. I would recommend waiting before buying one.</p>
+</blockquote>
+<p>Kevin:</p>
+<blockquote>
+<p>I’ve been considering replacing my Honeywell programmable t’stat with a Nest…but now I’m not so sure</p>
+</blockquote>
+<p>David shares my disappointment regarding Nest Labs:</p>
+<blockquote>
+<p>I would love to hear what NEST has to say about the variances…I would think they are monitoring these blogs…..If they are not…shame on them.</p>
+</blockquote>
+<p>They seem to be way too quiet. They don’t seem to “get” social media.</p>
+<p>And Matt provided a link to a very complete tear-down of the device:</p>
+<blockquote>
+<p>Here is a good site that did a tear-down,lots of comments and people look like they really know what there talking about!</p>
+<p><a href="http://www.sparkfun.com/tutorials/334">http://www.sparkfun.com/tutorials/334</a></p>
+</blockquote>
+<p>GregN is still enthused about his Nest thermostat:</p>
+<blockquote>
+<p>You guys are right in all the above posts. But to be honest, I’m happy with setting a schedule that warms the house before I get up in the morning, and saves energy overnight. Yes, I had that functionality at a lower price point before the Nest. But I didn’t have remote adjustments or the great looking hockey puck on my wall before.</p>
+</blockquote>
+<p>Thanks again for all the comments! Keep them coming!<a href="/blog/wp-content/uploads/2012/01/image3.png"><img loading="lazy" style="background-image: none; border-right-width: 0px; margin: 0px 0px 0px 10px; padding-left: 0px; padding-right: 0px; display: inline; float: right; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="image" border="0" alt="image" align="right" src="/blog/wp-content/uploads/2012/01/image_thumb3.png" width="180" height="185" /></a></p>
+<p>I won’t replace the poorly functioning Nest thermostat for a few days with the new unit (as it’s a nuisance to adjust all of the schedules, move the units around, etc.).</p>
+<p>Today, the system had again auto activated the “away” mode apparently, and then did not activate the normal evening schedule. So, our house was cold when we returned from work, even though it should have been warming for about a half hour. I just don’t understand this feature. I don’t understand why “away” isn’t triggered at night.</p>
+<p>I could turn off learning, auto-away … leaving me with remote scheduling.</p>
+<p><font style="background-color: #ffff00">Update: January 11, 2012 </font>=&gt; Something triggered the “auto-away” feature two days in a row now. I don’t understand why it happens. The part that’s annoying is that the schedule doesn’t run when this happens apparently, so we came home to a cold house (and tonight I thought to check before leaving from work to see if it had happened again).</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/blog/index.php/archives/1404/feed</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1404</post-id>	</item>
+		<item>
+		<title>Nest Thermostat Review, Update #4</title>
+		<link>/blog/index.php/archives/1382</link>
+					<comments>/blog/index.php/archives/1382#comments</comments>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Tue, 03 Jan 2012 02:06:50 +0000</pubDate>
+				<category><![CDATA[General]]></category>
+		<category><![CDATA[Recommendations]]></category>
+		<category><![CDATA[Usability]]></category>
+		<category><![CDATA[Experience]]></category>
+		<category><![CDATA[Issue]]></category>
+		<category><![CDATA[Nest]]></category>
+		<category><![CDATA[Problem]]></category>
+		<category><![CDATA[Review]]></category>
+		<guid isPermaLink="false">/blog/?p=1382</guid>
+
+					<description><![CDATA[Update #6, Update #5, Update #4, Update #3, Update #2, Update #1, Install A bit more about my Nest thermostat experiences. On the weekend, I spoke with a support engineer from Nest regarding the issue I was having with one of the Nest units failing to properly read the room temperature. I swapped one of [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a title="Nest Thermostat Review, Update #6" href="/blog/index.php/archives/1420">Update #6</a>, <a href="/blog/index.php/archives/1404">Update #5</a>, <a href="/blog/index.php/archives/1382">Update #4</a>, <a href="/blog/index.php/archives/1360">Update #3</a>, <a href="/blog/index.php/archives/1358">Update #2</a>, <a href="/blog/index.php/archives/1340">Update #1</a>, <a href="/blog/index.php/archives/1329">Install</a></p>
+<p>A bit more about my Nest thermostat experiences.</p>
+<p>On the weekend, I spoke with a support engineer from Nest regarding the issue I was having with one of the Nest units failing to properly read the room temperature. I swapped one of the thermostats with a thermostat from a different floor in our house and then monitored the results over the weekend. I noticed the same problem in the new location: the thermostat would regularly read a temperature that was 3 to 4 degrees warmer than the actual room temperature. As it doesn’t consistently exhibit the problem, it makes heating a room to a comfortable temperature somewhat challenging (and now that it’s 19F outside, I’d like it if it was a bit more on the mark).</p>
+<p>I spoke again with the same support engineer from Nest today (Mark). He called back as promised at the telephone number I left with him. He agreed that it was the thermostat that had a problem and decided to ship me a new one immediately (overnight). As today was an “observed” holiday for most shipping companies in the USA, the new thermostat won’t ship till tomorrow.</p>
+<p><em>Interesting tidbit is that the base of the device apparently has a serial number that is tied to the display and that they both must be returned at the same time when shipping a defective unit back to Nest.</em></p>
+<p><img loading="lazy" alt="20111218-IMG_0136" src="/blog/wp-content/uploads/2011/12/20111218-IMG_0136_thumb.jpg" width="259" height="197" /></p>
+<p>When I arrived home this evening, my wife and I did our normal patterns. Go here, drop stuff off, etc. One of the places my wife walks nearly every evening takes her right by the Nest thermostat in a hallway on our first floor.</p>
+<p>As we were sitting down for dinner about 30 minutes later I noted that the temperature seemed a bit cooler than normal in the kitchen so I walked over to the thermostat. “Auto away” had been activated. <strong>Arrgh</strong>. What’s odd (and annoying) is that the temperature should have been going to 69F starting at 5pm. At some point, it had decided that we were “away” and had never arrived home (I checked all of the schedules and everything seemed normal). I thought that there was some way to review the timings and choices it makes for that setting, but the “Energy” option on the thermostat reported “No data” for any of the recent days (I would have expected at least one day as I had moved the thermostat two days earlier).</p>
+<p><strong>UPDATE: Jan, 4, 2012: </strong><span style="background-color: #ffff00">Ok the above happened AGAIN</span>. I don’t know why I’d want AUTO AWAY to also DEACTIVATE the schedule? Seriously? Turn off learning. Turn off Auto-away. What’s left Nest?</p>
+<p>So, I don’t know what to make of this new “feature.” Clearly, we were in the house and the auto away should have been deactivated by our presence (I thought?). We did not activate “away” mode manually either.</p>
+<p><a href="/blog/wp-content/uploads/2012/01/image.png"><img loading="lazy" style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2012/01/image_thumb.png" width="339" height="354" /></a></p>
+<p>I definitely can’t give high marks to this product and wouldn’t recommend it right now. I know others are apparently having decent success, but until the kinks are worked out or they do a lot more explaining, I’d recommend anyone thinking about buying one <strong>to wait </strong>(maybe for v2 or a significant software upgrade).</p>
+<p><strong><span style="background-color: #ffff00">If anyone from Nest is listening, please speak up! </span></strong></p>
+<p>(And anyone else with comments, questions, etc., feel free to leave them! I enjoy your comments and feedback and I know others are finding your comments very useful!)</p>
+<p><strong>I’ve created a new home for discussions about digital thermostats. </strong><a href="/blog/index.php/archives/1488"><strong>Here</strong></a><strong>’s a bit more information and </strong><a href="http://www.digtstat.com/forums"><strong>here</strong></a><strong>’s the site (digtstat.com). (And thanks for your help in getting it started!)</strong></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/blog/index.php/archives/1382/feed</wfw:commentRss>
+			<slash:comments>43</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1382</post-id>	</item>
+		<item>
+		<title>Nest Thermostat Review, Update #2</title>
+		<link>/blog/index.php/archives/1358</link>
+					<comments>/blog/index.php/archives/1358#comments</comments>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Fri, 30 Dec 2011 14:55:12 +0000</pubDate>
+				<category><![CDATA[General]]></category>
+		<category><![CDATA[Recommendations]]></category>
+		<category><![CDATA[Usability]]></category>
+		<category><![CDATA[Experience]]></category>
+		<category><![CDATA[Issue]]></category>
+		<category><![CDATA[Nest]]></category>
+		<category><![CDATA[Problem]]></category>
+		<category><![CDATA[Review]]></category>
+		<guid isPermaLink="false">/blog/?p=1358</guid>
+
+					<description><![CDATA[I’ve discussed my Nest thermostat experience a few times and am slowly becoming less convinced that it is ready for the market if you’re at all technically savvy and you’re easily frustrated by things not working the way you’d expect (like, you know how to setup e-mail on your phone). Update #6, Update #5, Update #4, Update #3, Update [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I’ve discussed my Nest thermostat experience a few times and am slowly becoming less convinced that it is ready for the market if you’re at all technically savvy and you’re easily frustrated by things not working the way you’d expect (like, you know how to setup e-mail on your phone).</p>
+<p><a title="Nest Thermostat Review, Update #6" href="/blog/index.php/archives/1420">Update #6</a>, <a href="/blog/index.php/archives/1404">Update #5</a>, <a href="/blog/index.php/archives/1382">Update #4</a>, <a href="/blog/index.php/archives/1360">Update #3</a>, <a href="/blog/index.php/archives/1358">Update #2</a>, <a href="/blog/index.php/archives/1340">Update #1</a>, <a href="/blog/index.php/archives/1329">Install</a></p>
+<p>Here’s a image of the schedule for the second floor, where my computer/den is located.</p>
+<p><a href="/blog/wp-content/uploads/2011/12/image8.png"><img loading="lazy" style="background-image: none; padding-left: 0px; padding-right: 0px; display: block; float: none; margin-left: auto; margin-right: auto; padding-top: 0px; border-width: 0px;" title="image" src="/blog/wp-content/uploads/2011/12/image_thumb8.png" alt="image" width="422" height="162" border="0" /></a></p>
+<p><a href="/blog/wp-content/uploads/2011/12/image9.png"><img loading="lazy" style="background-image: none; padding-left: 0px; padding-right: 0px; display: block; float: none; margin-left: auto; margin-right: auto; padding-top: 0px; border-width: 0px;" title="image" src="/blog/wp-content/uploads/2011/12/image_thumb9.png" alt="image" width="446" height="288" border="0" /></a></p>
+<p>On Monday and Tuesday of this week, my wife and I had the day off and were home most of the day. We spent a lot of time upstairs as her computer and crafting area is on the second floor, as is my den. So, the heat was turned up most of the day.</p>
+<p>The “learning” mode of the thermostat decided that as we were home two days in a row, that the whole week likely was going to look like that apparently. As you can see, the same schedule was replicated through all week days. <a href="/blog/wp-content/uploads/2011/12/image10.png"><img loading="lazy" style="background-image: none; padding-left: 0px; padding-right: 0px; display: inline; float: right; padding-top: 0px; border-width: 0px;" title="image" src="/blog/wp-content/uploads/2011/12/image_thumb10.png" alt="image" width="242" height="128" align="right" border="0" /></a></p>
+<p>On a normal morning, I often go to my den and do a bit of tinkering before leaving for work. However, I rarely turn up the thermostat and instead just leave it at the preset temperature. I’m not in my den long enough to justify the amount of energy it would take to heat the second floor.</p>
+<p>So, it’s frustrating that the thermostat would turn up the heat automatically at 9:30am, long after I’ve left for work and then run it all day long. Thankfully, after 3 hours, it apparently realizes there’s no one home, and will automatically adjust the temperature.</p>
+<p>Since I didn’t turn the heat UP, I don’t expect to need to turn it DOWN before I leave (I leave earlier than 9:30am). (Turn it down from what?)</p>
+<p>I could turn off the learning features. But, then one of the key features of the thermostat is turned off:</p>
+<p><a href="/blog/wp-content/uploads/2011/12/image11.png"><img loading="lazy" style="background-image: none; padding-left: 0px; padding-right: 0px; display: block; float: none; margin-left: auto; margin-right: auto; padding-top: 0px; border-width: 0px;" title="image" src="/blog/wp-content/uploads/2011/12/image_thumb11.png" alt="image" width="242" height="158" border="0" /></a></p>
+<p>GregN left a comment yesterday where he mentioned that Nest support recommended to try turning of the learning feature (activating “learning pause”).</p>
+<p>Now, I need to go fix the schedule to reflect my reality. Again.</p>
+<p>Nest, are you listening? This is a perfect example of my user experience not matching with the expectations Nest has set.</p>
+<p><strong>Update (December 30, 2011)</strong></p>
+<p>I tweeted this post (and directed it at nest and they did respond):</p>
+<p><a href="/blog/wp-content/uploads/2011/12/image12.png"><img loading="lazy" style="background-image: none; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border-width: 0px;" title="image" src="/blog/wp-content/uploads/2011/12/image_thumb12.png" alt="image" width="500" height="360" border="0" /></a></p>
+<p><strong>Update (December 31, 2011)</strong></p>
+<p>My wife had the day off on Friday (Dec 30) and adjusted the downstairs thermostat after lunch. Apparently, the thermostat believes that’s going to be a new routine for Friday’s (at about 1:30pm, temperature is set to 68F).</p>
+<p>Just the day before I’d fixed the schedule for every day. It’s not taking into account manual schedule changes and giving them proper weighting.</p>
+<p><a href="/blog/wp-content/uploads/2011/12/image13.png"><img loading="lazy" style="background-image: none; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border-width: 0px;" title="image" src="/blog/wp-content/uploads/2011/12/image_thumb13.png" alt="image" width="502" height="173" border="0" /></a></p>
+<p>The learning algorithm needs some help.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/blog/index.php/archives/1358/feed</wfw:commentRss>
+			<slash:comments>11</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1358</post-id>	</item>
+		<item>
+		<title>Nest Thermostat Review, Update #1</title>
+		<link>/blog/index.php/archives/1340</link>
+					<comments>/blog/index.php/archives/1340#comments</comments>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Tue, 27 Dec 2011 17:15:18 +0000</pubDate>
+				<category><![CDATA[General]]></category>
+		<category><![CDATA[Recommendations]]></category>
+		<category><![CDATA[Usability]]></category>
+		<category><![CDATA[Experience]]></category>
+		<category><![CDATA[Issue]]></category>
+		<category><![CDATA[Nest]]></category>
+		<category><![CDATA[Problem]]></category>
+		<category><![CDATA[Review]]></category>
+		<guid isPermaLink="false">/blog/?p=1340</guid>
+
+					<description><![CDATA[After a few weeks of using the Nest thermostat, I’ve got a few more comments that I’d like to share. (Here’s my post about the installation). The learning feature honestly hasn’t been very useful in the first few weeks. It’s apparently easily confused by days that you&#8217;re home unexpectedly (for example, a holiday or vacation). [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>After a few weeks of using the <a href="http://www.nest.com/why-we-made-it/">Nest thermostat</a>, I’ve got a few more comments that I’d like to share. (Here’s my <a href="/blog/index.php/archives/1329">post</a> about the installation).</p>
+<p>The learning feature honestly hasn’t been very useful in the first few weeks. It’s apparently easily confused by days that you&#8217;re home unexpectedly (for example, a holiday or vacation). If these days are early in the learning process, it makes some very poor choices as to when to activate the HVAC system. I’d recommend not installing it during periods of very inconsistent schedules for this reason.</p>
+<p><a href="/blog/wp-content/uploads/2011/12/image3.png"><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2011/12/image_thumb3.png" width="422" height="287" /></a></p>
+<p>It doesn’t have a “I’m on vacation today” mode which would be extremely useful and ideally would help while it’s learning (and other days).</p>
+<p>In a recent update, Nest made it significantly easier to manage the schedule of a day from the web site – by being able to copy the settings from one day to another:</p>
+<p><a href="/blog/wp-content/uploads/2011/12/image4.png"><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2011/12/image_thumb4.png" width="415" height="273" /></a></p>
+<p>I found the variations in the early learning to be not helpful as we didn’t arrive home at the same time every day, so I mirrored all of the week days for now to better reflect our typical schedules. (And to be clear, the thermostats each reported that they’d “learned” enough to start doing the work automatically before I started making manual adjustments).</p>
+<p>I had the expectation that the thermostat would begin to predict when we wanted a specific temperature and start adjusting for it. For example, if we arrive home at 6pm, we want the house to be nearly completely warmed to our preferred temperature (69F) at that time. Not start warming at 6pm. In colder winter months of southern Wisconsin, it takes about 45 minutes to increase the house’s temperature by 9 degrees from the away temperature we’ve set of 60F. </p>
+<p>Unfortunately, it doesn’t seem like Nest performs that function. It has the right data – and a simple behavior switch is all it would take. <strong>I’d love to see it added</strong>. The thermostat already has an estimate of how long it takes to reach a certain temperature, so it could activate the HVAC system more intelligently than traditional programmable thermostats.</p>
+<p>So for now, I’ve manually adjusted the schedule to better reflect our requirements. We don’t need too many temperature adjustments during an average day. In fact, most programmable thermostats can meet our needs when it comes to the basic requirement of a scheduled temperature adjustment. </p>
+<p>We’ve not used the ‘auto-away’ feature yet successfully. By that I mean the thermostat can detect that you’re not at home and automatically set the temperature to the “away” temperature. One day, it reported auto away when we were still home. I’m not sure why as we’ve got 3 Nest thermostats, one on each floor, and I’m convinced we’d walked in front of one of them very frequently during the day. </p>
+<p>I’ve seen this problem more than once with the thermostats:</p>
+<p><a href="/blog/wp-content/uploads/2011/12/image5.png"><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2011/12/image_thumb5.png" width="422" height="191" /></a></p>
+<p>It’s never been the same thermostat, and I’m 100% confident that each of the Nest thermostats is always within a strong WiFi signal. </p>
+<p><a href="/blog/wp-content/uploads/2011/12/image6.png"><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2011/12/image_thumb6.png" width="430" height="234" /></a></p>
+<p>When I noticed the problem this morning (right as I was about to write this blog post), I took a snapshot of the screen and went down to our basement to see if the thermostat was reporting an error. It was not. I went through the settings to see when it had last connected to the “Nest Cloud” and it claimed it had just done that. When I returned to the computer, the web site had updated and did not report any errors. I don’t know what to make of that issue and will continue to watch for patterns to the problem. </p>
+<p>The mobile applications are functional. I’ve forgotten we have them though and fail to take advantage of them consistently. Yesterday, we missed an opportunity to remotely adjust the temperature of the home before we arrived after being away for several days in Chicago. It would have been nice to return to a warm home. :-) </p>
+<p>I’ve written Nest support once making a few suggestions about their web application – some things that were bugging me. Unfortunately, no human responded (just an automated response). I am disappointed by that. It’s very low effort to paste in a “thanks for your feedback” type of a response and hit send. Nest as a company likely could live and be successful on their technology and devices. <strong>But, to thrive, they need awesome customers.</strong> Right now, they have not gotten customer service figured out. I also pinged their Twitter account asking for an RSS feed on their blog (seriously! they don’t have one) and they responded they were working on it. I know how hard it is to setup a blog these … WHAT?! They should be scouring the Internet, looking for positive and negative feedback and reacting to it.</p>
+<p>I want to be excited about this type of technology. It has promise. Since heating and cooling costs so much these days, I want to be more efficient about how we spend money on heating and cooling and how we use non-renewable resources. The Nest thermostat is most certainly a new way of thinking about the user experience of a normally mundane and ignored device in the home. Having owned a (Radio Thermostat) <a href="http://www.radiothermostat.com/filtrete/products/3M-50/">Filtrete Touch-Screen programmable thermostat with WiFi</a> (on <a href="http://www.amazon.com/gp/product/B004YZFU1Q/ref=as_li_ss_tl?ie=UTF8&amp;tag=wiredp-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B004YZFU1Q">Amazon</a> for around $100), I can attest to the horrible user experience of some of the alternatives.</p>
+<p>However at $249 USD each, I remain neutral to negative about this product. While the geek factor is high, and the usability and user experience of the product is very well done, it’s a <strong>very expensive</strong> thermostat for the home. The Radio Thermostat I mentioned above, while it’s difficult to setup, has most of the same features and is $150 less. The <a href="http://www.amazon.com/gp/product/B004YZFU1Q/ref=as_li_ss_tl?ie=UTF8&amp;tag=wiredp-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B004YZFU1Q">Radio Thermostat</a> is not particularly attractive, but it would be a conversation starter in most homes. The Nest definitely would be. </p>
+<p>For less than $50US, it’s easy to obtain a decent programmable thermostat. I’ve bought them many times over the years for various locations, including some apartments we were living in. </p>
+<p>Final words of advice/feedback for potential Nest owners now:</p>
+<p>If you have a decent programmable thermostat already consider whether it’s worth an additional $250 to:</p>
+<ul>
+<li>Frequently <strong>remotely </strong>adjust the temperature of the house</li>
+<li>Have more than the 5 to 7 daily adjustments you’re allowed by typical programmable thermostats</li>
+<li>Have a thermostat which could theoretically save you money by detecting you’re not at home (if you have a location for the thermostat which makes it possible to detect you being home/away).</li>
+<li>Have a glitzy color thermostat that doesn’t show the time on it when you walk by (still missing that feature)</li>
+<li>Encourage you with a small green leaf to turn up/down the temperature to save you money (yes, it’s weak)</li>
+<li>Have a topic to talk about with your friends (“Hey! I got a new color thermostat”)</li>
+</ul>
+<p>If you already have a decent programmable thermostat and were conscious of when you needed to adjust it (hold) based on unexpected scheduled changes, save your money and wait for something cheaper unless you really need the features above. </p>
+<p>I remain very skeptical whether we’ll recoup the costs of the units in energy savings.</p>
+<p>If you feel otherwise about the thermostat (or agree), speak up! I’d like to see what the other early adopters think about it. I’ve read some stupidly excited tweets/posts about the product that are often: “OMG! It’s a programmable color thermostat! OMG! Love it!!” Yeah. My phone doesn’t have wires and also has a color screen. <img style="border-bottom-style: none; border-left-style: none; border-top-style: none; border-right-style: none" class="wlEmoticon wlEmoticon-smile" alt="Smile" src="/blog/wp-content/uploads/2011/12/wlEmoticon-smile.png" /></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/blog/index.php/archives/1340/feed</wfw:commentRss>
+			<slash:comments>10</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1340</post-id>	</item>
+		<item>
+		<title>My Nest Thermostat installation experience</title>
+		<link>/blog/index.php/archives/1329</link>
+					<comments>/blog/index.php/archives/1329#comments</comments>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sun, 18 Dec 2011 22:43:49 +0000</pubDate>
+				<category><![CDATA[Recommendations]]></category>
+		<category><![CDATA[Software]]></category>
+		<category><![CDATA[Usability]]></category>
+		<category><![CDATA[Experience]]></category>
+		<category><![CDATA[Issue]]></category>
+		<category><![CDATA[Nest]]></category>
+		<category><![CDATA[Problem]]></category>
+		<category><![CDATA[Review]]></category>
+		<guid isPermaLink="false">/blog/index.php/archives/1329</guid>
+
+					<description><![CDATA[After the amazing mad dash for the Nest thermostats when they were first made available for pre-order, I ordered three thermostats for our home from Best Buy (as Nest.com had sold out). We’ve got a three zone heating system, and I wanted to replace all at once (as the system works as “mesh” to learn [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="/blog/wp-content/uploads/2011/12/image.png"><img loading="lazy" style="background-image: none; border-right-width: 0px; margin: 0px 8px 0px 0px; padding-left: 0px; padding-right: 0px; display: inline; float: left; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="image" border="0" alt="image" align="left" src="/blog/wp-content/uploads/2011/12/image_thumb.png" width="242" height="178" /></a>After the amazing mad dash for the <a href="http://www.nest.com/">Nest thermostats</a> when they were first made available for pre-order, I ordered three thermostats for our home from Best Buy (as Nest.com had sold out). We’ve got a three zone heating system, and I wanted to replace all at once (as the system works as “mesh” to learn habits, if people are in the house, etc.).</p>
+<p>Our order wasn’t scheduled to ship until January/February of 2012, so I was pleasantly surprised by their early arrival.</p>
+<p>It’s evident that Nest has paid careful attention to the entire experience of purchase and installation as you’ll see. I can’t think of another appliance in our home that has come close. Hopefully, other manufacturers are starting to take notice that as consumers, we don’t want everything sealed in a nearly impossible to crack open plastic casing.</p>
+<p><a href="/blog/wp-content/uploads/2011/12/20111218-IMG_0095.jpg"><img loading="lazy" style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="20111218-IMG_0095" border="0" alt="20111218-IMG_0095" src="/blog/wp-content/uploads/2011/12/20111218-IMG_0095_thumb.jpg" width="260" height="200" /></a></p>
+<p><a href="/blog/wp-content/uploads/2011/12/20111218-IMG_0096.jpg"><img loading="lazy" style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="20111218-IMG_0096" border="0" alt="20111218-IMG_0096" src="/blog/wp-content/uploads/2011/12/20111218-IMG_0096_thumb.jpg" width="440" height="335" /></a></p>
+<p><a href="/blog/wp-content/uploads/2011/12/20111218-IMG_0098.jpg"><img loading="lazy" style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="20111218-IMG_0098" border="0" alt="20111218-IMG_0098" src="/blog/wp-content/uploads/2011/12/20111218-IMG_0098_thumb.jpg" width="440" height="335" /></a></p>
+<p><a href="/blog/wp-content/uploads/2011/12/20111218-IMG_0097.jpg"><img loading="lazy" style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; margin-left: 0px; border-left-width: 0px; margin-right: 0px; padding-top: 0px" title="20111218-IMG_0097" border="0" alt="20111218-IMG_0097" src="/blog/wp-content/uploads/2011/12/20111218-IMG_0097_thumb.jpg" width="440" height="335" /></a></p>
+<p>More consumer electronics packaging is slowly becoming part of the product experience. Apple deserves credit for being a consistent proponent of the packaging being part of the product purchasing and initial “ownership” experience.</p>
+<p>The Nest thermostat is no different.</p>
+<p><a href="/blog/wp-content/uploads/2011/12/20111218-IMG_0113.jpg"><img loading="lazy" style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="20111218-IMG_0113" border="0" alt="20111218-IMG_0113" src="/blog/wp-content/uploads/2011/12/20111218-IMG_0113_thumb.jpg" width="440" height="335" /></a></p>
+<p>Opening the top immediately reveals the product. There’s no drama here, just a thermostat (covered in a plastic shell to protect the case from scratches).</p>
+<p><a href="/blog/wp-content/uploads/2011/12/20111218-IMG_0116.jpg"><img loading="lazy" style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="20111218-IMG_0116" border="0" alt="20111218-IMG_0116" src="/blog/wp-content/uploads/2011/12/20111218-IMG_0116_thumb.jpg" width="440" height="335" /></a></p>
+<p>The top of the box has a mold to keep the thermostat safe and secure. It’s glued to the top so it too stays out of the way of “product.”</p>
+<p><a href="/blog/wp-content/uploads/2011/12/20111218-IMG_0117.jpg"><img loading="lazy" style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="20111218-IMG_0117" border="0" alt="20111218-IMG_0117" src="/blog/wp-content/uploads/2011/12/20111218-IMG_0117_thumb.jpg" width="440" height="335" /></a></p>
+<p>No annoying twist ties or anything here .. the thermostat is easily removed from the box. In fact, make sure you don’t drop it as there’s nothing holding in the box.</p>
+<p><a href="/blog/wp-content/uploads/2011/12/20111218-IMG_0118.jpg"><img loading="lazy" style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="20111218-IMG_0118" border="0" alt="20111218-IMG_0118" src="/blog/wp-content/uploads/2011/12/20111218-IMG_0118_thumb.jpg" width="440" height="335" /></a></p>
+<p>Under the bottom mold for the thermostat is a small color welcome packet and B&amp;W installation instructions.</p>
+<p><a href="/blog/wp-content/uploads/2011/12/20111218-IMG_0120.jpg"><img loading="lazy" style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="20111218-IMG_0120" border="0" alt="20111218-IMG_0120" src="/blog/wp-content/uploads/2011/12/20111218-IMG_0120_thumb.jpg" width="440" height="335" /></a></p>
+<p>When you pull out the instructions, you’ll find the remainder of the installation parts. Inside you’ll find a mini multi-bit screwdriver, the installation base, a few screws and drywall anchors, and the optional wall plates.</p>
+<p><a href="/blog/wp-content/uploads/2011/12/20111218-IMG_0122.jpg"><img loading="lazy" style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="20111218-IMG_0122" border="0" alt="20111218-IMG_0122" src="/blog/wp-content/uploads/2011/12/20111218-IMG_0122_thumb.jpg" width="440" height="335" /></a></p>
+<p>I had the (unfortunate?) need of 2 of the different sizes of wall plates to make installation easier.</p>
+<p><a href="/blog/wp-content/uploads/2011/12/20111218-IMG_0123.jpg"><img loading="lazy" style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="20111218-IMG_0123" border="0" alt="20111218-IMG_0123" src="/blog/wp-content/uploads/2011/12/20111218-IMG_0123_thumb.jpg" width="440" height="335" /></a></p>
+<p>The multi-bit screw driver was a nice touch. My only suggestion to Nest would be to investigate making the screwdriver have a slightly more “grippy” exterior. I found in a few cases where screws were overly tightened that the screwdriver rotated too freely in my hand.</p>
+<p><a href="/blog/wp-content/uploads/2011/12/20111218-IMG_0125.jpg"><img loading="lazy" style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="20111218-IMG_0125" border="0" alt="20111218-IMG_0125" src="/blog/wp-content/uploads/2011/12/20111218-IMG_0125_thumb.jpg" width="440" height="335" /></a></p>
+<p>As is very typical of home thermostats, Nest has included a set of stickers for the various wires you might encounter during installation. At first I read through the instructions and then went hunting through the paperwork looking for a loose set of stickers.</p>
+<p>In fact, they’re part of the instructions and I had completely overlooked them! I’ve installed more than my fair share of thermostats over the years, and found that the ones that are labeled <strong>and colored</strong> are the nicest. The blue, while attractive from a design perspective, just isn’t as nice. If you have more modern house, it’s likely that the color of the wires match the connections, so the stickers may not be needed. While our HVAC wiring did have the modern wiring, I still use the stickers, just to make certain everything is properly connected (as I’d rather not have to call a HVAC specialist out to our house to get the HVAC working again!).</p>
+<p><a href="/blog/wp-content/uploads/2011/12/20111218-IMG_0127.jpg"><img loading="lazy" style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="20111218-IMG_0127" border="0" alt="20111218-IMG_0127" src="/blog/wp-content/uploads/2011/12/20111218-IMG_0127_thumb.jpg" width="440" height="335" /></a></p>
+<p><strong>First step is to turn off the furnace. Don’t leave it on</strong>. Either kill power at your electrical panel or at the furnace itself. Many furnaces/HVACS have a power switch on the furnace itself which you can use and may be more convenient. In either case – make sure you’ve turned off the power.</p>
+<p>To remove a thermostat, you’ll likely need to remove a few screws and maybe a wall plate. I found that the included screwdriver wasn’t long enough to reach the screws of the old thermostat, so you may need an extra (the included Nest screwdriver was still handy for removal of the wires from the older thermostat).</p>
+<p><a href="/blog/wp-content/uploads/2011/12/20111218-IMG_0129.jpg"><img loading="lazy" style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="20111218-IMG_0129" border="0" alt="20111218-IMG_0129" src="/blog/wp-content/uploads/2011/12/20111218-IMG_0129_thumb.jpg" width="440" height="335" /></a></p>
+<p>After removal of the wall plate and old thermostat, you may be greeted by a giant “<strong>HEY, I SUCK AT CUTTING A HOLE IN DRYWALL BUT YOU’LL NEVER NOTICE YOU STUPID HOMEOWNER</strong>” hole like I was when removing the old thermostat. If you’re as handy with drywall repairs as I am, you’ll be thankful that Nest included some wall plates.</p>
+<p>I labeled each of the wires using the enclosed stickers and then removed the wires from the thermostat.</p>
+<p><strong>Be careful to not allow the cable to fall back into the wall</strong>! If the wires are stiff, you can wrap a few loose wires around a pencil or pen which should help prevent the cable from sliding back into the wall. (Or if the wires aren’t stiff, consider a piece of tape, a pencil, and the wires to be a reasonable alternative).</p>
+<p><a href="/blog/wp-content/uploads/2011/12/20111218-IMG_0130.jpg"><img loading="lazy" style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="20111218-IMG_0130" border="0" alt="20111218-IMG_0130" src="/blog/wp-content/uploads/2011/12/20111218-IMG_0130_thumb.jpg" width="440" height="335" /></a></p>
+<p>Next, you’ll want to see what you might be up against behind the wall. During installation of two of our new Nest thermostats, I found that the best location for the thermostat meant that one of the screws would line up with a wall-stud behind the drywall. If you weren’t blessed with a giant freaking hole like in the example above, do a bit of gentle prodding with a screwdriver to see if there are any unexpected obstacles. Use a stud finder if necessary.</p>
+<p><a href="/blog/wp-content/uploads/2011/12/20111218-IMG_0134.jpg"><img loading="lazy" style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="20111218-IMG_0134" border="0" alt="20111218-IMG_0134" src="/blog/wp-content/uploads/2011/12/20111218-IMG_0134_thumb.jpg" width="440" height="335" /></a></p>
+<p>For one of the installations in our house, I needed to use the long drywall screw to accommodate the thickness of the Nest thermostat mount, wall plate, and drywall into a stud. It’s a 2 inch screw. Without it, the screw wasn’t deep enough to hold the thermostat securely to the wall. I found that although the screw-head of the drywall screw was larger than the original screw included, it didn’t cause any problems when the main unit was connected to the base.</p>
+<p>If you’re using the included drywall anchors, do the right thing and <strong>predrill</strong>. While I predrilled the hole, it wasn’t large enough to allow smooth entry, and it quickly stripped the anchor’s Phillips screw head. I had to use some electrical pliers I had in my tool bag to remove the partially set wall anchor (thankfully, I was able to just twist it slowly out).</p>
+<p><a href="/blog/wp-content/uploads/2011/12/20111218-IMG_0135.jpg"><img loading="lazy" style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="20111218-IMG_0135" border="0" alt="20111218-IMG_0135" src="/blog/wp-content/uploads/2011/12/20111218-IMG_0135_thumb.jpg" width="440" height="335" /></a></p>
+<p>Thankfully, I had a replacement wall anchor available that nearly matched the original, yet was a bit stronger and better made. So, a second attempt worked without a hitch.</p>
+<p>You’d think I’d learn my lesson … however, I proceeded to wreck the second drywall anchor just as quickly as the first. Again, a replacement with a better made anchor did the trick. As you may not have replacements, be more careful than I. Don’t expect them to work well without predrilling. <strong>Note to Nest: your included drywall anchors suck and you saved money in the wrong place</strong>. The bulk package of plastic anchors I already had on hand were far better. I’d suggest considering metal ones instead – I’ve got some of the those – and they rock! (However, they were slightly too large for this installation, otherwise I would have switched to them without hesitation).</p>
+<p><a href="/blog/wp-content/uploads/2011/12/20111218-IMG_0147.jpg"><img loading="lazy" style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="20111218-IMG_0147" border="0" alt="20111218-IMG_0147" src="/blog/wp-content/uploads/2011/12/20111218-IMG_0147_thumb.jpg" width="440" height="335" /></a></p>
+<p>I used the square plate to cover the giant hole in the drywall and then connected the wires. As this was my third thermostat installation, getting the wires in place on this unit was much easier than the first two. I’d like to think it was “experience,” but I’m actually going to say it was a bit of luck. On the second unit, I struggled getting the 24V “C” wire connected successfully. Each time I pushed it in … it would pop back out. It was bad enough that I thought it was connected and then not until I had installed everything did I notice that the thermostat reported that I hadn’t connected the “C” wire.</p>
+<p>(Note, the “C” wire is very important, as it’s where the Nest thermostat draws power for the unit and without it, you may have a <a href="http://www.marco.org/2011/12/17/nest-incompatibility-without-c-wire">less than stellar experience</a>).</p>
+<p><a href="/blog/wp-content/uploads/2011/12/20111218-IMG_0136.jpg"><img loading="lazy" style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="20111218-IMG_0136" border="0" alt="20111218-IMG_0136" src="/blog/wp-content/uploads/2011/12/20111218-IMG_0136_thumb.jpg" width="440" height="335" /></a></p>
+<p>I’d made sure that the “C” wires were powered before beginning the installation (I actually had to add the connection myself to the furnace).</p>
+<p>Here’s with the wires connected. If you’d wondered how you’d level a round object like this – no worries! There’s a small “level” at the top of the Nest thermostat which makes leveling a breeze (right below the nest logo in the photo below)!</p>
+<p><a href="/blog/wp-content/uploads/2011/12/20111218-IMG_0138.jpg"><img loading="lazy" style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="20111218-IMG_0138" border="0" alt="20111218-IMG_0138" src="/blog/wp-content/uploads/2011/12/20111218-IMG_0138_thumb.jpg" width="440" height="335" /></a></p>
+<p>I snapped the front of the unit onto the base carefully and then turned on the power to the furnace again.</p>
+<p>A few moments later, I could see a tiny green light in the lower right corner of the thermostat and the screen activated. It’s a really great touch to the over all experience that the screen is round like the device.</p>
+<p><a href="/blog/wp-content/uploads/2011/12/20111218-IMG_0139.jpg"><img loading="lazy" style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="20111218-IMG_0139" border="0" alt="20111218-IMG_0139" src="/blog/wp-content/uploads/2011/12/20111218-IMG_0139_thumb.jpg" width="440" height="335" /></a></p>
+<p>It takes a few minutes for the device to begin the setup process.</p>
+<p><a href="/blog/wp-content/uploads/2011/12/20111218-IMG_0140.jpg"><img loading="lazy" style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="20111218-IMG_0140" border="0" alt="20111218-IMG_0140" src="/blog/wp-content/uploads/2011/12/20111218-IMG_0140_thumb.jpg" width="440" height="385" /></a></p>
+<p>The device has a tiny speaker so, it makes a few little “clicks” as it nears readiness.</p>
+<p><a href="/blog/wp-content/uploads/2011/12/20111218-IMG_0141.jpg"><img loading="lazy" style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="20111218-IMG_0141" border="0" alt="20111218-IMG_0141" src="/blog/wp-content/uploads/2011/12/20111218-IMG_0141_thumb.jpg" width="440" height="335" /></a></p>
+<p>As you’ll see throughout the installation, the Nest thermostat has a very simple and elegant user experience. It’s not got much flourish, … just clean lines and a simple UI. Very pleasant. Thankfully, no EULA! :)</p>
+<p><a href="/blog/wp-content/uploads/2011/12/20111218-IMG_0143.jpg"><img loading="lazy" style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="20111218-IMG_0143" border="0" alt="20111218-IMG_0143" src="/blog/wp-content/uploads/2011/12/20111218-IMG_0143_thumb.jpg" width="440" height="335" /></a></p>
+<p>You’ll only need to do this once ideally – setup of the Internet wifi connection. Our home’s wifi password is sufficiently complex and was particularly annoying to spin, click, toggle, spin, click…. But, it’s done with. I can’t think of a better way to do this that wouldn’t take just as much time. To select a number or character, spin the outer frame, and then “push” the frame to select. That’s really the only input the device takes from the user. Spin and click. Nice.</p>
+<p><a href="/blog/wp-content/uploads/2011/12/20111218-IMG_0144.jpg"><img loading="lazy" style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="20111218-IMG_0144" border="0" alt="20111218-IMG_0144" src="/blog/wp-content/uploads/2011/12/20111218-IMG_0144_thumb.jpg" width="440" height="335" /></a></p>
+<p>As soon as the wifi is connected, it downloads an update. It took about 5 minutes to download the update, install the update, “backing up software” and reboot.<a href="/blog/wp-content/uploads/2011/12/20111218-IMG_0146.jpg"><img loading="lazy" style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="20111218-IMG_0146" border="0" alt="20111218-IMG_0146" src="/blog/wp-content/uploads/2011/12/20111218-IMG_0146_thumb.jpg" width="373" height="440" /></a></p>
+<p><a href="/blog/wp-content/uploads/2011/12/20111218-IMG_0148.jpg"><img loading="lazy" style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="20111218-IMG_0148" border="0" alt="20111218-IMG_0148" src="/blog/wp-content/uploads/2011/12/20111218-IMG_0148_thumb.jpg" width="399" height="440" /></a></p>
+<p><a href="/blog/wp-content/uploads/2011/12/20111218-IMG_0153.jpg"><img loading="lazy" style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="20111218-IMG_0153" border="0" alt="20111218-IMG_0153" src="/blog/wp-content/uploads/2011/12/20111218-IMG_0153_thumb.jpg" width="427" height="440" /></a></p>
+<p><a href="/blog/wp-content/uploads/2011/12/20111218-IMG_0154.jpg"><img loading="lazy" style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="20111218-IMG_0154" border="0" alt="20111218-IMG_0154" src="/blog/wp-content/uploads/2011/12/20111218-IMG_0154_thumb.jpg" width="440" height="431" /></a></p>
+<p>I don’t know what “Backing up software” is doing. I hope the “Cloud” is involved somehow because that makes all Internet things better. :)</p>
+<p><a href="/blog/wp-content/uploads/2011/12/20111218-IMG_0155.jpg"><img loading="lazy" style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="20111218-IMG_0155" border="0" alt="20111218-IMG_0155" src="/blog/wp-content/uploads/2011/12/20111218-IMG_0155_thumb.jpg" width="440" height="308" /></a></p>
+<p>This was a very nice touch – an image of the connections I made. On the second unit I installed, this was key to my discovery that the “C” wire had become dislodged already!</p>
+<p><a href="/blog/wp-content/uploads/2011/12/20111218-IMG_0156.jpg"><img loading="lazy" style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="20111218-IMG_0156" border="0" alt="20111218-IMG_0156" src="/blog/wp-content/uploads/2011/12/20111218-IMG_0156_thumb.jpg" width="437" height="440" /></a></p>
+<p>In order to receive the time and temperature, your zip code is needed.</p>
+<p><a href="/blog/wp-content/uploads/2011/12/20111218-IMG_0157.jpg"><img loading="lazy" style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="20111218-IMG_0157" border="0" alt="20111218-IMG_0157" src="/blog/wp-content/uploads/2011/12/20111218-IMG_0157_thumb.jpg" width="440" height="438" /></a></p>
+<p><a href="/blog/wp-content/uploads/2011/12/20111218-IMG_0158.jpg"><img loading="lazy" style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="20111218-IMG_0158" border="0" alt="20111218-IMG_0158" src="/blog/wp-content/uploads/2011/12/20111218-IMG_0158_thumb.jpg" width="440" height="383" /></a></p>
+<p>If you’ve got more than one thermostat, you’re asked for a name for each thermostat. It’s got a few reasonable defaults. You can do a custom name if you’d like directly on the unit, or later on the web site.</p>
+<p><a href="/blog/wp-content/uploads/2011/12/20111218-IMG_0159.jpg"><img loading="lazy" style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="20111218-IMG_0159" border="0" alt="20111218-IMG_0159" src="/blog/wp-content/uploads/2011/12/20111218-IMG_0159_thumb.jpg" width="335" height="440" /></a></p>
+<p><a href="/blog/wp-content/uploads/2011/12/20111218-IMG_0160.jpg"><img loading="lazy" style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="20111218-IMG_0160" border="0" alt="20111218-IMG_0160" src="/blog/wp-content/uploads/2011/12/20111218-IMG_0160_thumb.jpg" width="335" height="440" /></a></p>
+<p><a href="/blog/wp-content/uploads/2011/12/20111218-IMG_0161.jpg"><img loading="lazy" style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="20111218-IMG_0161" border="0" alt="20111218-IMG_0161" src="/blog/wp-content/uploads/2011/12/20111218-IMG_0161_thumb.jpg" width="335" height="440" /></a></p>
+<p>The thermostat asks if it should start in heating or cooling mode:</p>
+<p><a href="/blog/wp-content/uploads/2011/12/20111218-IMG_0162.jpg"><img loading="lazy" style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="20111218-IMG_0162" border="0" alt="20111218-IMG_0162" src="/blog/wp-content/uploads/2011/12/20111218-IMG_0162_thumb.jpg" width="335" height="440" /></a></p>
+<p>I don’t know if the unit tries to make an educated guess based on the outside temperature (obtained by using the Zip code provided earlier), or if it always defaults to heat.</p>
+<p><a href="/blog/wp-content/uploads/2011/12/20111218-IMG_0165.jpg"><img loading="lazy" style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="20111218-IMG_0165" border="0" alt="20111218-IMG_0165" src="/blog/wp-content/uploads/2011/12/20111218-IMG_0165_thumb.jpg" width="335" height="440" /></a></p>
+<p>OK-doky.</p>
+<p><a href="/blog/wp-content/uploads/2011/12/20111218-IMG_0166.jpg"><img loading="lazy" style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="20111218-IMG_0166" border="0" alt="20111218-IMG_0166" src="/blog/wp-content/uploads/2011/12/20111218-IMG_0166_thumb.jpg" width="410" height="440" /></a></p>
+<p>Done!</p>
+<p>One setting I‘d immediately suggest is going to settings (push the display once, spin to “SETTINGS”) and changing the “BRIGHTNESS” to <strong>auto</strong>. Just spin the outer wheel until you find the BRIGHTNESS setting and then push to toggle through the options. It defaults to medium which was much too bright at night in a darkened hallway.</p>
+<p><a href="/blog/wp-content/uploads/2011/12/20111218-IMG_0169.jpg"><img loading="lazy" style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="20111218-IMG_0169" border="0" alt="20111218-IMG_0169" src="/blog/wp-content/uploads/2011/12/20111218-IMG_0169_thumb.jpg" width="335" height="440" /></a></p>
+<p>&#160;</p>
+<p><a href="/blog/wp-content/uploads/2011/12/20111218-IMG_0167.jpg"><img loading="lazy" style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="20111218-IMG_0167" border="0" alt="20111218-IMG_0167" src="/blog/wp-content/uploads/2011/12/20111218-IMG_0167_thumb.jpg" width="335" height="440" /></a></p>
+<p>After completion of installation, set the temperature as desired.</p>
+<p>Here are some things I learned:</p>
+<ul>
+<li>The display activates when it detects nearby movement. </li>
+<li>It shows the current set temperature in the “large” font size and the current temperature in a very small font (and graphically). I’d prefer if the current temperature was made slightly larger for at a glance reading. During heating seasons, I don’t care so much about that, but I know that I use the “current temperature” far too much during the “cooling” season to decide how freaking hot the house is and whether it’s <strong>finally</strong> time to turn on the air conditioning. </li>
+<li>There’s no on-screen clock. I’m amazed how much I relied on the clocks on the thermostats for knowing what time it is (or at least a confirmation of what time it is). I miss that already. They easily could add that and would love to see it added. </li>
+<li>Predrill for the screws (both the drywall anchors and other screws). You’ll be more successful and end up less frustrated. </li>
+<li>Expect that it will take you longer than you’d thought. It took between 30-60 minutes per thermostat to install. If you hit a problem (like a wall stud for example), you may find it takes longer. In fact, you might want to remove the old thermostat by removing the wall mount before you even start to see what you might be up against – in case a trip to your local hardware store might be necessary. </li>
+<li>Install power to the unit (the “C” wire). </li>
+<li>Be careful and go slow. </li>
+</ul>
+<p><a href="http://support.nest.com/customer/portal/articles/179118-exploring-your-nest-account-on-the-nest-mobile-app">Download the app for your iPhone or Android</a> device and enjoy remote control of your HVAC system!</p>
+<p>You may also use their web site to adjust settings, temperature, etc. You can even change the name of the thermostats (in a multi-thermostat dwelling at least).</p>
+<p><a href="/blog/wp-content/uploads/2011/12/image1.png"><img loading="lazy" style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2011/12/image_thumb1.png" width="440" height="207" /></a></p>
+<p>The web app shows the current set temperature and the current temperature.</p>
+<p><a href="/blog/wp-content/uploads/2011/12/image2.png"><img loading="lazy" style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2011/12/image_thumb2.png" width="415" height="440" /></a></p>
+<p>Not that here they did the same thing and put the current temperature on the spinning gauge of the dial. It’s more difficult to read there than it should be. I don’t know why Nest considers the current temperature so unimportant.</p>
+<p><strong>UPDATES</strong>:</p>
+<p><a href="/blog/index.php/archives/1340">Update #1</a>, <a href="/blog/index.php/archives/1358">Update #2</a>, <a href="/blog/index.php/archives/1360">Update #3</a>, <a href="/blog/index.php/archives/1382">Update #4</a>,<a title="Nest Thermostat Review, Update #5" href="/blog/index.php/archives/1404"> Update #5</a>, <a href="/blog/index.php/archives/1420">Update #6</a></p>
+<p>&#160;</p>
+<p>I took many of the nest box photos in a white portable photo box with my iPhone 4S (all photos were taken with the iPhone). Our Ragdoll cat thought it was great fun, so I’m including a few obligatory pet photos. I’m amazed by the quality of the camera (especially the second one)!</p>
+<p><a href="/blog/wp-content/uploads/2011/12/20111218-IMG_0102.jpg"><img loading="lazy" style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="20111218-IMG_0102" border="0" alt="20111218-IMG_0102" src="/blog/wp-content/uploads/2011/12/20111218-IMG_0102_thumb.jpg" width="463" height="539" /></a></p>
+<p><a href="/blog/wp-content/uploads/2011/12/20111218-IMG_0111.jpg"><img loading="lazy" style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="20111218-IMG_0111" border="0" alt="20111218-IMG_0111" src="/blog/wp-content/uploads/2011/12/20111218-IMG_0111_thumb.jpg" width="471" height="546" /></a></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/blog/index.php/archives/1329/feed</wfw:commentRss>
+			<slash:comments>8</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1329</post-id>	</item>
+		<item>
+		<title>Microsoft: Make the &#8220;Metro/Zune&#8221; look a standard. Publish it. Push it. Now.</title>
+		<link>/blog/index.php/archives/1201</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sat, 12 Feb 2011 03:03:07 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[Usability]]></category>
+		<guid isPermaLink="false">/blog/index.php/archives/1201</guid>
+
+					<description><![CDATA[Apple makes user experience inroads every day on Windows when a developer follows Apple’s Human Interface Guidelines for design for a Windows Application. This post was inspired when I installed Miro this morning on my desktop PC. (Don’t get me started that it opts-in a bunch of changes and a toolbar for the browser. Convince [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Apple makes user experience inroads every day on Windows when a developer follows Apple’s Human Interface Guidelines for design for a Windows Application. </p>
+<p>This post was inspired when <img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; float: left; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" align="left" src="/blog/wp-content/uploads/2011/02/image5.png" width="162" height="193" />I installed <a href="http://www.getmiro.com/">Miro</a> this morning on my desktop PC. (Don’t get me started that it <strong>opts-in </strong>a bunch of changes and a toolbar for the browser. Convince me that I want to to do it because it’s the “right” thing – let me opt-in!)</p>
+<p>In Miro’s words, it’s an “amazing open-source, non-profit video player.” (See previous annoyance about toolbars and other default-opt-in things the installer attempts).</p>
+<p>In any case, it installed. The installer UI had a few cross platform oddities, including not being sized correctly, and worse, showing up too high on one of my monitors. </p>
+<p>Here’s the default look:</p>
+<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="SNAGHTML1c0109" border="0" alt="SNAGHTML1c0109" src="/blog/wp-content/uploads/2011/02/SNAGHTML1c0109.png" width="450" height="361" /></p>
+<p>Hey! It’s iTunes! Great. (iTunes, below as a reference).</p>
+<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2011/02/image6.png" width="450" height="326" /></p>
+<p>On the left side (in both applications), is located a Source List (see “<a href="http://developer.apple.com/library/mac/#documentation/UserExperience/Conceptual/AppleHIGuidelines/XHIGWindows/XHIGWindows.html#//apple_ref/doc/uid/20000961-TP9">Source Lists</a>” in the Apple Human Interface Guidelines). They flipped the play bar to the bottom and tweaked the general look and feel of the buttons, but it’s basically the same UI. </p>
+<p>At first, you might think that there’s only so many ways to present that type of UI. I give you the Zune Player (4.7).</p>
+<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="SNAGHTML204865" border="0" alt="SNAGHTML204865" src="/blog/wp-content/uploads/2011/02/SNAGHTML204865.png" width="450" height="334" /></p>
+<p>It’s so different I won’t even start listing the differences. I thought about other applications that I have on my Windows PC that follow this style. Admittedly, it’s not very many right now. MetroTwit generally follows the Metro style. </p>
+<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="SNAGHTML250657" border="0" alt="SNAGHTML250657" src="/blog/wp-content/uploads/2011/02/SNAGHTML250657.png" width="450" height="338" /></p>
+<p>Windows Live Mail (somewhat) (along with the other Windows Live applications):</p>
+<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="SNAGHTML2d268de" border="0" alt="SNAGHTML2d268de" src="/blog/wp-content/uploads/2011/02/SNAGHTML2d268de.png" width="450" height="342" /></p>
+<p>Actually, there’s not a formal guide for this style. The closet you might come today is the <a href="http://windowsteamblog.com/windows_phone/b/wpdev/archive/2010/03/18/windows-phone-7-series-ui-design-amp-interaction-guide.aspx">Windows Phone 7 UI Design and Interaction Guide</a>. That’s a poor substitute though.</p>
+<p>There is of course, the <a href="http://www.microsoft.com/downloads/en/details.aspx?displaylang=en&amp;FamilyID=e49820cb-954d-45ae-9cb3-1b9e8ea7fe8c">Windows User Experience Interaction Guidelines</a>. Oh wow. It’s amazing the amount of bad examples that are sourced from earlier versions of Windows. There are so many (too many). Furthermore, it’s not free from errors itself:</p>
+<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2011/02/image7.png" width="450" height="138" /></p>
+<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2011/02/image8.png" width="450" height="54" /></p>
+<p>Microsoft doesn’t bother following it, so it’s not too surprising that many Windows applications do not. </p>
+<p>From the Guidelines:</p>
+<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2011/02/image9.png" width="450" height="136" /></p>
+<p>From Word 2010:</p>
+<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2011/02/image10.png" width="450" height="140" /></p>
+<p>My point isn’t to blast this document. What’s missing from the document is how to build an application that is smooth and modern. It’s an 882 page document currently, that helps you build a nice Windows 95 application. What? Seriously. If you look through the document, it’s really about fixing the problems of Windows 95 through Windows Vista. It doesn’t innovate anything new. It’s about putting up better error messages, being more consistent, etc. All of these things are great. But, can we move beyond that? Can we build something slick and modern that is more than just <strike>gas</strike> glass? </p>
+<p>That’s why I’m pushing for anything more modern now. If the Zune/Metro isn’t it, then create something new for us to follow. </p>
+<p>Applications for developers/designers that are released like WebMatrix are a sign that there’s an opportunity to think beyond just glass and better wording. In WebMatrix, I noticed that they’ve done away with standard Modal dialogs. They’re modal – but they float with the main application window (even when they’re showing), much like if they were a web page. Slick. The application is clean and modern. I like it.</p>
+<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="SNAGHTML2c968bf" border="0" alt="SNAGHTML2c968bf" src="/blog/wp-content/uploads/2011/02/SNAGHTML2c968bf.png" width="450" height="341" /></p>
+<p>Why can’t we have more of this:</p>
+<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2011/02/image11.png" width="450" height="325" /></p>
+<p>instead of this:</p>
+<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="SNAGHTML2cbdb11" border="0" alt="SNAGHTML2cbdb11" src="/blog/wp-content/uploads/2011/02/SNAGHTML2cbdb11.png" width="450" height="576" /></p>
+<p>So, this was just a rant really. But, an important one. Will Windows 8 finally solve this and introduce a awesome and modern User Experience, one that is easily replicated by developers, without the use of dozens of third party components and questionable code from the Internet, and …. <strong>Please Microsoft. Do it. Do it for all of us</strong>. I don’t care if it’s the Metro/Zune theme or something else. You can do better than Apple. </p>
+<p>It’s time for you to innovate again. You’ve got some super app creation platforms (like Silverlight and WPF) and you’ve got awesome development tools (Visual Studio and .NET 4), and you’ve got a lot of great developers ready to rock and roll. Help us build UX that are killer awesome. Build the components – ship them in V1. Do it!</p>
+<p>(Oh, and by the way, could you please create a 10 hour battery life Windows 8 tablet? Pretty please?! I’ll buy one!)</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1201</post-id>	</item>
+		<item>
+		<title>Bad Error Handling by Visual Studio 2010</title>
+		<link>/blog/index.php/archives/1175</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Thu, 03 Feb 2011 13:18:28 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[Usability]]></category>
+		<guid isPermaLink="false">/blog/index.php/archives/1175</guid>
+
+					<description><![CDATA[Something bad happened. I’d like to tell you more about it, but only if you can remember to start Visual Studio with an additional command-line parameter, and then recreate the conditions that caused it. Even a stack trace would have been more useful than the general “Oh, crud” dialog. Or, just hit the OK button. [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: ; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="SNAGHTML40442868" border="0" alt="SNAGHTML40442868" src="/blog/wp-content/uploads/2011/02/SNAGHTML40442868.png" width="435" height="214" /></p>
+<p>Something bad happened. I’d like to tell you more about it, but only if you can remember to start Visual Studio with an additional command-line parameter, and then recreate the conditions that caused it. </p>
+<p>Even a stack trace would have been more useful than the general “Oh, crud” dialog.</p>
+<p>Or, just hit the OK button. <img style="border-bottom-style: none; border-left-style: none; border-top-style: none; border-right-style: none" class="wlEmoticon wlEmoticon-smilewithtongueout" alt="Smile with tongue out" src="/blog/wp-content/uploads/2011/02/wlEmoticon-smilewithtongueout.png" /></p>
+<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: ; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2011/02/image1.png" width="88" height="26" /></p>
+<p>(I’ve noticed this error happening with some regularity now that I’ve been exploring ASP.NET MVC 3 with Razor syntax more. Have you seen this error?)</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1175</post-id>	</item>
+		<item>
+		<title>Zune EULA fail.</title>
+		<link>/blog/index.php/archives/1153</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Mon, 18 Oct 2010 12:35:57 +0000</pubDate>
+				<category><![CDATA[Usability]]></category>
+		<guid isPermaLink="false">/blog/index.php/archives/1153</guid>
+
+					<description><![CDATA[OK, I get it. 99.9% of people don’t read the EULA. So, The new Zune software update minimizes the space used by the EULA in the installer/upgrader: Notice the scroll bar. It’s really not practical to read at that size. The window isn’t resizable, and it does not provide a quick link to an online [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>OK, I get it. 99.9% of people don’t read the EULA. So, The new Zune software update minimizes the space used by the EULA in the installer/upgrader:</p>
+<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: ; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="SNAGHTML8b4579e" border="0" alt="SNAGHTML8b4579e" src="/blog/wp-content/uploads/2010/10/SNAGHTML8b4579e.png" width="420" height="163" /></p>
+<p>Notice the scroll bar. It’s really not practical to read at that size. The window isn’t resizable, and it does not provide a quick link to an online version of the document. </p>
+<p>Not to be thwarted by this evil EULA dialog, I printed it to PDF first:</p>
+<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: ; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="SNAGHTML8b5ca2e" border="0" alt="SNAGHTML8b5ca2e" src="/blog/wp-content/uploads/2010/10/SNAGHTML8b5ca2e.png" width="204" height="214" /></p>
+<p>The text is gray (grey):</p>
+<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: ; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2010/10/image3.png" width="245" height="108" /></p>
+<p>Although easier to read because I can read it without scrolling, the light colored text makes it exhausting to do so. </p>
+<p>Thinking it was maybe a Print to PDF fluke, I tried the XPS printer:</p>
+<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: ; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="SNAGHTML8b766fa" border="0" alt="SNAGHTML8b766fa" src="/blog/wp-content/uploads/2010/10/SNAGHTML8b766fa.png" width="192" height="214" /></p>
+<p>No better. </p>
+<p>Back to the Zune software installer.</p>
+<p>I tried to highlight the text in the text field. No. It’s actually not a text field, so none of the standard keyboard or mouse tricks work (it’s using DirectX). Even SnagIt 10 (which has an autoscroll feature for scrollable regions) couldn’t get the text. (See DirectX problem above).</p>
+<p>I’m not going to waste a piece of paper to show how it prints as light colored gray text.</p>
+<p>The old license is here:</p>
+<p><a href="http://www.zune.net/en-US/products/software/licenseterms.htm">http://www.zune.net/en-US/products/software/licenseterms.htm</a></p>
+<p>After copying the text from the PDF to the clipboard, pasting into notepad, and manually scanning a few lines, I can say with certainty that the EULA linked above does not match the new EULA. In fact, it’s not even close. The new EULA appears to be more appropriately worded as free downloadable software, whereas the older license read more like a EULA that would be associated with Microsoft Word.</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1153</post-id>	</item>
+	</channel>
+</rss>

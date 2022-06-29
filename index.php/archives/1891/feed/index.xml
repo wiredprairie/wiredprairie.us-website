@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: RewriteCond for web based RSS readers	</title>
+	<atom:link href="/blog/index.php/archives/1891/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/1891</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Wed, 24 Jul 2013 12:22:57 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/1891/comment-page-1#comment-26578</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sun, 14 Jul 2013 13:35:35 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1891#comment-26578</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1891/comment-page-1#comment-26556&quot;&gt;Kevin&lt;/a&gt;.
+
+Thanks Kevin, added.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/1891/comment-page-1#comment-26556">Kevin</a>.</p>
+<p>Thanks Kevin, added.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Kevin		</title>
+		<link>/blog/index.php/archives/1891/comment-page-1#comment-26556</link>
+
+		<dc:creator><![CDATA[Kevin]]></dc:creator>
+		<pubDate>Sun, 14 Jul 2013 05:18:43 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1891#comment-26556</guid>
+
+					<description><![CDATA[Here are a couple more:
+theoldreader.com
+hivereader.com]]></description>
+			<content:encoded><![CDATA[<p>Here are a couple more:<br />
+theoldreader.com<br />
+hivereader.com</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

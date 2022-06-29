@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>SMTP &#8211; WiredPrairie</title>
+	<atom:link href="/blog/index.php/archives/tag/smtp/feed" rel="self" type="application/rss+xml" />
+	<link>/blog</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Thu, 05 Jan 2012 01:58:22 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+<site xmlns="com-wordpress:feed-additions:1">193486638</site>	<item>
+		<title>Sending an email using SMTP in .NET 4.0</title>
+		<link>/blog/index.php/archives/1216</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Wed, 13 Jul 2011 12:50:49 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[.NET]]></category>
+		<category><![CDATA[SMTP]]></category>
+		<guid isPermaLink="false">/blog/index.php/archives/1216</guid>
+
+					<description><![CDATA[I had need of sending embedded images within an e-mail. .NET has had a few handy classes for sending an email using SMTP for a few versions. While there were a few examples floating around the internet, none were as clean and easy to follow as I expected. So, I decided to create a simple [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I had need of sending embedded images within an e-mail. .NET has had a few handy classes for sending an email using SMTP for a few versions. While there were a few examples floating around the internet, none were as clean and easy to follow as I expected. So, I decided to create a simple sample application in C# which demonstrates how to embed an image (or other content) in a email that contains both plain text and HTML content. It’s really not difficult. A number of examples ignore the fact that almost all of the objects need to be disposed, so I corrected that. This code is intentionally written synchronously to keep the sample simpler and easier to follow (and I didn’t need asynchronous sending for my learning exercise). </p>
+<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2011/07/image.png" width="289" height="142" /></p>
+<p>Above is the output (if you happen to have a picture of NYC). The example code uses Gmail as the SMTP host (it has the settings that generally work for gmail in most situations, including using SSL).</p>
+<pre class="code"><span style="color: blue">using </span>System;
+<span style="color: blue">using </span>System.Collections.Generic;
+<span style="color: blue">using </span>System.Linq;
+<span style="color: blue">using </span>System.Text;
+<span style="color: blue">using </span>System.Net.Mail;
+<span style="color: blue">using </span>System.Net;
+<span style="color: blue">using </span>System.Net.Mime;
+
+<span style="color: blue">namespace </span>TestEmailAttachments
+{
+    <span style="color: blue">public class </span><span style="color: #2b91af">EmailSettings
+    </span>{
+        <span style="color: blue">public string </span>ToAddress { <span style="color: blue">get</span>; <span style="color: blue">set</span>; }
+        <span style="color: blue">public string </span>FromAddress { <span style="color: blue">get</span>; <span style="color: blue">set</span>; }
+        <span style="color: blue">public string </span>AccountName { <span style="color: blue">get</span>; <span style="color: blue">set</span>; }
+        <span style="color: blue">public string </span>AccountPassword { <span style="color: blue">get</span>; <span style="color: blue">set</span>; }
+    }
+
+    <span style="color: blue">class </span><span style="color: #2b91af">Program
+    </span>{
+        <span style="color: blue">static void </span>Main(<span style="color: blue">string</span>[] args)
+        {
+            <span style="color: #2b91af">EmailSettings </span>settings = <span style="color: blue">new </span><span style="color: #2b91af">EmailSettings</span>()
+            {
+                ToAddress = <span style="color: #a31515">&quot;sample@example.com&quot;</span>,
+                FromAddress = <span style="color: #a31515">&quot;sender@example.com&quot;</span>,
+                AccountName = <span style="color: #a31515">&quot;sample@example.com&quot;</span>,
+                AccountPassword = <span style="color: #a31515">&quot;mypa$$w0rd$ux&quot;
+            </span>};
+            SendEmail(settings);
+            <span style="color: #2b91af">Console</span>.WriteLine(<span style="color: #a31515">&quot;Done&quot;</span>);
+            <span style="color: #2b91af">Console</span>.ReadKey();
+        }
+
+
+        <span style="color: blue">static void </span>SendEmail(<span style="color: #2b91af">EmailSettings </span>settings)
+        {
+            <span style="color: blue">if </span>(settings == <span style="color: blue">null</span>) { <span style="color: blue">throw new </span><span style="color: #2b91af">ArgumentNullException</span>(<span style="color: #a31515">&quot;need settings!&quot;</span>);  }
+            <span style="color: green">// Almost everything used my the mail system is disposable
+            // so, we'll use 'using' liberally
+            </span><span style="color: blue">using </span>(<span style="color: #2b91af">MailMessage </span>mail = <span style="color: blue">new </span><span style="color: #2b91af">MailMessage</span>())
+            {
+                <span style="color: green">//set the e-mail address
+                </span>mail.From = <span style="color: blue">new </span><span style="color: #2b91af">MailAddress</span>(settings.FromAddress);
+                mail.To.Add(settings.ToAddress);
+
+                <span style="color: green">//set the subject
+                </span>mail.Subject = <span style="color: #a31515">&quot;New York City!&quot;</span>;
+
+                <span style="color: green">// create some content
+                </span><span style="color: blue">string </span>textPlain = <span style="color: #a31515">&quot;I'm sorry, but you won't see the pretty photos inline. Look for an attachment.&quot;</span>;
+                <span style="color: blue">string </span>textHtml = <span style="color: #a31515">&quot;Here is an embedded image.&lt;img src=cid:NewYorkCity1&gt;&quot;</span>;
+
+                <span style="color: green">// setup the alternate views (so different type of e-mail clients can see the content)
+                </span><span style="color: blue">using </span>(<span style="color: #2b91af">AlternateView 
+                        </span>plainView = <span style="color: #2b91af">AlternateView</span>.CreateAlternateViewFromString(textPlain, <span style="color: blue">null</span>, 
+                            <span style="color: #2b91af">MediaTypeNames</span>.<span style="color: #2b91af">Text</span>.Plain), 
+                        htmlView = <span style="color: #2b91af">AlternateView</span>.CreateAlternateViewFromString(textHtml, <span style="color: blue">null</span>, 
+                            <span style="color: #2b91af">MediaTypeNames</span>.<span style="color: #2b91af">Text</span>.Html) )
+                {
+                    <span style="color: green">//create the LinkedResource (embedded image)
+                    </span><span style="color: blue">using </span>(<span style="color: #2b91af">LinkedResource </span>photo = 
+                        <span style="color: blue">new </span><span style="color: #2b91af">LinkedResource</span>(<span style="color: #a31515">@&quot;D:\Temp\nyc2009\NewYorkCity (1 of 1).jpg&quot;</span>))
+                    {
+                        <span style="color: green">// the content id here must match the content id used in the html as the 'cid:NNNNNNNN'
+                        </span>photo.ContentId = <span style="color: #a31515">&quot;NewYorkCity1&quot;</span>;
+                        <span style="color: green">// set the content type to match the image (in this case, it's a jpeg)
+                        </span>photo.ContentType = <span style="color: blue">new </span><span style="color: #2b91af">ContentType</span>(<span style="color: #2b91af">MediaTypeNames</span>.<span style="color: #2b91af">Image</span>.Jpeg) 
+                            { Name = <span style="color: #a31515">&quot;NewYorkCity (1 of 1).jpg&quot; </span>};
+
+                        <span style="color: green">// the htmlView needs the resource
+                        </span>htmlView.LinkedResources.Add(photo);
+
+                        <span style="color: green">// add each view to the alternate views collection
+                        </span>mail.AlternateViews.Add(plainView);
+                        mail.AlternateViews.Add(htmlView);
+
+                        <span style="color: green">// send the message, again diposable
+                        </span><span style="color: blue">using </span>(<span style="color: #2b91af">SmtpClient </span>smtp = <span style="color: blue">new </span><span style="color: #2b91af">SmtpClient</span>())
+                        {
+                            <span style="color: green">// these are gmail settings... you'll need to adjust them as needed
+                            </span>smtp.EnableSsl = <span style="color: blue">true</span>;
+                            smtp.Host = <span style="color: #a31515">&quot;smtp.gmail.com&quot;</span>;
+                            smtp.Port = 587;
+                            smtp.UseDefaultCredentials = <span style="color: blue">false</span>;
+                            smtp.Credentials = <span style="color: blue">new </span><span style="color: #2b91af">NetworkCredential</span>(settings.AccountName, 
+                                settings.AccountPassword);
+                            smtp.Send(mail);
+                        }
+                    }
+                }                                
+            }
+        }
+    }
+}</pre>
+<p>Use this only for good. <img style="border-bottom-style: none; border-left-style: none; border-top-style: none; border-right-style: none" class="wlEmoticon wlEmoticon-smile" alt="Smile" src="/blog/wp-content/uploads/2011/07/wlEmoticon-smile.png" /></p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1216</post-id>	</item>
+	</channel>
+</rss>

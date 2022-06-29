@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Quilt Inspired by Microsoft Windows 8	</title>
+	<atom:link href="/blog/index.php/archives/1866/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/1866</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Thu, 14 Mar 2013 14:17:06 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/1866/comment-page-1#comment-22366</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Thu, 14 Mar 2013 14:17:06 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1866#comment-22366</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1866/comment-page-1#comment-22365&quot;&gt;Kay Stephenson&lt;/a&gt;.
+
+Thanks for the kind words. 
+
+I&#039;ve suggested she start her own blog several times.  :)]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/1866/comment-page-1#comment-22365">Kay Stephenson</a>.</p>
+<p>Thanks for the kind words. </p>
+<p>I&#8217;ve suggested she start her own blog several times.  :)</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Kay Stephenson		</title>
+		<link>/blog/index.php/archives/1866/comment-page-1#comment-22365</link>
+
+		<dc:creator><![CDATA[Kay Stephenson]]></dc:creator>
+		<pubDate>Thu, 14 Mar 2013 13:39:28 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1866#comment-22365</guid>
+
+					<description><![CDATA[Love this modern quilted wall hanging, and the pattern is well done. Now get your wife her own blog! I&#039;m a quilter and only saw this because my techie husband forwarded the link to me :-)]]></description>
+			<content:encoded><![CDATA[<p>Love this modern quilted wall hanging, and the pattern is well done. Now get your wife her own blog! I&#8217;m a quilter and only saw this because my techie husband forwarded the link to me :-)</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

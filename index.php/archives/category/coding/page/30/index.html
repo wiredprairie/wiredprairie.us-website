@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="/blog/xmlrpc.php">
+
+<title>Coding &#8211; Page 30 &#8211; WiredPrairie</title>
+<meta name="robots" content="max-image-preview:large">
+<link rel="dns-prefetch" href="//secure.gravatar.com">
+<link rel="dns-prefetch" href="//www.wiredprairie.us">
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//s.w.org">
+<link rel="dns-prefetch" href="//v0.wordpress.com">
+<link rel="dns-prefetch" href="//widgets.wp.com">
+<link rel="dns-prefetch" href="//s0.wp.com">
+<link rel="dns-prefetch" href="//0.gravatar.com">
+<link rel="dns-prefetch" href="//1.gravatar.com">
+<link rel="dns-prefetch" href="//2.gravatar.com">
+<link rel="dns-prefetch" href="//jetpack.wordpress.com">
+<link rel="dns-prefetch" href="//public-api.wordpress.com">
+<link rel="alternate" type="application/rss+xml" title="WiredPrairie &raquo; Feed" href="/blog/index.php/feed">
+<link rel="alternate" type="application/rss+xml" title="WiredPrairie &raquo; Comments Feed" href="/blog/index.php/comments/feed">
+<link rel="alternate" type="application/rss+xml" title="WiredPrairie &raquo; Coding Category Feed" href="/blog/index.php/archives/category/coding/feed">
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.0"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode,e=(p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0),i.toDataURL());return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([129777,127995,8205,129778,127999],[129777,127995,8203,129778,127999])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style type="text/css">img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="/blog/wp-includes/css/dist/block-library/style.min.css?ver=6.0" type="text/css" media="all">
+<style id="wp-block-library-inline-css" type="text/css">.has-text-align-justify{text-align:justify;}</style>
+<link rel="stylesheet" id="mediaelement-css" href="/blog/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.16" type="text/css" media="all">
+<link rel="stylesheet" id="wp-mediaelement-css" href="/blog/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.0" type="text/css" media="all">
+<style id="global-styles-inline-css" type="text/css">body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}</style>
+<link rel="stylesheet" id="editor-style-css" href="/blog/wp-content/themes/editor/style.css?ver=6.0" type="text/css" media="all">
+<link rel="stylesheet" id="editor-font-awesome-css-css" href="/blog/wp-content/themes/editor/inc/fontawesome/font-awesome.css?ver=4.1.0" type="text/css" media="screen">
+<!--[if IE]>
+<link rel='stylesheet' id='ie7-style-css'  href='/wp-content/themes/editor/inc/styles/ie.css?ver=6.0' type='text/css' media='all' />
+<![endif]-->
+<link rel="stylesheet" id="editor-fonts-css" href="//fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C600%2C700%2C400italic%2C600italic%2C700italic%7CRoboto+Condensed%3A300%2C400%2C700%2C300italic%2C400italic%2C700italic&#038;subset=latin%2Clatin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="jetpack_css-css" href="/blog/wp-content/plugins/jetpack/css/jetpack.css?ver=11.0" type="text/css" media="all">
+<script type="text/javascript" src="/blog/wp-includes/js/jquery/jquery.min.js?ver=3.6.0" id="jquery-core-js"></script>
+<script type="text/javascript" src="/blog/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
+<link rel="https://api.w.org/" href="/blog/index.php/wp-json/">
+<link rel="alternate" type="application/json" href="/blog/index.php/wp-json/wp/v2/categories/4">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/blog/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/blog/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 6.0">
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#000"
+    },
+    "button": {
+      "background": "#f1d600"
+    }
+  }
+})});
+</script><style>img#wpstats{display:none}</style>
+	
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Coding &#8211; Page 30 &#8211; WiredPrairie">
+<meta property="og:url" content="/index.php/archives/category/coding">
+<meta property="og:site_name" content="WiredPrairie">
+<meta property="og:image" content="https://s0.wp.com/i/blank.jpg">
+<meta property="og:image:alt" content="">
+<meta property="og:locale" content="en_US">
+
+<!-- End Jetpack Open Graph Tags -->
+</head>
+
+<body class="archive paged category category-coding category-4 paged-30 category-paged-30 group-blog">
+
+<div id="page" class="hfeed site container">
+
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+	<!-- Get sidebar color option (Appearance -> Customize -> Theme Options) -->
+		<header id="masthead" class="site-header light" role="banner">
+		<!-- Tab navigation -->
+		<ul class="toggle-bar" role="tablist">
+			<!-- Main navigation -->
+			<li id="panel-1" class="current" role="presentation">
+				<a href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true" class="current nav-toggle" data-tab="tab-1"><i class="fa fa-bars"></i><span class="screen-reader-text">View menu</span></a>
+			</li>
+
+			<!-- Featured Posts navigation -->
+							<li id="panel-2" role="presentation">
+					<a href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false" data-tab="tab-2"><i class="fa fa-thumb-tack"></i><span class="screen-reader-text">View featured posts</span></a>
+				</li>
+			
+			<!-- Sidebar widgets navigation -->
+			<li id="panel-3" role="presentation">
+				<a href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false" class="folder-toggle" data-tab="tab-3"><i class="fa fa-folder"></i><i class="fa fa-folder-open"></i><span class="screen-reader-text">View sidebar</span></a>
+			</li>
+		</ul>
+
+		<div id="tabs" class="toggle-tabs">
+			<div class="site-header-inside">
+				<!-- Logo, description and main navigation -->
+				<div id="tab-1" class="tab-content current fadeIn">
+					<div class="site-branding">
+						<!-- Get the site branding -->
+													<h1 class="site-title"><a href="/blog/" rel="home">WiredPrairie</a></h1>
+							<h2 class="site-description">Yet another tech blog.</h2>
+											</div>
+
+					<nav id="site-navigation" class="main-navigation" role="navigation">
+						<div class="menu"><ul>
+<li><a href="/blog/">Home</a></li>
+<li class="page_item page-item-2"><a href="/blog/index.php/about">About</a></li>
+<li class="page_item page-item-28"><a href="/blog/index.php/contact">Contact Me</a></li>
+</ul></div>
+					</nav><!-- #site-navigation -->
+
+									</div>
+<!-- #tab-1 -->
+
+				<!-- Featured Posts template (template-featured-posts.php) -->
+				
+									<div id="tab-2" class="widget-area tab-content animated fadeIn">
+						<div class="widget featured-posts-widget">
+							<h2 class="widget-title">Recommendations</h2>
+
+							<div class="featured-posts">
+							    
+																	<div class="featured-post">
+																	            	<a class="featured-post-image" href="/blog/index.php/archives/2278" rel="bookmark"><img width="600" height="400" src="/blog/wp-content/uploads/2018/07/Photo-Jul-23-7-23-26-PM-600x400.jpg" class="attachment-featured-post-image size-featured-post-image wp-post-image" alt="" loading="lazy" data-attachment-id="2292" data-permalink="/index.php/archives/2278/photo-jul-23-7-23-26-pm" data-orig-file="/wp-content/uploads/2018/07/Photo-Jul-23-7-23-26-PM.jpg" data-orig-size="4032,3024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;2.2&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;iPhone 6s&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;1532373806&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;4.15&quot;,&quot;iso&quot;:&quot;320&quot;,&quot;shutter_speed&quot;:&quot;0.066666666666667&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="Photo Jul 23, 7 23 26 PM" data-image-description="" data-image-caption="" data-medium-file="/wp-content/uploads/2018/07/Photo-Jul-23-7-23-26-PM-300x225.jpg" data-large-file="/wp-content/uploads/2018/07/Photo-Jul-23-7-23-26-PM-1024x768.jpg"></a>
+							            							            <h3><a href="/blog/index.php/archives/2278" rel="bookmark">You don&#8217;t need it, but you might want it any way: Ubiquiti Unifi</a></h3>
+
+							            <div class="featured-post-meta">
+								            <div class="featured-post-date">
+								            	<i class="fa fa-clock-o"></i>
+								            	<span class="posted-on"><a href="/blog/index.php/archives/2278" rel="bookmark"><time class="entry-date published" datetime="2018-07-25T20:27:43-05:00">July 25, 2018</time></a></span><span class="byline"> by </span> <span class="author vcard"><a class="url fn n" href="/blog/index.php/archives/author/aaron">Aaron</a></span>								            </div>
+							            </div>
+									</div>
+																	<div class="featured-post">
+																	            	<a class="featured-post-image" href="/blog/index.php/archives/2197" rel="bookmark"><img width="600" height="400" src="/blog/wp-content/uploads/2018/02/2018-02-16-20_23_15-AmazonSmile_-Pure-Green-100-Natural-Latex-Mattress-Topper-Firm-3_-King-Size-600x400.png" class="attachment-featured-post-image size-featured-post-image wp-post-image" alt="Mattress-Firm" loading="lazy" data-attachment-id="2198" data-permalink="/index.php/archives/2197/2018-02-16-20_23_15-amazonsmile_-pure-green-100-natural-latex-mattress-topper-firm-3_-king-size" data-orig-file="/wp-content/uploads/2018/02/2018-02-16-20_23_15-AmazonSmile_-Pure-Green-100-Natural-Latex-Mattress-Topper-Firm-3_-King-Size.png" data-orig-size="1067,807" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Pure Green 100% Natural Latex Mattress Topper &#8211; Firm" data-image-description="" data-image-caption="&lt;p&gt;Pure Green 100% Natural Latex Mattress Topper &#8211; Firm&lt;/p&gt;
+" data-medium-file="/wp-content/uploads/2018/02/2018-02-16-20_23_15-AmazonSmile_-Pure-Green-100-Natural-Latex-Mattress-Topper-Firm-3_-King-Size-300x227.png" data-large-file="/wp-content/uploads/2018/02/2018-02-16-20_23_15-AmazonSmile_-Pure-Green-100-Natural-Latex-Mattress-Topper-Firm-3_-King-Size-1024x774.png"></a>
+							            							            <h3><a href="/blog/index.php/archives/2197" rel="bookmark">How to make your too soft Tempur-pedic Bed comfortable</a></h3>
+
+							            <div class="featured-post-meta">
+								            <div class="featured-post-date">
+								            	<i class="fa fa-clock-o"></i>
+								            	<span class="posted-on"><a href="/blog/index.php/archives/2197" rel="bookmark"><time class="entry-date published" datetime="2018-02-17T09:59:38-06:00">February 17, 2018</time><time class="updated" datetime="2018-02-17T12:05:52-06:00">February 17, 2018</time></a></span><span class="byline"> by </span> <span class="author vcard"><a class="url fn n" href="/blog/index.php/archives/author/aaron">Aaron</a></span>								            </div>
+							            </div>
+									</div>
+																	<div class="featured-post">
+																	            	<a class="featured-post-image" href="/blog/index.php/archives/2124" rel="bookmark"><img width="600" height="400" src="/blog/wp-content/uploads/2016/11/TicketToRideBanner-600x400.jpg" class="attachment-featured-post-image size-featured-post-image wp-post-image" alt="" loading="lazy" data-attachment-id="2138" data-permalink="/index.php/archives/2124/tickettoridebanner" data-orig-file="/wp-content/uploads/2016/11/TicketToRideBanner.jpg" data-orig-size="1920,873" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;2.2&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;iPhone 6s&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;4.2&quot;,&quot;iso&quot;:&quot;320&quot;,&quot;shutter_speed&quot;:&quot;0.066666666666667&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="tickettoridebanner" data-image-description="" data-image-caption="" data-medium-file="/wp-content/uploads/2016/11/TicketToRideBanner-300x136.jpg" data-large-file="/wp-content/uploads/2016/11/TicketToRideBanner-1024x466.jpg"></a>
+							            							            <h3><a href="/blog/index.php/archives/2124" rel="bookmark">Alternatives to Monopoly: Some table-top board games you should try</a></h3>
+
+							            <div class="featured-post-meta">
+								            <div class="featured-post-date">
+								            	<i class="fa fa-clock-o"></i>
+								            	<span class="posted-on"><a href="/blog/index.php/archives/2124" rel="bookmark"><time class="entry-date published" datetime="2016-11-28T07:25:48-06:00">November 28, 2016</time><time class="updated" datetime="2017-04-04T20:19:50-05:00">April 4, 2017</time></a></span><span class="byline"> by </span> <span class="author vcard"><a class="url fn n" href="/blog/index.php/archives/author/aaron">Aaron</a></span>								            </div>
+							            </div>
+									</div>
+																	<div class="featured-post">
+																	            <h3><a href="/blog/index.php/archives/2119" rel="bookmark">Geek gift ideas 2016</a></h3>
+
+							            <div class="featured-post-meta">
+								            <div class="featured-post-date">
+								            	<i class="fa fa-clock-o"></i>
+								            	<span class="posted-on"><a href="/blog/index.php/archives/2119" rel="bookmark"><time class="entry-date published" datetime="2016-11-27T11:30:00-06:00">November 27, 2016</time><time class="updated" datetime="2017-04-04T20:20:17-05:00">April 4, 2017</time></a></span><span class="byline"> by </span> <span class="author vcard"><a class="url fn n" href="/blog/index.php/archives/author/aaron">Aaron</a></span>								            </div>
+							            </div>
+									</div>
+																	<div class="featured-post">
+																	            <h3><a href="/blog/index.php/archives/2115" rel="bookmark">Changing password requirements in Linux Subsystem for Windows (or Bash on Ubuntu on Windows)</a></h3>
+
+							            <div class="featured-post-meta">
+								            <div class="featured-post-date">
+								            	<i class="fa fa-clock-o"></i>
+								            	<span class="posted-on"><a href="/blog/index.php/archives/2115" rel="bookmark"><time class="entry-date published" datetime="2016-11-23T07:47:54-06:00">November 23, 2016</time></a></span><span class="byline"> by </span> <span class="author vcard"><a class="url fn n" href="/blog/index.php/archives/author/aaron">Aaron</a></span>								            </div>
+							            </div>
+									</div>
+																	<div class="featured-post">
+																	            	<a class="featured-post-image" href="/blog/index.php/archives/2096" rel="bookmark"><img width="600" height="400" src="/blog/wp-content/uploads/2016/11/02_ecobee3_family2-600x400.jpg" class="attachment-featured-post-image size-featured-post-image wp-post-image" alt="" loading="lazy" data-attachment-id="2112" data-permalink="/index.php/archives/2096/02_ecobee3_family2" data-orig-file="/wp-content/uploads/2016/11/02_ecobee3_family2.jpg" data-orig-size="1198,400" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="02_ecobee3_family2" data-image-description="" data-image-caption="" data-medium-file="/wp-content/uploads/2016/11/02_ecobee3_family2-300x100.jpg" data-large-file="/wp-content/uploads/2016/11/02_ecobee3_family2-1024x342.jpg"></a>
+							            							            <h3><a href="/blog/index.php/archives/2096" rel="bookmark">Ecobee’s ecobee3 Thermostat</a></h3>
+
+							            <div class="featured-post-meta">
+								            <div class="featured-post-date">
+								            	<i class="fa fa-clock-o"></i>
+								            	<span class="posted-on"><a href="/blog/index.php/archives/2096" rel="bookmark"><time class="entry-date published" datetime="2016-11-19T09:10:36-06:00">November 19, 2016</time><time class="updated" datetime="2016-11-19T09:17:51-06:00">November 19, 2016</time></a></span><span class="byline"> by </span> <span class="author vcard"><a class="url fn n" href="/blog/index.php/archives/author/aaron">Aaron</a></span>								            </div>
+							            </div>
+									</div>
+																	<div class="featured-post">
+																	            <h3><a href="/blog/index.php/archives/2039" rel="bookmark">Made in the USA Camera Bag Manufacturers</a></h3>
+
+							            <div class="featured-post-meta">
+								            <div class="featured-post-date">
+								            	<i class="fa fa-clock-o"></i>
+								            	<span class="posted-on"><a href="/blog/index.php/archives/2039" rel="bookmark"><time class="entry-date published" datetime="2016-03-21T20:26:43-05:00">March 21, 2016</time><time class="updated" datetime="2016-03-23T09:40:26-05:00">March 23, 2016</time></a></span><span class="byline"> by </span> <span class="author vcard"><a class="url fn n" href="/blog/index.php/archives/author/aaron">Aaron</a></span>								            </div>
+							            </div>
+									</div>
+																	<div class="featured-post">
+																	            <h3><a href="/blog/index.php/archives/2020" rel="bookmark">My Raspberry Pi 2 Model B setup</a></h3>
+
+							            <div class="featured-post-meta">
+								            <div class="featured-post-date">
+								            	<i class="fa fa-clock-o"></i>
+								            	<span class="posted-on"><a href="/blog/index.php/archives/2020" rel="bookmark"><time class="entry-date published" datetime="2015-03-09T20:48:37-05:00">March 9, 2015</time></a></span><span class="byline"> by </span> <span class="author vcard"><a class="url fn n" href="/blog/index.php/archives/author/aaron">Aaron</a></span>								            </div>
+							            </div>
+									</div>
+																	<div class="featured-post">
+																	            <h3><a href="/blog/index.php/archives/2011" rel="bookmark">Kenu Airframe Portable Car Mount</a></h3>
+
+							            <div class="featured-post-meta">
+								            <div class="featured-post-date">
+								            	<i class="fa fa-clock-o"></i>
+								            	<span class="posted-on"><a href="/blog/index.php/archives/2011" rel="bookmark"><time class="entry-date published" datetime="2015-01-18T11:21:50-06:00">January 18, 2015</time></a></span><span class="byline"> by </span> <span class="author vcard"><a class="url fn n" href="/blog/index.php/archives/author/aaron">Aaron</a></span>								            </div>
+							            </div>
+									</div>
+																	<div class="featured-post">
+																	            <h3><a href="/blog/index.php/archives/2006" rel="bookmark">Attaching a GoPro Hero with Aero Bars from RedShift</a></h3>
+
+							            <div class="featured-post-meta">
+								            <div class="featured-post-date">
+								            	<i class="fa fa-clock-o"></i>
+								            	<span class="posted-on"><a href="/blog/index.php/archives/2006" rel="bookmark"><time class="entry-date published" datetime="2014-08-07T20:48:50-05:00">August 7, 2014</time></a></span><span class="byline"> by </span> <span class="author vcard"><a class="url fn n" href="/blog/index.php/archives/author/aaron">Aaron</a></span>								            </div>
+							            </div>
+									</div>
+																							</div>
+<!-- .featured-posts -->
+						</div>
+<!-- .featured-posts-widget -->
+					</div>
+<!-- #tab-2 .widget-area -->
+				
+				<!-- Sidebar widgets -->
+				<div id="tab-3" class="tab-content animated fadeIn" role="tabpanel" aria-labelledby="panel-3" aria-hidden="true">
+						<div id="secondary" class="widget-area" role="complementary">
+		<aside id="pages-2" class="widget widget_pages"><h2 class="widget-title">Pages</h2>
+			<ul>
+				<li class="page_item page-item-2"><a href="/blog/index.php/about">About</a></li>
+<li class="page_item page-item-28"><a href="/blog/index.php/contact">Contact Me</a></li>
+			</ul>
+
+			</aside><aside id="archives-2" class="widget widget_archive"><h2 class="widget-title">Archives</h2>
+			<ul>
+					<li><a href="/blog/index.php/archives/date/2019/10">October 2019</a></li>
+	<li><a href="/blog/index.php/archives/date/2018/07">July 2018</a></li>
+	<li><a href="/blog/index.php/archives/date/2018/05">May 2018</a></li>
+	<li><a href="/blog/index.php/archives/date/2018/04">April 2018</a></li>
+	<li><a href="/blog/index.php/archives/date/2018/03">March 2018</a></li>
+	<li><a href="/blog/index.php/archives/date/2018/02">February 2018</a></li>
+	<li><a href="/blog/index.php/archives/date/2017/04">April 2017</a></li>
+	<li><a href="/blog/index.php/archives/date/2017/01">January 2017</a></li>
+	<li><a href="/blog/index.php/archives/date/2016/11">November 2016</a></li>
+	<li><a href="/blog/index.php/archives/date/2016/10">October 2016</a></li>
+	<li><a href="/blog/index.php/archives/date/2016/03">March 2016</a></li>
+	<li><a href="/blog/index.php/archives/date/2016/02">February 2016</a></li>
+	<li><a href="/blog/index.php/archives/date/2015/03">March 2015</a></li>
+	<li><a href="/blog/index.php/archives/date/2015/01">January 2015</a></li>
+	<li><a href="/blog/index.php/archives/date/2014/08">August 2014</a></li>
+	<li><a href="/blog/index.php/archives/date/2014/05">May 2014</a></li>
+	<li><a href="/blog/index.php/archives/date/2014/01">January 2014</a></li>
+	<li><a href="/blog/index.php/archives/date/2013/12">December 2013</a></li>
+	<li><a href="/blog/index.php/archives/date/2013/10">October 2013</a></li>
+	<li><a href="/blog/index.php/archives/date/2013/09">September 2013</a></li>
+	<li><a href="/blog/index.php/archives/date/2013/08">August 2013</a></li>
+	<li><a href="/blog/index.php/archives/date/2013/07">July 2013</a></li>
+	<li><a href="/blog/index.php/archives/date/2013/06">June 2013</a></li>
+	<li><a href="/blog/index.php/archives/date/2013/05">May 2013</a></li>
+	<li><a href="/blog/index.php/archives/date/2013/03">March 2013</a></li>
+	<li><a href="/blog/index.php/archives/date/2013/02">February 2013</a></li>
+	<li><a href="/blog/index.php/archives/date/2013/01">January 2013</a></li>
+	<li><a href="/blog/index.php/archives/date/2012/12">December 2012</a></li>
+	<li><a href="/blog/index.php/archives/date/2012/10">October 2012</a></li>
+	<li><a href="/blog/index.php/archives/date/2012/09">September 2012</a></li>
+	<li><a href="/blog/index.php/archives/date/2012/08">August 2012</a></li>
+	<li><a href="/blog/index.php/archives/date/2012/07">July 2012</a></li>
+	<li><a href="/blog/index.php/archives/date/2012/06">June 2012</a></li>
+	<li><a href="/blog/index.php/archives/date/2012/05">May 2012</a></li>
+	<li><a href="/blog/index.php/archives/date/2012/04">April 2012</a></li>
+	<li><a href="/blog/index.php/archives/date/2012/03">March 2012</a></li>
+	<li><a href="/blog/index.php/archives/date/2012/02">February 2012</a></li>
+	<li><a href="/blog/index.php/archives/date/2012/01">January 2012</a></li>
+	<li><a href="/blog/index.php/archives/date/2011/12">December 2011</a></li>
+	<li><a href="/blog/index.php/archives/date/2011/11">November 2011</a></li>
+	<li><a href="/blog/index.php/archives/date/2011/08">August 2011</a></li>
+	<li><a href="/blog/index.php/archives/date/2011/07">July 2011</a></li>
+	<li><a href="/blog/index.php/archives/date/2011/06">June 2011</a></li>
+	<li><a href="/blog/index.php/archives/date/2011/05">May 2011</a></li>
+	<li><a href="/blog/index.php/archives/date/2011/03">March 2011</a></li>
+	<li><a href="/blog/index.php/archives/date/2011/02">February 2011</a></li>
+	<li><a href="/blog/index.php/archives/date/2011/01">January 2011</a></li>
+	<li><a href="/blog/index.php/archives/date/2010/11">November 2010</a></li>
+	<li><a href="/blog/index.php/archives/date/2010/10">October 2010</a></li>
+	<li><a href="/blog/index.php/archives/date/2010/09">September 2010</a></li>
+	<li><a href="/blog/index.php/archives/date/2010/08">August 2010</a></li>
+	<li><a href="/blog/index.php/archives/date/2010/07">July 2010</a></li>
+	<li><a href="/blog/index.php/archives/date/2010/06">June 2010</a></li>
+	<li><a href="/blog/index.php/archives/date/2010/05">May 2010</a></li>
+	<li><a href="/blog/index.php/archives/date/2010/04">April 2010</a></li>
+	<li><a href="/blog/index.php/archives/date/2010/03">March 2010</a></li>
+	<li><a href="/blog/index.php/archives/date/2010/02">February 2010</a></li>
+	<li><a href="/blog/index.php/archives/date/2010/01">January 2010</a></li>
+	<li><a href="/blog/index.php/archives/date/2009/12">December 2009</a></li>
+	<li><a href="/blog/index.php/archives/date/2009/11">November 2009</a></li>
+	<li><a href="/blog/index.php/archives/date/2009/10">October 2009</a></li>
+	<li><a href="/blog/index.php/archives/date/2009/09">September 2009</a></li>
+	<li><a href="/blog/index.php/archives/date/2009/08">August 2009</a></li>
+	<li><a href="/blog/index.php/archives/date/2009/07">July 2009</a></li>
+	<li><a href="/blog/index.php/archives/date/2009/06">June 2009</a></li>
+	<li><a href="/blog/index.php/archives/date/2009/05">May 2009</a></li>
+	<li><a href="/blog/index.php/archives/date/2009/04">April 2009</a></li>
+	<li><a href="/blog/index.php/archives/date/2009/03">March 2009</a></li>
+	<li><a href="/blog/index.php/archives/date/2009/02">February 2009</a></li>
+	<li><a href="/blog/index.php/archives/date/2009/01">January 2009</a></li>
+	<li><a href="/blog/index.php/archives/date/2008/12">December 2008</a></li>
+	<li><a href="/blog/index.php/archives/date/2008/11">November 2008</a></li>
+	<li><a href="/blog/index.php/archives/date/2008/10">October 2008</a></li>
+	<li><a href="/blog/index.php/archives/date/2008/09">September 2008</a></li>
+	<li><a href="/blog/index.php/archives/date/2008/08">August 2008</a></li>
+	<li><a href="/blog/index.php/archives/date/2008/07">July 2008</a></li>
+	<li><a href="/blog/index.php/archives/date/2008/06">June 2008</a></li>
+	<li><a href="/blog/index.php/archives/date/2008/05">May 2008</a></li>
+	<li><a href="/blog/index.php/archives/date/2008/04">April 2008</a></li>
+	<li><a href="/blog/index.php/archives/date/2008/03">March 2008</a></li>
+	<li><a href="/blog/index.php/archives/date/2008/02">February 2008</a></li>
+			</ul>
+
+			</aside>	</div>
+<!-- #secondary -->
+				</div>
+<!-- #tab-3 -->
+			</div>
+<!-- .site-header-inside -->
+		</div>
+<!-- #tabs -->
+	</header><!-- #masthead -->
+
+	<div id="content" class="site-content fadeInFast">
+
+	<section id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+		
+			
+			<header class="page-header ">
+				<h1 class="page-title">
+					Category / Coding				</h1>
+							</header><!-- .page-header -->
+
+			<!-- If author has a bio, show it. -->
+			
+						
+				
+<article id="post-577" class="post post-577 type-post status-publish format-standard hentry category-coding">
+	<!-- Grab the featured image -->
+	
+	<header class="entry-header">
+				<div class="entry-date">
+			<span class="posted-on"><a href="/blog/index.php/archives/577" rel="bookmark"><time class="entry-date published" datetime="2008-10-12T11:28:41-05:00">October 12, 2008</time></a></span><span class="byline"> by </span> <span class="author vcard"><a class="url fn n" href="/blog/index.php/archives/author/aaron">Aaron</a></span>		</div>
+<!-- .entry-meta -->
+		
+		<h1 class="entry-title"><a href="/blog/index.php/archives/577" rel="bookmark">Silverlight Game Programming: Playing an Audio File</a></h1>	</header><!-- .entry-header -->
+
+	
+<div class="entry-meta">
+	
+	<ul class="meta-list">
+					<li class="meta-cat"><a href="/blog/index.php/archives/category/coding" rel="category tag">Coding</a></li>
+								<li class="meta-comment">
+			<span class="comments-link"><a href="/blog/index.php/archives/577#comments">6 Comments</a></span>
+		</li>
+					</ul>
+</div>
+	<div class="entry-content">
+		<p><img style="border-bottom: 0px; border-left: 0px; margin: 0px 8px 0px 0px; border-top: 0px; border-right: 0px" border="0" alt="image" align="left" src="/blog/wp-content/uploads/2008/10/image2.png" width="221" height="320"> In my recent <a target="_blank" href="/blog/index.php/archives/574">Silverlight game</a>, there are a variety of sound effects that occur from bullet fires to explosions. Most of the audio files are brief, lasting only for a second or less on average.</p>
+<p>I had a few options &#8212; put a <a target="_blank" href="http://msdn.microsoft.com/en-us/library/system.windows.controls.mediaelement(VS.95).aspx">MediaElement</a> directly on the UI (in XAML) and reuse each as needed, or create new MediaElements on demand. Rather than live with the artificial restrictions that would be inherent in a design which potentially limited the total number of simultaneous audio streams playing at one time, I decided on the second option &#8212; create them on demand. </p>
+<p>Playing a supported audio file in Silverlight is easy as:</p>
+<pre class="code"><span style="color: #2b91af">MediaElement </span>me = <span style="color: blue">new </span><span style="color: #2b91af">MediaElement</span>();
+me.Source = <span style="color: blue">new </span><span style="color: #2b91af">Uri</span>(fileName, <span style="color: #2b91af">UriKind</span>.Relative);
+me.Volume = volume;
+me.AutoPlay = <span style="color: blue">true</span>;</pre>
+<pre class="code"><span style="color: #2b91af">Game</span>.Sky.Children.Add(me);</pre>
+<p><a href="http://11011.net/software/vspaste"></a><a href="http://11011.net/software/vspaste"></a></p>
+<p>&nbsp;</p>
+<p><strong>Boom. Explode</strong>. The audio plays (thanks to AutoPlay&#8211;which I&#8217;ve explicitly set here though the default is <em>true</em>). The part that annoys me though is that once these audio files are completed, there&#8217;s no way to have them be automatically removed from the control tree. A MediaElement is a UIElement &#8212; so it&#8217;s not zero impact to leave them around. So, they build up, and build up. </p>
+<p>My simple technique is to attach to the individual file&#8217;s <a target="_blank" href="http://msdn.microsoft.com/en-us/library/system.windows.controls.mediaelement.currentstatechanged(VS.95).aspx">CurrentStateChanged</a> event.</p>
+<pre class="code"><span style="color: blue">public static void </span>PlayAudio(<span style="color: blue">string </span>fileName, <span style="color: blue">double </span>volume)
+{
+    <span style="color: #2b91af">MediaElement </span>me = <span style="color: blue">new </span><span style="color: #2b91af">MediaElement</span>();
+    me.Source = <span style="color: blue">new </span><span style="color: #2b91af">Uri</span>(fileName, <span style="color: #2b91af">UriKind</span>.Relative);
+    me.Volume = volume;
+    me.AutoPlay = <span style="color: blue">true</span>;
+    me.CurrentStateChanged += <span style="color: blue">new </span><span style="color: #2b91af">RoutedEventHandler</span>(Audio_CurrentStateChanged);
+
+    <span style="color: #2b91af">Game</span>.Sky.Children.Add(me);
+}
+
+<span style="color: blue">public static void </span>Audio_CurrentStateChanged(<span style="color: blue">object </span>sender, <span style="color: #2b91af">RoutedEventArgs </span>e)
+{
+    <span style="color: blue">if </span>(sender <span style="color: blue">is </span><span style="color: #2b91af">MediaElement</span>)
+    {
+        <span style="color: #2b91af">MediaElement </span>me = sender <span style="color: blue">as </span><span style="color: #2b91af">MediaElement</span>;
+        <span style="color: blue">if </span>(me.CurrentState == <span style="color: #2b91af">MediaElementState</span>.Paused)
+        {
+            me.CurrentStateChanged -= <span style="color: blue">new </span><span style="color: #2b91af">RoutedEventHandler</span>(Audio_CurrentStateChanged);
+            <span style="color: #2b91af">Game</span>.Sky.Children.Remove(me);
+        }
+    }
+}</pre>
+<p>In the CurrentStateChanged event handler, the code verifies that the Media is a Paused state (which happens when the media has finished playing) and then removes the <a target="_blank" href="http://msdn.microsoft.com/en-us/library/system.windows.uielement(VS.95).aspx">UIElement</a> from the control tree. (By the way, the <strong>Game.Sky</strong> object is a technique that I&#8217;ve used to expose globally the base UI element used throughout the game).</p>
+<p>It&#8217;s cool that Silverlight can play WAV, MP3, and WMA files (my game uses all three types!)</p>
+			</div>
+<!-- .entry-content -->
+
+</article><!-- #post-## -->
+
+			<div class="code-block code-block-1" style="margin: 8px 0; clear: both;">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-fg+5r+6l-ft+4e" data-ad-client="ca-pub-2328055154157951" data-ad-slot="9395646477"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+				
+<article id="post-575" class="post post-575 type-post status-publish format-standard hentry category-coding">
+	<!-- Grab the featured image -->
+	
+	<header class="entry-header">
+				<div class="entry-date">
+			<span class="posted-on"><a href="/blog/index.php/archives/575" rel="bookmark"><time class="entry-date published" datetime="2008-10-11T14:59:35-05:00">October 11, 2008</time></a></span><span class="byline"> by </span> <span class="author vcard"><a class="url fn n" href="/blog/index.php/archives/author/aaron">Aaron</a></span>		</div>
+<!-- .entry-meta -->
+		
+		<h1 class="entry-title"><a href="/blog/index.php/archives/575" rel="bookmark">How to Develop Games in Silverlight</a></h1>	</header><!-- .entry-header -->
+
+	
+<div class="entry-meta">
+	
+	<ul class="meta-list">
+					<li class="meta-cat"><a href="/blog/index.php/archives/category/coding" rel="category tag">Coding</a></li>
+									</ul>
+</div>
+	<div class="entry-content">
+		<p>There&#8217;s an interesting series starting in the latest issue of the Expression newsletter exploring the process of designing and creating a casual online game in Silverlight 2. Find more info <a target="_blank" href="http://joel.neubeck.net/2008/09/casual-game-m1-expression-newsletter/">here</a>.</p>
+<p>I&#8217;ll be following the series to see how I could improve my recent game attempt in <a target="_blank" href="/blog/index.php/archives/574">Silverlight which I just released</a>.</p>
+<p>With all of the graphics and audio, my game&#8217;s download size is annoyingly large &#8212; if you&#8217;re on a fast Internet connection, you&#8217;ll likely not notice, but I would have liked to have done more to stage the download more efficiently (or to present a quick &#8220;splash&#8221; screen while the game continues to download in the background. </p>
+			</div>
+<!-- .entry-content -->
+
+</article><!-- #post-## -->
+
+			<div class="code-block code-block-1" style="margin: 8px 0; clear: both;">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-fg+5r+6l-ft+4e" data-ad-client="ca-pub-2328055154157951" data-ad-slot="9395646477"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+				
+<article id="post-574" class="post post-574 type-post status-publish format-standard hentry category-coding">
+	<!-- Grab the featured image -->
+	
+	<header class="entry-header">
+				<div class="entry-date">
+			<span class="posted-on"><a href="/blog/index.php/archives/574" rel="bookmark"><time class="entry-date published" datetime="2008-10-10T07:47:07-05:00">October 10, 2008</time></a></span><span class="byline"> by </span> <span class="author vcard"><a class="url fn n" href="/blog/index.php/archives/author/aaron">Aaron</a></span>		</div>
+<!-- .entry-meta -->
+		
+		<h1 class="entry-title"><a href="/blog/index.php/archives/574" rel="bookmark">Evil Space Alien Attack (A Silverlight Game)</a></h1>	</header><!-- .entry-header -->
+
+	
+<div class="entry-meta">
+	
+	<ul class="meta-list">
+					<li class="meta-cat"><a href="/blog/index.php/archives/category/coding" rel="category tag">Coding</a></li>
+								<li class="meta-comment">
+			<span class="comments-link"><a href="/blog/index.php/archives/574#comments">2 Comments</a></span>
+		</li>
+					</ul>
+</div>
+	<div class="entry-content">
+		<p>I just completed the final touches on a simple Silverlight game I&#8217;d been working on last night. </p>
+<p><img loading="lazy" style="border-bottom: 0px; border-left: 0px; border-top: 0px; border-right: 0px" border="0" alt="image" src="/blog/wp-content/uploads/2008/10/image.png" width="260" height="200"> </p>
+<p><img loading="lazy" style="border-bottom: 0px; border-left: 0px; border-top: 0px; border-right: 0px" border="0" alt="image" src="/blog/wp-content/uploads/2008/10/image1.png" width="260" height="200"> </p>
+<p>The game can be found <a target="_blank" href="http://www.wiredprairie.us/examples/silverlight/evilalienattack/default.aspx">here</a>. </p>
+<p>The game play and rules are simple:</p>
+<ul>
+<li>Use the up and down arrows to control the angle/pitch of the small plane. (or you can control the angle using the red stick/ball on the right of the screen with a mouse).</li>
+<li>Use the space bar to fire the weapon.</li>
+<li>Don&#8217;t get hit by aliens or alien weapons.</li>
+<li>You lose points if you don&#8217;t destroy each alien. </li>
+<li>You can get extra bullets, but no extra &#8220;health&#8221;.</li>
+</ul>
+<p>I&#8217;ll be posting some of the code, etc. soon.</p>
+<p>With the exception of using Garage Band for a few sounds, I created everything using Microsoft products (Expression Design, Expression Blend, and Visual Studio 2008).</p>
+<p>This version of the game uses Silverlight 2.0 Beta 2, as there isn&#8217;t a go-live license for the RC.</p>
+			</div>
+<!-- .entry-content -->
+
+</article><!-- #post-## -->
+
+			<div class="code-block code-block-1" style="margin: 8px 0; clear: both;">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-fg+5r+6l-ft+4e" data-ad-client="ca-pub-2328055154157951" data-ad-slot="9395646477"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+				
+<article id="post-571" class="post post-571 type-post status-publish format-standard hentry category-coding">
+	<!-- Grab the featured image -->
+	
+	<header class="entry-header">
+				<div class="entry-date">
+			<span class="posted-on"><a href="/blog/index.php/archives/571" rel="bookmark"><time class="entry-date published" datetime="2008-09-26T07:47:27-05:00">September 26, 2008</time></a></span><span class="byline"> by </span> <span class="author vcard"><a class="url fn n" href="/blog/index.php/archives/author/aaron">Aaron</a></span>		</div>
+<!-- .entry-meta -->
+		
+		<h1 class="entry-title"><a href="/blog/index.php/archives/571" rel="bookmark">Silverlight 2, RC available</a></h1>	</header><!-- .entry-header -->
+
+	
+<div class="entry-meta">
+	
+	<ul class="meta-list">
+					<li class="meta-cat"><a href="/blog/index.php/archives/category/coding" rel="category tag">Coding</a></li>
+								<li class="meta-comment">
+			<span class="comments-link"><a href="/blog/index.php/archives/571#comments">2 Comments</a></span>
+		</li>
+					</ul>
+</div>
+	<div class="entry-content">
+		<p><a target="_blank" href="/blog/wp-content/uploads/2008/09/image30.png"><img loading="lazy" style="border-bottom: 0px; border-left: 0px; border-top: 0px; border-right: 0px" border="0" alt="image" align="right" src="/blog/wp-content/uploads/2008/09/image-thumb9.png" width="260" height="165"></a> </p>
+<p>Via ScottGu, the <a href="http://weblogs.asp.net/scottgu/archive/2008/09/25/silverlight-2-release-candidate-now-available.aspx">Silverlight 2 Release Candidate</a> is now available for download.</p>
+<p><strong>Low</strong>-lights:</p>
+<ul>
+<li>No new go-live license for until the final version is released (the RC Silverlight binaries won&#8217;t be made available to the general public)</li>
+<li>It has some breaking changes for code (details <a href="http://download.microsoft.com/download/6/F/E/6FE1F43D-9D0C-4346-AD08-602DF9BCB3CF/BreakingChangesBetweenBeta2andRelease.doc">here</a>).</li>
+<li>No RTF control (one can dream &#8230; :))</li>
+</ul>
+<p>&nbsp;</p>
+<p><strong>High</strong>-lights:</p>
+<ul>
+<li>The layout system in Silverlight has been modified to round final measure and arrange values to integers when placing elements on the screen (“pixel snapping”). The result is crisper lines, more consistent rendering look, and fewer rendering artifacts. <br>Layout rounding will be *on* by default, but there is a new inherited property on UIElement called UseLayoutRounding that can be set to false if the old layout behavior is desired.<br>Note&nbsp;&nbsp; It is possible that this change will affect how your animations render, in which case you might want to set UseLayoutRounding to false.<br>Note&nbsp;&nbsp; This change does not affect transforms. If you apply a transform to an element, it may still be rendered at a sub-pixel location.
+<p>:) What this means is that the fuzzy anti-aliased look of the old version should finally be gone &#8212; and instead you&#8217;ll get crisper text/lines/everything without resorting to pixel snapping transform hacks.</p>
+</li>
+<li>Combo-box</li>
+<li>Password text box</li>
+<li>Better looking default skins.</li>
+</ul>
+<p>The big question &#8212; will it get the adoption rate needed by web companies and ISVs in order to make it a viable platform? (I wonder if it will be installed by default on a Windows 7 box?)</p>
+<p>Flash 10 and the associated tools look really good &#8230; Blend (and Silverlight) is years behind. I love the new simple 3D features of Flash CS4 Professional.</p>
+			</div>
+<!-- .entry-content -->
+
+</article><!-- #post-## -->
+
+			<div class="code-block code-block-1" style="margin: 8px 0; clear: both;">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-fg+5r+6l-ft+4e" data-ad-client="ca-pub-2328055154157951" data-ad-slot="9395646477"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+				
+<article id="post-568" class="post post-568 type-post status-publish format-standard hentry category-coding">
+	<!-- Grab the featured image -->
+	
+	<header class="entry-header">
+				<div class="entry-date">
+			<span class="posted-on"><a href="/blog/index.php/archives/568" rel="bookmark"><time class="entry-date published" datetime="2008-09-19T07:53:51-05:00">September 19, 2008</time><time class="updated" datetime="2012-08-28T09:03:27-05:00">August 28, 2012</time></a></span><span class="byline"> by </span> <span class="author vcard"><a class="url fn n" href="/blog/index.php/archives/author/aaron">Aaron</a></span>		</div>
+<!-- .entry-meta -->
+		
+		<h1 class="entry-title"><a href="/blog/index.php/archives/568" rel="bookmark">Data Binding and Tooltips in Silverlight</a></h1>	</header><!-- .entry-header -->
+
+	
+<div class="entry-meta">
+	
+	<ul class="meta-list">
+					<li class="meta-cat"><a href="/blog/index.php/archives/category/coding" rel="category tag">Coding</a></li>
+								<li class="meta-comment">
+			<span class="comments-link"><a href="/blog/index.php/archives/568#comments">14 Comments</a></span>
+		</li>
+					</ul>
+</div>
+	<div class="entry-content">
+		<p>Have you ever wanted to databind a tooltip in Silverlight (or WPF for that matter), and found that the DataContext isn&#8217;t available for tooltips (the datacontext is null)? <strong>It&#8217;s very annoying</strong>. Tooltips, unfortunately, aren&#8217;t connected to their parents in anyway when they&#8217;re created, so they loose the ability to connect to the proper data context that is being provided to their parent. Listboxes, textboxes, all suffer from this problem.</p>
+<p>In order to combat that problem, I&#8217;ve come up with a simple workaround for this data context problem.</p>
+<p>I&#8217;ve created a simple attached property which augments the standard tooltip property and intervenes before it is created so that the proper data context can be established. This code hasn&#8217;t been tested thoroughly, but it works in my limited testing. It could be extended to handle more edge cases, but if you&#8217;re creating advanced tooltips outside of XAML, there&#8217;s little reason to use this code.</p>
+<pre class="code"><span style="color: blue;">public class </span><span style="color: #2b91af;">DataBindingTooltip </span>{
+     <span style="color: blue;">public static </span><span style="color: #2b91af;">DependencyProperty </span>TooltipProperty;
+
+     <span style="color: blue;">static </span>DataBindingTooltip()
+     {
+         TooltipProperty = <span style="color: #2b91af;">DependencyProperty</span>.RegisterAttached
+             (<span style="color: #a31515;">"Tooltip"</span>, <span style="color: blue;">typeof</span>(<span style="color: blue;">object</span>), 
+             <span style="color: blue;">typeof</span>(<span style="color: #2b91af;">DataBindingTooltip</span>), 
+             <span style="color: blue;">new </span><span style="color: #2b91af;">PropertyMetadata</span>(TooltipChanged));
+     }
+
+     <span style="color: blue;">public static void </span>SetTooltip(<span style="color: #2b91af;">DependencyObject </span>d, <span style="color: blue;">object </span>value)
+     {
+         d.SetValue(<span style="color: #2b91af;">DataBindingTooltip</span>.TooltipProperty, value);
+     }
+
+     <span style="color: blue;">public static object </span>GetToolTip(<span style="color: #2b91af;">DependencyObject </span>d)
+     {
+         <span style="color: blue;">return </span>d.GetValue(<span style="color: #2b91af;">DataBindingTooltip</span>.TooltipProperty);
+     }
+
+     <span style="color: blue;">private static void </span>TooltipChanged(<span style="color: #2b91af;">DependencyObject </span>sender, 
+         <span style="color: #2b91af;">DependencyPropertyChangedEventArgs </span>e)
+     {
+         <span style="color: blue;">if </span>(sender <span style="color: blue;">is </span><span style="color: #2b91af;">FrameworkElement</span>)
+         {
+             <span style="color: #2b91af;">FrameworkElement </span>owner = sender <span style="color: blue;">as </span><span style="color: #2b91af;">FrameworkElement</span>;
+             <span style="color: green;">// wait for it to be in the visual tree so that // context can be established </span>owner.Loaded += <span style="color: blue;">new </span><span style="color: #2b91af;">RoutedEventHandler</span>(owner_Loaded);
+         }
+
+     }
+
+     <span style="color: blue;">static void </span>owner_Loaded(<span style="color: blue;">object </span>sender, <span style="color: #2b91af;">RoutedEventArgs </span>e)
+     {
+         <span style="color: blue;">if </span>(sender <span style="color: blue;">is </span><span style="color: #2b91af;">FrameworkElement</span>)
+         {
+             <span style="color: #2b91af;">FrameworkElement </span>owner = sender <span style="color: blue;">as </span><span style="color: #2b91af;">FrameworkElement</span>;
+             <span style="color: green;">// remove the event handler </span>owner.Loaded -= <span style="color: blue;">new </span><span style="color: #2b91af;">RoutedEventHandler</span>(owner_Loaded);
+
+             <span style="color: #2b91af;">DependencyObject </span>tooltip = 
+                 owner.GetValue(<span style="color: #2b91af;">DataBindingTooltip</span>.TooltipProperty) <span style="color: blue;">as </span><span style="color: #2b91af;">DependencyObject</span>;
+             <span style="color: blue;">if </span>(tooltip != <span style="color: blue;">null</span>)
+             {
+                 <span style="color: green;">// assign the data context of the current owner control to the tooltip's datacontext </span>tooltip.SetValue(<span style="color: #2b91af;">FrameworkElement</span>.DataContextProperty, 
+                     owner.GetValue(<span style="color: #2b91af;">FrameworkElement</span>.DataContextProperty));
+             }
+             <span style="color: #2b91af;">ToolTipService</span>.SetToolTip(owner, tooltip);
+         }            
+     }
+ }</pre>
+<p>&nbsp;</p>
+<p>Here&#8217;s how to use it:</p>
+<pre class="code"><span style="color: blue;">&lt;</span><span style="color: #a31515;">Grid </span><span style="color: red;">x</span><span style="color: blue;">:</span><span style="color: red;">Name</span><span style="color: blue;">="LayoutRoot" </span><span style="color: red;">Background</span><span style="color: blue;">="White"&gt; &lt;</span><span style="color: #a31515;">ListBox </span><span style="color: red;">x</span><span style="color: blue;">:</span><span style="color: red;">Name</span><span style="color: blue;">="lb" </span><span style="color: red;">ItemsSource</span><span style="color: blue;">="{</span><span style="color: #a31515;">Binding </span><span style="color: red;">Mode</span><span style="color: blue;">=OneWay}"&gt; &lt;</span><span style="color: #a31515;">ListBox.ItemTemplate</span><span style="color: blue;">&gt; &lt;</span><span style="color: #a31515;">DataTemplate</span><span style="color: blue;">&gt; &lt;</span><span style="color: #a31515;">StackPanel </span><span style="color: red;">Orientation</span><span style="color: blue;">="Horizontal"&gt; &lt;</span><span style="color: #a31515;">local</span><span style="color: blue;">:</span><span style="color: #a31515;">DataBindingTooltip.Tooltip</span><span style="color: blue;">&gt; &lt;</span><span style="color: #a31515;">StackPanel </span><span style="color: red;">Orientation</span><span style="color: blue;">="Vertical" &gt; &lt;</span><span style="color: #a31515;">TextBlock </span><span style="color: red;">Text</span><span style="color: blue;">="Tooltip!" </span><span style="color: red;">FontWeight</span><span style="color: blue;">="Bold" /&gt; &lt;</span><span style="color: #a31515;">TextBlock </span><span style="color: red;">Text</span><span style="color: blue;">="{</span><span style="color: #a31515;">Binding </span><span style="color: red;">Name</span><span style="color: blue;">}" /&gt; &lt;</span><span style="color: #a31515;">TextBlock </span><span style="color: red;">Text</span><span style="color: blue;">="{</span><span style="color: #a31515;">Binding </span><span style="color: red;">Age</span><span style="color: blue;">}" /&gt; &lt;/</span><span style="color: #a31515;">StackPanel</span><span style="color: blue;">&gt; &lt;/</span><span style="color: #a31515;">local</span><span style="color: blue;">:</span><span style="color: #a31515;">DataBindingTooltip.Tooltip</span><span style="color: blue;">&gt; &lt;</span><span style="color: #a31515;">TextBlock </span><span style="color: red;">Text</span><span style="color: blue;">="{</span><span style="color: #a31515;">Binding </span><span style="color: red;">Name</span><span style="color: blue;">}" </span><span style="color: red;">Margin</span><span style="color: blue;">="4" /&gt; &lt;</span><span style="color: #a31515;">TextBlock </span><span style="color: red;">Text</span><span style="color: blue;">="{</span><span style="color: #a31515;">Binding </span><span style="color: red;">Age</span><span style="color: blue;">}" </span><span style="color: red;">Margin</span><span style="color: blue;">="4"/&gt; &lt;/</span><span style="color: #a31515;">StackPanel</span><span style="color: blue;">&gt; &lt;/</span><span style="color: #a31515;">DataTemplate</span><span style="color: blue;">&gt; &lt;/</span><span style="color: #a31515;">ListBox.ItemTemplate</span><span style="color: blue;">&gt; &lt;/</span><span style="color: #a31515;">ListBox</span><span style="color: blue;">&gt; &lt;/</span><span style="color: #a31515;">Grid</span><span style="color: blue;">&gt;</span></pre>
+<p>&nbsp;</p>
+<p>And, a small test sample:</p>
+<pre class="code"><span style="color: blue;">public partial class </span><span style="color: #2b91af;">Page </span>: <span style="color: #2b91af;">UserControl </span>{
+    <span style="color: blue;">public </span>Page()
+    {
+        InitializeComponent();
+
+        lb.DataContext = <span style="color: blue;">new </span><span style="color: #2b91af;">List</span>&lt;<span style="color: #2b91af;">Person</span>&gt;() { 
+            <span style="color: blue;">new </span><span style="color: #2b91af;">Person</span>(){Name=<span style="color: #a31515;">"John"</span>, Age=23},
+            <span style="color: blue;">new </span><span style="color: #2b91af;">Person</span>(){Name=<span style="color: #a31515;">"Hank"</span>, Age=37},
+            <span style="color: blue;">new </span><span style="color: #2b91af;">Person</span>(){Name=<span style="color: #a31515;">"Sally"</span>, Age=31}};
+    }
+}
+
+<span style="color: blue;">public class </span><span style="color: #2b91af;">Person </span>{
+    <span style="color: blue;">public string </span>Name { <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; }
+    <span style="color: blue;">public int </span>Age { <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; }
+}</pre>
+<p>Which, when you put it all together results in:</p>
+<p><a href="/blog/wp-content/uploads/2008/09/image29.png"><img loading="lazy" style="border: 0px;" src="/blog/wp-content/uploads/2008/09/image-thumb8.png" alt="image" width="152" height="163" border="0"></a></p>
+<p>Hopefully, you can spot the trick &#8212; as soon as the host control has been created and assigned a datacontext (in the Loaded event for the element), I set the datacontext onto the tooltip and assign it to the REAL tooltip property (via the TooltipService.Tooltip attached property).</p>
+<p>Hope you find this useful.</p>
+			</div>
+<!-- .entry-content -->
+
+</article><!-- #post-## -->
+
+			
+				<nav class="navigation paging-navigation" role="navigation">
+		<h1 class="screen-reader-text">Posts navigation</h1>
+		<div class="nav-links">
+
+							<div class="nav-previous"><a href="/blog/index.php/archives/category/coding/page/31" class="button"><span class="meta-nav"><i class="fa fa-arrow-circle-o-left"></i> Older posts</span></a></div>
+			
+							<div class="nav-next"><a href="/blog/index.php/archives/category/coding/page/29" class="button"><span class="meta-nav">Newer posts <i class="fa fa-arrow-circle-o-right"></i></span></a></div>
+			
+		</div>
+<!-- .nav-links -->
+	</nav><!-- .navigation -->
+	
+		
+		</main><!-- #main -->
+	</section><!-- #primary -->
+
+
+	</div>
+<!-- #content -->
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+		<div class="site-info">
+			<a class="powered-by" href="http://wordpress.org/">Proudly powered by WordPress</a>
+			<span class="sep"> | </span>
+			Theme: editor by <a href="https://array.is/">Array</a>		</div>
+<!-- .site-info -->
+	</footer><!-- #colophon -->
+</div>
+<!-- #page -->
+
+<script type="text/javascript" src="/blog/wp-content/themes/editor/js/jquery.fitvids.js?ver=20140820" id="fitvids-js"></script>
+<script type="text/javascript" src="/blog/wp-content/themes/editor/js/editor.js?ver=20120206" id="editor-js-js"></script>
+<script src="https://stats.wp.com/e-202226.js" defer></script>
+<script>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:11.0',blog:'193486638',post:'0',tz:'-5',srv:'www.wiredprairie.us'} ]);
+	_stq.push([ 'clickTrackerInit', '193486638', '0' ]);
+</script>
+
+</body>
+</html>

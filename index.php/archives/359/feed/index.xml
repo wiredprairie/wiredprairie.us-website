@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Why Opera 9.5 still isn&#8217;t my default browser	</title>
+	<atom:link href="/blog/index.php/archives/359/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/359</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Fri, 13 Jun 2008 15:09:55 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/359/comment-page-1#comment-383</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Fri, 13 Jun 2008 15:09:55 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/359#comment-383</guid>
+
+					<description><![CDATA[David -- thanks for the explanation. I experiment with every version of Opera as it comes out, but usually some of my favorite sites (or needed sites) don&#039;t work, so I abandon it (as I&#039;d rather not have multiple browser applications open unless absolutely necessary). :)]]></description>
+			<content:encoded><![CDATA[<p>David &#8212; thanks for the explanation. I experiment with every version of Opera as it comes out, but usually some of my favorite sites (or needed sites) don&#8217;t work, so I abandon it (as I&#8217;d rather not have multiple browser applications open unless absolutely necessary). :)</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/359/comment-page-1#comment-382</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Fri, 13 Jun 2008 15:07:08 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/359#comment-382</guid>
+
+					<description><![CDATA[Jon -- try going to that page and navigating around the content for PowerShell. You can&#039;t. It doesn&#039;t work (the drop down&#039;s don&#039;t work and with the tree not in the right place, I can&#039;t get to the other Powershell related content).]]></description>
+			<content:encoded><![CDATA[<p>Jon &#8212; try going to that page and navigating around the content for PowerShell. You can&#8217;t. It doesn&#8217;t work (the drop down&#8217;s don&#8217;t work and with the tree not in the right place, I can&#8217;t get to the other Powershell related content).</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: jon		</title>
+		<link>/blog/index.php/archives/359/comment-page-1#comment-380</link>
+
+		<dc:creator><![CDATA[jon]]></dc:creator>
+		<pubDate>Fri, 13 Jun 2008 14:40:55 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/359#comment-380</guid>
+
+					<description><![CDATA[wow, what a terrible reason to not use opera. who goes to msdn to browse the tree anyway?
+
+seriously, i&#039;ve been using opera for the last year and the main reason i use it is because it is soo much snappier and faster than any other browser on the market (yes, even ff3). once you use opera for a significant period of time, anything else feels significantly more sluggish.]]></description>
+			<content:encoded><![CDATA[<p>wow, what a terrible reason to not use opera. who goes to msdn to browse the tree anyway?</p>
+<p>seriously, i&#8217;ve been using opera for the last year and the main reason i use it is because it is soo much snappier and faster than any other browser on the market (yes, even ff3). once you use opera for a significant period of time, anything else feels significantly more sluggish.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: david storey		</title>
+		<link>/blog/index.php/archives/359/comment-page-1#comment-375</link>
+
+		<dc:creator><![CDATA[david storey]]></dc:creator>
+		<pubDate>Thu, 12 Jun 2008 22:54:21 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/359#comment-375</guid>
+
+					<description><![CDATA[It isn&#039;t open due to browser sniffing, where MS detect Opera and send up broken code.  We&#039;ve reported it to MS but they&#039;ve never fixed it.]]></description>
+			<content:encoded><![CDATA[<p>It isn&#8217;t open due to browser sniffing, where MS detect Opera and send up broken code.  We&#8217;ve reported it to MS but they&#8217;ve never fixed it.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

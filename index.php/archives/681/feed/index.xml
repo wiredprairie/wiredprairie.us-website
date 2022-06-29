@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Please vote for my Silverlight Mix09 Entry!	</title>
+	<atom:link href="/blog/index.php/archives/681/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/681</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Fri, 13 Mar 2009 01:53:47 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: WiredPrairie - Arcade Billiards, the Source Code		</title>
+		<link>/blog/index.php/archives/681/comment-page-1#comment-2320</link>
+
+		<dc:creator><![CDATA[WiredPrairie - Arcade Billiards, the Source Code]]></dc:creator>
+		<pubDate>Fri, 13 Mar 2009 01:53:47 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/681#comment-2320</guid>
+
+					<description><![CDATA[[...] my Mix09 entry didn’t place/win, as promised I’m posting the source code, as-is. It’s not the final [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] my Mix09 entry didn’t place/win, as promised I’m posting the source code, as-is. It’s not the final [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

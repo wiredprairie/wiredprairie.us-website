@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Alternative to ApplicationSettings in .NET	</title>
+	<atom:link href="/blog/index.php/archives/1524/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/1524</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Tue, 14 Feb 2012 18:27:52 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: eburke		</title>
+		<link>/blog/index.php/archives/1524/comment-page-1#comment-4056</link>
+
+		<dc:creator><![CDATA[eburke]]></dc:creator>
+		<pubDate>Tue, 14 Feb 2012 18:27:52 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1524#comment-4056</guid>
+
+					<description><![CDATA[@aaron I would probably do what you did and rewrite a very simple settings framework that could store different settings based on a key (such as a user ID), as well as generic settings that are not user-specific.
+
+At startup we could then say LoadSettings(key) and pass in the user ID that we are loading up, which would load them.
+
+I would make the serialization technology swappable so that you could use XML, JSON, binary, database, etc.  That way it&#039;s useful for mobile apps, too.]]></description>
+			<content:encoded><![CDATA[<p>@aaron I would probably do what you did and rewrite a very simple settings framework that could store different settings based on a key (such as a user ID), as well as generic settings that are not user-specific.</p>
+<p>At startup we could then say LoadSettings(key) and pass in the user ID that we are loading up, which would load them.</p>
+<p>I would make the serialization technology swappable so that you could use XML, JSON, binary, database, etc.  That way it&#8217;s useful for mobile apps, too.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/1524/comment-page-1#comment-4042</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Thu, 09 Feb 2012 02:36:50 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1524#comment-4042</guid>
+
+					<description><![CDATA[@eburke -- what would you use instead if you did it all over?]]></description>
+			<content:encoded><![CDATA[<p>@eburke &#8212; what would you use instead if you did it all over?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: eburke		</title>
+		<link>/blog/index.php/archives/1524/comment-page-1#comment-4040</link>
+
+		<dc:creator><![CDATA[eburke]]></dc:creator>
+		<pubDate>Wed, 08 Feb 2012 15:13:34 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1524#comment-4040</guid>
+
+					<description><![CDATA[Aaron, great post.  We used the .NET settings way back in a large scale WPF project and though it was useful, we had a number of issues:
+
++ you can&#039;t easily save user settings on a per-application-userid basis since they are persisted to the store for the Windows user.  We had so subclass the application settings base classes to help us.
+
++ along with that, we had to modify the settings upgrade path to ensure we brought along all the users&#039; data.
+
++ the use of XmlSerialization under the covers caused us startup performance pain, which we got around by pre-rolling serialization DLLs, but that was more pain. :)
+
+I definitely think the .NET core settings framework has its advantages in simple cases where you have no complex types in the settings and not many settings, but beyond that it&#039;s hard to manage.]]></description>
+			<content:encoded><![CDATA[<p>Aaron, great post.  We used the .NET settings way back in a large scale WPF project and though it was useful, we had a number of issues:</p>
+<p>+ you can&#8217;t easily save user settings on a per-application-userid basis since they are persisted to the store for the Windows user.  We had so subclass the application settings base classes to help us.</p>
+<p>+ along with that, we had to modify the settings upgrade path to ensure we brought along all the users&#8217; data.</p>
+<p>+ the use of XmlSerialization under the covers caused us startup performance pain, which we got around by pre-rolling serialization DLLs, but that was more pain. :)</p>
+<p>I definitely think the .NET core settings framework has its advantages in simple cases where you have no complex types in the settings and not many settings, but beyond that it&#8217;s hard to manage.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

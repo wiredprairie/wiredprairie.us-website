@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Time for JavaScript.NEXT	</title>
+	<atom:link href="/blog/index.php/archives/871/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/871</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Thu, 03 Dec 2009 12:01:42 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/871/comment-page-1#comment-2848</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Thu, 03 Dec 2009 12:01:42 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/871#comment-2848</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/871/comment-page-1#comment-2847&quot;&gt;Daniel&lt;/a&gt;.
+
+Good points. My ranting was inconsistent. Hopefully rectified that with a few tweaks as I realized those other languages were old as well.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/871/comment-page-1#comment-2847">Daniel</a>.</p>
+<p>Good points. My ranting was inconsistent. Hopefully rectified that with a few tweaks as I realized those other languages were old as well.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Daniel		</title>
+		<link>/blog/index.php/archives/871/comment-page-1#comment-2847</link>
+
+		<dc:creator><![CDATA[Daniel]]></dc:creator>
+		<pubDate>Thu, 03 Dec 2009 11:30:03 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/871#comment-2847</guid>
+
+					<description><![CDATA[Why do you complain that JavaScript, as a language, was first released in 1995? A selection (from Wikipedia):
+
+C - 1972
+C++ - 1983
+Objective-C - 1986
+Python - 1991
+Ruby - 1995
+Java - 1995
+PHP - 1995
+
+C# is the only mainstream programming language I can think of right now from &quot;this century&quot; (Visual Basic&#039;s root as a language are much older). So why complain about the age of JS, but not mention Java, which is just as old (or even 4 years older, if you count Oak)?
+
+Debugging is a problem since there&#039;s no single vendor for JS &quot;solutions&quot; as there is for C#, where the language designers and tools developers interact. Hasn&#039;t stopped the rest of the world from developing great stuff in JS, PHP, Python, Ruby, Perl, or even C++ (a language in which the MS developer tools fail miserably compared to the C#/.NET tools).
+
+It also seems you compare JavaScript to Silverlight. One is a framework, the other a programming language with a rather minimalistic default library. That&#039;s why there are many libraries, some of them good, for it. Just have a look at Cappucino and the Atlas demo. Great stuff, all of it JS (and they implemented a new Objective-C-like syntax on top of it, which is even older!)
+
+I am not a fan of JavaScript either, but I think you mistakenly attribute many of the pitfalls in JS development to the language.]]></description>
+			<content:encoded><![CDATA[<p>Why do you complain that JavaScript, as a language, was first released in 1995? A selection (from Wikipedia):</p>
+<p>C &#8211; 1972<br />
+C++ &#8211; 1983<br />
+Objective-C &#8211; 1986<br />
+Python &#8211; 1991<br />
+Ruby &#8211; 1995<br />
+Java &#8211; 1995<br />
+PHP &#8211; 1995</p>
+<p>C# is the only mainstream programming language I can think of right now from &#8220;this century&#8221; (Visual Basic&#8217;s root as a language are much older). So why complain about the age of JS, but not mention Java, which is just as old (or even 4 years older, if you count Oak)?</p>
+<p>Debugging is a problem since there&#8217;s no single vendor for JS &#8220;solutions&#8221; as there is for C#, where the language designers and tools developers interact. Hasn&#8217;t stopped the rest of the world from developing great stuff in JS, PHP, Python, Ruby, Perl, or even C++ (a language in which the MS developer tools fail miserably compared to the C#/.NET tools).</p>
+<p>It also seems you compare JavaScript to Silverlight. One is a framework, the other a programming language with a rather minimalistic default library. That&#8217;s why there are many libraries, some of them good, for it. Just have a look at Cappucino and the Atlas demo. Great stuff, all of it JS (and they implemented a new Objective-C-like syntax on top of it, which is even older!)</p>
+<p>I am not a fan of JavaScript either, but I think you mistakenly attribute many of the pitfalls in JS development to the language.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

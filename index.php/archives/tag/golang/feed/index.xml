@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>GoLang &#8211; WiredPrairie</title>
+	<atom:link href="/blog/index.php/archives/tag/golang/feed" rel="self" type="application/rss+xml" />
+	<link>/blog</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Sat, 29 Apr 2017 01:14:45 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+<site xmlns="com-wordpress:feed-additions:1">193486638</site>	<item>
+		<title>Quick demo of Go&#8217;s context.WithTimeout</title>
+		<link>/blog/index.php/archives/2189</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sat, 29 Apr 2017 01:14:45 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[General]]></category>
+		<category><![CDATA[GoLang]]></category>
+		<guid isPermaLink="false">/blog/?p=2189</guid>
+
+					<description><![CDATA[To better understand Go&#8217;s context withTimeout functionality (and as a reference for myself), I&#8217;ve created this small self-contained demo. I didn&#8217;t find the published documentation&#8217;s example to be clear enough. The interesting part, coming from other programming languages and platforms, was that the WithTimeout function only was a signal that something happened. It doesn&#8217;t do anything [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>To better understand Go&#8217;s context <a href="https://golang.org/pkg/context/#WithTimeout"><strong>withTimeout </strong></a>functionality (and as a reference for myself), I&#8217;ve created this small self-contained demo. I didn&#8217;t find the published documentation&#8217;s example to be clear enough. The interesting part, coming from other programming languages and platforms, was that the <strong>WithTimeout</strong> function only was a signal that something happened. It doesn&#8217;t do anything when there&#8217;s a time out (like abort a goroutine or anything dramatic like that).</p>
+<p>The essential pieces:</p>
+<ol>
+<li>Call <strong>WithTimeout</strong> passing the <strong>Background()</strong> context and specify the timeout (I&#8217;ve specified  3.2 seconds)</li>
+<li>Be a good citizen and <strong>defer</strong> the cancellation (to be sure that it&#8217;s called) and <strong>defer close </strong>the channel</li>
+<li>Start the go routine which waits for the <strong>Done </strong>channel</li>
+<li>When the <strong>Done</strong> is signaled, display the current time in seconds and what caused the signal</li>
+<li>The main app is waiting for the goroutine to end, so signal that.</li>
+<li>In the main function, the code sleeps and wakes emitting some time stamps to the console</li>
+<li>Depending on whether <strong>cancel</strong> is called, the goroutine signal may be one of two things.
+<ol>
+<li>If <strong>cancel</strong> is not called prior to the second sleep in the code, the <strong>ctx.Err() </strong>returns
+<pre class=""><span class="stdout">&lt;-ctx.Done():  context deadline exceeded</span></pre>
+</li>
+<li>If <strong>cancel</strong> however is called, the ctx.Err() returns:
+<pre class=""><span class="stdout">&lt;-ctx.Done():  context canceled</span></pre>
+</li>
+</ol>
+</li>
+<li>Then, the goroutine uses the channel to signal completion (<strong>wait&lt;-true</strong>).</li>
+</ol>
+<p>View the code on <a href="https://gist.github.com/wiredprairie/f8b322866b885be484cdff97bad19e9c">Gist</a>.</p>
+<p>You can experiment with this sample <a href="https://play.golang.org/p/ulikEClQE3">here</a>.</p>
+<p>With cancel called (the line <strong>cancel()</strong> not commented out):</p>
+<pre class=""><span class="stdout">first sleep completed,  02.00
+Timeout: 02.00
+in &lt;-ctx.Done():  context canceled
+</span><span class="stdout">after second sleep done,  04.00</span></pre>
+<p>And, with <strong>// cancel() </strong>commented out:</p>
+<pre class=""><span class="stdout">first sleep completed,  02.00
+</span><span class="stdout">Timeout: 03.20
+in &lt;-ctx.Done():  context deadline exceeded
+</span><span class="stdout">after second sleep done,  04.00
+</span></pre>
+<p>Hopefully this helps someone besides me.</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2189</post-id>	</item>
+		<item>
+		<title>Tree walking and display console app in Go</title>
+		<link>/blog/index.php/archives/2078</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Fri, 18 Nov 2016 13:44:10 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[GoLang]]></category>
+		<guid isPermaLink="false">/blog/?p=2078</guid>
+
+					<description><![CDATA[I hadn’t done anything at all interesting in Go. And some might say, I still haven’t. However, I wanted to do something that I’d find occasionally useful. On Linux, this is already available, but the the Windows version is lacking. I wanted a tiny console app that would display a tree of the directory and [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I hadn’t done anything at all interesting in Go. And some might say, I still haven’t. However, I wanted to do something that I’d find occasionally useful.</p>
+<p>On Linux, this is already available, but the the Windows version is lacking. I wanted a tiny console app that would display a tree of the directory and file structure.</p>
+<p>So, that’s what I built. <img class="wlEmoticon wlEmoticon-smile" style="border-style: none;" src="/blog/wp-content/uploads/2016/11/wlEmoticon-smile.png" alt="Smile" /></p>
+<p>It’s one small file with one external library dependency.</p>
+<p>I did notice that the Go packages for directory scanning like <strong>ReadDir </strong>suffer from a common issue when using the traditional Win32 APIs: they do not adequately handle file paths longer than about 250 characters. When you have NodeJS source code on your system with lots of deeply nested paths, many Windows programs fail miserably when doing file/folder management operations (Windows Explorer, I&#8217;m looking at <strong>YOU</strong>). <em>Using the one &#8220;easy&#8221; trick</em> of prepending the path with <strong>\\?\</strong>, you can use the APIs like ReadDir reasonably reliably. Whereas in earlier versions of my tree app it would crash, it now can handle deeply nested directory structures.</p>
+<p><a href="/blog/wp-content/uploads/2016/11/image-2.png"><img loading="lazy" style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border: 0px;" title="image" src="/blog/wp-content/uploads/2016/11/image_thumb-2.png" alt="image" width="499" height="318" border="0" /></a></p>
+<pre>go get github.com/fatih/color</pre>
+<p>View the code on <a href="https://gist.github.com/wiredprairie/e9ba85bdfb74799239fc974c2beeb0b8">Gist</a>.</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2078</post-id>	</item>
+	</channel>
+</rss>

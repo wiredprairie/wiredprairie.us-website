@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Silverlight: Dynamically creating XAML elements  at runtime	</title>
+	<atom:link href="/blog/index.php/archives/670/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/670</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Sun, 20 Jun 2010 23:58:33 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: sideshow		</title>
+		<link>/blog/index.php/archives/670/comment-page-1#comment-3097</link>
+
+		<dc:creator><![CDATA[sideshow]]></dc:creator>
+		<pubDate>Sun, 20 Jun 2010 23:58:33 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/670#comment-3097</guid>
+
+					<description><![CDATA[You have to add System.Xml.Linq as a reference in your project for this to work.  
+
+right click on your silverlight project -&gt; Add Reference -&gt;System.Xml.Linq
+
+Also don&#039;t forget to add 
+using System.Windows.Markup; //gives access to XamlReader
+using System.Xml.Linq; //gives access to XDocument
+to the top of your file.
+
+This is under VisualStudios 2010 using silverlight 4]]></description>
+			<content:encoded><![CDATA[<p>You have to add System.Xml.Linq as a reference in your project for this to work.  </p>
+<p>right click on your silverlight project -> Add Reference ->System.Xml.Linq</p>
+<p>Also don&#8217;t forget to add<br />
+using System.Windows.Markup; //gives access to XamlReader<br />
+using System.Xml.Linq; //gives access to XDocument<br />
+to the top of your file.</p>
+<p>This is under VisualStudios 2010 using silverlight 4</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

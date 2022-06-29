@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: WinRT/Xaml/AKA Metro DataTemplate selection based on Data Types	</title>
+	<atom:link href="/blog/index.php/archives/1705/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/1705</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Sat, 20 Oct 2012 23:39:10 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: steve		</title>
+		<link>/blog/index.php/archives/1705/comment-page-1#comment-6460</link>
+
+		<dc:creator><![CDATA[steve]]></dc:creator>
+		<pubDate>Sat, 20 Oct 2012 23:39:10 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1705#comment-6460</guid>
+
+					<description><![CDATA[The article was really nice until you created the TypedTemplateSelector class.  I&#039;m only 2 chapters ahead of a newbie....I was following you OK...because I noticed the same issue in Windows 8 Apps...While searching..I wound up here. Anyway...good job.]]></description>
+			<content:encoded><![CDATA[<p>The article was really nice until you created the TypedTemplateSelector class.  I&#8217;m only 2 chapters ahead of a newbie&#8230;.I was following you OK&#8230;because I noticed the same issue in Windows 8 Apps&#8230;While searching..I wound up here. Anyway&#8230;good job.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: WinRT/Xaml Metro DataTemplate selection based on Data Types &#124; azkafaiz.com		</title>
+		<link>/blog/index.php/archives/1705/comment-page-1#comment-4787</link>
+
+		<dc:creator><![CDATA[WinRT/Xaml Metro DataTemplate selection based on Data Types &#124; azkafaiz.com]]></dc:creator>
+		<pubDate>Tue, 21 Aug 2012 23:16:49 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1705#comment-4787</guid>
+
+					<description><![CDATA[[...] source:&#160;wiredprairie.us [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] source:&nbsp;wiredprairie.us [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Windows 8 Developer Links &#8211; 2012-08-21Dan Rigby &#124; Dan Rigby		</title>
+		<link>/blog/index.php/archives/1705/comment-page-1#comment-4779</link>
+
+		<dc:creator><![CDATA[Windows 8 Developer Links &#8211; 2012-08-21Dan Rigby &#124; Dan Rigby]]></dc:creator>
+		<pubDate>Tue, 21 Aug 2012 03:08:35 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1705#comment-4779</guid>
+
+					<description><![CDATA[[...] want them to both pan together when the user swipes? Well, I&#8217;m going to tell you&#8230;&#8221;WinRT/Xaml/AKA Metro DataTemplate selection based on Data Types (Aaron C)&#8220;You may have noticed that WinRT does not have automatic resolution of a [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] want them to both pan together when the user swipes? Well, I&#8217;m going to tell you&#8230;&#8221;WinRT/Xaml/AKA Metro DataTemplate selection based on Data Types (Aaron C)&#8220;You may have noticed that WinRT does not have automatic resolution of a [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

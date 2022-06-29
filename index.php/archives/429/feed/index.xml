@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Coding Challenge #15	</title>
+	<atom:link href="/blog/index.php/archives/429/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/429</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Thu, 24 Jul 2008 22:03:44 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: OJ		</title>
+		<link>/blog/index.php/archives/429/comment-page-1#comment-512</link>
+
+		<dc:creator><![CDATA[OJ]]></dc:creator>
+		<pubDate>Thu, 24 Jul 2008 22:03:44 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/429#comment-512</guid>
+
+					<description><![CDATA[I guess we&#039;ll have to resort to the tried-and-true stack-based approach then ;)]]></description>
+			<content:encoded><![CDATA[<p>I guess we&#8217;ll have to resort to the tried-and-true stack-based approach then ;)</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/429/comment-page-1#comment-508</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Thu, 24 Jul 2008 02:43:10 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/429#comment-508</guid>
+
+					<description><![CDATA[(And yes, you&#039;re right about the basic structure of the tree node).]]></description>
+			<content:encoded><![CDATA[<p>(And yes, you&#8217;re right about the basic structure of the tree node).</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/429/comment-page-1#comment-507</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Thu, 24 Jul 2008 02:42:48 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/429#comment-507</guid>
+
+					<description><![CDATA[That&#039;s the hard part about doing these on paper like this - there&#039;s less of an opportunity to &quot;tune&quot; the questions. Thanks for asking ....! :)]]></description>
+			<content:encoded><![CDATA[<p>That&#8217;s the hard part about doing these on paper like this &#8211; there&#8217;s less of an opportunity to &#8220;tune&#8221; the questions. Thanks for asking &#8230;.! :)</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: OJ		</title>
+		<link>/blog/index.php/archives/429/comment-page-1#comment-506</link>
+
+		<dc:creator><![CDATA[OJ]]></dc:creator>
+		<pubDate>Thu, 24 Jul 2008 01:41:57 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/429#comment-506</guid>
+
+					<description><![CDATA[Much better ;) There was too much room to move if we had control over constructing the tree ourselves.
+
+So we can assume that all we have is a reference to a root node of the tree. And the structure for the node would be simply:
+
+struct TreeNode { TreeNode* left; TreeNode* right; T value; }]]></description>
+			<content:encoded><![CDATA[<p>Much better ;) There was too much room to move if we had control over constructing the tree ourselves.</p>
+<p>So we can assume that all we have is a reference to a root node of the tree. And the structure for the node would be simply:</p>
+<p>struct TreeNode { TreeNode* left; TreeNode* right; T value; }</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/429/comment-page-1#comment-504</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Thu, 24 Jul 2008 00:44:21 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/429#comment-504</guid>
+
+					<description><![CDATA[@OJ -- I&#039;ve tweaked the question a bit to hopefully answer your questions. I always try to leave a little wiggle room for some creativity ... but within limits. :)]]></description>
+			<content:encoded><![CDATA[<p>@OJ &#8212; I&#8217;ve tweaked the question a bit to hopefully answer your questions. I always try to leave a little wiggle room for some creativity &#8230; but within limits. :)</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: OJ		</title>
+		<link>/blog/index.php/archives/429/comment-page-1#comment-502</link>
+
+		<dc:creator><![CDATA[OJ]]></dc:creator>
+		<pubDate>Thu, 24 Jul 2008 00:14:54 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/429#comment-502</guid>
+
+					<description><![CDATA[How flexible is this question? More specifically, are we supposed to iterate through the tree given just the root tree node? or are we able to be creative in the construction of the tree (so long as it remains a binary tree)?]]></description>
+			<content:encoded><![CDATA[<p>How flexible is this question? More specifically, are we supposed to iterate through the tree given just the root tree node? or are we able to be creative in the construction of the tree (so long as it remains a binary tree)?</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

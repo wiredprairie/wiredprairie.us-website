@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>mobx &#8211; WiredPrairie</title>
+	<atom:link href="/blog/index.php/archives/tag/mobx/feed" rel="self" type="application/rss+xml" />
+	<link>/blog</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Wed, 26 Oct 2016 01:27:07 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+<site xmlns="com-wordpress:feed-additions:1">193486638</site>	<item>
+		<title>MobX and TypeScript Experiement</title>
+		<link>/blog/index.php/archives/2052</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Wed, 26 Oct 2016 01:27:07 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[mobx]]></category>
+		<category><![CDATA[typescript]]></category>
+		<guid isPermaLink="false">/blog/?p=2052</guid>
+
+					<description><![CDATA[I wanted to give MobX a try, in particular from TypeScript. Here’s my first attempt. I liberally used the documentation example found within createTransformer as my guide. [javascript] import &#34;core-js&#34;; import { observable, autorun, createTransformer } from &#34;mobx&#34;; /* The store that holds our domain: boxes and arrows */ class Store implements Storable { @observable public boxes: [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I wanted to give MobX a try, in particular from TypeScript.</p>
+<p>Here’s my first attempt. I liberally used the documentation example found within <a href="http://mobxjs.github.io/mobx/refguide/create-transformer.html">createTransformer</a> as my guide.</p>
+<p>[javascript]</p>
+<p>import &quot;core-js&quot;;<br />
+import { observable, autorun, createTransformer } from &quot;mobx&quot;;</p>
+<p>/*<br />
+ The store that holds our domain: boxes and arrows<br />
+*/</p>
+<p>class Store implements Storable {<br />
+ @observable public boxes: Box[];<br />
+ @observable public arrows: Arrow[];<br />
+ @observable public selection: any;</p>
+<p> constructor(init: Storable = {}) {<br />
+     this.boxes = init.boxes || [];<br />
+     this.arrows = init.arrows || [];<br />
+     this.selection = init.selection;<br />
+ }<br />
+}</p>
+<p>interface Storable {<br />
+    boxes?: any[];<br />
+    arrows?: Arrow[];<br />
+    selection?: any;<br />
+}</p>
+<p>interface Box {<br />
+ id: string;<br />
+ caption?: string;<br />
+}</p>
+<p>interface Arrow {<br />
+    id: string;<br />
+    to?: Box;<br />
+    from?: Box;<br />
+}</p>
+<p>const serializeState = createTransformer&amp;lt;Store, Store&amp;gt;(store =&amp;gt; {<br />
+ return new Store({<br />
+     boxes: store.boxes.map(serializeBox),<br />
+     arrows: store.arrows.map(serializeArrow),<br />
+     selection: store.selection ? store.selection.id : null<br />
+ });<br />
+});</p>
+<p>// copy using Object.assign (as this is just a simple JS object anyway)<br />
+const serializeBox = createTransformer&amp;lt;Box, Box&amp;gt;(box =&amp;gt; Object.assign({}, box));</p>
+<p>const serializeArrow = createTransformer&amp;lt;Arrow, Arrow&amp;gt;(arrow =&amp;gt; {<br />
+ // or can copy manually&#8230;<br />
+ console.log(&quot;serializeArrow&quot;);  // this is only called 3 times!<br />
+ return {<br />
+     id: arrow.id,<br />
+     to: arrow.to,<br />
+     from: arrow.from<br />
+ };<br />
+});</p>
+<p>const store = new Store();<br />
+const states: Storable[] = [];</p>
+<p>autorun(() =&amp;gt; {<br />
+ // this could be used to create an undo buffer, or whatever<br />
+ // probably wouldn&#8217;t want infinite growth &#8230; :)<br />
+ states.push(serializeState(store));<br />
+});</p>
+<p>const b1 = { id: &quot;b1&quot;, caption: &quot;Box 1&quot; };<br />
+const b2 = { id: &quot;b2&quot;, caption: &quot;Box 2&quot; };<br />
+const b3 = { id: &quot;b3&quot;, caption: &quot;Box 3&quot; };<br />
+store.boxes.push(b1);<br />
+store.boxes.push(b2);<br />
+store.boxes.push(b3);</p>
+<p>store.arrows.push({ id: &quot;a1&quot;, from: b1, to: b2 });<br />
+store.arrows.push({ id: &quot;a2&quot;, from: b1, to: b3 });<br />
+store.arrows.push({ id: &quot;a3&quot;, from: b2, to: b3 });<br />
+b1.caption = &quot;Box 1 &#8211; Edited&quot;;</p>
+<p>// Should be 8<br />
+console.log(states.length);</p>
+<p>b1.caption = &quot;Box 1 &#8211; Final&quot;;</p>
+<p>// Should be 9<br />
+console.log(states.length);<br />
+[/javascript]</p>
+<p>To make that work:</p>
+<p>[plain]</p>
+<p>npm install &#8211;S mobx reflect-metadata<br />
+npm install &#8211;D @types/core-js</p>
+<p>[/plain]</p>
+<p>Sweet that MobX includes a TypeScript declarations file. :)</p>
+<p>The things of interest here is that MobX assists in maintaining a stack of the object graph&#8217;s state, something that could be used for example in an undo buffer or comprehensive log system.</p>
+<p>In this example, that&#8217;s done by using the MobX <a href="http://mobxjs.github.io/mobx/refguide/autorun.html"><strong>autorun</strong></a> functionality. When any of the dependencies of autorun changes, the function executes. In the example above, it makes a clone of the current store, using the <strong><a href="http://mobxjs.github.io/mobx/refguide/create-transformer.html">createTransformer</a></strong> function, which turns a function into a reactive and memoizing function. Through memoization, it only transforms portions of the objects that have changed, not everything, every time. That doesn&#8217;t mean that you won&#8217;t want to limit the growth of the states, but you shouldn&#8217;t worry that a large complex object structure is being built with every change.</p>
+<p>As TypeScript doesn&#8217;t support the object spread operator (which is convenient for making a clone of an object), I&#8217;ve used <strong>Object.assign</strong> instead (which may require a polyfill depending on the environment in which you use this code).</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2052</post-id>	</item>
+	</channel>
+</rss>

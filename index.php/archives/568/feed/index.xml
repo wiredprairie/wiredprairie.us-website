@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Data Binding and Tooltips in Silverlight	</title>
+	<atom:link href="/blog/index.php/archives/568/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/568</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Tue, 28 Aug 2012 14:03:27 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: Silverlight &#124; Pearltrees		</title>
+		<link>/blog/index.php/archives/568/comment-page-1#comment-4298</link>
+
+		<dc:creator><![CDATA[Silverlight &#124; Pearltrees]]></dc:creator>
+		<pubDate>Wed, 21 Mar 2012 17:09:06 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/568#comment-4298</guid>
+
+					<description><![CDATA[[...] Data Binding and Tooltips in Silverlight - WiredPrairie [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] Data Binding and Tooltips in Silverlight &#8211; WiredPrairie [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: tomking		</title>
+		<link>/blog/index.php/archives/568/comment-page-1#comment-2768</link>
+
+		<dc:creator><![CDATA[tomking]]></dc:creator>
+		<pubDate>Tue, 13 Oct 2009 02:23:08 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/568#comment-2768</guid>
+
+					<description><![CDATA[Hello everybody!
+       I create a new app and copy the code above to run ,
+but can&#039;t compile pass successfully. Please help me to check ,thanks !
+Error info:
+The property &#039;Tooltip&#039; does not exist on the type &#039;StackPanel&#039; in the XML namespace &#039;clr-namespace:SilverlightApplication2&#039;.]]></description>
+			<content:encoded><![CDATA[<p>Hello everybody!<br />
+       I create a new app and copy the code above to run ,<br />
+but can&#8217;t compile pass successfully. Please help me to check ,thanks !<br />
+Error info:<br />
+The property &#8216;Tooltip&#8217; does not exist on the type &#8216;StackPanel&#8217; in the XML namespace &#8216;clr-namespace:SilverlightApplication2&#8217;.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Anton Y. Bobikov		</title>
+		<link>/blog/index.php/archives/568/comment-page-1#comment-2762</link>
+
+		<dc:creator><![CDATA[Anton Y. Bobikov]]></dc:creator>
+		<pubDate>Thu, 08 Oct 2009 14:22:18 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/568#comment-2762</guid>
+
+					<description><![CDATA[Thank you, your post is very usefull for me. My previous solution was not same correct (had some bugs).]]></description>
+			<content:encoded><![CDATA[<p>Thank you, your post is very usefull for me. My previous solution was not same correct (had some bugs).</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Roboblob		</title>
+		<link>/blog/index.php/archives/568/comment-page-1#comment-2495</link>
+
+		<dc:creator><![CDATA[Roboblob]]></dc:creator>
+		<pubDate>Wed, 13 May 2009 06:56:16 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/568#comment-2495</guid>
+
+					<description><![CDATA[Thanks, very nice solution.
+Hope MS will fix this in SL3.
+
+Cheers!]]></description>
+			<content:encoded><![CDATA[<p>Thanks, very nice solution.<br />
+Hope MS will fix this in SL3.</p>
+<p>Cheers!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Tooltips in silverlight - Willem Meints - blog community		</title>
+		<link>/blog/index.php/archives/568/comment-page-1#comment-2378</link>
+
+		<dc:creator><![CDATA[Tooltips in silverlight - Willem Meints - blog community]]></dc:creator>
+		<pubDate>Thu, 09 Apr 2009 09:57:14 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/568#comment-2378</guid>
+
+					<description><![CDATA[[...] As it turns out Microsoft doesn’t set the DataContext property of the tooltip control. Rendering databinding completely useless. Luckely people in the community have come up with a very good solution to this problem: /blog/index.php/archives/568 [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] As it turns out Microsoft doesn’t set the DataContext property of the tooltip control. Rendering databinding completely useless. Luckely people in the community have come up with a very good solution to this problem: <a href="/blog/index.php/archives/568" rel="nofollow ugc">/blog/index.php/archives/568</a> [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Carl Ryden		</title>
+		<link>/blog/index.php/archives/568/comment-page-1#comment-2276</link>
+
+		<dc:creator><![CDATA[Carl Ryden]]></dc:creator>
+		<pubDate>Fri, 27 Feb 2009 21:45:51 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/568#comment-2276</guid>
+
+					<description><![CDATA[Thank you.  This is great.  I owe you one.]]></description>
+			<content:encoded><![CDATA[<p>Thank you.  This is great.  I owe you one.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Stephen Price		</title>
+		<link>/blog/index.php/archives/568/comment-page-1#comment-2240</link>
+
+		<dc:creator><![CDATA[Stephen Price]]></dc:creator>
+		<pubDate>Sun, 15 Feb 2009 23:30:22 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/568#comment-2240</guid>
+
+					<description><![CDATA[Thanks for the post, I got it to work after a couple of failed attempts from someone elses similar post. Much appreciated!
+
+cheers,
+Stephen]]></description>
+			<content:encoded><![CDATA[<p>Thanks for the post, I got it to work after a couple of failed attempts from someone elses similar post. Much appreciated!</p>
+<p>cheers,<br />
+Stephen</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: John R		</title>
+		<link>/blog/index.php/archives/568/comment-page-1#comment-2200</link>
+
+		<dc:creator><![CDATA[John R]]></dc:creator>
+		<pubDate>Fri, 06 Feb 2009 20:35:08 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/568#comment-2200</guid>
+
+					<description><![CDATA[I also thank you. This is the first approach that worked for me. I have a tree view with images at each node. I wanted a tooltip to appear when hovering over those images. I couldn&#039;t get a tooltip to bind dynamically (unless simply a property of the image control itself which prevented proper styling), until I tried your solution.
+
+Many thanks!]]></description>
+			<content:encoded><![CDATA[<p>I also thank you. This is the first approach that worked for me. I have a tree view with images at each node. I wanted a tooltip to appear when hovering over those images. I couldn&#8217;t get a tooltip to bind dynamically (unless simply a property of the image control itself which prevented proper styling), until I tried your solution.</p>
+<p>Many thanks!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Anesh		</title>
+		<link>/blog/index.php/archives/568/comment-page-1#comment-1411</link>
+
+		<dc:creator><![CDATA[Anesh]]></dc:creator>
+		<pubDate>Mon, 03 Nov 2008 19:21:45 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/568#comment-1411</guid>
+
+					<description><![CDATA[Thank you for posting this wonderful solution. I have tried it and it works well except for when there is scrolling region. I have a datagrid and and when there are large number of rows, when one scrolls down the tips seem to stuck to the original visible area. This may be related to eburke&#039;s and your comments. Do you have any ideas/solutions for this issue?
+Thank you.]]></description>
+			<content:encoded><![CDATA[<p>Thank you for posting this wonderful solution. I have tried it and it works well except for when there is scrolling region. I have a datagrid and and when there are large number of rows, when one scrolls down the tips seem to stuck to the original visible area. This may be related to eburke&#8217;s and your comments. Do you have any ideas/solutions for this issue?<br />
+Thank you.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Rammesses		</title>
+		<link>/blog/index.php/archives/568/comment-page-1#comment-1100</link>
+
+		<dc:creator><![CDATA[Rammesses]]></dc:creator>
+		<pubDate>Wed, 22 Oct 2008 10:30:42 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/568#comment-1100</guid>
+
+					<description><![CDATA[Nice work! Compared to all the hastle of building rich tooltips in ASP.Net (even using the AJAXControlToolkit), this is a breeze. Thanks!]]></description>
+			<content:encoded><![CDATA[<p>Nice work! Compared to all the hastle of building rich tooltips in ASP.Net (even using the AJAXControlToolkit), this is a breeze. Thanks!</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

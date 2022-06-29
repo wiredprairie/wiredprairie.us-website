@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Going Batty (about this image)	</title>
+	<atom:link href="/blog/index.php/archives/1206/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/1206</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Mon, 24 Oct 2011 20:20:05 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: MJ		</title>
+		<link>/blog/index.php/archives/1206/comment-page-1#comment-3606</link>
+
+		<dc:creator><![CDATA[MJ]]></dc:creator>
+		<pubDate>Mon, 24 Oct 2011 20:20:05 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/1206#comment-3606</guid>
+
+					<description><![CDATA[Very cool image.  Looks like what a bat is expected to look like, but so much neater because of the &#039;shadows&#039;.  Thanks for sharing!]]></description>
+			<content:encoded><![CDATA[<p>Very cool image.  Looks like what a bat is expected to look like, but so much neater because of the &#8216;shadows&#8217;.  Thanks for sharing!</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

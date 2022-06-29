@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>WebBrowser &#8211; WiredPrairie</title>
+	<atom:link href="/blog/index.php/archives/tag/webbrowser/feed" rel="self" type="application/rss+xml" />
+	<link>/blog</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Fri, 02 May 2014 00:41:58 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+<site xmlns="com-wordpress:feed-additions:1">193486638</site>	<item>
+		<title>IHTMLDocument5 and IHTMLDocument6 in C#</title>
+		<link>/blog/index.php/archives/1999</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Fri, 02 May 2014 00:41:58 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[.NET]]></category>
+		<category><![CDATA[WebBrowser]]></category>
+		<guid isPermaLink="false">/blog/?p=1999</guid>
+
+					<description><![CDATA[Unexpectedly, I found myself needing to use IHTMLDocument5/6 last evening to fetch a few properties that aren’t directly exposed via any of the Web Browser options in classic .NET programming (like WinForms/WPF). I couldn’t find them anywhere, so I whipped up something simple/quick/dirty: [Guid(&#34;3050f80c-98b5-11cf-bb82-00aa00bdce0b&#34;)] [InterfaceTypeAttribute(ComInterfaceType.InterfaceIsDual)] internal interface IHTMLDocument5 { void SetOnmousewheel(object p); object GetOnmousewheel(); object [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Unexpectedly, I found myself needing to use IHTMLDocument5/6 last evening to fetch a few properties that aren’t directly exposed via any of the Web Browser options in classic .NET programming (like WinForms/WPF). I couldn’t find them anywhere, so I whipped up something simple/quick/dirty:</p>
+<pre class="csharpcode">[Guid(<span class="str">&quot;3050f80c-98b5-11cf-bb82-00aa00bdce0b&quot;</span>)]
+[InterfaceTypeAttribute(ComInterfaceType.InterfaceIsDual)]
+<span class="kwrd">internal</span> <span class="kwrd">interface</span> IHTMLDocument5
+{
+    <span class="kwrd">void</span> SetOnmousewheel(<span class="kwrd">object</span> p);
+    <span class="kwrd">object</span> GetOnmousewheel();
+    <span class="kwrd">object</span> docType { get; }
+    <span class="kwrd">object</span> implementation { get; }
+    <span class="kwrd">object</span> createAttribute([In] <span class="kwrd">string</span> attrName);
+    <span class="kwrd">object</span> createComment([In] <span class="kwrd">string</span> comment);
+    <span class="kwrd">void</span> SetOnfocusin(<span class="kwrd">object</span> p);
+    <span class="kwrd">object</span> GetOnfocusin();
+    <span class="kwrd">void</span> SetOnfocusout(<span class="kwrd">object</span> p);
+    <span class="kwrd">object</span> GetOnfocusout();
+    <span class="kwrd">void</span> SetOnactivate(<span class="kwrd">object</span> p);
+    <span class="kwrd">object</span> GetOnactivate();
+    <span class="kwrd">void</span> SetOndeactivate(<span class="kwrd">object</span> p);
+    <span class="kwrd">object</span> GetOndeactivate();
+    <span class="kwrd">void</span> SetOnbeforeactivate(<span class="kwrd">object</span> p);
+    <span class="kwrd">object</span> GetOnbeforeactivate();
+    <span class="kwrd">void</span> SetOnbeforedeactivate(<span class="kwrd">object</span> p);
+    <span class="kwrd">object</span> GetOnbeforedeactivate();
+    <span class="kwrd">string</span> compatMode { get; }
+}
+
+
+[Guid(<span class="str">&quot;30510417-98b5-11cf-bb82-00aa00bdce0b&quot;</span>)]
+[InterfaceTypeAttribute(ComInterfaceType.InterfaceIsDual)]
+<span class="kwrd">internal</span> <span class="kwrd">interface</span> IHTMLDocument6
+{
+    <span class="kwrd">object</span> compatible { get; }
+    <span class="kwrd">object</span> documentMode { get; }
+    <span class="kwrd">void</span> SetOnStorage([In] <span class="kwrd">object</span> p);
+    <span class="kwrd">object</span> GetOnStorage();
+    <span class="kwrd">void</span> SetOnStorageCommit([In] <span class="kwrd">object</span> p);
+    <span class="kwrd">object</span> GetOnStorageCommit();
+    <span class="kwrd">object</span> getElementById([In] <span class="kwrd">string</span> id);
+    <span class="kwrd">void</span> updateSettings();
+}</pre>
+<style type="text/css">
+.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }</style>
+<p>As you can see, I didn’t spend a lot of time with the details, but it was enough to make progress (in particular I wanted <strong>compatMode</strong> and <strong>documentMode</strong>).</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1999</post-id>	</item>
+	</channel>
+</rss>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>SnugUp &#8211; WiredPrairie</title>
+	<atom:link href="/blog/index.php/archives/tag/snugup/feed" rel="self" type="application/rss+xml" />
+	<link>/blog</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Wed, 07 Mar 2012 03:04:09 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+<site xmlns="com-wordpress:feed-additions:1">193486638</site>	<item>
+		<title>Some code from SnugUp.Browser (an album browser for SmugMug)</title>
+		<link>/blog/index.php/archives/1559</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Wed, 07 Mar 2012 03:04:09 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[General]]></category>
+		<category><![CDATA[Photography]]></category>
+		<category><![CDATA[CSharp]]></category>
+		<category><![CDATA[SmugMug]]></category>
+		<category><![CDATA[SnugUp]]></category>
+		<guid isPermaLink="false">/blog/?p=1559</guid>
+
+					<description><![CDATA[I’ve been doing some tinkering recently with SmugMug again. Through testing SnugUp for the past 4 years, I’ve made quite the mess of my SmugMug account. Literally hundreds of poorly organized and often completely junk albums. I’ve been wanting to clean it up, but SmugMug’s UI for that is so obnoxiously slow and tedious that [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I’ve been doing some tinkering recently with SmugMug again.</p>
+<p>Through testing <a href="http://www.wiredprairie.us/SnugUp/">SnugUp</a> for the past 4 years, I’ve made quite the mess of my SmugMug account. Literally hundreds of poorly organized and often completely junk albums. I’ve been wanting to clean it up, but SmugMug’s UI for that is so obnoxiously slow and tedious that I decided I wanted to write a tool to make it easier to manage. </p>
+<p>Admittedly, given the amount of time I’ve spent on writing the tool (which I’m not yet finished with), I could have cleaned up my SmugMug account dozens of times. However, with my developer hat on, I thought, how fun would that be? <img style="border-bottom-style: none; border-left-style: none; border-top-style: none; border-right-style: none" class="wlEmoticon wlEmoticon-smile" alt="Smile" src="/blog/wp-content/uploads/2012/03/wlEmoticon-smile.png" /></p>
+<p>&#160;</p>
+<p> <a href="/blog/wp-content/uploads/2012/03/image.png"><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2012/03/image_thumb.png" width="502" height="299" /></a>  </p>
+<p>So, I’ve started to create the SnugUp.Browser. It’s a bit of an interesting beast in that it is a Windows application that hosts a web browser to display its UI. I’d tried using WPF/XAML and just couldn’t get the look I was wanting in a reasonable amount of time and effort. </p>
+<p>&lt;RANT&gt;<strong>WPF desperately needs a VirtualizingWrapPanel. Microsoft needs to ship it. </strong>&lt;/RANT&gt;</p>
+<p>So, I created a WinForms project to host the IE Web Browser. (Arrgh, the WPF WebBrowser sucks still. It’s not nearly as feature complete as the one from WinForms!). Internally, the web pages are served via an HttpListener. </p>
+<div style="padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; float: none; padding-top: 0px" id="scid:9D7513F9-C04C-4721-824A-2B34F0212519:81e77bab-7a28-4e0a-a8e7-5d1073cc708b" class="wlWriterEditableSmartContent">
+<pre style=" width: 540px; height: 183px;background-color:White;overflow: auto;;font-family:Courier New;font-size:8.25"><div><!--
+
+Code highlighting produced by Actipro CodeHighlighter (freeware)
+http://www.CodeHighlighter.com/
+
+--><span style="color: #0000FF;">try</span><span style="color: #000000;">
+{
+    </span><span style="color: #0000FF;">int</span><span style="color: #000000;"> portSuggest </span><span style="color: #000000;">=</span><span style="color: #000000;"> GetAvailablePort();
+    portSuggest </span><span style="color: #000000;">=</span><span style="color: #000000;"> </span><span style="color: #800080;">40000</span><span style="color: #000000;">;
+    _listener.Prefixes.Add(</span><span style="color: #0000FF;">string</span><span style="color: #000000;">.Format(</span><span style="color: #800000;">&quot;</span><span style="color: #800000;"></span><span style="color: #800000;">&quot;</span><span style="color: #000000;">, portSuggest));
+    _listener.Start();
+    </span><span style="color: #0000FF;">while</span><span style="color: #000000;"> (maxConnections</span><span style="color: #000000;">--</span><span style="color: #000000;"> </span><span style="color: #000000;">&gt;</span><span style="color: #000000;"> </span><span style="color: #800080;">0</span><span style="color: #000000;">)
+    {
+        _listener.BeginGetContext(HandleRequest, _listener);                    
+    }
+}
+</span><span style="color: #0000FF;">catch</span><span style="color: #000000;"> (Exception ex)
+{
+    Debug.WriteLine(ex);
+}</span></div></pre>
+<p><!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com/ --></div>
+<p>The HandleRequest method responds in two ways:</p>
+<ol>
+<li>Respond with JSON data (as if it were a web service). 99% of the code needed to access SmugMug’s APIs was already written in a C# library I wrote for SnugUp.</li>
+<li>Respond with binary data, providing a “proxy” to a service. This was needed to handle downloading images from the application. When the request was directly made from the WebBrowser to SmugMug, it was refused as the http-referer header was not a valid source apparently (SmugMug didn’t like “http://localhost:/####” as the referrer. </li>
+</ol>
+<div style="padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; float: none; padding-top: 0px" id="scid:9D7513F9-C04C-4721-824A-2B34F0212519:fc893838-5f11-476b-bc41-9c15330400a6" class="wlWriterEditableSmartContent">
+<pre style=" width: 540px; height: 183px;background-color:White;white-space:-moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; white-space: pre-wrap; word-wrap: break-word;overflow: auto;;font-family:Courier New;font-size:8.25"><div><!--
+
+Code highlighting produced by Actipro CodeHighlighter (freeware)
+http://www.CodeHighlighter.com/
+
+--><span style="color: #000000;">resourceRequested </span><span style="color: #000000;">=</span><span style="color: #000000;"> context.Request.Url.LocalPath.Replace(</span><span style="color: #800000;">'</span><span style="color: #800000;">/</span><span style="color: #800000;">'</span><span style="color: #000000;">, </span><span style="color: #800000;">'</span><span style="color: #800000;">.</span><span style="color: #800000;">'</span><span style="color: #000000;">);
+</span><span style="color: #0000FF;">if</span><span style="color: #000000;"> (resourceRequested.StartsWith(</span><span style="color: #800000;">&quot;</span><span style="color: #800000;">.</span><span style="color: #800000;">&quot;</span><span style="color: #000000;">)) { resourceRequested </span><span style="color: #000000;">=</span><span style="color: #000000;"> resourceRequested.Substring(</span><span style="color: #800080;">1</span><span style="color: #000000;">); }
+Debug.WriteLine(</span><span style="color: #0000FF;">string</span><span style="color: #000000;">.Format(</span><span style="color: #800000;">&quot;</span><span style="color: #800000;">Requested: {0}</span><span style="color: #800000;">&quot;</span><span style="color: #000000;">, resourceRequested));
+</span><span style="color: #0000FF;">using</span><span style="color: #000000;"> (Stream stream </span><span style="color: #000000;">=</span><span style="color: #000000;"> Assembly.GetExecutingAssembly().GetManifestResourceStream(</span><span style="color: #0000FF;">string</span><span style="color: #000000;">.Format(</span><span style="color: #800000;">&quot;</span><span style="color: #800000;">SnugUp.Resources.{0}</span><span style="color: #800000;">&quot;</span><span style="color: #000000;">, resourceRequested)))
+{
+    </span><span style="color: #0000FF;">if</span><span style="color: #000000;"> (stream </span><span style="color: #000000;">==</span><span style="color: #000000;"> </span><span style="color: #0000FF;">null</span><span style="color: #000000;">)
+    {
+        </span><span style="color: #008000;">//</span><span style="color: #008000;">context.Response.StatusCode = 404;</span><span style="color: #008000;">
+</span><span style="color: #000000;">
+        </span><span style="color: #0000FF;">if</span><span style="color: #000000;"> (url.LocalPath.StartsWith(</span><span style="color: #800000;">&quot;</span><span style="color: #800000;">/proxy</span><span style="color: #800000;">&quot;</span><span style="color: #000000;">))
+        {
+            var proxyUrl </span><span style="color: #000000;">=</span><span style="color: #000000;"> url.Query.Substring(</span><span style="color: #800000;">&quot;</span><span style="color: #800000;">?url=</span><span style="color: #800000;">&quot;</span><span style="color: #000000;">.Length);
+            extension </span><span style="color: #000000;">=</span><span style="color: #000000;"> Path.GetFileName(proxyUrl);
+            </span><span style="color: #0000FF;">try</span><span style="color: #000000;">
+            {
+                WebClient client </span><span style="color: #000000;">=</span><span style="color: #000000;"> </span><span style="color: #0000FF;">new</span><span style="color: #000000;"> WebClient();
+                </span><span style="color: #0000FF;">byte</span><span style="color: #000000;">[] buffer </span><span style="color: #000000;">=</span><span style="color: #000000;"> client.DownloadData(proxyUrl);
+                context.Response.Headers.Add(</span><span style="color: #800000;">&quot;</span><span style="color: #800000;">Expires</span><span style="color: #800000;">&quot;</span><span style="color: #000000;">, DateTime.UtcNow.AddDays(</span><span style="color: #800080;">30</span><span style="color: #000000;">).ToString(</span><span style="color: #800000;">&quot;</span><span style="color: #800000;">R</span><span style="color: #800000;">&quot;</span><span style="color: #000000;">));                                        
+                context.Response.ContentType </span><span style="color: #000000;">=</span><span style="color: #000000;"> GetContentType(context, extension);
+                context.Response.OutputStream.Write(buffer, </span><span style="color: #800080;">0</span><span style="color: #000000;">, buffer.Length);                                         
+            }
+            </span><span style="color: #0000FF;">catch</span><span style="color: #000000;">
+            {
+
+                context.Response.StatusCode </span><span style="color: #000000;">=</span><span style="color: #000000;"> </span><span style="color: #800080;">404</span><span style="color: #000000;">;
+            }
+        }
+
+    }
+    </span><span style="color: #0000FF;">else</span><span style="color: #000000;">
+    {
+        </span><span style="color: #0000FF;">string</span><span style="color: #000000;"> contentType </span><span style="color: #000000;">=</span><span style="color: #000000;"> GetContentType(context, extension);
+
+        context.Response.ContentType </span><span style="color: #000000;">=</span><span style="color: #000000;"> contentType;                                
+        stream.CopyTo(context.Response.OutputStream);
+    }
+    </span><span style="color: #008000;">//</span><span style="color: #008000;"> Close the Response to send it to the client.
+    </span><span style="color: #008000;">//</span><span style="color: #008000;">                        }</span><span style="color: #008000;">
+</span><span style="color: #000000;">}
+</span></div></pre>
+<p><!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com/ --></div>
+<p>If the resource can’t be found as an Embedded Resource, it tries a proxy. </p>
+<p>I built a tiny router for the web services so that I could easily plug-n-play new functionality:</p>
+<div style="padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; float: none; padding-top: 0px" id="scid:9D7513F9-C04C-4721-824A-2B34F0212519:e0e177fc-1f02-4805-82f7-0f6e15424d78" class="wlWriterEditableSmartContent">
+<pre style=" width: 540px; height: 183px;background-color:White;white-space:-moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; white-space: pre-wrap; word-wrap: break-word;overflow: auto;;font-family:Courier New;font-size:8.25"><div><!--
+
+Code highlighting produced by Actipro CodeHighlighter (freeware)
+http://www.CodeHighlighter.com/
+
+--><span style="color: #0000FF;">public</span><span style="color: #000000;"> </span><span style="color: #0000FF;">virtual</span><span style="color: #000000;"> </span><span style="color: #0000FF;">object</span><span style="color: #000000;"> Route(</span><span style="color: #0000FF;">string</span><span style="color: #000000;"> path, dynamic data)
+{
+    </span><span style="color: #0000FF;">if</span><span style="color: #000000;"> (path.StartsWith(</span><span style="color: #800000;">&quot;</span><span style="color: #800000;">/</span><span style="color: #800000;">&quot;</span><span style="color: #000000;">)) { path </span><span style="color: #000000;">=</span><span style="color: #000000;"> path.Substring(</span><span style="color: #800080;">1</span><span style="color: #000000;">); }
+    var paths </span><span style="color: #000000;">=</span><span style="color: #000000;"> path.Split(</span><span style="color: #800000;">'</span><span style="color: #800000;">/</span><span style="color: #800000;">'</span><span style="color: #000000;">);
+
+    </span><span style="color: #0000FF;">if</span><span style="color: #000000;"> (paths.Length </span><span style="color: #000000;">&gt;</span><span style="color: #000000;"> </span><span style="color: #800080;">0</span><span style="color: #000000;">)
+    {
+        var controllerName </span><span style="color: #000000;">=</span><span style="color: #000000;"> paths[</span><span style="color: #800080;">0</span><span style="color: #000000;">];
+        var controllerType </span><span style="color: #000000;">=</span><span style="color: #000000;"> Type.GetType(</span><span style="color: #0000FF;">string</span><span style="color: #000000;">.Format(</span><span style="color: #800000;">&quot;</span><span style="color: #800000;">SnugUp.Controller.{0}Controller</span><span style="color: #800000;">&quot;</span><span style="color: #000000;">, controllerName), </span><span style="color: #0000FF;">false</span><span style="color: #000000;">, </span><span style="color: #0000FF;">true</span><span style="color: #000000;">);
+        </span><span style="color: #0000FF;">if</span><span style="color: #000000;"> (controllerType </span><span style="color: #000000;">!=</span><span style="color: #000000;"> </span><span style="color: #0000FF;">null</span><span style="color: #000000;">)
+        {
+            var instance </span><span style="color: #000000;">=</span><span style="color: #000000;"> InitializeControllerInstance(controllerType);
+            </span><span style="color: #008000;">//</span><span style="color: #008000;"> default?</span><span style="color: #008000;">
+</span><span style="color: #000000;">            </span><span style="color: #0000FF;">if</span><span style="color: #000000;"> (paths.Length </span><span style="color: #000000;">&gt;</span><span style="color: #000000;"> </span><span style="color: #800080;">1</span><span style="color: #000000;">)
+            {
+                MethodInfo method </span><span style="color: #000000;">=</span><span style="color: #000000;"> controllerType.GetMethod(paths[</span><span style="color: #800080;">1</span><span style="color: #000000;">]);
+                </span><span style="color: #0000FF;">if</span><span style="color: #000000;"> (method </span><span style="color: #000000;">!=</span><span style="color: #000000;"> </span><span style="color: #0000FF;">null</span><span style="color: #000000;">)
+                {
+                    </span><span style="color: #0000FF;">try</span><span style="color: #000000;">
+                    {
+                        </span><span style="color: #0000FF;">object</span><span style="color: #000000;"> results </span><span style="color: #000000;">=</span><span style="color: #000000;"> method.Invoke(instance, </span><span style="color: #0000FF;">new</span><span style="color: #000000;"> </span><span style="color: #0000FF;">object</span><span style="color: #000000;">[] {data});
+                        </span><span style="color: #0000FF;">return</span><span style="color: #000000;"> results;
+                    }
+                    </span><span style="color: #0000FF;">catch</span><span style="color: #000000;"> (Exception ex)
+                    {
+                        Debug.WriteLine(ex);
+                    }
+                }
+            }
+        }
+    }
+    </span><span style="color: #0000FF;">return</span><span style="color: #000000;"> </span><span style="color: #0000FF;">null</span><span style="color: #000000;">;
+}</span></div></pre>
+<p><!-- Code inserted with Steve Dunn's Windows Live Writer Code Formatter Plugin.  http://dunnhq.com/ --></div>
+<p>It just looks up a request dynamically, maps to a method, and calls it (the response is eventually serialized as JSON).</p>
+<p>For UI, I’m currently using Bootstrap (although that may be removed), Knockout.JS, and jQuery. I’m doing a bit of trickery to make sure that only what’s visible on the screen is loaded (even when the user scrolls up and down … it’s pretty smart).&#160; I’ll likely post more about that in a future update.</p>
+<p>The app is becoming larger… and bloated a bit when compared to my original needs. <img style="border-bottom-style: none; border-left-style: none; border-top-style: none; border-right-style: none" class="wlEmoticon wlEmoticon-smile" alt="Smile" src="/blog/wp-content/uploads/2012/03/wlEmoticon-smile.png" /></p>
+<p>&#160;</p>
+<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2012/03/image1.png" width="274" height="377" /></p>
+<p>It now can show the images from the gallery as well. <img style="border-bottom-style: none; border-left-style: none; border-top-style: none; border-right-style: none" class="wlEmoticon wlEmoticon-smile" alt="Smile" src="/blog/wp-content/uploads/2012/03/wlEmoticon-smile.png" /></p>
+<p><a href="/blog/wp-content/uploads/2012/03/image2.png"><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2012/03/image_thumb1.png" width="502" height="341" /></a></p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1559</post-id>	</item>
+		<item>
+		<title>Announcing SnugUp version 2</title>
+		<link>/blog/index.php/archives/1520</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sun, 29 Jan 2012 18:12:55 +0000</pubDate>
+				<category><![CDATA[Software]]></category>
+		<category><![CDATA[Photography]]></category>
+		<category><![CDATA[SmugMug]]></category>
+		<category><![CDATA[SnugUp]]></category>
+		<guid isPermaLink="false">/blog/?p=1520</guid>
+
+					<description><![CDATA[More than a few years ago, I created SnugUp version 1, which is a handy way of synchronizing folders of images with SmugMug for Windows users. I’ve made a number of changes in the last month based on some requests and the result is a significant update (yet the core features are all there – [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="http://www.wiredprairie.us/SnugUp/"><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px 0px 0px 20px; padding-left: 0px; padding-right: 0px; display: inline; float: right; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" align="right" src="/blog/wp-content/uploads/2012/01/image29.png" width="143" height="520" /></a>More than a few years ago, I created <a href="http://www.wiredprairie.us/SnugUp/">SnugUp</a> version 1, which is a handy way of synchronizing folders of images with <a href="http://www.smugmug.com/?referrer=75Bqi7vCzrwPY">SmugMug</a> for Windows users. I’ve made a number of changes in the last month based on some requests and the result is a significant update (yet the core features are all there – just improved!).</p>
+<p>New features:</p>
+<ul>
+<li>(Changed to version 2)</li>
+<li>Completely revamped look and feel (which did remove a few &#8216;flashy&#8217; features) </li>
+<li>Uses Click once for application updating (which should make it easier to push updates and bug fixes out to users)</li>
+<li>Added settings for <strong>automatic upload </strong>(when application starts) </li>
+<li>Added setting for Subcategory selection (only selection, no creation of subcategories through SnugUp) </li>
+<li>Added setting for <strong>custom gallery naming </strong></li>
+<li>Completely changed settings user interface to more logically group and explain settings </li>
+<li>Fixed a number of bugs (that shouldn&#8217;t have appeared to user anyway!) </li>
+<li>Added support for new file extensions (to <strong>upload videos </strong>in particular)</li>
+</ul>
+<p>It does require .NET 4.0 Framework Client profile (which likely you’ve already got on your machine, but if you don’t the installer SHOULD make it easy to download).</p>
+<p>Go <a href="http://www.wiredprairie.us/SnugUp">here</a> (<a href="http://www.wiredprairie.us/SnugUp">http://www.wiredprairie.us/SnugUp</a>) for more information and to download. I’d recommend uninstalling the old version first.</p>
+<p><a href="http://www.wiredprairie.us/SnugUp"><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: block; float: none; margin-left: auto; border-top: 0px; margin-right: auto; border-right: 0px; padding-top: 0px" title="SNAGHTML1ffa6494" border="0" alt="SNAGHTML1ffa6494" src="/blog/wp-content/uploads/2012/01/SNAGHTML1ffa6494.png" width="500" height="375" /></a></p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1520</post-id>	</item>
+		<item>
+		<title>Announcement: SnugUp updated</title>
+		<link>/blog/index.php/archives/646</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Fri, 09 Jan 2009 03:51:00 +0000</pubDate>
+				<category><![CDATA[General]]></category>
+		<category><![CDATA[Software]]></category>
+		<category><![CDATA[SnugUp]]></category>
+		<guid isPermaLink="false">/blog/index.php/archives/646</guid>
+
+					<description><![CDATA[I created a medium sized .NET WPF based application a while back which helps keep a series of folders with images synchronized to SmugMug with one click of a button. I just made a few fixes in the past couple of days and uploaded a new version. Changes: Fixed error where the application would crash [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="http://wiredprairie.us/snugup"><img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; margin-left: 0px; border-top: 0px; margin-right: 0px; border-right: 0px" title="image" border="0" alt="image" align="right" src="/blog/wp-content/uploads/2009/01/image1.png" width="200" height="281" /></a> </p>
+<p>I created a medium sized .NET WPF based application a while back which helps keep a series of folders with images synchronized to <a href="http://www.smugmug.com/">SmugMug</a> with one click of a button. I just made a few fixes in the past couple of days and uploaded a new version.</p>
+<p>Changes:</p>
+<ul>
+<li>Fixed error where the application would crash after completely scanning and uploading all files. This crash would cause it to do unnecessary scanning (and possibly uploading) the next time it was run. </li>
+<li>Added support for GIF and PNG files (JPG files are still supported of course). </li>
+<li>Increased timeout for uploads to 10 minutes. If an upload takes longer than 10 minutes, it will fail. </li>
+<li>Improved special character handling. File names including characters such as &quot;&amp;&quot; should now be handled properly. </li>
+<li>Reworded a few of the settings to better explain their function. </li>
+<li>Added an error display &#8212; if the application should have an unexpected problem, it should provide a way to grab the error (so that you can submit to the author).</li>
+</ul>
+<p>Download it <a target="_blank" href="http://wiredprairie.us/snugup/download.html">here</a>.</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">646</post-id>	</item>
+	</channel>
+</rss>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Calculating the distance between two Zip Codes in C#	</title>
+	<atom:link href="/blog/index.php/archives/688/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/688</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Tue, 12 Apr 2016 21:41:49 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: Calculating the distance between two Zip Codes in C# - DotNetBurner		</title>
+		<link>/blog/index.php/archives/688/comment-page-1#comment-2172</link>
+
+		<dc:creator><![CDATA[Calculating the distance between two Zip Codes in C# - DotNetBurner]]></dc:creator>
+		<pubDate>Sun, 25 Jan 2009 18:00:24 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/688#comment-2172</guid>
+
+					<description><![CDATA[&lt;strong&gt;Calculating the distance between two Zip Codes in C#...&lt;/strong&gt;
+
+DotNetBurner.com - hot .net content! DotNetBurner...]]></description>
+			<content:encoded><![CDATA[<p><strong>Calculating the distance between two Zip Codes in C#&#8230;</strong></p>
+<p>DotNetBurner.com &#8211; hot .net content! DotNetBurner&#8230;</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/688/comment-page-1#comment-2170</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sun, 25 Jan 2009 14:51:19 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/688#comment-2170</guid>
+
+					<description><![CDATA[Very cool modification Craig!]]></description>
+			<content:encoded><![CDATA[<p>Very cool modification Craig!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Craig Dunn		</title>
+		<link>/blog/index.php/archives/688/comment-page-1#comment-2169</link>
+
+		<dc:creator><![CDATA[Craig Dunn]]></dc:creator>
+		<pubDate>Sun, 25 Jan 2009 07:56:55 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/688#comment-2169</guid>
+
+					<description><![CDATA[Hey Aaron, nice little example. I added an alternate implementation for the Distance() method that uses the SQL Server 2008 SqlGeography type to my blog...
+
+http://conceptdev.blogspot.com/2009/01/calculating-distance-in-c-with.html
+
+Wouldn&#039;t work in Silverlight - but still an interesting alternative if you wanted to do more complex geospatial calculations.]]></description>
+			<content:encoded><![CDATA[<p>Hey Aaron, nice little example. I added an alternate implementation for the Distance() method that uses the SQL Server 2008 SqlGeography type to my blog&#8230;</p>
+<p><a href="http://conceptdev.blogspot.com/2009/01/calculating-distance-in-c-with.html" rel="nofollow ugc">http://conceptdev.blogspot.com/2009/01/calculating-distance-in-c-with.html</a></p>
+<p>Wouldn&#8217;t work in Silverlight &#8211; but still an interesting alternative if you wanted to do more complex geospatial calculations.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

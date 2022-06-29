@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>EmberJS &#8211; WiredPrairie</title>
+	<atom:link href="/blog/index.php/archives/tag/emberjs/feed" rel="self" type="application/rss+xml" />
+	<link>/blog</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Thu, 05 Jan 2012 01:57:15 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+<site xmlns="com-wordpress:feed-additions:1">193486638</site>	<item>
+		<title>Creating a simple Entity Reference system for Ember.js</title>
+		<link>/blog/index.php/archives/1345</link>
+					<comments>/blog/index.php/archives/1345#comments</comments>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Thu, 29 Dec 2011 03:04:46 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[General]]></category>
+		<category><![CDATA[EmberJS]]></category>
+		<category><![CDATA[SproutCore]]></category>
+		<guid isPermaLink="false">/blog/?p=1345</guid>
+
+					<description><![CDATA[I had some data stored in a structure similar to this: Nothing too fancy. A table of Gift(s) and a table of Person(s). Each gift had a foreign key relationship to a Person (the person who “gave” the gift). Since some people may give several gifts, I didn’t want to load the same data multiple [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I had some data stored in a structure similar to this:</p>
+<p><a href="/blog/wp-content/uploads/2011/12/image7.png"><img loading="lazy" style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2011/12/image_thumb7.png" width="391" height="187" /></a></p>
+<p>Nothing too fancy. A table of Gift(s) and a table of Person(s). Each gift had a foreign key relationship to a Person (the person who “gave” the gift). </p>
+<p>Since some people may give several gifts, I didn’t want to load the same data multiple times (each gift shouldn’t have the person’s name for example spelled out). I wanted to build a RESTful web service to return the gifts and persons as independent queries, with the resulting JavaScript objects being very similar to the original data storage in the database.</p>
+<p>Using <a href="http://www.emberjs.com/">Ember.JS</a> I built a small demonstration of <strong>one way</strong> that this could be done. I am aware of the <em>in-progress</em> data library for ember.js on <a href="https://github.com/emberjs/data">github</a>, but it was way more than I wanted (or needed). Furthermore, I found it more far complex than I wanted (and I’m not particularly fond of the syntax it requires). So, I created a simple system that I’ll likely expand upon over time and post here.</p>
+<p>Here’s the very basic demo using handlebars templates (a core feature of Ember.js).</p>
+<pre class="csharpcode"><span class="kwrd">&lt;!</span><span class="html">DOCTYPE</span> <span class="attr">html</span><span class="kwrd">&gt;</span>
+
+<span class="kwrd">&lt;</span><span class="html">html</span><span class="kwrd">&gt;</span>
+<span class="kwrd">&lt;</span><span class="html">head</span><span class="kwrd">&gt;</span>
+    <span class="kwrd">&lt;</span><span class="html">title</span><span class="kwrd">&gt;Demo2-EmberJS</span><span class="kwrd">&lt;/</span><span class="html">title</span><span class="kwrd">&gt;</span>
+<span class="kwrd">&lt;/</span><span class="html">head</span><span class="kwrd">&gt;</span>
+<span class="kwrd">&lt;</span><span class="html">body</span><span class="kwrd">&gt;</span>
+
+    <span class="kwrd">&lt;</span><span class="html">script</span> <span class="attr">type</span><span class="kwrd">=&quot;text/x-handlebars&quot;</span> <span class="attr">data-template-name</span><span class="kwrd">=&quot;gifts&quot;</span><span class="kwrd">&gt;</span>
+      &lt;h1&gt;{{ giftReason }}&lt;/h1&gt;
+      &lt;table&gt;
+          &lt;thead&gt;
+          &lt;tr&gt;
+              &lt;td&gt;Description&lt;/td&gt;
+              &lt;td&gt;Thrill&lt;/td&gt;
+              &lt;td&gt;From&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;/thead&gt;
+          {{#each gifts}}
+          &lt;tr&gt;
+              &lt;td&gt;
+                  {{ name }} 
+              &lt;/td&gt;
+              &lt;td&gt;
+                  {{ excitement }}
+              &lt;/td&gt;
+              &lt;td&gt;
+                  {{ person.fullName }}
+              &lt;/td&gt;
+          &lt;/tr&gt;
+          {{/each}}
+      &lt;/table&gt;
+    <span class="kwrd">&lt;/</span><span class="html">script</span><span class="kwrd">&gt;</span>
+
+    &lt;script src=<span class="str">&quot;demo2/jquery-1.7.1.js&quot;</span> type=<span class="str">&quot;text/javascript&quot;</span>&gt;&lt;/script&gt;
+    &lt;script src=<span class="str">&quot;demo2/ember-0.9.3.js&quot;</span> type=<span class="str">&quot;text/javascript&quot;</span>&gt;&lt;/script&gt;
+    &lt;script src=<span class="str">&quot;demo2/app.js&quot;</span> type=<span class="str">&quot;text/javascript&quot;</span>&gt;<span class="kwrd">&lt;/</span><span class="html">script</span><span class="kwrd">&gt;</span>
+<span class="kwrd">&lt;/</span><span class="html">body</span><span class="kwrd">&gt;</span>
+<span class="kwrd">&lt;/</span><span class="html">html</span><span class="kwrd">&gt;</span></pre>
+<style type="text/css">
+.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }</style>
+<p>And here is the content of app.js file referenced above (the other files can be downloaded from the web):</p>
+<pre class="csharpcode"><span class="kwrd">var</span> Demo2App;
+Demo2App = Ember.Application.create();
+window.Demo2App = Demo2App;
+
+<span class="rem">// standard class that has an 'id' property</span>
+<span class="kwrd">var</span> Entity = Ember.Object.extend({
+    id:<span class="kwrd">null</span>
+});
+
+(<span class="kwrd">function</span> () {
+    Ember.entityRef = <span class="kwrd">function</span> (property, type) {
+        <span class="rem">// auto build connection if property is in the form</span>
+        <span class="rem">// of 'typenameID' if type is not specified</span>
+        <span class="kwrd">if</span> (arguments.length === 1 &amp;&amp; property) {
+            <span class="kwrd">var</span> l = property.length;
+            <span class="kwrd">if</span> (l &gt; 2 &amp;&amp; property.substr(l - 2).toLowerCase() === <span class="str">'id'</span>) {
+                type = property.substr(0, l - 2);
+            } <span class="kwrd">else</span> {
+                <span class="kwrd">throw</span> <span class="kwrd">new</span> Error(<span class="str">&quot;Type not specified, and cannot automatically determine store name. Referenced property name must end with Id.&quot;</span>);
+            }
+        }
+        <span class="kwrd">var</span> fn = <span class="kwrd">new</span> Function(<span class="str">&quot;return Demo2App.Stores.find('&quot;</span> + type + <span class="str">&quot;', this.get('&quot;</span> + property + <span class="str">&quot;')); &quot;</span>);
+        <span class="kwrd">return</span> Ember.computed(fn).property(property);
+    };
+})();
+
+<span class="rem">/*</span>
+<span class="rem"> Class definitions</span>
+<span class="rem"> */</span>
+
+Demo2App.Person = Entity.extend({
+    firstName:<span class="str">''</span>,
+    lastName:<span class="str">''</span>,
+
+    fullName:<span class="kwrd">function</span> () {
+        <span class="kwrd">return</span> <span class="kwrd">this</span>.get(<span class="str">'lastName'</span>) + <span class="str">&quot;, &quot;</span> + <span class="kwrd">this</span>.get(<span class="str">'firstName'</span>);
+    }.property(<span class="str">'firstName'</span>, <span class="str">'lastName'</span>)
+});
+
+
+Demo2App.Gift = Ember.Object.extend({
+    personId:<span class="kwrd">null</span>,
+    person:Ember.entityRef(<span class="str">'personId'</span>)
+});
+
+
+<span class="rem">// build in a data store API</span>
+(<span class="kwrd">function</span> () {
+    <span class="rem">// within a closure, we'll store the current stores</span>
+
+    <span class="kwrd">var</span> stores = {};
+
+    <span class="kwrd">var</span> Store = Ember.Object.extend({
+        name:<span class="kwrd">null</span>,
+        _data:<span class="kwrd">null</span>,
+        add:<span class="kwrd">function</span> (obj) {
+            <span class="kwrd">if</span> (!obj) {
+                <span class="kwrd">return</span>;
+            }
+            <span class="kwrd">if</span> (!obj.id) {
+                <span class="kwrd">return</span>;
+            }
+            <span class="kwrd">this</span>.get(<span class="str">'_data'</span>)[obj.id] = obj;
+        },
+        remove:<span class="kwrd">function</span> (obj) {
+            <span class="kwrd">if</span> (!obj) {
+                <span class="kwrd">return</span>;
+            }
+            <span class="kwrd">if</span> (!obj.id) {
+                <span class="kwrd">return</span>;
+            }
+            <span class="kwrd">var</span> data = <span class="kwrd">this</span>.get(<span class="str">'_data'</span>);
+            delete data[obj.id];
+        },
+
+        find:<span class="kwrd">function</span> (id) {
+            <span class="kwrd">if</span> (!id) {
+                <span class="kwrd">return</span>;
+            }
+            <span class="kwrd">return</span> <span class="kwrd">this</span>.get(<span class="str">'_data'</span>)[id];
+        }
+    });
+
+    Demo2App.Stores = Demo2App.Stores || {};
+
+    Demo2App.Stores.create = <span class="kwrd">function</span> (name, options) {
+        name = name.toLowerCase();
+        <span class="kwrd">var</span> s = Store.create({
+            name:name
+        });
+        s.set(<span class="str">'_data'</span>, {});
+        stores[name] = s;
+        <span class="kwrd">return</span> s;
+    };
+
+    Demo2App.Stores.get = <span class="kwrd">function</span> (name) {
+        name = name.toLowerCase();
+        <span class="kwrd">return</span> stores[name];
+    };
+
+    Demo2App.Stores.remove = <span class="kwrd">function</span> (name) {
+        name = name.toLowerCase();
+        delete stores[name];
+    };
+
+    Demo2App.Stores.clear = <span class="kwrd">function</span> (name) {
+        name = name.toLowerCase();
+        stores[name].set(<span class="str">'_data'</span>, {});
+    };
+
+    Demo2App.Stores.find = <span class="kwrd">function</span> (name, id) {
+        <span class="kwrd">var</span> ds = Demo2App.Stores.get(name);
+        <span class="kwrd">var</span> entity = ds.find(id);
+        <span class="kwrd">if</span> (entity) {
+            <span class="kwrd">return</span> entity;
+        }
+        <span class="kwrd">return</span> <span class="kwrd">null</span>;
+    }
+
+})();
+
+
+<span class="kwrd">var</span> personsDS = Demo2App.Stores.create(<span class="str">'person'</span>);
+personsDS.add(Demo2App.Person.create({
+    id:<span class="str">&quot;123&quot;</span>,
+    firstName:<span class="str">&quot;Aaron&quot;</span>,
+    lastName:<span class="str">&quot;Bourne&quot;</span>
+})
+);
+
+personsDS.add(Demo2App.Person.create({
+    id:<span class="str">&quot;234&quot;</span>,
+    firstName:<span class="str">&quot;Bonnie&quot;</span>,
+    lastName:<span class="str">&quot;Highways&quot;</span>
+})
+);
+
+personsDS.add(Demo2App.Person.create({
+    id:<span class="str">&quot;345&quot;</span>,
+    firstName:<span class="str">&quot;Daddy&quot;</span>,
+    lastName:<span class="str">&quot;Peacebucks&quot;</span>
+})
+);
+
+personsDS.add(Demo2App.Person.create({
+    id:<span class="str">&quot;456&quot;</span>,
+    firstName:<span class="str">&quot;Cotton&quot;</span>,
+    lastName:<span class="str">&quot;Kandi&quot;</span>
+})
+);
+
+
+Demo2App.mainController = Ember.Object.create({
+
+    gifts:Ember.ArrayController.create({
+        content:[],
+
+        newGift:<span class="kwrd">function</span> (details) {
+            <span class="kwrd">var</span> gift = Demo2App.Gift.create(details);
+            <span class="kwrd">this</span>.addObject(gift);
+            <span class="kwrd">return</span> gift;
+        }
+    })
+});
+
+<span class="kwrd">var</span> giftsView = Ember.View.create({
+    templateName:<span class="str">'gifts'</span>,
+    giftsBinding:<span class="str">'Demo2App.mainController.gifts'</span>,
+    giftReason:<span class="str">'Birthday 2011'</span>
+});
+
+<span class="kwrd">var</span> moreGifts = [
+    { name:<span class="str">'Book'</span>, excitement:<span class="str">'3'</span>, personId:<span class="str">'123'</span> },
+    { name:<span class="str">'Shirt'</span>, excitement:<span class="str">'1'</span>, personId:<span class="str">'234'</span>},
+    { name:<span class="str">'Game System'</span>, excitement:<span class="str">'5'</span>, personId:<span class="str">'123'</span>},
+    { name:<span class="str">'Movie'</span>, excitement:<span class="str">'4'</span>, personId:<span class="str">'345'</span>},
+    { name:<span class="str">'Gift Card'</span>, excitement:<span class="str">'3'</span>, personId:<span class="str">'123'</span>},
+    { name:<span class="str">'MP3 Player'</span>, excitement:<span class="str">'3'</span>, personId:<span class="str">'456'</span>},
+    { name:<span class="str">'Tie'</span>, excitement:<span class="str">'1'</span>, personId:<span class="str">'456'</span>},
+    { name:<span class="str">'Candy'</span>, excitement:<span class="str">'3'</span>, personId:<span class="str">'234'</span>},
+    { name:<span class="str">'Coffee'</span>, excitement:<span class="str">'3'</span>, personId:<span class="str">'123'</span>},
+    { name:<span class="str">'Blanket'</span>, excitement:<span class="str">'2'</span>, personId:<span class="str">'456'</span>},
+    { name:<span class="str">'Camera'</span>, excitement:<span class="str">'4'</span>, personId:<span class="str">'234'</span>},
+    { name:<span class="str">'Phone'</span>, excitement:<span class="str">'5'</span>, personId:<span class="str">'234'</span>},
+    { name:<span class="str">'Socks'</span>, excitement:<span class="str">'1'</span>, personId:<span class="str">'123'</span>},
+    { name:<span class="str">'Game'</span>, excitement:<span class="str">'5'</span>, personId:<span class="str">'456'</span>}
+];
+
+<span class="kwrd">var</span> moreGiftsIndex = moreGifts.length;
+
+$(<span class="kwrd">function</span> () {
+
+    <span class="kwrd">function</span> addMoreGifts() {
+        moreGiftsIndex--;
+        <span class="kwrd">if</span> (moreGiftsIndex &gt;= 0) {
+            Demo2App.mainController.gifts.newGift(moreGifts[moreGiftsIndex]);
+        }
+        setTimeout(addMoreGifts, 2000);
+    }
+
+    giftsView.append();
+    addMoreGifts();
+});</pre>
+<p>Here’s a few details about the JavaScript code. #1, it’s got very little in the way of error checking. I’ll add that later. And if you use it, you should add it. :)</p>
+<p>Recall the simple data model with each gift having a foreign key reference to a person. If you look at each Gift, it contains keys that mirror the DB: <strong>name</strong>, <strong>excitement</strong>, and <strong>personId</strong>. All 3 are handled as strings. The Person class has an Id, <strong>lastName</strong>, and <strong>firstName</strong>.</p>
+<p>When creating the Ember Gift class, I made a connection to the Person class using a new function I added called <strong>entityRef</strong>.</p>
+<pre class="csharpcode">Demo2App.Gift = Ember.Object.extend({
+    personId:<span class="kwrd">null</span>,
+    person:Ember.entityRef(<span class="str">'personId'</span>) <span class="rem">// [3]</span> 
+});</pre>
+<style type="text/css">
+.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }</style>
+<style type="text/css">
+.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }</style>
+<p>As you can see on line [3] above, a <strong>person</strong> property is declared not with a value, but as a function. Ember.js includes support for computed properties which, when properly used, return a computed value and can be automatically updated when a dependency is established between the function and the values the computed property requires. Following is the code for the <strong>entityRef </strong>function.</p>
+<pre class="csharpcode">(<span class="kwrd">function</span> () {
+    Ember.entityRef = <span class="kwrd">function</span> (property, type) {
+        <span class="rem">// auto build connection if property is in the form</span>
+        <span class="rem">// of 'typenameID' if type is not specified</span>
+        <span class="kwrd">if</span> (arguments.length === 1 &amp;&amp; property) {   <span class="rem">// [1]</span>
+            <span class="kwrd">var</span> l = property.length;
+            <span class="kwrd">if</span> (l &gt; 2 &amp;&amp; property.substr(l - 2).toLowerCase() === <span class="str">'id'</span>) {
+                type = property.substr(0, l - 2);
+            } <span class="kwrd">else</span> {
+                <span class="kwrd">throw</span> <span class="kwrd">new</span> Error(<span class="str">&quot;Type not specified, and cannot automatically determine store name. Referenced property name must end with Id.&quot;</span>);
+            }
+        }
+        <span class="kwrd">var</span> fn = <span class="kwrd">new</span> Function(<span class="str">&quot;return Demo2App.Stores.find('&quot;</span> + type + <span class="str">&quot;', this.get('&quot;</span> + property + <span class="str">&quot;')); &quot;</span>);
+        <span class="kwrd">return</span> Ember.computed(fn).property(property);
+    };
+})();</pre>
+<style type="text/css">
+.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }</style>
+<style type="text/css">
+.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }</style>
+<p>Thankfully, the entityRef function doesn’t need to do much, and much of what it does is make it easy to make a connection automatically between the local data store and the source property by using a simple naming convention. </p>
+<p>Starting at [1], the code makes a simple attempt at doing an “auto-map” when a type isn’t specified specifically. In this case, when “personId” is passed to the function, it chops the “Id” off and uses “person” as the name of the data store automatically. It <strong>doesn’t validate </strong>the name or anything sophisticated (as I said, it’s light on error checking), but it works when everything is specified correctly. In this case, there’s a “person” data store created in the JavaScript code created a little bit later.</p>
+<pre class="csharpcode"><span class="kwrd">var</span> personsDS = Demo2App.Stores.create(<span class="str">'person'</span>);</pre>
+<style type="text/css">
+.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }</style>
+<p>Once the data store type name is located, it creates a new function which returns the object by Id stored in the named data store. That function is wrapped in an Ember computed function, and then the dependency on the “personId” is established. Both of these features are core to the Ember JavaScript library (check out the <a href="http://www.emberjs.com/">Ember JavaScript library</a> web site for more information). While they may look a bit strange if you’re not familiar with Ember, trust me, they’re perfectly normal. :)</p>
+<p>The remaining code is standard Ember JavaScript code with the addition of a simple data store object that manages objects by Id. </p>
+<p>Have fun!</p>
+<p>(And if you haven’t transitioned from the earlier SproutCore 2.0 betas to Ember, this code should work with a tiny bit of namespace fixing).</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/blog/index.php/archives/1345/feed</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1345</post-id>	</item>
+	</channel>
+</rss>

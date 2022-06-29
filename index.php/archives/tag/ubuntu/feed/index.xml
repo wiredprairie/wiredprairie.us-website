@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>ubuntu &#8211; WiredPrairie</title>
+	<atom:link href="/blog/index.php/archives/tag/ubuntu/feed" rel="self" type="application/rss+xml" />
+	<link>/blog</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Wed, 23 Nov 2016 13:47:54 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+<site xmlns="com-wordpress:feed-additions:1">193486638</site>	<item>
+		<title>Changing password requirements in Linux Subsystem for Windows (or Bash on Ubuntu on Windows)</title>
+		<link>/blog/index.php/archives/2115</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Wed, 23 Nov 2016 13:47:54 +0000</pubDate>
+				<category><![CDATA[General]]></category>
+		<category><![CDATA[Recommendations]]></category>
+		<category><![CDATA[bash]]></category>
+		<category><![CDATA[ubuntu]]></category>
+		<guid isPermaLink="false">/blog/?p=2115</guid>
+
+					<description><![CDATA[While I understand the reasoning, it&#8217;s a bit annoying needing to set a secondary password in the Bash on Ubuntu on Windows instance. If you&#8217;re on a domain joined computer, or occasionally update your password like you should, there&#8217;s a reasonable chance that the password you use for Bash is different than the one you [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>While I understand the reasoning, it&#8217;s a bit annoying needing to set a secondary password in the Bash on Ubuntu on Windows instance. If you&#8217;re on a domain joined computer, or occasionally update your password like you should, there&#8217;s a reasonable chance that the password you use for Bash is different than the one you use for general access to your PC. In fact, it&#8217;s probably likely.</p>
+<p>Since I have a number of Windows boxes I frequently use, I wanted to create a password that while different from machine to machine, would be easy to remember (and not the same from machine to machine). However, the password I&#8217;d wanted to use didn&#8217;t always meet the default password requirements.</p>
+<p>So, here&#8217;s what I did. From the Bash prompt, I first tried to change the password to see if my new password met the complexity and length requirements. If your password works, there&#8217;s no more to do!</p>
+<pre>$ <strong>passwd</strong></pre>
+<p>Results:</p>
+<pre>(current) UNIX password:
+Enter new UNIX password:
+Retype new UNIX password:
+<strong>You must choose a longer password</strong></pre>
+<p>OK. So, I needed to change the requirements. I used the editor <strong>nano</strong>.</p>
+<pre><strong>$ cd /etc/pam.d/</strong>
+<strong>$ sudo nano common-password</strong></pre>
+<p>To save the file, use <strong>CTRL+O</strong> to write out changes, hit <strong>ENTER</strong>, then <strong>CTRL+X</strong> to Exit.</p>
+<p>Look for the line:</p>
+<pre>password        [success=1 default=ignore]    obscure  pam_unix.so sha512</pre>
+<p>And replace it with (I removed <strong>obscure</strong> and added <strong>minlen=1</strong>):</p>
+<pre>password        [success=1 default=ignore]      pam_unix.so sha512 minlen=1</pre>
+<p>Now, try changing the password again using <strong>passwd</strong>.</p>
+<pre>$ passwd
+Changing password for aaron.
+(current) UNIX password:
+Enter new UNIX password:
+Retype new UNIX password:
+passwd: password updated successfully</pre>
+<p><strong>Done.</strong></p>
+<p>Hopefully I&#8217;ll remember to look here the next time I set up Windows and Bash on Ubuntu on Windows (gee, that&#8217;s a mouthful!). And more importantly, I won&#8217;t encounter this experience again:</p>
+<pre>$ sudo apt-get update
+[sudo] password for aaron:
+Sorry, try again.
+[sudo] password for aaron:
+Sorry, try again.
+[sudo] password for aaron:
+Sorry, try again.
+sudo: 3 incorrect password attempts</pre>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2115</post-id>	</item>
+	</channel>
+</rss>

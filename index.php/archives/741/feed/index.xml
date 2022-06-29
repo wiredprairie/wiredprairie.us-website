@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: How to set Internet Explorer 8 View Source Tool/Editor	</title>
+	<atom:link href="/blog/index.php/archives/741/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/741</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Tue, 16 Nov 2010 15:55:22 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: Nick		</title>
+		<link>/blog/index.php/archives/741/comment-page-1#comment-3207</link>
+
+		<dc:creator><![CDATA[Nick]]></dc:creator>
+		<pubDate>Tue, 16 Nov 2010 15:55:22 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/741#comment-3207</guid>
+
+					<description><![CDATA[Very helpful, this one actually works. I searched a few times a while back and couldn&#039;t find a solution that worked.]]></description>
+			<content:encoded><![CDATA[<p>Very helpful, this one actually works. I searched a few times a while back and couldn&#8217;t find a solution that worked.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: GatoCat		</title>
+		<link>/blog/index.php/archives/741/comment-page-1#comment-3147</link>
+
+		<dc:creator><![CDATA[GatoCat]]></dc:creator>
+		<pubDate>Thu, 23 Sep 2010 15:46:31 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/741#comment-3147</guid>
+
+					<description><![CDATA[Thanks for how to change the editor.]]></description>
+			<content:encoded><![CDATA[<p>Thanks for how to change the editor.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/741/comment-page-1#comment-2341</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Tue, 24 Mar 2009 00:06:21 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/741#comment-2341</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/741/comment-page-1#comment-2340&quot;&gt;Stephen Streufert&lt;/a&gt;.
+
+That one exists on Vista as well -- but I found that it had no impact on Vista when trying to reset it back to the default view.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/741/comment-page-1#comment-2340">Stephen Streufert</a>.</p>
+<p>That one exists on Vista as well &#8212; but I found that it had no impact on Vista when trying to reset it back to the default view.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Stephen Streufert		</title>
+		<link>/blog/index.php/archives/741/comment-page-1#comment-2340</link>
+
+		<dc:creator><![CDATA[Stephen Streufert]]></dc:creator>
+		<pubDate>Mon, 23 Mar 2009 21:19:00 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/741#comment-2340</guid>
+
+					<description><![CDATA[Thanks for the tip; you pointed me in the right direction. However, on my XP Pro system, the Registry key is:
+
+HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\View Source Editor\Editor Name]]></description>
+			<content:encoded><![CDATA[<p>Thanks for the tip; you pointed me in the right direction. However, on my XP Pro system, the Registry key is:</p>
+<p>HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\View Source Editor\Editor Name</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

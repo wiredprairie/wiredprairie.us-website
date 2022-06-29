@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: I need a Jargon-Free Silverlight description/blurb	</title>
+	<atom:link href="/blog/index.php/archives/84/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/84</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Thu, 10 Apr 2008 12:09:10 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/84/comment-page-1#comment-7</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Thu, 10 Apr 2008 12:09:10 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/84#comment-7</guid>
+
+					<description><![CDATA[That&#039;s not a bad idea -- how would you explain a multimedia CD though? :)   (I haven&#039;t encountered one in many years -- but maybe it&#039;s the software I use or business/home environment I&#039;m in ...?)]]></description>
+			<content:encoded><![CDATA[<p>That&#8217;s not a bad idea &#8212; how would you explain a multimedia CD though? :)   (I haven&#8217;t encountered one in many years &#8212; but maybe it&#8217;s the software I use or business/home environment I&#8217;m in &#8230;?)</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Rodrigo Ratan		</title>
+		<link>/blog/index.php/archives/84/comment-page-1#comment-6</link>
+
+		<dc:creator><![CDATA[Rodrigo Ratan]]></dc:creator>
+		<pubDate>Thu, 10 Apr 2008 03:51:20 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/84#comment-6</guid>
+
+					<description><![CDATA[Aaron, try to say that it&#039;s similar technologies used to make those multimedia CD&#039;s, I used this to explain Flash back in 97 :)]]></description>
+			<content:encoded><![CDATA[<p>Aaron, try to say that it&#8217;s similar technologies used to make those multimedia CD&#8217;s, I used this to explain Flash back in 97 :)</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

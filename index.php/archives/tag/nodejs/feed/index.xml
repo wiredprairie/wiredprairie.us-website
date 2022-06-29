@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>NodeJs &#8211; WiredPrairie</title>
+	<atom:link href="/blog/index.php/archives/tag/nodejs/feed" rel="self" type="application/rss+xml" />
+	<link>/blog</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Wed, 29 Jun 2022 15:21:02 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+<site xmlns="com-wordpress:feed-additions:1">193486638</site>	<item>
+		<title>How to list all dependents of a Node package</title>
+		<link>/blog/index.php/archives/1990</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sat, 07 Dec 2013 02:44:34 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[Node]]></category>
+		<category><![CDATA[NodeJs]]></category>
+		<category><![CDATA[npm]]></category>
+		<guid isPermaLink="false">/blog/?p=1990</guid>
+
+					<description><![CDATA[You can use the web npm web site as it lists the dependents for any given package. Like coffee-script for example: http://npmjs.org/browse/depended/coffee-script Or, you could get JSON results for the same query (using curl) (just substitute the name of the package with &#34;sql&#34; in the example: &#62; curl -g 'http://registry.npmjs.org/-/_view/dependedUpon?group_level=2&#38;startkey=[&#34;sql&#34;]&#38;endkey=[&#34;sql&#34;,&#34;ZZZZZZZZZZZZZ&#34;]&#38;skip=0&#38;limit=1000' Results: {&#34;rows&#34;:[ {&#34;key&#34;:[&#34;sql&#34;,&#34;anydb-sql&#34;],&#34;value&#34;:1}, {&#34;key&#34;:[&#34;sql&#34;,&#34;dbal&#34;],&#34;value&#34;:1}, {&#34;key&#34;:[&#34;sql&#34;,&#34;ectypes-downstairs&#34;],&#34;value&#34;:1}, [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>You can use the web npm web site as it lists the dependents for any given package. </p>
+<p>Like coffee-script for example:</p>
+<pre><code>http://npmjs.org/browse/depended/coffee-script</code></pre>
+<p>Or, you could get JSON results for the same query (using <code>curl</code>) (just substitute the name of the package with &quot;sql&quot; in the example:</p>
+<pre><code>&gt; curl -g 'http://registry.npmjs.org/-/_view/dependedUpon?group_level=2&amp;startkey=[&quot;sql&quot;]&amp;endkey=[&quot;sql&quot;,&quot;ZZZZZZZZZZZZZ&quot;]&amp;skip=0&amp;limit=1000'</code></pre>
+<p>Results:</p>
+<pre><code>{&quot;rows&quot;:[
+{&quot;key&quot;:[&quot;sql&quot;,&quot;anydb-sql&quot;],&quot;value&quot;:1},
+{&quot;key&quot;:[&quot;sql&quot;,&quot;dbal&quot;],&quot;value&quot;:1},
+{&quot;key&quot;:[&quot;sql&quot;,&quot;ectypes-downstairs&quot;],&quot;value&quot;:1},
+{&quot;key&quot;:[&quot;sql&quot;,&quot;fixr&quot;],&quot;value&quot;:1},
+{&quot;key&quot;:[&quot;sql&quot;,&quot;fixr-compiled&quot;],&quot;value&quot;:1},
+{&quot;key&quot;:[&quot;sql&quot;,&quot;forerunner-postgres-store&quot;],&quot;value&quot;:1}
+{&quot;key&quot;:[&quot;sql&quot;,&quot;pg-dal&quot;],&quot;value&quot;:1},
+{&quot;key&quot;:[&quot;sql&quot;,&quot;relational&quot;],&quot;value&quot;:1},
+{&quot;key&quot;:[&quot;sql&quot;,&quot;sequelize&quot;],&quot;value&quot;:1},
+{&quot;key&quot;:[&quot;sql&quot;,&quot;sql-generate&quot;],&quot;value&quot;:1},
+{&quot;key&quot;:[&quot;sql&quot;,&quot;sqlbox&quot;],&quot;value&quot;:1},
+{&quot;key&quot;:[&quot;sql&quot;,&quot;triplie&quot;],&quot;value&quot;:1},
+{&quot;key&quot;:[&quot;sql&quot;,&quot;voltron-postgres-adapter&quot;],&quot;value&quot;:1},
+{&quot;key&quot;:[&quot;sql&quot;,&quot;worm&quot;],&quot;value&quot;:1}
+]}</code></pre>
+<p>The second value in the key array is the name of the package dependent on the <code>sql</code> package.</p>
+<p>This of course only will find other published packages, and doesn&#8217;t help find applications, etc. that are using a specific package.</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1990</post-id>	</item>
+		<item>
+		<title>Loading Models in NodeJS</title>
+		<link>/blog/index.php/archives/1974</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Mon, 02 Dec 2013 13:40:07 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[Node]]></category>
+		<category><![CDATA[NodeJs]]></category>
+		<category><![CDATA[npm]]></category>
+		<guid isPermaLink="false">/blog/?p=1974</guid>
+
+					<description><![CDATA[I’d answered a question on StackOverflow about where to put “models” in a NodeJS project. I wanted to elaborate on the simple auto loader I use to load a folder full of models (and I use this pattern other places as well). Normally, I create a folder called models: Inside the Models folder, I have [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I’d <a href="http://stackoverflow.com/a/20327684/95190" target="_blank">answered a question</a> on StackOverflow about where to put “models” in a NodeJS project. I wanted to elaborate on the simple auto loader I use to load a folder full of models (and I use this pattern other places as well). Normally, I create a folder called <strong>models</strong>:</p>
+<p><a href="/blog/wp-content/uploads/2013/12/image.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wp-content/uploads/2013/12/image_thumb.png" width="182" height="293" /></a></p>
+<p>Inside the Models folder, I have a file called, <strong>models.js</strong>. </p>
+<p>Inside another module (like <strong>app.js</strong>), I’ve got a line of code that looks like this:</p>
+<pre class="csharpcode">
+<span class="kwrd">var</span> models = require(<span class="str">'./models'</span>).initialize(app, services);</pre>
+<style type="text/css">
+.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }</style>
+<style type="text/css">
+.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }</style>
+<p>While the <strong>require</strong> (<a href="http://nodejs.org/api/all.html#all_require" target="_blank">reference</a>) by default looks for a file called <strong>index.js</strong> in the folder <strong>models</strong>, I’ve in this case added a simple <strong>package.json </strong>file with an override:</p>
+<pre class="csharpcode">{
+    <span class="str">&quot;main&quot;</span>: <span class="str">&quot;./models.js&quot;</span>
+}</pre>
+<style type="text/css">
+.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }</style>
+<p>The reason I do this is that in a tabbed source code editor, having several <strong>index.js</strong> files can be confusing to see. So, this allows me to name the file something that is more memorable and understandable at a glance. </p>
+<p>Inside of the <strong>models.js</strong> class, I’ve written code to automatically load all of the models (and call an <strong>initialize </strong>function once for each module):</p>
+<pre class="csharpcode"><span class="kwrd">var</span> initialize = <span class="kwrd">function</span>(app, services) {
+    <span class="kwrd">var</span> models = {};
+    <span class="kwrd">var</span> currentFile = path.basename(__filename); <span class="rem">// just file name</span>
+    <span class="kwrd">var</span> modelFiles = fs.readdirSync(__dirname);
+    <span class="rem">// loop through all of the files in the current directory</span>
+    <span class="kwrd">for</span>(<span class="kwrd">var</span> i= 0, len = modelFiles.length; i &lt; len; i++) {
+        <span class="rem">// ignore this file (via global NodeJS variable)</span>
+        <span class="kwrd">if</span>(modelFiles[i] === currentFile ||
+            path.extname(modelFiles[i]).toLowerCase() !== <span class="str">'.js'</span>) {
+            <span class="kwrd">continue</span>;  <span class="rem">// skip the current file and anything without a &quot;JS&quot; extension</span>
+        }
+        <span class="rem">// require it</span>
+        <span class="kwrd">var</span> model = require(path.join(__dirname, modelFiles[i]));
+        <span class="rem">// call its intialize</span>
+        model.initialize(services, models);
+    }
+    exports.models = models;
+    <span class="kwrd">return</span> models;
+};
+
+exports.initialize = initialize;</pre>
+<style type="text/css">
+.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }</style>
+<style type="text/css">
+.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }</style>
+<p>The logic is simple enough – grab all of the files in the current path, then loop through each, filtering the current file and any that don’t end with “js”. This logic could be adjusted of course to reflect other coding styles and requirements.</p>
+<p>Finally, each module is loaded and then an initialize method is called (admittedly, I could make it more robust by checking for the existence of the <strong>initialize</strong> function before calling it (but in this case, I know each module should be initialized in a particular way).</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1974</post-id>	</item>
+		<item>
+		<title>Sending a socket to a forked process in Node.JS</title>
+		<link>/blog/index.php/archives/1930</link>
+					<comments>/blog/index.php/archives/1930#comments</comments>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Wed, 28 Aug 2013 01:21:00 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[JavaScript]]></category>
+		<category><![CDATA[NodeJs]]></category>
+		<guid isPermaLink="false">/blog/?p=1930</guid>
+
+					<description><![CDATA[If you want to fork a process in Node and pass a socket, the current Node documentation has a rather odd example, so I’ve simplified it here for my own sanity (further complicated by the fact that the WebStorm debugger can’t debug a forked Node.JS process, which confused me for too long). Hopefully someone else [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>If you want to fork a process in Node and pass a socket, the current Node documentation has a rather odd example, so I’ve simplified it here for my own sanity (further complicated by the fact that the WebStorm debugger can’t debug a forked Node.JS process, which confused me for too long). Hopefully someone else finds this useful at some point.</p>
+
+
+
+<p>Step 1, in a file called <strong>app.js:</strong></p>
+
+
+
+<pre class="wp-block-preformatted"><span class="kwrd">var</span> child = require(<span class="str">'child_process'</span>).fork(<span class="str">'socket_handler.js'</span>);
+
+<span class="rem">// Open up the server and send sockets to child</span>
+<span class="kwrd">var</span> server = require(<span class="str">'net'</span>).createServer();
+
+server.on(<span class="str">'connection'</span>, <span class="kwrd">function</span> (socket) {
+    child.send(<span class="str">'socket'</span>, socket);
+    server.getConnections(<span class="kwrd">function</span>(err, count) {
+        console.log(<span class="str">"Connections: "</span> + count);
+    });
+});
+server.listen(1337);
+<style type="text/css">br /> margin: 0em;&amp;amp;amp;lt;br /> }&amp;amp;amp;lt;br /> .csharpcode .lnum { color: #606060; }</style>
+And then, in a file called <strong>socket_handler</strong>.<strong>js</strong> which is located in the same directory as <strong>app.js:</strong></pre>
+
+
+
+<pre class="wp-block-preformatted">process.on(<span class="str">'message'</span>, <span class="kwrd">function</span>(message, socket) {
+    socket.on(<span class="str">'data'</span>, <span class="kwrd">function</span>(data) {
+        <span class="rem">// really poor echo ... :)</span>
+        socket.write(data);
+    });
+});</pre>
+
+
+
+<p>In this case, the fork happens upon application startup by calling the <strong>fork</strong> method of the <strong>child_process</strong> module. It starts by executing the code in <strong>socket_handler</strong>.<strong>js</strong>. As this is a new instance of the V8 engine used by Node.JS, remember there’s a sizable overhead to a forked process.</p>
+
+
+
+<p>After creating the server and listening on port 1337, when a connection is made (which can be tested by a terminal emulator or telnet), the socket is passed to the forked process. In fact, it’s not really the object as much as it’s the handle to the new socket.</p>
+
+
+
+<p>The <strong>send</strong> method takes two parameters, a string message which can be any identifier you want, and the the handle, or socket in this case.</p>
+
+
+
+<p>The forked process receives the message via the <strong>message</strong> event on the process. If you’re sending more than one message, you can add conditional logic to handle the type of message in the event handler. As part of the call to <strong>fork</strong>, you can also pass command line arguments and read them using <strong>process</strong>.<strong>argv</strong>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/blog/index.php/archives/1930/feed</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1930</post-id>	</item>
+		<item>
+		<title>Simple Node based Http Put simulator</title>
+		<link>/blog/index.php/archives/1693</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Tue, 31 Jul 2012 12:29:50 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[C#]]></category>
+		<category><![CDATA[ExpressJs]]></category>
+		<category><![CDATA[HttpPut]]></category>
+		<category><![CDATA[NodeJs]]></category>
+		<guid isPermaLink="false">/blog/?p=1693</guid>
+
+					<description><![CDATA[It’s great what you can accomplish in a few lines of code. The Node based source code below uses express to create a mini view-based web server along with a mock Http Put file upload destination. /** * Module dependencies. */var express = require('express') , routes = require('./routes') , http = require('http') , path = [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>It’s great what you can accomplish in a few lines of code. The <a href="http://nodejs.org/" target="_blank">Node</a> based source code below uses <a href="http://expressjs.com/" target="_blank">express</a> to create a mini view-based web server along with a mock Http Put file upload destination. </p>
+<div style="border-bottom: silver 1px solid; text-align: left; border-left: silver 1px solid; padding-bottom: 4px; line-height: 12pt; background-color: #f4f4f4; margin: 20px 0px 10px; padding-left: 4px; width: 97.5%; padding-right: 4px; font-family: consolas, &#39;Courier New&#39;, courier, monospace; direction: ltr; font-size: 8pt; overflow: auto; border-top: silver 1px solid; cursor: text; border-right: silver 1px solid; padding-top: 4px" id="codeSnippetWrapper">
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: #f4f4f4; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: consolas, &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px" id="codeSnippet"><br /><span style="color: #008000">/**</span><br /><span style="color: #008000"> * Module dependencies.</span><br /><span style="color: #008000"> */</span><br /><br />var express = require(<span style="color: #006080">'express'</span>)<br />  , routes = require(<span style="color: #006080">'./routes'</span>)<br />  , http = require(<span style="color: #006080">'http'</span>)<br />  , path = require(<span style="color: #006080">'path'</span>);<br /><br />var app = express();<br /><br />app.configure(function(){<br />  app.set(<span style="color: #006080">'port'</span>, process.env.PORT || 8080);<br />  app.set(<span style="color: #006080">'views'</span>, __dirname + <span style="color: #006080">'/views'</span>);<br />  app.set(<span style="color: #006080">'view engine'</span>, <span style="color: #006080">'jade'</span>);<br />  app.use(express.favicon());<br />  app.use(express.logger(<span style="color: #006080">'dev'</span>));<br />  app.use(express.bodyParser());<br />  app.use(express.methodOverride());<br />  app.use(app.router);<br />  app.use(express.<span style="color: #0000ff">static</span>(path.join(__dirname, <span style="color: #006080">'public'</span>)));<br />});<br /><br />app.put(<span style="color: #006080">'/upload/:fileUpload'</span>, function(req, res, next){<br />    console.log(<span style="color: #006080">'uploading!'</span>);<br />    res.send(<span style="color: #006080">'OK'</span>, { <span style="color: #006080">'Content-Type'</span>: <span style="color: #006080">'text/plain'</span> }, 200);<br />});<br /><br />app.configure(<span style="color: #006080">'development'</span>, function(){<br />  app.use(express.errorHandler());<br />});<br /><br />app.get(<span style="color: #006080">'/'</span>, routes.index);<br /><br />http.createServer(app).listen(app.get(<span style="color: #006080">'port'</span>), function(){<br />  console.log(<span style="color: #006080">&quot;Express server listening on port &quot;</span> + app.get(<span style="color: #006080">'port'</span>));<br />});<br /></pre>
+<p></div>
+<p>Using <a href="http://www.jetbrains.com/webstorm/" target="_blank">WebStorm</a>’s Node/Express template, I only added 4 lines:</p>
+<div style="border-bottom: silver 1px solid; text-align: left; border-left: silver 1px solid; padding-bottom: 4px; line-height: 12pt; background-color: #f4f4f4; margin: 20px 0px 10px; padding-left: 4px; width: 97.5%; padding-right: 4px; font-family: consolas,&#39;Courier New&#39;, courier, monospace; direction: ltr; font-size: 8pt; overflow: auto; border-top: silver 1px solid; cursor: text; border-right: silver 1px solid; padding-top: 4px" id="codeSnippetWrapper">
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: #f4f4f4; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: consolas, &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px" id="codeSnippet">app.put(<span style="color: #006080">'/upload/:fileUpload'</span>, function(req, res, next){<br />    console.log(<span style="color: #006080">'uploading!'</span>);    <br />    res.send(<span style="color: #006080">'OK'</span>, { <span style="color: #006080">'Content-Type'</span>: <span style="color: #006080">'text/plain'</span> }, 200);<br />});<br /></pre>
+<p></div>
+<p>These 4 lines added a new route/path for uploading a file in the pattern of /upload/ {fileName}.</p>
+<p>The response was “OK.” </p>
+<p>I’d tried this same thing using ASP.NET MVC 4 (with Razor), but was stumped by the error when trying to use HttpPut on an Action in the controller.</p>
+<p>I was using this end-point as a mock-upload destination for my SmugMug application, <a href="http://www.wiredprairie.us/SnugUp/" target="_blank">SnugUp</a>. I wanted to eliminate the uploading process as it’s time consuming and messes up my SmugMug galleries! <img style="border-bottom-style: none; border-left-style: none; border-top-style: none; border-right-style: none" class="wlEmoticon wlEmoticon-smile" alt="Smile" src="/blog/wp-content/uploads/2012/07/wlEmoticon-smile.png" /></p>
+<p>The C# code is simple as it uses HttpWebRequest:</p>
+<div style="border-bottom: silver 1px solid; text-align: left; border-left: silver 1px solid; padding-bottom: 4px; line-height: 12pt; background-color: #f4f4f4; margin: 20px 0px 10px; padding-left: 4px; width: 97.5%; padding-right: 4px; font-family: consolas, &#39;Courier New&#39;, courier, monospace; direction: ltr; font-size: 8pt; overflow: auto; border-top: silver 1px solid; cursor: text; border-right: silver 1px solid; padding-top: 4px" id="codeSnippetWrapper">
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: #f4f4f4; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: consolas, &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px" id="codeSnippet">HttpWebRequest uploadRequest = (HttpWebRequest)WebRequest.Create(ApplicationConstants.UploadUrl + <span style="color: #006080">&quot;photo.jpg&quot;</span>);<br /><br />uploadRequest.Timeout = (<span style="color: #0000ff">int</span>)10080 * 60 * 1000; <span style="color: #008000">// 7 days </span><br />uploadRequest.Method = <span style="color: #006080">&quot;PUT&quot;</span>;<br />uploadRequest.UserAgent = ApplicationConstants.UserAgent;<br />uploadRequest.ContentLength = fi.Length;<br />uploadRequest.KeepAlive = <span style="color: #0000ff">true</span>;</pre>
+<p></div>
+<p>(SmugMug grabs the file name from a custom Http Header, so, the put URL is always “photo.jpg”.)</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1693</post-id>	</item>
+	</channel>
+</rss>

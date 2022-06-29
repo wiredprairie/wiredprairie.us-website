@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>Protocol &#8211; WiredPrairie</title>
+	<atom:link href="/blog/index.php/archives/tag/protocol/feed" rel="self" type="application/rss+xml" />
+	<link>/blog</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Wed, 29 Jun 2022 16:00:40 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+<site xmlns="com-wordpress:feed-additions:1">193486638</site>	<item>
+		<title>Nest Thermostat API/Protocol</title>
+		<link>/blog/index.php/archives/1442</link>
+					<comments>/blog/index.php/archives/1442#comments</comments>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sun, 08 Jan 2012 17:21:05 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[General]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[Nest]]></category>
+		<category><![CDATA[Protocol]]></category>
+		<category><![CDATA[Thermostat]]></category>
+		<guid isPermaLink="false">/blog/?p=1442</guid>
+
+					<description><![CDATA[While Nest Labs hasn’t released a formal (documented &#38; supported) API, I thought I’d do a bit of digging to see how they’re using the network and what might be achievable. A few things are going on, the majority as you’d probably expect. The web interface is using a long polling technique apparently to watch [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>While Nest Labs hasn’t released a formal (documented &amp; supported) API, I thought I’d do a bit of digging to see how they’re using the network and what might be achievable.</p>
+<p>A few things are going on, the majority as you’d probably expect.</p>
+<p>The web interface is using a long polling technique apparently to watch for updates to the schedule, temperature, etc.</p>
+<p><a href="/blog/wp-content/uploads/2012/01/image7.png"><img loading="lazy" style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-width: 0px;" title="image" src="/blog/wp-content/uploads/2012/01/image_thumb7.png" alt="image" width="381" height="225" border="0"/></a></p>
+<p>I haven’t determined what the frequency is though, or the wait time. It’s very inconsistent, even when I wouldn’t expect much new “live” data to be available on the network, it frequently updates and polls again.</p>
+<p>There are a few constants set in the HOME page script:</p>
+<pre class="csharpcode">C.ABSENT_USER_THRESHOLD     = +(<span class="str">'300'</span>) || 0;  <span class="rem">// seconds</span>
+C.DEAD_DEVICE_THRESHOLD     = +(<span class="str">'300'</span>) || 0;  <span class="rem">// seconds</span>
+C.pollingInterval           = +(<span class="str">'2500'</span>) || 0;       <span class="rem">// ms</span>
+C.WEATHER_POLLING_INTERVAL  = +(<span class="str">'120000'</span>) || 0; <span class="rem">// ms</span></pre>
+<p>&nbsp;</p>
+<p>If the C.pollingInterval value were for the subscribe endpoint mentioned above, I’d see a LOT more calls than I do – so I’m still not clear how the polling interval is decided.</p>
+<p>The API calls, for the most part are using JSONP syntax over an HTTPS connection.</p>
+<p>The most frequent request is to “subscribe.” It sends as part of the GET request a large block of encoded JSON (using encodeURIComponent and then JSON.stringify).</p>
+<p>I&#8217;m not familiar with the key/value system that they’re using (it may just be something they’ve constructed in-house – although given the number of <a href="/blog/index.php/archives/1397">open source JavaScript</a> libraries they’re using, I thought someone might recognize it):</p>
+<p>“<strong>key</strong>”, “{<strong>actualkey</strong>}.{<strong>value</strong>}”</p>
+<p>I don’t understand why they’ve redundantly specified “key” in a list of keys when it’s evident that the <em>actual key </em>is contained within the value as a delimited string. It’s more data to send and more data to parse this way. So, again, maybe it’s based on some DB or model system I’m not familiar with. (Anyone recognize it?)</p>
+<p>I’ve substituted the actual values (as they are serial numbers of my devices) with text representations of what the value represented below:</p>
+<pre class="csharpcode">{<span class="str">"keys"</span>:
+    [{<span class="str">"key"</span>:<span class="str">"user.#USERID#"</span>,
+        <span class="str">"version"</span>:209478897,<span class="str">"timestamp"</span>:1324159145000},
+    {<span class="str">"key"</span>:<span class="str">"user_alert_dialog.#USERID#"</span>,
+        <span class="str">"version"</span>:-1320296685,<span class="str">"timestamp"</span>:1325967612000},
+    {<span class="str">"key"</span>:<span class="str">"structure.#STRUCTURE-GUID#"</span>,
+        <span class="str">"version"</span>:656192675,<span class="str">"timestamp"</span>:1325967612000},
+    {<span class="str">"key"</span>:<span class="str">"device.#DEVICE 1 SERIAL NUMBER#"</span>,
+        <span class="str">"version"</span>:1485027516,<span class="str">"timestamp"</span>:1326034984000},
+    {<span class="str">"key"</span>:<span class="str">"shared.#DEVICE 1 SERIAL NUMBER#"</span>,
+        <span class="str">"version"</span>:588844038,<span class="str">"timestamp"</span>:1326034818000},
+    {<span class="str">"key"</span>:<span class="str">"schedule.#DEVICE 1 SERIAL NUMBER#"</span>,
+        <span class="str">"version"</span>:1187107985,<span class="str">"timestamp"</span>:1326005677000},
+    {<span class="str">"key"</span>:<span class="str">"track.#DEVICE 1 SERIAL NUMBER#"</span>,
+        <span class="str">"timestamp"</span>:1326035650601,<span class="str">"version"</span>:1041047847},
+    {<span class="str">"key"</span>:<span class="str">"device.#DEVICE 2 SERIAL NUMBER#"</span>,
+        <span class="str">"version"</span>:149169270,<span class="str">"timestamp"</span>:1326034820000},
+    {<span class="str">"key"</span>:<span class="str">"shared.#DEVICE 2 SERIAL NUMBER#"</span>,
+        <span class="str">"version"</span>:659841570,<span class="str">"timestamp"</span>:1326034820000},
+    {<span class="str">"key"</span>:<span class="str">"schedule.#DEVICE 2 SERIAL NUMBER#"</span>,
+        <span class="str">"version"</span>:-2016290692,<span class="str">"timestamp"</span>:1326005625000},
+    {<span class="str">"key"</span>:<span class="str">"track.#DEVICE 2 SERIAL NUMBER#"</span>,
+        <span class="str">"timestamp"</span>:1326035650862,<span class="str">"version"</span>:528978433},
+    {<span class="str">"key"</span>:<span class="str">"device.#DEVICE 3 SERIAL NUMBER#"</span>,
+        <span class="str">"version"</span>:1637112547,<span class="str">"timestamp"</span>:1326035399000},
+    {<span class="str">"key"</span>:<span class="str">"shared.#DEVICE 3 SERIAL NUMBER#"</span>,
+        <span class="str">"version"</span>:760504326,<span class="str">"timestamp"</span>:1326035397000},
+    {<span class="str">"key"</span>:<span class="str">"schedule.#DEVICE 3 SERIAL NUMBER#"</span>,
+        <span class="str">"version"</span>:-314552357,<span class="str">"timestamp"</span>:1326003402000},
+    {<span class="str">"key"</span>:<span class="str">"track.#DEVICE 3 SERIAL NUMBER#"</span>,
+        <span class="str">"version"</span>:-645931164,<span class="str">"timestamp"</span>:1326035531802}]}"</pre>
+<p>We’ve got three thermostats, so there are always three sets of subscription requests for each call to <strong>subscribe.</strong></p>
+<p>Using my iPad, I adjusted the set point for our second story (#DEVICE 2#) down one degree Fahrenheit (to 67°).</p>
+<p>Within approximately a second, the most recent pending <strong>subscribe</strong> request returned with a far more interesting payload:</p>
+<pre class="csharpcode">jQuery17108417355176061392_1326035646750(
+    { <span class="str">"status"</span>: 200,
+        <span class="str">"headers"</span>: {
+            <span class="str">"X-nl-skv-key"</span>: <span class="str">"shared.#DEVICE 2 SERIAL NUMBER#"</span>,
+            <span class="str">"X-nl-skv-version"</span>: 869022424,
+            <span class="str">"X-nl-skv-timestamp"</span>: 1326038279000,
+            <span class="str">"X-nl-service-timestamp"</span>: 1326038279825
+        },
+        <span class="str">"payload"</span>: {
+            <span class="str">"current_temperature"</span>: 19.98,
+            <span class="str">"hvac_fan_state"</span>: <span class="kwrd">false</span>,
+            <span class="str">"name"</span>: <span class="str">"TWO"</span>, <span class="str">"hvac_heat_x2_state"</span>: <span class="kwrd">false</span>,
+            <span class="str">"hvac_ac_state"</span>: <span class="kwrd">false</span>,
+            <span class="str">"can_cool"</span>: <span class="kwrd">true</span>,
+            <span class="str">"auto_away"</span>: 0,
+            <span class="str">"compressor_lockout_enabled"</span>: <span class="kwrd">false</span>,
+            <span class="str">"target_temperature_low"</span>: 16.66667,
+            <span class="str">"target_temperature_high"</span>: 26.66667,
+            <span class="str">"compressor_lockout_timeout"</span>: 0,
+            <span class="str">"hvac_heater_state"</span>: <span class="kwrd">false</span>,
+            <span class="str">"hvac_aux_heater_state"</span>: <span class="kwrd">false</span>,
+            <span class="str">"target_temperature"</span>: 19.44444,
+            <span class="str">"can_heat"</span>: <span class="kwrd">true</span>,
+            <span class="str">"target_temperature_type"</span>: <span class="str">"heat"</span>,
+            <span class="str">"target_change_pending"</span>: <span class="kwrd">true</span>
+        }
+    });</pre>
+<p>Everything above is needed to update the current state of the UI. As you can see, the current temperature (returned as Celsius apparently) is 19.98 (67.964°F). The current temperature as displayed on the thermostat and the web UI was 68.</p>
+<p><em>Seeing these return values makes me think that they may be using Ruby and Rails (as the naming convention tends to follow Rails naming using underscores between words). I know for example, I wouldn’t name variables/columns that way when building a C#/JavaScript MVC project.</em></p>
+<p><span style="color: #333333;">Rather than just a delta payload of what’s changed, they’ve currently opted for a full update of all information related to the thermostat state. </span></p>
+<p><span style="color: #333333;">Several seconds later, a much larger payload was returned to a <strong>subscribe </strong>request:</span></p>
+<pre class="csharpcode"><span class="str">"status"</span>: 200,
+<span class="str">"headers"</span>: {
+    <span class="str">"X-nl-skv-key"</span>: <span class="str">"device.#DEVICE 2 SERIAL NUMBER#"</span>,
+    <span class="str">"X-nl-skv-version"</span>: -2086438581,
+    <span class="str">"X-nl-skv-timestamp"</span>: 1326038378000,
+    <span class="str">"X-nl-service-timestamp"</span>: 1326038379023
+},
+<span class="str">"payload"</span>: {
+    <span class="str">"ob_orientation"</span>: <span class="str">"O"</span>,
+    <span class="str">"upper_safety_temp"</span>: 1000.0,
+    <span class="str">"forced_air"</span>: <span class="kwrd">true</span>,
+    <span class="str">"creation_time"</span>: 1324142042019,
+    <span class="str">"switch_preconditioning_control"</span>: <span class="kwrd">false</span>,
+    <span class="str">"click_sound"</span>: <span class="str">"on"</span>,
+    <span class="str">"leaf"</span>: <span class="kwrd">false</span>, <span class="str">"user_brightness"</span>: <span class="str">"auto"</span>,
+    <span class="str">"learning_state"</span>: <span class="str">"steady"</span>,
+    <span class="str">"heat_pump_comp_threshold"</span>: -1000.0,
+    <span class="str">"local_ip"</span>: <span class="str">"10.0.0.205"</span>,
+    <span class="str">"backplate_serial_number"</span>: <span class="str">"#SHOULD BE DEVICE 2 SERIAL NUMBER, BUT ISN'T?#"</span>,
+    <span class="str">"capability_level"</span>: 1.03,
+    <span class="str">"postal_code"</span>: <span class="str">"#POSTALCODE#"</span>,
+    <span class="str">"upper_safety_temp_enabled"</span>: <span class="kwrd">false</span>,
+    <span class="str">"heat_pump_aux_threshold"</span>: 10.0,
+    <span class="str">"lower_safety_temp_enabled"</span>: <span class="kwrd">true</span>,
+    <span class="str">"serial_number"</span>: <span class="str">"#DEVICE 2 SERIAL NUMBER#"</span>,
+    <span class="str">"temperature_lock"</span>: <span class="kwrd">false</span>,
+    <span class="str">"learning_time"</span>: 1002,
+    <span class="str">"current_version"</span>: <span class="str">"1.0.4"</span>,
+    <span class="str">"model_version"</span>: <span class="str">"Diamond-1.10"</span>,
+    <span class="str">"backplate_bsl_info"</span>: <span class="str">"BSL"</span>,
+    <span class="str">"auto_away_enable"</span>: <span class="kwrd">true</span>,
+    <span class="str">"heat_pump_comp_threshold_enabled"</span>: <span class="kwrd">false</span>,
+    <span class="str">"fan_mode"</span>: <span class="str">"auto"</span>,
+    <span class="str">"range_enable"</span>: <span class="kwrd">false</span>,
+    <span class="str">"temperature_scale"</span>: <span class="str">"F"</span>,
+    <span class="str">"backplate_mono_info"</span>: <span class="str">"TFE (BP_DVT) 3.5.2 (ehs@ubuntu) 2011-11-05 12:00:00"</span>,
+    <span class="str">"backplate_bsl_version"</span>: <span class="str">"1.1"</span>,
+    <span class="str">"equipment_type"</span>: <span class="str">"gas"</span>,
+    <span class="str">"range_mode"</span>: <span class="kwrd">false</span>,
+    <span class="str">"lower_safety_temp"</span>: 7.0,
+    <span class="str">"has_fan"</span>: <span class="kwrd">true</span>,
+    <span class="str">"hvac_wires"</span>: <span class="str">"Heat,Cool,Fan,Common Wire,Rc"</span>,
+    <span class="str">"learning_mode"</span>: <span class="kwrd">true</span>,
+    <span class="str">"away_temperature_high"</span>: 32.0,
+    <span class="str">"switch_system_off"</span>: <span class="kwrd">false</span>,
+    <span class="str">"time_to_target"</span>: 1326039444,
+    <span class="str">"away_temperature_low"</span>: 14.444444444444445,
+    <span class="str">"current_humidity"</span>: 45,
+    <span class="str">"mac_address"</span>: <span class="str">"#MACADDR#"</span>,
+    <span class="str">"backplate_mono_version"</span>: <span class="str">"3.5.2"</span>,
+    <span class="str">"has_aux_heat"</span>: <span class="kwrd">false</span>,
+    <span class="str">"type"</span>: <span class="str">"TBD"</span>,
+    <span class="str">"hvac_pins"</span>: <span class="str">"W1,Y1,C,Rc,G"</span>,
+    <span class="str">"has_heat_pump"</span>: <span class="kwrd">false</span>,
+    <span class="str">"heat_pump_aux_threshold_enabled"</span>: <span class="kwrd">true</span>,
+    <span class="str">"battery_level"</span>: 3.945,
+    <span class="str">"target_time_confidence"</span>: 1.0
+}</pre>
+<p>&nbsp;</p>
+<p>A few things to note:</p>
+<ul>
+<li><strong>Upper_safety_temperature </strong>is just a bit beyond my comfort zone at 1832°F. I don’t know why it’s sending a value like that to the client, and why it’s stupidly high.</li>
+<li>The backplate serial number doesn’t match with the thermostat according to the payload response. I don’t know why this might be as I confirmed that the numbers matched through visual inspection of the device just now.</li>
+<li>The majority of these details are exposed in one way or another in the details area of the web UI.</li>
+<li>Time to target (payload.time_to_target) is unusual in that it’s a JavaScript Date value, divided by 1000. So, in the example above, the time to target is: <strong>new Date(1326039444 * 1000).toString() = &gt;&#8221;Sun Jan 08 2012 10:17:24 GMT-0600 (Central Standard Time)&#8221;</strong>Next, a payload is returned with the new status:
+<pre class="csharpcode"><span class="str">"status"</span>: 200,
+<span class="str">"headers"</span>: {
+    <span class="str">"X-nl-skv-key"</span>: <span class="str">"shared.#DEVICE 2 SERIAL NUMBER#"</span>,
+    <span class="str">"X-nl-skv-version"</span>: 1689916148,
+    <span class="str">"X-nl-skv-timestamp"</span>: 1326038378000,
+    <span class="str">"X-nl-service-timestamp"</span>: 1326038379151
+},
+<span class="str">"payload"</span>: {
+    <span class="str">"hvac_fan_state"</span>: <span class="kwrd">false</span>,
+    <span class="str">"name"</span>: <span class="str">"TWO"</span>,
+    <span class="str">"hvac_heat_x2_state"</span>: <span class="kwrd">false</span>,
+    <span class="str">"hvac_ac_state"</span>: <span class="kwrd">false</span>,
+    <span class="str">"can_cool"</span>: <span class="kwrd">true</span>,
+    <span class="str">"auto_away"</span>: 0,
+    <span class="str">"compressor_lockout_enabled"</span>: <span class="kwrd">false</span>,
+    <span class="str">"target_temperature_low"</span>: 16.66667,
+    <span class="str">"current_temperature"</span>: 19.53,
+    <span class="str">"target_temperature_high"</span>: 26.66667,
+    <span class="str">"compressor_lockout_timeout"</span>: 0,
+    <span class="str">"target_change_pending"</span>: <span class="kwrd">false</span>,
+    <span class="str">"hvac_aux_heater_state"</span>: <span class="kwrd">false</span>,
+    <span class="str">"target_temperature"</span>: 20.55556,
+    <span class="str">"can_heat"</span>: <span class="kwrd">true</span>,
+    <span class="str">"target_temperature_type"</span>: <span class="str">"heat"</span>,
+    <span class="str">"hvac_heater_state"</span>: <span class="kwrd">true</span>
+}</pre>
+<p>&nbsp;</p>
+<p>Here, the <strong>hvac_heater_state</strong> is set to <strong>true</strong>. The furnace is on.</p>
+<p>A little while later, that value is set to <strong>false.</strong></p>
+<p>Occasionally, the payload includes the complete schedule for the thermostat. I’m not going to reproduce the entire payload here as it’s too large, and quite boring. Here’s a snippet of what it returns:</p>
+<pre class="csharpcode"><span class="str">"schedule"</span>: {
+    <span class="str">"#DEVICE 2 SERIAL NUMBER#"</span>: {
+        <span class="str">"$version"</span>: 1187107985,
+        <span class="str">"$timestamp"</span>: 1326005677000,
+        <span class="str">"name"</span>: <span class="str">"One Current Schedule"</span>,
+        <span class="str">"days"</span>: {
+            <span class="str">"0"</span>: {
+                <span class="str">"0"</span>: {
+                    <span class="str">"type"</span>: <span class="str">"HEAT"</span>,
+                    <span class="str">"temp"</span>: 14.445,
+                    <span class="str">"time"</span>: 0,
+                    <span class="str">"entry_type"</span>: <span class="str">"continuation"</span>
+                },
+                <span class="str">"1"</span>: {
+                    <span class="str">"type"</span>: <span class="str">"HEAT"</span>,
+                    <span class="str">"temp"</span>: 14.445,
+                    <span class="str">"time"</span>: 27900,
+                    <span class="str">"entry_type"</span>: <span class="str">"setpoint"</span>
+                },
+                <span class="str">"2"</span>: {
+                    <span class="str">"type"</span>: <span class="str">"HEAT"</span>,
+                    <span class="str">"temp"</span>: 20.556,
+                    <span class="str">"time"</span>: 63000,
+                    <span class="str">"entry_type"</span>: <span class="str">"setpoint"</span>
+                },
+                <span class="str">"3"</span>: {
+                    <span class="str">"type"</span>: <span class="str">"HEAT"</span>,
+                    <span class="str">"temp"</span>: 14.445,
+                    <span class="str">"time"</span>: 70200,
+                    <span class="str">"entry_type"</span>: <span class="str">"setpoint"</span>
+                }
+            },
+            <span class="str">"1"</span>: {
+                <span class="str">"0"</span>: {
+                    <span class="str">"type"</span>: <span class="str">"HEAT"</span>,
+                    <span class="str">"temp"</span>: 14.445,
+                    <span class="str">"time"</span>: 0,
+                    <span class="str">"entry_type"</span>: <span class="str">"continuation"</span>
+                },
+                <span class="str">"1"</span>: {
+                    <span class="str">"type"</span>: <span class="str">"HEAT"</span>,
+                    <span class="str">"temp"</span>: 18.889,
+                    <span class="str">"time"</span>: 20700,
+                    <span class="str">"entry_type"</span>: <span class="str">"setpoint"</span>
+                },</pre>
+<p>&nbsp;</p>
+<p>It’s a basic table structure. The first set point of the day is at 0, and is a “continuation.” These don’t show up in the UI.</p>
+<p>Here’s what the day 1 looks like on the Nest thermostat UI:</p>
+<p><a href="/blog/wp-content/uploads/2012/01/image8.png"><img loading="lazy" style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-width: 0px;" title="image" src="/blog/wp-content/uploads/2012/01/image_thumb8.png" alt="image" width="500" height="37" border="0"/></a></p>
+<p>When changing a temperature setpoint, I’m a bit disappointed to see that the entire schedule is sent with every request apparently. I just wouldn’t have expected that given that the more setpoints that there are, the bigger the payload must be. The UI is often sluggish when rapidly making adjustments in the schedule, and this could be one of the factors.</p>
+<p>In the example below (which I’ve snipped most of the payload sent again as a JSONP request), I’ve set the first set point to 57F.</p>
+<pre class="csharpcode">    <span class="str">"payload"</span>: {
+        <span class="str">"days"</span>: {
+            <span class="str">"0"</span>: {
+                <span class="str">"0"</span>: {
+                    <span class="str">"type"</span>: <span class="str">"HEAT"</span>,
+                    <span class="str">"temp"</span>: 14.685,
+                    <span class="str">"time"</span>: 0,
+                    <span class="str">"entry_type"</span>: <span class="str">"continuation"</span>
+                },
+                <span class="str">"1"</span>: {
+                    <span class="str">"type"</span>: <span class="str">"HEAT"</span>,
+                    <span class="str">"temp"</span>: 15.000444444444444,
+                    <span class="str">"time"</span>: 24300,
+                    <span class="str">"entry_type"</span>: <span class="str">"setpoint"</span>
+                },</pre>
+<p>For the JSONP requests sent as “MAKE CHANGE” (easily could have been PUT), they each contained the following attributes as shown below. All JSONP requests are apparently routed on the web server using “headers” rather than a RESTful URL based system:</p>
+<pre class="csharpcode">    },
+    <span class="str">"headers"</span>: {
+        <span class="str">"X-nl-client-timestamp"</span>: 1326041210566,
+        <span class="str">"X-nl-session-id"</span>: <span class="str">"#SESSION ID#"</span>,
+        <span class="str">"X-nl-protocol-version"</span>: 1,
+        <span class="str">"Authorization"</span>: <span class="str">"Basic #BASIC AUTH#"</span>
+    },
+    <span class="str">"path"</span>: <span class="str">"/v1/put/schedule.#DEVICE 2 SERIAL NUMBER#"</span>,
+    <span class="str">"redir"</span>: <span class="str">"https://home.nest.com/post_jsonp"</span>,
+    <span class="str">"jsonp"</span>: <span class="str">"4_"</span>
+}</pre>
+<p>It’s RESTful in spirit as there is a route (“path”), but it’s managed by some internal routing engine. (Now, I think that they’re not using Ruby and Rails).</p>
+<p>For something simple, like changing the current temperature of a thermostat, the request is thankfully simple:</p>
+<pre class="csharpcode">{
+    <span class="str">"payload"</span>: {
+        <span class="str">"shared"</span>: {
+            <span class="str">"#DEVICE 2 SERIAL NUMBER#"</span>: {
+                <span class="str">"target_temperature"</span>: 18.333333333333336
+            }
+        }
+    },
+    <span class="str">"headers"</span>: {
+        <span class="str">"X-nl-client-timestamp"</span>: 1326041744556,
+        <span class="str">"X-nl-session-id"</span>: <span class="str">"#SESSION ID#"</span>,
+        <span class="str">"X-nl-protocol-version"</span>: 1,
+        <span class="str">"Authorization"</span>: <span class="str">"Basic #BASIC AUTH#"</span>
+    },
+    <span class="str">"path"</span>: <span class="str">"/v1/put"</span>,
+    <span class="str">"redir"</span>: <span class="str">"https://home.nest.com/post_jsonp"</span>,
+    <span class="str">"jsonp"</span>: <span class="str">"14_"</span>
+}</pre>
+<p>While, I haven’t taken the time to try to write a custom UI for this undocumented API yet, it looks like it should be relatively easy to do, especially as it relates to the schedule and current temperature settings. I know there’s been some Siri proxy stuff that’s been written – but I don’t have any interest in trying to get that to work.</p>
+<p>As with most APIs like this, the trick is often getting authorization correct. For Nest, it appears that making a POST request to <strong>https://home.nest.com/accounts/login/</strong> with <strong>username</strong> and <strong>password</strong> as form data, that the server responds with 2 cookies:</p>
+<ol>
+<li>sessionid == used in X-nl-session-id in headers</li>
+<li>cztoken == used as the Authorization in headers (prepended with the text “Basic “</li>
+</ol>
+<p>FYI: I also have a <a href="/blog/index.php/archives/1754">Node</a> version of the API that is more up to date than this.</li>
+</ul>
+]]></content:encoded>
+					
+					<wfw:commentRss>/blog/index.php/archives/1442/feed</wfw:commentRss>
+			<slash:comments>13</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1442</post-id>	</item>
+	</channel>
+</rss>

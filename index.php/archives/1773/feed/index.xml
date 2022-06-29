@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: AV Club / Our home setup 2012	</title>
+	<atom:link href="/blog/index.php/archives/1773/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/1773</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Sun, 20 Jan 2013 17:31:45 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: michaelkant		</title>
+		<link>/blog/index.php/archives/1773/comment-page-1#comment-20960</link>
+
+		<dc:creator><![CDATA[michaelkant]]></dc:creator>
+		<pubDate>Sun, 20 Jan 2013 17:31:45 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1773#comment-20960</guid>
+
+					<description><![CDATA[I also recently switched from WHS2011 to Windows 8. Loving no-ip.com as well! Its a suitable replacement for the built in functionality of WHS2011.
+
+Regarding streaming from the Storage Spaces pool, I set up my media folder within the pool as a Library, and once all my home PCs were setup on the Homegroup, everything has been streaming perfectly.]]></description>
+			<content:encoded><![CDATA[<p>I also recently switched from WHS2011 to Windows 8. Loving no-ip.com as well! Its a suitable replacement for the built in functionality of WHS2011.</p>
+<p>Regarding streaming from the Storage Spaces pool, I set up my media folder within the pool as a Library, and once all my home PCs were setup on the Homegroup, everything has been streaming perfectly.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/1773/comment-page-1#comment-20365</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sat, 22 Dec 2012 01:30:28 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1773#comment-20365</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1773/comment-page-1#comment-20361&quot;&gt;David Hollifield&lt;/a&gt;.
+
+I haven&#039;t had the problem you&#039;re having with streamed/ripped DVDs (as I haven&#039;t tried it). However, my thought on that would be to potentially store the DVD images on a non-Storage Space drive (so you get better speed potentially), and use File History to back them up to another drive. I&#039;m using File History in a similar way (but not for media files like you suggest).]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/1773/comment-page-1#comment-20361">David Hollifield</a>.</p>
+<p>I haven&#8217;t had the problem you&#8217;re having with streamed/ripped DVDs (as I haven&#8217;t tried it). However, my thought on that would be to potentially store the DVD images on a non-Storage Space drive (so you get better speed potentially), and use File History to back them up to another drive. I&#8217;m using File History in a similar way (but not for media files like you suggest).</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: David Hollifield		</title>
+		<link>/blog/index.php/archives/1773/comment-page-1#comment-20361</link>
+
+		<dc:creator><![CDATA[David Hollifield]]></dc:creator>
+		<pubDate>Fri, 21 Dec 2012 23:08:18 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1773#comment-20361</guid>
+
+					<description><![CDATA[Nice setup. I have a lot of the same. Yours is more elaborate and I&#039;m going to borrow ideas. One question though. I also recently upgraded my WHS 2011 to Windows 8 Pro. I very much like Windows 8, but found the Storage Spaces to be unusable as a source of streaming movies. I use My Movies to stream ripped DVDs from my server to my HTPC and this just would not work with Storage Spaces. It would play for a few seconds then just stop. I removed the Storage Spaces and streaming worked again. Have you experienced anything like that?]]></description>
+			<content:encoded><![CDATA[<p>Nice setup. I have a lot of the same. Yours is more elaborate and I&#8217;m going to borrow ideas. One question though. I also recently upgraded my WHS 2011 to Windows 8 Pro. I very much like Windows 8, but found the Storage Spaces to be unusable as a source of streaming movies. I use My Movies to stream ripped DVDs from my server to my HTPC and this just would not work with Storage Spaces. It would play for a few seconds then just stop. I removed the Storage Spaces and streaming worked again. Have you experienced anything like that?</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

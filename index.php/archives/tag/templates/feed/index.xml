@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>templates &#8211; WiredPrairie</title>
+	<atom:link href="/blog/index.php/archives/tag/templates/feed" rel="self" type="application/rss+xml" />
+	<link>/blog</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Thu, 05 Jan 2012 01:56:47 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+<site xmlns="com-wordpress:feed-additions:1">193486638</site>	<item>
+		<title>EzData for Ember.js</title>
+		<link>/blog/index.php/archives/1377</link>
+					<comments>/blog/index.php/archives/1377#comments</comments>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sun, 01 Jan 2012 23:59:14 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[binding]]></category>
+		<category><![CDATA[Ember.JS]]></category>
+		<category><![CDATA[JavaScript]]></category>
+		<category><![CDATA[SproutCore]]></category>
+		<category><![CDATA[templates]]></category>
+		<guid isPermaLink="false">/blog/?p=1377</guid>
+
+					<description><![CDATA[Previous post: Entity reference I’ve been extending my original post (above) in an effort to create a simple entity system using Ember.js (SproutCore 2.0). While it’s grown in sophistication, it is far from complete. The project is now located on GitHub. This is the introduction, from the readme on GitHub. EmberJS &#8211; EZData EZData is [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Previous post: <a href="/blog/index.php/archives/1345">Entity reference</a></p>
+<p>I’ve been extending my original post (above) in an effort to create a simple entity system using <a href="http://emberjs.com/">Ember.js</a> (SproutCore 2.0). While it’s grown in sophistication, it is far from complete. <img style="border-bottom-style: none; border-left-style: none; border-top-style: none; border-right-style: none" class="wlEmoticon wlEmoticon-smile" alt="Smile" src="/blog/wp-content/uploads/2012/01/wlEmoticon-smile.png" /></p>
+<p>The project is now located on G<a href="https://github.com/wiredprairie/ember-ezdata">itHub</a>.</p>
+<p>This is the introduction, from the readme on GitHub.</p>
+<h3>EmberJS &#8211; EZData</h3>
+<p>EZData is a library intended to a simple way of accessing data from a relational database when using <a href="http://emberjs.com/">Ember.js</a>. It will never try to be everything to everyone. :) Instead, it&#8217;s intended to be small, efficient, and easy to learn and use javascript library.</p>
+<p>The basic functionality is that it&#8217;s designed to manipulate individual entities (or Records), not a complex object structure that is often stored as JavaScript objects. This mirrors what&#8217;s found in many web systems today in the data model.</p>
+<p>Right now, the project is brand new and quite in flux.</p>
+<h4>Essentials</h4>
+<p>Create types by calling <code>Entity.define</code> (instead of the typical Ember.Object.extend).</p>
+<pre>DemoApp.Person = Entity.define(Entity, &quot;Person&quot;, {
+    firstName:String,
+    lastName:String,
+    DOB:Date,
+
+    fullName:function () {
+        return this.get('lastName') + &quot;, &quot; + this.get('firstName');
+    }.property('firstName', 'lastName')
+});</pre>
+<p>This will create a new Class internally by using <code>Ember.extend</code> but it also does some other magic (e.g., creating a data store for all entities of a given type). First and foremost, by calling <code>define</code>, it&#8217;s expected that you&#8217;re mirroring a relational data structure of some sort which may have foreign key relationships to other tables.</p>
+<p>In the example above, the <code>Person</code> entity is expected to have the following columns in a database table:</p>
+<ul>
+<li>id =&gt; Number (from the basic Entity type) </li>
+<li>firstName =&gt; String </li>
+<li>lastName =&gt; String </li>
+<li>DOB =&gt; DOB</li>
+</ul>
+<p>Each property is assigned the basic data type that it will contain. The data type is used for linking and serialization.</p>
+<h4>Linking</h4>
+<p>The second example is a <code>Gift</code>:</p>
+<pre>DemoApp.Gift = Entity.define(Entity, &quot;Gift&quot;, {
+    from:DemoApp.Person
+});</pre>
+<p>The Gift class is more interesting as one of the properties links to another type/Class (Person). As a direct connection to a Person as an object instance isn&#8217;t possible in traditional relational tables, some automatic linking occurs by declaring this linkage.</p>
+<p>The <code>from</code> property is mapped to a second, hidden property that is only used for the foreign key relationship. By default, the hidden property will be called<code>fromPersonId</code>. This can be overridden by creating a custom naming function, replacing the default stored at<code>Entity.Settings.FOREIGN_KEY_GENERATOR_FUNCTION</code>.</p>
+<p>By making the linkage between the two types in the way demonstrated above, the standard Ember.js handlebar templating engine (and automatic value updating) features just work (see <code>from.fullName</code> below).</p>
+<pre>{{#each gifts}}
+&lt;tr&gt;
+    &lt;td&gt;
+        {{ name }}
+    &lt;/td&gt;
+    &lt;td&gt;
+        {{ excitement }}
+    &lt;/td&gt;
+    &lt;td&gt;
+        {{ from.fullName }}
+    &lt;/td&gt;
+&lt;/tr&gt;</pre>
+<p>The <code>fullName</code> property of Person is a computed property, and continues to work as expected.</p>
+<h4>Getting the Data</h4>
+<p>If you want to retrieve a list from one of the data stores (or data tables), it&#8217;s a simple as calling the <code>live</code> function for one of the stores.</p>
+<p>In the example below, there are two live collections. The first returns all of the gifts, and the second only returns gifts that have a lowercase letter <code>o</code> in the name.</p>
+<pre>// create some &quot;live&quot; connections to the data store
+DemoApp.mainController.set('gifts', Entity.Stores.get(DemoApp.Gift).live());
+// create a live connection with a filter (returns true if it contains the letter 'o')
+DemoApp.mainController.set('giftsFiltered', Entity.Stores.get(DemoApp.Gift).live(
+    function () {
+        return this.get('name').indexOf('o') &gt; -1;
+    }));</pre>
+<p>To get access to one of the automatically created data stores, call <code>Entity.Stores.get({Class})</code> where <code>{Class}</code> is the type that was created using the<code>define</code> method.</p>
+<h4>Notes / Cautions</h4>
+<p>Right now, all entities are required to have a property called id and be of type Number.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/blog/index.php/archives/1377/feed</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1377</post-id>	</item>
+	</channel>
+</rss>

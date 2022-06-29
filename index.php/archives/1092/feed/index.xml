@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: I&#8217;m feeling very unlucky today	</title>
+	<atom:link href="/blog/index.php/archives/1092/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/1092</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Thu, 10 Jun 2010 18:09:11 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/1092/comment-page-1#comment-3091</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Thu, 10 Jun 2010 18:09:11 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/1092#comment-3091</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1092/comment-page-1#comment-3089&quot;&gt;peter&lt;/a&gt;.
+
+That&#039;s a disappointing work-around.  Shouldn&#039;t need to be a work-around. :(]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/1092/comment-page-1#comment-3089">peter</a>.</p>
+<p>That&#8217;s a disappointing work-around.  Shouldn&#8217;t need to be a work-around. :(</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Edwin Kanis		</title>
+		<link>/blog/index.php/archives/1092/comment-page-1#comment-3090</link>
+
+		<dc:creator><![CDATA[Edwin Kanis]]></dc:creator>
+		<pubDate>Thu, 10 Jun 2010 17:46:09 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/1092#comment-3090</guid>
+
+					<description><![CDATA[Totally agree, played with it also, it&#039;s stupid you cannot remove the image.
+I do not understand this move.]]></description>
+			<content:encoded><![CDATA[<p>Totally agree, played with it also, it&#8217;s stupid you cannot remove the image.<br />
+I do not understand this move.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: peter		</title>
+		<link>/blog/index.php/archives/1092/comment-page-1#comment-3089</link>
+
+		<dc:creator><![CDATA[peter]]></dc:creator>
+		<pubDate>Thu, 10 Jun 2010 15:37:48 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/1092#comment-3089</guid>
+
+					<description><![CDATA[workaround, visit https://www.google.com/ or http://www.google.com/ncr. That works, but it still sucks]]></description>
+			<content:encoded><![CDATA[<p>workaround, visit <a href="https://www.google.com/" rel="nofollow ugc">https://www.google.com/</a> or <a href="http://www.google.com/ncr" rel="nofollow ugc">http://www.google.com/ncr</a>. That works, but it still sucks</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

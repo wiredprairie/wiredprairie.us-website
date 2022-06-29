@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Silverlight vs. Flash vs. Photoshop Text Rendering	</title>
+	<atom:link href="/blog/index.php/archives/1016/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/1016</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Thu, 09 Jun 2011 01:45:05 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: setiri		</title>
+		<link>/blog/index.php/archives/1016/comment-page-1#comment-3466</link>
+
+		<dc:creator><![CDATA[setiri]]></dc:creator>
+		<pubDate>Thu, 09 Jun 2011 01:45:05 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/1016#comment-3466</guid>
+
+					<description><![CDATA[interesting stuff, although my eyes now hurt from studying all the samples ;)]]></description>
+			<content:encoded><![CDATA[<p>interesting stuff, although my eyes now hurt from studying all the samples ;)</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Denis		</title>
+		<link>/blog/index.php/archives/1016/comment-page-1#comment-3096</link>
+
+		<dc:creator><![CDATA[Denis]]></dc:creator>
+		<pubDate>Sun, 20 Jun 2010 16:41:51 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/1016#comment-3096</guid>
+
+					<description><![CDATA[I think the problem with silverlight is that it doesn&#039;t use gamma correction. Setting font color to gray helps a bit for small fontts, but it would make bigger fonts like titles look wrong.]]></description>
+			<content:encoded><![CDATA[<p>I think the problem with silverlight is that it doesn&#8217;t use gamma correction. Setting font color to gray helps a bit for small fontts, but it would make bigger fonts like titles look wrong.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Mike Stokes		</title>
+		<link>/blog/index.php/archives/1016/comment-page-1#comment-2957</link>
+
+		<dc:creator><![CDATA[Mike Stokes]]></dc:creator>
+		<pubDate>Mon, 29 Mar 2010 20:13:08 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/1016#comment-2957</guid>
+
+					<description><![CDATA[Awesome examples - we&#039;ve been developing a Silverlight 4 application that requires very easy reading on-screen and have come to exactly the same conclusions - on a white background, foreground colors between #FF313131 and #FF515151 work best for most readers and the results do look dramatically better than pure black or darker shades.  
+
+Nice work documenting this clearly Aaron.]]></description>
+			<content:encoded><![CDATA[<p>Awesome examples &#8211; we&#8217;ve been developing a Silverlight 4 application that requires very easy reading on-screen and have come to exactly the same conclusions &#8211; on a white background, foreground colors between #FF313131 and #FF515151 work best for most readers and the results do look dramatically better than pure black or darker shades.  </p>
+<p>Nice work documenting this clearly Aaron.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Windows Client Developer Roundup for 3/29/2010 - Pete Brown's 10rem.net		</title>
+		<link>/blog/index.php/archives/1016/comment-page-1#comment-2956</link>
+
+		<dc:creator><![CDATA[Windows Client Developer Roundup for 3/29/2010 - Pete Brown's 10rem.net]]></dc:creator>
+		<pubDate>Mon, 29 Mar 2010 08:31:36 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/1016#comment-2956</guid>
+
+					<description><![CDATA[[...] Silverlight vs. Flash vs. Photoshop Text Rendering (WiredPrairie) [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] Silverlight vs. Flash vs. Photoshop Text Rendering (WiredPrairie) [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/1016/comment-page-1#comment-2944</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Thu, 25 Mar 2010 13:49:50 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/1016#comment-2944</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1016/comment-page-1#comment-2943&quot;&gt;Ravi Gokulgandhi&lt;/a&gt;.
+
+You be your own judge. 
+
+I think I&#039;ve demonstrated that Silverlight 4.0, with a few tweaks to the foreground color of the font can emulate the often complimented Flash 10 text rendering capabilities. However, some people don&#039;t like that look. So ...]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/1016/comment-page-1#comment-2943">Ravi Gokulgandhi</a>.</p>
+<p>You be your own judge. </p>
+<p>I think I&#8217;ve demonstrated that Silverlight 4.0, with a few tweaks to the foreground color of the font can emulate the often complimented Flash 10 text rendering capabilities. However, some people don&#8217;t like that look. So &#8230;</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Ravi Gokulgandhi		</title>
+		<link>/blog/index.php/archives/1016/comment-page-1#comment-2943</link>
+
+		<dc:creator><![CDATA[Ravi Gokulgandhi]]></dc:creator>
+		<pubDate>Thu, 25 Mar 2010 13:47:24 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/1016#comment-2943</guid>
+
+					<description><![CDATA[What&#039;s the verdict here.]]></description>
+			<content:encoded><![CDATA[<p>What&#8217;s the verdict here.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Herberth Amaral		</title>
+		<link>/blog/index.php/archives/1016/comment-page-1#comment-2942</link>
+
+		<dc:creator><![CDATA[Herberth Amaral]]></dc:creator>
+		<pubDate>Thu, 25 Mar 2010 09:52:44 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/1016#comment-2942</guid>
+
+					<description><![CDATA[Very interesting and really good stuff! Congrats!]]></description>
+			<content:encoded><![CDATA[<p>Very interesting and really good stuff! Congrats!</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Hello World &#8211; in 428+ ways!	</title>
+	<atom:link href="/blog/index.php/archives/811/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/811</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Tue, 01 Sep 2009 11:17:36 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: Vik		</title>
+		<link>/blog/index.php/archives/811/comment-page-1#comment-2728</link>
+
+		<dc:creator><![CDATA[Vik]]></dc:creator>
+		<pubDate>Tue, 01 Sep 2009 11:17:36 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/811#comment-2728</guid>
+
+					<description><![CDATA[Represent, dawg!
+
+Mumps
+; Hello World in Mumps-M
+ w !,&quot;Hello World&quot;]]></description>
+			<content:encoded><![CDATA[<p>Represent, dawg!</p>
+<p>Mumps<br />
+; Hello World in Mumps-M<br />
+ w !,&#8221;Hello World&#8221;</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

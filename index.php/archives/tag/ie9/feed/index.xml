@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>IE9 &#8211; WiredPrairie</title>
+	<atom:link href="/blog/index.php/archives/tag/ie9/feed" rel="self" type="application/rss+xml" />
+	<link>/blog</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Thu, 16 Sep 2010 12:51:39 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+<site xmlns="com-wordpress:feed-additions:1">193486638</site>	<item>
+		<title>IE9 Beta, pinned web sites</title>
+		<link>/blog/index.php/archives/1136</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Thu, 16 Sep 2010 12:51:39 +0000</pubDate>
+				<category><![CDATA[Software]]></category>
+		<category><![CDATA[Usability]]></category>
+		<category><![CDATA[IE9]]></category>
+		<guid isPermaLink="false">/blog/index.php/archives/1136</guid>
+
+					<description><![CDATA[As you’ve probably heard – IE9 beta 1 is available for download. As part of the new feature set, it includes web site pinning. So, I pinned Twitter. I had read about it, and watched it demo – and still couldn’t figure out how to do it without hitting the web site above (as the [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>As you’ve probably heard – IE9 beta 1 is available for download. </p>
+<p>As part of the new feature set, it includes <a href="http://www.beautyoftheweb.com/#/productguide/clean/seamless-with-windows-7/pinned-sites">web site pinning</a>.</p>
+<p>So, I pinned Twitter. </p>
+<p>I had read about it, and watched it demo – and still couldn’t figure out how to do it without hitting the web site above (as the drag to tab method doesn’t look like it will work until you try it – and the screen shots on the web don’t match what I was experiencing).</p>
+<p>What I heard was that pinning would make the web application front and center. </p>
+<p><img loading="lazy" style="background-image: none; border-right-width: 0px; margin: ; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="SNAGHTML1f2ecd" border="0" alt="SNAGHTML1f2ecd" src="/blog/wp-content/uploads/2010/09/SNAGHTML1f2ecd.png" width="450" height="65"/></p>
+<p>There’s still too much browser though when launching the web site through the pinned icon.</p>
+<p><img loading="lazy" style="background-image: none; border-right-width: 0px; margin: ; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2010/09/image4.png" width="62" height="30"/></p>
+<p>It’s trying to remain a browser window, but also play an “application.” What about providing an option in the meta msapplication-task for being able to control the browser “chrome?” Hide tabs, hide address bar, etc? (Just hide them, don’t make them unavailable). </p>
+<pre class="code"><span style="color: blue">&lt;</span><span style="color: #a31515">meta </span><span style="color: red">name</span><span style="color: blue">="msapplication-task" </span><span style="color: red">content</span><span style="color: blue">="name=New Tweet; action-uri=http://twitter.com/home; icon-uri=images/ie/tweet.ico" /&gt;
+  &lt;</span><span style="color: #a31515">meta </span><span style="color: red">name</span><span style="color: blue">="msapplication-task" </span><span style="color: red">content</span><span style="color: blue">="name=Direct Messages; action-uri=http://twitter.com/inbox; icon-uri=images/ie/dm.ico" /&gt;
+  &lt;</span><span style="color: #a31515">meta </span><span style="color: red">name</span><span style="color: blue">="msapplication-task" </span><span style="color: red">content</span><span style="color: blue">="name=Mentions ; action-uri=http://twitter.com/replies; icon-uri=images/ie/mentions.ico" /&gt;
+  &lt;</span><span style="color: #a31515">meta </span><span style="color: red">name</span><span style="color: blue">="msapplication-task" </span><span style="color: red">content</span><span style="color: blue">="name=Favorites; action-uri=http://twitter.com/favorites; icon-uri=images/ie/fav.ico" /&gt;
+  &lt;</span><span style="color: #a31515">meta </span><span style="color: red">name</span><span style="color: blue">="msapplication-task" </span><span style="color: red">content</span><span style="color: blue">="name=Search; action-uri=http://search.twitter.com;/ icon-uri=images/ie/search.ico" /&gt;
+&lt;</span><span style="color: #a31515">script </span><span style="color: red">type</span><span style="color: blue">="text/javascript"&gt;</span></pre>
+<p>I like where Microsoft is headed with IE9 and the merging of web pages into web applications. </p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1136</post-id>	</item>
+	</channel>
+</rss>

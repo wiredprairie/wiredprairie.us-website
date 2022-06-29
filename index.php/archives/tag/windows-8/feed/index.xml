@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>Windows 8 &#8211; WiredPrairie</title>
+	<atom:link href="/blog/index.php/archives/tag/windows-8/feed" rel="self" type="application/rss+xml" />
+	<link>/blog</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Sun, 01 Sep 2013 20:09:35 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+<site xmlns="com-wordpress:feed-additions:1">193486638</site>	<item>
+		<title>Reading a text file (or JSON file) from a Windows 8 Runtime application</title>
+		<link>/blog/index.php/archives/1939</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sun, 01 Sep 2013 20:09:35 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[C#]]></category>
+		<category><![CDATA[Windows 8]]></category>
+		<category><![CDATA[WinRT]]></category>
+		<guid isPermaLink="false">/blog/?p=1939</guid>
+
+					<description><![CDATA[I just had need of reading a small JSON file into a Windows 8 application using the Windows Runtime. Uri uri = new Uri(&#34;ms-appx:///assets/data.json&#34;);var storageFile = await Windows.Storage.StorageFile.GetFileFromApplicationUriAsync(uri);using (var storageStream = await storageFile.OpenReadAsync()){ using (Stream stream = storageStream.AsStreamForRead()) { using (StreamReader reader = new StreamReader(stream)) { var jsonText = reader.ReadToEnd(); var results = JsonConvert.DeserializeObject&#60;DemoData&#62;(jsonText); this.DataContext [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I just had need of reading a small JSON file into a Windows 8 application using the Windows Runtime. </p>
+<div id="codeSnippetWrapper">
+<div id="codeSnippetWrapper">
+<pre id="codeSnippet" style="border-top-style: none; overflow: visible; font-size: 8pt; border-left-style: none; font-family: &#39;Courier New&#39;, courier, monospace; border-bottom-style: none; color: black; padding-bottom: 0px; direction: ltr; text-align: left; padding-top: 0px; border-right-style: none; padding-left: 0px; margin: 0em; line-height: 12pt; padding-right: 0px; width: 100%; background-color: #f4f4f4">Uri uri = <span style="color: #0000ff">new</span> Uri(<span style="color: #006080">&quot;ms-appx:///assets/data.json&quot;</span>);<br /><br />var storageFile = await Windows.Storage.StorageFile.GetFileFromApplicationUriAsync(uri);<br /><br /><span style="color: #0000ff">using</span> (var storageStream = await storageFile.OpenReadAsync())<br />{<br />    <span style="color: #0000ff">using</span> (Stream stream = storageStream.AsStreamForRead())<br />    {<br />        <span style="color: #0000ff">using</span> (StreamReader reader = <span style="color: #0000ff">new</span> StreamReader(stream))<br />        {<br />            var jsonText = reader.ReadToEnd();<br />            var results = JsonConvert.DeserializeObject&lt;DemoData&gt;(jsonText);<br />            <span style="color: #0000ff">this</span>.DataContext = results;<br />        }<br />    }<br />}</pre>
+<p>What seemed like it should have been a common example on MSDN was not …, and after a bit of searching and reading, I believe the above code represents at least a common and safe way of loading data. </div>
+</div>
+<p>I’ve got a file called <strong>data.json</strong> stored in an <strong>Assets</strong> folder:</p>
+<p><a href="/blog/wp-content/uploads/2013/09/image.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wp-content/uploads/2013/09/image_thumb.png" width="272" height="237" /></a></p>
+<p>And the file’s <strong>Build Action</strong> is set to <strong>Content:</strong></p>
+<p><a href="/blog/wp-content/uploads/2013/09/image1.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wp-content/uploads/2013/09/image_thumb1.png" width="546" height="212" /></a></p>
+<p>Change the value passed to the <strong>Uri</strong> constructor and … the file will be loaded successfully. Once loaded, I used the strongly typed generic <strong>DeserializeObject</strong> method to convert the Json data to a class called <strong>DemoData</strong>.</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1939</post-id>	</item>
+		<item>
+		<title>Liquid Exception: incompatible character encodings: IBM437 and UTF-8</title>
+		<link>/blog/index.php/archives/1855</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sat, 02 Mar 2013 22:47:00 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[Jekyll]]></category>
+		<category><![CDATA[Python]]></category>
+		<category><![CDATA[Ruby]]></category>
+		<category><![CDATA[Windows 8]]></category>
+		<guid isPermaLink="false">/blog/?p=1855</guid>
+
+					<description><![CDATA[Assuming you’re trying to use Jekyll on Windows, you may encounter an error similar to this: Liquid Exception: incompatible character encodings: IBM437 and UTF-8 in css.html My solution was to temporarily change the code page to UTF-8: chcp 65001 This temporarily changes the code page of the current Command window to UTF-8.]]></description>
+										<content:encoded><![CDATA[<p>Assuming you’re trying to use <a href="https://github.com/mojombo/jekyll">Jekyll</a> on Windows, you may encounter an error similar to this:</p>
+<p>Liquid Exception: incompatible character encodings: IBM437 and UTF-8 in css.html</p>
+<p><a href="/blog/wp-content/uploads/2013/03/image6.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wp-content/uploads/2013/03/image_thumb6.png" width="684" height="137" /></a></p>
+<p>My solution was to temporarily change the code page to UTF-8:</p>
+<p><a href="/blog/wp-content/uploads/2013/03/image7.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wp-content/uploads/2013/03/image_thumb7.png" width="510" height="27" /></a></p>
+<p><strong>chcp 65001</strong></p>
+<p>This temporarily changes the code page of the current Command window to UTF-8. </p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1855</post-id>	</item>
+		<item>
+		<title>Windows 8 IIS Express with Windows Authentication Prompts for Credentials</title>
+		<link>/blog/index.php/archives/1850</link>
+					<comments>/blog/index.php/archives/1850#comments</comments>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sat, 02 Mar 2013 16:50:52 +0000</pubDate>
+				<category><![CDATA[General]]></category>
+		<category><![CDATA[ASP.NET]]></category>
+		<category><![CDATA[MVC]]></category>
+		<category><![CDATA[Visual Studio]]></category>
+		<category><![CDATA[Windows 8]]></category>
+		<guid isPermaLink="false">/blog/?p=1850</guid>
+
+					<description><![CDATA[If you’re seeing a credentials prompt every time you launch a local IIS or IIS Express web application that requires Windows Authentication, you’ll likely grow as tired of typing in your password as I was. To add to the annoyance, the Remember my credentials checkbox doesn’t work (nothing is saved). The setup: Windows 8 Visual [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>If you’re seeing a credentials prompt every time you launch a local IIS or IIS Express web application that requires Windows Authentication, you’ll likely grow as tired of typing in your password as I was. To add to the annoyance, the <strong>Remember my credentials</strong> checkbox doesn’t work (nothing is saved).</p>
+<p><a href="/blog/wp-content/uploads/2013/03/image.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wp-content/uploads/2013/03/image_thumb.png" width="443" height="351" /></a></p>
+<p>The setup:</p>
+<ul>
+<li>Windows 8</li>
+<li>Visual Studio 2012, .NET 4.5, </li>
+<li>ASP.NET MVC web application</li>
+<li>Non domain-joined computer (it’s on my home network)</li>
+<li>Using a Microsoft account (FKA Live ID) as the local account</li>
+<li>Using IIS Express/IIS</li>
+<li>Windows Authentication <strong>Enabled</strong></li>
+<li>Anonymous Logon <strong>Disabled</strong></li>
+</ul>
+<pre class="csharpcode"><span class="kwrd">&lt;</span><span class="html">system.webServer</span><span class="kwrd">&gt;</span>
+    <span class="kwrd">&lt;</span><span class="html">security</span><span class="kwrd">&gt;</span>
+        <span class="kwrd">&lt;</span><span class="html">authentication</span><span class="kwrd">&gt;</span>
+            <span class="kwrd">&lt;</span><span class="html">windowsAuthentication</span> <span class="attr">enabled</span><span class="kwrd">=&quot;true&quot;</span> <span class="kwrd">/&gt;</span>
+            <span class="kwrd">&lt;</span><span class="html">anonymousAuthentication</span> <span class="attr">enabled</span><span class="kwrd">=&quot;false&quot;</span> <span class="kwrd">/&gt;</span>
+        <span class="kwrd">&lt;/</span><span class="html">authentication</span><span class="kwrd">&gt;</span>
+    <span class="kwrd">&lt;/</span><span class="html">security</span><span class="kwrd">&gt;</span>
+<span class="kwrd">&lt;/</span><span class="html">system.webServer</span><span class="kwrd">&gt;</span></pre>
+<style type="text/css">
+.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }</style>
+<p>While there are a few proposed solutions, this is the only one that worked for me so far.</p>
+<ol>
+<li>Start Internet Explorer</li>
+<li>Click the settings Menu</li>
+<li>Select <strong>Internet options</strong></li>
+<li>Click the <strong>Security </strong>tab</li>
+<li>Select <strong>Local intranet</strong></li>
+<li>Click <strong>Sites</strong></li>
+<li>Click <strong>Advanced</strong></li>
+<li>Add <a href="http://localhost/">http://localhost/</a> to the Local intranet zone</li>
+<li>Close.</li>
+<li>Verify it’s now working.</li>
+</ol>
+<p><a href="/blog/wp-content/uploads/2013/03/image1.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wp-content/uploads/2013/03/image_thumb1.png" width="256" height="290" /></a></p>
+<p><a href="/blog/wp-content/uploads/2013/03/image2.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wp-content/uploads/2013/03/image_thumb2.png" width="425" height="544" /></a></p>
+<p><a href="/blog/wp-content/uploads/2013/03/image3.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wp-content/uploads/2013/03/image_thumb3.png" width="416" height="236" /></a></p>
+<p><a href="/blog/wp-content/uploads/2013/03/image4.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wp-content/uploads/2013/03/image_thumb4.png" width="396" height="351" /></a></p>
+<p><a href="/blog/wp-content/uploads/2013/03/image5.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wp-content/uploads/2013/03/image_thumb5.png" width="396" height="351" /></a></p>
+<p>Done.</p>
+<p>Alternatives welcomed. :)</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/blog/index.php/archives/1850/feed</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1850</post-id>	</item>
+		<item>
+		<title>How to find an element in a DataTemplate in WinRT/XAML.</title>
+		<link>/blog/index.php/archives/1730</link>
+					<comments>/blog/index.php/archives/1730#comments</comments>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sat, 08 Sep 2012 01:51:30 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[C#]]></category>
+		<category><![CDATA[Windows 8]]></category>
+		<category><![CDATA[WinRT]]></category>
+		<category><![CDATA[Xaml]]></category>
+		<guid isPermaLink="false">/blog/?p=1730</guid>
+
+					<description><![CDATA[Here’s one way to find a named element in a DataTemplate in XAML in Windows 8 XAML. You might try FindName to discover it doesn’t work. That’s because it’s not recursive. So, I created a simple extension method to do the same thing: public static class FrameworkElementExtensions { public static FrameworkElement FindDescendantByName(this FrameworkElement element, string [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Here’s one way to find a named element in a DataTemplate in XAML in Windows 8 XAML.</p>
+<p>You might try FindName to discover it doesn’t work. That’s because it’s not recursive.</p>
+<p>So, I created a simple extension method to do the same thing:</p>
+<pre class="code"><span style="background: white; color: blue">public static class </span><span style="background: white; color: #2b91af">FrameworkElementExtensions
+</span><span style="background: white; color: black">{
+    </span><span style="background: white; color: blue">public static </span><span style="background: white; color: #2b91af">FrameworkElement </span><span style="background: white; color: black">FindDescendantByName(</span><span style="background: white; color: blue">this </span><span style="background: white; color: #2b91af">FrameworkElement </span><span style="background: white; color: black">element, </span><span style="background: white; color: blue">string </span><span style="background: white; color: black">name)
+    {
+        </span><span style="background: white; color: blue">if </span><span style="background: white; color: black">(element == </span><span style="background: white; color: blue">null </span><span style="background: white; color: black">|| </span><span style="background: white; color: blue">string</span><span style="background: white; color: black">.IsNullOrWhiteSpace(name)) { </span><span style="background: white; color: blue">return null</span><span style="background: white; color: black">; }
+
+        </span><span style="background: white; color: blue">if </span><span style="background: white; color: black">(name.Equals(element.Name, </span><span style="background: white; color: #2b91af">StringComparison</span><span style="background: white; color: black">.OrdinalIgnoreCase))
+        {
+            </span><span style="background: white; color: blue">return </span><span style="background: white; color: black">element;
+        }
+        </span><span style="background: white; color: blue">var </span><span style="background: white; color: black">childCount = </span><span style="background: white; color: #2b91af">VisualTreeHelper</span><span style="background: white; color: black">.GetChildrenCount(element);
+        </span><span style="background: white; color: blue">for </span><span style="background: white; color: black">(</span><span style="background: white; color: blue">int </span><span style="background: white; color: black">i = 0; i &lt; childCount; i++)
+        {
+            </span><span style="background: white; color: blue">var </span><span style="background: white; color: black">result = (</span><span style="background: white; color: #2b91af">VisualTreeHelper</span><span style="background: white; color: black">.GetChild(element, i) </span><span style="background: white; color: blue">as </span><span style="background: white; color: #2b91af">FrameworkElement</span><span style="background: white; color: black">).FindDescendantByName(name);
+            </span><span style="background: white; color: blue">if </span><span style="background: white; color: black">(result != </span><span style="background: white; color: blue">null</span><span style="background: white; color: black">) { </span><span style="background: white; color: blue">return </span><span style="background: white; color: black">result; }
+        }
+        </span><span style="background: white; color: blue">return null</span><span style="background: white; color: black">;
+    }
+}</span></pre>
+<p>The code above loops through the children and attempts to match by name. </p>
+<p>A simple usage (admittedly, this is stupid and clunky as lists are often virtualized, but …)</p>
+<pre class="code"><span style="background: white; color: blue">private void </span><span style="background: white; color: black">Page_Loaded_1(</span><span style="background: white; color: blue">object </span><span style="background: white; color: black">sender, Windows.UI.Xaml.</span><span style="background: white; color: #2b91af">RoutedEventArgs </span><span style="background: white; color: black">e)
+{
+    </span><span style="background: white; color: blue">for </span><span style="background: white; color: black">(</span><span style="background: white; color: blue">int </span><span style="background: white; color: black">i = 0; i &lt; myPeeps.Items.Count; i++)
+    {
+        </span><span style="background: white; color: blue">var </span><span style="background: white; color: black">element = myPeeps.ItemContainerGenerator.ContainerFromIndex(i) </span><span style="background: white; color: blue">as </span><span style="background: white; color: #2b91af">FrameworkElement</span><span style="background: white; color: black">;
+        </span><span style="background: white; color: blue">if </span><span style="background: white; color: black">(element != </span><span style="background: white; color: blue">null</span><span style="background: white; color: black">)
+        {
+            </span><span style="background: white; color: blue">var </span><span style="background: white; color: black">tb = element.FindDescendantByName(</span><span style="background: white; color: #a31515">&quot;tbValue&quot;</span><span style="background: white; color: black">) </span><span style="background: white; color: blue">as </span><span style="background: white; color: #2b91af">TextBlock</span><span style="background: white; color: black">;
+            </span><span style="background: white; color: blue">if </span><span style="background: white; color: black">(tb != </span><span style="background: white; color: blue">null</span><span style="background: white; color: black">)
+            {
+                tb.Text = i.ToString();
+            }
+        }
+    }
+}</span></pre>
+<p>Given this DataTemplate and Page:</p>
+<pre class="code"><span style="background: white; color: blue">&lt;</span><span style="background: white; color: #a31515">Page.Resources</span><span style="background: white; color: blue">&gt;
+    &lt;</span><span style="background: white; color: #a31515">local</span><span style="background: white; color: blue">:</span><span style="background: white; color: #a31515">SampleDataSource </span><span style="background: white; color: red">x</span><span style="background: white; color: blue">:</span><span style="background: white; color: red">Key</span><span style="background: white; color: blue">=&quot;sampleData&quot; /&gt;
+    &lt;</span><span style="background: white; color: #a31515">DataTemplate </span><span style="background: white; color: red">x</span><span style="background: white; color: blue">:</span><span style="background: white; color: red">Key</span><span style="background: white; color: blue">=&quot;SampleDataTemplate&quot;&gt;
+        &lt;</span><span style="background: white; color: #a31515">Grid </span><span style="background: white; color: blue">&gt;
+            &lt;</span><span style="background: white; color: #a31515">Grid.RowDefinitions</span><span style="background: white; color: blue">&gt;
+                &lt;</span><span style="background: white; color: #a31515">RowDefinition </span><span style="background: white; color: red">Height</span><span style="background: white; color: blue">=&quot;Auto&quot;/&gt;
+                &lt;</span><span style="background: white; color: #a31515">RowDefinition </span><span style="background: white; color: red">Height</span><span style="background: white; color: blue">=&quot;Auto&quot;/&gt;
+            &lt;/</span><span style="background: white; color: #a31515">Grid.RowDefinitions</span><span style="background: white; color: blue">&gt;
+            &lt;</span><span style="background: white; color: #a31515">TextBlock </span><span style="background: white; color: red">HorizontalAlignment</span><span style="background: white; color: blue">=&quot;Left&quot; </span><span style="background: white; color: red">Text</span><span style="background: white; color: blue">=&quot;{</span><span style="background: white; color: #a31515">Binding </span><span style="background: white; color: red">Name</span><span style="background: white; color: blue">}&quot; /&gt;
+            &lt;</span><span style="background: white; color: #a31515">TextBlock </span><span style="background: white; color: red">Grid.Row</span><span style="background: white; color: blue">=&quot;1&quot; </span><span style="background: white; color: red">Name</span><span style="background: white; color: blue">=&quot;tbValue&quot; /&gt;
+        &lt;/</span><span style="background: white; color: #a31515">Grid</span><span style="background: white; color: blue">&gt;
+    &lt;/</span><span style="background: white; color: #a31515">DataTemplate</span><span style="background: white; color: blue">&gt;
+&lt;/</span><span style="background: white; color: #a31515">Page.Resources</span><span style="background: white; color: blue">&gt;
+
+&lt;</span><span style="background: white; color: #a31515">Grid </span><span style="background: white; color: red">Background</span><span style="background: white; color: blue">=&quot;{</span><span style="background: white; color: #a31515">StaticResource </span><span style="background: white; color: red">ApplicationPageBackgroundThemeBrush</span><span style="background: white; color: blue">}&quot; 
+      </span><span style="background: white; color: red">DataContext</span><span style="background: white; color: blue">=&quot;{</span><span style="background: white; color: #a31515">StaticResource </span><span style="background: white; color: red">sampleData</span><span style="background: white; color: blue">}&quot;&gt;
+    &lt;</span><span style="background: white; color: #a31515">ItemsControl </span><span style="background: white; color: red">x</span><span style="background: white; color: blue">:</span><span style="background: white; color: red">Name</span><span style="background: white; color: blue">=&quot;myPeeps&quot;
+        </span><span style="background: white; color: red">ItemsSource </span><span style="background: white; color: blue">= &quot;{</span><span style="background: white; color: #a31515">Binding </span><span style="background: white; color: red">Persons</span><span style="background: white; color: blue">}&quot;
+        </span><span style="background: white; color: red">ItemTemplate</span><span style="background: white; color: blue">=&quot;{</span><span style="background: white; color: #a31515">StaticResource </span><span style="background: white; color: red">SampleDataTemplate</span><span style="background: white; color: blue">}&quot; </span><span style="background: white; color: red">FontSize</span><span style="background: white; color: blue">=&quot;22&quot;/&gt;
+&lt;/</span><span style="background: white; color: #a31515">Grid</span><span style="background: white; color: blue">&gt;</span></pre>
+<p>And this sample data:</p>
+<pre class="code"><span style="background: white; color: blue">public class </span><span style="background: white; color: #2b91af">Person </span><span style="background: white; color: black">{
+    </span><span style="background: white; color: blue">public string </span><span style="background: white; color: black">Name { </span><span style="background: white; color: blue">get</span><span style="background: white; color: black">; </span><span style="background: white; color: blue">set</span><span style="background: white; color: black">; }        
+}    
+
+</span><span style="background: white; color: blue">public class </span><span style="background: white; color: #2b91af">SampleDataSource </span><span style="background: white; color: black">{
+    </span><span style="background: white; color: blue">public </span><span style="background: white; color: #2b91af">IEnumerable</span><span style="background: white; color: black">&lt;</span><span style="background: white; color: #2b91af">Person</span><span style="background: white; color: black">&gt; Persons { </span><span style="background: white; color: blue">get</span><span style="background: white; color: black">; </span><span style="background: white; color: blue">private set</span><span style="background: white; color: black">; }
+    
+    
+    </span><span style="background: white; color: blue">public </span><span style="background: white; color: black">SampleDataSource () {
+        </span><span style="background: white; color: blue">var </span><span style="background: white; color: black">list = </span><span style="background: white; color: blue">new </span><span style="background: white; color: #2b91af">List</span><span style="background: white; color: black">&lt;</span><span style="background: white; color: #2b91af">Person</span><span style="background: white; color: black">&gt;();
+        
+        list.Add(</span><span style="background: white; color: blue">new </span><span style="background: white; color: #2b91af">Person </span><span style="background: white; color: black">{ Name = </span><span style="background: white; color: #a31515">&quot;Alex&quot; </span><span style="background: white; color: black">});
+        list.Add(</span><span style="background: white; color: blue">new </span><span style="background: white; color: #2b91af">Person </span><span style="background: white; color: black">{ Name = </span><span style="background: white; color: #a31515">&quot;Betsy&quot; </span><span style="background: white; color: black">});
+        list.Add(</span><span style="background: white; color: blue">new </span><span style="background: white; color: #2b91af">Person </span><span style="background: white; color: black">{ Name = </span><span style="background: white; color: #a31515">&quot;Carla&quot; </span><span style="background: white; color: black">});
+        list.Add(</span><span style="background: white; color: blue">new </span><span style="background: white; color: #2b91af">Person </span><span style="background: white; color: black">{ Name = </span><span style="background: white; color: #a31515">&quot;Donald&quot; </span><span style="background: white; color: black">});
+        list.Add(</span><span style="background: white; color: blue">new </span><span style="background: white; color: #2b91af">Person </span><span style="background: white; color: black">{ Name = </span><span style="background: white; color: #a31515">&quot;Erica&quot; </span><span style="background: white; color: black">});
+        list.Add(</span><span style="background: white; color: blue">new </span><span style="background: white; color: #2b91af">Person </span><span style="background: white; color: black">{ Name = </span><span style="background: white; color: #a31515">&quot;Francis&quot; </span><span style="background: white; color: black">});            
+        
+        </span><span style="background: white; color: blue">this</span><span style="background: white; color: black">.Persons = list;
+    }            
+}</span></pre>
+<p>You’ll get results like this:</p>
+<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2012/09/image.png" width="497" height="582" /></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/blog/index.php/archives/1730/feed</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1730</post-id>	</item>
+	</channel>
+</rss>

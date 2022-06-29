@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Nest Thermostat Review, Update #7	</title>
+	<atom:link href="/blog/index.php/archives/1432/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/1432</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Wed, 18 Jan 2012 17:54:32 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: Paul		</title>
+		<link>/blog/index.php/archives/1432/comment-page-1#comment-3934</link>
+
+		<dc:creator><![CDATA[Paul]]></dc:creator>
+		<pubDate>Wed, 18 Jan 2012 17:54:32 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1432#comment-3934</guid>
+
+					<description><![CDATA[So two days after I sent my question to Nest I received a canned response suggesting I reset learning on the Nest thermostat. Since it&#039;s obvious my question was not read, I&#039;ve sent a follow-up email to Nest (I&#039;m not hopeful though of receiving any new information):
+
+Dear Nest-Bot,
+
+Thank you for the automated reply to my question. I appreciate you responding within the promised one to two day estimate (note that there appears to be a typo on your site that says one to two hours).
+
+There does seem to be a problem with your automated reply. Apparently you are programmed to only look at keywords and not to analyze the question itself and because of this your reply did not answer my question (though I&#039;m sure if you keep using this response that some one at some point will find your answer useful).
+
+I&#039;m not sure if you are programmed to handle a response to your automated reply, but I figured I would at least try and see what happens. Oh, and at the risk of overloading your quasi-intelligent parsing abilities, would you mind telling me why the Nest deletes multiple days of manually programmed set-points in a seemingly random fashion?
+
+Thank you. I look forward to receiving a reply in one to two days (though I acknowledge that the possibility of receiving a relevant answer is remote).]]></description>
+			<content:encoded><![CDATA[<p>So two days after I sent my question to Nest I received a canned response suggesting I reset learning on the Nest thermostat. Since it&#8217;s obvious my question was not read, I&#8217;ve sent a follow-up email to Nest (I&#8217;m not hopeful though of receiving any new information):</p>
+<p>Dear Nest-Bot,</p>
+<p>Thank you for the automated reply to my question. I appreciate you responding within the promised one to two day estimate (note that there appears to be a typo on your site that says one to two hours).</p>
+<p>There does seem to be a problem with your automated reply. Apparently you are programmed to only look at keywords and not to analyze the question itself and because of this your reply did not answer my question (though I&#8217;m sure if you keep using this response that some one at some point will find your answer useful).</p>
+<p>I&#8217;m not sure if you are programmed to handle a response to your automated reply, but I figured I would at least try and see what happens. Oh, and at the risk of overloading your quasi-intelligent parsing abilities, would you mind telling me why the Nest deletes multiple days of manually programmed set-points in a seemingly random fashion?</p>
+<p>Thank you. I look forward to receiving a reply in one to two days (though I acknowledge that the possibility of receiving a relevant answer is remote).</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Paul		</title>
+		<link>/blog/index.php/archives/1432/comment-page-1#comment-3926</link>
+
+		<dc:creator><![CDATA[Paul]]></dc:creator>
+		<pubDate>Mon, 16 Jan 2012 15:39:45 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1432#comment-3926</guid>
+
+					<description><![CDATA[Funny, I just wrote to customer support this weekend asking why, after the thermostat learns time-to-temperature, it does not regulate the heat so that the temperature reaches the programmed value at the programmed time (haven&#039;t heard back). The inexpensive thermostats that we replaced did this very well and it seems that outside of remote control of the thermostat, the Nest actually does less. Another annoyance is that the Nest for some reason decided to delete two days worth of manually set temperature programming making for a cold house (and an annoyed wife) on the weekend. It appears the software is not quite ready for prime-time. Hopefully they will get a better release out before too long.]]></description>
+			<content:encoded><![CDATA[<p>Funny, I just wrote to customer support this weekend asking why, after the thermostat learns time-to-temperature, it does not regulate the heat so that the temperature reaches the programmed value at the programmed time (haven&#8217;t heard back). The inexpensive thermostats that we replaced did this very well and it seems that outside of remote control of the thermostat, the Nest actually does less. Another annoyance is that the Nest for some reason decided to delete two days worth of manually set temperature programming making for a cold house (and an annoyed wife) on the weekend. It appears the software is not quite ready for prime-time. Hopefully they will get a better release out before too long.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Rick		</title>
+		<link>/blog/index.php/archives/1432/comment-page-1#comment-3899</link>
+
+		<dc:creator><![CDATA[Rick]]></dc:creator>
+		<pubDate>Sat, 14 Jan 2012 15:52:01 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1432#comment-3899</guid>
+
+					<description><![CDATA[My mistake, not starting earlier to reach temperature by selected time.  It just starts at the time I selected.]]></description>
+			<content:encoded><![CDATA[<p>My mistake, not starting earlier to reach temperature by selected time.  It just starts at the time I selected.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Sam		</title>
+		<link>/blog/index.php/archives/1432/comment-page-1#comment-3891</link>
+
+		<dc:creator><![CDATA[Sam]]></dc:creator>
+		<pubDate>Sat, 14 Jan 2012 00:12:38 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1432#comment-3891</guid>
+
+					<description><![CDATA[You took my post down and the one with the guy agreeing with me.  Can&#039;t take the heat?  You&#039;re quick to gripe, but can&#039;t take criticism yourself.  I might create my own blog talking about how stupid your blog is.
+
+
+
+&lt;blockquote&gt;[From Aaron-Sam, last I checked, this is my blog. After some thought, I agreed that I had ranted a bit too much (but not because of your ironic comment, so I changed the content), making neither of your comments relevant any longer. Why this is such a big deal for you, I have NO idea.]&lt;/blockquote&gt;
+
+]]></description>
+			<content:encoded><![CDATA[<p>You took my post down and the one with the guy agreeing with me.  Can&#8217;t take the heat?  You&#8217;re quick to gripe, but can&#8217;t take criticism yourself.  I might create my own blog talking about how stupid your blog is.</p>
+<blockquote><p>[From Aaron-Sam, last I checked, this is my blog. After some thought, I agreed that I had ranted a bit too much (but not because of your ironic comment, so I changed the content), making neither of your comments relevant any longer. Why this is such a big deal for you, I have NO idea.]</p></blockquote>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Rick		</title>
+		<link>/blog/index.php/archives/1432/comment-page-1#comment-3889</link>
+
+		<dc:creator><![CDATA[Rick]]></dc:creator>
+		<pubDate>Fri, 13 Jan 2012 17:15:40 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1432#comment-3889</guid>
+
+					<description><![CDATA[I&#039;ll check again tomorrow morning.  It could have been a one time coincidence since the heater does come on periodically all night.   When I manually turn up the temperature it displays the number of minutes it will take to reach that point, so all the components of time-till-target scheduling are there.]]></description>
+			<content:encoded><![CDATA[<p>I&#8217;ll check again tomorrow morning.  It could have been a one time coincidence since the heater does come on periodically all night.   When I manually turn up the temperature it displays the number of minutes it will take to reach that point, so all the components of time-till-target scheduling are there.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/1432/comment-page-1#comment-3888</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Fri, 13 Jan 2012 15:37:10 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1432#comment-3888</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1432/comment-page-1#comment-3887&quot;&gt;Curt&lt;/a&gt;.
+
+Sorry about not making the connection! 
+
+I can say that none of the thermostats in our house have done that in the last day (and they are all updated). Yesterday, the house thought we were away during the day and shut down all normal schedules, so our house was very cold during dinner. The day time set points match the away temps. 
+
+I know that this morning neither of the normal schedules activated until their normal set points time as I was awake already when the furnace turned on.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/1432/comment-page-1#comment-3887">Curt</a>.</p>
+<p>Sorry about not making the connection! </p>
+<p>I can say that none of the thermostats in our house have done that in the last day (and they are all updated). Yesterday, the house thought we were away during the day and shut down all normal schedules, so our house was very cold during dinner. The day time set points match the away temps. </p>
+<p>I know that this morning neither of the normal schedules activated until their normal set points time as I was awake already when the furnace turned on.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Curt		</title>
+		<link>/blog/index.php/archives/1432/comment-page-1#comment-3887</link>
+
+		<dc:creator><![CDATA[Curt]]></dc:creator>
+		<pubDate>Fri, 13 Jan 2012 15:18:19 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1432#comment-3887</guid>
+
+					<description><![CDATA[I&#039;m the guy who reported that, according to a support guy, the Nest does not anticipate set point changes. That was when display version 1.04 was current. The fellow said something like &quot;I can&#039;t tell you anything about new releases&quot;. He offered this tidbit gratuitously - I had not asked - seemingly with a wink.
+So, it certainly is a good question: Does 1.06 implement anticipation of set points? I got up late this morning, so I don&#039;t know. I have schedule learning turned off - who knows, that might turn any anticipation feature off as well.]]></description>
+			<content:encoded><![CDATA[<p>I&#8217;m the guy who reported that, according to a support guy, the Nest does not anticipate set point changes. That was when display version 1.04 was current. The fellow said something like &#8220;I can&#8217;t tell you anything about new releases&#8221;. He offered this tidbit gratuitously &#8211; I had not asked &#8211; seemingly with a wink.<br />
+So, it certainly is a good question: Does 1.06 implement anticipation of set points? I got up late this morning, so I don&#8217;t know. I have schedule learning turned off &#8211; who knows, that might turn any anticipation feature off as well.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/1432/comment-page-1#comment-3886</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Fri, 13 Jan 2012 11:48:09 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1432#comment-3886</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1432/comment-page-1#comment-3883&quot;&gt;Rick&lt;/a&gt;.
+
+@rick-- did you confirm your schedule hadn&#039;t changed? Someone earlier had confirmed with nest that it wouldn&#039;t warm to a set point before the time (it was set to had passed). While I&#039;d really like to have that feature, they&#039;d need to adjust the schedule setting experience to make it an option as many have schedules based on guesswork of how long it will take to reach a set point.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/1432/comment-page-1#comment-3883">Rick</a>.</p>
+<p>@rick&#8211; did you confirm your schedule hadn&#8217;t changed? Someone earlier had confirmed with nest that it wouldn&#8217;t warm to a set point before the time (it was set to had passed). While I&#8217;d really like to have that feature, they&#8217;d need to adjust the schedule setting experience to make it an option as many have schedules based on guesswork of how long it will take to reach a set point.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Rick		</title>
+		<link>/blog/index.php/archives/1432/comment-page-1#comment-3883</link>
+
+		<dc:creator><![CDATA[Rick]]></dc:creator>
+		<pubDate>Fri, 13 Jan 2012 03:14:07 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1432#comment-3883</guid>
+
+					<description><![CDATA[Sorry to hear about all the issues guys.  As another datapoint, my Nest hasn&#039;t had any issues sine I installed in Christmas eve.  
+
+This morning though, instead of coming on at 7:00 am as scheduled, it came on 20 minutes -early- so that by 7:00 am the house was at the -target temperature-.
+
+Wonder if that was part of the initial design, or a result of the firmware update.  In either case it was unexpected, yet very cool behavior.]]></description>
+			<content:encoded><![CDATA[<p>Sorry to hear about all the issues guys.  As another datapoint, my Nest hasn&#8217;t had any issues sine I installed in Christmas eve.  </p>
+<p>This morning though, instead of coming on at 7:00 am as scheduled, it came on 20 minutes -early- so that by 7:00 am the house was at the -target temperature-.</p>
+<p>Wonder if that was part of the initial design, or a result of the firmware update.  In either case it was unexpected, yet very cool behavior.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/1432/comment-page-1#comment-3877</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Thu, 12 Jan 2012 18:45:20 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1432#comment-3877</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1432/comment-page-1#comment-3876&quot;&gt;Brian&lt;/a&gt;.
+
+I did notice this morning that there was a new version on my thermostats. I&#039;ll post updates if something changes for the better or worse.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/1432/comment-page-1#comment-3876">Brian</a>.</p>
+<p>I did notice this morning that there was a new version on my thermostats. I&#8217;ll post updates if something changes for the better or worse.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: SuperUser.com, and my rise to fame?	</title>
+	<atom:link href="/blog/index.php/archives/1603/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/1603</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Tue, 22 May 2012 21:11:10 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/1603/comment-page-1#comment-4533</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Tue, 22 May 2012 21:11:10 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1603#comment-4533</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1603/comment-page-1#comment-4532&quot;&gt;saul&lt;/a&gt;.
+
+I have tried that and while it may work for some, it didn&#039;t work on my laptop unfortunately.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/1603/comment-page-1#comment-4532">saul</a>.</p>
+<p>I have tried that and while it may work for some, it didn&#8217;t work on my laptop unfortunately.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: saul		</title>
+		<link>/blog/index.php/archives/1603/comment-page-1#comment-4532</link>
+
+		<dc:creator><![CDATA[saul]]></dc:creator>
+		<pubDate>Tue, 22 May 2012 20:59:11 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1603#comment-4532</guid>
+
+					<description><![CDATA[http://support.microsoft.com/kb/2518158]]></description>
+			<content:encoded><![CDATA[<p><a href="http://support.microsoft.com/kb/2518158" rel="nofollow ugc">http://support.microsoft.com/kb/2518158</a></p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

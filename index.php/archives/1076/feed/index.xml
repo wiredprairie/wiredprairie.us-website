@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: How to embed and use the Google Web Fonts in Silverlight	</title>
+	<atom:link href="/blog/index.php/archives/1076/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/1076</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Sat, 14 May 2011 17:34:47 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: setiri		</title>
+		<link>/blog/index.php/archives/1076/comment-page-1#comment-3444</link>
+
+		<dc:creator><![CDATA[setiri]]></dc:creator>
+		<pubDate>Sat, 14 May 2011 17:34:47 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/1076#comment-3444</guid>
+
+					<description><![CDATA[Im curious if there might be a way to load these directly from google after the silverlight app loads in the browser?]]></description>
+			<content:encoded><![CDATA[<p>Im curious if there might be a way to load these directly from google after the silverlight app loads in the browser?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Christian L		</title>
+		<link>/blog/index.php/archives/1076/comment-page-1#comment-3085</link>
+
+		<dc:creator><![CDATA[Christian L]]></dc:creator>
+		<pubDate>Wed, 09 Jun 2010 19:05:03 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/1076#comment-3085</guid>
+
+					<description><![CDATA[Great article, thank you very much!]]></description>
+			<content:encoded><![CDATA[<p>Great article, thank you very much!</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

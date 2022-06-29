@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="/blog/xmlrpc.php">
+
+<title>What&#8217;s the perfect API? &#8211; WiredPrairie</title>
+<meta name="robots" content="max-image-preview:large">
+<link rel="dns-prefetch" href="//www.wiredprairie.us">
+<link rel="dns-prefetch" href="//secure.gravatar.com">
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//s.w.org">
+<link rel="dns-prefetch" href="//v0.wordpress.com">
+<link rel="dns-prefetch" href="//widgets.wp.com">
+<link rel="dns-prefetch" href="//s0.wp.com">
+<link rel="dns-prefetch" href="//0.gravatar.com">
+<link rel="dns-prefetch" href="//1.gravatar.com">
+<link rel="dns-prefetch" href="//2.gravatar.com">
+<link rel="dns-prefetch" href="//jetpack.wordpress.com">
+<link rel="dns-prefetch" href="//public-api.wordpress.com">
+<link rel="alternate" type="application/rss+xml" title="WiredPrairie &raquo; Feed" href="/blog/index.php/feed">
+<link rel="alternate" type="application/rss+xml" title="WiredPrairie &raquo; Comments Feed" href="/blog/index.php/comments/feed">
+<link rel="alternate" type="application/rss+xml" title="WiredPrairie &raquo; What&#8217;s the perfect API? Comments Feed" href="/blog/index.php/archives/175/feed">
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.0"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode,e=(p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0),i.toDataURL());return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([129777,127995,8205,129778,127999],[129777,127995,8203,129778,127999])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style type="text/css">img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="/blog/wp-includes/css/dist/block-library/style.min.css?ver=6.0" type="text/css" media="all">
+<style id="wp-block-library-inline-css" type="text/css">.has-text-align-justify{text-align:justify;}</style>
+<link rel="stylesheet" id="mediaelement-css" href="/blog/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.16" type="text/css" media="all">
+<link rel="stylesheet" id="wp-mediaelement-css" href="/blog/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.0" type="text/css" media="all">
+<style id="global-styles-inline-css" type="text/css">body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}</style>
+<link rel="stylesheet" id="editor-style-css" href="/blog/wp-content/themes/editor/style.css?ver=6.0" type="text/css" media="all">
+<link rel="stylesheet" id="editor-font-awesome-css-css" href="/blog/wp-content/themes/editor/inc/fontawesome/font-awesome.css?ver=4.1.0" type="text/css" media="screen">
+<!--[if IE]>
+<link rel='stylesheet' id='ie7-style-css'  href='/wp-content/themes/editor/inc/styles/ie.css?ver=6.0' type='text/css' media='all' />
+<![endif]-->
+<link rel="stylesheet" id="editor-fonts-css" href="//fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C600%2C700%2C400italic%2C600italic%2C700italic%7CRoboto+Condensed%3A300%2C400%2C700%2C300italic%2C400italic%2C700italic&#038;subset=latin%2Clatin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="social-logos-css" href="/blog/wp-content/plugins/jetpack/_inc/social-logos/social-logos.min.css?ver=11.0" type="text/css" media="all">
+<link rel="stylesheet" id="jetpack_css-css" href="/blog/wp-content/plugins/jetpack/css/jetpack.css?ver=11.0" type="text/css" media="all">
+<script type="text/javascript" id="jetpack_related-posts-js-extra">
+/* <![CDATA[ */
+var related_posts_js_options = {"post_heading":"h4"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/blog/wp-content/plugins/jetpack/_inc/build/related-posts/related-posts.min.js?ver=20211209" id="jetpack_related-posts-js"></script>
+<script type="text/javascript" src="/blog/wp-includes/js/jquery/jquery.min.js?ver=3.6.0" id="jquery-core-js"></script>
+<script type="text/javascript" src="/blog/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
+<link rel="https://api.w.org/" href="/blog/index.php/wp-json/">
+<link rel="alternate" type="application/json" href="/blog/index.php/wp-json/wp/v2/posts/175">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/blog/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/blog/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 6.0">
+<link rel="canonical" href="/blog/index.php/archives/175">
+<link rel="shortlink" href="https://wp.me/pd5QIe-2P">
+<link rel="alternate" type="application/json+oembed" href="/blog/index.php/wp-json/oembed/1.0/embed?url=%2Findex.php%2Farchives%2F175">
+<link rel="alternate" type="text/xml+oembed" href="/blog/index.php/wp-json/oembed/1.0/embed?url=%2Findex.php%2Farchives%2F175&#038;format=xml">
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#000"
+    },
+    "button": {
+      "background": "#f1d600"
+    }
+  }
+})});
+</script><style>img#wpstats{display:none}</style>
+	
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="What&#8217;s the perfect API?">
+<meta property="og:url" content="/index.php/archives/175">
+<meta property="og:description" content="I was skimming a rant by someone on arstechnica about how badly messed up Win32 APIs are and how superior everything else is, when this paragraph grabbed my attention: The reason must be that no on…">
+<meta property="article:published_time" content="2008-05-06T00:07:47+00:00">
+<meta property="article:modified_time" content="2008-05-06T00:46:16+00:00">
+<meta property="og:site_name" content="WiredPrairie">
+<meta property="og:image" content="https://s0.wp.com/i/blank.jpg">
+<meta property="og:image:alt" content="">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:text:title" content="What&#8217;s the perfect API?">
+<meta name="twitter:card" content="summary">
+
+<!-- End Jetpack Open Graph Tags -->
+</head>
+
+<body class="post-template-default single single-post postid-175 single-format-standard group-blog">
+
+<div id="page" class="hfeed site container">
+
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+	<!-- Get sidebar color option (Appearance -> Customize -> Theme Options) -->
+		<header id="masthead" class="site-header light" role="banner">
+		<!-- Tab navigation -->
+		<ul class="toggle-bar" role="tablist">
+			<!-- Main navigation -->
+			<li id="panel-1" class="current" role="presentation">
+				<a href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true" class="current nav-toggle" data-tab="tab-1"><i class="fa fa-bars"></i><span class="screen-reader-text">View menu</span></a>
+			</li>
+
+			<!-- Featured Posts navigation -->
+							<li id="panel-2" role="presentation">
+					<a href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false" data-tab="tab-2"><i class="fa fa-thumb-tack"></i><span class="screen-reader-text">View featured posts</span></a>
+				</li>
+			
+			<!-- Sidebar widgets navigation -->
+			<li id="panel-3" role="presentation">
+				<a href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false" class="folder-toggle" data-tab="tab-3"><i class="fa fa-folder"></i><i class="fa fa-folder-open"></i><span class="screen-reader-text">View sidebar</span></a>
+			</li>
+		</ul>
+
+		<div id="tabs" class="toggle-tabs">
+			<div class="site-header-inside">
+				<!-- Logo, description and main navigation -->
+				<div id="tab-1" class="tab-content current fadeIn">
+					<div class="site-branding">
+						<!-- Get the site branding -->
+													<h1 class="site-title"><a href="/blog/" rel="home">WiredPrairie</a></h1>
+							<h2 class="site-description">Yet another tech blog.</h2>
+											</div>
+
+					<nav id="site-navigation" class="main-navigation" role="navigation">
+						<div class="menu"><ul>
+<li><a href="/blog/">Home</a></li>
+<li class="page_item page-item-2"><a href="/blog/index.php/about">About</a></li>
+<li class="page_item page-item-28"><a href="/blog/index.php/contact">Contact Me</a></li>
+</ul></div>
+					</nav><!-- #site-navigation -->
+
+									</div>
+<!-- #tab-1 -->
+
+				<!-- Featured Posts template (template-featured-posts.php) -->
+				
+									<div id="tab-2" class="widget-area tab-content animated fadeIn">
+						<div class="widget featured-posts-widget">
+							<h2 class="widget-title">Recommendations</h2>
+
+							<div class="featured-posts">
+							    
+																	<div class="featured-post">
+																	            	<a class="featured-post-image" href="/blog/index.php/archives/2278" rel="bookmark"><img width="600" height="400" src="/blog/wp-content/uploads/2018/07/Photo-Jul-23-7-23-26-PM-600x400.jpg" class="attachment-featured-post-image size-featured-post-image wp-post-image" alt="" loading="lazy" data-attachment-id="2292" data-permalink="/index.php/archives/2278/photo-jul-23-7-23-26-pm" data-orig-file="/wp-content/uploads/2018/07/Photo-Jul-23-7-23-26-PM.jpg" data-orig-size="4032,3024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;2.2&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;iPhone 6s&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;1532373806&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;4.15&quot;,&quot;iso&quot;:&quot;320&quot;,&quot;shutter_speed&quot;:&quot;0.066666666666667&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="Photo Jul 23, 7 23 26 PM" data-image-description="" data-image-caption="" data-medium-file="/wp-content/uploads/2018/07/Photo-Jul-23-7-23-26-PM-300x225.jpg" data-large-file="/wp-content/uploads/2018/07/Photo-Jul-23-7-23-26-PM-1024x768.jpg"></a>
+							            							            <h3><a href="/blog/index.php/archives/2278" rel="bookmark">You don&#8217;t need it, but you might want it any way: Ubiquiti Unifi</a></h3>
+
+							            <div class="featured-post-meta">
+								            <div class="featured-post-date">
+								            	<i class="fa fa-clock-o"></i>
+								            	<span class="posted-on"><a href="/blog/index.php/archives/2278" rel="bookmark"><time class="entry-date published" datetime="2018-07-25T20:27:43-05:00">July 25, 2018</time></a></span><span class="byline"> by </span> <span class="author vcard"><a class="url fn n" href="/blog/index.php/archives/author/aaron">Aaron</a></span>								            </div>
+							            </div>
+									</div>
+																	<div class="featured-post">
+																	            	<a class="featured-post-image" href="/blog/index.php/archives/2197" rel="bookmark"><img width="600" height="400" src="/blog/wp-content/uploads/2018/02/2018-02-16-20_23_15-AmazonSmile_-Pure-Green-100-Natural-Latex-Mattress-Topper-Firm-3_-King-Size-600x400.png" class="attachment-featured-post-image size-featured-post-image wp-post-image" alt="Mattress-Firm" loading="lazy" data-attachment-id="2198" data-permalink="/index.php/archives/2197/2018-02-16-20_23_15-amazonsmile_-pure-green-100-natural-latex-mattress-topper-firm-3_-king-size" data-orig-file="/wp-content/uploads/2018/02/2018-02-16-20_23_15-AmazonSmile_-Pure-Green-100-Natural-Latex-Mattress-Topper-Firm-3_-King-Size.png" data-orig-size="1067,807" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Pure Green 100% Natural Latex Mattress Topper &#8211; Firm" data-image-description="" data-image-caption="&lt;p&gt;Pure Green 100% Natural Latex Mattress Topper &#8211; Firm&lt;/p&gt;
+" data-medium-file="/wp-content/uploads/2018/02/2018-02-16-20_23_15-AmazonSmile_-Pure-Green-100-Natural-Latex-Mattress-Topper-Firm-3_-King-Size-300x227.png" data-large-file="/wp-content/uploads/2018/02/2018-02-16-20_23_15-AmazonSmile_-Pure-Green-100-Natural-Latex-Mattress-Topper-Firm-3_-King-Size-1024x774.png"></a>
+							            							            <h3><a href="/blog/index.php/archives/2197" rel="bookmark">How to make your too soft Tempur-pedic Bed comfortable</a></h3>
+
+							            <div class="featured-post-meta">
+								            <div class="featured-post-date">
+								            	<i class="fa fa-clock-o"></i>
+								            	<span class="posted-on"><a href="/blog/index.php/archives/2197" rel="bookmark"><time class="entry-date published" datetime="2018-02-17T09:59:38-06:00">February 17, 2018</time><time class="updated" datetime="2018-02-17T12:05:52-06:00">February 17, 2018</time></a></span><span class="byline"> by </span> <span class="author vcard"><a class="url fn n" href="/blog/index.php/archives/author/aaron">Aaron</a></span>								            </div>
+							            </div>
+									</div>
+																	<div class="featured-post">
+																	            	<a class="featured-post-image" href="/blog/index.php/archives/2124" rel="bookmark"><img width="600" height="400" src="/blog/wp-content/uploads/2016/11/TicketToRideBanner-600x400.jpg" class="attachment-featured-post-image size-featured-post-image wp-post-image" alt="" loading="lazy" data-attachment-id="2138" data-permalink="/index.php/archives/2124/tickettoridebanner" data-orig-file="/wp-content/uploads/2016/11/TicketToRideBanner.jpg" data-orig-size="1920,873" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;2.2&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;iPhone 6s&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;4.2&quot;,&quot;iso&quot;:&quot;320&quot;,&quot;shutter_speed&quot;:&quot;0.066666666666667&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="tickettoridebanner" data-image-description="" data-image-caption="" data-medium-file="/wp-content/uploads/2016/11/TicketToRideBanner-300x136.jpg" data-large-file="/wp-content/uploads/2016/11/TicketToRideBanner-1024x466.jpg"></a>
+							            							            <h3><a href="/blog/index.php/archives/2124" rel="bookmark">Alternatives to Monopoly: Some table-top board games you should try</a></h3>
+
+							            <div class="featured-post-meta">
+								            <div class="featured-post-date">
+								            	<i class="fa fa-clock-o"></i>
+								            	<span class="posted-on"><a href="/blog/index.php/archives/2124" rel="bookmark"><time class="entry-date published" datetime="2016-11-28T07:25:48-06:00">November 28, 2016</time><time class="updated" datetime="2017-04-04T20:19:50-05:00">April 4, 2017</time></a></span><span class="byline"> by </span> <span class="author vcard"><a class="url fn n" href="/blog/index.php/archives/author/aaron">Aaron</a></span>								            </div>
+							            </div>
+									</div>
+																	<div class="featured-post">
+																	            <h3><a href="/blog/index.php/archives/2119" rel="bookmark">Geek gift ideas 2016</a></h3>
+
+							            <div class="featured-post-meta">
+								            <div class="featured-post-date">
+								            	<i class="fa fa-clock-o"></i>
+								            	<span class="posted-on"><a href="/blog/index.php/archives/2119" rel="bookmark"><time class="entry-date published" datetime="2016-11-27T11:30:00-06:00">November 27, 2016</time><time class="updated" datetime="2017-04-04T20:20:17-05:00">April 4, 2017</time></a></span><span class="byline"> by </span> <span class="author vcard"><a class="url fn n" href="/blog/index.php/archives/author/aaron">Aaron</a></span>								            </div>
+							            </div>
+									</div>
+																	<div class="featured-post">
+																	            <h3><a href="/blog/index.php/archives/2115" rel="bookmark">Changing password requirements in Linux Subsystem for Windows (or Bash on Ubuntu on Windows)</a></h3>
+
+							            <div class="featured-post-meta">
+								            <div class="featured-post-date">
+								            	<i class="fa fa-clock-o"></i>
+								            	<span class="posted-on"><a href="/blog/index.php/archives/2115" rel="bookmark"><time class="entry-date published" datetime="2016-11-23T07:47:54-06:00">November 23, 2016</time></a></span><span class="byline"> by </span> <span class="author vcard"><a class="url fn n" href="/blog/index.php/archives/author/aaron">Aaron</a></span>								            </div>
+							            </div>
+									</div>
+																	<div class="featured-post">
+																	            	<a class="featured-post-image" href="/blog/index.php/archives/2096" rel="bookmark"><img width="600" height="400" src="/blog/wp-content/uploads/2016/11/02_ecobee3_family2-600x400.jpg" class="attachment-featured-post-image size-featured-post-image wp-post-image" alt="" loading="lazy" data-attachment-id="2112" data-permalink="/index.php/archives/2096/02_ecobee3_family2" data-orig-file="/wp-content/uploads/2016/11/02_ecobee3_family2.jpg" data-orig-size="1198,400" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="02_ecobee3_family2" data-image-description="" data-image-caption="" data-medium-file="/wp-content/uploads/2016/11/02_ecobee3_family2-300x100.jpg" data-large-file="/wp-content/uploads/2016/11/02_ecobee3_family2-1024x342.jpg"></a>
+							            							            <h3><a href="/blog/index.php/archives/2096" rel="bookmark">Ecobee’s ecobee3 Thermostat</a></h3>
+
+							            <div class="featured-post-meta">
+								            <div class="featured-post-date">
+								            	<i class="fa fa-clock-o"></i>
+								            	<span class="posted-on"><a href="/blog/index.php/archives/2096" rel="bookmark"><time class="entry-date published" datetime="2016-11-19T09:10:36-06:00">November 19, 2016</time><time class="updated" datetime="2016-11-19T09:17:51-06:00">November 19, 2016</time></a></span><span class="byline"> by </span> <span class="author vcard"><a class="url fn n" href="/blog/index.php/archives/author/aaron">Aaron</a></span>								            </div>
+							            </div>
+									</div>
+																	<div class="featured-post">
+																	            <h3><a href="/blog/index.php/archives/2039" rel="bookmark">Made in the USA Camera Bag Manufacturers</a></h3>
+
+							            <div class="featured-post-meta">
+								            <div class="featured-post-date">
+								            	<i class="fa fa-clock-o"></i>
+								            	<span class="posted-on"><a href="/blog/index.php/archives/2039" rel="bookmark"><time class="entry-date published" datetime="2016-03-21T20:26:43-05:00">March 21, 2016</time><time class="updated" datetime="2016-03-23T09:40:26-05:00">March 23, 2016</time></a></span><span class="byline"> by </span> <span class="author vcard"><a class="url fn n" href="/blog/index.php/archives/author/aaron">Aaron</a></span>								            </div>
+							            </div>
+									</div>
+																	<div class="featured-post">
+																	            <h3><a href="/blog/index.php/archives/2020" rel="bookmark">My Raspberry Pi 2 Model B setup</a></h3>
+
+							            <div class="featured-post-meta">
+								            <div class="featured-post-date">
+								            	<i class="fa fa-clock-o"></i>
+								            	<span class="posted-on"><a href="/blog/index.php/archives/2020" rel="bookmark"><time class="entry-date published" datetime="2015-03-09T20:48:37-05:00">March 9, 2015</time></a></span><span class="byline"> by </span> <span class="author vcard"><a class="url fn n" href="/blog/index.php/archives/author/aaron">Aaron</a></span>								            </div>
+							            </div>
+									</div>
+																	<div class="featured-post">
+																	            <h3><a href="/blog/index.php/archives/2011" rel="bookmark">Kenu Airframe Portable Car Mount</a></h3>
+
+							            <div class="featured-post-meta">
+								            <div class="featured-post-date">
+								            	<i class="fa fa-clock-o"></i>
+								            	<span class="posted-on"><a href="/blog/index.php/archives/2011" rel="bookmark"><time class="entry-date published" datetime="2015-01-18T11:21:50-06:00">January 18, 2015</time></a></span><span class="byline"> by </span> <span class="author vcard"><a class="url fn n" href="/blog/index.php/archives/author/aaron">Aaron</a></span>								            </div>
+							            </div>
+									</div>
+																	<div class="featured-post">
+																	            <h3><a href="/blog/index.php/archives/2006" rel="bookmark">Attaching a GoPro Hero with Aero Bars from RedShift</a></h3>
+
+							            <div class="featured-post-meta">
+								            <div class="featured-post-date">
+								            	<i class="fa fa-clock-o"></i>
+								            	<span class="posted-on"><a href="/blog/index.php/archives/2006" rel="bookmark"><time class="entry-date published" datetime="2014-08-07T20:48:50-05:00">August 7, 2014</time></a></span><span class="byline"> by </span> <span class="author vcard"><a class="url fn n" href="/blog/index.php/archives/author/aaron">Aaron</a></span>								            </div>
+							            </div>
+									</div>
+																							</div>
+<!-- .featured-posts -->
+						</div>
+<!-- .featured-posts-widget -->
+					</div>
+<!-- #tab-2 .widget-area -->
+				
+				<!-- Sidebar widgets -->
+				<div id="tab-3" class="tab-content animated fadeIn" role="tabpanel" aria-labelledby="panel-3" aria-hidden="true">
+						<div id="secondary" class="widget-area" role="complementary">
+		<aside id="pages-2" class="widget widget_pages"><h2 class="widget-title">Pages</h2>
+			<ul>
+				<li class="page_item page-item-2"><a href="/blog/index.php/about">About</a></li>
+<li class="page_item page-item-28"><a href="/blog/index.php/contact">Contact Me</a></li>
+			</ul>
+
+			</aside><aside id="archives-2" class="widget widget_archive"><h2 class="widget-title">Archives</h2>
+			<ul>
+					<li><a href="/blog/index.php/archives/date/2019/10">October 2019</a></li>
+	<li><a href="/blog/index.php/archives/date/2018/07">July 2018</a></li>
+	<li><a href="/blog/index.php/archives/date/2018/05">May 2018</a></li>
+	<li><a href="/blog/index.php/archives/date/2018/04">April 2018</a></li>
+	<li><a href="/blog/index.php/archives/date/2018/03">March 2018</a></li>
+	<li><a href="/blog/index.php/archives/date/2018/02">February 2018</a></li>
+	<li><a href="/blog/index.php/archives/date/2017/04">April 2017</a></li>
+	<li><a href="/blog/index.php/archives/date/2017/01">January 2017</a></li>
+	<li><a href="/blog/index.php/archives/date/2016/11">November 2016</a></li>
+	<li><a href="/blog/index.php/archives/date/2016/10">October 2016</a></li>
+	<li><a href="/blog/index.php/archives/date/2016/03">March 2016</a></li>
+	<li><a href="/blog/index.php/archives/date/2016/02">February 2016</a></li>
+	<li><a href="/blog/index.php/archives/date/2015/03">March 2015</a></li>
+	<li><a href="/blog/index.php/archives/date/2015/01">January 2015</a></li>
+	<li><a href="/blog/index.php/archives/date/2014/08">August 2014</a></li>
+	<li><a href="/blog/index.php/archives/date/2014/05">May 2014</a></li>
+	<li><a href="/blog/index.php/archives/date/2014/01">January 2014</a></li>
+	<li><a href="/blog/index.php/archives/date/2013/12">December 2013</a></li>
+	<li><a href="/blog/index.php/archives/date/2013/10">October 2013</a></li>
+	<li><a href="/blog/index.php/archives/date/2013/09">September 2013</a></li>
+	<li><a href="/blog/index.php/archives/date/2013/08">August 2013</a></li>
+	<li><a href="/blog/index.php/archives/date/2013/07">July 2013</a></li>
+	<li><a href="/blog/index.php/archives/date/2013/06">June 2013</a></li>
+	<li><a href="/blog/index.php/archives/date/2013/05">May 2013</a></li>
+	<li><a href="/blog/index.php/archives/date/2013/03">March 2013</a></li>
+	<li><a href="/blog/index.php/archives/date/2013/02">February 2013</a></li>
+	<li><a href="/blog/index.php/archives/date/2013/01">January 2013</a></li>
+	<li><a href="/blog/index.php/archives/date/2012/12">December 2012</a></li>
+	<li><a href="/blog/index.php/archives/date/2012/10">October 2012</a></li>
+	<li><a href="/blog/index.php/archives/date/2012/09">September 2012</a></li>
+	<li><a href="/blog/index.php/archives/date/2012/08">August 2012</a></li>
+	<li><a href="/blog/index.php/archives/date/2012/07">July 2012</a></li>
+	<li><a href="/blog/index.php/archives/date/2012/06">June 2012</a></li>
+	<li><a href="/blog/index.php/archives/date/2012/05">May 2012</a></li>
+	<li><a href="/blog/index.php/archives/date/2012/04">April 2012</a></li>
+	<li><a href="/blog/index.php/archives/date/2012/03">March 2012</a></li>
+	<li><a href="/blog/index.php/archives/date/2012/02">February 2012</a></li>
+	<li><a href="/blog/index.php/archives/date/2012/01">January 2012</a></li>
+	<li><a href="/blog/index.php/archives/date/2011/12">December 2011</a></li>
+	<li><a href="/blog/index.php/archives/date/2011/11">November 2011</a></li>
+	<li><a href="/blog/index.php/archives/date/2011/08">August 2011</a></li>
+	<li><a href="/blog/index.php/archives/date/2011/07">July 2011</a></li>
+	<li><a href="/blog/index.php/archives/date/2011/06">June 2011</a></li>
+	<li><a href="/blog/index.php/archives/date/2011/05">May 2011</a></li>
+	<li><a href="/blog/index.php/archives/date/2011/03">March 2011</a></li>
+	<li><a href="/blog/index.php/archives/date/2011/02">February 2011</a></li>
+	<li><a href="/blog/index.php/archives/date/2011/01">January 2011</a></li>
+	<li><a href="/blog/index.php/archives/date/2010/11">November 2010</a></li>
+	<li><a href="/blog/index.php/archives/date/2010/10">October 2010</a></li>
+	<li><a href="/blog/index.php/archives/date/2010/09">September 2010</a></li>
+	<li><a href="/blog/index.php/archives/date/2010/08">August 2010</a></li>
+	<li><a href="/blog/index.php/archives/date/2010/07">July 2010</a></li>
+	<li><a href="/blog/index.php/archives/date/2010/06">June 2010</a></li>
+	<li><a href="/blog/index.php/archives/date/2010/05">May 2010</a></li>
+	<li><a href="/blog/index.php/archives/date/2010/04">April 2010</a></li>
+	<li><a href="/blog/index.php/archives/date/2010/03">March 2010</a></li>
+	<li><a href="/blog/index.php/archives/date/2010/02">February 2010</a></li>
+	<li><a href="/blog/index.php/archives/date/2010/01">January 2010</a></li>
+	<li><a href="/blog/index.php/archives/date/2009/12">December 2009</a></li>
+	<li><a href="/blog/index.php/archives/date/2009/11">November 2009</a></li>
+	<li><a href="/blog/index.php/archives/date/2009/10">October 2009</a></li>
+	<li><a href="/blog/index.php/archives/date/2009/09">September 2009</a></li>
+	<li><a href="/blog/index.php/archives/date/2009/08">August 2009</a></li>
+	<li><a href="/blog/index.php/archives/date/2009/07">July 2009</a></li>
+	<li><a href="/blog/index.php/archives/date/2009/06">June 2009</a></li>
+	<li><a href="/blog/index.php/archives/date/2009/05">May 2009</a></li>
+	<li><a href="/blog/index.php/archives/date/2009/04">April 2009</a></li>
+	<li><a href="/blog/index.php/archives/date/2009/03">March 2009</a></li>
+	<li><a href="/blog/index.php/archives/date/2009/02">February 2009</a></li>
+	<li><a href="/blog/index.php/archives/date/2009/01">January 2009</a></li>
+	<li><a href="/blog/index.php/archives/date/2008/12">December 2008</a></li>
+	<li><a href="/blog/index.php/archives/date/2008/11">November 2008</a></li>
+	<li><a href="/blog/index.php/archives/date/2008/10">October 2008</a></li>
+	<li><a href="/blog/index.php/archives/date/2008/09">September 2008</a></li>
+	<li><a href="/blog/index.php/archives/date/2008/08">August 2008</a></li>
+	<li><a href="/blog/index.php/archives/date/2008/07">July 2008</a></li>
+	<li><a href="/blog/index.php/archives/date/2008/06">June 2008</a></li>
+	<li><a href="/blog/index.php/archives/date/2008/05">May 2008</a></li>
+	<li><a href="/blog/index.php/archives/date/2008/04">April 2008</a></li>
+	<li><a href="/blog/index.php/archives/date/2008/03">March 2008</a></li>
+	<li><a href="/blog/index.php/archives/date/2008/02">February 2008</a></li>
+			</ul>
+
+			</aside>	</div>
+<!-- #secondary -->
+				</div>
+<!-- #tab-3 -->
+			</div>
+<!-- .site-header-inside -->
+		</div>
+<!-- #tabs -->
+	</header><!-- #masthead -->
+
+	<div id="content" class="site-content fadeInFast">
+
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+		
+			
+<article id="post-175" class="post post-175 type-post status-publish format-standard hentry category-coding category-usability">
+	<!-- Grab the featured image -->
+	
+	<header class="entry-header">
+				<div class="entry-date">
+			<span class="posted-on"><a href="/blog/index.php/archives/175" rel="bookmark"><time class="entry-date published" datetime="2008-05-05T19:07:47-05:00">May 5, 2008</time><time class="updated" datetime="2008-05-05T19:46:16-05:00">May 5, 2008</time></a></span><span class="byline"> by </span> <span class="author vcard"><a class="url fn n" href="/blog/index.php/archives/author/aaron">Aaron</a></span>		</div>
+<!-- .entry-meta -->
+		
+		<h1 class="entry-title">What&#8217;s the perfect API?</h1>	</header><!-- .entry-header -->
+
+	
+<div class="entry-meta">
+	
+	<ul class="meta-list">
+					<li class="meta-cat">
+<a href="/blog/index.php/archives/category/coding" rel="category tag">Coding</a>, <a href="/blog/index.php/archives/category/usability" rel="category tag">Usability</a>
+</li>
+								<li class="meta-comment">
+			<span class="comments-link"><a href="/blog/index.php/archives/175#comments">14 Comments</a></span>
+		</li>
+					</ul>
+</div>
+	<div class="entry-content">
+		<p>I was skimming a <a href="http://arstechnica.com/articles/culture/microsoft-learn-from-apple-II.ars/4" target="_blank">rant</a> by someone on arstechnica about how badly messed up Win32 APIs are and how superior everything else is, when this paragraph grabbed my attention:</p>
+<blockquote>
+<p><font color="#800000">The reason must be that no one in Microsoft actually gives a damn. </font>Each group develops their own UI widgets in their own style and they simply <em>don&#8217;t care</em> that it&#8217;s a total mess. They don&#8217;t care that I have to learn new ways of doing the same task just because they couldn&#8217;t be bothered to do things the same way as other applications. I&#8217;m not saying, for example, that they shouldn&#8217;t have introduced the ribbon concept in Office 2007, because it seems to work pretty well, and I can believe that it really is a better UI model. But they should have taken stock of what they were doing and made it a system-wide UI device. New widgets and UI models do crop up from time to time, but they should be rare, and when they do appear, Microsoft should make them general so that everyone can use them.</p>
+</blockquote>
+<p>The article/post contained <strong>a lot of conjecture </strong>and fact-less information up to that point, and had strayed into the Vista-bashing camp that so many love when that paragraph smacked me. It&#8217;s where I went from having very little respect for the author to near zero. I mean seriously &#8212; how could you honestly write that no one cares at Microsoft? Not a single person? <strong>Right</strong>. There are some misguided teams and products at Microsoft from time to time (and some great products that are canceled), and maybe some products that he or I don&#8217;t agree with, but come on &#8212; there&#8217;s plenty of people who want to produce a product that others will use and enjoy (or at least find useful)! Does the author of that article honestly think, Microsoft employees get up in the morning, and think to themselves, I couldn&#8217;t care less about my future or any of my customers &#8212; I&#8217;ll go do the least amount of work I can to get my job done &#8212; and produce something barely adequate.</p>
+<p>I frequently see someone posting, &#8220;I&#8217;m joining Microsoft &#8230; so that I can not make a difference and not care!&#8221;</p>
+<p>A few other zingers from the post&#8230;</p>
+<p>If you develop software for a living, and were to say something to me in an interview like this:</p>
+<blockquote>
+<p>Another example; Win32 has a function for getting the size of a file. File sizes on Windows are limited to 2^64 bytes, and so they need a 64-bit integer to be expressed easily. But the API call to get the size of a file doesn&#8217;t give you a 64-bit value. Instead, it gives you a pair of 32-bit values that have to be combined in a particular way. For 32-bit Windows, that&#8217;s sort of understandable; 32-bit Windows is, well, 32-bit, so you might not expect to be able to use 64-bit integers. But if you use the same API in 64-bit Windows, it still gives you the pair of numbers, rather than just a nice simple 64-bit number. While this made some kind of sense on 32-bit Windows, it makes no sense at all on 64-bit Windows, since 64-bit Windows can, by definition, use 64-bit numbers.</p>
+</blockquote>
+<p>It shows such an immaturity of what it takes to do long term programming (not just one-off programming for hobbies) and API maintenance that you&#8217;d be a &#8220;no-hire.&#8221; Dude, do you seriously want to conditionalize all of your code just so you can recompile on 64 bit Windows? Do you want a new API just for that? Seriously, what&#8217;s the gain?</p>
+<p>So clearly, &#8230;</p>
+<blockquote>
+<p>So Windows is just a disaster to write programs for. It&#8217;s miserable. It&#8217;s quite nice if you want to use the same techniques you learned 15 years ago and not bother to change how you do, well, anything, but for anyone else it&#8217;s all pain. I thought before that Microsoft cared about people like me. But it doesn&#8217;t. And it makes programming on Windows painful. Microsoft is great at backwards compatibility—you can take really old programs and compile and run them on a brand new Windows—but terrible at design and terrible at providing a good experience.</p>
+</blockquote>
+<p>He applauds OSX at some point &#8212; coming to the conclusion that the Mac OSX APIs are genius &#8230; never mind the fact that Apple had to start over from scratch and every application needed to be rewritten (and the fact that the whole thing was inspired by the NeXT OpenStep). Maybe they are wonderful &#8212; I&#8217;ve only dabbled (but seriously, Objective C??!?). Microsoft could have done that too &#8212; but when you have the market share Microsoft has &#8212; can you truly afford to do that? <strong>No way</strong>. Hundreds of millions of people every day use legacy software on modern Windows operating systems because Microsoft made the difficult choice to keep supporting them.</p>
+<p>As the author goes on to say, it causes the internals of Windows to be less than completely desirable as it is forced to maintain a level of compatibility with old APIs and peculiarities of older versions of Windows. Are there people working at Microsoft right now who would love to just start fresh with a clean slate? <strong>Abso-freakin-lutely</strong>. But, business needs often come first in the world of making money. Microsoft was able to keep existing products running because of the design of their OS and APIs made it possible. Apple couldn&#8217;t with OS 9 and earlier when upgrading. When they can completely virtualize a Win32 process seamlessly &#8212; then they can start fresh.</p>
+<blockquote>
+<p>Taken alone, these are all fairly minor things. Put together, the interface is just completely shambolic. It looks amateurish. The quirks of each new interface have to be learned anew. This slap-dash approach to look-and-feel gives the impression of a platform that no one really cares about.</p>
+</blockquote>
+<p>The author seems to believe that everyone at Microsoft should just work together and produce products at the same time on the same ship schedules &#8212; as every one should contribute the &#8220;whole&#8221; and produce things that are only good for the masses. They aren&#8217;t allowed to innovate on their own or produce something unique or better than another team. &#8220;Just stick the widget into the OS &#8230; we&#8217;ll ship when you&#8217;re ready &#8230; and we&#8217;ll happily adapt to any changes that any other team needs to make.&#8221;</p>
+<p>If the author had chosen to research and provide facts, better understand the development environments, platform capabilities, and stick to a point, it might have been a mildly interesting read &#8212; but alas, he did not. It got my blood boiling &#8230;, hence my post. Maybe Microsoft, who couldn&#8217;t care less according the author, will nonetheless contact him to get feedback on how to build the perfect API. Clearly it can&#8217;t ever have a backwards-compatibility layer or object model &#8230; so it just has to be perfect right out the door. :-P</p>
+<p>What is the perfect API? For rich or a reach application? Give it a little thought right now. What comes to your mind right away?</p>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing">
+<h3 class="sd-title">Share this:</h3>
+<div class="sd-content"><ul>
+<li class="share-twitter"><a rel="nofollow noopener noreferrer" data-shared="sharing-twitter-175" class="share-twitter sd-button share-icon no-text" href="/blog/index.php/archives/175?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li>
+<li class="share-facebook"><a rel="nofollow noopener noreferrer" data-shared="sharing-facebook-175" class="share-facebook sd-button share-icon no-text" href="/blog/index.php/archives/175?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li>
+<li class="share-end">
+</ul></div>
+</div></div>
+<div class="sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-unloaded" id="like-post-wrapper-193486638-175-62bc7aff47c9d" data-src="https://widgets.wp.com/likes/#blog_id=193486638&amp;post_id=175&amp;origin=www.wiredprairie.us&amp;obj_id=193486638-175-62bc7aff47c9d" data-name="like-post-frame-193486638-175-62bc7aff47c9d" data-title="Like or Reblog">
+<h3 class="sd-title">Like this:</h3>
+<div class="likes-widget-placeholder post-likes-widget-placeholder" style="height: 55px;">
+<span class="button"><span>Like</span></span> <span class="loading">Loading...</span>
+</div>
+<span class="sd-text-color"></span><a class="sd-link-color"></a>
+</div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>			</div>
+<!-- .entry-content -->
+
+</article><!-- #post-## -->
+
+				<nav class="navigation post-navigation" role="navigation">
+		<h1 class="screen-reader-text">Post navigation</h1>
+		<div class="nav-links">
+			<div class="nav-previous"><a href="/blog/index.php/archives/174" rel="prev"><span class="meta-nav">&larr; Previous Post</span> Top 10 web security vulnerabilities</a></div>
+<div class="nav-next"><a href="/blog/index.php/archives/184" rel="next"><span class="meta-nav">Next Post &rarr;</span> Free Adobe DNG Viewer For Windows &#8230; soon</a></div>		</div>
+<!-- .nav-links -->
+	</nav><!-- .navigation -->
+	
+			
+<div id="comments" class="comments-area">
+
+	
+			<h3 class="comments-title">
+			14 Comments		</h3>
+
+		
+		<ol class="comment-list">
+			<li class="comment even thread-even depth-1 clear" id="li-comment-68">
+
+	<article class="comment-block" id="comment-68">
+
+		<img alt="" src="https://secure.gravatar.com/avatar/4bf06962813316e2486f0fd3e08080ec?s=51&#038;r=g" srcset="https://secure.gravatar.com/avatar/4bf06962813316e2486f0fd3e08080ec?s=102&#038;r=g 2x" class="avatar avatar-51 photo" height="51" width="51" loading="lazy">
+		<div class="comment-wrap">
+			<footer class="comment-info">
+				<cite class="comment-cite"><a href="http://blog.quantumbitdesigns.com/" rel="external nofollow ugc" class="url">KevinKerr</a></cite>				<a class="comment-time" href="/blog/index.php/archives/175#comment-68">May 6, 2008 at 10:54 am</a>			</footer>
+
+			<div class="comment-content">
+				<p>There is no perfect API. Every API and framework has tradeoffs.</p>
+				<p class="reply">
+									</p>
+			</div>
+
+					</div>
+	</article>
+</li>
+<!-- #comment-## -->
+<li class="comment odd alt thread-odd thread-alt depth-1 clear" id="li-comment-69">
+
+	<article class="comment-block" id="comment-69">
+
+		<img alt="" src="https://secure.gravatar.com/avatar/39bde984d316d69c707adf8be6649806?s=51&#038;r=g" srcset="https://secure.gravatar.com/avatar/39bde984d316d69c707adf8be6649806?s=102&#038;r=g 2x" class="avatar avatar-51 photo" height="51" width="51" loading="lazy">
+		<div class="comment-wrap">
+			<footer class="comment-info">
+				<cite class="comment-cite">JulesLt</cite>				<a class="comment-time" href="/blog/index.php/archives/175#comment-69">May 6, 2008 at 7:03 pm</a>			</footer>
+
+			<div class="comment-content">
+				<p>First point &#8211; fair enough &#8211; I think it&#8217;s harsh to say that no one at MS cares. In fact, I first learnt the point about having dialogue buttons as verbs, rather than OK/Cancel, from someone who&#8217;d been on the design team for Excel. </p>
+<p>The problem is the gap between best practice, and actual practice. Most companies fall down on that step, because it requires strong management support.  </p>
+<p>&gt;&#8221;applauds OSX at some point — coming to the conclusion &gt;that the Mac OSX APIs are genius … never mind the fact &gt;that Apple had to start over from scratch and every &gt;application needed to be rewritten&#8221;</p>
+<p>Not so much &#8216;never mind the fact&#8217; as that being the precise thing that has given Apple an advantage &#8211; that they bet the future on Cocoa rather than Carbon (the legacy API roughly equivalent to Win32 that allowed porting OS 9 apps to OS X).</p>
+<p>Note also the growing talk about what comes &#8216;after Java&#8217;, which was once presented as the final programming language. </p>
+<p>Perhaps we need to take a lesson from this &#8211; that languages and APIs have a life span, but that is OK because software does too. Perhaps a business dependent on a custom DOS application written in the mid-80s, is not being run that efficiently, or effectively.</p>
+<p>As it happens, other vendors, like Oracle or Sun&#8217;s Solaris, pull support for legacy APIs &#8211; you typically get a window of support for previous, current, and next versions, and it is up to you as a vendor to keep up, or stop and die. Usually what drives you to upgrade is that there is some really good reason to do so. </p>
+<p>What degree of backward compatibility do we actually need??<br>
+At what point do we start paying for a level that we don&#8217;t need??<br>
+And at what point do we start paying for it indirectly?</p>
+<p> &gt;But seriously, Objective C??!?<br>
+Never really understand people&#8217;s problem there, other than unfamiliarity. I&#8217;m an ADA developer myself, so I find Obj-C syntax as baffling as most people, but conceptually it seemed elegant, and complaining about syntax is often like complaining about foreign languages.</p>
+<p>Q. Do you think Apple would be delivering better apps, faster, if they had, say, stuck wholly with C++?</p>
+				<p class="reply">
+									</p>
+			</div>
+
+					</div>
+	</article>
+</li>
+<!-- #comment-## -->
+<li class="comment byuser comment-author-aaron bypostauthor even thread-even depth-1 clear" id="li-comment-70">
+
+	<article class="comment-block" id="comment-70">
+
+		<img alt="" src="https://secure.gravatar.com/avatar/a58c0b44762885ca46ecee7f5b379f3d?s=51&#038;r=g" srcset="https://secure.gravatar.com/avatar/a58c0b44762885ca46ecee7f5b379f3d?s=102&#038;r=g 2x" class="avatar avatar-51 photo" height="51" width="51" loading="lazy">
+		<div class="comment-wrap">
+			<footer class="comment-info">
+				<cite class="comment-cite"><a href="http://www.wiredprairie.us/" rel="external nofollow ugc" class="url">Aaron</a></cite>				<a class="comment-time" href="/blog/index.php/archives/175#comment-70">May 6, 2008 at 7:44 pm</a>			</footer>
+
+			<div class="comment-content">
+				<p>JulesLt &#8212; great comment. I don&#8217;t disagree that Apple has an advantage &#8212; I wonder how long it will last though? (How old is the current programming model? I&#8217;m not familiar enough with the specifics.)</p>
+<p>I think it&#8217;s fair to say that if Microsoft hadn&#8217;t maintained compatibility that it&#8217;s unlikely they would have the market share they enjoy right now. </p>
+<p>Working for an ISV, I know that enterprises want a high degree of backward compatibility from release to release &#8212; it&#8217;s a challenge to sunset any particular version or technology.</p>
+<p>Objective C &#8212; Developers can probably adapt to any language if they really want to. I doubt that Apple would be less successful if they had stuck with C++ &#8212; I know I would have tried my hand at development more seriously if they had stuck with C++ as the primary development language, just so I didn&#8217;t have to learn one more language. I know it&#8217;s possible to use other languages, but Objective C certainly is the one that is encouraged. I&#8217;m not sure I entirely understand anymore why they felt it necessary to use a unique dialect of C&#8230;</p>
+<p>I like .NET &#8212; it&#8217;s a platform that has grown over the years and clearly can adapt to new platforms (WPF over WinForms, Silverlight). Maybe the platform isn&#8217;t perfect &#8212; but that can be fixed, and a new abstraction/API can be created for whatever new innovations Microsoft invents.</p>
+				<p class="reply">
+									</p>
+			</div>
+
+					</div>
+	</article>
+</li>
+<!-- #comment-## -->
+<li class="comment byuser comment-author-aaron bypostauthor odd alt thread-odd thread-alt depth-1 clear" id="li-comment-71">
+
+	<article class="comment-block" id="comment-71">
+
+		<img alt="" src="https://secure.gravatar.com/avatar/a58c0b44762885ca46ecee7f5b379f3d?s=51&#038;r=g" srcset="https://secure.gravatar.com/avatar/a58c0b44762885ca46ecee7f5b379f3d?s=102&#038;r=g 2x" class="avatar avatar-51 photo" height="51" width="51" loading="lazy">
+		<div class="comment-wrap">
+			<footer class="comment-info">
+				<cite class="comment-cite"><a href="http://www.wiredprairie.us/" rel="external nofollow ugc" class="url">Aaron</a></cite>				<a class="comment-time" href="/blog/index.php/archives/175#comment-71">May 6, 2008 at 7:45 pm</a>			</footer>
+
+			<div class="comment-content">
+				<p>Kevin &#8212; every platform does have trade-offs. What are you willing to overlook (or not) for trade-offs?</p>
+				<p class="reply">
+									</p>
+			</div>
+
+					</div>
+	</article>
+</li>
+<!-- #comment-## -->
+<li class="comment even thread-even depth-1 clear" id="li-comment-77">
+
+	<article class="comment-block" id="comment-77">
+
+		<img alt="" src="https://secure.gravatar.com/avatar/39bde984d316d69c707adf8be6649806?s=51&#038;r=g" srcset="https://secure.gravatar.com/avatar/39bde984d316d69c707adf8be6649806?s=102&#038;r=g 2x" class="avatar avatar-51 photo" height="51" width="51" loading="lazy">
+		<div class="comment-wrap">
+			<footer class="comment-info">
+				<cite class="comment-cite">JulesLt</cite>				<a class="comment-time" href="/blog/index.php/archives/175#comment-77">May 7, 2008 at 5:32 pm</a>			</footer>
+
+			<div class="comment-content">
+				<p>Well, Nextstep dates from the early 90s &#8211; it was one of the first strict MVC frameworks &#8211; and the decision to use Obj-C for that must have been made slightly earlier. </p>
+<p>At that point in time, C++ was still also a young language, and Obj-C was actually more compatible with ANSI C than C++ (i.e. it was a strict extension to C).</p>
+<p>The conceptual implementation of OO in Obj-C was also better &#8211; it is closer to Smalltalk &#8211; whereas C++ (and by extension Java) compromised OO in favour of performance. At the time, that was a fair trade-off &#8211; NextStep only ran on workstation class machines around the $10,000 price point, whereas C++ apps could run on anything. There was no &#8216;C++ runtime&#8217; that they ran in. </p>
+<p>On the downside, that also means shared libraries rather than shared components and objects. </p>
+<p>I think that is the particular strength of Cocoa &#8211; the late (runtime rather than compile time) binding makes it easy for existing applications to share components, or pick up new O/S features without recompilation &#8211; for example, the standard text class was extended under Tiger to include Spotlight/Google search options, and under Leopard a grammar checker. </p>
+<p>My understanding from the debate around the Java bridge, and the more recent Python and Ruby bridges, is that it&#8217;s easier to build a bridge to a more dynamic language, than to a less dynamic one &#8211; in much the same way that it is easier to call C from C++ than the other way round. </p>
+<p>I do wonder about your first question &#8211; given the origins of Cocoa and Obj-C date back 15 years, I do wonder what a new clean API based around those 15 years of experience would look like.</p>
+<p>Anyway, that&#8217;s getting away from the API debate!</p>
+				<p class="reply">
+									</p>
+			</div>
+
+					</div>
+	</article>
+</li>
+<!-- #comment-## -->
+<li class="comment odd alt thread-odd thread-alt depth-1 clear" id="li-comment-94">
+
+	<article class="comment-block" id="comment-94">
+
+		<img alt="" src="https://secure.gravatar.com/avatar/3c24f48337a2b94fa2da84c01a7667f9?s=51&#038;r=g" srcset="https://secure.gravatar.com/avatar/3c24f48337a2b94fa2da84c01a7667f9?s=102&#038;r=g 2x" class="avatar avatar-51 photo" height="51" width="51" loading="lazy">
+		<div class="comment-wrap">
+			<footer class="comment-info">
+				<cite class="comment-cite">DrPizza</cite>				<a class="comment-time" href="/blog/index.php/archives/175#comment-94">May 10, 2008 at 6:31 am</a>			</footer>
+
+			<div class="comment-content">
+				<p>Point 1: It&#8217;s called hyperbole.  Yes, I&#8217;m sure that there are individuals within MS who do care.  Maybe even a lot of them.  But I&#8217;ll tell you this: creating a good, consistent, clean UI is clearly not a priority at MS.  Reinvention and duplication is not an occasional anomaly.  It is the norm.  The Windows Vista UI Guidelines, for example, are probably some of the most thorough MS has ever come up with.  And yet&#8230; and yet Windows Vista itself does not conform with its own guidelines.  Not just in a few places, either.  The non-conformance is *everywhere*.  The Vista UI Guidelines in a number of places use real Vista screenshots as *examples of what not to do*.</p>
+<p>It may well be that people near the bottom of the totem pole care about this kind of thing, but it&#8217;s also clear that people at the top&#8211;people who make decisions&#8211;do not.  There is no-one within the company saying &#8220;This application&#8217;s UI is needlessly non-standard; it reinvents this, this, and this, it&#8217;s a pain for users and it&#8217;s a pain for maintenance&#8211;go fix it&#8221;.  It just isn&#8217;t seen as a priority.</p>
+<p>Point 2: &#8220;Dude, do you seriously want to conditionalize all of your code just so you can recompile on 64 bit Windows? Do you want a new API just for that? Seriously, what’s the gain?&#8221;.  No, I don&#8217;t want that.  And I think it shows an incredible lack of imagination on your part that you think that&#8217;s the only alternative.</p>
+<p>What I would like to see is a clean 64-bit API, and a 32-bit compatibility library, so I could write 32-bit apps against a workalike of the 64-bit API.  This isn&#8217;t unprecedented, at all; Microsoft created the Unicode layer for Windows 9x, so that programs could be written to use (NT&#8217;s preferred) Unicode APIs against the (narrow char/multibyte) Windows 9x family.  Apple produced CarbonLib to allow programs to use Mac OS X&#8217;s (semi-modern) Carbon APIs on (legacy) MacOS 9.  This isn&#8217;t a totally outlandish, never-seen-before concept.  It&#8217;s something that both Apple and MS have done to ease transitions.</p>
+<p>Point 3: It is precisely because Apple to such an extent started with a clean slate that Apple has been able to be much better on keeping APIs clean and powerful.  Apple is also willing to deprecate and remove things, which MS never does.  This is particularly upsetting in .NET.  .NET, unlike Windows proper, has a pretty good versioning mechanism built-in.  SxS installation, rolling forward dependencies on minor version changes, that&#8217;s all there already.  There&#8217;s no reason to keep everything old and deprecated hanging around for ever with .NET, and yet that&#8217;s the road they&#8217;re going down anyway.</p>
+<p>Point 4: No, they don&#8217;t need to all ship on the same schedule.  But you are mistaken if you think that their development is &#8220;innovat[ion]&#8221; or producing something &#8220;unique&#8221;.  The no-menu thing in WMP, Explorer, IE, WLM, Photo Gallery, etc.&#8211;that&#8217;s not unique.  It&#8217;s just coded a bunch of different times.  That&#8217;s not providing any advantage to any user.  It&#8217;s not even providing any advantage to MS (because it&#8217;s just that much more code to maintain).  The reason MS is doing that is simply because there&#8217;s no co-ordination between divisions.  The left hand is totally clueless about the right hand.</p>
+<p>Now, maybe we could let that slide for stuff like WLM, which is a separate download anyway (though I still think first party apps should do a lot better than MS&#8217;s do).  But for the things that *all ship together on the Vista DVD* to suffer this same reinvention and inconsistency?  That stuff *already* has the same ship schedule.  It&#8217;s *already* being combined into a single release.  It is *not* asking a lot for it to be even slightly consistent.</p>
+				<p class="reply">
+									</p>
+			</div>
+
+					</div>
+	</article>
+</li>
+<!-- #comment-## -->
+<li class="comment byuser comment-author-aaron bypostauthor even thread-even depth-1 clear" id="li-comment-95">
+
+	<article class="comment-block" id="comment-95">
+
+		<img alt="" src="https://secure.gravatar.com/avatar/a58c0b44762885ca46ecee7f5b379f3d?s=51&#038;r=g" srcset="https://secure.gravatar.com/avatar/a58c0b44762885ca46ecee7f5b379f3d?s=102&#038;r=g 2x" class="avatar avatar-51 photo" height="51" width="51" loading="lazy">
+		<div class="comment-wrap">
+			<footer class="comment-info">
+				<cite class="comment-cite"><a href="http://www.wiredprairie.us/" rel="external nofollow ugc" class="url">Aaron</a></cite>				<a class="comment-time" href="/blog/index.php/archives/175#comment-95">May 10, 2008 at 9:43 am</a>			</footer>
+
+			<div class="comment-content">
+				<p>DrPizza &#8212; thanks for the comments. But I fail to see how any of this actually addresses some of the hard issues &#8212; like running a business and trying to make money &#8212; which is what their shareholders want. </p>
+<p>It&#8217;s not a lack of imagination that I have (if you knew me, you&#8217;d never suggest that) &#8212; it&#8217;s the knowledge and first hand experience of the hard truth of doing software development and trying to make money &#8212; sometimes you have to ship, even when it&#8217;s not what you wanted. You are absolutely underestimating the power of enterprise on Microsoft&#8217;s ship and design schedule. The enterprise plays a HUGE role in their every-day decisions. I know for sure &#8212; as I have worked there. </p>
+<p>How much time do think it would take to create a new 64 bit API with a compatibility layer for 32 bit? And how much testing would it require, by both Microsoft and 3rd parties? I can&#8217;t fathom it &#8212; it&#8217;s so high. </p>
+<p>What do you want from a 64 bit API anyway? What&#8217;s the real issue? If you use .NET, you&#8217;d normally not have to worry (unless doing PInvokes). Microsoft maintains a level of compatibility, even with .NET to make it easier to upgrade. If they didn&#8217;t, you&#8217;d find developers wouldn&#8217;t upgrade. The amount of effort required would exceed their schedules, the perceived benefit may be limited, etc. </p>
+<p>The harsh truth is that it&#8217;s Microsoft&#8217;s customers and developers who are preventing them from moving forward. Look at the number of people who are clinging to XP. How can they move the OS forward if people refuse to change? Imagine if they made a huge jump and all of their favorite software stopped working. It&#8217;s just not a simple problem to solve. There is no right answer.</p>
+<p>Again, thanks for your comments.</p>
+				<p class="reply">
+									</p>
+			</div>
+
+					</div>
+	</article>
+</li>
+<!-- #comment-## -->
+<li class="comment odd alt thread-odd thread-alt depth-1 clear" id="li-comment-97">
+
+	<article class="comment-block" id="comment-97">
+
+		<img alt="" src="https://secure.gravatar.com/avatar/3c24f48337a2b94fa2da84c01a7667f9?s=51&#038;r=g" srcset="https://secure.gravatar.com/avatar/3c24f48337a2b94fa2da84c01a7667f9?s=102&#038;r=g 2x" class="avatar avatar-51 photo" height="51" width="51" loading="lazy">
+		<div class="comment-wrap">
+			<footer class="comment-info">
+				<cite class="comment-cite">DrPizza</cite>				<a class="comment-time" href="/blog/index.php/archives/175#comment-97">May 10, 2008 at 11:26 am</a>			</footer>
+
+			<div class="comment-content">
+				<p>&#8220;DrPizza — thanks for the comments. But I fail to see how any of this actually addresses some of the hard issues — like running a business and trying to make money — which is what their shareholders want. &#8221;<br>
+If I were an MS shareholder, I would be extremely dissatisfied at (a) Windows Vista (b) the failure of the share price to move upwards.  I don&#8217;t think MS *is* delivering what its shareholders want.  And I don&#8217;t think it *can* because it is so hamstrung by backwards compatibility.</p>
+<p>I think Vista is the best Windows ever, and it&#8217;s the OS I use most of the time (by far).  But it took more than *five years* from the release of XP to get there.  And there&#8217;s no way that Vista is five years of improvement over XP.  It&#8217;s no wonder that home and business users alike are saying &#8220;You know what?  XP is good enough.  Vista&#8217;s not offering anything worthwhile; it&#8217;s just bigger, slower, and spuriously different&#8221;.  There *are* good things about Vista (though many of them not obviously visible; I wrote at length about them at Ars), but there&#8217;s very little that&#8217;ll make someone who&#8217;s of two minds think &#8220;gosh, I really must have that&#8221;.</p>
+<p>MS&#8217;s slavish adherence to backwards compatibility&#8211;and they *way* in which that BC is achieved&#8211;is preventing MS from giving value to its shareholders.</p>
+<p>&#8220;It’s not a lack of imagination that I have (if you knew me, you’d never suggest that) — it’s the knowledge and first hand experience of the hard truth of doing software development and trying to make money — sometimes you have to ship, even when it’s not what you wanted. You are absolutely underestimating the power of enterprise on Microsoft’s ship and design schedule. The enterprise plays a HUGE role in their every-day decisions. I know for sure — as I have worked there. &#8221;<br>
+Sure.  But that&#8217;s kind of missing the point, I think.</p>
+<p>There are ways to provide backwards compatibility that do not hamstring future development.  The most obvious thing is *version your libraries*.  It&#8217;s OK to freeze an old library and introduce a new one.  That doesn&#8217;t break old applications, and equally, it doesn&#8217;t cripple new ones.  But MS doesn&#8217;t do that, which makes its development much, much harder.  Any time MS *does* try to introduce a new feature, MS has to make sure that it doesn&#8217;t upset old programs.  Why?  Because the new feature has to be shoehorned in amongst the old stuff.</p>
+<p>This approach simply doesn&#8217;t scale well, as MS has discovered on countless previous occasions.</p>
+<p>I&#8217;m not claiming versioning is a panacea; if the change is big enough it can be very difficult to continue to support the old versions, no matter how good your intentions are (although we have good solutions for that, too&#8211;virtualization).  But it would provide a hell of a lot more flexibility than MS currently has.</p>
+<p>&#8220;How much time do think it would take to create a new 64 bit API with a compatibility layer for 32 bit? And how much testing would it require, by both Microsoft and 3rd parties? I can’t fathom it — it’s so high. &#8221;<br>
+How much time?  Less than it took to deliver Vista, that&#8217;s for sure.</p>
+<p>&#8220;What do you want from a 64 bit API anyway? What’s the real issue?&#8221;<br>
+I want to write 64-bit applications.</p>
+<p>&#8220;If you use .NET, you’d normally not have to worry (unless doing PInvokes).&#8221;<br>
+That&#8217;s unfortunately not true.  .NET is, unfortunately, 32-bit.  Oh, sure, if you run a .NET program on 64-bit Windows it&#8217;ll create a 64-bit process.  But you can&#8217;t, say, allocate an array that&#8217;s more than 2^31 elements long.  This is annoying, to say the least; I&#8217;d like to, for example, work with large image files, and the ability to create 4 GiB byte arrays would make my coding *considerably* simpler.  You can take a look for yourself if you don&#8217;t believe me; load up mscorlib.dll from the Framework64 directory and take a look at System.Array.LongLength.  It just casts the signed 32-bit Length property to long.  To deal with these large images, I&#8217;d have to do some kind of a chunking mechanism.  That&#8217;s a huge amount of extra complexity.</p>
+<p>With native code, I don&#8217;t have an issue.  I can just create a 4 GiB array.  I&#8217;m not saying I would necessarily want to do things this way&#8211;although it probably *is* the most efficient way on large-memory systems&#8211;but it&#8217;d be nice to have the option.  To compound the annoyance, .NET doesn&#8217;t even have a good memory-mapped file mechanism (MMFs are another good way of handling large data structures).  If I want to create lots of little objects (i.e. more than 4 GiB worth of them), I suspect .NET would be good enough, but if I want to create a few huge objects, it actually kind of falls down.</p>
+<p>And then there&#8217;s all the things that I just can&#8217;t access in .NET anyway.  Like DirectShow, or Media Foundation, or Core Audio.  These are off-limits whether 32- or 64-bit, because they just don&#8217;t exist in .NET.  P/Invoke is quite good if I want to bring a couple of C API calls into the .NET world, but it&#8217;s pretty grim if I want to bring whole APIs with complex data structures over.  C++/CLI is a much better option, because it lets me eschew the .NET things entirely.  I can ignore .NET Collections and arrays and ValueTypes and just use the C and C++ things directly.</p>
+<p>&#8220;Microsoft maintains a level of compatibility, even with .NET to make it easier to upgrade. If they didn’t, you’d find developers wouldn’t upgrade. The amount of effort required would exceed their schedules, the perceived benefit may be limited, etc. &#8221;<br>
+I don&#8217;t agree.  I think .NET provides pretty good infrastructure to support MS making breaking changes (especially if they have one version where things are deprecated and a second to remove them; this gives developers plenty of advance notice and opportunity to get their house in order).  With .NET&#8217;s versioning, breaking changes will only break applications that are *actively maintained* (and hence rebuilt against the latest libraries).  They won&#8217;t break legacy applications.  To me (and the enterprise development I have done), that seems like a more than acceptable compromise.</p>
+<p>&#8220;The harsh truth is that it’s Microsoft’s customers and developers who are preventing them from moving forward. Look at the number of people who are clinging to XP. How can they move the OS forward if people refuse to change? Imagine if they made a huge jump and all of their favorite software stopped working. It’s just not a simple problem to solve. There is no right answer.&#8221;<br>
+The reason that people are clinging to XP is because Vista simply isn&#8217;t that big a leap (in spite of its extended gestation).  A key reason that it&#8217;s not a big leap is because its development was so restricted by backwards compatibility.</p>
+				<p class="reply">
+									</p>
+			</div>
+
+					</div>
+	</article>
+</li>
+<!-- #comment-## -->
+<li class="comment byuser comment-author-aaron bypostauthor even thread-even depth-1 clear" id="li-comment-100">
+
+	<article class="comment-block" id="comment-100">
+
+		<img alt="" src="https://secure.gravatar.com/avatar/a58c0b44762885ca46ecee7f5b379f3d?s=51&#038;r=g" srcset="https://secure.gravatar.com/avatar/a58c0b44762885ca46ecee7f5b379f3d?s=102&#038;r=g 2x" class="avatar avatar-51 photo" height="51" width="51" loading="lazy">
+		<div class="comment-wrap">
+			<footer class="comment-info">
+				<cite class="comment-cite"><a href="http://www.wiredprairie.us/" rel="external nofollow ugc" class="url">Aaron</a></cite>				<a class="comment-time" href="/blog/index.php/archives/175#comment-100">May 10, 2008 at 3:34 pm</a>			</footer>
+
+			<div class="comment-content">
+				<p>Versioning is a tough nut to crack. I don&#8217;t honestly know if that would help or hurt them &#8212; if they had 3 or 4 different versions of the WinAPI for example &#8212; would they be hampered by the sheer magnitude of keeping things aligned and supported? </p>
+<p>MMF&#8217;s rock. They still haven&#8217;t created a wrapper for them &#8230; bummer. I wrote one a few years ago, but I&#8217;d much rather it just be part of the core .NET framework. </p>
+<p>A 4GB image file?! Wow! What kind of file is it? Video comes to mind, but you said image, and I&#8217;m curious as to what file type it is now &#8230;. :)</p>
+				<p class="reply">
+									</p>
+			</div>
+
+					</div>
+	</article>
+</li>
+<!-- #comment-## -->
+<li class="comment odd alt thread-odd thread-alt depth-1 clear" id="li-comment-102">
+
+	<article class="comment-block" id="comment-102">
+
+		<img alt="" src="https://secure.gravatar.com/avatar/3c24f48337a2b94fa2da84c01a7667f9?s=51&#038;r=g" srcset="https://secure.gravatar.com/avatar/3c24f48337a2b94fa2da84c01a7667f9?s=102&#038;r=g 2x" class="avatar avatar-51 photo" height="51" width="51" loading="lazy">
+		<div class="comment-wrap">
+			<footer class="comment-info">
+				<cite class="comment-cite">DrPizza</cite>				<a class="comment-time" href="/blog/index.php/archives/175#comment-102">May 10, 2008 at 4:29 pm</a>			</footer>
+
+			<div class="comment-content">
+				<p>&#8220;Versioning is a tough nut to crack. I don’t honestly know if that would help or hurt them — if they had 3 or 4 different versions of the WinAPI for example — would they be hampered by the sheer magnitude of keeping things aligned and supported?&#8221;<br>
+I think some parts will be easier than others.  An example of something that should be fairly easy is the various control libraries there are.  Although these are dependent quite heavily on the mechanics of User32 (WndProcs, window messages, all that jazz), they should have zero kernel dependencies, and should be independent of any other parts of Windows.  It would seem quite feasible to freeze and version these.</p>
+<p>Things would get a bit more tricky if we were talking something more ambitious&#8211;a wholesale replacement (rather than merely a tidying up) of User32 with something good, say&#8211;so that would require more effort (one might envisage a User32-workalike layer written to sit on top of WPF, say) but I think could still ultimately be achieved.</p>
+<p>Please don&#8217;t get me wrong: I&#8217;m not suggesting that this would *eliminate* the issues MS faces.  Rather, I&#8217;m suggesting that it would give them greater scope to move forward without jeopardizing their legacy, by compartmentalizing and isolating it.  And I find it incredibly frustrating that even though MS has good infrastructure for this with .NET, it&#8217;s not being used.</p>
+<p>&#8220;A 4GB image file?! Wow! What kind of file is it? Video comes to mind, but you said image, and I’m curious as to what file type it is now&#8221;<br>
+Oh, for work we get all kinds of huge TIFFs that we would like to manipulate in certain ways (typically convert them to other formats so that their file sizes are a bit smaller&#8230;).  Standard TIFF is in principle good for up to 4 GiB (though many implementations are restricted to signed 32-bit, i.e. 2 GiB), and there are proposed extensions for 64-bit TIFFs, BigTIFF, and there are certainly applications for such files.  Again, this is not to say that creating a bloody great array to hold all the image data is necessarily the best approach to use for such files (especially as they can easily outstrip any reasonably likely amount of memory), but even if you&#8217;re dividing the images into chunks, you&#8217;ll often want chunks as big as possible.</p>
+				<p class="reply">
+									</p>
+			</div>
+
+					</div>
+	</article>
+</li>
+<!-- #comment-## -->
+<li class="comment byuser comment-author-aaron bypostauthor even thread-even depth-1 clear" id="li-comment-104">
+
+	<article class="comment-block" id="comment-104">
+
+		<img alt="" src="https://secure.gravatar.com/avatar/a58c0b44762885ca46ecee7f5b379f3d?s=51&#038;r=g" srcset="https://secure.gravatar.com/avatar/a58c0b44762885ca46ecee7f5b379f3d?s=102&#038;r=g 2x" class="avatar avatar-51 photo" height="51" width="51" loading="lazy">
+		<div class="comment-wrap">
+			<footer class="comment-info">
+				<cite class="comment-cite"><a href="http://www.wiredprairie.us/" rel="external nofollow ugc" class="url">Aaron</a></cite>				<a class="comment-time" href="/blog/index.php/archives/175#comment-104">May 10, 2008 at 5:15 pm</a>			</footer>
+
+			<div class="comment-content">
+				<p>I hope MS is seriously investigating virtualization as a solution to backward compatibility.  </p>
+<p>I think I&#8217;ll probe some contacts at MS regarding 64-bit .NET. I may not be able to blog about them (due to NDAs), but you&#8217;ve got me curious.</p>
+				<p class="reply">
+									</p>
+			</div>
+
+					</div>
+	</article>
+</li>
+<!-- #comment-## -->
+<li class="pingback odd alt thread-odd thread-alt depth-1 clear" id="li-comment-105">
+
+	<article class="comment-block" id="comment-105">
+
+		<img alt="" src="https://secure.gravatar.com/avatar/?s=51&#038;r=g" srcset="https://secure.gravatar.com/avatar/?s=102&#038;r=g 2x" class="avatar avatar-51 photo avatar-default" height="51" width="51" loading="lazy">
+		<div class="comment-wrap">
+			<footer class="comment-info">
+				<cite class="comment-cite"><a href="/blog/index.php/archives/233" rel="external nofollow ugc" class="url">WiredPrairie - Perfect API&#8217;s &#8230; continuation</a></cite>				<a class="comment-time" href="/blog/index.php/archives/175#comment-105">May 10, 2008 at 10:24 pm</a>			</footer>
+
+			<div class="comment-content">
+				<p>[&#8230;] you were interested in the blog post, &#8220;What&#8217;s the Perfect API?&#8220;, (which related to blog post about messed up Win32 is &#8230;), you might want to head there [&#8230;]</p>
+				<p class="reply">
+									</p>
+			</div>
+
+					</div>
+	</article>
+</li>
+<!-- #comment-## -->
+<li class="comment even thread-even depth-1 clear" id="li-comment-108">
+
+	<article class="comment-block" id="comment-108">
+
+		<img alt="" src="https://secure.gravatar.com/avatar/3c24f48337a2b94fa2da84c01a7667f9?s=51&#038;r=g" srcset="https://secure.gravatar.com/avatar/3c24f48337a2b94fa2da84c01a7667f9?s=102&#038;r=g 2x" class="avatar avatar-51 photo" height="51" width="51" loading="lazy">
+		<div class="comment-wrap">
+			<footer class="comment-info">
+				<cite class="comment-cite">DrPizza</cite>				<a class="comment-time" href="/blog/index.php/archives/175#comment-108">May 11, 2008 at 6:42 am</a>			</footer>
+
+			<div class="comment-content">
+				<p>&#8220;I hope MS is seriously investigating virtualization as a solution to backward compatibility.&#8221;<br>
+The big problem with virtualization is getting a streamlined experience for the user.  Although we see attempts to do this with e.g. Parallels, VMware, VirtualBox, which can stick a virtual Windows window onto your actual desktop, the integration is still a long way off 100%.  It&#8217;s also quite a heavyweight solution; you don&#8217;t want to have to boot up a VM each time you run a legacy program, especially since that &#8220;legacy&#8221; program could have been built and compiled a few minutes ago!</p>
+<p>Certainly, virtualization has a role; Win16 needs virtualization these days (no Win16 is available on 64-bit Windows), but we&#8217;re really not in a position where we could say, for example, &#8220;virtualize all Win32 apps&#8221;.</p>
+<p>&#8220;I think I’ll probe some contacts at MS regarding 64-bit .NET. I may not be able to blog about them (due to NDAs), but you’ve got me curious.&#8221;<br>
+Well, it depends on what you want to do with &#8220;64-bit&#8221;.  Sure, you can create a lot of objects (it is a 64-bit process, after all), it&#8217;s just that I&#8217;d like to create huge objects instead of lots of objects.</p>
+<p>I do think they should have been forward-looking and made array sizes use &#8216;long&#8217; rather than &#8216;int&#8217;.  Sure, it&#8217;d take a hit on 32-bit systems.  I don&#8217;t care; even in 2002 it was obvious that the days of 32-bit were numbered.  Look to the future, not to the past.</p>
+				<p class="reply">
+									</p>
+			</div>
+
+					</div>
+	</article>
+</li>
+<!-- #comment-## -->
+<li class="pingback odd alt thread-odd thread-alt depth-1 clear" id="li-comment-112">
+
+	<article class="comment-block" id="comment-112">
+
+		<img alt="" src="https://secure.gravatar.com/avatar/?s=51&#038;r=g" srcset="https://secure.gravatar.com/avatar/?s=102&#038;r=g 2x" class="avatar avatar-51 photo avatar-default" height="51" width="51" loading="lazy">
+		<div class="comment-wrap">
+			<footer class="comment-info">
+				<cite class="comment-cite"><a href="/blog/index.php/archives/263" rel="external nofollow ugc" class="url">WiredPrairie - Dead Weight APIs?</a></cite>				<a class="comment-time" href="/blog/index.php/archives/175#comment-112">May 11, 2008 at 3:40 pm</a>			</footer>
+
+			<div class="comment-content">
+				<p>[&#8230;] What&#8217;s the Perfect API? [&#8230;]</p>
+				<p class="reply">
+									</p>
+			</div>
+
+					</div>
+	</article>
+</li>
+<!-- #comment-## -->
+		</ol>
+<!-- .comment-list -->
+
+		
+	
+			<p class="no-comments">Comments are closed.</p>
+	
+	
+</div>
+<!-- #comments -->
+
+		
+		</main><!-- #main -->
+	</div>
+<!-- #primary -->
+
+
+	</div>
+<!-- #content -->
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+		<div class="site-info">
+			<a class="powered-by" href="http://wordpress.org/">Proudly powered by WordPress</a>
+			<span class="sep"> | </span>
+			Theme: editor by <a href="https://array.is/">Array</a>		</div>
+<!-- .site-info -->
+	</footer><!-- #colophon -->
+</div>
+<!-- #page -->
+
+	<div style="display:none">
+			<div class="grofile-hash-map-4bf06962813316e2486f0fd3e08080ec">
+		</div>
+		<div class="grofile-hash-map-39bde984d316d69c707adf8be6649806">
+		</div>
+		<div class="grofile-hash-map-a58c0b44762885ca46ecee7f5b379f3d">
+		</div>
+		<div class="grofile-hash-map-3c24f48337a2b94fa2da84c01a7667f9">
+		</div>
+		</div>
+		
+	<script type="text/javascript">
+		window.WPCOM_sharing_counts = {"\/index.php\/archives\/175":175};
+	</script>
+				<script type="text/javascript" src="https://secure.gravatar.com/js/gprofiles.js?ver=202226" id="grofiles-cards-js"></script>
+<script type="text/javascript" id="wpgroho-js-extra">
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/blog/wp-content/plugins/jetpack/modules/wpgroho.js?ver=11.0" id="wpgroho-js"></script>
+<script type="text/javascript" src="/blog/wp-content/themes/editor/js/jquery.fitvids.js?ver=20140820" id="fitvids-js"></script>
+<script type="text/javascript" src="/blog/wp-content/themes/editor/js/editor.js?ver=20120206" id="editor-js-js"></script>
+<script type="text/javascript" src="/blog/wp-content/plugins/jetpack/_inc/build/likes/queuehandler.min.js?ver=11.0" id="jetpack_likes_queuehandler-js"></script>
+<script type="text/javascript" id="sharing-js-js-extra">
+/* <![CDATA[ */
+var sharing_js_options = {"lang":"en","counts":"1","is_stats_active":"1"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/blog/wp-content/plugins/jetpack/_inc/build/sharedaddy/sharing.min.js?ver=11.0" id="sharing-js-js"></script>
+<script type="text/javascript" id="sharing-js-js-after">
+var windowOpen;
+			( function () {
+				function matches( el, sel ) {
+					return !! (
+						el.matches && el.matches( sel ) ||
+						el.msMatchesSelector && el.msMatchesSelector( sel )
+					);
+				}
+
+				document.body.addEventListener( 'click', function ( event ) {
+					if ( ! event.target ) {
+						return;
+					}
+
+					var el;
+					if ( matches( event.target, 'a.share-twitter' ) ) {
+						el = event.target;
+					} else if ( event.target.parentNode && matches( event.target.parentNode, 'a.share-twitter' ) ) {
+						el = event.target.parentNode;
+					}
+
+					if ( el ) {
+						event.preventDefault();
+
+						// If there's another sharing window open, close it.
+						if ( typeof windowOpen !== 'undefined' ) {
+							windowOpen.close();
+						}
+						windowOpen = window.open( el.getAttribute( 'href' ), 'wpcomtwitter', 'menubar=1,resizable=1,width=600,height=350' );
+						return false;
+					}
+				} );
+			} )();
+var windowOpen;
+			( function () {
+				function matches( el, sel ) {
+					return !! (
+						el.matches && el.matches( sel ) ||
+						el.msMatchesSelector && el.msMatchesSelector( sel )
+					);
+				}
+
+				document.body.addEventListener( 'click', function ( event ) {
+					if ( ! event.target ) {
+						return;
+					}
+
+					var el;
+					if ( matches( event.target, 'a.share-facebook' ) ) {
+						el = event.target;
+					} else if ( event.target.parentNode && matches( event.target.parentNode, 'a.share-facebook' ) ) {
+						el = event.target.parentNode;
+					}
+
+					if ( el ) {
+						event.preventDefault();
+
+						// If there's another sharing window open, close it.
+						if ( typeof windowOpen !== 'undefined' ) {
+							windowOpen.close();
+						}
+						windowOpen = window.open( el.getAttribute( 'href' ), 'wpcomfacebook', 'menubar=1,resizable=1,width=600,height=400' );
+						return false;
+					}
+				} );
+			} )();
+</script>
+	<iframe src="https://widgets.wp.com/likes/master.html?ver=202226#ver=202226" scrolling="no" id="likes-master" name="likes-master" style="display:none;"></iframe>
+	<div id="likes-other-gravatars">
+<div class="likes-text">
+<span>%d</span> bloggers like this:</div>
+<ul class="wpl-avatars sd-like-gravatars"></ul>
+</div>
+	<script src="https://stats.wp.com/e-202226.js" defer></script>
+<script>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:11.0',blog:'193486638',post:'175',tz:'-5',srv:'www.wiredprairie.us'} ]);
+	_stq.push([ 'clickTrackerInit', '193486638', '175' ]);
+</script>
+
+</body>
+</html>

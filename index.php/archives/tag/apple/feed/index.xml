@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>Apple &#8211; WiredPrairie</title>
+	<atom:link href="/blog/index.php/archives/tag/apple/feed" rel="self" type="application/rss+xml" />
+	<link>/blog</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Sat, 21 Jan 2012 19:27:15 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+<site xmlns="com-wordpress:feed-additions:1">193486638</site>	<item>
+		<title>Macbook Pro battery fails to charge</title>
+		<link>/blog/index.php/archives/1499</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sat, 21 Jan 2012 19:27:13 +0000</pubDate>
+				<category><![CDATA[General]]></category>
+		<category><![CDATA[Apple]]></category>
+		<category><![CDATA[MacBook Pro]]></category>
+		<guid isPermaLink="false">/blog/?p=1499</guid>
+
+					<description><![CDATA[The non replaceable battery on my Macbook Pro (2010) had discharged recently completely as I’d left the laptop unplugged for more than a month without turning it on. When I went to use it this morning, I plugged it in, and then turned it on. After a few minutes of use, the battery status still [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>The non replaceable battery on my Macbook Pro (2010) had discharged recently completely as I’d left the laptop unplugged for more than a month without turning it on. </p>
+<p>When I went to use it this morning, I plugged it in, and then turned it on. After a few minutes of use, the battery status still showed as “not charging.” </p>
+<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2012/01/image21.png" width="122" height="22" /></p>
+<p>The light on the mag-safe connection was green, as if the battery was completely charged. </p>
+<p>When I depressed the battery indicator button on the side of the MacBook Pro, the response was 5 quick green flashes on the first LED. <a href="http://support.apple.com/kb/HT3205">According</a> to Apple support, that indicates the battery hasn’t been charged to what’s required for a single indicator light yet. However, while my MacBook Pro had discharged like this before, it would normally start charging right away.</p>
+<p>So, apparently, before taking it in for a repair (which is what a lot of people in forums were recommending), you might try resetting the <a href="http://support.apple.com/kb/HT3964?viewlocale=en_US">System Management Controller</a>. One of the issues that a reset could fix is that the battery does not appear to be charging properly. </p>
+<p>To reset the controller, perform these steps (as documented on the Apple Support web site):</p>
+<ol>
+<li>Shut down your laptop completely. </li>
+<li>Plug in the MagSafe power adapter to a power source, connecting it to the MacBook if its not already connected. </li>
+<li>On the built-in keyboard, press the (left side) Shift-Control-Option keys and the power button at the same time.&#160; [Wow, it’s awkward to do that! I pressed the S-C-O keys first and then the power button and it worked]</li>
+<li>Release all the keys and the power button at the same time. </li>
+<li>Press the power button to turn on the computer.&#160; <strong>       <br />Note</strong>: The LED on the MagSafe power adapter may change states or temporarily turn off when you reset the SMC.</li>
+</ol>
+<p>A few moments after I performed the steps above, the mag safe LED light switched to an orange color (charging) and the battery indicator no longer blinked 5 times quickly.</p>
+<p>Problem resolved, and much simpler than taking it to a local Apple “Genius” bar.</p>
+<p><em>As this wasn’t an obvious fix, I’ve decided to put this on my blog in the hope that someone else might find it useful, and so when I have this happen again, I don’t need to go hunting for the solution! <img style="border-bottom-style: none; border-left-style: none; border-top-style: none; border-right-style: none" class="wlEmoticon wlEmoticon-smile" alt="Smile" src="/blog/wp-content/uploads/2012/01/wlEmoticon-smile6.png" /></em></p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1499</post-id>	</item>
+	</channel>
+</rss>

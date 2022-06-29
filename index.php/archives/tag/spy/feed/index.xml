@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>Spy &#8211; WiredPrairie</title>
+	<atom:link href="/blog/index.php/archives/tag/spy/feed" rel="self" type="application/rss+xml" />
+	<link>/blog</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Tue, 21 Aug 2012 01:29:21 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+<site xmlns="com-wordpress:feed-additions:1">193486638</site>	<item>
+		<title>Announcing Html Grabber v3 (The Spy Who Loved Embedded Internet Explorer)</title>
+		<link>/blog/index.php/archives/1710</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Tue, 21 Aug 2012 01:29:21 +0000</pubDate>
+				<category><![CDATA[Software]]></category>
+		<category><![CDATA[Grab]]></category>
+		<category><![CDATA[Internet Explorer]]></category>
+		<category><![CDATA[Spy]]></category>
+		<guid isPermaLink="false">/blog/?p=1710</guid>
+
+					<description><![CDATA[It’s been a long time since v2 of the Html Grabber. I updated the Html Grabber earlier this year in response to some requests at work. It was performing poorly with long documents, and occasionally crashing in a few edge cases. I rewrote a few portions of the core code and created a new shell [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>It’s been a long time since v2 of the <a href="http://www.wiredprairie.us/journal/2006/05/announcing_htmlgrabber_v2.html" target="_blank">Html Grabber</a>.</p>
+<p>I updated the Html Grabber earlier this year in response to some requests at work. It was performing poorly with long documents, and occasionally crashing in a few edge cases. I rewrote a few portions of the core code and created a new shell in .NET.</p>
+<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="SNAGHTML120a4bae" border="0" alt="SNAGHTML120a4bae" src="/blog/wp-content/uploads/2012/08/SNAGHTML120a4bae.png" width="333" height="361" /></p>
+<p>The core functionality is basically the same. Press and hold the primary mouse button on the <img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2012/08/image1.png" width="46" height="21" /> button. Then, with the mouse button still pressed, drag and point at a window/region that you believe is using Internet Explorer. If it is, the cursor changes to include a small green circle. You may then release the mouse button to capture the contained HTML.</p>
+<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="SNAGHTML120cc9e2" border="0" alt="SNAGHTML120cc9e2" src="/blog/wp-content/uploads/2012/08/SNAGHTML120cc9e2.png" width="430" height="467" /></p>
+<p>Once captured, double-click on the capture row and then paste the results into your favorite text editor (ideally, a syntax highlighting editor).</p>
+<p>As usual, use at your own risk. It’s designed for debugging, so treat it accordingly. It’s been tested with IE8 and IE9. It requires .NET 4.0.&#160; </p>
+<p>Download it <a href="http://www.wiredprairie.us/downloads/WiredPrairieHtmlGrabber2.zip" target="_blank">here</a>. (Yes, the file name is called v2 … don’t worry, it’s correct). There’s no installer, just run the included EXE.</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1710</post-id>	</item>
+	</channel>
+</rss>

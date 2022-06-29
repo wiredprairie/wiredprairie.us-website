@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>IQueryable &#8211; WiredPrairie</title>
+	<atom:link href="/blog/index.php/archives/tag/iqueryable/feed" rel="self" type="application/rss+xml" />
+	<link>/blog</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Sat, 26 Jan 2013 17:05:53 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+<site xmlns="com-wordpress:feed-additions:1">193486638</site>	<item>
+		<title>How to view the MongoDB Query when using the C# LINQ Provider</title>
+		<link>/blog/index.php/archives/1833</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sat, 26 Jan 2013 17:04:46 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[C#]]></category>
+		<category><![CDATA[IQueryable]]></category>
+		<category><![CDATA[LINQ]]></category>
+		<category><![CDATA[MongoDB]]></category>
+		<guid isPermaLink="false">/blog/?p=1833</guid>
+
+					<description><![CDATA[If you’re using the Official MongoDB C# Driver from 10gen, you may want to occasionally verify that the generated query matches your LINQ query (or at least that it’s building something efficient). Take for example this query: var query = (from r in DataLayer.Database.GetCollection&#60;Research&#62;().AsQueryable&#60;Research&#62;() where !r.Deleted select new { Id = r.Id, Title = r.Title, [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>If you’re using the <a href="http://www.mongodb.org/display/DOCS/CSharp+Language+Center">Official MongoDB C# Driver</a> from 10gen, you may want to occasionally verify that the generated query matches your LINQ query (or at least that it’s building something efficient). </p>
+<p>Take for example this query:</p>
+<pre class="csharpcode">var query = 
+    (from r <span class="kwrd">in</span> DataLayer.Database.GetCollection&lt;Research&gt;().AsQueryable&lt;Research&gt;()
+        <span class="kwrd">where</span> !r.Deleted
+        select <span class="kwrd">new</span>
+        {
+            Id = r.Id,
+            Title = r.Title,
+            Created = r.Created
+        }).Skip(PageSize * page).Take(PageSize);
+
+query.DebugWriteMongoQueryText();</pre>
+<p><style type="text/css">
+.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }</style>
+<p>I wanted to verify that the query was checking the Deleted property, and see if the projection was considered as part of the query, so a few lines of code later …</p>
+<pre class="csharpcode"><span class="kwrd">public</span> <span class="kwrd">static</span> <span class="kwrd">string</span> ToMongoQueryText&lt;TQueryable&gt;(<span class="kwrd">this</span> IQueryable&lt;TQueryable&gt; query)
+{
+    <span class="kwrd">return</span> (query <span class="kwrd">as</span> MongoQueryable&lt;TQueryable&gt;).GetMongoQuery().ToString();            
+}
+
+[Conditional(<span class="str">&quot;DEBUG&quot;</span>)]
+<span class="kwrd">public</span> <span class="kwrd">static</span> <span class="kwrd">void</span> DebugWriteMongoQueryText&lt;TQuerable&gt;(<span class="kwrd">this</span> IQueryable&lt;TQuerable&gt; query)
+{
+    Debug.WriteLine(<span class="str">&quot;QUERY: &quot;</span> + query.ToMongoQueryText());
+}</pre>
+<p><style type="text/css">
+.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }</style>
+<p>I added two extension methods to IQueryable. As the return type for the query in my sample is actually an anonymous type, it wasn’t something I could easily type in the Immediate Window in Visual Studio for example. </p>
+<p><a href="/blog/wp-content/uploads/2013/01/image1.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; border-left: 0px; display: block; padding-right: 0px; margin-right: auto" border="0" alt="&lt;&gt;f__AnonymousType2&lt;string,string,System.DateTime&gt;" src="/blog/wp-content/uploads/2013/01/image_thumb1.png" width="514" height="95" /></a></p>
+<p>No thanks&#160; &lt;&gt;f__AnonymousType2&lt;string,string,System.DateTime&gt;.</p>
+<p>I added the <a href="http://msdn.microsoft.com/en-us/library/system.diagnostics.conditionalattribute(v=vs.110).aspx">Conditional</a> Attribute so that the code would only execute in a Debug build of my application.</p>
+<pre class="csharpcode">query.DebugWriteMongoQueryText();</pre>
+<p>The output of the query above was:</p>
+<pre class="csharpcode">QUERY: { <span class="str">&quot;Deleted&quot;</span> : { <span class="str">&quot;$ne&quot;</span> : <span class="kwrd">true</span> } }</pre>
+<p><style type="text/css">
+.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }</style>
+<p>As you’ll see, the anonymous projection wasn’t considered. Unfortunately, that’s a <a href="https://jira.mongodb.org/browse/CSHARP-456">known issue</a> with the current driver. This mattered in my above example, as some of the fields could contain a large amount of data that wasn’t needed by the current display. </p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1833</post-id>	</item>
+	</channel>
+</rss>

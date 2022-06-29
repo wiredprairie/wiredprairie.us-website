@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>Visual Studio &#8211; WiredPrairie</title>
+	<atom:link href="/blog/index.php/archives/tag/visual-studio/feed" rel="self" type="application/rss+xml" />
+	<link>/blog</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Fri, 11 Nov 2016 19:22:09 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+<site xmlns="com-wordpress:feed-additions:1">193486638</site>	<item>
+		<title>Customize the External VS Code Console</title>
+		<link>/blog/index.php/archives/2070</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Fri, 11 Nov 2016 13:35:16 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[Code]]></category>
+		<category><![CDATA[Visual Studio]]></category>
+		<guid isPermaLink="false">/blog/?p=2070</guid>
+
+					<description><![CDATA[I have Visual Studio 2015 installed and when I launch a command prompt on Windows, it’s generally the Visual Studio 2015 Developer Command prompt (in fact, I have it pinned to my Windows 10 task bar). On Windows, using Visual Studio Code 1.7+, pressing SHIFT+CTRL+C opens a Windows Command prompt from the root directory of [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I have Visual Studio 2015 installed and when I launch a command prompt on Windows, it’s generally the Visual Studio 2015 Developer Command prompt (in fact, I have it pinned to my Windows 10 task bar).</p>
+<p><a href="/blog/wp-content/uploads/2016/11/image.png"><img loading="lazy" style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border: 0px;" title="image" src="/blog/wp-content/uploads/2016/11/image_thumb.png" alt="image" width="380" height="271" border="0" /></a></p>
+<p>On Windows, using Visual Studio Code 1.7+, pressing SHIFT+CTRL+C opens a Windows Command prompt from the root directory of your opened folder. It’s super useful.</p>
+<p>I wanted the Developer Command prompt to open instead of a standard command prompt.</p>
+<p>To change that, open the User Settings:</p>
+<p><a href="/blog/wp-content/uploads/2016/11/image-1.png"><img loading="lazy" style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border: 0px;" title="image" src="/blog/wp-content/uploads/2016/11/image_thumb-1.png" alt="image" width="400" height="460" border="0" /></a></p>
+<p>Add the following:</p>
+<pre>
+"terminal.external.windowsExec": "C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\Tools\\VsDevCmd.bat"
+</pre>
+<p>Of course, you can use other batch or command files to customize the prompt. I just wanted all of the standard developer tools I have installed to be available.</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2070</post-id>	</item>
+		<item>
+		<title>Windows 8 IIS Express with Windows Authentication Prompts for Credentials</title>
+		<link>/blog/index.php/archives/1850</link>
+					<comments>/blog/index.php/archives/1850#comments</comments>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sat, 02 Mar 2013 16:50:52 +0000</pubDate>
+				<category><![CDATA[General]]></category>
+		<category><![CDATA[ASP.NET]]></category>
+		<category><![CDATA[MVC]]></category>
+		<category><![CDATA[Visual Studio]]></category>
+		<category><![CDATA[Windows 8]]></category>
+		<guid isPermaLink="false">/blog/?p=1850</guid>
+
+					<description><![CDATA[If you’re seeing a credentials prompt every time you launch a local IIS or IIS Express web application that requires Windows Authentication, you’ll likely grow as tired of typing in your password as I was. To add to the annoyance, the Remember my credentials checkbox doesn’t work (nothing is saved). The setup: Windows 8 Visual [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>If you’re seeing a credentials prompt every time you launch a local IIS or IIS Express web application that requires Windows Authentication, you’ll likely grow as tired of typing in your password as I was. To add to the annoyance, the <strong>Remember my credentials</strong> checkbox doesn’t work (nothing is saved).</p>
+<p><a href="/blog/wp-content/uploads/2013/03/image.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wp-content/uploads/2013/03/image_thumb.png" width="443" height="351" /></a></p>
+<p>The setup:</p>
+<ul>
+<li>Windows 8</li>
+<li>Visual Studio 2012, .NET 4.5, </li>
+<li>ASP.NET MVC web application</li>
+<li>Non domain-joined computer (it’s on my home network)</li>
+<li>Using a Microsoft account (FKA Live ID) as the local account</li>
+<li>Using IIS Express/IIS</li>
+<li>Windows Authentication <strong>Enabled</strong></li>
+<li>Anonymous Logon <strong>Disabled</strong></li>
+</ul>
+<pre class="csharpcode"><span class="kwrd">&lt;</span><span class="html">system.webServer</span><span class="kwrd">&gt;</span>
+    <span class="kwrd">&lt;</span><span class="html">security</span><span class="kwrd">&gt;</span>
+        <span class="kwrd">&lt;</span><span class="html">authentication</span><span class="kwrd">&gt;</span>
+            <span class="kwrd">&lt;</span><span class="html">windowsAuthentication</span> <span class="attr">enabled</span><span class="kwrd">=&quot;true&quot;</span> <span class="kwrd">/&gt;</span>
+            <span class="kwrd">&lt;</span><span class="html">anonymousAuthentication</span> <span class="attr">enabled</span><span class="kwrd">=&quot;false&quot;</span> <span class="kwrd">/&gt;</span>
+        <span class="kwrd">&lt;/</span><span class="html">authentication</span><span class="kwrd">&gt;</span>
+    <span class="kwrd">&lt;/</span><span class="html">security</span><span class="kwrd">&gt;</span>
+<span class="kwrd">&lt;/</span><span class="html">system.webServer</span><span class="kwrd">&gt;</span></pre>
+<style type="text/css">
+.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }</style>
+<p>While there are a few proposed solutions, this is the only one that worked for me so far.</p>
+<ol>
+<li>Start Internet Explorer</li>
+<li>Click the settings Menu</li>
+<li>Select <strong>Internet options</strong></li>
+<li>Click the <strong>Security </strong>tab</li>
+<li>Select <strong>Local intranet</strong></li>
+<li>Click <strong>Sites</strong></li>
+<li>Click <strong>Advanced</strong></li>
+<li>Add <a href="http://localhost/">http://localhost/</a> to the Local intranet zone</li>
+<li>Close.</li>
+<li>Verify it’s now working.</li>
+</ol>
+<p><a href="/blog/wp-content/uploads/2013/03/image1.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wp-content/uploads/2013/03/image_thumb1.png" width="256" height="290" /></a></p>
+<p><a href="/blog/wp-content/uploads/2013/03/image2.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wp-content/uploads/2013/03/image_thumb2.png" width="425" height="544" /></a></p>
+<p><a href="/blog/wp-content/uploads/2013/03/image3.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wp-content/uploads/2013/03/image_thumb3.png" width="416" height="236" /></a></p>
+<p><a href="/blog/wp-content/uploads/2013/03/image4.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wp-content/uploads/2013/03/image_thumb4.png" width="396" height="351" /></a></p>
+<p><a href="/blog/wp-content/uploads/2013/03/image5.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wp-content/uploads/2013/03/image_thumb5.png" width="396" height="351" /></a></p>
+<p>Done.</p>
+<p>Alternatives welcomed. :)</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/blog/index.php/archives/1850/feed</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1850</post-id>	</item>
+	</channel>
+</rss>

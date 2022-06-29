@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>Phone &#8211; WiredPrairie</title>
+	<atom:link href="/blog/index.php/archives/tag/phone/feed" rel="self" type="application/rss+xml" />
+	<link>/blog</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Tue, 24 Aug 2010 01:46:28 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+<site xmlns="com-wordpress:feed-additions:1">193486638</site>	<item>
+		<title>Windows Phone 7 Marketplace: Ditch the Annual Fee for Free App Developers!</title>
+		<link>/blog/index.php/archives/1119</link>
+					<comments>/blog/index.php/archives/1119#comments</comments>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Tue, 24 Aug 2010 01:46:28 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[General]]></category>
+		<category><![CDATA[Phone]]></category>
+		<guid isPermaLink="false">/blog/index.php/archives/1119</guid>
+
+					<description><![CDATA[Dear Microsoft, A few facts: I’m a competent Silverlight developer. I’ve even dabbled in XNA. I’m an owner of a iPhone 3GS. I would like a new phone. I’d like to buy a phone powered by the Windows Phone 7 OS when it’s made available. I’d like to make some free applications for my phone [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Dear Microsoft,</p>
+<p>A few facts:</p>
+<ul>
+<li>I’m a competent Silverlight developer. I’ve even dabbled in XNA.</li>
+<li>I’m an owner of a iPhone 3GS. </li>
+<li><strong>I would like a new phone.</strong></li>
+<li><strong>I’d like to buy a phone powered by the Windows Phone 7 OS when it’s made available.</strong></li>
+<li>I’d like to make some free applications for my phone and others to use. A few for hobbies (like photography), and a few utilities for myself for work.</li>
+<li>I don’t however want to spend $99 a year for the privilege of doing so.</li>
+</ul>
+<p><strong>Why not open it up for people like myself? </strong></p>
+<p>Here’s a few alternatives:</p>
+<ul>
+<li>Make it free for those who make only free applications</li>
+<li>Make it free for those who agree to include a Bing-Ad placement component in the application, in a prominent position.</li>
+<li>Make it free for those who buy a copy of Visual Studio 2010 and Blend (like myself – I don’t use the Express editions).</li>
+<li>Make it free so that there’s no barrier to entry – that people and companies don’t need to worry about the extra fee – just jump on the Windows Phone 7 bandwagon.</li>
+</ul>
+<p>Without this change, I probably won’t buy a Windows Phone 7, and will start building more HTML 5 web apps, that will work just fine on my iPhone 3GS (powered by iOS4). <img style="border-bottom-style: none; border-right-style: none; border-top-style: none; border-left-style: none" class="wlEmoticon wlEmoticon-sadsmile" alt="Sad smile" src="/blog/wp-content/uploads/2010/08/wlEmoticonsadsmile.png" /></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/blog/index.php/archives/1119/feed</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1119</post-id>	</item>
+	</channel>
+</rss>

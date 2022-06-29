@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>wscript &#8211; WiredPrairie</title>
+	<atom:link href="/blog/index.php/archives/tag/wscript/feed" rel="self" type="application/rss+xml" />
+	<link>/blog</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Fri, 29 Mar 2013 00:54:54 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+<site xmlns="com-wordpress:feed-additions:1">193486638</site>	<item>
+		<title>Using Windows CSCRIPT to compile a Handlebar.js template</title>
+		<link>/blog/index.php/archives/1880</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Fri, 29 Mar 2013 00:54:53 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[General]]></category>
+		<category><![CDATA[cscript]]></category>
+		<category><![CDATA[JavaScript]]></category>
+		<category><![CDATA[wscript]]></category>
+		<guid isPermaLink="false">/blog/?p=1880</guid>
+
+					<description><![CDATA[I was looking for an alternative to using Node.JS for a JavaScript build process today on a Windows machine. I wanted something that relied as much on natively installed elements of a modern Windows PC as possible so that the build process would be portable. So, I broke out my rusty Windows Script Host skills. [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I was looking for an alternative to using Node.JS for a JavaScript build process today on a Windows machine. I wanted something that relied as much on natively installed elements of a modern Windows PC as possible so that the build process would be portable.</p>
+<p>So, I broke out my rusty <a href="http://msdn.microsoft.com/en-us/library/9bbdkx3k(v=vs.84).aspx" target="_blank">Windows Script Host</a> skills.</p>
+<p>First, I created a file called, <strong>compile.wsf </strong>with the following contents:</p>
+<p><a href="/blog/wp-content/uploads/2013/03/image9.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wp-content/uploads/2013/03/image_thumb8.png" width="548" height="186" /></a></p>
+<p>When using <strong>cscript.exe</strong>, you can execute a more complex combination of scripts and include other script files by using a <a href="http://msdn.microsoft.com/en-us/library/15x4407c(v=vs.84).aspx" target="_blank">Windows Script File</a>. The content of the file is an XML definition of jobs. A job represents a unit of work. If you only have one job in a file, the name won’t matter as the script engine will select it by default. If you do have more than one job you’d like to store in a single WSF file, you can use the <strong>/Job:{id}</strong> parameter of <strong>cscript.exe</strong> to run a single job.</p>
+<p> Using the WSF file, you can include other script files using a script element (much like the script tag in HTML). In the example above, I’ve referenced a local copy of <strong>handlebars.js</strong> and a custom script called <strong>compile.js</strong>.</p>
+<p>You can also inline script as shown above. After doing a basic check on the number of arguments provided to the script, <strong>compile</strong> is called, which is from the <strong>compile.js</strong> script reference.</p>
+<p><strong>Compile.js</strong> is simple:</p>
+<p><a href="/blog/wp-content/uploads/2013/03/image10.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wp-content/uploads/2013/03/image_thumb9.png" width="539" height="320" /></a></p>
+<p>Using an instance of the <a href="http://msdn.microsoft.com/en-us/library/6kxy1a51(v=vs.84).aspx" target="_blank">FileSystemObject</a>, first the input file is verified to exist. Next, both the input and output files are opened. The Handlebars object is available globally by including it in the WSF definition and is used to precompile the contents of the input file’s template definition. Once compiled, it’s written to the output file and both files are closed.</p>
+<p>I threw the three files in a folder called <strong>lib</strong>, and created a simple batch file called handlebars.bat which called the cscript executable with the Windows Script File shown above as the first parameter and then the values of the other parameters passed along:</p>
+<p><a href="/blog/wp-content/uploads/2013/03/image11.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wp-content/uploads/2013/03/image_thumb10.png" width="238" height="22" /></a></p>
+<p>While this solution only works on Windows, it doesn’t hurt to keep the Windows Script Host in mind when throwing together general repeatable tasks that you:</p>
+<ul>
+<li>consider too complex for a batch file</li>
+<li>consider too simple for a full .NET application</li>
+<li>require usage of existing JavaScript libraries, like Handlebars.js for some work</li>
+</ul>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1880</post-id>	</item>
+	</channel>
+</rss>

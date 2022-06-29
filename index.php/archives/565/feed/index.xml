@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Gulp &#8211; a WPF-based text editor for Visual Studio 10?	</title>
+	<atom:link href="/blog/index.php/archives/565/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/565</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Mon, 29 Sep 2008 03:27:07 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: indyfromoz		</title>
+		<link>/blog/index.php/archives/565/comment-page-1#comment-845</link>
+
+		<dc:creator><![CDATA[indyfromoz]]></dc:creator>
+		<pubDate>Mon, 29 Sep 2008 03:27:07 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/565#comment-845</guid>
+
+					<description><![CDATA[Aaron,
+
+You are spot on with your doubts about the next version of VS. Blend SUCKS for me on a remote desktop session, even if I select the LAN option (10Mbps). I wonder if VS10 will be any better, we can just hope...]]></description>
+			<content:encoded><![CDATA[<p>Aaron,</p>
+<p>You are spot on with your doubts about the next version of VS. Blend SUCKS for me on a remote desktop session, even if I select the LAN option (10Mbps). I wonder if VS10 will be any better, we can just hope&#8230;</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: jwiese		</title>
+		<link>/blog/index.php/archives/565/comment-page-1#comment-833</link>
+
+		<dc:creator><![CDATA[jwiese]]></dc:creator>
+		<pubDate>Thu, 25 Sep 2008 16:20:04 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/565#comment-833</guid>
+
+					<description><![CDATA[Keep in mind that there will likely be many other things done under the covers.  So, perhaps a WPF UI will not be so bad.  Yes, just replacing the current UI with a WPF UI would be an issue as there are many performance problems with large solutions.  But, if the underlying architecture was changed to optimize performance then a WPF based UI would give you more benefits than drawbacks.]]></description>
+			<content:encoded><![CDATA[<p>Keep in mind that there will likely be many other things done under the covers.  So, perhaps a WPF UI will not be so bad.  Yes, just replacing the current UI with a WPF UI would be an issue as there are many performance problems with large solutions.  But, if the underlying architecture was changed to optimize performance then a WPF based UI would give you more benefits than drawbacks.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/565/comment-page-1#comment-790</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Thu, 18 Sep 2008 01:33:54 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/565#comment-790</guid>
+
+					<description><![CDATA[My understanding is that although WPF was designed with it in mind, very little of what was intended actually shipped. They don&#039;t do the remoting as they had originally intended at all.
+
+Blend is sluggish on my machines -- so I hope that doesn&#039;t represent future VS performance.]]></description>
+			<content:encoded><![CDATA[<p>My understanding is that although WPF was designed with it in mind, very little of what was intended actually shipped. They don&#8217;t do the remoting as they had originally intended at all.</p>
+<p>Blend is sluggish on my machines &#8212; so I hope that doesn&#8217;t represent future VS performance.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Oran		</title>
+		<link>/blog/index.php/archives/565/comment-page-1#comment-789</link>
+
+		<dc:creator><![CDATA[Oran]]></dc:creator>
+		<pubDate>Wed, 17 Sep 2008 22:00:39 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/565#comment-789</guid>
+
+					<description><![CDATA[WPF was designed with Remote Desktop in mind.  If I understand correctly, it is capable of remoting only the visual tree and taking advantage of the client&#039;s CPU/GPU.
+
+I would also note that the only other &quot;real&quot; or &quot;giant&quot; WPF application from Microsoft is Blend, essentially a dev tool.]]></description>
+			<content:encoded><![CDATA[<p>WPF was designed with Remote Desktop in mind.  If I understand correctly, it is capable of remoting only the visual tree and taking advantage of the client&#8217;s CPU/GPU.</p>
+<p>I would also note that the only other &#8220;real&#8221; or &#8220;giant&#8221; WPF application from Microsoft is Blend, essentially a dev tool.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

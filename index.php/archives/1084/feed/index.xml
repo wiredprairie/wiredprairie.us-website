@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Silverlight Analog/Retro Flip Numbers	</title>
+	<atom:link href="/blog/index.php/archives/1084/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/1084</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Tue, 28 Dec 2010 14:54:11 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: Jason		</title>
+		<link>/blog/index.php/archives/1084/comment-page-1#comment-3319</link>
+
+		<dc:creator><![CDATA[Jason]]></dc:creator>
+		<pubDate>Tue, 28 Dec 2010 14:54:11 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/1084#comment-3319</guid>
+
+					<description><![CDATA[Oh.  It looks like XAML tags don&#039;t come through in your comments.  Sorry about that.
+
+The problem is that the control won&#039;t build for WP7 with this tag in place:
+ei:ExtendedVisualStateManager
+
+Because the ExtendedVisualStateManager is SL4 specific.
+
+And then (I don&#039;t know if this is related) if I take the ExtendedVisualStateManager out, this line results in a NULL at runtime:
+
+ _partContainer = this.GetTemplateChild(&quot;PART_Container&quot;) as Panel;
+
+even if I take out the cast to Panel, it is still null.
+
+I see you are doing WP7 stuff now, too, so I thought you might have a better idea than I do on how to work around the SL4 specific stuff.
+
+Thanks!
+--Jason]]></description>
+			<content:encoded><![CDATA[<p>Oh.  It looks like XAML tags don&#8217;t come through in your comments.  Sorry about that.</p>
+<p>The problem is that the control won&#8217;t build for WP7 with this tag in place:<br />
+ei:ExtendedVisualStateManager</p>
+<p>Because the ExtendedVisualStateManager is SL4 specific.</p>
+<p>And then (I don&#8217;t know if this is related) if I take the ExtendedVisualStateManager out, this line results in a NULL at runtime:</p>
+<p> _partContainer = this.GetTemplateChild(&#8220;PART_Container&#8221;) as Panel;</p>
+<p>even if I take out the cast to Panel, it is still null.</p>
+<p>I see you are doing WP7 stuff now, too, so I thought you might have a better idea than I do on how to work around the SL4 specific stuff.</p>
+<p>Thanks!<br />
+&#8211;Jason</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/1084/comment-page-1#comment-3318</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Mon, 27 Dec 2010 21:27:54 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/1084#comment-3318</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1084/comment-page-1#comment-3317&quot;&gt;Jason&lt;/a&gt;.
+
+What? You didn&#039;t say what the problem you were having was .... :)]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/1084/comment-page-1#comment-3317">Jason</a>.</p>
+<p>What? You didn&#8217;t say what the problem you were having was &#8230;. :)</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Jason		</title>
+		<link>/blog/index.php/archives/1084/comment-page-1#comment-3317</link>
+
+		<dc:creator><![CDATA[Jason]]></dc:creator>
+		<pubDate>Mon, 27 Dec 2010 20:22:24 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/1084#comment-3317</guid>
+
+					<description><![CDATA[This is great and exactly what I need -- only I need it for Windows Phone.  I am working on back-porting it but have stumbled on your use of .  Any ideas how to get around it?
+
+Very well done!  Thank you very much.]]></description>
+			<content:encoded><![CDATA[<p>This is great and exactly what I need &#8212; only I need it for Windows Phone.  I am working on back-porting it but have stumbled on your use of .  Any ideas how to get around it?</p>
+<p>Very well done!  Thank you very much.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

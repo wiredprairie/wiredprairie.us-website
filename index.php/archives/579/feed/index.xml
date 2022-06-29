@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: How to play an Audio File in Silverlight, Part 2	</title>
+	<atom:link href="/blog/index.php/archives/579/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/579</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Tue, 21 Apr 2009 03:12:16 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: Toby Teel		</title>
+		<link>/blog/index.php/archives/579/comment-page-1#comment-2399</link>
+
+		<dc:creator><![CDATA[Toby Teel]]></dc:creator>
+		<pubDate>Tue, 21 Apr 2009 03:12:16 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/579#comment-2399</guid>
+
+					<description><![CDATA[Hey, your brief article was what finally got my silverlight app playing.  
+
+The article at http://blogs.msdn.com/katriend/archive/2008/04/27/different-ways-for-loading-images-and-files-in-silverlight-2-applications.aspx may help your reader out with embedding content as a resource.]]></description>
+			<content:encoded><![CDATA[<p>Hey, your brief article was what finally got my silverlight app playing.  </p>
+<p>The article at <a href="http://blogs.msdn.com/katriend/archive/2008/04/27/different-ways-for-loading-images-and-files-in-silverlight-2-applications.aspx" rel="nofollow ugc">http://blogs.msdn.com/katriend/archive/2008/04/27/different-ways-for-loading-images-and-files-in-silverlight-2-applications.aspx</a> may help your reader out with embedding content as a resource.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: WiredPrairie - Drumming on Silverlight		</title>
+		<link>/blog/index.php/archives/579/comment-page-1#comment-1979</link>
+
+		<dc:creator><![CDATA[WiredPrairie - Drumming on Silverlight]]></dc:creator>
+		<pubDate>Tue, 09 Dec 2008 03:00:06 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/579#comment-1979</guid>
+
+					<description><![CDATA[[...] I used a few of the same tricks I’ve used before. [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] I used a few of the same tricks I’ve used before. [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

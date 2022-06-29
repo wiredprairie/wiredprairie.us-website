@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="/blog/xmlrpc.php">
+
+<title>API &#8211; WiredPrairie</title>
+<meta name="robots" content="max-image-preview:large">
+<link rel="dns-prefetch" href="//secure.gravatar.com">
+<link rel="dns-prefetch" href="//www.wiredprairie.us">
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//s.w.org">
+<link rel="dns-prefetch" href="//v0.wordpress.com">
+<link rel="dns-prefetch" href="//widgets.wp.com">
+<link rel="dns-prefetch" href="//s0.wp.com">
+<link rel="dns-prefetch" href="//0.gravatar.com">
+<link rel="dns-prefetch" href="//1.gravatar.com">
+<link rel="dns-prefetch" href="//2.gravatar.com">
+<link rel="dns-prefetch" href="//jetpack.wordpress.com">
+<link rel="dns-prefetch" href="//public-api.wordpress.com">
+<link rel="alternate" type="application/rss+xml" title="WiredPrairie &raquo; Feed" href="/blog/index.php/feed">
+<link rel="alternate" type="application/rss+xml" title="WiredPrairie &raquo; Comments Feed" href="/blog/index.php/comments/feed">
+<link rel="alternate" type="application/rss+xml" title="WiredPrairie &raquo; API Tag Feed" href="/blog/index.php/archives/tag/api/feed">
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.0"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode,e=(p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0),i.toDataURL());return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([129777,127995,8205,129778,127999],[129777,127995,8203,129778,127999])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style type="text/css">img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="/blog/wp-includes/css/dist/block-library/style.min.css?ver=6.0" type="text/css" media="all">
+<style id="wp-block-library-inline-css" type="text/css">.has-text-align-justify{text-align:justify;}</style>
+<link rel="stylesheet" id="mediaelement-css" href="/blog/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.16" type="text/css" media="all">
+<link rel="stylesheet" id="wp-mediaelement-css" href="/blog/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.0" type="text/css" media="all">
+<style id="global-styles-inline-css" type="text/css">body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}</style>
+<link rel="stylesheet" id="editor-style-css" href="/blog/wp-content/themes/editor/style.css?ver=6.0" type="text/css" media="all">
+<link rel="stylesheet" id="editor-font-awesome-css-css" href="/blog/wp-content/themes/editor/inc/fontawesome/font-awesome.css?ver=4.1.0" type="text/css" media="screen">
+<!--[if IE]>
+<link rel='stylesheet' id='ie7-style-css'  href='/wp-content/themes/editor/inc/styles/ie.css?ver=6.0' type='text/css' media='all' />
+<![endif]-->
+<link rel="stylesheet" id="editor-fonts-css" href="//fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C600%2C700%2C400italic%2C600italic%2C700italic%7CRoboto+Condensed%3A300%2C400%2C700%2C300italic%2C400italic%2C700italic&#038;subset=latin%2Clatin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="jetpack_css-css" href="/blog/wp-content/plugins/jetpack/css/jetpack.css?ver=11.0" type="text/css" media="all">
+<script type="text/javascript" src="/blog/wp-includes/js/jquery/jquery.min.js?ver=3.6.0" id="jquery-core-js"></script>
+<script type="text/javascript" src="/blog/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
+<link rel="https://api.w.org/" href="/blog/index.php/wp-json/">
+<link rel="alternate" type="application/json" href="/blog/index.php/wp-json/wp/v2/tags/60">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/blog/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/blog/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 6.0">
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#000"
+    },
+    "button": {
+      "background": "#f1d600"
+    }
+  }
+})});
+</script><style>img#wpstats{display:none}</style>
+	
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="API &#8211; WiredPrairie">
+<meta property="og:url" content="/index.php/archives/tag/api">
+<meta property="og:site_name" content="WiredPrairie">
+<meta property="og:image" content="https://s0.wp.com/i/blank.jpg">
+<meta property="og:image:alt" content="">
+<meta property="og:locale" content="en_US">
+
+<!-- End Jetpack Open Graph Tags -->
+</head>
+
+<body class="archive tag tag-api tag-60 group-blog">
+
+<div id="page" class="hfeed site container">
+
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+	<!-- Get sidebar color option (Appearance -> Customize -> Theme Options) -->
+		<header id="masthead" class="site-header light" role="banner">
+		<!-- Tab navigation -->
+		<ul class="toggle-bar" role="tablist">
+			<!-- Main navigation -->
+			<li id="panel-1" class="current" role="presentation">
+				<a href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true" class="current nav-toggle" data-tab="tab-1"><i class="fa fa-bars"></i><span class="screen-reader-text">View menu</span></a>
+			</li>
+
+			<!-- Featured Posts navigation -->
+							<li id="panel-2" role="presentation">
+					<a href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false" data-tab="tab-2"><i class="fa fa-thumb-tack"></i><span class="screen-reader-text">View featured posts</span></a>
+				</li>
+			
+			<!-- Sidebar widgets navigation -->
+			<li id="panel-3" role="presentation">
+				<a href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false" class="folder-toggle" data-tab="tab-3"><i class="fa fa-folder"></i><i class="fa fa-folder-open"></i><span class="screen-reader-text">View sidebar</span></a>
+			</li>
+		</ul>
+
+		<div id="tabs" class="toggle-tabs">
+			<div class="site-header-inside">
+				<!-- Logo, description and main navigation -->
+				<div id="tab-1" class="tab-content current fadeIn">
+					<div class="site-branding">
+						<!-- Get the site branding -->
+													<h1 class="site-title"><a href="/blog/" rel="home">WiredPrairie</a></h1>
+							<h2 class="site-description">Yet another tech blog.</h2>
+											</div>
+
+					<nav id="site-navigation" class="main-navigation" role="navigation">
+						<div class="menu"><ul>
+<li><a href="/blog/">Home</a></li>
+<li class="page_item page-item-2"><a href="/blog/index.php/about">About</a></li>
+<li class="page_item page-item-28"><a href="/blog/index.php/contact">Contact Me</a></li>
+</ul></div>
+					</nav><!-- #site-navigation -->
+
+									</div>
+<!-- #tab-1 -->
+
+				<!-- Featured Posts template (template-featured-posts.php) -->
+				
+									<div id="tab-2" class="widget-area tab-content animated fadeIn">
+						<div class="widget featured-posts-widget">
+							<h2 class="widget-title">Recommendations</h2>
+
+							<div class="featured-posts">
+							    
+																	<div class="featured-post">
+																	            	<a class="featured-post-image" href="/blog/index.php/archives/2278" rel="bookmark"><img width="600" height="400" src="/blog/wp-content/uploads/2018/07/Photo-Jul-23-7-23-26-PM-600x400.jpg" class="attachment-featured-post-image size-featured-post-image wp-post-image" alt="" loading="lazy" data-attachment-id="2292" data-permalink="/index.php/archives/2278/photo-jul-23-7-23-26-pm" data-orig-file="/wp-content/uploads/2018/07/Photo-Jul-23-7-23-26-PM.jpg" data-orig-size="4032,3024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;2.2&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;iPhone 6s&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;1532373806&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;4.15&quot;,&quot;iso&quot;:&quot;320&quot;,&quot;shutter_speed&quot;:&quot;0.066666666666667&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="Photo Jul 23, 7 23 26 PM" data-image-description="" data-image-caption="" data-medium-file="/wp-content/uploads/2018/07/Photo-Jul-23-7-23-26-PM-300x225.jpg" data-large-file="/wp-content/uploads/2018/07/Photo-Jul-23-7-23-26-PM-1024x768.jpg"></a>
+							            							            <h3><a href="/blog/index.php/archives/2278" rel="bookmark">You don&#8217;t need it, but you might want it any way: Ubiquiti Unifi</a></h3>
+
+							            <div class="featured-post-meta">
+								            <div class="featured-post-date">
+								            	<i class="fa fa-clock-o"></i>
+								            	<span class="posted-on"><a href="/blog/index.php/archives/2278" rel="bookmark"><time class="entry-date published" datetime="2018-07-25T20:27:43-05:00">July 25, 2018</time></a></span><span class="byline"> by </span> <span class="author vcard"><a class="url fn n" href="/blog/index.php/archives/author/aaron">Aaron</a></span>								            </div>
+							            </div>
+									</div>
+																	<div class="featured-post">
+																	            	<a class="featured-post-image" href="/blog/index.php/archives/2197" rel="bookmark"><img width="600" height="400" src="/blog/wp-content/uploads/2018/02/2018-02-16-20_23_15-AmazonSmile_-Pure-Green-100-Natural-Latex-Mattress-Topper-Firm-3_-King-Size-600x400.png" class="attachment-featured-post-image size-featured-post-image wp-post-image" alt="Mattress-Firm" loading="lazy" data-attachment-id="2198" data-permalink="/index.php/archives/2197/2018-02-16-20_23_15-amazonsmile_-pure-green-100-natural-latex-mattress-topper-firm-3_-king-size" data-orig-file="/wp-content/uploads/2018/02/2018-02-16-20_23_15-AmazonSmile_-Pure-Green-100-Natural-Latex-Mattress-Topper-Firm-3_-King-Size.png" data-orig-size="1067,807" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Pure Green 100% Natural Latex Mattress Topper &#8211; Firm" data-image-description="" data-image-caption="&lt;p&gt;Pure Green 100% Natural Latex Mattress Topper &#8211; Firm&lt;/p&gt;
+" data-medium-file="/wp-content/uploads/2018/02/2018-02-16-20_23_15-AmazonSmile_-Pure-Green-100-Natural-Latex-Mattress-Topper-Firm-3_-King-Size-300x227.png" data-large-file="/wp-content/uploads/2018/02/2018-02-16-20_23_15-AmazonSmile_-Pure-Green-100-Natural-Latex-Mattress-Topper-Firm-3_-King-Size-1024x774.png"></a>
+							            							            <h3><a href="/blog/index.php/archives/2197" rel="bookmark">How to make your too soft Tempur-pedic Bed comfortable</a></h3>
+
+							            <div class="featured-post-meta">
+								            <div class="featured-post-date">
+								            	<i class="fa fa-clock-o"></i>
+								            	<span class="posted-on"><a href="/blog/index.php/archives/2197" rel="bookmark"><time class="entry-date published" datetime="2018-02-17T09:59:38-06:00">February 17, 2018</time><time class="updated" datetime="2018-02-17T12:05:52-06:00">February 17, 2018</time></a></span><span class="byline"> by </span> <span class="author vcard"><a class="url fn n" href="/blog/index.php/archives/author/aaron">Aaron</a></span>								            </div>
+							            </div>
+									</div>
+																	<div class="featured-post">
+																	            	<a class="featured-post-image" href="/blog/index.php/archives/2124" rel="bookmark"><img width="600" height="400" src="/blog/wp-content/uploads/2016/11/TicketToRideBanner-600x400.jpg" class="attachment-featured-post-image size-featured-post-image wp-post-image" alt="" loading="lazy" data-attachment-id="2138" data-permalink="/index.php/archives/2124/tickettoridebanner" data-orig-file="/wp-content/uploads/2016/11/TicketToRideBanner.jpg" data-orig-size="1920,873" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;2.2&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;iPhone 6s&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;4.2&quot;,&quot;iso&quot;:&quot;320&quot;,&quot;shutter_speed&quot;:&quot;0.066666666666667&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="tickettoridebanner" data-image-description="" data-image-caption="" data-medium-file="/wp-content/uploads/2016/11/TicketToRideBanner-300x136.jpg" data-large-file="/wp-content/uploads/2016/11/TicketToRideBanner-1024x466.jpg"></a>
+							            							            <h3><a href="/blog/index.php/archives/2124" rel="bookmark">Alternatives to Monopoly: Some table-top board games you should try</a></h3>
+
+							            <div class="featured-post-meta">
+								            <div class="featured-post-date">
+								            	<i class="fa fa-clock-o"></i>
+								            	<span class="posted-on"><a href="/blog/index.php/archives/2124" rel="bookmark"><time class="entry-date published" datetime="2016-11-28T07:25:48-06:00">November 28, 2016</time><time class="updated" datetime="2017-04-04T20:19:50-05:00">April 4, 2017</time></a></span><span class="byline"> by </span> <span class="author vcard"><a class="url fn n" href="/blog/index.php/archives/author/aaron">Aaron</a></span>								            </div>
+							            </div>
+									</div>
+																	<div class="featured-post">
+																	            <h3><a href="/blog/index.php/archives/2119" rel="bookmark">Geek gift ideas 2016</a></h3>
+
+							            <div class="featured-post-meta">
+								            <div class="featured-post-date">
+								            	<i class="fa fa-clock-o"></i>
+								            	<span class="posted-on"><a href="/blog/index.php/archives/2119" rel="bookmark"><time class="entry-date published" datetime="2016-11-27T11:30:00-06:00">November 27, 2016</time><time class="updated" datetime="2017-04-04T20:20:17-05:00">April 4, 2017</time></a></span><span class="byline"> by </span> <span class="author vcard"><a class="url fn n" href="/blog/index.php/archives/author/aaron">Aaron</a></span>								            </div>
+							            </div>
+									</div>
+																	<div class="featured-post">
+																	            <h3><a href="/blog/index.php/archives/2115" rel="bookmark">Changing password requirements in Linux Subsystem for Windows (or Bash on Ubuntu on Windows)</a></h3>
+
+							            <div class="featured-post-meta">
+								            <div class="featured-post-date">
+								            	<i class="fa fa-clock-o"></i>
+								            	<span class="posted-on"><a href="/blog/index.php/archives/2115" rel="bookmark"><time class="entry-date published" datetime="2016-11-23T07:47:54-06:00">November 23, 2016</time></a></span><span class="byline"> by </span> <span class="author vcard"><a class="url fn n" href="/blog/index.php/archives/author/aaron">Aaron</a></span>								            </div>
+							            </div>
+									</div>
+																	<div class="featured-post">
+																	            	<a class="featured-post-image" href="/blog/index.php/archives/2096" rel="bookmark"><img width="600" height="400" src="/blog/wp-content/uploads/2016/11/02_ecobee3_family2-600x400.jpg" class="attachment-featured-post-image size-featured-post-image wp-post-image" alt="" loading="lazy" data-attachment-id="2112" data-permalink="/index.php/archives/2096/02_ecobee3_family2" data-orig-file="/wp-content/uploads/2016/11/02_ecobee3_family2.jpg" data-orig-size="1198,400" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="02_ecobee3_family2" data-image-description="" data-image-caption="" data-medium-file="/wp-content/uploads/2016/11/02_ecobee3_family2-300x100.jpg" data-large-file="/wp-content/uploads/2016/11/02_ecobee3_family2-1024x342.jpg"></a>
+							            							            <h3><a href="/blog/index.php/archives/2096" rel="bookmark">Ecobee’s ecobee3 Thermostat</a></h3>
+
+							            <div class="featured-post-meta">
+								            <div class="featured-post-date">
+								            	<i class="fa fa-clock-o"></i>
+								            	<span class="posted-on"><a href="/blog/index.php/archives/2096" rel="bookmark"><time class="entry-date published" datetime="2016-11-19T09:10:36-06:00">November 19, 2016</time><time class="updated" datetime="2016-11-19T09:17:51-06:00">November 19, 2016</time></a></span><span class="byline"> by </span> <span class="author vcard"><a class="url fn n" href="/blog/index.php/archives/author/aaron">Aaron</a></span>								            </div>
+							            </div>
+									</div>
+																	<div class="featured-post">
+																	            <h3><a href="/blog/index.php/archives/2039" rel="bookmark">Made in the USA Camera Bag Manufacturers</a></h3>
+
+							            <div class="featured-post-meta">
+								            <div class="featured-post-date">
+								            	<i class="fa fa-clock-o"></i>
+								            	<span class="posted-on"><a href="/blog/index.php/archives/2039" rel="bookmark"><time class="entry-date published" datetime="2016-03-21T20:26:43-05:00">March 21, 2016</time><time class="updated" datetime="2016-03-23T09:40:26-05:00">March 23, 2016</time></a></span><span class="byline"> by </span> <span class="author vcard"><a class="url fn n" href="/blog/index.php/archives/author/aaron">Aaron</a></span>								            </div>
+							            </div>
+									</div>
+																	<div class="featured-post">
+																	            <h3><a href="/blog/index.php/archives/2020" rel="bookmark">My Raspberry Pi 2 Model B setup</a></h3>
+
+							            <div class="featured-post-meta">
+								            <div class="featured-post-date">
+								            	<i class="fa fa-clock-o"></i>
+								            	<span class="posted-on"><a href="/blog/index.php/archives/2020" rel="bookmark"><time class="entry-date published" datetime="2015-03-09T20:48:37-05:00">March 9, 2015</time></a></span><span class="byline"> by </span> <span class="author vcard"><a class="url fn n" href="/blog/index.php/archives/author/aaron">Aaron</a></span>								            </div>
+							            </div>
+									</div>
+																	<div class="featured-post">
+																	            <h3><a href="/blog/index.php/archives/2011" rel="bookmark">Kenu Airframe Portable Car Mount</a></h3>
+
+							            <div class="featured-post-meta">
+								            <div class="featured-post-date">
+								            	<i class="fa fa-clock-o"></i>
+								            	<span class="posted-on"><a href="/blog/index.php/archives/2011" rel="bookmark"><time class="entry-date published" datetime="2015-01-18T11:21:50-06:00">January 18, 2015</time></a></span><span class="byline"> by </span> <span class="author vcard"><a class="url fn n" href="/blog/index.php/archives/author/aaron">Aaron</a></span>								            </div>
+							            </div>
+									</div>
+																	<div class="featured-post">
+																	            <h3><a href="/blog/index.php/archives/2006" rel="bookmark">Attaching a GoPro Hero with Aero Bars from RedShift</a></h3>
+
+							            <div class="featured-post-meta">
+								            <div class="featured-post-date">
+								            	<i class="fa fa-clock-o"></i>
+								            	<span class="posted-on"><a href="/blog/index.php/archives/2006" rel="bookmark"><time class="entry-date published" datetime="2014-08-07T20:48:50-05:00">August 7, 2014</time></a></span><span class="byline"> by </span> <span class="author vcard"><a class="url fn n" href="/blog/index.php/archives/author/aaron">Aaron</a></span>								            </div>
+							            </div>
+									</div>
+																							</div>
+<!-- .featured-posts -->
+						</div>
+<!-- .featured-posts-widget -->
+					</div>
+<!-- #tab-2 .widget-area -->
+				
+				<!-- Sidebar widgets -->
+				<div id="tab-3" class="tab-content animated fadeIn" role="tabpanel" aria-labelledby="panel-3" aria-hidden="true">
+						<div id="secondary" class="widget-area" role="complementary">
+		<aside id="pages-2" class="widget widget_pages"><h2 class="widget-title">Pages</h2>
+			<ul>
+				<li class="page_item page-item-2"><a href="/blog/index.php/about">About</a></li>
+<li class="page_item page-item-28"><a href="/blog/index.php/contact">Contact Me</a></li>
+			</ul>
+
+			</aside><aside id="archives-2" class="widget widget_archive"><h2 class="widget-title">Archives</h2>
+			<ul>
+					<li><a href="/blog/index.php/archives/date/2019/10">October 2019</a></li>
+	<li><a href="/blog/index.php/archives/date/2018/07">July 2018</a></li>
+	<li><a href="/blog/index.php/archives/date/2018/05">May 2018</a></li>
+	<li><a href="/blog/index.php/archives/date/2018/04">April 2018</a></li>
+	<li><a href="/blog/index.php/archives/date/2018/03">March 2018</a></li>
+	<li><a href="/blog/index.php/archives/date/2018/02">February 2018</a></li>
+	<li><a href="/blog/index.php/archives/date/2017/04">April 2017</a></li>
+	<li><a href="/blog/index.php/archives/date/2017/01">January 2017</a></li>
+	<li><a href="/blog/index.php/archives/date/2016/11">November 2016</a></li>
+	<li><a href="/blog/index.php/archives/date/2016/10">October 2016</a></li>
+	<li><a href="/blog/index.php/archives/date/2016/03">March 2016</a></li>
+	<li><a href="/blog/index.php/archives/date/2016/02">February 2016</a></li>
+	<li><a href="/blog/index.php/archives/date/2015/03">March 2015</a></li>
+	<li><a href="/blog/index.php/archives/date/2015/01">January 2015</a></li>
+	<li><a href="/blog/index.php/archives/date/2014/08">August 2014</a></li>
+	<li><a href="/blog/index.php/archives/date/2014/05">May 2014</a></li>
+	<li><a href="/blog/index.php/archives/date/2014/01">January 2014</a></li>
+	<li><a href="/blog/index.php/archives/date/2013/12">December 2013</a></li>
+	<li><a href="/blog/index.php/archives/date/2013/10">October 2013</a></li>
+	<li><a href="/blog/index.php/archives/date/2013/09">September 2013</a></li>
+	<li><a href="/blog/index.php/archives/date/2013/08">August 2013</a></li>
+	<li><a href="/blog/index.php/archives/date/2013/07">July 2013</a></li>
+	<li><a href="/blog/index.php/archives/date/2013/06">June 2013</a></li>
+	<li><a href="/blog/index.php/archives/date/2013/05">May 2013</a></li>
+	<li><a href="/blog/index.php/archives/date/2013/03">March 2013</a></li>
+	<li><a href="/blog/index.php/archives/date/2013/02">February 2013</a></li>
+	<li><a href="/blog/index.php/archives/date/2013/01">January 2013</a></li>
+	<li><a href="/blog/index.php/archives/date/2012/12">December 2012</a></li>
+	<li><a href="/blog/index.php/archives/date/2012/10">October 2012</a></li>
+	<li><a href="/blog/index.php/archives/date/2012/09">September 2012</a></li>
+	<li><a href="/blog/index.php/archives/date/2012/08">August 2012</a></li>
+	<li><a href="/blog/index.php/archives/date/2012/07">July 2012</a></li>
+	<li><a href="/blog/index.php/archives/date/2012/06">June 2012</a></li>
+	<li><a href="/blog/index.php/archives/date/2012/05">May 2012</a></li>
+	<li><a href="/blog/index.php/archives/date/2012/04">April 2012</a></li>
+	<li><a href="/blog/index.php/archives/date/2012/03">March 2012</a></li>
+	<li><a href="/blog/index.php/archives/date/2012/02">February 2012</a></li>
+	<li><a href="/blog/index.php/archives/date/2012/01">January 2012</a></li>
+	<li><a href="/blog/index.php/archives/date/2011/12">December 2011</a></li>
+	<li><a href="/blog/index.php/archives/date/2011/11">November 2011</a></li>
+	<li><a href="/blog/index.php/archives/date/2011/08">August 2011</a></li>
+	<li><a href="/blog/index.php/archives/date/2011/07">July 2011</a></li>
+	<li><a href="/blog/index.php/archives/date/2011/06">June 2011</a></li>
+	<li><a href="/blog/index.php/archives/date/2011/05">May 2011</a></li>
+	<li><a href="/blog/index.php/archives/date/2011/03">March 2011</a></li>
+	<li><a href="/blog/index.php/archives/date/2011/02">February 2011</a></li>
+	<li><a href="/blog/index.php/archives/date/2011/01">January 2011</a></li>
+	<li><a href="/blog/index.php/archives/date/2010/11">November 2010</a></li>
+	<li><a href="/blog/index.php/archives/date/2010/10">October 2010</a></li>
+	<li><a href="/blog/index.php/archives/date/2010/09">September 2010</a></li>
+	<li><a href="/blog/index.php/archives/date/2010/08">August 2010</a></li>
+	<li><a href="/blog/index.php/archives/date/2010/07">July 2010</a></li>
+	<li><a href="/blog/index.php/archives/date/2010/06">June 2010</a></li>
+	<li><a href="/blog/index.php/archives/date/2010/05">May 2010</a></li>
+	<li><a href="/blog/index.php/archives/date/2010/04">April 2010</a></li>
+	<li><a href="/blog/index.php/archives/date/2010/03">March 2010</a></li>
+	<li><a href="/blog/index.php/archives/date/2010/02">February 2010</a></li>
+	<li><a href="/blog/index.php/archives/date/2010/01">January 2010</a></li>
+	<li><a href="/blog/index.php/archives/date/2009/12">December 2009</a></li>
+	<li><a href="/blog/index.php/archives/date/2009/11">November 2009</a></li>
+	<li><a href="/blog/index.php/archives/date/2009/10">October 2009</a></li>
+	<li><a href="/blog/index.php/archives/date/2009/09">September 2009</a></li>
+	<li><a href="/blog/index.php/archives/date/2009/08">August 2009</a></li>
+	<li><a href="/blog/index.php/archives/date/2009/07">July 2009</a></li>
+	<li><a href="/blog/index.php/archives/date/2009/06">June 2009</a></li>
+	<li><a href="/blog/index.php/archives/date/2009/05">May 2009</a></li>
+	<li><a href="/blog/index.php/archives/date/2009/04">April 2009</a></li>
+	<li><a href="/blog/index.php/archives/date/2009/03">March 2009</a></li>
+	<li><a href="/blog/index.php/archives/date/2009/02">February 2009</a></li>
+	<li><a href="/blog/index.php/archives/date/2009/01">January 2009</a></li>
+	<li><a href="/blog/index.php/archives/date/2008/12">December 2008</a></li>
+	<li><a href="/blog/index.php/archives/date/2008/11">November 2008</a></li>
+	<li><a href="/blog/index.php/archives/date/2008/10">October 2008</a></li>
+	<li><a href="/blog/index.php/archives/date/2008/09">September 2008</a></li>
+	<li><a href="/blog/index.php/archives/date/2008/08">August 2008</a></li>
+	<li><a href="/blog/index.php/archives/date/2008/07">July 2008</a></li>
+	<li><a href="/blog/index.php/archives/date/2008/06">June 2008</a></li>
+	<li><a href="/blog/index.php/archives/date/2008/05">May 2008</a></li>
+	<li><a href="/blog/index.php/archives/date/2008/04">April 2008</a></li>
+	<li><a href="/blog/index.php/archives/date/2008/03">March 2008</a></li>
+	<li><a href="/blog/index.php/archives/date/2008/02">February 2008</a></li>
+			</ul>
+
+			</aside>	</div>
+<!-- #secondary -->
+				</div>
+<!-- #tab-3 -->
+			</div>
+<!-- .site-header-inside -->
+		</div>
+<!-- #tabs -->
+	</header><!-- #masthead -->
+
+	<div id="content" class="site-content fadeInFast">
+
+	<section id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+		
+			
+			<header class="page-header ">
+				<h1 class="page-title">
+					Tag / API				</h1>
+							</header><!-- .page-header -->
+
+			<!-- If author has a bio, show it. -->
+			
+						
+				
+<article id="post-1788" class="post post-1788 type-post status-publish format-standard hentry category-coding tag-api tag-javascript tag-nest tag-node tag-npm tag-thermostat">
+	<!-- Grab the featured image -->
+	
+	<header class="entry-header">
+				<div class="entry-date">
+			<span class="posted-on"><a href="/blog/index.php/archives/1788" rel="bookmark"><time class="entry-date published" datetime="2012-12-30T17:13:00-06:00">December 30, 2012</time><time class="updated" datetime="2013-01-09T07:25:46-06:00">January 9, 2013</time></a></span><span class="byline"> by </span> <span class="author vcard"><a class="url fn n" href="/blog/index.php/archives/author/aaron">Aaron</a></span>		</div>
+<!-- .entry-meta -->
+		
+		<h1 class="entry-title"><a href="/blog/index.php/archives/1788" rel="bookmark">Added Away/Home to unofficial-nest-api</a></h1>	</header><!-- .entry-header -->
+
+	
+<div class="entry-meta">
+	
+	<ul class="meta-list">
+					<li class="meta-cat"><a href="/blog/index.php/archives/category/coding" rel="category tag">Coding</a></li>
+							<li class="meta-tag">
+<a href="/blog/index.php/archives/tag/api" rel="tag">API</a>, <a href="/blog/index.php/archives/tag/javascript" rel="tag">JavaScript</a>, <a href="/blog/index.php/archives/tag/nest" rel="tag">Nest</a>, <a href="/blog/index.php/archives/tag/node" rel="tag">Node</a>, <a href="/blog/index.php/archives/tag/npm" rel="tag">npm</a>, <a href="/blog/index.php/archives/tag/thermostat" rel="tag">Thermostat</a>
+</li>
+							</ul>
+</div>
+	<div class="entry-content">
+		<p>I just finished adding a new simple feature to control the away status for a structure to my unofficial-nest-api published on <a href="https://github.com/wiredprairie/unofficial_nodejs_nest">GitHub</a> and available as a node package (<a href="https://npmjs.org/package/unofficial-nest-api">npm</a>).</p>
+<p>Usage is simple as calling <strong>setAway </strong>or <strong>setHome</strong> on the nest instance after authentication and a successful status has been returned (see commented calls below).</p>
+<p>[javascript]<br>
+if (username &amp;&amp; password) {<br>
+    username = trimQuotes(username);<br>
+    password = trimQuotes(password);<br>
+    nest.login(username, password, function (data) {<br>
+        if (!data) {<br>
+            console.log(&#8216;Login failed.&#8217;);<br>
+            process.exit(1);<br>
+            return;<br>
+        }<br>
+        console.log(&#8216;Logged in.&#8217;);<br>
+        nest.fetchStatus(function (data) {<br>
+            for (var deviceId in data.device) {<br>
+                if (data.device.hasOwnProperty(deviceId)) {<br>
+                    var device = data.shared[deviceId];<br>
+                    console.log(util.format(&quot;%s [%s], Current temperature = %d F target=%d&quot;,<br>
+                        device.name, deviceId,<br>
+                        nest.ctof(device.current_temperature),<br>
+                        nest.ctof(device.target_temperature)));<br>
+                }<br>
+            }<br>
+            subscribe();<br>
+            //nest.setAway();<br>
+            //nest.setHome();<br>
+        });<br>
+    });<br>
+}<br>
+[/javascript]</p>
+			</div>
+<!-- .entry-content -->
+
+</article><!-- #post-## -->
+
+			<div class="code-block code-block-1" style="margin: 8px 0; clear: both;">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-fg+5r+6l-ft+4e" data-ad-client="ca-pub-2328055154157951" data-ad-slot="9395646477"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+				
+<article id="post-1754" class="post post-1754 type-post status-publish format-standard hentry category-coding tag-api tag-nest tag-node">
+	<!-- Grab the featured image -->
+	
+	<header class="entry-header">
+				<div class="entry-date">
+			<span class="posted-on"><a href="/blog/index.php/archives/1754" rel="bookmark"><time class="entry-date published" datetime="2012-10-09T20:28:38-05:00">October 9, 2012</time><time class="updated" datetime="2012-12-20T19:51:32-06:00">December 20, 2012</time></a></span><span class="byline"> by </span> <span class="author vcard"><a class="url fn n" href="/blog/index.php/archives/author/aaron">Aaron</a></span>		</div>
+<!-- .entry-meta -->
+		
+		<h1 class="entry-title"><a href="/blog/index.php/archives/1754" rel="bookmark">Nest Thermostat API using Node JS and Nest API Update</a></h1>	</header><!-- .entry-header -->
+
+	
+<div class="entry-meta">
+	
+	<ul class="meta-list">
+					<li class="meta-cat"><a href="/blog/index.php/archives/category/coding" rel="category tag">Coding</a></li>
+							<li class="meta-tag">
+<a href="/blog/index.php/archives/tag/api" rel="tag">API</a>, <a href="/blog/index.php/archives/tag/nest" rel="tag">Nest</a>, <a href="/blog/index.php/archives/tag/node" rel="tag">Node</a>
+</li>
+						<li class="meta-comment">
+			<span class="comments-link"><a href="/blog/index.php/archives/1754#comments">23 Comments</a></span>
+		</li>
+					</ul>
+</div>
+	<div class="entry-content">
+		<p>I’ve been asked by a few people for more details on the API Nest Labs uses for their thermostats, especially regarding setting data (and not just polling).</p>
+<p>The API uses mostly JSON formatted data POSTed to their web servers.</p>
+<h2>Authentication</h2>
+<p>To authenticate, POST the username and password, encoded as form url-encoded:</p>
+<div id="codeSnippetWrapper" style="overflow: auto; cursor: text; font-size: 8pt; border-top: silver 1px solid; font-family: &#39;Courier New&#39;, courier, monospace; border-right: silver 1px solid; border-bottom: silver 1px solid; padding-bottom: 4px; direction: ltr; text-align: left; padding-top: 4px; padding-left: 4px; margin: 20px 0px 10px; border-left: silver 1px solid; line-height: 12pt; padding-right: 4px; max-height: 200px; width: 97.5%; background-color: #f4f4f4">
+<pre id="codeSnippet" style="border-top-style: none; overflow: visible; font-size: 8pt; border-left-style: none; font-family: &#39;Courier New&#39;, courier, monospace; border-bottom-style: none; color: black; padding-bottom: 0px; direction: ltr; text-align: left; padding-top: 0px; border-right-style: none; padding-left: 0px; margin: 0em; line-height: 12pt; padding-right: 0px; width: 100%; background-color: #f4f4f4">POST https:<span style="color: #008000">//home.nest.com/user/login HTTP/1.1</span>
+Host: home.nest.com
+Proxy-Connection: keep-alive
+Accept-Encoding: gzip, deflate
+Content-Type: application/x-www-form-urlencoded; charset=utf-8
+Accept-Language: en-us
+Content-Length: {Length}
+Accept: */*
+Connection: keep-alive
+User-Agent: Nest/3.0.1.15 (iOS) os=6.0 platform=iPad3,1
+
+username={email}&amp;password={password}</pre>
+</div>
+<p>Adjust the email and password, and the content length to fit. You may need to remove the Accept-Encoding header value if your client cannot accept gzip or deflated responses.</p>
+<p>The server responds with a healthy set of basic information (in JSON format):</p>
+<div id="codeSnippetWrapper" style="overflow: auto; cursor: text; font-size: 8pt; border-top: silver 1px solid; font-family: &#39;Courier New&#39;, courier, monospace; border-right: silver 1px solid; border-bottom: silver 1px solid; padding-bottom: 4px; direction: ltr; text-align: left; padding-top: 4px; padding-left: 4px; margin: 20px 0px 10px; border-left: silver 1px solid; line-height: 12pt; padding-right: 4px; max-height: 200px; width: 97.5%; background-color: #f4f4f4">
+<pre id="codeSnippet" style="border-top-style: none; overflow: visible; font-size: 8pt; border-left-style: none; font-family: &#39;Courier New&#39;, courier, monospace; border-bottom-style: none; color: black; padding-bottom: 0px; direction: ltr; text-align: left; padding-top: 0px; border-right-style: none; padding-left: 0px; margin: 0em; line-height: 12pt; padding-right: 0px; width: 100%; background-color: #f4f4f4">{
+    <span style="color: #006080">&quot;is_superuser&quot;</span>: <span style="color: #0000ff">false</span>,
+    <span style="color: #006080">&quot;is_staff&quot;</span>: <span style="color: #0000ff">false</span>,
+    <span style="color: #006080">&quot;urls&quot;</span>: {
+        <span style="color: #006080">&quot;transport_url&quot;</span>: <span style="color: #006080">&quot;https://{subdomain}.transport.nest.com:443&quot;</span>,
+        <span style="color: #006080">&quot;rubyapi_url&quot;</span>: <span style="color: #006080">&quot;https://home.nest.com/&quot;</span>,
+        <span style="color: #006080">&quot;weather_url&quot;</span>: <span style="color: #006080">&quot;http://www.wunderground.com/auto/nestlabs/geo/current/i?query=&quot;</span>,
+        <span style="color: #006080">&quot;support_url&quot;</span>: <span style="color: #006080">&quot;https://nest.secure.force.com/support/webapp?&quot;</span>
+    },
+    <span style="color: #006080">&quot;limits&quot;</span>: {
+        <span style="color: #006080">&quot;thermostats_per_structure&quot;</span>: 10,
+        <span style="color: #006080">&quot;structures&quot;</span>: 2,
+        <span style="color: #006080">&quot;thermostats&quot;</span>: 10
+    },
+    <span style="color: #006080">&quot;access_token&quot;</span>: <span style="color: #006080">&quot;GIANT TOKEN STRING==&quot;</span>,
+    <span style="color: #006080">&quot;userid&quot;</span>: <span style="color: #006080">&quot;1234&quot;</span>,
+    <span style="color: #006080">&quot;expires_in&quot;</span>: <span style="color: #006080">&quot;Wed, 07-Oct-2012 12:08:00 GMT&quot;</span>,
+    <span style="color: #006080">&quot;email&quot;</span>: <span style="color: #006080">&quot;user@example.com&quot;</span>,
+    <span style="color: #006080">&quot;user&quot;</span>: <span style="color: #006080">&quot;user.1234&quot;</span>
+}</pre>
+</div>
+<p>There are a few things you’ll need from the response:</p>
+<ul>
+<li>
+<strong>transport_url</strong> : this is the address for all of the later request that are made. I’d speculate it’s just a specific server in a server farm (likely with server affinity/session) </li>
+<li>
+<strong>access_token</strong> : this is the key for all later requests and grants access to the API </li>
+<li>
+<strong>userid/user </strong>: a unique user ID </li>
+<li>
+<strong>expires_in</strong> : this is the timestamp for when the access token expires </li>
+</ul>
+<p>I’m not sure why the “limits” are being sent back to the client.</p>
+<p>You can obtain the service URLs at any time:</p>
+<div id="codeSnippetWrapper" style="overflow: auto; cursor: text; font-size: 8pt; border-top: silver 1px solid; font-family: &#39;Courier New&#39;, courier, monospace; border-right: silver 1px solid; border-bottom: silver 1px solid; padding-bottom: 4px; direction: ltr; text-align: left; padding-top: 4px; padding-left: 4px; margin: 20px 0px 10px; border-left: silver 1px solid; line-height: 12pt; padding-right: 4px; max-height: 200px; width: 97.5%; background-color: #f4f4f4">
+<pre id="codeSnippet" style="border-top-style: none; overflow: visible; font-size: 8pt; border-left-style: none; font-family: &#39;Courier New&#39;, courier, monospace; border-bottom-style: none; color: black; padding-bottom: 0px; direction: ltr; text-align: left; padding-top: 0px; border-right-style: none; padding-left: 0px; margin: 0em; line-height: 12pt; padding-right: 0px; width: 100%; background-color: #f4f4f4">POST https:<span style="color: #008000">//home.nest.com/user/service_urls HTTP/1.1</span>
+Host: home.nest.com
+Authorization: Basic GIANT TOKEN STRING==
+Accept-Encoding: gzip, deflate
+Accept: */*
+Content-Length: 0
+Accept-Language: en-us
+Connection: keep-alive
+Proxy-Connection: keep-alive
+User-Agent: Nest/3.0.1.15 (iOS) os=6.0 platform=iPad3,1</pre>
+</div>
+<p>Just insert an Authorization header with the <strong>access_token</strong> value.</p>
+<p>The response:</p>
+<pre class="code"><span style="background: white; color: black">{ </span><span style="background: white; color: #a31515">&quot;urls&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;transport_url&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;https://{subdomain}.transport.nest.com:443&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;rubyapi_url&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;https://home.nest.com/&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;weather_url&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;http://www.wunderground.com/auto/nestlabs/geo/current/i?query=&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;support_url&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;https://nest.secure.force.com/support/webapp?&quot; </span><span style="background: white; color: black">}, </span><span style="background: white; color: #a31515">&quot;limits&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;thermostats_per_structure&quot;</span><span style="background: white; color: black">: 10, </span><span style="background: white; color: #a31515">&quot;structures&quot;</span><span style="background: white; color: black">: 2, </span><span style="background: white; color: #a31515">&quot;thermostats&quot;</span><span style="background: white; color: black">: 10 } }</span></pre>
+<p>Nest labs has a special URL at wunderground.com to access the weather.</p>
+<p>One of the first requests you might want to send is to get a <strong>complete</strong> picture of the system:</p>
+<div id="codeSnippetWrapper" style="overflow: auto; cursor: text; font-size: 8pt; border-top: silver 1px solid; font-family: &#39;Courier New&#39;, courier, monospace; border-right: silver 1px solid; border-bottom: silver 1px solid; padding-bottom: 4px; direction: ltr; text-align: left; padding-top: 4px; padding-left: 4px; margin: 20px 0px 10px; border-left: silver 1px solid; line-height: 12pt; padding-right: 4px; max-height: 200px; width: 97.5%; background-color: #f4f4f4">
+<pre id="codeSnippet" style="border-top-style: none; overflow: visible; font-size: 8pt; border-left-style: none; font-family: &#39;Courier New&#39;, courier, monospace; border-bottom-style: none; color: black; padding-bottom: 0px; direction: ltr; text-align: left; padding-top: 0px; border-right-style: none; padding-left: 0px; margin: 0em; line-height: 12pt; padding-right: 0px; width: 100%; background-color: #f4f4f4">GET https:<span style="color: #008000">//{subdomain}.transport.nest.com:443/v2/mobile/#USER.ID# HTTP/1.1</span>
+Host: {subdomain}.transport.nest.com:443
+Authorization: Basic GIANT TOKEN STRING==
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-us
+Connection: keep-alive
+X-nl-protocol-version: 1
+X-nl-user-id: #USERID#
+Proxy-Connection: keep-alive
+User-Agent: Nest/3.0.1.15 (iOS) os=6.0 platform=iPad3,1</pre>
+</div>
+<p>You’ll make the request to the <strong>transport_url</strong> and make sure that the Host, Authorization, and X-nl-user-id header values are set appropriately. The Url now must include though:</p>
+<ul>
+<li>version </li>
+<li>mobile </li>
+<li>and the full user id (like user.1234) </li>
+</ul>
+<p>So, it will look something like: <strong>/v2/mobile/user.1234</strong></p>
+<p>It will respond with the mother-load of all JSON payloads. I’ve trimmed the response for my house as I have three thermostats. But the pattern repeats exactly, so it’s easy to extrapolate how the pattern works:</p>
+<pre class="code" style="max-height: 800px"><span style="background: white; color: black">{ </span><span style="background: white; color: #a31515">&quot;metadata&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;SERIALNUM1&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;$version&quot;</span><span style="background: white; color: black">: -1262653277, </span><span style="background: white; color: #a31515">&quot;$timestamp&quot;</span><span style="background: white; color: black">: 1349697004000, </span><span style="background: white; color: #a31515">&quot;last_connection&quot;</span><span style="background: white; color: black">: 1349697004683, </span><span style="background: white; color: #a31515">&quot;last_ip&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;LAST.IP.ADDRESS&quot; </span><span style="background: white; color: black">}, </span><span style="background: white; color: #a31515">&quot;SERIALNUM2&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;$version&quot;</span><span style="background: white; color: black">: -1868790132, </span><span style="background: white; color: #a31515">&quot;$timestamp&quot;</span><span style="background: white; color: black">: 1349696678000, </span><span style="background: white; color: #a31515">&quot;last_connection&quot;</span><span style="background: white; color: black">: 1349696678701, </span><span style="background: white; color: #a31515">&quot;last_ip&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;LAST.IP.ADDRESS&quot; </span><span style="background: white; color: black">}, </span><span style="background: white; color: #a31515">&quot;SERIALNUM3&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;$version&quot;</span><span style="background: white; color: black">: -1581663504, </span><span style="background: white; color: #a31515">&quot;$timestamp&quot;</span><span style="background: white; color: black">: 1349696680000, </span><span style="background: white; color: #a31515">&quot;last_connection&quot;</span><span style="background: white; color: black">: 1349696680647, </span><span style="background: white; color: #a31515">&quot;last_ip&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;LAST.IP.ADDRESS&quot; </span><span style="background: white; color: black">} }, </span><span style="background: white; color: #a31515">&quot;track&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;SERIALNUM2&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;$version&quot;</span><span style="background: white; color: black">: 1065037529, </span><span style="background: white; color: #a31515">&quot;$timestamp&quot;</span><span style="background: white; color: black">: 1349696725390, </span><span style="background: white; color: #a31515">&quot;online&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: blue">true</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;last_connection&quot;</span><span style="background: white; color: black">: 1349696725390, </span><span style="background: white; color: #a31515">&quot;last_ip&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;LAST.IP.ADDRESS&quot; </span><span style="background: white; color: black">}, </span><span style="background: white; color: #a31515">&quot;SERIALNUM3&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;$version&quot;</span><span style="background: white; color: black">: 981680556, </span><span style="background: white; color: #a31515">&quot;$timestamp&quot;</span><span style="background: white; color: black">: 1349696726266, </span><span style="background: white; color: #a31515">&quot;online&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: blue">true</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;last_connection&quot;</span><span style="background: white; color: black">: 1349696726266, </span><span style="background: white; color: #a31515">&quot;last_ip&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;LAST.IP.ADDRESS&quot; </span><span style="background: white; color: black">}, </span><span style="background: white; color: #a31515">&quot;SERIALNUM1&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;$version&quot;</span><span style="background: white; color: black">: 1421919505, </span><span style="background: white; color: #a31515">&quot;$timestamp&quot;</span><span style="background: white; color: black">: 1349697004728, </span><span style="background: white; color: #a31515">&quot;online&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: blue">true</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;last_connection&quot;</span><span style="background: white; color: black">: 1349697004728, </span><span style="background: white; color: #a31515">&quot;last_ip&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;LAST.IP.ADDRESS&quot; </span><span style="background: white; color: black">} }, </span><span style="background: white; color: #a31515">&quot;user_settings&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;#USERID#&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;$version&quot;</span><span style="background: white; color: black">: 370836640, </span><span style="background: white; color: #a31515">&quot;$timestamp&quot;</span><span style="background: white; color: black">: 1337481029003, </span><span style="background: white; color: #a31515">&quot;email_verified&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: blue">true</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;tos_accepted_version&quot;</span><span style="background: white; color: black">: 1319500800000, </span><span style="background: white; color: #a31515">&quot;receive_marketing_emails&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: blue">true</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;receive_nest_emails&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: blue">true</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;receive_support_emails&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: blue">true</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;max_structures&quot;</span><span style="background: white; color: black">: 2, </span><span style="background: white; color: #a31515">&quot;max_thermostats&quot;</span><span style="background: white; color: black">: 10, </span><span style="background: white; color: #a31515">&quot;max_thermostats_per_structure&quot;</span><span style="background: white; color: black">: 10, </span><span style="background: white; color: #a31515">&quot;tos_minimum_version&quot;</span><span style="background: white; color: black">: 1319500800000, </span><span style="background: white; color: #a31515">&quot;tos_current_version&quot;</span><span style="background: white; color: black">: 1319500800000, </span><span style="background: white; color: #a31515">&quot;lang&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;en_US&quot; </span><span style="background: white; color: black">} }, </span><span style="background: white; color: #a31515">&quot;structure&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;#STRUCTURE-UUID#&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;$version&quot;</span><span style="background: white; color: black">: 1797929878, </span><span style="background: white; color: #a31515">&quot;$timestamp&quot;</span><span style="background: white; color: black">: 1349689810000, </span><span style="background: white; color: #a31515">&quot;location&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;Mount Horeb, WI&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;renovation_date&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;2000&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;country_code&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;US&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;away_timestamp&quot;</span><span style="background: white; color: black">: 1349302501, </span><span style="background: white; color: #a31515">&quot;away&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: blue">false</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;house_type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;family&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;name&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;Home&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;postal_code&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;#POSTALCODE#&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;creation_time&quot;</span><span style="background: white; color: black">: 1324159145719, </span><span style="background: white; color: #a31515">&quot;num_thermostats&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;3&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;devices&quot;</span><span style="background: white; color: black">: [</span><span style="background: white; color: #a31515">&quot;device.SERIALNUM3&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;device.SERIALNUM1&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;device.SERIALNUM2&quot;</span><span style="background: white; color: black">], </span><span style="background: white; color: #a31515">&quot;user&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;user.#USERID#&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;away_setter&quot;</span><span style="background: white; color: black">: 1 } }, </span><span style="background: white; color: #a31515">&quot;link&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;SERIALNUM3&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;$version&quot;</span><span style="background: white; color: black">: 2122853931, </span><span style="background: white; color: #a31515">&quot;$timestamp&quot;</span><span style="background: white; color: black">: 1327246591000, </span><span style="background: white; color: #a31515">&quot;structure&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;structure.#STRUCTURE-UUID#&quot; </span><span style="background: white; color: black">}, </span><span style="background: white; color: #a31515">&quot;SERIALNUM2&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;$version&quot;</span><span style="background: white; color: black">: -1703839727, </span><span style="background: white; color: #a31515">&quot;$timestamp&quot;</span><span style="background: white; color: black">: 1324159215000, </span><span style="background: white; color: #a31515">&quot;structure&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;structure.#STRUCTURE-UUID#&quot; </span><span style="background: white; color: black">}, </span><span style="background: white; color: #a31515">&quot;SERIALNUM1&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;$version&quot;</span><span style="background: white; color: black">: -459415854, </span><span style="background: white; color: #a31515">&quot;$timestamp&quot;</span><span style="background: white; color: black">: 1325967612000, </span><span style="background: white; color: #a31515">&quot;structure&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;structure.#STRUCTURE-UUID#&quot; </span><span style="background: white; color: black">} }, </span><span style="background: white; color: #a31515">&quot;device&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;SERIALNUM1&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;$version&quot;</span><span style="background: white; color: black">: -81037153, </span><span style="background: white; color: #a31515">&quot;$timestamp&quot;</span><span style="background: white; color: black">: 1349696605000, </span><span style="background: white; color: #a31515">&quot;heatpump_setback_active&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: blue">false</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;emer_heat_enable&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: blue">false</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;local_ip&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;LOCAL.IP.ADDRESS&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;switch_system_off&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: blue">false</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;away_temperature_high&quot;</span><span style="background: white; color: black">: 27.778, </span><span style="background: white; color: #a31515">&quot;temperature_lock_high_temp&quot;</span><span style="background: white; color: black">: 22.222, </span><span style="background: white; color: #a31515">&quot;cooling_source&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;electric&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;leaf_threshold_cool&quot;</span><span style="background: white; color: black">: 0.0, </span><span style="background: white; color: #a31515">&quot;fan_cooling_state&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: blue">false</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;note_codes&quot;</span><span style="background: white; color: black">: [], </span><span style="background: white; color: #a31515">&quot;heater_source&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;gas&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;compressor_lockout_leaf&quot;</span><span style="background: white; color: black">: -17.8, </span><span style="background: white; color: #a31515">&quot;has_x3_heat&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: blue">false</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;target_humidity_enabled&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: blue">false</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;heat_x3_source&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;gas&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;alt_heat_delivery&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;forced-air&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;fan_mode&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;auto&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;has_x2_heat&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: blue">false</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;rssi&quot;</span><span style="background: white; color: black">: 67.0, </span><span style="background: white; color: #a31515">&quot;emer_heat_delivery&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;forced-air&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;heatpump_savings&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;off&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;pin_y2_description&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;none&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;filter_reminder_enabled&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: blue">false</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;capability_level&quot;</span><span style="background: white; color: black">: 3.0, </span><span style="background: white; color: #a31515">&quot;schedule_learning_reset&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: blue">false</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;has_x2_cool&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: blue">false</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;hvac_pins&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;W1,Y1,C,Rc,G&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;ob_orientation&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;O&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;range_enable&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: blue">true</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;auto_away_enable&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: blue">true</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;dual_fuel_breakpoint_override&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;none&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;lower_safety_temp_enabled&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: blue">true</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;has_fan&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: blue">true</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;dehumidifier_state&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: blue">false</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;range_mode&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: blue">false</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;nlclient_state&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;emer_heat_source&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;electric&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;heatpump_ready&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: blue">false</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;available_locales&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;en_US,fr_CA,es_US&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;current_version&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;3.0.1&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;learning_state&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;slow&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;pin_ob_description&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;none&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;pin_rh_description&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;none&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;has_alt_heat&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: blue">false</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;pin_y1_description&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;cool&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;humidifier_state&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: blue">false</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;backplate_serial_number&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;#BACKPLATE-SERIALNUMBER1#&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;has_x2_alt_heat&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: blue">false</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;heat_x3_delivery&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;forced-air&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;leaf_threshold_heat&quot;</span><span style="background: white; color: black">: 19.336, </span><span style="background: white; color: #a31515">&quot;has_emer_heat&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: blue">false</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;learning_mode&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: blue">true</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;leaf_learning&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;ready&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;has_aux_heat&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: blue">false</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;aux_heat_source&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;electric&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;backplate_bsl_info&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;BSL&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;alt_heat_x2_source&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;gas&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;pin_c_description&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;power&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;humidifier_type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;unknown&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;pin_w2aux_description&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;none&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;country_code&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;US&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;target_humidity&quot;</span><span style="background: white; color: black">: 35.0, </span><span style="background: white; color: #a31515">&quot;heat_x2_delivery&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;forced-air&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;lower_safety_temp&quot;</span><span style="background: white; color: black">: 4.444, </span><span style="background: white; color: #a31515">&quot;cooling_x2_source&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;electric&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;equipment_type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;gas&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;heat_pump_aux_threshold&quot;</span><span style="background: white; color: black">: 10.0, </span><span style="background: white; color: #a31515">&quot;alt_heat_x2_delivery&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;forced-air&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;heat_pump_comp_threshold&quot;</span><span style="background: white; color: black">: -31.5, </span><span style="background: white; color: #a31515">&quot;learning_days_completed_cool&quot;</span><span style="background: white; color: black">: 116, </span><span style="background: white; color: #a31515">&quot;backplate_bsl_version&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;1.1&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;current_schedule_mode&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;HEAT&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;hvac_wires&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;Heat,Cool,Fan,Common Wire,Rc&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;leaf&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: blue">false</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;TBD&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;pin_g_description&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;fan&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;switch_preconditioning_control&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: blue">false</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;click_sound&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;on&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;aux_heat_delivery&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;forced-air&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;away_temperature_low_enabled&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: blue">true</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;heat_pump_comp_threshold_enabled&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: blue">false</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;preconditioning_ready&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: blue">true</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;has_dehumidifier&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: blue">false</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;fan_cooling_enabled&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: blue">true</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;leaf_away_high&quot;</span><span style="background: white; color: black">: 28.88, </span><span style="background: white; color: #a31515">&quot;fan_cooling_readiness&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;ready&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;device_locale&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;en_US&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;temperature_scale&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;F&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;error_code&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;preconditioning_active&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: blue">false</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;battery_level&quot;</span><span style="background: white; color: black">: 3.93, </span><span style="background: white; color: #a31515">&quot;away_temperature_high_enabled&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: blue">true</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;learning_days_completed_heat&quot;</span><span style="background: white; color: black">: 149, </span><span style="background: white; color: #a31515">&quot;pin_star_description&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;none&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;upper_safety_temp_enabled&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: blue">false</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;preconditioning_enabled&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: blue">true</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;current_humidity&quot;</span><span style="background: white; color: black">: 45, </span><span style="background: white; color: #a31515">&quot;dual_fuel_breakpoint&quot;</span><span style="background: white; color: black">: -1.0, </span><span style="background: white; color: #a31515">&quot;postal_code&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;#POSTALCODE#&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;backplate_mono_version&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;4.0.5&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;alt_heat_source&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;gas&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;aux_lockout_leaf&quot;</span><span style="background: white; color: black">: 10.0, </span><span style="background: white; color: #a31515">&quot;has_heat_pump&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: blue">false</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;heater_delivery&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;forced-air&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;auto_away_reset&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: blue">false</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;away_temperature_low&quot;</span><span style="background: white; color: black">: 14.444, </span><span style="background: white; color: #a31515">&quot;radiant_control_enabled&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: blue">false</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;temperature_lock&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: blue">false</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;upper_safety_temp&quot;</span><span style="background: white; color: black">: 35.0, </span><span style="background: white; color: #a31515">&quot;time_to_target_training&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;ready&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;dehumidifier_type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;unknown&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;target_time_confidence&quot;</span><span style="background: white; color: black">: 1.0, </span><span style="background: white; color: #a31515">&quot;temperature_lock_low_temp&quot;</span><span style="background: white; color: black">: 20.0, </span><span style="background: white; color: #a31515">&quot;pin_w1_description&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;heat&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;forced_air&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: blue">true</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;temperature_lock_pin_hash&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;leaf_type&quot;</span><span style="background: white; color: black">: 1, </span><span style="background: white; color: #a31515">&quot;backplate_mono_info&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;TFE (BP_DVT) 4.0.5 (root@bamboo) 2012-09-18 18:18:23&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;has_dual_fuel&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: blue">false</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;learning_time&quot;</span><span style="background: white; color: black">: 2113, </span><span style="background: white; color: #a31515">&quot;creation_time&quot;</span><span style="background: white; color: black">: 1325966794212, </span><span style="background: white; color: #a31515">&quot;has_humidifier&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: blue">false</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;learning_days_completed_range&quot;</span><span style="background: white; color: black">: 0, </span><span style="background: white; color: #a31515">&quot;leaf_schedule_delta&quot;</span><span style="background: white; color: black">: 1.11, </span><span style="background: white; color: #a31515">&quot;user_brightness&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;auto&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;leaf_away_low&quot;</span><span style="background: white; color: black">: 13.92, </span><span style="background: white; color: #a31515">&quot;pin_rc_description&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;power&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;serial_number&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;SERIALNUM1&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;mac_address&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;18b43004f391&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;heat_x2_source&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;gas&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;time_to_target&quot;</span><span style="background: white; color: black">: 0, </span><span style="background: white; color: #a31515">&quot;backplate_model&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;Backplate-1.9&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;model_version&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;Diamond-1.10&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;heat_pump_aux_threshold_enabled&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: blue">true </span><span style="background: white; color: black">}, </span><span style="background: white; color: #a31515">&quot;SERIALNUM3&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;$version&quot;</span><span style="background: white; color: black">: 2134103145, </span><span style="background: white; color: #a31515">&quot;$timestamp&quot;</span><span style="background: white; color: black">: 1349695665000, </span><span style="background: white; color: green">/* same as previous */ </span><span style="background: white; color: #a31515">&quot;backplate_model&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;Backplate-1.9&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;model_version&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;Diamond-1.10&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;heat_pump_aux_threshold_enabled&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: blue">true </span><span style="background: white; color: black">}, </span><span style="background: white; color: #a31515">&quot;SERIALNUM2&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;$version&quot;</span><span style="background: white; color: black">: -1340728480, </span><span style="background: white; color: #a31515">&quot;$timestamp&quot;</span><span style="background: white; color: black">: 1349692217000, </span><span style="background: white; color: green">/* same as previous */ </span><span style="background: white; color: #a31515">&quot;backplate_model&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;Backplate-1.9&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;model_version&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;Diamond-1.10&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;heat_pump_aux_threshold_enabled&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: blue">true </span><span style="background: white; color: black">} }, </span><span style="background: white; color: #a31515">&quot;schedule&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;SERIALNUM3&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;$version&quot;</span><span style="background: white; color: black">: -1130522241, </span><span style="background: white; color: #a31515">&quot;$timestamp&quot;</span><span style="background: white; color: black">: 1349692663000, </span><span style="background: white; color: #a31515">&quot;days&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;3&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;3&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;time&quot;</span><span style="background: white; color: black">: 74700, </span><span style="background: white; color: #a31515">&quot;entry_type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;setpoint&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;temp&quot;</span><span style="background: white; color: black">: 20.0, </span><span style="background: white; color: #a31515">&quot;type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;HEAT&quot; </span><span style="background: white; color: black">}, </span><span style="background: white; color: #a31515">&quot;2&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;time&quot;</span><span style="background: white; color: black">: 23400, </span><span style="background: white; color: #a31515">&quot;entry_type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;setpoint&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;temp&quot;</span><span style="background: white; color: black">: 14.444, </span><span style="background: white; color: #a31515">&quot;type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;HEAT&quot; </span><span style="background: white; color: black">}, </span><span style="background: white; color: #a31515">&quot;1&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;time&quot;</span><span style="background: white; color: black">: 19800, </span><span style="background: white; color: #a31515">&quot;entry_type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;setpoint&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;temp&quot;</span><span style="background: white; color: black">: 17.222, </span><span style="background: white; color: #a31515">&quot;type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;HEAT&quot; </span><span style="background: white; color: black">}, </span><span style="background: white; color: #a31515">&quot;0&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;touched_by&quot;</span><span style="background: white; color: black">: 1, </span><span style="background: white; color: #a31515">&quot;time&quot;</span><span style="background: white; color: black">: 0, </span><span style="background: white; color: #a31515">&quot;touched_tzo&quot;</span><span style="background: white; color: black">: -18000, </span><span style="background: white; color: #a31515">&quot;entry_type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;continuation&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;temp&quot;</span><span style="background: white; color: black">: 14.444, </span><span style="background: white; color: #a31515">&quot;type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;HEAT&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;touched_at&quot;</span><span style="background: white; color: black">: 1349285499 }, </span><span style="background: white; color: #a31515">&quot;4&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;time&quot;</span><span style="background: white; color: black">: 78300, </span><span style="background: white; color: #a31515">&quot;entry_type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;setpoint&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;temp&quot;</span><span style="background: white; color: black">: 14.444, </span><span style="background: white; color: #a31515">&quot;type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;HEAT&quot; </span><span style="background: white; color: black">} }, </span><span style="background: white; color: #a31515">&quot;2&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;3&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;time&quot;</span><span style="background: white; color: black">: 74700, </span><span style="background: white; color: #a31515">&quot;entry_type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;setpoint&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;temp&quot;</span><span style="background: white; color: black">: 20.0, </span><span style="background: white; color: #a31515">&quot;type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;HEAT&quot; </span><span style="background: white; color: black">}, </span><span style="background: white; color: #a31515">&quot;2&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;time&quot;</span><span style="background: white; color: black">: 23400, </span><span style="background: white; color: #a31515">&quot;entry_type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;setpoint&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;temp&quot;</span><span style="background: white; color: black">: 14.444, </span><span style="background: white; color: #a31515">&quot;type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;HEAT&quot; </span><span style="background: white; color: black">}, </span><span style="background: white; color: #a31515">&quot;1&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;time&quot;</span><span style="background: white; color: black">: 19800, </span><span style="background: white; color: #a31515">&quot;entry_type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;setpoint&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;temp&quot;</span><span style="background: white; color: black">: 17.222, </span><span style="background: white; color: #a31515">&quot;type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;HEAT&quot; </span><span style="background: white; color: black">}, </span><span style="background: white; color: #a31515">&quot;0&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;touched_by&quot;</span><span style="background: white; color: black">: 1, </span><span style="background: white; color: #a31515">&quot;time&quot;</span><span style="background: white; color: black">: 0, </span><span style="background: white; color: #a31515">&quot;touched_tzo&quot;</span><span style="background: white; color: black">: -18000, </span><span style="background: white; color: #a31515">&quot;entry_type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;continuation&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;temp&quot;</span><span style="background: white; color: black">: 14.444, </span><span style="background: white; color: #a31515">&quot;type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;HEAT&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;touched_at&quot;</span><span style="background: white; color: black">: 1349285499 }, </span><span style="background: white; color: #a31515">&quot;4&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;time&quot;</span><span style="background: white; color: black">: 78300, </span><span style="background: white; color: #a31515">&quot;entry_type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;setpoint&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;temp&quot;</span><span style="background: white; color: black">: 14.444, </span><span style="background: white; color: #a31515">&quot;type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;HEAT&quot; </span><span style="background: white; color: black">} }, </span><span style="background: white; color: #a31515">&quot;1&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;3&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;time&quot;</span><span style="background: white; color: black">: 74700, </span><span style="background: white; color: #a31515">&quot;entry_type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;setpoint&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;temp&quot;</span><span style="background: white; color: black">: 20.0, </span><span style="background: white; color: #a31515">&quot;type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;HEAT&quot; </span><span style="background: white; color: black">}, </span><span style="background: white; color: #a31515">&quot;2&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;time&quot;</span><span style="background: white; color: black">: 23400, </span><span style="background: white; color: #a31515">&quot;entry_type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;setpoint&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;temp&quot;</span><span style="background: white; color: black">: 14.444, </span><span style="background: white; color: #a31515">&quot;type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;HEAT&quot; </span><span style="background: white; color: black">}, </span><span style="background: white; color: #a31515">&quot;1&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;time&quot;</span><span style="background: white; color: black">: 19800, </span><span style="background: white; color: #a31515">&quot;entry_type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;setpoint&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;temp&quot;</span><span style="background: white; color: black">: 17.222, </span><span style="background: white; color: #a31515">&quot;type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;HEAT&quot; </span><span style="background: white; color: black">}, </span><span style="background: white; color: #a31515">&quot;0&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;touched_by&quot;</span><span style="background: white; color: black">: 1, </span><span style="background: white; color: #a31515">&quot;time&quot;</span><span style="background: white; color: black">: 0, </span><span style="background: white; color: #a31515">&quot;touched_tzo&quot;</span><span style="background: white; color: black">: -18000, </span><span style="background: white; color: #a31515">&quot;entry_type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;continuation&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;temp&quot;</span><span style="background: white; color: black">: 14.444, </span><span style="background: white; color: #a31515">&quot;type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;HEAT&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;touched_at&quot;</span><span style="background: white; color: black">: 1349285499 }, </span><span style="background: white; color: #a31515">&quot;4&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;time&quot;</span><span style="background: white; color: black">: 78300, </span><span style="background: white; color: #a31515">&quot;entry_type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;setpoint&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;temp&quot;</span><span style="background: white; color: black">: 14.444, </span><span style="background: white; color: #a31515">&quot;type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;HEAT&quot; </span><span style="background: white; color: black">} }, </span><span style="background: white; color: #a31515">&quot;0&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;3&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;time&quot;</span><span style="background: white; color: black">: 74700, </span><span style="background: white; color: #a31515">&quot;entry_type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;setpoint&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;temp&quot;</span><span style="background: white; color: black">: 20.0, </span><span style="background: white; color: #a31515">&quot;type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;HEAT&quot; </span><span style="background: white; color: black">}, </span><span style="background: white; color: #a31515">&quot;2&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;time&quot;</span><span style="background: white; color: black">: 23400, </span><span style="background: white; color: #a31515">&quot;entry_type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;setpoint&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;temp&quot;</span><span style="background: white; color: black">: 14.444, </span><span style="background: white; color: #a31515">&quot;type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;HEAT&quot; </span><span style="background: white; color: black">}, </span><span style="background: white; color: #a31515">&quot;1&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;time&quot;</span><span style="background: white; color: black">: 19800, </span><span style="background: white; color: #a31515">&quot;entry_type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;setpoint&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;temp&quot;</span><span style="background: white; color: black">: 17.222, </span><span style="background: white; color: #a31515">&quot;type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;HEAT&quot; </span><span style="background: white; color: black">}, </span><span style="background: white; color: #a31515">&quot;0&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;touched_by&quot;</span><span style="background: white; color: black">: 1, </span><span style="background: white; color: #a31515">&quot;time&quot;</span><span style="background: white; color: black">: 0, </span><span style="background: white; color: #a31515">&quot;touched_tzo&quot;</span><span style="background: white; color: black">: -18000, </span><span style="background: white; color: #a31515">&quot;entry_type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;continuation&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;temp&quot;</span><span style="background: white; color: black">: 14.444, </span><span style="background: white; color: #a31515">&quot;type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;HEAT&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;touched_at&quot;</span><span style="background: white; color: black">: 1349285499 }, </span><span style="background: white; color: #a31515">&quot;4&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;time&quot;</span><span style="background: white; color: black">: 78300, </span><span style="background: white; color: #a31515">&quot;entry_type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;setpoint&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;temp&quot;</span><span style="background: white; color: black">: 14.444, </span><span style="background: white; color: #a31515">&quot;type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;HEAT&quot; </span><span style="background: white; color: black">} }, </span><span style="background: white; color: #a31515">&quot;6&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;3&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;time&quot;</span><span style="background: white; color: black">: 67500, </span><span style="background: white; color: #a31515">&quot;entry_type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;setpoint&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;temp&quot;</span><span style="background: white; color: black">: 18.333, </span><span style="background: white; color: #a31515">&quot;type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;HEAT&quot; </span><span style="background: white; color: black">}, </span><span style="background: white; color: #a31515">&quot;2&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;time&quot;</span><span style="background: white; color: black">: 28800, </span><span style="background: white; color: #a31515">&quot;entry_type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;setpoint&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;temp&quot;</span><span style="background: white; color: black">: 14.444, </span><span style="background: white; color: #a31515">&quot;type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;HEAT&quot; </span><span style="background: white; color: black">}, </span><span style="background: white; color: #a31515">&quot;1&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;time&quot;</span><span style="background: white; color: black">: 24300, </span><span style="background: white; color: #a31515">&quot;entry_type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;setpoint&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;temp&quot;</span><span style="background: white; color: black">: 17.222, </span><span style="background: white; color: #a31515">&quot;type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;HEAT&quot; </span><span style="background: white; color: black">}, </span><span style="background: white; color: #a31515">&quot;0&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;touched_by&quot;</span><span style="background: white; color: black">: 1, </span><span style="background: white; color: #a31515">&quot;time&quot;</span><span style="background: white; color: black">: 0, </span><span style="background: white; color: #a31515">&quot;touched_tzo&quot;</span><span style="background: white; color: black">: -18000, </span><span style="background: white; color: #a31515">&quot;entry_type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;continuation&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;temp&quot;</span><span style="background: white; color: black">: 14.444, </span><span style="background: white; color: #a31515">&quot;type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;HEAT&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;touched_at&quot;</span><span style="background: white; color: black">: 1349285499 }, </span><span style="background: white; color: #a31515">&quot;4&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;time&quot;</span><span style="background: white; color: black">: 75600, </span><span style="background: white; color: #a31515">&quot;entry_type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;setpoint&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;temp&quot;</span><span style="background: white; color: black">: 14.444, </span><span style="background: white; color: #a31515">&quot;type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;HEAT&quot; </span><span style="background: white; color: black">} }, </span><span style="background: white; color: #a31515">&quot;5&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;3&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;time&quot;</span><span style="background: white; color: black">: 67500, </span><span style="background: white; color: #a31515">&quot;entry_type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;setpoint&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;temp&quot;</span><span style="background: white; color: black">: 18.333, </span><span style="background: white; color: #a31515">&quot;type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;HEAT&quot; </span><span style="background: white; color: black">}, </span><span style="background: white; color: #a31515">&quot;2&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;time&quot;</span><span style="background: white; color: black">: 28800, </span><span style="background: white; color: #a31515">&quot;entry_type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;setpoint&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;temp&quot;</span><span style="background: white; color: black">: 14.444, </span><span style="background: white; color: #a31515">&quot;type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;HEAT&quot; </span><span style="background: white; color: black">}, </span><span style="background: white; color: #a31515">&quot;1&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;time&quot;</span><span style="background: white; color: black">: 24300, </span><span style="background: white; color: #a31515">&quot;entry_type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;setpoint&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;temp&quot;</span><span style="background: white; color: black">: 17.222, </span><span style="background: white; color: #a31515">&quot;type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;HEAT&quot; </span><span style="background: white; color: black">}, </span><span style="background: white; color: #a31515">&quot;0&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;touched_by&quot;</span><span style="background: white; color: black">: 1, </span><span style="background: white; color: #a31515">&quot;time&quot;</span><span style="background: white; color: black">: 0, </span><span style="background: white; color: #a31515">&quot;touched_tzo&quot;</span><span style="background: white; color: black">: -18000, </span><span style="background: white; color: #a31515">&quot;entry_type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;continuation&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;temp&quot;</span><span style="background: white; color: black">: 14.444, </span><span style="background: white; color: #a31515">&quot;type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;HEAT&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;touched_at&quot;</span><span style="background: white; color: black">: 1349285499 }, </span><span style="background: white; color: #a31515">&quot;4&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;time&quot;</span><span style="background: white; color: black">: 75600, </span><span style="background: white; color: #a31515">&quot;entry_type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;setpoint&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;temp&quot;</span><span style="background: white; color: black">: 14.444, </span><span style="background: white; color: #a31515">&quot;type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;HEAT&quot; </span><span style="background: white; color: black">} }, </span><span style="background: white; color: #a31515">&quot;4&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;3&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;time&quot;</span><span style="background: white; color: black">: 74700, </span><span style="background: white; color: #a31515">&quot;entry_type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;setpoint&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;temp&quot;</span><span style="background: white; color: black">: 20.0, </span><span style="background: white; color: #a31515">&quot;type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;HEAT&quot; </span><span style="background: white; color: black">}, </span><span style="background: white; color: #a31515">&quot;2&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;time&quot;</span><span style="background: white; color: black">: 23400, </span><span style="background: white; color: #a31515">&quot;entry_type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;setpoint&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;temp&quot;</span><span style="background: white; color: black">: 14.444, </span><span style="background: white; color: #a31515">&quot;type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;HEAT&quot; </span><span style="background: white; color: black">}, </span><span style="background: white; color: #a31515">&quot;1&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;time&quot;</span><span style="background: white; color: black">: 19800, </span><span style="background: white; color: #a31515">&quot;entry_type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;setpoint&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;temp&quot;</span><span style="background: white; color: black">: 17.222, </span><span style="background: white; color: #a31515">&quot;type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;HEAT&quot; </span><span style="background: white; color: black">}, </span><span style="background: white; color: #a31515">&quot;0&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;touched_by&quot;</span><span style="background: white; color: black">: 1, </span><span style="background: white; color: #a31515">&quot;time&quot;</span><span style="background: white; color: black">: 0, </span><span style="background: white; color: #a31515">&quot;touched_tzo&quot;</span><span style="background: white; color: black">: -18000, </span><span style="background: white; color: #a31515">&quot;entry_type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;continuation&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;temp&quot;</span><span style="background: white; color: black">: 14.444, </span><span style="background: white; color: #a31515">&quot;type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;HEAT&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;touched_at&quot;</span><span style="background: white; color: black">: 1349285499 }, </span><span style="background: white; color: #a31515">&quot;4&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;time&quot;</span><span style="background: white; color: black">: 78300, </span><span style="background: white; color: #a31515">&quot;entry_type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;setpoint&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;temp&quot;</span><span style="background: white; color: black">: 14.444, </span><span style="background: white; color: #a31515">&quot;type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;HEAT&quot; </span><span style="background: white; color: black">} } }, </span><span style="background: white; color: #a31515">&quot;schedule_mode&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;HEAT&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;name&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;Basement Current Schedule&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;ver&quot;</span><span style="background: white; color: black">: 2 }, </span><span style="background: white; color: #a31515">&quot;SERIALNUM2&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;$version&quot;</span><span style="background: white; color: black">: -462155699, </span><span style="background: white; color: #a31515">&quot;$timestamp&quot;</span><span style="background: white; color: black">: 1349674697000, </span><span style="background: white; color: #a31515">&quot;days&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: green">/* SAME AS ABOVE */ </span><span style="background: white; color: black">} }, </span><span style="background: white; color: #a31515">&quot;schedule_mode&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;HEAT&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;name&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;Second Floor Current Schedule&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;ver&quot;</span><span style="background: white; color: black">: 2 }, </span><span style="background: white; color: #a31515">&quot;SERIALNUM1&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;$version&quot;</span><span style="background: white; color: black">: 2014520777, </span><span style="background: white; color: #a31515">&quot;$timestamp&quot;</span><span style="background: white; color: black">: 1349695806000, </span><span style="background: white; color: #a31515">&quot;days&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: green">/* SAME AS ABOVE */ </span><span style="background: white; color: black">} }, </span><span style="background: white; color: #a31515">&quot;schedule_mode&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;HEAT&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;name&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;First Floor Current Schedule&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;ver&quot;</span><span style="background: white; color: black">: 2 } }, </span><span style="background: white; color: #a31515">&quot;shared&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;SERIALNUM3&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;$version&quot;</span><span style="background: white; color: black">: -493517056, </span><span style="background: white; color: #a31515">&quot;$timestamp&quot;</span><span style="background: white; color: black">: 1349696367000, </span><span style="background: white; color: #a31515">&quot;auto_away&quot;</span><span style="background: white; color: black">: 0, </span><span style="background: white; color: #a31515">&quot;auto_away_learning&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;training&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;hvac_heat_x3_state&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: blue">false</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;hvac_alt_heat_state&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: blue">false</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;compressor_lockout_enabled&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: blue">false</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;target_temperature_type&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;heat&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;hvac_heater_state&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: blue">false</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;hvac_emer_heat_state&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: blue">false</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;can_heat&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: blue">true</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;compressor_lockout_timeout&quot;</span><span style="background: white; color: black">: 0, </span><span style="background: white; color: #a31515">&quot;hvac_cool_x2_state&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: blue">false</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;target_temperature_high&quot;</span><span style="background: white; color: black">: 24.0, </span><span style="background: white; color: #a31515">&quot;hvac_aux_heater_state&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: blue">false</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;hvac_heat_x2_state&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: blue">false</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;target_temperature_low&quot;</span><span style="background: white; color: black">: 20.0, </span><span style="background: white; color: #a31515">&quot;target_temperature&quot;</span><span style="background: white; color: black">: 14.444, </span><span style="background: white; color: #a31515">&quot;hvac_ac_state&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: blue">false</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;hvac_fan_state&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: blue">false</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;target_change_pending&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: blue">false</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;name&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;Basement&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;current_temperature&quot;</span><span style="background: white; color: black">: 18.11, </span><span style="background: white; color: #a31515">&quot;hvac_alt_heat_x2_state&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: blue">false</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;can_cool&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: blue">true </span><span style="background: white; color: black">}, </span><span style="background: white; color: #a31515">&quot;SERIALNUM1&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;$version&quot;</span><span style="background: white; color: black">: -1432433268, </span><span style="background: white; color: #a31515">&quot;$timestamp&quot;</span><span style="background: white; color: black">: 1349696363000 </span><span style="background: white; color: green">/* SAME AS ABOVE */ </span><span style="background: white; color: black">}, </span><span style="background: white; color: #a31515">&quot;SERIALNUM2&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;$version&quot;</span><span style="background: white; color: black">: 2060664119, </span><span style="background: white; color: #a31515">&quot;$timestamp&quot;</span><span style="background: white; color: black">: 1349696709000 </span><span style="background: white; color: green">/* SAME AS ABOVE */ </span><span style="background: white; color: black">} }, </span><span style="background: white; color: #a31515">&quot;user_alert_dialog&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;#USERID#&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;$version&quot;</span><span style="background: white; color: black">: -1852987123, </span><span style="background: white; color: #a31515">&quot;$timestamp&quot;</span><span style="background: white; color: black">: 1327246591000, </span><span style="background: white; color: #a31515">&quot;dialog_data&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;dialog_id&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;confirm-pairing&quot; </span><span style="background: white; color: black">} }, </span><span style="background: white; color: #a31515">&quot;user&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;#USERID#&quot;</span><span style="background: white; color: black">: { </span><span style="background: white; color: #a31515">&quot;$version&quot;</span><span style="background: white; color: black">: 209478897, </span><span style="background: white; color: #a31515">&quot;$timestamp&quot;</span><span style="background: white; color: black">: 1324159145000, </span><span style="background: white; color: #a31515">&quot;name&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;EMAILADDRESS&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;structures&quot;</span><span style="background: white; color: black">: [</span><span style="background: white; color: #a31515">&quot;structure.#STRUCTURE-UUID#&quot;</span><span style="background: white; color: black">] } } }</span></pre>
+<h2>Setting a Temperature</h2>
+<p>Changing a thermostat’s current set point is easy.</p>
+<p>You’ll need the Serial Number (shown as SERIALNUM1 in the JSON above) of the thermostat.</p>
+<div id="codeSnippetWrapper" style="overflow: auto; cursor: text; font-size: 8pt; border-top: silver 1px solid; font-family: &#39;Courier New&#39;, courier, monospace; border-right: silver 1px solid; border-bottom: silver 1px solid; padding-bottom: 4px; direction: ltr; text-align: left; padding-top: 4px; padding-left: 4px; margin: 20px 0px 10px; border-left: silver 1px solid; line-height: 12pt; padding-right: 4px; max-height: 200px; width: 97.5%; background-color: #f4f4f4">
+<pre id="codeSnippet" style="border-top-style: none; overflow: visible; font-size: 8pt; border-left-style: none; font-family: &#39;Courier New&#39;, courier, monospace; border-bottom-style: none; color: black; padding-bottom: 0px; direction: ltr; text-align: left; padding-top: 0px; border-right-style: none; padding-left: 0px; margin: 0em; line-height: 12pt; padding-right: 0px; width: 100%; background-color: #f4f4f4">POST https:<span style="color: #008000">//275be85a.transport.nest.com:443/v2/put/shared.01AA01AB4611009P HTTP/1.1</span>
+Host: 275be85a.transport.nest.com:443
+Accept-Language: en-us
+User-Agent: Nest/3.0.1.15 (iOS) os=6.0 platform=iPad3,1
+X-nl-<span style="color: #0000ff">base</span>-version: 2060664119
+Accept: */*
+Content-Type: application/json
+X-nl-protocol-version: 1
+X-nl-user-id: 7236
+X-nl-session-id: ios-7236-371385438.528577
+Connection: keep-alive
+X-nl-merge-payload: <span style="color: #0000ff">true</span>
+Authorization: Basic GIANT TOKEN STRING==
+Content-Length: 60
+Proxy-Connection: keep-alive
+Accept-Encoding: gzip, deflate
+
+{<span style="color: #006080">&quot;target_change_pending&quot;</span>:<span style="color: #0000ff">true</span>,<span style="color: #006080">&quot;target_temperature&quot;</span>:16.11111}</pre>
+</div>
+<p>Set the temperature in Celsius.</p>
+<p>There’s also a polling subscription that happens. It’s extremely chatty and from the amount of polling it does, you’d think that the UI was doing live graphing of micro-temperature changes.</p>
+<p>Essentially, the polling sends a series of keys, with timestamps, representing the various types of data being requested.</p>
+<p>It looks something like this:</p>
+<pre class="code"><span style="background: white; color: black">{ </span><span style="background: white; color: #a31515">&quot;keys&quot;</span><span style="background: white; color: black">: [{ </span><span style="background: white; color: #a31515">&quot;key&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;user.#USERID#&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;version&quot;</span><span style="background: white; color: black">: 209478897, </span><span style="background: white; color: #a31515">&quot;timestamp&quot;</span><span style="background: white; color: black">: 1324159145000 }, { </span><span style="background: white; color: #a31515">&quot;key&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;user_settings.#USERID#&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;version&quot;</span><span style="background: white; color: black">: 370836640, </span><span style="background: white; color: #a31515">&quot;timestamp&quot;</span><span style="background: white; color: black">: 1337481029003 }, { </span><span style="background: white; color: #a31515">&quot;key&quot;</span><span style="background: white; color: black">: </span><span style="background: white; color: #a31515">&quot;user_alert_dialog.#USERID#&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: #a31515">&quot;version&quot;</span><span style="background: white; color: black">: -1852987123, </span><span style="background: white; color: #a31515">&quot;timestamp&quot;</span><span style="background: white; color: black">: 1327246591000 }, { </span></pre>
+<p>It repeats for sections such as “shared”, “message”, “device”, “track”, and more. For my purposes, shared is the winner as it contains the current temperature.</p>
+<p>&#160;</p>
+<p>Node API</p>
+<p>I decided to write a new demonstration application and polish it up a bit, this time using Node.</p>
+<p>I’m not going to document the API that I created here (not right now), but here’s a sample of how it can be used:</p>
+<div id="codeSnippetWrapper" style="overflow: auto; cursor: text; font-size: 8pt; border-top: silver 1px solid; height: 611px; font-family: &#39;Courier New&#39;, courier, monospace; border-right: silver 1px solid; border-bottom: silver 1px solid; padding-bottom: 4px; direction: ltr; text-align: left; padding-top: 4px; padding-left: 4px; margin: 20px 0px 10px; border-left: silver 1px solid; line-height: 12pt; padding-right: 4px; max-height: 600px; width: 97.5%; background-color: #f4f4f4">
+<pre id="codeSnippet" style="border-top-style: none; overflow: visible; font-size: 8pt; border-left-style: none; font-family: &#39;Courier New&#39;, courier, monospace; border-bottom-style: none; color: black; padding-bottom: 0px; direction: ltr; text-align: left; padding-top: 0px; border-right-style: none; padding-left: 0px; margin: 0em; line-height: 12pt; padding-right: 0px; width: 100%; background-color: #f4f4f4">var username = process.argv[2];
+var password = process.argv[3];
+
+<span style="color: #0000ff">if</span> (username &amp;&amp; password) {
+    username = trimQuotes(username);
+    password = trimQuotes(password);
+    nest.login(username, password, function (data) {
+        <span style="color: #0000ff">if</span> (!data) {
+            console.log(<span style="color: #006080">'Login failed.'</span>);
+            process.exit(1);
+            <span style="color: #0000ff">return</span>;
+        }
+        console.log(<span style="color: #006080">'Logged in.'</span>);
+        nest.fetchStatus(function (data) {
+            <span style="color: #0000ff">for</span> (var deviceId <span style="color: #0000ff">in</span> data.device) {
+                <span style="color: #0000ff">if</span> (data.device.hasOwnProperty(deviceId)) {
+                    var device = data.shared[deviceId];
+
+                    console.log(util.format(<span style="color: #006080">&quot;%s [%s], Current temperature = %d F target=%d&quot;</span>,
+                        device.name, deviceId,
+                        nest.ctof(device.current_temperature),
+                        nest.ctof(device.target_temperature)));
+                }
+            }
+            subscribe();
+        });
+    });
+}
+
+function subscribe() {
+    nest.subscribe(subscribeDone);
+}
+
+function subscribeDone(deviceId, data) {
+    <span style="color: #0000ff">if</span> (deviceId) {
+        console.log(<span style="color: #006080">'Device: '</span> + deviceId)
+        console.log(JSON.stringify(data));
+    }
+    setTimeout(subscribe, 2000);
+}</pre>
+</div>
+<p>The example code runs forever. <img class="wlEmoticon wlEmoticon-smile" style="border-top-style: none; border-left-style: none; border-bottom-style: none; border-right-style: none" alt="Smile" src="/blog/wp-content/uploads/2012/10/wlEmoticon-smile1.png"></p>
+<p>I’ve included two methods in the API, “get” and “post” which make it simple to call additional web services that I haven’t yet provided.</p>
+<p>Find the code here: <a title="https://github.com/wiredprairie/unofficial_nodejs_nest" href="https://github.com/wiredprairie/unofficial_nodejs_nest">https://github.com/wiredprairie/unofficial_nodejs_nest</a>.</p>
+<p>Update: there’s a npm as well now (Dec 20, 2012)</p>
+			</div>
+<!-- .entry-content -->
+
+</article><!-- #post-## -->
+
+			<div class="code-block code-block-1" style="margin: 8px 0; clear: both;">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-fg+5r+6l-ft+4e" data-ad-client="ca-pub-2328055154157951" data-ad-slot="9395646477"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+				
+<article id="post-1449" class="post post-1449 type-post status-publish format-standard hentry category-coding category-general tag-api tag-csharp tag-nest tag-thermostat">
+	<!-- Grab the featured image -->
+	
+	<header class="entry-header">
+				<div class="entry-date">
+			<span class="posted-on"><a href="/blog/index.php/archives/1449" rel="bookmark"><time class="entry-date published" datetime="2012-01-09T20:50:22-06:00">January 9, 2012</time><time class="updated" datetime="2012-10-12T07:10:47-05:00">October 12, 2012</time></a></span><span class="byline"> by </span> <span class="author vcard"><a class="url fn n" href="/blog/index.php/archives/author/aaron">Aaron</a></span>		</div>
+<!-- .entry-meta -->
+		
+		<h1 class="entry-title"><a href="/blog/index.php/archives/1449" rel="bookmark">.NET API for Nest Thermostat</a></h1>	</header><!-- .entry-header -->
+
+	
+<div class="entry-meta">
+	
+	<ul class="meta-list">
+					<li class="meta-cat">
+<a href="/blog/index.php/archives/category/coding" rel="category tag">Coding</a>, <a href="/blog/index.php/archives/category/general" rel="category tag">General</a>
+</li>
+							<li class="meta-tag">
+<a href="/blog/index.php/archives/tag/api" rel="tag">API</a>, <a href="/blog/index.php/archives/tag/csharp" rel="tag">CSharp</a>, <a href="/blog/index.php/archives/tag/nest" rel="tag">Nest</a>, <a href="/blog/index.php/archives/tag/thermostat" rel="tag">Thermostat</a>
+</li>
+						<li class="meta-comment">
+			<span class="comments-link"><a href="/blog/index.php/archives/1449#comments">18 Comments</a></span>
+		</li>
+					</ul>
+</div>
+	<div class="entry-content">
+		<p>I just finished a preliminary <strong>read-only</strong> (think version 0.1) wrapper around the Nest Thermostat API that is used by their mobile phone and web applications. As Nest doesn’t have a formal API yet, the code could break at any time and may not be suitable for any use. However, it is working today. <img style="border-bottom-style: none; border-left-style: none; border-top-style: none; border-right-style: none" class="wlEmoticon wlEmoticon-smile" alt="Smile" src="/blog/wp-content/uploads/2012/01/wlEmoticon-smile3.png"></p>
+<p>The project is hosted on <a href="https://github.com/wiredprairie/Nest-Thermostat-DotNET-API">GitHub</a>. It uses <a href="http://james.newtonking.com/pages/json-net.aspx">JSON.NET</a> for parsing the return values from the Nest servers.</p>
+<p>There are three projects, with the lib containing the assembly that is used by the two test applications. One is a console app and the other a simple WPF application:</p>
+<p><a href="/blog/wp-content/uploads/2012/01/SNAGHTML88bff0b3.png"><img loading="lazy" style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="SNAGHTML88bff0b3" border="0" alt="SNAGHTML88bff0b3" src="/blog/wp-content/uploads/2012/01/SNAGHTML88bff0b3_thumb.png" width="424" height="332"></a></p>
+<p>(My thermostats are named Zero, One, and Two).</p>
+<p>If there’s interest, I plan on adding some methods to the library which allow modification of data (such as the current temperature), and ideally, support for live updates from the devices if I can make sense of the data that is <a href="/blog/index.php/archives/1442">returned</a>.</p>
+<p>FYI: I’ve now written a Node version of the API, detailed <a href="/blog/index.php/archives/1754" target="_blank">here</a>.</p>
+			</div>
+<!-- .entry-content -->
+
+</article><!-- #post-## -->
+
+			<div class="code-block code-block-1" style="margin: 8px 0; clear: both;">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-fg+5r+6l-ft+4e" data-ad-client="ca-pub-2328055154157951" data-ad-slot="9395646477"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+				
+<article id="post-1442" class="post post-1442 type-post status-publish format-standard hentry category-coding category-general tag-api tag-nest tag-protocol tag-thermostat">
+	<!-- Grab the featured image -->
+	
+	<header class="entry-header">
+				<div class="entry-date">
+			<span class="posted-on"><a href="/blog/index.php/archives/1442" rel="bookmark"><time class="entry-date published" datetime="2012-01-08T11:21:05-06:00">January 8, 2012</time><time class="updated" datetime="2022-06-29T11:00:40-05:00">June 29, 2022</time></a></span><span class="byline"> by </span> <span class="author vcard"><a class="url fn n" href="/blog/index.php/archives/author/aaron">Aaron</a></span>		</div>
+<!-- .entry-meta -->
+		
+		<h1 class="entry-title"><a href="/blog/index.php/archives/1442" rel="bookmark">Nest Thermostat API/Protocol</a></h1>	</header><!-- .entry-header -->
+
+	
+<div class="entry-meta">
+	
+	<ul class="meta-list">
+					<li class="meta-cat">
+<a href="/blog/index.php/archives/category/coding" rel="category tag">Coding</a>, <a href="/blog/index.php/archives/category/general" rel="category tag">General</a>
+</li>
+							<li class="meta-tag">
+<a href="/blog/index.php/archives/tag/api" rel="tag">API</a>, <a href="/blog/index.php/archives/tag/nest" rel="tag">Nest</a>, <a href="/blog/index.php/archives/tag/protocol" rel="tag">Protocol</a>, <a href="/blog/index.php/archives/tag/thermostat" rel="tag">Thermostat</a>
+</li>
+						<li class="meta-comment">
+			<span class="comments-link"><a href="/blog/index.php/archives/1442#comments">13 Comments</a></span>
+		</li>
+					</ul>
+</div>
+	<div class="entry-content">
+		<p>While Nest Labs hasn’t released a formal (documented &amp; supported) API, I thought I’d do a bit of digging to see how they’re using the network and what might be achievable.</p>
+<p>A few things are going on, the majority as you’d probably expect.</p>
+<p>The web interface is using a long polling technique apparently to watch for updates to the schedule, temperature, etc.</p>
+<p><a href="/blog/wp-content/uploads/2012/01/image7.png"><img loading="lazy" style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-width: 0px;" title="image" src="/blog/wp-content/uploads/2012/01/image_thumb7.png" alt="image" width="381" height="225" border="0"></a></p>
+<p>I haven’t determined what the frequency is though, or the wait time. It’s very inconsistent, even when I wouldn’t expect much new “live” data to be available on the network, it frequently updates and polls again.</p>
+<p>There are a few constants set in the HOME page script:</p>
+<pre class="csharpcode">C.ABSENT_USER_THRESHOLD     = +(<span class="str">'300'</span>) || 0;  <span class="rem">// seconds</span>
+C.DEAD_DEVICE_THRESHOLD     = +(<span class="str">'300'</span>) || 0;  <span class="rem">// seconds</span>
+C.pollingInterval           = +(<span class="str">'2500'</span>) || 0;       <span class="rem">// ms</span>
+C.WEATHER_POLLING_INTERVAL  = +(<span class="str">'120000'</span>) || 0; <span class="rem">// ms</span></pre>
+<p>&nbsp;</p>
+<p>If the C.pollingInterval value were for the subscribe endpoint mentioned above, I’d see a LOT more calls than I do – so I’m still not clear how the polling interval is decided.</p>
+<p>The API calls, for the most part are using JSONP syntax over an HTTPS connection.</p>
+<p>The most frequent request is to “subscribe.” It sends as part of the GET request a large block of encoded JSON (using encodeURIComponent and then JSON.stringify).</p>
+<p>I&#8217;m not familiar with the key/value system that they’re using (it may just be something they’ve constructed in-house – although given the number of <a href="/blog/index.php/archives/1397">open source JavaScript</a> libraries they’re using, I thought someone might recognize it):</p>
+<p>“<strong>key</strong>”, “{<strong>actualkey</strong>}.{<strong>value</strong>}”</p>
+<p>I don’t understand why they’ve redundantly specified “key” in a list of keys when it’s evident that the <em>actual key </em>is contained within the value as a delimited string. It’s more data to send and more data to parse this way. So, again, maybe it’s based on some DB or model system I’m not familiar with. (Anyone recognize it?)</p>
+<p>I’ve substituted the actual values (as they are serial numbers of my devices) with text representations of what the value represented below:</p>
+<pre class="csharpcode">{<span class="str">"keys"</span>:
+    [{<span class="str">"key"</span>:<span class="str">"user.#USERID#"</span>,
+        <span class="str">"version"</span>:209478897,<span class="str">"timestamp"</span>:1324159145000},
+    {<span class="str">"key"</span>:<span class="str">"user_alert_dialog.#USERID#"</span>,
+        <span class="str">"version"</span>:-1320296685,<span class="str">"timestamp"</span>:1325967612000},
+    {<span class="str">"key"</span>:<span class="str">"structure.#STRUCTURE-GUID#"</span>,
+        <span class="str">"version"</span>:656192675,<span class="str">"timestamp"</span>:1325967612000},
+    {<span class="str">"key"</span>:<span class="str">"device.#DEVICE 1 SERIAL NUMBER#"</span>,
+        <span class="str">"version"</span>:1485027516,<span class="str">"timestamp"</span>:1326034984000},
+    {<span class="str">"key"</span>:<span class="str">"shared.#DEVICE 1 SERIAL NUMBER#"</span>,
+        <span class="str">"version"</span>:588844038,<span class="str">"timestamp"</span>:1326034818000},
+    {<span class="str">"key"</span>:<span class="str">"schedule.#DEVICE 1 SERIAL NUMBER#"</span>,
+        <span class="str">"version"</span>:1187107985,<span class="str">"timestamp"</span>:1326005677000},
+    {<span class="str">"key"</span>:<span class="str">"track.#DEVICE 1 SERIAL NUMBER#"</span>,
+        <span class="str">"timestamp"</span>:1326035650601,<span class="str">"version"</span>:1041047847},
+    {<span class="str">"key"</span>:<span class="str">"device.#DEVICE 2 SERIAL NUMBER#"</span>,
+        <span class="str">"version"</span>:149169270,<span class="str">"timestamp"</span>:1326034820000},
+    {<span class="str">"key"</span>:<span class="str">"shared.#DEVICE 2 SERIAL NUMBER#"</span>,
+        <span class="str">"version"</span>:659841570,<span class="str">"timestamp"</span>:1326034820000},
+    {<span class="str">"key"</span>:<span class="str">"schedule.#DEVICE 2 SERIAL NUMBER#"</span>,
+        <span class="str">"version"</span>:-2016290692,<span class="str">"timestamp"</span>:1326005625000},
+    {<span class="str">"key"</span>:<span class="str">"track.#DEVICE 2 SERIAL NUMBER#"</span>,
+        <span class="str">"timestamp"</span>:1326035650862,<span class="str">"version"</span>:528978433},
+    {<span class="str">"key"</span>:<span class="str">"device.#DEVICE 3 SERIAL NUMBER#"</span>,
+        <span class="str">"version"</span>:1637112547,<span class="str">"timestamp"</span>:1326035399000},
+    {<span class="str">"key"</span>:<span class="str">"shared.#DEVICE 3 SERIAL NUMBER#"</span>,
+        <span class="str">"version"</span>:760504326,<span class="str">"timestamp"</span>:1326035397000},
+    {<span class="str">"key"</span>:<span class="str">"schedule.#DEVICE 3 SERIAL NUMBER#"</span>,
+        <span class="str">"version"</span>:-314552357,<span class="str">"timestamp"</span>:1326003402000},
+    {<span class="str">"key"</span>:<span class="str">"track.#DEVICE 3 SERIAL NUMBER#"</span>,
+        <span class="str">"version"</span>:-645931164,<span class="str">"timestamp"</span>:1326035531802}]}"</pre>
+<p>We’ve got three thermostats, so there are always three sets of subscription requests for each call to <strong>subscribe.</strong></p>
+<p>Using my iPad, I adjusted the set point for our second story (#DEVICE 2#) down one degree Fahrenheit (to 67°).</p>
+<p>Within approximately a second, the most recent pending <strong>subscribe</strong> request returned with a far more interesting payload:</p>
+<pre class="csharpcode">jQuery17108417355176061392_1326035646750(
+    { <span class="str">"status"</span>: 200,
+        <span class="str">"headers"</span>: {
+            <span class="str">"X-nl-skv-key"</span>: <span class="str">"shared.#DEVICE 2 SERIAL NUMBER#"</span>,
+            <span class="str">"X-nl-skv-version"</span>: 869022424,
+            <span class="str">"X-nl-skv-timestamp"</span>: 1326038279000,
+            <span class="str">"X-nl-service-timestamp"</span>: 1326038279825
+        },
+        <span class="str">"payload"</span>: {
+            <span class="str">"current_temperature"</span>: 19.98,
+            <span class="str">"hvac_fan_state"</span>: <span class="kwrd">false</span>,
+            <span class="str">"name"</span>: <span class="str">"TWO"</span>, <span class="str">"hvac_heat_x2_state"</span>: <span class="kwrd">false</span>,
+            <span class="str">"hvac_ac_state"</span>: <span class="kwrd">false</span>,
+            <span class="str">"can_cool"</span>: <span class="kwrd">true</span>,
+            <span class="str">"auto_away"</span>: 0,
+            <span class="str">"compressor_lockout_enabled"</span>: <span class="kwrd">false</span>,
+            <span class="str">"target_temperature_low"</span>: 16.66667,
+            <span class="str">"target_temperature_high"</span>: 26.66667,
+            <span class="str">"compressor_lockout_timeout"</span>: 0,
+            <span class="str">"hvac_heater_state"</span>: <span class="kwrd">false</span>,
+            <span class="str">"hvac_aux_heater_state"</span>: <span class="kwrd">false</span>,
+            <span class="str">"target_temperature"</span>: 19.44444,
+            <span class="str">"can_heat"</span>: <span class="kwrd">true</span>,
+            <span class="str">"target_temperature_type"</span>: <span class="str">"heat"</span>,
+            <span class="str">"target_change_pending"</span>: <span class="kwrd">true</span>
+        }
+    });</pre>
+<p>Everything above is needed to update the current state of the UI. As you can see, the current temperature (returned as Celsius apparently) is 19.98 (67.964°F). The current temperature as displayed on the thermostat and the web UI was 68.</p>
+<p><em>Seeing these return values makes me think that they may be using Ruby and Rails (as the naming convention tends to follow Rails naming using underscores between words). I know for example, I wouldn’t name variables/columns that way when building a C#/JavaScript MVC project.</em></p>
+<p><span style="color: #333333;">Rather than just a delta payload of what’s changed, they’ve currently opted for a full update of all information related to the thermostat state. </span></p>
+<p><span style="color: #333333;">Several seconds later, a much larger payload was returned to a <strong>subscribe </strong>request:</span></p>
+<pre class="csharpcode"><span class="str">"status"</span>: 200,
+<span class="str">"headers"</span>: {
+    <span class="str">"X-nl-skv-key"</span>: <span class="str">"device.#DEVICE 2 SERIAL NUMBER#"</span>,
+    <span class="str">"X-nl-skv-version"</span>: -2086438581,
+    <span class="str">"X-nl-skv-timestamp"</span>: 1326038378000,
+    <span class="str">"X-nl-service-timestamp"</span>: 1326038379023
+},
+<span class="str">"payload"</span>: {
+    <span class="str">"ob_orientation"</span>: <span class="str">"O"</span>,
+    <span class="str">"upper_safety_temp"</span>: 1000.0,
+    <span class="str">"forced_air"</span>: <span class="kwrd">true</span>,
+    <span class="str">"creation_time"</span>: 1324142042019,
+    <span class="str">"switch_preconditioning_control"</span>: <span class="kwrd">false</span>,
+    <span class="str">"click_sound"</span>: <span class="str">"on"</span>,
+    <span class="str">"leaf"</span>: <span class="kwrd">false</span>, <span class="str">"user_brightness"</span>: <span class="str">"auto"</span>,
+    <span class="str">"learning_state"</span>: <span class="str">"steady"</span>,
+    <span class="str">"heat_pump_comp_threshold"</span>: -1000.0,
+    <span class="str">"local_ip"</span>: <span class="str">"10.0.0.205"</span>,
+    <span class="str">"backplate_serial_number"</span>: <span class="str">"#SHOULD BE DEVICE 2 SERIAL NUMBER, BUT ISN'T?#"</span>,
+    <span class="str">"capability_level"</span>: 1.03,
+    <span class="str">"postal_code"</span>: <span class="str">"#POSTALCODE#"</span>,
+    <span class="str">"upper_safety_temp_enabled"</span>: <span class="kwrd">false</span>,
+    <span class="str">"heat_pump_aux_threshold"</span>: 10.0,
+    <span class="str">"lower_safety_temp_enabled"</span>: <span class="kwrd">true</span>,
+    <span class="str">"serial_number"</span>: <span class="str">"#DEVICE 2 SERIAL NUMBER#"</span>,
+    <span class="str">"temperature_lock"</span>: <span class="kwrd">false</span>,
+    <span class="str">"learning_time"</span>: 1002,
+    <span class="str">"current_version"</span>: <span class="str">"1.0.4"</span>,
+    <span class="str">"model_version"</span>: <span class="str">"Diamond-1.10"</span>,
+    <span class="str">"backplate_bsl_info"</span>: <span class="str">"BSL"</span>,
+    <span class="str">"auto_away_enable"</span>: <span class="kwrd">true</span>,
+    <span class="str">"heat_pump_comp_threshold_enabled"</span>: <span class="kwrd">false</span>,
+    <span class="str">"fan_mode"</span>: <span class="str">"auto"</span>,
+    <span class="str">"range_enable"</span>: <span class="kwrd">false</span>,
+    <span class="str">"temperature_scale"</span>: <span class="str">"F"</span>,
+    <span class="str">"backplate_mono_info"</span>: <span class="str">"TFE (BP_DVT) 3.5.2 (ehs@ubuntu) 2011-11-05 12:00:00"</span>,
+    <span class="str">"backplate_bsl_version"</span>: <span class="str">"1.1"</span>,
+    <span class="str">"equipment_type"</span>: <span class="str">"gas"</span>,
+    <span class="str">"range_mode"</span>: <span class="kwrd">false</span>,
+    <span class="str">"lower_safety_temp"</span>: 7.0,
+    <span class="str">"has_fan"</span>: <span class="kwrd">true</span>,
+    <span class="str">"hvac_wires"</span>: <span class="str">"Heat,Cool,Fan,Common Wire,Rc"</span>,
+    <span class="str">"learning_mode"</span>: <span class="kwrd">true</span>,
+    <span class="str">"away_temperature_high"</span>: 32.0,
+    <span class="str">"switch_system_off"</span>: <span class="kwrd">false</span>,
+    <span class="str">"time_to_target"</span>: 1326039444,
+    <span class="str">"away_temperature_low"</span>: 14.444444444444445,
+    <span class="str">"current_humidity"</span>: 45,
+    <span class="str">"mac_address"</span>: <span class="str">"#MACADDR#"</span>,
+    <span class="str">"backplate_mono_version"</span>: <span class="str">"3.5.2"</span>,
+    <span class="str">"has_aux_heat"</span>: <span class="kwrd">false</span>,
+    <span class="str">"type"</span>: <span class="str">"TBD"</span>,
+    <span class="str">"hvac_pins"</span>: <span class="str">"W1,Y1,C,Rc,G"</span>,
+    <span class="str">"has_heat_pump"</span>: <span class="kwrd">false</span>,
+    <span class="str">"heat_pump_aux_threshold_enabled"</span>: <span class="kwrd">true</span>,
+    <span class="str">"battery_level"</span>: 3.945,
+    <span class="str">"target_time_confidence"</span>: 1.0
+}</pre>
+<p>&nbsp;</p>
+<p>A few things to note:</p>
+<ul>
+<li>
+<strong>Upper_safety_temperature </strong>is just a bit beyond my comfort zone at 1832°F. I don’t know why it’s sending a value like that to the client, and why it’s stupidly high.</li>
+<li>The backplate serial number doesn’t match with the thermostat according to the payload response. I don’t know why this might be as I confirmed that the numbers matched through visual inspection of the device just now.</li>
+<li>The majority of these details are exposed in one way or another in the details area of the web UI.</li>
+<li>Time to target (payload.time_to_target) is unusual in that it’s a JavaScript Date value, divided by 1000. So, in the example above, the time to target is: <strong>new Date(1326039444 * 1000).toString() = &gt;&#8221;Sun Jan 08 2012 10:17:24 GMT-0600 (Central Standard Time)&#8221;</strong>Next, a payload is returned with the new status:
+<pre class="csharpcode"><span class="str">"status"</span>: 200,
+<span class="str">"headers"</span>: {
+    <span class="str">"X-nl-skv-key"</span>: <span class="str">"shared.#DEVICE 2 SERIAL NUMBER#"</span>,
+    <span class="str">"X-nl-skv-version"</span>: 1689916148,
+    <span class="str">"X-nl-skv-timestamp"</span>: 1326038378000,
+    <span class="str">"X-nl-service-timestamp"</span>: 1326038379151
+},
+<span class="str">"payload"</span>: {
+    <span class="str">"hvac_fan_state"</span>: <span class="kwrd">false</span>,
+    <span class="str">"name"</span>: <span class="str">"TWO"</span>,
+    <span class="str">"hvac_heat_x2_state"</span>: <span class="kwrd">false</span>,
+    <span class="str">"hvac_ac_state"</span>: <span class="kwrd">false</span>,
+    <span class="str">"can_cool"</span>: <span class="kwrd">true</span>,
+    <span class="str">"auto_away"</span>: 0,
+    <span class="str">"compressor_lockout_enabled"</span>: <span class="kwrd">false</span>,
+    <span class="str">"target_temperature_low"</span>: 16.66667,
+    <span class="str">"current_temperature"</span>: 19.53,
+    <span class="str">"target_temperature_high"</span>: 26.66667,
+    <span class="str">"compressor_lockout_timeout"</span>: 0,
+    <span class="str">"target_change_pending"</span>: <span class="kwrd">false</span>,
+    <span class="str">"hvac_aux_heater_state"</span>: <span class="kwrd">false</span>,
+    <span class="str">"target_temperature"</span>: 20.55556,
+    <span class="str">"can_heat"</span>: <span class="kwrd">true</span>,
+    <span class="str">"target_temperature_type"</span>: <span class="str">"heat"</span>,
+    <span class="str">"hvac_heater_state"</span>: <span class="kwrd">true</span>
+}</pre>
+<p>&nbsp;</p>
+<p>Here, the <strong>hvac_heater_state</strong> is set to <strong>true</strong>. The furnace is on.</p>
+<p>A little while later, that value is set to <strong>false.</strong></p>
+<p>Occasionally, the payload includes the complete schedule for the thermostat. I’m not going to reproduce the entire payload here as it’s too large, and quite boring. Here’s a snippet of what it returns:</p>
+<pre class="csharpcode"><span class="str">"schedule"</span>: {
+    <span class="str">"#DEVICE 2 SERIAL NUMBER#"</span>: {
+        <span class="str">"$version"</span>: 1187107985,
+        <span class="str">"$timestamp"</span>: 1326005677000,
+        <span class="str">"name"</span>: <span class="str">"One Current Schedule"</span>,
+        <span class="str">"days"</span>: {
+            <span class="str">"0"</span>: {
+                <span class="str">"0"</span>: {
+                    <span class="str">"type"</span>: <span class="str">"HEAT"</span>,
+                    <span class="str">"temp"</span>: 14.445,
+                    <span class="str">"time"</span>: 0,
+                    <span class="str">"entry_type"</span>: <span class="str">"continuation"</span>
+                },
+                <span class="str">"1"</span>: {
+                    <span class="str">"type"</span>: <span class="str">"HEAT"</span>,
+                    <span class="str">"temp"</span>: 14.445,
+                    <span class="str">"time"</span>: 27900,
+                    <span class="str">"entry_type"</span>: <span class="str">"setpoint"</span>
+                },
+                <span class="str">"2"</span>: {
+                    <span class="str">"type"</span>: <span class="str">"HEAT"</span>,
+                    <span class="str">"temp"</span>: 20.556,
+                    <span class="str">"time"</span>: 63000,
+                    <span class="str">"entry_type"</span>: <span class="str">"setpoint"</span>
+                },
+                <span class="str">"3"</span>: {
+                    <span class="str">"type"</span>: <span class="str">"HEAT"</span>,
+                    <span class="str">"temp"</span>: 14.445,
+                    <span class="str">"time"</span>: 70200,
+                    <span class="str">"entry_type"</span>: <span class="str">"setpoint"</span>
+                }
+            },
+            <span class="str">"1"</span>: {
+                <span class="str">"0"</span>: {
+                    <span class="str">"type"</span>: <span class="str">"HEAT"</span>,
+                    <span class="str">"temp"</span>: 14.445,
+                    <span class="str">"time"</span>: 0,
+                    <span class="str">"entry_type"</span>: <span class="str">"continuation"</span>
+                },
+                <span class="str">"1"</span>: {
+                    <span class="str">"type"</span>: <span class="str">"HEAT"</span>,
+                    <span class="str">"temp"</span>: 18.889,
+                    <span class="str">"time"</span>: 20700,
+                    <span class="str">"entry_type"</span>: <span class="str">"setpoint"</span>
+                },</pre>
+<p>&nbsp;</p>
+<p>It’s a basic table structure. The first set point of the day is at 0, and is a “continuation.” These don’t show up in the UI.</p>
+<p>Here’s what the day 1 looks like on the Nest thermostat UI:</p>
+<p><a href="/blog/wp-content/uploads/2012/01/image8.png"><img loading="lazy" style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-width: 0px;" title="image" src="/blog/wp-content/uploads/2012/01/image_thumb8.png" alt="image" width="500" height="37" border="0"></a></p>
+<p>When changing a temperature setpoint, I’m a bit disappointed to see that the entire schedule is sent with every request apparently. I just wouldn’t have expected that given that the more setpoints that there are, the bigger the payload must be. The UI is often sluggish when rapidly making adjustments in the schedule, and this could be one of the factors.</p>
+<p>In the example below (which I’ve snipped most of the payload sent again as a JSONP request), I’ve set the first set point to 57F.</p>
+<pre class="csharpcode">    <span class="str">"payload"</span>: {
+        <span class="str">"days"</span>: {
+            <span class="str">"0"</span>: {
+                <span class="str">"0"</span>: {
+                    <span class="str">"type"</span>: <span class="str">"HEAT"</span>,
+                    <span class="str">"temp"</span>: 14.685,
+                    <span class="str">"time"</span>: 0,
+                    <span class="str">"entry_type"</span>: <span class="str">"continuation"</span>
+                },
+                <span class="str">"1"</span>: {
+                    <span class="str">"type"</span>: <span class="str">"HEAT"</span>,
+                    <span class="str">"temp"</span>: 15.000444444444444,
+                    <span class="str">"time"</span>: 24300,
+                    <span class="str">"entry_type"</span>: <span class="str">"setpoint"</span>
+                },</pre>
+<p>For the JSONP requests sent as “MAKE CHANGE” (easily could have been PUT), they each contained the following attributes as shown below. All JSONP requests are apparently routed on the web server using “headers” rather than a RESTful URL based system:</p>
+<pre class="csharpcode">    },
+    <span class="str">"headers"</span>: {
+        <span class="str">"X-nl-client-timestamp"</span>: 1326041210566,
+        <span class="str">"X-nl-session-id"</span>: <span class="str">"#SESSION ID#"</span>,
+        <span class="str">"X-nl-protocol-version"</span>: 1,
+        <span class="str">"Authorization"</span>: <span class="str">"Basic #BASIC AUTH#"</span>
+    },
+    <span class="str">"path"</span>: <span class="str">"/v1/put/schedule.#DEVICE 2 SERIAL NUMBER#"</span>,
+    <span class="str">"redir"</span>: <span class="str">"https://home.nest.com/post_jsonp"</span>,
+    <span class="str">"jsonp"</span>: <span class="str">"4_"</span>
+}</pre>
+<p>It’s RESTful in spirit as there is a route (“path”), but it’s managed by some internal routing engine. (Now, I think that they’re not using Ruby and Rails).</p>
+<p>For something simple, like changing the current temperature of a thermostat, the request is thankfully simple:</p>
+<pre class="csharpcode">{
+    <span class="str">"payload"</span>: {
+        <span class="str">"shared"</span>: {
+            <span class="str">"#DEVICE 2 SERIAL NUMBER#"</span>: {
+                <span class="str">"target_temperature"</span>: 18.333333333333336
+            }
+        }
+    },
+    <span class="str">"headers"</span>: {
+        <span class="str">"X-nl-client-timestamp"</span>: 1326041744556,
+        <span class="str">"X-nl-session-id"</span>: <span class="str">"#SESSION ID#"</span>,
+        <span class="str">"X-nl-protocol-version"</span>: 1,
+        <span class="str">"Authorization"</span>: <span class="str">"Basic #BASIC AUTH#"</span>
+    },
+    <span class="str">"path"</span>: <span class="str">"/v1/put"</span>,
+    <span class="str">"redir"</span>: <span class="str">"https://home.nest.com/post_jsonp"</span>,
+    <span class="str">"jsonp"</span>: <span class="str">"14_"</span>
+}</pre>
+<p>While, I haven’t taken the time to try to write a custom UI for this undocumented API yet, it looks like it should be relatively easy to do, especially as it relates to the schedule and current temperature settings. I know there’s been some Siri proxy stuff that’s been written – but I don’t have any interest in trying to get that to work.</p>
+<p>As with most APIs like this, the trick is often getting authorization correct. For Nest, it appears that making a POST request to <strong>https://home.nest.com/accounts/login/</strong> with <strong>username</strong> and <strong>password</strong> as form data, that the server responds with 2 cookies:</p>
+<ol>
+<li>sessionid == used in X-nl-session-id in headers</li>
+<li>cztoken == used as the Authorization in headers (prepended with the text “Basic “</li>
+</ol>
+<p>FYI: I also have a <a href="/blog/index.php/archives/1754">Node</a> version of the API that is more up to date than this.</p>
+</li>
+</ul>
+			</div>
+<!-- .entry-content -->
+
+</article><!-- #post-## -->
+
+			
+			
+		
+		</main><!-- #main -->
+	</section><!-- #primary -->
+
+
+	</div>
+<!-- #content -->
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+		<div class="site-info">
+			<a class="powered-by" href="http://wordpress.org/">Proudly powered by WordPress</a>
+			<span class="sep"> | </span>
+			Theme: editor by <a href="https://array.is/">Array</a>		</div>
+<!-- .site-info -->
+	</footer><!-- #colophon -->
+</div>
+<!-- #page -->
+
+<script type="text/javascript" src="/blog/wp-content/themes/editor/js/jquery.fitvids.js?ver=20140820" id="fitvids-js"></script>
+<script type="text/javascript" src="/blog/wp-content/themes/editor/js/editor.js?ver=20120206" id="editor-js-js"></script>
+<script src="https://stats.wp.com/e-202226.js" defer></script>
+<script>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:11.0',blog:'193486638',post:'0',tz:'-5',srv:'www.wiredprairie.us'} ]);
+	_stq.push([ 'clickTrackerInit', '193486638', '0' ]);
+</script>
+
+</body>
+</html>

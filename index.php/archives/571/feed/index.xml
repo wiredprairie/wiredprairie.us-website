@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Silverlight 2, RC available	</title>
+	<atom:link href="/blog/index.php/archives/571/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/571</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Fri, 26 Sep 2008 18:38:44 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/571/comment-page-1#comment-840</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Fri, 26 Sep 2008 18:38:44 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/571#comment-840</guid>
+
+					<description><![CDATA[Michael -- I&#039;m interested to hear why you say Silverlight is anything but several years behind a Flash/Flex combo. What&#039;s specifically missing? And does Silverlight has those features? My experience with Silverlight LOB applications has shown it&#039;s not generally ready for prime time. 
+
+Microsoft and Adobe are clearly gunning for the same space (the same square).]]></description>
+			<content:encoded><![CDATA[<p>Michael &#8212; I&#8217;m interested to hear why you say Silverlight is anything but several years behind a Flash/Flex combo. What&#8217;s specifically missing? And does Silverlight has those features? My experience with Silverlight LOB applications has shown it&#8217;s not generally ready for prime time. </p>
+<p>Microsoft and Adobe are clearly gunning for the same space (the same square).</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Michael C. Neel		</title>
+		<link>/blog/index.php/archives/571/comment-page-1#comment-838</link>
+
+		<dc:creator><![CDATA[Michael C. Neel]]></dc:creator>
+		<pubDate>Fri, 26 Sep 2008 13:41:52 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/571#comment-838</guid>
+
+					<description><![CDATA[I think it&#039;s wrong to say SL is &quot;years behind&quot; flash/flex - there may be some missing UI elements the flex has over SL, but having experience in using flex for more than a website game and using it as a corporate lob app has shown huge holes in flex&#039;s capabilities (and that adobe still has features in flash that require you to buy adobe servers to get).  
+
+I think people want to compare flex and SL head-to-head because they both &quot;run in a square&quot;, but I think as time goes on it will become clear that they are suited for completely different roles]]></description>
+			<content:encoded><![CDATA[<p>I think it&#8217;s wrong to say SL is &#8220;years behind&#8221; flash/flex &#8211; there may be some missing UI elements the flex has over SL, but having experience in using flex for more than a website game and using it as a corporate lob app has shown huge holes in flex&#8217;s capabilities (and that adobe still has features in flash that require you to buy adobe servers to get).  </p>
+<p>I think people want to compare flex and SL head-to-head because they both &#8220;run in a square&#8221;, but I think as time goes on it will become clear that they are suited for completely different roles</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

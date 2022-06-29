@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Nest Thermostat, Software Update 2.0	</title>
+	<atom:link href="/blog/index.php/archives/1631/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/1631</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Sun, 27 May 2012 19:07:47 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/1631/comment-page-1#comment-4544</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sun, 27 May 2012 19:07:47 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1631#comment-4544</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1631/comment-page-1#comment-4542&quot;&gt;Mike Bronner&lt;/a&gt;.
+
+Thanks for the great comment. I&#039;ll be interested to hear how they respond. According to their web site, they do not accept product enhancement suggestions.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/1631/comment-page-1#comment-4542">Mike Bronner</a>.</p>
+<p>Thanks for the great comment. I&#8217;ll be interested to hear how they respond. According to their web site, they do not accept product enhancement suggestions.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Mike Bronner		</title>
+		<link>/blog/index.php/archives/1631/comment-page-1#comment-4542</link>
+
+		<dc:creator><![CDATA[Mike Bronner]]></dc:creator>
+		<pubDate>Sun, 27 May 2012 18:02:01 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1631#comment-4542</guid>
+
+					<description><![CDATA[Hi Aaron,
+
+I would like to thank you for the in-depth reviews as well as everyone else&#039;s insight and feedback on their experiences with Nest. I have been following the development, and like others, I was enthralled from the get-go and wanted to get one. At the time I couldn&#039;t justify the expense, but then I read an article the other day that Nest was to be sold in Apple stores (which reminded me about the device), and started reading up on it again. I came across your blog, and other reviews, that were actual user reviews, and not the marketing ra-ra we see everywhere else. I learned a lot over the last day or two, and decided I needed a concrete list of items to be satisfied to make a purchase worth it. I compiled them, and sent a letter off to support, hoping that it will get passed along to the right department:
+==========================
+Dear Nest Support,
+
+I hope this email gets forwarded to the people who need to know. While I am only speaking for myself, I do believe my points outlined below reflect the needs and desires of many potential customers.
+
+First, I would like to thank Aaron for writing extensively on his experiences, and collecting feedback from others, on his blog at /blog/index.php/nest-thermostat-reviews. Please do take the time to read through his posts as well.
+
+I would require the following points to be available on the Nest Thermostat prior to making a purchase, in order of importance:
+- Settings should never be lost. Settings need to be stored in such a manner, that they will remain even after a power failure and the battery draining. The unit absolutely must be 100% dependable, especially in cold-weather climates, so that it does not loose connection with the servers due to a fault of its own. I must be able to rely on controlling the unit when away from the home at all times, especially in cold-weather climates.
+- Power-saving algorithms need to be smarter. All factors need to be taken into account when calculating energy usage:
+-- Time to heat or cool and associated energy cost.
+-- Finding the sweet spot between running too often to keep the temp consistent, and too little, resulting in huge temperature swings, both of which use more energy.
+-- Determining if running the fan alone will reduce the perceived temperature enough to cool the house by one or two degrees, factoring in outside temperature, and humidity. I know there is an AirWave mode implemented, but I believe this could be taken a step farther.
+- Year-over-year data history. If I cannot actually verify improvements in energy-savings over long periods, then there is no justification for spending 5 times what other programmable thermostats cost.
+- Smarter manual programability. One should be able to specify a soft-target (can be overwritten by learning) or hard-target (will not be erased from schedule) when manually programming the schedule. There needs to be more flexibility in the programming to allow for more individual needs.
+- Target Temp-Time settings. Allowing for manual programming of a target temperature at a given time. The unit will then calculate when it needs to start heating or cooling to reach that temperature at the requested time.
+- Power-stealing needs to be eliminated. Some units are very sensitive to fluctuations regarding the voltage of the signal wires. Redesigning the hardware unit to accept a power adapter would be good. Alternatively, a redesign to eliminate power fluctuations stemming from the thermostat would be jn order.
+- Redesigned hardware unit. For the Nest to be effective, it needs to be located in that portion of the house that receives the most traffic. For that to work, the display needs to be able to be mounted remotely from the base unit. The base unit should be connected to the existing wiring, while the display with sensors needs to be located somewhere much more accessible. The display would communicate back to the base unit and relay information. Short of this, multiple nests should be installable, with only one actually being hardwired, and the additional units relaying information back to the main unit. In this manner multiple rooms could be monitored at once with only one HVAC unit available.
+- Calculate actual savings. I should be able to enter my KWh or gas usage and costs for a given time, say over a month, and be able to calculate actual savings.
+
+I&#039;m sorry to say that as of now, I cannot see how a purchase of the Nest is feasible. Don&#039;t get me wrong, I do want to see the Nest succeed, because it has such great potential. But as of now, all the Nest has is a nice body, but no smarts. I&#039;d rather have a unit that doesn&#039;t look nice, but actually helps me save money easier -- there are just too many flaws to justify the expense.
+
+I sincerely hope this gets passed along to management and R&#038;D so that these issues can be taking into consideration. I will keep watching the development of Nest, and hopefully find myself seeing a purchase as justifiable due to improvements in user experience and design, but most of all in efficiency.
+==========================
+
+I do hope they improve their product, as they have a tremendous opportunity to make a real difference.
+
+Thanks again!
+~Mike]]></description>
+			<content:encoded><![CDATA[<p>Hi Aaron,</p>
+<p>I would like to thank you for the in-depth reviews as well as everyone else&#8217;s insight and feedback on their experiences with Nest. I have been following the development, and like others, I was enthralled from the get-go and wanted to get one. At the time I couldn&#8217;t justify the expense, but then I read an article the other day that Nest was to be sold in Apple stores (which reminded me about the device), and started reading up on it again. I came across your blog, and other reviews, that were actual user reviews, and not the marketing ra-ra we see everywhere else. I learned a lot over the last day or two, and decided I needed a concrete list of items to be satisfied to make a purchase worth it. I compiled them, and sent a letter off to support, hoping that it will get passed along to the right department:<br />
+==========================<br />
+Dear Nest Support,</p>
+<p>I hope this email gets forwarded to the people who need to know. While I am only speaking for myself, I do believe my points outlined below reflect the needs and desires of many potential customers.</p>
+<p>First, I would like to thank Aaron for writing extensively on his experiences, and collecting feedback from others, on his blog at <a href="/blog/index.php/nest-thermostat-reviews" rel="nofollow ugc">/blog/index.php/nest-thermostat-reviews</a>. Please do take the time to read through his posts as well.</p>
+<p>I would require the following points to be available on the Nest Thermostat prior to making a purchase, in order of importance:<br />
+&#8211; Settings should never be lost. Settings need to be stored in such a manner, that they will remain even after a power failure and the battery draining. The unit absolutely must be 100% dependable, especially in cold-weather climates, so that it does not loose connection with the servers due to a fault of its own. I must be able to rely on controlling the unit when away from the home at all times, especially in cold-weather climates.<br />
+&#8211; Power-saving algorithms need to be smarter. All factors need to be taken into account when calculating energy usage:<br />
+&#8212; Time to heat or cool and associated energy cost.<br />
+&#8212; Finding the sweet spot between running too often to keep the temp consistent, and too little, resulting in huge temperature swings, both of which use more energy.<br />
+&#8212; Determining if running the fan alone will reduce the perceived temperature enough to cool the house by one or two degrees, factoring in outside temperature, and humidity. I know there is an AirWave mode implemented, but I believe this could be taken a step farther.<br />
+&#8211; Year-over-year data history. If I cannot actually verify improvements in energy-savings over long periods, then there is no justification for spending 5 times what other programmable thermostats cost.<br />
+&#8211; Smarter manual programability. One should be able to specify a soft-target (can be overwritten by learning) or hard-target (will not be erased from schedule) when manually programming the schedule. There needs to be more flexibility in the programming to allow for more individual needs.<br />
+&#8211; Target Temp-Time settings. Allowing for manual programming of a target temperature at a given time. The unit will then calculate when it needs to start heating or cooling to reach that temperature at the requested time.<br />
+&#8211; Power-stealing needs to be eliminated. Some units are very sensitive to fluctuations regarding the voltage of the signal wires. Redesigning the hardware unit to accept a power adapter would be good. Alternatively, a redesign to eliminate power fluctuations stemming from the thermostat would be jn order.<br />
+&#8211; Redesigned hardware unit. For the Nest to be effective, it needs to be located in that portion of the house that receives the most traffic. For that to work, the display needs to be able to be mounted remotely from the base unit. The base unit should be connected to the existing wiring, while the display with sensors needs to be located somewhere much more accessible. The display would communicate back to the base unit and relay information. Short of this, multiple nests should be installable, with only one actually being hardwired, and the additional units relaying information back to the main unit. In this manner multiple rooms could be monitored at once with only one HVAC unit available.<br />
+&#8211; Calculate actual savings. I should be able to enter my KWh or gas usage and costs for a given time, say over a month, and be able to calculate actual savings.</p>
+<p>I&#8217;m sorry to say that as of now, I cannot see how a purchase of the Nest is feasible. Don&#8217;t get me wrong, I do want to see the Nest succeed, because it has such great potential. But as of now, all the Nest has is a nice body, but no smarts. I&#8217;d rather have a unit that doesn&#8217;t look nice, but actually helps me save money easier &#8212; there are just too many flaws to justify the expense.</p>
+<p>I sincerely hope this gets passed along to management and R&amp;D so that these issues can be taking into consideration. I will keep watching the development of Nest, and hopefully find myself seeing a purchase as justifiable due to improvements in user experience and design, but most of all in efficiency.<br />
+==========================</p>
+<p>I do hope they improve their product, as they have a tremendous opportunity to make a real difference.</p>
+<p>Thanks again!<br />
+~Mike</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Austin Scaccia		</title>
+		<link>/blog/index.php/archives/1631/comment-page-1#comment-4429</link>
+
+		<dc:creator><![CDATA[Austin Scaccia]]></dc:creator>
+		<pubDate>Sun, 15 Apr 2012 00:28:57 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1631#comment-4429</guid>
+
+					<description><![CDATA[Yes, I switched to channel 2 and are getting less dropouts. 
+
+I will let it sit for a couple days and see if it figures out the temp.]]></description>
+			<content:encoded><![CDATA[<p>Yes, I switched to channel 2 and are getting less dropouts. </p>
+<p>I will let it sit for a couple days and see if it figures out the temp.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/1631/comment-page-1#comment-4428</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sat, 14 Apr 2012 15:22:55 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1631#comment-4428</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1631/comment-page-1#comment-4425&quot;&gt;Austin Scaccia&lt;/a&gt;.
+
+I offset the thermostat temperature readings by exchanging it for a new one. 
+
+A number of people have problems with the wifi apparently. Some suggest trying a different channel (like 11).]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/1631/comment-page-1#comment-4425">Austin Scaccia</a>.</p>
+<p>I offset the thermostat temperature readings by exchanging it for a new one. </p>
+<p>A number of people have problems with the wifi apparently. Some suggest trying a different channel (like 11).</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Austin Scaccia		</title>
+		<link>/blog/index.php/archives/1631/comment-page-1#comment-4425</link>
+
+		<dc:creator><![CDATA[Austin Scaccia]]></dc:creator>
+		<pubDate>Sat, 14 Apr 2012 06:23:04 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1631#comment-4425</guid>
+
+					<description><![CDATA[I actually just bought this for work. While I wait to get an HVAC guy to up the power on the HVAC system, I installed this at my house (as a test!). It constantly loses WiFi connection.  It does not seem normally? 
+
+Secondly, It keeps saying my house is 70 degrees, when it is actually 65 degrees. How do I offset?]]></description>
+			<content:encoded><![CDATA[<p>I actually just bought this for work. While I wait to get an HVAC guy to up the power on the HVAC system, I installed this at my house (as a test!). It constantly loses WiFi connection.  It does not seem normally? </p>
+<p>Secondly, It keeps saying my house is 70 degrees, when it is actually 65 degrees. How do I offset?</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

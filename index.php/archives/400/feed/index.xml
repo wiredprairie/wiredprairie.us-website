@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Coding Challenge #13	</title>
+	<atom:link href="/blog/index.php/archives/400/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/400</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Thu, 24 Jul 2008 00:18:54 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: OJ		</title>
+		<link>/blog/index.php/archives/400/comment-page-1#comment-503</link>
+
+		<dc:creator><![CDATA[OJ]]></dc:creator>
+		<pubDate>Thu, 24 Jul 2008 00:18:54 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/400#comment-503</guid>
+
+					<description><![CDATA[Aaron,
+
+The Set functionality in F# is really quick. Behind the scenes it uses a tree to filter out duplicates, so for each item it adds/filters it&#039;d cost O(logN)? Converting back to a list is obviously O(n).
+
+For massive lists it wouldn&#039;t be that fantastic, but you&#039;ll find that the implementation is surprisingly quick as F#&#039;s guts have been optimised quite well.
+
+Cheers.]]></description>
+			<content:encoded><![CDATA[<p>Aaron,</p>
+<p>The Set functionality in F# is really quick. Behind the scenes it uses a tree to filter out duplicates, so for each item it adds/filters it&#8217;d cost O(logN)? Converting back to a list is obviously O(n).</p>
+<p>For massive lists it wouldn&#8217;t be that fantastic, but you&#8217;ll find that the implementation is surprisingly quick as F#&#8217;s guts have been optimised quite well.</p>
+<p>Cheers.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/400/comment-page-1#comment-485</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Fri, 18 Jul 2008 12:13:55 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/400#comment-485</guid>
+
+					<description><![CDATA[@OJ -- I don&#039;t know F# -- how does it do it&#039;s dirty work? I&#039;m not sure how efficient it would be for a large list? Most functions are optimized for small to medium list. I probably should have emphasized larger than I had ... :) as my intention was that the function needed to be lightning fast...]]></description>
+			<content:encoded><![CDATA[<p>@OJ &#8212; I don&#8217;t know F# &#8212; how does it do it&#8217;s dirty work? I&#8217;m not sure how efficient it would be for a large list? Most functions are optimized for small to medium list. I probably should have emphasized larger than I had &#8230; :) as my intention was that the function needed to be lightning fast&#8230;</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: OJ		</title>
+		<link>/blog/index.php/archives/400/comment-page-1#comment-484</link>
+
+		<dc:creator><![CDATA[OJ]]></dc:creator>
+		<pubDate>Fri, 18 Jul 2008 06:15:38 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/400#comment-484</guid>
+
+					<description><![CDATA[The lack of constraints make this problem really simple.
+
+F#:
+
+let strings = [ &quot;put&quot;; &quot;strings&quot;; &quot;here&quot;; ...... ]
+let noDups = strings &#124;&#062; Set.of_list &#124;&#062; Set.to_list
+
+Sorted ;)]]></description>
+			<content:encoded><![CDATA[<p>The lack of constraints make this problem really simple.</p>
+<p>F#:</p>
+<p>let strings = [ &#8220;put&#8221;; &#8220;strings&#8221;; &#8220;here&#8221;; &#8230;&#8230; ]<br />
+let noDups = strings |&gt; Set.of_list |&gt; Set.to_list</p>
+<p>Sorted ;)</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/400/comment-page-1#comment-470</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Thu, 10 Jul 2008 01:15:36 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/400#comment-470</guid>
+
+					<description><![CDATA[Creative -- yet I have my doubts that it would be efficient for a large list.]]></description>
+			<content:encoded><![CDATA[<p>Creative &#8212; yet I have my doubts that it would be efficient for a large list.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Justin Case		</title>
+		<link>/blog/index.php/archives/400/comment-page-1#comment-469</link>
+
+		<dc:creator><![CDATA[Justin Case]]></dc:creator>
+		<pubDate>Wed, 09 Jul 2008 14:09:35 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/400#comment-469</guid>
+
+					<description><![CDATA[Using Linq, would this be what you would call too easy?
+
+myListOfStrings.Distinct();
+
+;)]]></description>
+			<content:encoded><![CDATA[<p>Using Linq, would this be what you would call too easy?</p>
+<p>myListOfStrings.Distinct();</p>
+<p>;)</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

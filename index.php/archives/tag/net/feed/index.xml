@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>.NET &#8211; WiredPrairie</title>
+	<atom:link href="/blog/index.php/archives/tag/net/feed" rel="self" type="application/rss+xml" />
+	<link>/blog</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Fri, 02 May 2014 00:41:58 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+<site xmlns="com-wordpress:feed-additions:1">193486638</site>	<item>
+		<title>IHTMLDocument5 and IHTMLDocument6 in C#</title>
+		<link>/blog/index.php/archives/1999</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Fri, 02 May 2014 00:41:58 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[.NET]]></category>
+		<category><![CDATA[WebBrowser]]></category>
+		<guid isPermaLink="false">/blog/?p=1999</guid>
+
+					<description><![CDATA[Unexpectedly, I found myself needing to use IHTMLDocument5/6 last evening to fetch a few properties that aren’t directly exposed via any of the Web Browser options in classic .NET programming (like WinForms/WPF). I couldn’t find them anywhere, so I whipped up something simple/quick/dirty: [Guid(&#34;3050f80c-98b5-11cf-bb82-00aa00bdce0b&#34;)] [InterfaceTypeAttribute(ComInterfaceType.InterfaceIsDual)] internal interface IHTMLDocument5 { void SetOnmousewheel(object p); object GetOnmousewheel(); object [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Unexpectedly, I found myself needing to use IHTMLDocument5/6 last evening to fetch a few properties that aren’t directly exposed via any of the Web Browser options in classic .NET programming (like WinForms/WPF). I couldn’t find them anywhere, so I whipped up something simple/quick/dirty:</p>
+<pre class="csharpcode">[Guid(<span class="str">&quot;3050f80c-98b5-11cf-bb82-00aa00bdce0b&quot;</span>)]
+[InterfaceTypeAttribute(ComInterfaceType.InterfaceIsDual)]
+<span class="kwrd">internal</span> <span class="kwrd">interface</span> IHTMLDocument5
+{
+    <span class="kwrd">void</span> SetOnmousewheel(<span class="kwrd">object</span> p);
+    <span class="kwrd">object</span> GetOnmousewheel();
+    <span class="kwrd">object</span> docType { get; }
+    <span class="kwrd">object</span> implementation { get; }
+    <span class="kwrd">object</span> createAttribute([In] <span class="kwrd">string</span> attrName);
+    <span class="kwrd">object</span> createComment([In] <span class="kwrd">string</span> comment);
+    <span class="kwrd">void</span> SetOnfocusin(<span class="kwrd">object</span> p);
+    <span class="kwrd">object</span> GetOnfocusin();
+    <span class="kwrd">void</span> SetOnfocusout(<span class="kwrd">object</span> p);
+    <span class="kwrd">object</span> GetOnfocusout();
+    <span class="kwrd">void</span> SetOnactivate(<span class="kwrd">object</span> p);
+    <span class="kwrd">object</span> GetOnactivate();
+    <span class="kwrd">void</span> SetOndeactivate(<span class="kwrd">object</span> p);
+    <span class="kwrd">object</span> GetOndeactivate();
+    <span class="kwrd">void</span> SetOnbeforeactivate(<span class="kwrd">object</span> p);
+    <span class="kwrd">object</span> GetOnbeforeactivate();
+    <span class="kwrd">void</span> SetOnbeforedeactivate(<span class="kwrd">object</span> p);
+    <span class="kwrd">object</span> GetOnbeforedeactivate();
+    <span class="kwrd">string</span> compatMode { get; }
+}
+
+
+[Guid(<span class="str">&quot;30510417-98b5-11cf-bb82-00aa00bdce0b&quot;</span>)]
+[InterfaceTypeAttribute(ComInterfaceType.InterfaceIsDual)]
+<span class="kwrd">internal</span> <span class="kwrd">interface</span> IHTMLDocument6
+{
+    <span class="kwrd">object</span> compatible { get; }
+    <span class="kwrd">object</span> documentMode { get; }
+    <span class="kwrd">void</span> SetOnStorage([In] <span class="kwrd">object</span> p);
+    <span class="kwrd">object</span> GetOnStorage();
+    <span class="kwrd">void</span> SetOnStorageCommit([In] <span class="kwrd">object</span> p);
+    <span class="kwrd">object</span> GetOnStorageCommit();
+    <span class="kwrd">object</span> getElementById([In] <span class="kwrd">string</span> id);
+    <span class="kwrd">void</span> updateSettings();
+}</pre>
+<style type="text/css">
+.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }</style>
+<p>As you can see, I didn’t spend a lot of time with the details, but it was enough to make progress (in particular I wanted <strong>compatMode</strong> and <strong>documentMode</strong>).</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1999</post-id>	</item>
+		<item>
+		<title>Lovin&#8217; .NET 4.5&#8217;s CallerMemberNameAttribute</title>
+		<link>/blog/index.php/archives/1697</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Fri, 03 Aug 2012 12:58:51 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[.NET]]></category>
+		<category><![CDATA[CSharp]]></category>
+		<guid isPermaLink="false">/blog/?p=1697</guid>
+
+					<description><![CDATA[Check this out: http://msdn.microsoft.com/en-us/library/system.runtime.compilerservices.callermembernameattribute(v=vs.110).aspx Hate the INotifyPropertyChanged pattern in .NET, and especially the syntax of needing to pass the name of the property being changed (via a string or an Expression or …)? There’s finally a built-in solution in .NET 4.5! private string _testValue; public string TestValue { get { return _testValue; } set { [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Check this out:</p>
+<p><a href="http://msdn.microsoft.com/en-us/library/system.runtime.compilerservices.callermembernameattribute(v=vs.110).aspx">http://msdn.microsoft.com/en-us/library/system.runtime.compilerservices.callermembernameattribute(v=vs.110).aspx</a></p>
+<p>Hate the INotifyPropertyChanged pattern in .NET, and especially the syntax of needing to pass the name of the property being changed (via a string or an Expression or …)?</p>
+<p>There’s finally a built-in solution in .NET 4.5!</p>
+<pre class="code"><span style="background: white; color: blue">private string </span><span style="background: white; color: black">_testValue;
+</span><span style="background: white; color: blue">public string </span><span style="background: white; color: black">TestValue
+{
+    </span><span style="background: white; color: blue">get </span><span style="background: white; color: black">{ </span><span style="background: white; color: blue">return </span><span style="background: white; color: black">_testValue; }
+    </span><span style="background: white; color: blue">set </span><span style="background: white; color: black">{
+        </span><span style="background: white; color: blue">if </span><span style="background: white; color: black">(_testValue != </span><span style="background: white; color: blue">value</span><span style="background: white; color: black">)
+        {
+            _testValue = </span><span style="background: white; color: blue">value</span><span style="background: white; color: black">;
+            RaisePropertyChanged();
+        }            
+    }
+}
+
+</span><span style="background: white; color: blue">protected void </span><span style="background: white; color: black">RaisePropertyChanged([</span><span style="background: white; color: #2b91af">CallerMemberName</span><span style="background: white; color: black">] </span><span style="background: white; color: #2b91af">String </span><span style="background: white; color: black">propertyName = </span><span style="background: white; color: blue">null</span><span style="background: white; color: black">)
+{
+    </span><span style="background: white; color: blue">var </span><span style="background: white; color: black">eventHandler = </span><span style="background: white; color: blue">this</span><span style="background: white; color: black">.PropertyChanged;
+    </span><span style="background: white; color: blue">if </span><span style="background: white; color: black">(eventHandler != </span><span style="background: white; color: blue">null</span><span style="background: white; color: black">)
+    {
+        eventHandler(</span><span style="background: white; color: blue">this</span><span style="background: white; color: black">, </span><span style="background: white; color: blue">new </span><span style="background: white; color: #2b91af">PropertyChangedEventArgs</span><span style="background: white; color: black">(propertyName));
+    }
+}</span></pre>
+<p>A new attribute you can apply to optional parameters which emits the name of the Caller! So in the example above, it’s “TestValue.”</p>
+<p>Rock on! </p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1697</post-id>	</item>
+		<item>
+		<title>WPF &#038;  System.Windows.Baml2006.TypeConverterMarkupExtension &#034;The image format is unrecognized&#034;</title>
+		<link>/blog/index.php/archives/1528</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sun, 05 Feb 2012 23:36:56 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[.NET]]></category>
+		<category><![CDATA[WPF]]></category>
+		<guid isPermaLink="false">/blog/?p=1528</guid>
+
+					<description><![CDATA[If you recently added an icon to your WPF project (any .NET version, including .NET 3.5, and .NET 4.0) and it has support for an alpha channel (often referred to as the Vista icon format), stop. Why? Your WPF application won’t run on the latest service pack of XP as it’s not capable of decoding [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; float: right; border-top: 0px; border-right: 0px; padding-top: 0px" title="SNAGHTML4534e6a2" border="0" alt="SNAGHTML4534e6a2" align="right" src="/blog/wp-content/uploads/2012/02/SNAGHTML4534e6a2.png" width="242" height="216" />If you recently added an icon to your WPF project (any .NET version, including .NET 3.5, and .NET 4.0) and it has support for an alpha channel (often referred to as the Vista icon format), <strong>stop</strong>. Why? Your WPF application won’t run on the latest service pack of XP as it’s not capable of decoding the format unfortunately. It’s a very frustrating error and a stupid &quot;feature that Microsoft overlooked. I’ve hit this a few times unfortunately. </p>
+<p>To fix, remove all of the alpha channel images from the ICO file and recompile.</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1528</post-id>	</item>
+		<item>
+		<title>Alternative to ApplicationSettings in .NET</title>
+		<link>/blog/index.php/archives/1524</link>
+					<comments>/blog/index.php/archives/1524#comments</comments>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Wed, 01 Feb 2012 13:52:31 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[.NET]]></category>
+		<category><![CDATA[Settings]]></category>
+		<category><![CDATA[WinForms]]></category>
+		<category><![CDATA[WPF]]></category>
+		<guid isPermaLink="false">/blog/?p=1524</guid>
+
+					<description><![CDATA[After dealing with lost settings, an unclear upgrade path, and my own confusion surrounding the magic of Settings in a .NET client application, I decided to build my own. You’re probably familiar with this UI in Visual Studio. It hasn’t changed much since it was first created: A list of properties, data type, scope and [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>After dealing with lost settings, an unclear upgrade path, and my own confusion surrounding the magic of <a href="http://msdn.microsoft.com/en-us/library/system.configuration.applicationsettingsbase.aspx">Settings</a> in a .NET client application, I decided to build my own. </p>
+<p>You’re probably familiar with this UI in Visual Studio. It hasn’t changed much since it was first created:</p>
+<p><img loading="lazy" style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2012/02/image.png" width="420" height="322" /></p>
+<p>A list of properties, data type, scope and a default value. Admittedly, it makes things simple. However, with my WPF .NET application that I created a few years ago (<a href="http://www.wiredprairie.us/SnugUp/">SnugUp</a>), I’ve always been troubled by the magic of the settings. It was too easy to get in a situation where a user would loose their settings doing uninstalls, reinstalls, upgrades. </p>
+<p>While I’m sure it’s possible to make the built in settings classes to work, it wasn’t worth the effort for me to understand them and learn what the nuances of where they’re placed, how to do a decent upgrade, how not to loose them, etc. </p>
+<p>In the SnugUp WPF UI, the code uses a two-way bindings to directly edit the settings of the application (like: &quot;{Binding AppSettings.DebugMode}&quot;). It was simple, and all I needed. It’s handy that ApplicationSettingsBase implements the INotifyPropertyChanged interface which WPF needs for simple two-way data bindings.</p>
+<p>My solution, which I admit is heavier than the original as it requires a large additional assembly is to use <a href="http://james.newtonking.com/pages/json-net.aspx">JSON.NET</a> as the serializer/deserializer for a new settings class I created.</p>
+<p>So, the basic pattern:</p>
+<div style="border-bottom: silver 1px solid; text-align: left; border-left: silver 1px solid; padding-bottom: 4px; line-height: 12pt; background-color: #f4f4f4; margin: 20px 0px 10px; padding-left: 4px; width: 97.5%; padding-right: 4px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; max-height: 200px; font-size: 8pt; overflow: auto; border-top: silver 1px solid; cursor: text; border-right: silver 1px solid; padding-top: 4px" id="codeSnippetWrapper">
+<div style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: #f4f4f4; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px" id="codeSnippet">
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: white; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum1">   1:</span> <span style="color: #0000ff">public</span> <span style="color: #0000ff">class</span> ApplicationSettings : INotifyPropertyChanged</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: #f4f4f4; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum2">   2:</span> {</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: white; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum3">   3:</span>     <span style="color: #0000ff">public</span> <span style="color: #0000ff">event</span> PropertyChangedEventHandler PropertyChanged;</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: #f4f4f4; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum4">   4:</span>&#160; </pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: white; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum5">   5:</span>     <span style="color: #0000ff">private</span> <span style="color: #0000ff">bool</span> _debugMode;</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: #f4f4f4; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum6">   6:</span>     <span style="color: #0000ff">private</span> <span style="color: #0000ff">string</span> _albumNameFormat;</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: white; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum7">   7:</span>     <span style="color: #0000ff">private</span> <span style="color: #0000ff">string</span> _extraFileExtensions;</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: #f4f4f4; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum8">   8:</span>     <span style="color: #0000ff">private</span> <span style="color: #0000ff">bool</span> _automaticRun;</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: white; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum9">   9:</span>     <span style="color: #0000ff">private</span> <span style="color: #0000ff">string</span> _galleryCreationSubCategory;</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: #f4f4f4; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum10">  10:</span>     <span style="color: #0000ff">private</span> <span style="color: #0000ff">bool</span> _filenameOnlyCheck;</pre>
+<p><!--CRLF--></div>
+</div>
+<p>Properties created the standard way for INotifyPropertyChaged:</p>
+<div style="border-bottom: silver 1px solid; text-align: left; border-left: silver 1px solid; padding-bottom: 4px; line-height: 12pt; background-color: #f4f4f4; margin: 20px 0px 10px; padding-left: 4px; width: 97.5%; padding-right: 4px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; max-height: 200px; font-size: 8pt; overflow: auto; border-top: silver 1px solid; cursor: text; border-right: silver 1px solid; padding-top: 4px" id="codeSnippetWrapper">
+<div style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: #f4f4f4; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px" id="codeSnippet">
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: white; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum1">   1:</span> <span style="color: #0000ff">private</span> DateTime _nextUpdateCheck;</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: #f4f4f4; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum2">   2:</span> <span style="color: #0000ff">public</span> DateTime NextUpdateCheck</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: white; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum3">   3:</span> {</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: #f4f4f4; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum4">   4:</span>     get { <span style="color: #0000ff">return</span> _nextUpdateCheck; }</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: white; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum5">   5:</span>     set</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: #f4f4f4; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum6">   6:</span>     {</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: white; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum7">   7:</span>         <span style="color: #0000ff">if</span> (_nextUpdateCheck != <span style="color: #0000ff">value</span>)</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: #f4f4f4; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum8">   8:</span>         {</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: white; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum9">   9:</span>             _nextUpdateCheck = <span style="color: #0000ff">value</span>;</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: #f4f4f4; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum10">  10:</span>             RaisePropertyChanged(<span style="color: #006080">&quot;NextUpdateCheck&quot;</span>);</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: white; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum11">  11:</span>         }</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: #f4f4f4; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum12">  12:</span>     }</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: white; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum13">  13:</span> }</pre>
+<p><!--CRLF--></div>
+</div>
+<p>I wanted a predictable path for storing settings (so it would be easy to document and backup for users). I used the AssemblyCompany attribute and the AssemblyProduct attribute as the folder names:</p>
+<div style="border-bottom: silver 1px solid; text-align: left; border-left: silver 1px solid; padding-bottom: 4px; line-height: 12pt; background-color: #f4f4f4; margin: 20px 0px 10px; padding-left: 4px; width: 97.5%; padding-right: 4px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; max-height: 200px; font-size: 8pt; overflow: auto; border-top: silver 1px solid; cursor: text; border-right: silver 1px solid; padding-top: 4px" id="codeSnippetWrapper">
+<div style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: #f4f4f4; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px" id="codeSnippet">
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: white; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum1">   1:</span> <span style="color: #0000ff">internal</span> <span style="color: #0000ff">static</span> <span style="color: #0000ff">string</span> GetSettingsDirectory()</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: #f4f4f4; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum2">   2:</span> {</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: white; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum3">   3:</span>     <span style="color: #0000ff">string</span> path = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: #f4f4f4; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum4">   4:</span>     var attrs = Assembly.GetEntryAssembly().GetCustomAttributes(<span style="color: #0000ff">typeof</span>(AssemblyCompanyAttribute), <span style="color: #0000ff">false</span>);</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: white; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum5">   5:</span>     <span style="color: #0000ff">if</span> (attrs.Length == 1)</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: #f4f4f4; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum6">   6:</span>     {</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: white; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum7">   7:</span>         path = Path.Combine(path, ((AssemblyCompanyAttribute)attrs[0]).Company);</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: #f4f4f4; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum8">   8:</span>&#160; </pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: white; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum9">   9:</span>     }</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: #f4f4f4; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum10">  10:</span>     attrs = Assembly.GetEntryAssembly().GetCustomAttributes(<span style="color: #0000ff">typeof</span>(AssemblyProductAttribute), <span style="color: #0000ff">false</span>);</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: white; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum11">  11:</span>     <span style="color: #0000ff">if</span> (attrs.Length == 1)</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: #f4f4f4; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum12">  12:</span>     {</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: white; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum13">  13:</span>         path = Path.Combine(path, ((AssemblyProductAttribute)attrs[0]).Product);</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: #f4f4f4; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum14">  14:</span>     }</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: white; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum15">  15:</span>     <span style="color: #0000ff">return</span> path;              </pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: #f4f4f4; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum16">  16:</span> }</pre>
+<p><!--CRLF--></div>
+</div>
+<p>In this WPF application, in the AssemblyInfo.cs file, the attributes are set as follows:</p>
+<div style="border-bottom: silver 1px solid; text-align: left; border-left: silver 1px solid; padding-bottom: 4px; line-height: 12pt; background-color: #f4f4f4; margin: 20px 0px 10px; padding-left: 4px; width: 97.5%; padding-right: 4px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; max-height: 200px; font-size: 8pt; overflow: auto; border-top: silver 1px solid; cursor: text; border-right: silver 1px solid; padding-top: 4px" id="codeSnippetWrapper">
+<div style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: #f4f4f4; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px" id="codeSnippet">
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: white; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum1">   1:</span> [assembly: AssemblyCompany(<span style="color: #006080">&quot;WiredPrairie.us&quot;</span>)]</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: #f4f4f4; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum2">   2:</span> [assembly: AssemblyProduct(<span style="color: #006080">&quot;SnugUp&quot;</span>)]</pre>
+<p><!--CRLF--></div>
+</div>
+<p>On my machine, that maps to this path:</p>
+<p><strong>d:\Users\Aaron\AppData\Roaming\WiredPrairie.us\SnugUp\</strong></p>
+<p>Loading settings then is straightforward using JSON.NET:</p>
+<div style="border-bottom: silver 1px solid; text-align: left; border-left: silver 1px solid; padding-bottom: 4px; line-height: 12pt; background-color: #f4f4f4; margin: 20px 0px 10px; padding-left: 4px; width: 97.5%; padding-right: 4px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; max-height: 200px; font-size: 8pt; overflow: auto; border-top: silver 1px solid; cursor: text; border-right: silver 1px solid; padding-top: 4px" id="codeSnippetWrapper">
+<div style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: #f4f4f4; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px" id="codeSnippet">
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: white; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum1">   1:</span> <span style="color: #0000ff">public</span> <span style="color: #0000ff">static</span> ApplicationSettings Load(<span style="color: #0000ff">string</span> filename)</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: #f4f4f4; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum2">   2:</span> {</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: white; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum3">   3:</span>     ApplicationSettings settings = <span style="color: #0000ff">null</span>;</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: #f4f4f4; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum4">   4:</span>     var directory = GetSettingsDirectory();</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: white; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum5">   5:</span>     var path = Path.Combine(directory, filename);</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: #f4f4f4; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum6">   6:</span>&#160; </pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: white; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum7">   7:</span>     <span style="color: #0000ff">if</span> (File.Exists(path))</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: #f4f4f4; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum8">   8:</span>     {</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: white; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum9">   9:</span>         <span style="color: #0000ff">string</span> fileData = File.ReadAllText(path);</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: #f4f4f4; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum10">  10:</span>         <span style="color: #0000ff">try</span></pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: white; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum11">  11:</span>         {</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: #f4f4f4; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum12">  12:</span>             settings = JsonConvert.DeserializeObject&lt;ApplicationSettings&gt;(fileData, <span style="color: #0000ff">new</span> JsonSerializerSettings { });</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: white; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum13">  13:</span>         }</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: #f4f4f4; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum14">  14:</span>         <span style="color: #0000ff">catch</span> { }</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: white; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum15">  15:</span>     }</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: #f4f4f4; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum16">  16:</span>     <span style="color: #0000ff">if</span> (settings == <span style="color: #0000ff">null</span>)</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: white; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum17">  17:</span>     {</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: #f4f4f4; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum18">  18:</span>         settings = <span style="color: #0000ff">new</span> ApplicationSettings();</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: white; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum19">  19:</span>         SetDefaults(settings);</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: #f4f4f4; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum20">  20:</span>         <span style="color: #008000">// initialize settings once</span></pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: white; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum21">  21:</span>         Save(settings, filename);</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: #f4f4f4; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum22">  22:</span>     }</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: white; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum23">  23:</span>     <span style="color: #0000ff">return</span> settings;</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: #f4f4f4; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum24">  24:</span> }</pre>
+<p><!--CRLF--></div>
+</div>
+<p>In my code, if the settings file didn’t exist or fails to serialize into something meaningful, a new settings file is created with a few defaults. (I haven’t decided what to do when there’s an exception when reading the file, hence the empty catch).</p>
+<p>Saving the settings is just as easy:</p>
+<div style="border-bottom: silver 1px solid; text-align: left; border-left: silver 1px solid; padding-bottom: 4px; line-height: 12pt; background-color: #f4f4f4; margin: 20px 0px 10px; padding-left: 4px; width: 97.5%; padding-right: 4px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; max-height: 200px; font-size: 8pt; overflow: auto; border-top: silver 1px solid; cursor: text; border-right: silver 1px solid; padding-top: 4px" id="codeSnippetWrapper">
+<div style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: #f4f4f4; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px" id="codeSnippet">
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: white; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum1">   1:</span> <span style="color: #0000ff">public</span> <span style="color: #0000ff">static</span> <span style="color: #0000ff">void</span> Save(ApplicationSettings settings, <span style="color: #0000ff">string</span> filename)</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: #f4f4f4; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum2">   2:</span> {</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: white; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum3">   3:</span>     Debug.Assert(settings != <span style="color: #0000ff">null</span>);</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: #f4f4f4; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum4">   4:</span>     var directory = GetSettingsDirectory();</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: white; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum5">   5:</span>     var path = Path.Combine(directory, filename);</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: #f4f4f4; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum6">   6:</span>&#160; </pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: white; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum7">   7:</span>     JsonConvert.SerializeObject(settings);</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: #f4f4f4; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum8">   8:</span>&#160; </pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: white; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum9">   9:</span>     <span style="color: #0000ff">if</span> (!Directory.Exists(directory))</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: #f4f4f4; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum10">  10:</span>     {</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: white; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum11">  11:</span>         Directory.CreateDirectory(directory);</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: #f4f4f4; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum12">  12:</span>     }</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: white; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum13">  13:</span>&#160; </pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: #f4f4f4; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum14">  14:</span>     var fileData = JsonConvert.SerializeObject(settings, Formatting.Indented, <span style="color: #0000ff">new</span> JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore, DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate });</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: white; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum15">  15:</span>     <span style="color: #0000ff">try</span></pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: #f4f4f4; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum16">  16:</span>     {</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: white; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum17">  17:</span>         <span style="color: #0000ff">using</span> (StreamWriter writer = File.CreateText(path))</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: #f4f4f4; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum18">  18:</span>         {</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: white; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum19">  19:</span>             writer.Write(fileData);</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: #f4f4f4; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum20">  20:</span>             writer.Close();</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: white; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum21">  21:</span>         }</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: #f4f4f4; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum22">  22:</span>     }</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: white; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum23">  23:</span>     <span style="color: #0000ff">catch</span> { }</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: #f4f4f4; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum24">  24:</span> }</pre>
+<p><!--CRLF--></div>
+</div>
+<p>The SerializeObject method returns a string which is then written to a file using a StreamWriter. </p>
+<p>I added a Save method to the instance of the ApplicationSettings:</p>
+<div style="border-bottom: silver 1px solid; text-align: left; border-left: silver 1px solid; padding-bottom: 4px; line-height: 12pt; background-color: #f4f4f4; margin: 20px 0px 10px; padding-left: 4px; width: 97.5%; padding-right: 4px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; max-height: 200px; font-size: 8pt; overflow: auto; border-top: silver 1px solid; cursor: text; border-right: silver 1px solid; padding-top: 4px" id="codeSnippetWrapper">
+<div style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: #f4f4f4; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px" id="codeSnippet">
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: white; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum1">   1:</span> <span style="color: #0000ff">public</span> <span style="color: #0000ff">void</span> Save()</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: #f4f4f4; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum2">   2:</span> {</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: white; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum3">   3:</span>     ApplicationSettings.Save(<span style="color: #0000ff">this</span>);</pre>
+<p><!--CRLF--></p>
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: #f4f4f4; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px"><span style="color: #606060" id="lnum4">   4:</span> }</pre>
+<p><!--CRLF--></div>
+</div>
+<p>This preserved the functionality that exists in the built in Settings support in .NET (which was being used in my application). </p>
+<p>By keeping all of the property names the same and making a few tweaks to the types of some fields in my application, I had swapped out the entire “settings” infrastructure in about 45 minutes. </p>
+<p>I’m planning some other JSON activities within my application, so the overhead of using JSON.NET is acceptable. </p>
+<p>The best part of this alternative is that there isn’t any magic. It’s all easy to manage. Further, I can easily modify my installer to properly handle/update, etc., the settings file with just a few clicks. </p>
+<p>I’m not going back to the built-in .NET settings support again. I’ve learned my lesson.&#160; <img style="border-bottom-style: none; border-left-style: none; border-top-style: none; border-right-style: none" class="wlEmoticon wlEmoticon-smile" alt="Smile" src="/blog/wp-content/uploads/2012/02/wlEmoticon-smile.png" /></p>
+<p>What have you done for “user” settings?</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/blog/index.php/archives/1524/feed</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1524</post-id>	</item>
+		<item>
+		<title>Sending an email using SMTP in .NET 4.0</title>
+		<link>/blog/index.php/archives/1216</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Wed, 13 Jul 2011 12:50:49 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[.NET]]></category>
+		<category><![CDATA[SMTP]]></category>
+		<guid isPermaLink="false">/blog/index.php/archives/1216</guid>
+
+					<description><![CDATA[I had need of sending embedded images within an e-mail. .NET has had a few handy classes for sending an email using SMTP for a few versions. While there were a few examples floating around the internet, none were as clean and easy to follow as I expected. So, I decided to create a simple [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I had need of sending embedded images within an e-mail. .NET has had a few handy classes for sending an email using SMTP for a few versions. While there were a few examples floating around the internet, none were as clean and easy to follow as I expected. So, I decided to create a simple sample application in C# which demonstrates how to embed an image (or other content) in a email that contains both plain text and HTML content. It’s really not difficult. A number of examples ignore the fact that almost all of the objects need to be disposed, so I corrected that. This code is intentionally written synchronously to keep the sample simpler and easier to follow (and I didn’t need asynchronous sending for my learning exercise). </p>
+<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2011/07/image.png" width="289" height="142" /></p>
+<p>Above is the output (if you happen to have a picture of NYC). The example code uses Gmail as the SMTP host (it has the settings that generally work for gmail in most situations, including using SSL).</p>
+<pre class="code"><span style="color: blue">using </span>System;
+<span style="color: blue">using </span>System.Collections.Generic;
+<span style="color: blue">using </span>System.Linq;
+<span style="color: blue">using </span>System.Text;
+<span style="color: blue">using </span>System.Net.Mail;
+<span style="color: blue">using </span>System.Net;
+<span style="color: blue">using </span>System.Net.Mime;
+
+<span style="color: blue">namespace </span>TestEmailAttachments
+{
+    <span style="color: blue">public class </span><span style="color: #2b91af">EmailSettings
+    </span>{
+        <span style="color: blue">public string </span>ToAddress { <span style="color: blue">get</span>; <span style="color: blue">set</span>; }
+        <span style="color: blue">public string </span>FromAddress { <span style="color: blue">get</span>; <span style="color: blue">set</span>; }
+        <span style="color: blue">public string </span>AccountName { <span style="color: blue">get</span>; <span style="color: blue">set</span>; }
+        <span style="color: blue">public string </span>AccountPassword { <span style="color: blue">get</span>; <span style="color: blue">set</span>; }
+    }
+
+    <span style="color: blue">class </span><span style="color: #2b91af">Program
+    </span>{
+        <span style="color: blue">static void </span>Main(<span style="color: blue">string</span>[] args)
+        {
+            <span style="color: #2b91af">EmailSettings </span>settings = <span style="color: blue">new </span><span style="color: #2b91af">EmailSettings</span>()
+            {
+                ToAddress = <span style="color: #a31515">&quot;sample@example.com&quot;</span>,
+                FromAddress = <span style="color: #a31515">&quot;sender@example.com&quot;</span>,
+                AccountName = <span style="color: #a31515">&quot;sample@example.com&quot;</span>,
+                AccountPassword = <span style="color: #a31515">&quot;mypa$$w0rd$ux&quot;
+            </span>};
+            SendEmail(settings);
+            <span style="color: #2b91af">Console</span>.WriteLine(<span style="color: #a31515">&quot;Done&quot;</span>);
+            <span style="color: #2b91af">Console</span>.ReadKey();
+        }
+
+
+        <span style="color: blue">static void </span>SendEmail(<span style="color: #2b91af">EmailSettings </span>settings)
+        {
+            <span style="color: blue">if </span>(settings == <span style="color: blue">null</span>) { <span style="color: blue">throw new </span><span style="color: #2b91af">ArgumentNullException</span>(<span style="color: #a31515">&quot;need settings!&quot;</span>);  }
+            <span style="color: green">// Almost everything used my the mail system is disposable
+            // so, we'll use 'using' liberally
+            </span><span style="color: blue">using </span>(<span style="color: #2b91af">MailMessage </span>mail = <span style="color: blue">new </span><span style="color: #2b91af">MailMessage</span>())
+            {
+                <span style="color: green">//set the e-mail address
+                </span>mail.From = <span style="color: blue">new </span><span style="color: #2b91af">MailAddress</span>(settings.FromAddress);
+                mail.To.Add(settings.ToAddress);
+
+                <span style="color: green">//set the subject
+                </span>mail.Subject = <span style="color: #a31515">&quot;New York City!&quot;</span>;
+
+                <span style="color: green">// create some content
+                </span><span style="color: blue">string </span>textPlain = <span style="color: #a31515">&quot;I'm sorry, but you won't see the pretty photos inline. Look for an attachment.&quot;</span>;
+                <span style="color: blue">string </span>textHtml = <span style="color: #a31515">&quot;Here is an embedded image.&lt;img src=cid:NewYorkCity1&gt;&quot;</span>;
+
+                <span style="color: green">// setup the alternate views (so different type of e-mail clients can see the content)
+                </span><span style="color: blue">using </span>(<span style="color: #2b91af">AlternateView 
+                        </span>plainView = <span style="color: #2b91af">AlternateView</span>.CreateAlternateViewFromString(textPlain, <span style="color: blue">null</span>, 
+                            <span style="color: #2b91af">MediaTypeNames</span>.<span style="color: #2b91af">Text</span>.Plain), 
+                        htmlView = <span style="color: #2b91af">AlternateView</span>.CreateAlternateViewFromString(textHtml, <span style="color: blue">null</span>, 
+                            <span style="color: #2b91af">MediaTypeNames</span>.<span style="color: #2b91af">Text</span>.Html) )
+                {
+                    <span style="color: green">//create the LinkedResource (embedded image)
+                    </span><span style="color: blue">using </span>(<span style="color: #2b91af">LinkedResource </span>photo = 
+                        <span style="color: blue">new </span><span style="color: #2b91af">LinkedResource</span>(<span style="color: #a31515">@&quot;D:\Temp\nyc2009\NewYorkCity (1 of 1).jpg&quot;</span>))
+                    {
+                        <span style="color: green">// the content id here must match the content id used in the html as the 'cid:NNNNNNNN'
+                        </span>photo.ContentId = <span style="color: #a31515">&quot;NewYorkCity1&quot;</span>;
+                        <span style="color: green">// set the content type to match the image (in this case, it's a jpeg)
+                        </span>photo.ContentType = <span style="color: blue">new </span><span style="color: #2b91af">ContentType</span>(<span style="color: #2b91af">MediaTypeNames</span>.<span style="color: #2b91af">Image</span>.Jpeg) 
+                            { Name = <span style="color: #a31515">&quot;NewYorkCity (1 of 1).jpg&quot; </span>};
+
+                        <span style="color: green">// the htmlView needs the resource
+                        </span>htmlView.LinkedResources.Add(photo);
+
+                        <span style="color: green">// add each view to the alternate views collection
+                        </span>mail.AlternateViews.Add(plainView);
+                        mail.AlternateViews.Add(htmlView);
+
+                        <span style="color: green">// send the message, again diposable
+                        </span><span style="color: blue">using </span>(<span style="color: #2b91af">SmtpClient </span>smtp = <span style="color: blue">new </span><span style="color: #2b91af">SmtpClient</span>())
+                        {
+                            <span style="color: green">// these are gmail settings... you'll need to adjust them as needed
+                            </span>smtp.EnableSsl = <span style="color: blue">true</span>;
+                            smtp.Host = <span style="color: #a31515">&quot;smtp.gmail.com&quot;</span>;
+                            smtp.Port = 587;
+                            smtp.UseDefaultCredentials = <span style="color: blue">false</span>;
+                            smtp.Credentials = <span style="color: blue">new </span><span style="color: #2b91af">NetworkCredential</span>(settings.AccountName, 
+                                settings.AccountPassword);
+                            smtp.Send(mail);
+                        }
+                    }
+                }                                
+            }
+        }
+    }
+}</pre>
+<p>Use this only for good. <img style="border-bottom-style: none; border-left-style: none; border-top-style: none; border-right-style: none" class="wlEmoticon wlEmoticon-smile" alt="Smile" src="/blog/wp-content/uploads/2011/07/wlEmoticon-smile.png" /></p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1216</post-id>	</item>
+	</channel>
+</rss>

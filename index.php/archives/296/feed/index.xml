@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: If Microsoft concentrated on ONE thing, what would you pick?	</title>
+	<atom:link href="/blog/index.php/archives/296/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/296</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Thu, 29 May 2008 09:53:19 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: Komodo Dragon		</title>
+		<link>/blog/index.php/archives/296/comment-page-1#comment-201</link>
+
+		<dc:creator><![CDATA[Komodo Dragon]]></dc:creator>
+		<pubDate>Thu, 29 May 2008 09:53:19 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/296#comment-201</guid>
+
+					<description><![CDATA[I am going to be the odd one, and say Vista. Because Vista needs alot more work still!]]></description>
+			<content:encoded><![CDATA[<p>I am going to be the odd one, and say Vista. Because Vista needs alot more work still!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/296/comment-page-1#comment-191</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Wed, 28 May 2008 04:41:18 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/296#comment-191</guid>
+
+					<description><![CDATA[I&#039;d definitely agree that MS needs to work on Silverlight to give it a better chance. It&#039;s great that it&#039;s .NET, but it can&#039;t rest on that being the only reason someone would adopt it. It needs to be more competitive with Flex/Flash/AIR than it is today to truly succeed and not just be niche. Thanks for the comment neil.]]></description>
+			<content:encoded><![CDATA[<p>I&#8217;d definitely agree that MS needs to work on Silverlight to give it a better chance. It&#8217;s great that it&#8217;s .NET, but it can&#8217;t rest on that being the only reason someone would adopt it. It needs to be more competitive with Flex/Flash/AIR than it is today to truly succeed and not just be niche. Thanks for the comment neil.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: neilweber		</title>
+		<link>/blog/index.php/archives/296/comment-page-1#comment-186</link>
+
+		<dc:creator><![CDATA[neilweber]]></dc:creator>
+		<pubDate>Tue, 27 May 2008 16:29:05 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/296#comment-186</guid>
+
+					<description><![CDATA[Definitely Silverlight.  If one were creating a RIA *today*, the most conservative architectural choice is Flex/Flash/AIR.  Microsoft needs to enhance Silverlight to change that.]]></description>
+			<content:encoded><![CDATA[<p>Definitely Silverlight.  If one were creating a RIA *today*, the most conservative architectural choice is Flex/Flash/AIR.  Microsoft needs to enhance Silverlight to change that.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

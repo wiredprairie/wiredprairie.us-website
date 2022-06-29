@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Converting a mapped drive letter to a network path using C#	</title>
+	<atom:link href="/blog/index.php/archives/22/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/22</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Mon, 18 Jun 2012 18:27:46 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/22/comment-page-1#comment-4593</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Mon, 18 Jun 2012 18:27:46 +0000</pubDate>
+		<guid isPermaLink="false">/blog/post.aspx?id=c7dc047f-e6c7-45e2-9303-532c8d6ad48c#comment-4593</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/22/comment-page-1#comment-4591&quot;&gt;Suggestor&lt;/a&gt;.
+
+While that&#039;s true it would be more correct, on Windows, it&#039;s hard coded in the .NET 4.0 framework to be a &quot;:&quot;. :)
+
+(And this call wouldn&#039;t make sense on anything but Windows with a mapped drive letter, so portability really isn&#039;t an issue).]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/22/comment-page-1#comment-4591">Suggestor</a>.</p>
+<p>While that&#8217;s true it would be more correct, on Windows, it&#8217;s hard coded in the .NET 4.0 framework to be a &#8220;:&#8221;. :)</p>
+<p>(And this call wouldn&#8217;t make sense on anything but Windows with a mapped drive letter, so portability really isn&#8217;t an issue).</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Suggestor		</title>
+		<link>/blog/index.php/archives/22/comment-page-1#comment-4591</link>
+
+		<dc:creator><![CDATA[Suggestor]]></dc:creator>
+		<pubDate>Mon, 18 Jun 2012 16:41:52 +0000</pubDate>
+		<guid isPermaLink="false">/blog/post.aspx?id=c7dc047f-e6c7-45e2-9303-532c8d6ad48c#comment-4591</guid>
+
+					<description><![CDATA[Should use this:
+
+IO.Path.VolumeSeparatorChar
+
+instead of a hard-coded &quot;:&quot;c]]></description>
+			<content:encoded><![CDATA[<p>Should use this:</p>
+<p>IO.Path.VolumeSeparatorChar</p>
+<p>instead of a hard-coded &#8220;:&#8221;c</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Michael		</title>
+		<link>/blog/index.php/archives/22/comment-page-1#comment-4201</link>
+
+		<dc:creator><![CDATA[Michael]]></dc:creator>
+		<pubDate>Mon, 12 Mar 2012 17:02:25 +0000</pubDate>
+		<guid isPermaLink="false">/blog/post.aspx?id=c7dc047f-e6c7-45e2-9303-532c8d6ad48c#comment-4201</guid>
+
+					<description><![CDATA[Wouldn&#039;t it be easier to use the WNetGetUniversalName API?]]></description>
+			<content:encoded><![CDATA[<p>Wouldn&#8217;t it be easier to use the WNetGetUniversalName API?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Naz		</title>
+		<link>/blog/index.php/archives/22/comment-page-1#comment-3590</link>
+
+		<dc:creator><![CDATA[Naz]]></dc:creator>
+		<pubDate>Wed, 28 Sep 2011 11:43:30 +0000</pubDate>
+		<guid isPermaLink="false">/blog/post.aspx?id=c7dc047f-e6c7-45e2-9303-532c8d6ad48c#comment-3590</guid>
+
+					<description><![CDATA[Really Cool.. This is exactly what i was looking for.]]></description>
+			<content:encoded><![CDATA[<p>Really Cool.. This is exactly what i was looking for.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Matt S		</title>
+		<link>/blog/index.php/archives/22/comment-page-1#comment-3551</link>
+
+		<dc:creator><![CDATA[Matt S]]></dc:creator>
+		<pubDate>Fri, 12 Aug 2011 12:55:18 +0000</pubDate>
+		<guid isPermaLink="false">/blog/post.aspx?id=c7dc047f-e6c7-45e2-9303-532c8d6ad48c#comment-3551</guid>
+
+					<description><![CDATA[Perfect - exactly what I was looking for. Thank you and keep it up.]]></description>
+			<content:encoded><![CDATA[<p>Perfect &#8211; exactly what I was looking for. Thank you and keep it up.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Martin		</title>
+		<link>/blog/index.php/archives/22/comment-page-1#comment-3522</link>
+
+		<dc:creator><![CDATA[Martin]]></dc:creator>
+		<pubDate>Fri, 22 Jul 2011 12:15:52 +0000</pubDate>
+		<guid isPermaLink="false">/blog/post.aspx?id=c7dc047f-e6c7-45e2-9303-532c8d6ad48c#comment-3522</guid>
+
+					<description><![CDATA[Sweet, exactly what I was looking for. 
+
+Thanks for posting this it saved a bunch of my time.]]></description>
+			<content:encoded><![CDATA[<p>Sweet, exactly what I was looking for. </p>
+<p>Thanks for posting this it saved a bunch of my time.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Tony		</title>
+		<link>/blog/index.php/archives/22/comment-page-1#comment-3396</link>
+
+		<dc:creator><![CDATA[Tony]]></dc:creator>
+		<pubDate>Fri, 25 Feb 2011 01:33:31 +0000</pubDate>
+		<guid isPermaLink="false">/blog/post.aspx?id=c7dc047f-e6c7-45e2-9303-532c8d6ad48c#comment-3396</guid>
+
+					<description><![CDATA[your article was extremely helpful.  Thanks!]]></description>
+			<content:encoded><![CDATA[<p>your article was extremely helpful.  Thanks!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: John		</title>
+		<link>/blog/index.php/archives/22/comment-page-1#comment-2904</link>
+
+		<dc:creator><![CDATA[John]]></dc:creator>
+		<pubDate>Thu, 04 Feb 2010 21:09:05 +0000</pubDate>
+		<guid isPermaLink="false">/blog/post.aspx?id=c7dc047f-e6c7-45e2-9303-532c8d6ad48c#comment-2904</guid>
+
+					<description><![CDATA[wonderful!!! worked like a charm.]]></description>
+			<content:encoded><![CDATA[<p>wonderful!!! worked like a charm.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Alex		</title>
+		<link>/blog/index.php/archives/22/comment-page-1#comment-2869</link>
+
+		<dc:creator><![CDATA[Alex]]></dc:creator>
+		<pubDate>Tue, 29 Dec 2009 16:01:36 +0000</pubDate>
+		<guid isPermaLink="false">/blog/post.aspx?id=c7dc047f-e6c7-45e2-9303-532c8d6ad48c#comment-2869</guid>
+
+					<description><![CDATA[Thank You so much, It is wonderful]]></description>
+			<content:encoded><![CDATA[<p>Thank You so much, It is wonderful</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Robin		</title>
+		<link>/blog/index.php/archives/22/comment-page-1#comment-2844</link>
+
+		<dc:creator><![CDATA[Robin]]></dc:creator>
+		<pubDate>Mon, 30 Nov 2009 11:51:15 +0000</pubDate>
+		<guid isPermaLink="false">/blog/post.aspx?id=c7dc047f-e6c7-45e2-9303-532c8d6ad48c#comment-2844</guid>
+
+					<description><![CDATA[worked a treat! thanks for that]]></description>
+			<content:encoded><![CDATA[<p>worked a treat! thanks for that</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

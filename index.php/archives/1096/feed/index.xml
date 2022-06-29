@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Prudential User Experience Fail	</title>
+	<atom:link href="/blog/index.php/archives/1096/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/1096</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Wed, 07 Jul 2010 12:45:04 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: Suketu		</title>
+		<link>/blog/index.php/archives/1096/comment-page-1#comment-3109</link>
+
+		<dc:creator><![CDATA[Suketu]]></dc:creator>
+		<pubDate>Wed, 07 Jul 2010 12:45:04 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/1096#comment-3109</guid>
+
+					<description><![CDATA[this is very bad system planning as ....what will happen if the person who is adding beneficiary details now ...and he has finished one....then for second he has to wait for one day....and if he/she dies in between that time, then what about that second beneficiary?]]></description>
+			<content:encoded><![CDATA[<p>this is very bad system planning as &#8230;.what will happen if the person who is adding beneficiary details now &#8230;and he has finished one&#8230;.then for second he has to wait for one day&#8230;.and if he/she dies in between that time, then what about that second beneficiary?</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

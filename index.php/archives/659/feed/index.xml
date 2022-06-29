@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: ColorConverter for Silverlight	</title>
+	<atom:link href="/blog/index.php/archives/659/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/659</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Tue, 13 Apr 2010 05:12:29 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/659/comment-page-1#comment-3003</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Tue, 13 Apr 2010 05:12:29 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/659#comment-3003</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/659/comment-page-1#comment-3002&quot;&gt;Franck&lt;/a&gt;.
+
+8 )]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/659/comment-page-1#comment-3002">Franck</a>.</p>
+<p>8 )</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Franck		</title>
+		<link>/blog/index.php/archives/659/comment-page-1#comment-3002</link>
+
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+		<pubDate>Tue, 13 Apr 2010 00:21:12 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/659#comment-3002</guid>
+
+					<description><![CDATA[hey whats the code behind the smiley face with the shades on  ???]]></description>
+			<content:encoded><![CDATA[<p>hey whats the code behind the smiley face with the shades on  ???</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: lex		</title>
+		<link>/blog/index.php/archives/659/comment-page-1#comment-2702</link>
+
+		<dc:creator><![CDATA[lex]]></dc:creator>
+		<pubDate>Tue, 04 Aug 2009 15:25:56 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/659#comment-2702</guid>
+
+					<description><![CDATA[dude you rock, thanks]]></description>
+			<content:encoded><![CDATA[<p>dude you rock, thanks</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: WiredPrairie - Silverlight Stars/Sparkles		</title>
+		<link>/blog/index.php/archives/659/comment-page-1#comment-2148</link>
+
+		<dc:creator><![CDATA[WiredPrairie - Silverlight Stars/Sparkles]]></dc:creator>
+		<pubDate>Mon, 19 Jan 2009 02:55:46 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/659#comment-2148</guid>
+
+					<description><![CDATA[[...] also used my ToColorFromHex function liberally (I used Kuler to make some colors and grabbed their hex values and directly [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] also used my ToColorFromHex function liberally (I used Kuler to make some colors and grabbed their hex values and directly [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Knockout.JS: Dictionary/Index and ObservableArray, Part 2	</title>
+	<atom:link href="/blog/index.php/archives/1565/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/1565</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Sat, 20 Oct 2012 21:36:05 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/1565/comment-page-1#comment-6422</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sat, 20 Oct 2012 21:36:05 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1565#comment-6422</guid>
+
+					<description><![CDATA[I&#039;ve never used the mapping plugin, so I can&#039;t say.]]></description>
+			<content:encoded><![CDATA[<p>I&#8217;ve never used the mapping plugin, so I can&#8217;t say.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/1565/comment-page-1#comment-6421</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sat, 20 Oct 2012 21:35:26 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1565#comment-6421</guid>
+
+					<description><![CDATA[The key doesn&#039;t &quot;need&quot; to be unwrapped technically. It works as is shown. Only if you&#039;re passing in something that&#039;s possibly an observable do you need to unwrap it. 
+
+It&#039;s a good suggestion if you&#039;re doing something a bit more complex. 
+
+I was not. :)]]></description>
+			<content:encoded><![CDATA[<p>The key doesn&#8217;t &#8220;need&#8221; to be unwrapped technically. It works as is shown. Only if you&#8217;re passing in something that&#8217;s possibly an observable do you need to unwrap it. </p>
+<p>It&#8217;s a good suggestion if you&#8217;re doing something a bit more complex. </p>
+<p>I was not. :)</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: DotNetWise		</title>
+		<link>/blog/index.php/archives/1565/comment-page-1#comment-6366</link>
+
+		<dc:creator><![CDATA[DotNetWise]]></dc:creator>
+		<pubDate>Sat, 20 Oct 2012 18:45:14 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1565#comment-6366</guid>
+
+					<description><![CDATA[Oh nice, it actually works!
+Just a small tweak: the key needs to be unwrapped as below
+if (keyName) {          // if there is a key
+   keys[ko.utils.unwrapObservable(v[keyName])] = v;    // use it
+			}]]></description>
+			<content:encoded><![CDATA[<p>Oh nice, it actually works!<br />
+Just a small tweak: the key needs to be unwrapped as below<br />
+if (keyName) {          // if there is a key<br />
+   keys[ko.utils.unwrapObservable(v[keyName])] = v;    // use it<br />
+			}</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: DotNetWise		</title>
+		<link>/blog/index.php/archives/1565/comment-page-1#comment-6358</link>
+
+		<dc:creator><![CDATA[DotNetWise]]></dc:creator>
+		<pubDate>Sat, 20 Oct 2012 18:24:26 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1565#comment-6358</guid>
+
+					<description><![CDATA[Intersting!
+How do you use it along with the mapping plugin?
+Without it, is pretty useless, if your model is complicated.
+
+Would be nice to be a parameter of the mapping object
+i.e. ko.mapping.fromJS(data, {
+withIndex: {
+key: true,
+time: true
+}
+});]]></description>
+			<content:encoded><![CDATA[<p>Intersting!<br />
+How do you use it along with the mapping plugin?<br />
+Without it, is pretty useless, if your model is complicated.</p>
+<p>Would be nice to be a parameter of the mapping object<br />
+i.e. ko.mapping.fromJS(data, {<br />
+withIndex: {<br />
+key: true,<br />
+time: true<br />
+}<br />
+});</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

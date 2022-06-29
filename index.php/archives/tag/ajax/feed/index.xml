@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>Ajax &#8211; WiredPrairie</title>
+	<atom:link href="/blog/index.php/archives/tag/ajax/feed" rel="self" type="application/rss+xml" />
+	<link>/blog</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Sun, 17 Jan 2010 18:26:54 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+<site xmlns="com-wordpress:feed-additions:1">193486638</site>	<item>
+		<title>Disabling automatic Sys.UI.Control attachment</title>
+		<link>/blog/index.php/archives/890</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sun, 17 Jan 2010 18:26:54 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[Ajax]]></category>
+		<category><![CDATA[ASP.NET]]></category>
+		<guid isPermaLink="false">/blog/index.php/archives/890</guid>
+
+					<description><![CDATA[If you’re using the Microsoft Ajax Library (learn), you may not always want to start the automatic “attach” process that takes place when the page loads. It’s easy to disable, but not yet documented any place I could find easily. &#60;script src=&#34;Scripts/MicrosoftAjax/Start.debug.js&#34; type=&#34;text/javascript&#34;&#62;&#60;/script&#62; &#60;script type=&#34;text/javascript&#34;&#62; var ajaxPath = &#34;&#34;; Sys.activateDom = false; All you must [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>If you’re using the Microsoft Ajax Library (<a href="http://www.asp.net/ajaxlibrary/learn.ashx" target="_blank">learn</a>), you may not always want to start the automatic “attach” process that takes place when the page loads. It’s easy to disable, but not yet documented any place I could find easily.</p>
+<pre class="code"><span style="color: blue">&lt;</span><span style="color: #a31515">script </span><span style="color: red">src</span><span style="color: blue">=&quot;Scripts/MicrosoftAjax/Start.debug.js&quot; </span><span style="color: red">type</span><span style="color: blue">=&quot;text/javascript&quot;&gt;&lt;/</span><span style="color: #a31515">script</span><span style="color: blue">&gt;
+&lt;</span><span style="color: #a31515">script </span><span style="color: red">type</span><span style="color: blue">=&quot;text/javascript&quot;&gt;
+
+    var </span>ajaxPath = <span style="color: #a31515">&quot;&quot;</span>;
+
+    Sys.activateDom = <span style="color: blue">false</span>;</pre>
+<p>All you must do is set <strong>Sys.activateDom</strong> to <strong>false</strong> as shown above (make sure this is set <strong>after</strong> the new Start.js JavaScript file loads, otherwise your code will crash when you try to set the Sys object before it has been properly constructed). </p>
+<p>Then, to begin the attach process, just call <strong>Sys.activateElements</strong>:</p>
+<pre class="code">Sys.activateElements(document.documentElement);</pre>
+<p>In the code line above, though I’ve specified that I want the entire HTML document activated, you could provide any element you want as a starting point (for example to optimize the use of the library and prevent unnecessary DOM searching for example).</p>
+<p>I’m adding the delay in some JavaScript code because I wanted to set up a few variables in advance of the attach occurring. I tend to write my JavaScript code in an object oriented fashion these days (using the prototype pattern), including code that is interacting with the DOM. In this case, I’ll create a class that represents the logic of the page rather than following the typical purely functional model that is done on many JavaScript pages. But, when using the “<strong>eval</strong>” syntax of the Microsoft Ajax library “{{ code }}”, occasionally, I’ll need to delay the <strong>eval</strong> or the page will crash. </p>
+<p>From my recent post on making a simple <a href="/blog/index.php/archives/885" target="_blank">command extension to the Microsoft Ajax library</a>, I wanted to make that more object oriented by referring to an instance of my class, rather than pointing directly to a function:</p>
+<pre class="code"><span style="color: blue">&lt;</span><span style="color: #a31515">body sys</span><span style="color: blue">:</span><span style="color: red">attach</span><span style="color: blue">=&quot;wpc&quot; 
+    </span><span style="color: #a31515">wpc</span><span style="color: blue">:</span><span style="color: red">onbubbleevent</span><span style="color: blue">=&quot;{{$view.onCommand}}&quot;  
+    </span><span style="color: #a31515">xmlns</span><span style="color: blue">:</span><span style="color: red">sys</span><span style="color: blue">=&quot;javascript:Sys&quot; </span><span style="color: #a31515">xmlns</span><span style="color: blue">:</span><span style="color: red">wpc</span><span style="color: blue">=&quot;javascript:WiredPrairie.Commanding&quot;&gt;
+</span></pre>
+<p><a href="http://11011.net/software/vspaste"></a></p>
+<p><strong>$view </strong>represents the instance of my page’s behavior. However, if the attach were to occur too early, this variable is not yet set. I’m using the slick <a href="http://www.asp.net/ajaxlibrary/HOW%20TO%20Load%20a%20Custom%20Script%20with%20Dependencies.ashx">script loading functionality</a> of the ajax library, specifying the various JavaScript libraries and their dependencies, including my page’s behavior. It’s not until that JavaScript code is loaded that the code can create an instance – and that could be AFTER the page has already done the attach logic. The attach happens before <strong>Sys.onReady</strong> for example. (Sys.<strong>onDomReady</strong> happens before <strong>onReady</strong>, but not all JavaScript files may have been downloaded).</p>
+<pre class="code">Sys.onReady(<span style="color: blue">function</span>() {
+    $view = <span style="color: blue">new </span>WiredPrairie.MainView();
+    
+    Sys.activateElements(document.documentElement);</pre>
+<p><a href="http://11011.net/software/vspaste"></a></p>
+<p>When using the <strong>sys:attach</strong> attribute, note that the attach and instantiation process happens <strong>before</strong> any code you’ve specified in <strong>onReady</strong> is executed (Microsoft currently uses the same method for determining when everything is ready by adding a function call to <strong>onReady</strong> – but their call is first in the queue). </p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">890</post-id>	</item>
+		<item>
+		<title>Microsoft Ajax Library Declarative Command Alternatives</title>
+		<link>/blog/index.php/archives/885</link>
+					<comments>/blog/index.php/archives/885#comments</comments>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Mon, 04 Jan 2010 03:15:08 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[Ajax]]></category>
+		<guid isPermaLink="false">/blog/index.php/archives/885</guid>
+
+					<description><![CDATA[There may be another way to accomplish this, but I wanted to have a simple commanding system in the Microsoft Ajax Library which worked outside of the templates. After a number of false starts and frustration brought about by very limited documentation, I discovered a reasonable implementation. I created a script file, “Commanding.js” (in a [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>There may be another way to accomplish this, but I wanted to have a simple commanding system in the <a href="http://www.asp.net/ajaxlibrary/">Microsoft Ajax Library</a> which worked outside of the templates. </p>
+<p>After a number of false starts and frustration brought about by very limited documentation, I discovered a reasonable implementation.</p>
+<p>I created a script file, “Commanding.js” (in a Scripts folder):</p>
+<pre class="code"><span style="color: green">/// &lt;reference name=&quot;MicrosoftAjax.js&quot;/&gt;
+
+</span>Type.registerNamespace(<span style="color: #a31515">&quot;WiredPrairie&quot;</span>);
+
+WiredPrairie.Commanding = <span style="color: blue">function</span>(element) {
+    WiredPrairie.Commanding.initializeBase(<span style="color: blue">this</span>, [element]);
+}
+
+WiredPrairie.Commanding.prototype = {
+    initialize: <span style="color: blue">function</span>() {
+        WiredPrairie.Commanding.callBaseMethod(<span style="color: blue">this</span>, <span style="color: #a31515">'initialize'</span>);
+
+        <span style="color: green">// Add custom initialization here
+    </span>},
+    dispose: <span style="color: blue">function</span>() {
+        <span style="color: green">//Add custom dispose actions here
+        </span>WiredPrairie.Commanding.callBaseMethod(<span style="color: blue">this</span>, <span style="color: #a31515">'dispose'</span>);
+    }
+}
+
+WiredPrairie.Commanding.registerClass(<span style="color: #a31515">'WiredPrairie.Commanding'</span>, Sys.UI.Control);
+
+<span style="color: blue">if </span>(<span style="color: blue">typeof </span>(Sys) !== <span style="color: #a31515">'undefined'</span>) Sys.Application.notifyScriptLoaded();</pre>
+<p><a href="http://11011.net/software/vspaste"></a></p>
+<p>This is just a basic JavaScript class, with the default implementation provided by the Ajax Client Control template in Visual Studio 2008. The reason this is needed is that Controls all support a special event onBubbleEvent that is needed by commands when they’re raised.</p>
+<p>In the body of the HTML, I attached an instance of the “WiredPrairie.Commanding” class to the body. Next, I attached a JavaScript function to the onbubbleevent (wpc:onbubbleevent, remember that all attributes need to be all lowercase). Here, I’ve used the special {{ }} syntax to indicate I want JavaScript code to execute when the event is raised. </p>
+<pre class="code"><span style="color: blue">&lt;</span><span style="color: #a31515">body xmlns</span><span style="color: blue">:</span><span style="color: red">sys</span><span style="color: blue">=&quot;javascript:Sys&quot; 
+    </span><span style="color: #a31515">xmlns</span><span style="color: blue">:</span><span style="color: red">wpc</span><span style="color: blue">=&quot;javascript:WiredPrairie.Commanding&quot; 
+    </span><span style="color: #a31515">sys</span><span style="color: blue">:</span><span style="color: red">attach</span><span style="color: blue">=&quot;wpc&quot; 
+    </span><span style="color: #a31515">wpc</span><span style="color: blue">:</span><span style="color: red">onbubbleevent</span><span style="color: blue">=&quot;{{onCommand}}&quot; &gt;
+    &lt;</span><span style="color: #a31515">div </span><span style="color: blue">&gt;
+        &lt;</span><span style="color: #a31515">button sys</span><span style="color: blue">:</span><span style="color: red">command</span><span style="color: blue">=&quot;startRunningCommand&quot; </span><span style="color: #a31515">sys</span><span style="color: blue">:</span><span style="color: red">commandargument</span><span style="color: blue">=&quot;iargueaboutit&quot;&gt;</span>Run<span style="color: blue">&lt;/</span><span style="color: #a31515">button</span><span style="color: blue">&gt;
+    &lt;/</span><span style="color: #a31515">div</span><span style="color: blue">&gt;
+&lt;/</span><span style="color: #a31515">body</span><span style="color: blue">&gt;
+</span></pre>
+<p><a href="http://11011.net/software/vspaste"></a></p>
+<p>I needed my JavaScript WiredPrairie.Commanding class to load and run at the right time on the page, so I’ve used the new loader classes in the Ajax library.</p>
+<pre class="code">Sys.loader.defineScripts(<span style="color: blue">null</span>, [
+{
+    name: <span style="color: #a31515">&quot;Commanding&quot;
+    </span>,releaseUrl: <span style="color: #a31515">&quot;Scripts/Commanding.js&quot;
+    </span>,debugUrl: <span style="color: #a31515">&quot;Scripts/Commanding.js&quot;
+    </span>,dependencies: [<span style="color: #a31515">&quot;ComponentModel&quot;</span>]
+ }
+ ]);</pre>
+<p><a href="http://11011.net/software/vspaste"></a></p>
+<p>First, I needed to declare this new script file and any dependencies. Since I don’t yet have a minified version, I’ve just specified the same file for the releaseUrl and the debugUrl. For the dependencies property, I looked through a few source files to discover that the “ComponentModel” key included Sys.UI.Control, which my class depends on to be created, so I added that here (hopefully this will be documented at some point).</p>
+<p>Next, I added code to indicate to the loader which scripts were necessary and let it determine the best way to load them:</p>
+<pre class="code">Sys.<span style="color: blue">require</span>([Sys.components.dataView, Sys.scripts.jQuery,<br /> Sys.scripts.Commanding]);</pre>
+<p><a href="http://11011.net/software/vspaste"></a></p>
+<p>Here, you see the “Commanding” key is added to a special namespace, “Sys.scripts.”</p>
+<p>In the new onReady event which is raised when the DOM and scripts have been loaded, I’ve added code to activate the control class I wrote:</p>
+<pre class="code">Sys.onReady(<span style="color: blue">function</span>() {
+    Sys.activateElements(document.documentElement);    
+});</pre>
+<p><a href="http://11011.net/software/vspaste"></a></p>
+<p>Finally, I wired up that event declared above in the onbubbleevent attribute on the body element.</p>
+<pre class="code"><span style="color: blue">function </span>onCommand(sender, args) {
+    <span style="color: blue">if </span>(<span style="color: blue">typeof </span>(args) !== <span style="color: #a31515">&quot;undefined&quot;</span>) {
+        <span style="color: blue">var </span>commandName = args.get_commandName();
+        <span style="color: blue">var </span>commandArgument = args.get_commandArgument();
+        alert(commandName + <span style="color: #a31515">&quot; &quot; </span>+ commandArgument);
+    }
+}</pre>
+<p><a href="http://11011.net/software/vspaste"></a></p>
+<p>OK, that’s cool, but you might want to raise a command without it being triggered by a control event (such as a click). So, I added a simple function to my Commanding class:</p>
+<pre class="code">WiredPrairie.Commanding.raiseCommand = <span style="color: blue">function</span>(sender, commandName, commandArgument, commandSource) {
+    <span style="color: blue">var </span>source = sender || document.body;
+    Sys.UI.DomElement.raiseBubbleEvent(source, <span style="color: blue">new </span>Sys.CommandEventArgs(commandName, commandArgument, commandSource));
+}
+
+<span style="color: blue">var </span>$sendCommand = WiredPrairie.Commanding.raiseCommand;</pre>
+<p><a href="http://11011.net/software/vspaste"></a></p>
+<p>Because of the way the raiseBubbleEvent works, it does depend on the source being set to a valid control/element (as raiseBubbleEvent walks through the parent chain until there aren’t any more parents) – in this case, I’ve defaulted to the body element.</p>
+<p>Finally, an enhancement to the test case above to demonstrate both receiving and sending a command:</p>
+<pre class="code"><span style="color: blue">function </span>onCommand(sender, args) {
+    <span style="color: blue">if </span>(<span style="color: blue">typeof </span>(args) !== <span style="color: #a31515">&quot;undefined&quot;</span>) {
+        <span style="color: blue">var </span>commandName = args.get_commandName();
+        <span style="color: blue">var </span>commandArgument = args.get_commandArgument();
+        <span style="color: blue">switch </span>(commandName) {
+            <span style="color: blue">case </span><span style="color: #a31515">&quot;startRunningCommand&quot;</span>:
+                $sendCommand(<span style="color: blue">null</span>, <span style="color: #a31515">&quot;alertCommand&quot;</span>, <span style="color: blue">new </span>Date().toLocaleTimeString(), <span style="color: blue">null</span>);
+                <span style="color: blue">break</span>;
+            <span style="color: blue">case </span><span style="color: #a31515">&quot;alertCommand&quot;</span>:
+                alert(commandArgument);
+                <span style="color: blue">break</span>;
+            <span style="color: blue">default</span>:
+                <span style="color: blue">break</span>;
+        }
+    }
+}</pre>
+<p><a href="http://11011.net/software/vspaste"></a></p>
+<p>One command just sends another command which displays an alert. It’s simple, but functional.</p>
+<p>Enjoy.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/blog/index.php/archives/885/feed</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">885</post-id>	</item>
+	</channel>
+</rss>

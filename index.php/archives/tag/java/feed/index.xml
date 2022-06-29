@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>Java &#8211; WiredPrairie</title>
+	<atom:link href="/blog/index.php/archives/tag/java/feed" rel="self" type="application/rss+xml" />
+	<link>/blog</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Mon, 10 Jan 2011 00:09:17 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+<site xmlns="com-wordpress:feed-additions:1">193486638</site>	<item>
+		<title>Making Android development a little more like Microsoft development</title>
+		<link>/blog/index.php/archives/1164</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Mon, 10 Jan 2011 00:05:53 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[Android]]></category>
+		<category><![CDATA[Java]]></category>
+		<guid isPermaLink="false">/blog/index.php/archives/1164</guid>
+
+					<description><![CDATA[By day, I mostly use Microsoft development tools, and have used them for YEARS. I’ve been experimenting with some Android development recently, and was annoyed by several missing handy tricks that Microsoft tools have done for years. So, I just coded one replacement. Commonly, in Microsoft platforms, when you create a user interface element (from [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><img loading="lazy" style="border-bottom: ; border-left: ; margin: ; padding-left: ; padding-right: ; display: inline; border-top: ; border-right: ; padding-top: " title="Android train, now boarding!" alt="All aboard the Android train!" src="/blog/wp-content/uploads/2011/01/image.png" width="451" height="308" /></p>
+<p>By day, I mostly use Microsoft development tools, and have used them for YEARS. I’ve been experimenting with some Android development recently, and was annoyed by several missing handy tricks that Microsoft tools have done for years. So, I just coded one replacement.</p>
+<p>Commonly, in Microsoft platforms, when you create a user interface element (from VB3 to WPF and Silverlight) and give it an ID/Name, that named element is readily available in code-behind, without any extra effort. <strong>Nice</strong>.</p>
+<p>Android development, apparently, is lacking that feature. So, I created a simple pattern to make it convenient for me. Imagine the following UI element defined in an Android Layout:</p>
+<pre class="code"><span style="color: teal">&lt;</span><span style="color: #3f7f7f">Button </span><span style="color: #7f007f">android:id</span>=<span style="color: #2a00ff">&quot;@+id/btnSend&quot; </span><span style="color: #7f007f">android:layout_width</span>=<span style="color: #2a00ff">&quot;fill_parent&quot;
+     </span><span style="color: #7f007f">android:layout_alignParentBottom</span>=<span style="color: #2a00ff">&quot;true&quot; 
+    </span><span style="color: #7f007f">android:layout_height</span>=<span style="color: #2a00ff">&quot;wrap_content&quot; </span><span style="color: #7f007f">android:text</span>=<span style="color: #2a00ff">&quot;@string/send_message&quot; </span><span style="color: teal">/&gt;</span></pre>
+<p>As you can see, the id of the Button is btnSend. </p>
+<p>Normally, in the backing Java class if you wanted to access that UI element, you’d add code like this:</p>
+<pre class="code"><span style="background: #e8f2fe">Button btn = (Button) findViewById(R.id.</span><span style="background: #e8f2fe; color: #0000c0">btnSend</span><span style="background: #e8f2fe">);</span></pre>
+<p>Simple, but annoying for commonly accessed UI elements (or Views).</p>
+<p>I’m not the best Java coder by any means as I’ve not done it full time for more than 10 years and my knowledge of any recent Java innovations is zero. So, take this code with a pinch of skepticism.</p>
+<pre class="code"><span style="color: #7f0055">private void </span>autoWire() {
+    Field[] privateFields = <span style="color: #7f0055">this</span>.getClass().getDeclaredFields();
+            
+    <span style="color: #7f0055">for</span>(Field f : privateFields){
+        f.setAccessible(<span style="color: #7f0055">true</span>);            
+        <span style="color: #646464">ViewId </span>viewId = f.getAnnotation(<span style="color: #646464">ViewId</span>.<span style="color: #7f0055">class</span>);
+        <span style="color: #7f0055">if </span>(viewId != <span style="color: #7f0055">null </span>){
+            <span style="color: #7f0055">try </span>{
+                f.set(<span style="color: #7f0055">this</span>, (Object)<span style="color: #7f0055">this</span>.findViewById(viewId.Id()));
+            } <span style="color: #7f0055">catch </span>(IllegalArgumentException e) {
+                <span style="color: #3f7f5f">// </span><span style="color: #7f9fbf">TODO </span><span style="color: #3f7f5f">Auto-generated catch block
+                </span>e.printStackTrace();
+            } <span style="color: #7f0055">catch </span>(IllegalAccessException e) {
+                <span style="color: #3f7f5f">// </span><span style="color: #7f9fbf">TODO </span><span style="color: #3f7f5f">Auto-generated catch block
+                </span>e.printStackTrace();
+            }
+        }
+    }
+}</pre>
+<p>Now, in the onCreate method that is typical of an Android Activity, I call the method above, <strong>autoWire</strong>.</p>
+<p>This Java code looks at the current class for declarations like this:</p>
+<pre class="code"><span style="color: #646464">@ViewId</span>(Id=R.id.<span style="color: #0000c0">btnSend</span>)
+<span style="color: #7f0055">private </span>Button <span style="color: #0000c0">btnSend</span>;</pre>
+<p>It’s just an annotation (ViewId), followed by the Id of the control. </p>
+<p>The annotation definition is:</p>
+<pre class="code"><span style="color: #7f0055">import </span>java.lang.annotation.ElementType;
+<span style="color: #7f0055">import </span>java.lang.annotation.Retention;
+<span style="color: #7f0055">import </span>java.lang.annotation.RetentionPolicy;
+<span style="color: #7f0055">import </span>java.lang.annotation.Target;
+
+<span style="color: #3f5fbf">/**
+ * </span><span style="color: #7f9fbf">@author </span><span style="color: #3f5fbf">WiredPrairie
+ *
+ */
+</span><span style="color: #646464">@Retention</span>(RetentionPolicy.<span style="color: #0000c0">RUNTIME</span>)
+<span style="color: #646464">@Target</span>(ElementType.<span style="color: #0000c0">FIELD</span>)
+<span style="color: #7f0055">public @interface </span><span style="color: #646464">ViewId </span>{
+    <span style="color: #7f0055">int </span>Id();
+}</pre>
+<p>Using autoWire, btnSend is automatically set and ready to rock and roll. </p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1164</post-id>	</item>
+	</channel>
+</rss>

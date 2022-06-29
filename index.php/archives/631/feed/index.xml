@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Netflix lays off people because Silverlight works&#8230;	</title>
+	<atom:link href="/blog/index.php/archives/631/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/631</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Mon, 22 Dec 2008 23:32:29 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: smackfoo		</title>
+		<link>/blog/index.php/archives/631/comment-page-1#comment-2091</link>
+
+		<dc:creator><![CDATA[smackfoo]]></dc:creator>
+		<pubDate>Mon, 22 Dec 2008 23:32:29 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/631#comment-2091</guid>
+
+					<description><![CDATA[Nice, especially the “pernicious malware.” tool. And yes, you shouldn&#039;t have read the comments.
+
+At least they tried [apparently] to absorb some of the folks in other groups. But, too bad that technology has to make jobs obsolete, especially in this economy.]]></description>
+			<content:encoded><![CDATA[<p>Nice, especially the “pernicious malware.” tool. And yes, you shouldn&#8217;t have read the comments.</p>
+<p>At least they tried [apparently] to absorb some of the folks in other groups. But, too bad that technology has to make jobs obsolete, especially in this economy.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

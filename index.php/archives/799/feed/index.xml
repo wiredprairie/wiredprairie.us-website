@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Yet another interesting blog to read&#8230;	</title>
+	<atom:link href="/blog/index.php/archives/799/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/799</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Wed, 01 Jul 2009 08:37:17 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: SasyBoy		</title>
+		<link>/blog/index.php/archives/799/comment-page-1#comment-2686</link>
+
+		<dc:creator><![CDATA[SasyBoy]]></dc:creator>
+		<pubDate>Wed, 01 Jul 2009 08:37:17 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/799#comment-2686</guid>
+
+					<description><![CDATA[Much nicer thanks *thumbs up*]]></description>
+			<content:encoded><![CDATA[<p>Much nicer thanks *thumbs up*</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: SasyBoy		</title>
+		<link>/blog/index.php/archives/799/comment-page-1#comment-2667</link>
+
+		<dc:creator><![CDATA[SasyBoy]]></dc:creator>
+		<pubDate>Fri, 12 Jun 2009 08:26:10 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/799#comment-2667</guid>
+
+					<description><![CDATA[Those animated Greenhost banners littered throughout your site... well... if I had some tipex.]]></description>
+			<content:encoded><![CDATA[<p>Those animated Greenhost banners littered throughout your site&#8230; well&#8230; if I had some tipex.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Valid Trust Anchor?	</title>
+	<atom:link href="/blog/index.php/archives/906/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/906</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Wed, 22 Dec 2010 12:14:49 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/906/comment-page-1#comment-3310</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Wed, 22 Dec 2010 12:14:49 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/906#comment-3310</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/906/comment-page-1#comment-3300&quot;&gt;Doug Bentley&lt;/a&gt;.
+
+Nope.  Nothing. ]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/906/comment-page-1#comment-3300">Doug Bentley</a>.</p>
+<p>Nope.  Nothing. </p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Doug Bentley		</title>
+		<link>/blog/index.php/archives/906/comment-page-1#comment-3300</link>
+
+		<dc:creator><![CDATA[Doug Bentley]]></dc:creator>
+		<pubDate>Mon, 20 Dec 2010 21:17:43 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/906#comment-3300</guid>
+
+					<description><![CDATA[Did you ever find the answer to tis?]]></description>
+			<content:encoded><![CDATA[<p>Did you ever find the answer to tis?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/906/comment-page-1#comment-3130</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Thu, 05 Aug 2010 01:17:12 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/906#comment-3130</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/906/comment-page-1#comment-3125&quot;&gt;Windows7User&lt;/a&gt;.
+
+@Windows7User == this wasn&#039;t the problem I was having (as I commented on SuperUser).]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/906/comment-page-1#comment-3125">Windows7User</a>.</p>
+<p>@Windows7User == this wasn&#8217;t the problem I was having (as I commented on SuperUser).</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Windows7User		</title>
+		<link>/blog/index.php/archives/906/comment-page-1#comment-3125</link>
+
+		<dc:creator><![CDATA[Windows7User]]></dc:creator>
+		<pubDate>Sun, 25 Jul 2010 03:11:40 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/906#comment-3125</guid>
+
+					<description><![CDATA[Posted this to your other posting as well:
+http://superuser.com/questions/116541/what-is-a-valid-trust-anchor-in-windows-7-relating-to-wifi/167360#167360
+
+I ran across the same issue.  Found the answer.
+
+1. Go to Control Panel &#062; Network and Internet &#062; Manage Wireless Networks.
+
+2. Open the wireless network.  Or, click the &quot;Add&quot; button to create a new network, then open it.
+
+3. The Wireless Network Properties window appears.  Click the Security tab.
+
+4. Under &quot;Choose a network authentication method&quot;, select &quot;Microsoft: Smart Card or other certificate&quot;.  I assume this is already selected.
+
+5. Click the &quot;Settings&quot; button.
+
+6. The &quot;Smart Card or other Certificate Properties&quot; window appears.
+
+7. Here is the answer.  Under the &quot;Trusted Root Certification Authorities&quot; list, you have to manually select the Root CA of your company.  By default, these are all blank.  That is why the warning message appears the first time if you do not select your company&#039;s Root CA.  If you connect despite the warning, then your company&#039;s Root CA is now selected, and you no longer get the warning on subsequent connections.  So, to avoid the warning, just select this box when you set up the network, before you connect for the first time.
+
+8. If you do not see your company&#039;s Root CA here, that is likely due to the fact that by default, double clicking your certificate to install it probably puts it under the &quot;Intermediate Certification Authorities&quot; tab.  You need to select the &quot;Trusted Root Certification Authorities&quot; tab instead.  You can see where certificates go under: Internet Explorer &#062; Internet Options &#062; Content &#062; Certificates]]></description>
+			<content:encoded><![CDATA[<p>Posted this to your other posting as well:<br />
+<a href="http://superuser.com/questions/116541/what-is-a-valid-trust-anchor-in-windows-7-relating-to-wifi/167360#167360" rel="nofollow ugc">http://superuser.com/questions/116541/what-is-a-valid-trust-anchor-in-windows-7-relating-to-wifi/167360#167360</a></p>
+<p>I ran across the same issue.  Found the answer.</p>
+<p>1. Go to Control Panel &gt; Network and Internet &gt; Manage Wireless Networks.</p>
+<p>2. Open the wireless network.  Or, click the &#8220;Add&#8221; button to create a new network, then open it.</p>
+<p>3. The Wireless Network Properties window appears.  Click the Security tab.</p>
+<p>4. Under &#8220;Choose a network authentication method&#8221;, select &#8220;Microsoft: Smart Card or other certificate&#8221;.  I assume this is already selected.</p>
+<p>5. Click the &#8220;Settings&#8221; button.</p>
+<p>6. The &#8220;Smart Card or other Certificate Properties&#8221; window appears.</p>
+<p>7. Here is the answer.  Under the &#8220;Trusted Root Certification Authorities&#8221; list, you have to manually select the Root CA of your company.  By default, these are all blank.  That is why the warning message appears the first time if you do not select your company&#8217;s Root CA.  If you connect despite the warning, then your company&#8217;s Root CA is now selected, and you no longer get the warning on subsequent connections.  So, to avoid the warning, just select this box when you set up the network, before you connect for the first time.</p>
+<p>8. If you do not see your company&#8217;s Root CA here, that is likely due to the fact that by default, double clicking your certificate to install it probably puts it under the &#8220;Intermediate Certification Authorities&#8221; tab.  You need to select the &#8220;Trusted Root Certification Authorities&#8221; tab instead.  You can see where certificates go under: Internet Explorer &gt; Internet Options &gt; Content &gt; Certificates</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

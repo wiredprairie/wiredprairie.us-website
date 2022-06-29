@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Nest Update #12: Software at 3.0 with New Features	</title>
+	<atom:link href="/blog/index.php/archives/1749/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/1749</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Wed, 08 May 2013 14:47:34 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/1749/comment-page-1#comment-24057</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Wed, 08 May 2013 14:47:34 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1749#comment-24057</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1749/comment-page-1#comment-24055&quot;&gt;Don&lt;/a&gt;.
+
+I haven&#039;t checked. No one has opened any issues on GitHub for the NodeJS wrapper. Unless they force users to upgrade mobile clients or use some other trick, in theory, it should still work.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/1749/comment-page-1#comment-24055">Don</a>.</p>
+<p>I haven&#8217;t checked. No one has opened any issues on GitHub for the NodeJS wrapper. Unless they force users to upgrade mobile clients or use some other trick, in theory, it should still work.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Don		</title>
+		<link>/blog/index.php/archives/1749/comment-page-1#comment-24055</link>
+
+		<dc:creator><![CDATA[Don]]></dc:creator>
+		<pubDate>Wed, 08 May 2013 14:34:50 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1749#comment-24055</guid>
+
+					<description><![CDATA[Has the API changed as a result of the most recent software update (Late April/Early May 2013) ????]]></description>
+			<content:encoded><![CDATA[<p>Has the API changed as a result of the most recent software update (Late April/Early May 2013) ????</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/1749/comment-page-1#comment-23998</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Wed, 01 May 2013 12:20:54 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1749#comment-23998</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1749/comment-page-1#comment-23993&quot;&gt;Alex&lt;/a&gt;.
+
+No, it&#039;s not available in any general location that I&#039;m aware of. You called Support and they don&#039;t answer?]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/1749/comment-page-1#comment-23993">Alex</a>.</p>
+<p>No, it&#8217;s not available in any general location that I&#8217;m aware of. You called Support and they don&#8217;t answer?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Alex		</title>
+		<link>/blog/index.php/archives/1749/comment-page-1#comment-23993</link>
+
+		<dc:creator><![CDATA[Alex]]></dc:creator>
+		<pubDate>Wed, 01 May 2013 02:42:32 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1749#comment-23993</guid>
+
+					<description><![CDATA[for some reason they do not answer me. So it is impossible to download file somewhere online? Thanx]]></description>
+			<content:encoded><![CDATA[<p>for some reason they do not answer me. So it is impossible to download file somewhere online? Thanx</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/1749/comment-page-1#comment-23991</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Wed, 01 May 2013 01:53:00 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1749#comment-23991</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1749/comment-page-1#comment-23990&quot;&gt;Alex&lt;/a&gt;.
+
+Alex -- I think if you call support, they can provide it.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/1749/comment-page-1#comment-23990">Alex</a>.</p>
+<p>Alex &#8212; I think if you call support, they can provide it.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Alex		</title>
+		<link>/blog/index.php/archives/1749/comment-page-1#comment-23990</link>
+
+		<dc:creator><![CDATA[Alex]]></dc:creator>
+		<pubDate>Wed, 01 May 2013 01:51:04 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1749#comment-23990</guid>
+
+					<description><![CDATA[Hi Aaron, may be you could help me.
+I need to install firmware on my Nest thermostat using usb, is it possible
+to download somewhere firmware file? Thanx]]></description>
+			<content:encoded><![CDATA[<p>Hi Aaron, may be you could help me.<br />
+I need to install firmware on my Nest thermostat using usb, is it possible<br />
+to download somewhere firmware file? Thanx</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/1749/comment-page-1#comment-22368</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Thu, 14 Mar 2013 17:16:01 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1749#comment-22368</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1749/comment-page-1#comment-22367&quot;&gt;William&lt;/a&gt;.
+
+Are you asking about installing it from scratch somehow (rather than just a patch)?]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/1749/comment-page-1#comment-22367">William</a>.</p>
+<p>Are you asking about installing it from scratch somehow (rather than just a patch)?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: William		</title>
+		<link>/blog/index.php/archives/1749/comment-page-1#comment-22367</link>
+
+		<dc:creator><![CDATA[William]]></dc:creator>
+		<pubDate>Thu, 14 Mar 2013 17:06:32 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1749#comment-22367</guid>
+
+					<description><![CDATA[Hi there, I followed your blog posts quite some time and consider a must read. Maybe you can help with this one: Do you know how to install software manually for the Nest through the USB cable. There are packages on http://www.nest.com/ca/legal/compliance/ that look like linux system files. Can I download those packages to my PC and install then through USB in my Nest? FYI: I received the Nest for free (can&#039;t disclose why and for what because of leagal reasons, sorry about that) and the tech guys taking care of my buggy Nest are slow to respond or maybe overworked =). I don&#039;t care about messing up the Nest as it is already messed up LOL. Or is it too complicated too accomplish that? I am not a programmer BTW. Looking forward to your feedack!]]></description>
+			<content:encoded><![CDATA[<p>Hi there, I followed your blog posts quite some time and consider a must read. Maybe you can help with this one: Do you know how to install software manually for the Nest through the USB cable. There are packages on <a href="http://www.nest.com/ca/legal/compliance/" rel="nofollow ugc">http://www.nest.com/ca/legal/compliance/</a> that look like linux system files. Can I download those packages to my PC and install then through USB in my Nest? FYI: I received the Nest for free (can&#8217;t disclose why and for what because of leagal reasons, sorry about that) and the tech guys taking care of my buggy Nest are slow to respond or maybe overworked =). I don&#8217;t care about messing up the Nest as it is already messed up LOL. Or is it too complicated too accomplish that? I am not a programmer BTW. Looking forward to your feedack!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/1749/comment-page-1#comment-21386</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Tue, 05 Feb 2013 21:38:50 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1749#comment-21386</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1749/comment-page-1#comment-21381&quot;&gt;matt howard&lt;/a&gt;.
+
+The rumor you heard is absolutely not true if you&#039;re using a traditional HVAC system. There are some differences if you use a geo-thermal system in terms of recovery time, etc. I don&#039;t know about other types of systems other than forced air. It&#039;s common to recommend people set back their thermostats at night more than 5 degrees. 
+
+Every winter night, we set our thermostat back 10 degrees for 8 hours.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/1749/comment-page-1#comment-21381">matt howard</a>.</p>
+<p>The rumor you heard is absolutely not true if you&#8217;re using a traditional HVAC system. There are some differences if you use a geo-thermal system in terms of recovery time, etc. I don&#8217;t know about other types of systems other than forced air. It&#8217;s common to recommend people set back their thermostats at night more than 5 degrees. </p>
+<p>Every winter night, we set our thermostat back 10 degrees for 8 hours.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: matt howard		</title>
+		<link>/blog/index.php/archives/1749/comment-page-1#comment-21381</link>
+
+		<dc:creator><![CDATA[matt howard]]></dc:creator>
+		<pubDate>Tue, 05 Feb 2013 18:47:53 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1749#comment-21381</guid>
+
+					<description><![CDATA[Aaron,
+
+I&#039;m just stopping in to thank you for your blog. I received my nest 2.0 a couple months ago and truly love it. Lord knows I would have ended up with the 1.0 version with all its headaches if it were not for you!
+
+Heard something that was alarming the other day, have you ever heard that it is bad for your furnace if you keep it off all day and then turn it on where it needs to catch up by more than 5 degrees?
+
+Thanks again!]]></description>
+			<content:encoded><![CDATA[<p>Aaron,</p>
+<p>I&#8217;m just stopping in to thank you for your blog. I received my nest 2.0 a couple months ago and truly love it. Lord knows I would have ended up with the 1.0 version with all its headaches if it were not for you!</p>
+<p>Heard something that was alarming the other day, have you ever heard that it is bad for your furnace if you keep it off all day and then turn it on where it needs to catch up by more than 5 degrees?</p>
+<p>Thanks again!</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

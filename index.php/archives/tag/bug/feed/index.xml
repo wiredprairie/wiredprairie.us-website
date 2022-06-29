@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>bug &#8211; WiredPrairie</title>
+	<atom:link href="/blog/index.php/archives/tag/bug/feed" rel="self" type="application/rss+xml" />
+	<link>/blog</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Sun, 22 Mar 2009 17:00:17 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+<site xmlns="com-wordpress:feed-additions:1">193486638</site>	<item>
+		<title>How to set Internet Explorer 8 View Source Tool/Editor</title>
+		<link>/blog/index.php/archives/741</link>
+					<comments>/blog/index.php/archives/741#comments</comments>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sun, 22 Mar 2009 17:00:17 +0000</pubDate>
+				<category><![CDATA[General]]></category>
+		<category><![CDATA[Software]]></category>
+		<category><![CDATA[bug]]></category>
+		<category><![CDATA[IE8]]></category>
+		<category><![CDATA[View Source]]></category>
+		<guid isPermaLink="false">/blog/index.php/archives/741</guid>
+
+					<description><![CDATA[IE8 includes a new syntax highlighting View Source tool similar to what is available in other web browsers. However, you may not want to use the built-in, view-only tool. It’s easy to change. 1) Start Internet Explorer 8 if it isn’t already started. Within IE8, click the Tools menu, then select Developer Tools (or just [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>IE8 includes a new syntax highlighting View Source tool similar to what is available in other web browsers. However, you may not want to use the built-in, view-only tool. It’s easy to change.</p>
+<p>1)</p>
+<p>Start Internet Explorer 8 if it isn’t already started. Within IE8, click the <strong>Tools </strong>menu, then select <strong>Developer Tools </strong>(or just press [F12]).</p>
+<p><img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2009/03/image5.png" width="260" height="296" /> </p>
+<p>2) Then, from the developer tools, select <strong>File</strong>, <strong>Customize Internet Explorer View Source</strong>, and then <strong>Other…</strong>.</p>
+<p><img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2009/03/image6.png" width="450" height="152" /> </p>
+<p>A file open dialog is displayed. Navigate to the application you want to use … for example Visual Studio 2008:</p>
+<p><img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2009/03/image7.png" width="367" height="296" /> </p>
+<p>That’s it!</p>
+<p>&#160;</p>
+<p><strong>Note (how to completely reset Internet Explorer 8 View Source option)</strong>:</p>
+<p>When I first installed IE8, after having installed earlier builds of IE8 (beta and RC), I wasn’t able to reset the view source option back to the Default Viewer. (I’ve later noticed that even after selecting Default Viewer, it never actually leaves the Default Viewer option selected, even if that is the current option). After some registry hunting, you may need to clear out a registry setting that is incorrectly set.</p>
+<p> HKEY_CURRENT_USER\Software\Classes\VirtualStore\MACHINE\SOFTWARE\Microsoft\Internet Explorer\View Source Editor\Editor Name</p>
+<p><img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2009/03/image8.png" width="452" height="211" /> </p>
+<p>The Key’s (Default) value was set to Notepad on my machine, which would cause IE8 to always use Notepad to view source, even though I wanted to use the built-in view source option. I cleared the value (but did not remove the key) and everything began working as normal again. Using the menu option within the developer tool’s in IE8 does not appear to set this value correctly, even though it is used as a potential supplying key/value.</p>
+<p>Hope this helps someone!</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/blog/index.php/archives/741/feed</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">741</post-id>	</item>
+	</channel>
+</rss>

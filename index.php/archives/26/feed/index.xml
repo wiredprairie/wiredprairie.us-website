@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Blue Iris Security Camera DVR Software for Windows	</title>
+	<atom:link href="/blog/index.php/archives/26/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/26</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Fri, 30 Apr 2010 12:41:19 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/26/comment-page-1#comment-3027</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Fri, 30 Apr 2010 12:41:19 +0000</pubDate>
+		<guid isPermaLink="false">/blog/post.aspx?id=a316ee16-093f-4c64-8aac-e76782223a9c#comment-3027</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/26/comment-page-1#comment-3026&quot;&gt;Dave Puhlman&lt;/a&gt;.
+
+Yes, I have viewed the images from a mobile device -- iPod Touch and iPhone. It has a very simple web interface that updates the images frequently. You can view one camera or the grid of cameras. It&#039;s not fancy--it just works.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/26/comment-page-1#comment-3026">Dave Puhlman</a>.</p>
+<p>Yes, I have viewed the images from a mobile device &#8212; iPod Touch and iPhone. It has a very simple web interface that updates the images frequently. You can view one camera or the grid of cameras. It&#8217;s not fancy&#8211;it just works.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Dave Puhlman		</title>
+		<link>/blog/index.php/archives/26/comment-page-1#comment-3026</link>
+
+		<dc:creator><![CDATA[Dave Puhlman]]></dc:creator>
+		<pubDate>Fri, 30 Apr 2010 06:42:29 +0000</pubDate>
+		<guid isPermaLink="false">/blog/post.aspx?id=a316ee16-093f-4c64-8aac-e76782223a9c#comment-3026</guid>
+
+					<description><![CDATA[Have you had any experience viewing the images on a mobile device like an iPhone?]]></description>
+			<content:encoded><![CDATA[<p>Have you had any experience viewing the images on a mobile device like an iPhone?</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

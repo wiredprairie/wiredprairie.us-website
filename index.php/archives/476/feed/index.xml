@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Why is VMware Workstation 6.5RC1 a 544MB download?	</title>
+	<atom:link href="/blog/index.php/archives/476/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/476</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Mon, 13 Oct 2008 03:28:10 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: Toni		</title>
+		<link>/blog/index.php/archives/476/comment-page-1#comment-968</link>
+
+		<dc:creator><![CDATA[Toni]]></dc:creator>
+		<pubDate>Mon, 13 Oct 2008 03:28:10 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/476#comment-968</guid>
+
+					<description><![CDATA[Well, WS 6.5 for Windows is that big probably because it has both 32 and 64-bit versions in the same executable!
+
+You can see that the Linux versions  are around 380 MB as they have separate versions for 32 and 64-bit systems!]]></description>
+			<content:encoded><![CDATA[<p>Well, WS 6.5 for Windows is that big probably because it has both 32 and 64-bit versions in the same executable!</p>
+<p>You can see that the Linux versions  are around 380 MB as they have separate versions for 32 and 64-bit systems!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/476/comment-page-1#comment-656</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Thu, 28 Aug 2008 01:46:05 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/476#comment-656</guid>
+
+					<description><![CDATA[I suppose I should be thankful that it&#039;s not 2GB! :)]]></description>
+			<content:encoded><![CDATA[<p>I suppose I should be thankful that it&#8217;s not 2GB! :)</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Justme		</title>
+		<link>/blog/index.php/archives/476/comment-page-1#comment-655</link>
+
+		<dc:creator><![CDATA[Justme]]></dc:creator>
+		<pubDate>Thu, 28 Aug 2008 01:33:42 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/476#comment-655</guid>
+
+					<description><![CDATA[Welcome to software bloat....... 
+
+think about it.... if WS5 to WS6 was 6 times the size, so..... that means WS6.5 could have been upto 2GB! to stay inline. :)
+
+As its only a .5 release, lets say 3 times the size, so thats only 1630mb!
+
+But yes a nearly 10 times increase in download size from WS5 to WS6.5]]></description>
+			<content:encoded><![CDATA[<p>Welcome to software bloat&#8230;&#8230;. </p>
+<p>think about it&#8230;. if WS5 to WS6 was 6 times the size, so&#8230;.. that means WS6.5 could have been upto 2GB! to stay inline. :)</p>
+<p>As its only a .5 release, lets say 3 times the size, so thats only 1630mb!</p>
+<p>But yes a nearly 10 times increase in download size from WS5 to WS6.5</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

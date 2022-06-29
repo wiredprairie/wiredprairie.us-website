@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments for WiredPrairie	</title>
+	<atom:link href="/blog/index.php/comments/feed" rel="self" type="application/rss+xml" />
+	<link>/blog</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Mon, 23 Apr 2018 12:49:02 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		Comment on TS2688 with TypeScript, React Native, and MobX by Aaron		</title>
+		<link>/blog/index.php/archives/2241/comment-page-1#comment-63889</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sun, 11 Mar 2018 12:05:13 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=2241#comment-63889</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/2241/comment-page-1#comment-63888&quot;&gt;Michael Foltz&lt;/a&gt;.
+
+Thanks for the info.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/2241/comment-page-1#comment-63888">Michael Foltz</a>.</p>
+<p>Thanks for the info.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on TS2688 with TypeScript, React Native, and MobX by Michael Foltz		</title>
+		<link>/blog/index.php/archives/2241/comment-page-1#comment-63888</link>
+
+		<dc:creator><![CDATA[Michael Foltz]]></dc:creator>
+		<pubDate>Sun, 11 Mar 2018 03:39:14 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=2241#comment-63888</guid>
+
+					<description><![CDATA[looks like it&#039;s an issue with mobx 3.6.x  I ran into the same error and tried compiling on 3.5.1 and it doesn&#039;t throw the error.  I&#039;ve posted an issue in the mobx repo.  Thought I&#039;d give you a heads up.  
+
+cheers,
+foltz]]></description>
+			<content:encoded><![CDATA[<p>looks like it&#8217;s an issue with mobx 3.6.x  I ran into the same error and tried compiling on 3.5.1 and it doesn&#8217;t throw the error.  I&#8217;ve posted an issue in the mobx repo.  Thought I&#8217;d give you a heads up.  </p>
+<p>cheers,<br />
+foltz</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on Flutter Demo application linking to BoardGameGeek.Com&#8217;s Hot Game List by Aaron		</title>
+		<link>/blog/index.php/archives/2224/comment-page-1#comment-63887</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Thu, 01 Mar 2018 17:57:16 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=2224#comment-63887</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/2224/comment-page-1#comment-63886&quot;&gt;Michael Thomsen&lt;/a&gt;.
+
+Thanks for the comment Michael and suggestion. It&#039;s better, but I still find it too noisy and it takes too much vertical space. Lines starting with child: or children take away the focus of the type of child or children.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/2224/comment-page-1#comment-63886">Michael Thomsen</a>.</p>
+<p>Thanks for the comment Michael and suggestion. It&#8217;s better, but I still find it too noisy and it takes too much vertical space. Lines starting with child: or children take away the focus of the type of child or children.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on Flutter Demo application linking to BoardGameGeek.Com&#8217;s Hot Game List by Michael Thomsen		</title>
+		<link>/blog/index.php/archives/2224/comment-page-1#comment-63886</link>
+
+		<dc:creator><![CDATA[Michael Thomsen]]></dc:creator>
+		<pubDate>Thu, 01 Mar 2018 14:10:30 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=2224#comment-63886</guid>
+
+					<description><![CDATA[Hi, Flutter team member here just offering a few comments.
+
+First of all, thanks for the write up. We really do appreciate feedback!
+
+About the formatting concerns, are you aware of how trailing commas affect automatic formatting? See the details here: https://flutter.io/formatting/#using-trailing-commas
+
+I would also recommend splitting long build methods using some local variables. 
+
+Finally, we are working on support for optional new/const (a new feature in Dart 2).
+
+When I combine these three techniques, I get this (which was auto formatted):
+https://gist.github.com/mit-mit/dccc56a94faf49a5070eee09f19e6865
+
+WDYT?]]></description>
+			<content:encoded><![CDATA[<p>Hi, Flutter team member here just offering a few comments.</p>
+<p>First of all, thanks for the write up. We really do appreciate feedback!</p>
+<p>About the formatting concerns, are you aware of how trailing commas affect automatic formatting? See the details here: <a href="https://flutter.io/formatting/#using-trailing-commas" rel="nofollow ugc">https://flutter.io/formatting/#using-trailing-commas</a></p>
+<p>I would also recommend splitting long build methods using some local variables. </p>
+<p>Finally, we are working on support for optional new/const (a new feature in Dart 2).</p>
+<p>When I combine these three techniques, I get this (which was auto formatted):<br />
+<a href="https://gist.github.com/mit-mit/dccc56a94faf49a5070eee09f19e6865" rel="nofollow ugc">https://gist.github.com/mit-mit/dccc56a94faf49a5070eee09f19e6865</a></p>
+<p>WDYT?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on How to sign Powershell scripts with self-signed certificates in Windows 10 by Automatic Reconnection of iSCSI Targets in Windows 10 using PowerShell &#8211; WiredPrairie		</title>
+		<link>/blog/index.php/archives/2170/comment-page-1#comment-63619</link>
+
+		<dc:creator><![CDATA[Automatic Reconnection of iSCSI Targets in Windows 10 using PowerShell &#8211; WiredPrairie]]></dc:creator>
+		<pubDate>Wed, 05 Apr 2017 12:09:43 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=2170#comment-63619</guid>
+
+					<description><![CDATA[[&#8230;] up &#8212; how to quickly create a Self-Signed Code-Signing certificate. And, how to actually allow scripts to [&#8230;]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] up &#8212; how to quickly create a Self-Signed Code-Signing certificate. And, how to actually allow scripts to [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on Automatic Reconnection of iSCSI Targets in Windows 10 using PowerShell by Code-signing and self-signed certificates in Windows 10 with Powershell &#8211; WiredPrairie		</title>
+		<link>/blog/index.php/archives/2165/comment-page-1#comment-63615</link>
+
+		<dc:creator><![CDATA[Code-signing and self-signed certificates in Windows 10 with Powershell &#8211; WiredPrairie]]></dc:creator>
+		<pubDate>Wed, 05 Apr 2017 00:57:37 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=2165#comment-63615</guid>
+
+					<description><![CDATA[[&#8230;] Here&#8217;s something interesting you can do with iSCSI targets and PowerShell using a signed PowerShell script. [&#8230;]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] Here&#8217;s something interesting you can do with iSCSI targets and PowerShell using a signed PowerShell script. [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on Ecobee’s ecobee3 Thermostat by Geek gift ideas 2016 &#8211; WiredPrairie		</title>
+		<link>/blog/index.php/archives/2096/comment-page-1#comment-63331</link>
+
+		<dc:creator><![CDATA[Geek gift ideas 2016 &#8211; WiredPrairie]]></dc:creator>
+		<pubDate>Sun, 27 Nov 2016 17:30:50 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=2096#comment-63331</guid>
+
+					<description><![CDATA[[&#8230;] I just blogged about it a week ago, the Ecobee ecobee3 thermostat is also on my [&#8230;]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] I just blogged about it a week ago, the Ecobee ecobee3 thermostat is also on my [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on Fitbit Flex, dead and won&#8217;t charge? by nkb		</title>
+		<link>/blog/index.php/archives/1933/comment-page-1#comment-46463</link>
+
+		<dc:creator><![CDATA[nkb]]></dc:creator>
+		<pubDate>Sat, 02 Aug 2014 13:38:15 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1933#comment-46463</guid>
+
+					<description><![CDATA[didn&#039;t work.  connectors clean. totally dead. contacted fitbit.  no help.]]></description>
+			<content:encoded><![CDATA[<p>didn&#8217;t work.  connectors clean. totally dead. contacted fitbit.  no help.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on Fitbit Flex, dead and won&#8217;t charge? by Aaron		</title>
+		<link>/blog/index.php/archives/1933/comment-page-1#comment-45826</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sat, 12 Jul 2014 14:54:02 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1933#comment-45826</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1933/comment-page-1#comment-45777&quot;&gt;christian&lt;/a&gt;.
+
+It&#039;s not on the fitbit itself. It&#039;s in the charging cradle near the bottom of the back. Just a small round hole.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/1933/comment-page-1#comment-45777">christian</a>.</p>
+<p>It&#8217;s not on the fitbit itself. It&#8217;s in the charging cradle near the bottom of the back. Just a small round hole.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on Fitbit Flex, dead and won&#8217;t charge? by christian		</title>
+		<link>/blog/index.php/archives/1933/comment-page-1#comment-45777</link>
+
+		<dc:creator><![CDATA[christian]]></dc:creator>
+		<pubDate>Sat, 12 Jul 2014 02:53:20 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1933#comment-45777</guid>
+
+					<description><![CDATA[cant find the pinhole, please help]]></description>
+			<content:encoded><![CDATA[<p>cant find the pinhole, please help</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

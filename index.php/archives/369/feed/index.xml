@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: What if there was a monetary charge for inefficient code or software?	</title>
+	<atom:link href="/blog/index.php/archives/369/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/369</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Tue, 17 Jun 2008 17:25:40 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: Genesis Bible		</title>
+		<link>/blog/index.php/archives/369/comment-page-1#comment-398</link>
+
+		<dc:creator><![CDATA[Genesis Bible]]></dc:creator>
+		<pubDate>Tue, 17 Jun 2008 17:25:40 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/369#comment-398</guid>
+
+					<description><![CDATA[well... that would really blow!]]></description>
+			<content:encoded><![CDATA[<p>well&#8230; that would really blow!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: KevinKerr		</title>
+		<link>/blog/index.php/archives/369/comment-page-1#comment-397</link>
+
+		<dc:creator><![CDATA[KevinKerr]]></dc:creator>
+		<pubDate>Tue, 17 Jun 2008 16:39:21 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/369#comment-397</guid>
+
+					<description><![CDATA[More bloated. But they take less time to write, and time=money.]]></description>
+			<content:encoded><![CDATA[<p>More bloated. But they take less time to write, and time=money.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

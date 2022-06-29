@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>hotlinking &#8211; WiredPrairie</title>
+	<atom:link href="/blog/index.php/archives/tag/hotlinking/feed" rel="self" type="application/rss+xml" />
+	<link>/blog</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Wed, 24 Jul 2013 12:22:57 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+<site xmlns="com-wordpress:feed-additions:1">193486638</site>	<item>
+		<title>RewriteCond for web based RSS readers</title>
+		<link>/blog/index.php/archives/1891</link>
+					<comments>/blog/index.php/archives/1891#comments</comments>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Wed, 10 Jul 2013 12:04:38 +0000</pubDate>
+				<category><![CDATA[General]]></category>
+		<category><![CDATA[hotlinking]]></category>
+		<category><![CDATA[rss]]></category>
+		<guid isPermaLink="false">/blog/?p=1891</guid>
+
+					<description><![CDATA[Now that Google Reader is gone, there are more than a handful of replacements popping up. In order to allow images to show in the web-based RSS readers, I needed to edit the .htaccess file for my web site to allow the images to show, as the default for my web site is to prevent [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Now that Google Reader is gone, there are more than a handful of replacements popping up. In order to allow images to show in the web-based RSS readers, I needed to edit the <a href="http://httpd.apache.org/docs/current/howto/htaccess.html" target="_blank">.htaccess</a> file for my web site to allow the images to show, as the default for my web site is to prevent hotlinking from most websites (other than wiredprairie.us).</p>
+<p>I’ve tried to gather those that seemed popular, so I’m putting the list I’ve got here so that it might help others (and maybe some of you will have other suggestions):</p>
+<pre><code>RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?wiredprairie.us [NC]
+RewriteCond %{HTTP_REFERER} !^http(s)?://www.google.com/reader/m/view/.*$ [NC]
+RewriteCond %{HTTP_REFERER} !^http(s)?://cloud.feedly.com/.*$ [NC]
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?feedly.com/.*$ [NC]
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?pinterest.com/.*$ [NC]
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?bloglines.com/.*$ [NC]
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?feedly.com/.*$ [NC]
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?netvibes.com/.*$ [NC]
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?facebook.com/.*$ [NC]
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?twitter.com/.*$ [NC]
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?feedspot.com/.*$ [NC]
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?digg.com/reader/.*$ [NC]
+RewriteCond %{HTTP_REFERER} !^http(s)?://reader.aol.com/.*$ [NC]
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)newsblur.com/.*$ [NC]<br />RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)theoldreader.com/.*$ [NC]<br />RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)hivereader.com/.*$ [NC] 
+RewriteRule \.(jpe?g?|gif|png|bmp|tiff?|pic|mp3|doc|xls|ico)$ - [F,NC,L]</code></pre>
+]]></content:encoded>
+					
+					<wfw:commentRss>/blog/index.php/archives/1891/feed</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1891</post-id>	</item>
+	</channel>
+</rss>

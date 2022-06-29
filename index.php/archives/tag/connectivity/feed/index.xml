@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>Connectivity &#8211; WiredPrairie</title>
+	<atom:link href="/blog/index.php/archives/tag/connectivity/feed" rel="self" type="application/rss+xml" />
+	<link>/blog</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Wed, 23 Jan 2013 13:47:29 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+<site xmlns="com-wordpress:feed-additions:1">193486638</site>	<item>
+		<title>Nest Thermostat Wifi Connectivity Issues?</title>
+		<link>/blog/index.php/archives/1799</link>
+					<comments>/blog/index.php/archives/1799#comments</comments>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Wed, 23 Jan 2013 13:47:29 +0000</pubDate>
+				<category><![CDATA[Recommendations]]></category>
+		<category><![CDATA[Connectivity]]></category>
+		<category><![CDATA[Nest]]></category>
+		<category><![CDATA[Thermostat]]></category>
+		<category><![CDATA[Wifi]]></category>
+		<guid isPermaLink="false">/blog/?p=1799</guid>
+
+					<description><![CDATA[I’ve been seeing more Wifi issues recently with my Nest thermostats. I don’t see a pattern to the problem, and it seems to randomly affect all of them (sometimes at the same time, but often just one). I’ve got a supported Wifi router (Apple Airport Express), and it’s within reasonable range to all of the [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I’ve been seeing more Wifi issues recently with my Nest thermostats. I don’t see a pattern to the problem, and it seems to randomly affect all of them (sometimes at the same time, but often just one).</p>
+<p><img alt="image" src="/blog/wp-content/uploads/2012/03/image6.png" /></p>
+<p>I’ve got a supported Wifi router (Apple Airport Express), and it’s within reasonable range to all of the thermostats in our house (no more than 20 foot from any thermostat). While it’s unfortunately overlapping with a similar band/frequency in our house, the router is dedicated to only the Thermostats right now (a unique SSID). </p>
+<p>It doesn’t have any settings that seem necessary to change:</p>
+<p><a href="/blog/wp-content/uploads/2013/01/SNAGHTMLe2a23de.png"><img loading="lazy" title="SNAGHTMLe2a23de" style="display: inline" alt="SNAGHTMLe2a23de" src="/blog/wp-content/uploads/2013/01/SNAGHTMLe2a23de_thumb.png" width="640" height="358" /></a></p>
+<p><a href="/blog/wp-content/uploads/2013/01/image.png"><img loading="lazy" title="image" style="display: inline" alt="image" src="/blog/wp-content/uploads/2013/01/image_thumb.png" width="640" height="313" /></a></p>
+<p>Any ideas? </p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/blog/index.php/archives/1799/feed</wfw:commentRss>
+			<slash:comments>7</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1799</post-id>	</item>
+	</channel>
+</rss>

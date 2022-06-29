@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: What does it take to make a rock star software developer?	</title>
+	<atom:link href="/blog/index.php/archives/80/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/80</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Thu, 24 Jul 2008 00:50:32 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: WiredPrairie - Interviewed by SD Times		</title>
+		<link>/blog/index.php/archives/80/comment-page-1#comment-505</link>
+
+		<dc:creator><![CDATA[WiredPrairie - Interviewed by SD Times]]></dc:creator>
+		<pubDate>Thu, 24 Jul 2008 00:50:32 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/80#comment-505</guid>
+
+					<description><![CDATA[[...] I was interviewed by a senior editor from the Software Development Times regarding a post on Rock Star developers I made a few months ago. It was fun. We talked about how I look for team players, test platform [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] I was interviewed by a senior editor from the Software Development Times regarding a post on Rock Star developers I made a few months ago. It was fun. We talked about how I look for team players, test platform [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

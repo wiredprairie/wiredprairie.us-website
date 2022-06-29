@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Do we really need another Javascript framework for UI?	</title>
+	<atom:link href="/blog/index.php/archives/368/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/368</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Wed, 18 Jun 2008 18:09:21 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/368/comment-page-1#comment-408</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Wed, 18 Jun 2008 18:09:21 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/368#comment-408</guid>
+
+					<description><![CDATA[@John M - Objective C requires a special compiler ... so it&#039;s not just your standard vanilla C (it&#039;s not just a set of functions). Is there a Objective-J interpreter or is it something else (I haven&#039;t looked other than to note they had some &#039;new&#039; file extensions for their application)? 
+
+I have dabbled in doing Mac development 2 years ago ... but never got very far with it (it was too different from the stuff I was doing during my day job and just couldn&#039;t make enough time to learn it well ... so it dropped off my radar).
+
+I appreciate the ptr to the podcast. Maybe I&#039;ll try to find time to listen to it. (Unfortunately, I&#039;ve fallen WAY behind on podcasts -- I have over 300 in my queue :) ).
+ 
+I&#039;ll take a look at Objective J once it&#039;s released -- but I want it to be tool friendly (outside of just Firebug). I like to use Visual Studio 2008 and it&#039;s integrated ASP.NET/Javascript debugging for example. I don&#039;t know either how well it works with other frameworks, etc. (skeptical).]]></description>
+			<content:encoded><![CDATA[<p>@John M &#8211; Objective C requires a special compiler &#8230; so it&#8217;s not just your standard vanilla C (it&#8217;s not just a set of functions). Is there a Objective-J interpreter or is it something else (I haven&#8217;t looked other than to note they had some &#8216;new&#8217; file extensions for their application)? </p>
+<p>I have dabbled in doing Mac development 2 years ago &#8230; but never got very far with it (it was too different from the stuff I was doing during my day job and just couldn&#8217;t make enough time to learn it well &#8230; so it dropped off my radar).</p>
+<p>I appreciate the ptr to the podcast. Maybe I&#8217;ll try to find time to listen to it. (Unfortunately, I&#8217;ve fallen WAY behind on podcasts &#8212; I have over 300 in my queue :) ).</p>
+<p>I&#8217;ll take a look at Objective J once it&#8217;s released &#8212; but I want it to be tool friendly (outside of just Firebug). I like to use Visual Studio 2008 and it&#8217;s integrated ASP.NET/Javascript debugging for example. I don&#8217;t know either how well it works with other frameworks, etc. (skeptical).</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: John M		</title>
+		<link>/blog/index.php/archives/368/comment-page-1#comment-407</link>
+
+		<dc:creator><![CDATA[John M]]></dc:creator>
+		<pubDate>Wed, 18 Jun 2008 17:10:23 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/368#comment-407</guid>
+
+					<description><![CDATA[@Aaron : if you check on Ajaxian.com you can listen to a podcast from the 280slides.com team. They will be releasing some tools like FireBug integration and so on that goes along with Objective-J. You can read and find the podcast here http://ajaxian.com/archives/an-interview-with-280-north-on-objective-j-and-cappuccino
+
+What Objective-J is bringing is a complete shift on the usual way you build application. If you have done Mac OS X development, you will realize that they are approaching the development for a web app in a similar manner as a desktop application. The team behind Objective-J has strong root into various key technologies/product from Apple (iTunes/iPhone) and thus have the expertise -hopefully- to deliver a kick ass framework.
+280slides.com is just one example of the quality of application you can write on top of their framework. 
+
+Objective-J is not a &#039;programming language&#039; per say : it&#039;s adding an extra layer on top of JavaScript like Objective-C is adding the OO layer on top of C...]]></description>
+			<content:encoded><![CDATA[<p>@Aaron : if you check on Ajaxian.com you can listen to a podcast from the 280slides.com team. They will be releasing some tools like FireBug integration and so on that goes along with Objective-J. You can read and find the podcast here <a href="http://ajaxian.com/archives/an-interview-with-280-north-on-objective-j-and-cappuccino" rel="nofollow ugc">http://ajaxian.com/archives/an-interview-with-280-north-on-objective-j-and-cappuccino</a></p>
+<p>What Objective-J is bringing is a complete shift on the usual way you build application. If you have done Mac OS X development, you will realize that they are approaching the development for a web app in a similar manner as a desktop application. The team behind Objective-J has strong root into various key technologies/product from Apple (iTunes/iPhone) and thus have the expertise -hopefully- to deliver a kick ass framework.<br />
+280slides.com is just one example of the quality of application you can write on top of their framework. </p>
+<p>Objective-J is not a &#8216;programming language&#8217; per say : it&#8217;s adding an extra layer on top of JavaScript like Objective-C is adding the OO layer on top of C&#8230;</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Flashbot - Interactive Media Blog		</title>
+		<link>/blog/index.php/archives/368/comment-page-1#comment-402</link>
+
+		<dc:creator><![CDATA[Flashbot - Interactive Media Blog]]></dc:creator>
+		<pubDate>Wed, 18 Jun 2008 04:59:54 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/368#comment-402</guid>
+
+					<description><![CDATA[[...] a lot of talk about how the desktop is dead. A bit premature, to put it lightly. But there&#8217;s no doubt that the browser will reign supreme for all the most [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] a lot of talk about how the desktop is dead. A bit premature, to put it lightly. But there&#8217;s no doubt that the browser will reign supreme for all the most [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/368/comment-page-1#comment-399</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Tue, 17 Jun 2008 21:47:47 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/368#comment-399</guid>
+
+					<description><![CDATA[@John M -- what do you like about 280slides? I saw that they&#039;re going to release &quot;Objective J&quot; -- which appeared to be a programing language that sits on Javascript? (Which would mean it wasn&#039;t tool friendly, etc.). Maybe I misunderstood.]]></description>
+			<content:encoded><![CDATA[<p>@John M &#8212; what do you like about 280slides? I saw that they&#8217;re going to release &#8220;Objective J&#8221; &#8212; which appeared to be a programing language that sits on Javascript? (Which would mean it wasn&#8217;t tool friendly, etc.). Maybe I misunderstood.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: John M		</title>
+		<link>/blog/index.php/archives/368/comment-page-1#comment-396</link>
+
+		<dc:creator><![CDATA[John M]]></dc:creator>
+		<pubDate>Tue, 17 Jun 2008 14:29:31 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/368#comment-396</guid>
+
+					<description><![CDATA[I have been looking at various web frameworks in the past few months and SproutCore is the wrong horse to be on.
+It&#039;s a sluggish code with a lot of overhead memory footprint, and may be working nice if you have the right config... Try to use a .Mac Web Gallery that is using SprutCore on Windows and you will feel the pain.
+I still think that we need at least a few web frameworks -that&#039;s how life is- but I will not bet my future on SproutCore based on my findings. The one that currently is having all my attention is the new framework that the folks at http://280slides.com/ are going to deliver in an open source form really soon. Take a look at their app and I think you have an idea of the future web apps.]]></description>
+			<content:encoded><![CDATA[<p>I have been looking at various web frameworks in the past few months and SproutCore is the wrong horse to be on.<br />
+It&#8217;s a sluggish code with a lot of overhead memory footprint, and may be working nice if you have the right config&#8230; Try to use a .Mac Web Gallery that is using SprutCore on Windows and you will feel the pain.<br />
+I still think that we need at least a few web frameworks -that&#8217;s how life is- but I will not bet my future on SproutCore based on my findings. The one that currently is having all my attention is the new framework that the folks at <a href="http://280slides.com/" rel="nofollow ugc">http://280slides.com/</a> are going to deliver in an open source form really soon. Take a look at their app and I think you have an idea of the future web apps.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Raed		</title>
+		<link>/blog/index.php/archives/368/comment-page-1#comment-395</link>
+
+		<dc:creator><![CDATA[Raed]]></dc:creator>
+		<pubDate>Tue, 17 Jun 2008 14:20:38 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/368#comment-395</guid>
+
+					<description><![CDATA[I would argue with you regarding your analysis of Photoshop and Office as being decent products.  For all the fancy stuff in the plumbing of those apps they are atrocious!  The type of programming that takes advantage of none of the platforms facilities makes these programs like a chore to use.  From a Mac standpoint these apps are poor experiences.  As an example Photoshop was one of the last apps to be Universal and wont offer hardware acceleration until sometime next millennium.  If you work in nearly any of the other graphics programs on a mac they work better, simply because they take advantage of the platform where Photoshop just keeps letting themselves get fat.]]></description>
+			<content:encoded><![CDATA[<p>I would argue with you regarding your analysis of Photoshop and Office as being decent products.  For all the fancy stuff in the plumbing of those apps they are atrocious!  The type of programming that takes advantage of none of the platforms facilities makes these programs like a chore to use.  From a Mac standpoint these apps are poor experiences.  As an example Photoshop was one of the last apps to be Universal and wont offer hardware acceleration until sometime next millennium.  If you work in nearly any of the other graphics programs on a mac they work better, simply because they take advantage of the platform where Photoshop just keeps letting themselves get fat.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/368/comment-page-1#comment-394</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Tue, 17 Jun 2008 12:03:36 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/368#comment-394</guid>
+
+					<description><![CDATA[@JS - What track record is that?]]></description>
+			<content:encoded><![CDATA[<p>@JS &#8211; What track record is that?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: JS		</title>
+		<link>/blog/index.php/archives/368/comment-page-1#comment-392</link>
+
+		<dc:creator><![CDATA[JS]]></dc:creator>
+		<pubDate>Tue, 17 Jun 2008 02:12:24 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/368#comment-392</guid>
+
+					<description><![CDATA[With MS past track record, why would anyone in their right mind support Silverlight? Especially on the Mac side.]]></description>
+			<content:encoded><![CDATA[<p>With MS past track record, why would anyone in their right mind support Silverlight? Especially on the Mac side.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

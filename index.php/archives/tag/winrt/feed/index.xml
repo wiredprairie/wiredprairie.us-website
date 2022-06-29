@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>WinRT &#8211; WiredPrairie</title>
+	<atom:link href="/blog/index.php/archives/tag/winrt/feed" rel="self" type="application/rss+xml" />
+	<link>/blog</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Sun, 01 Sep 2013 20:09:35 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+<site xmlns="com-wordpress:feed-additions:1">193486638</site>	<item>
+		<title>Reading a text file (or JSON file) from a Windows 8 Runtime application</title>
+		<link>/blog/index.php/archives/1939</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sun, 01 Sep 2013 20:09:35 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[C#]]></category>
+		<category><![CDATA[Windows 8]]></category>
+		<category><![CDATA[WinRT]]></category>
+		<guid isPermaLink="false">/blog/?p=1939</guid>
+
+					<description><![CDATA[I just had need of reading a small JSON file into a Windows 8 application using the Windows Runtime. Uri uri = new Uri(&#34;ms-appx:///assets/data.json&#34;);var storageFile = await Windows.Storage.StorageFile.GetFileFromApplicationUriAsync(uri);using (var storageStream = await storageFile.OpenReadAsync()){ using (Stream stream = storageStream.AsStreamForRead()) { using (StreamReader reader = new StreamReader(stream)) { var jsonText = reader.ReadToEnd(); var results = JsonConvert.DeserializeObject&#60;DemoData&#62;(jsonText); this.DataContext [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I just had need of reading a small JSON file into a Windows 8 application using the Windows Runtime. </p>
+<div id="codeSnippetWrapper">
+<div id="codeSnippetWrapper">
+<pre id="codeSnippet" style="border-top-style: none; overflow: visible; font-size: 8pt; border-left-style: none; font-family: &#39;Courier New&#39;, courier, monospace; border-bottom-style: none; color: black; padding-bottom: 0px; direction: ltr; text-align: left; padding-top: 0px; border-right-style: none; padding-left: 0px; margin: 0em; line-height: 12pt; padding-right: 0px; width: 100%; background-color: #f4f4f4">Uri uri = <span style="color: #0000ff">new</span> Uri(<span style="color: #006080">&quot;ms-appx:///assets/data.json&quot;</span>);<br /><br />var storageFile = await Windows.Storage.StorageFile.GetFileFromApplicationUriAsync(uri);<br /><br /><span style="color: #0000ff">using</span> (var storageStream = await storageFile.OpenReadAsync())<br />{<br />    <span style="color: #0000ff">using</span> (Stream stream = storageStream.AsStreamForRead())<br />    {<br />        <span style="color: #0000ff">using</span> (StreamReader reader = <span style="color: #0000ff">new</span> StreamReader(stream))<br />        {<br />            var jsonText = reader.ReadToEnd();<br />            var results = JsonConvert.DeserializeObject&lt;DemoData&gt;(jsonText);<br />            <span style="color: #0000ff">this</span>.DataContext = results;<br />        }<br />    }<br />}</pre>
+<p>What seemed like it should have been a common example on MSDN was not …, and after a bit of searching and reading, I believe the above code represents at least a common and safe way of loading data. </div>
+</div>
+<p>I’ve got a file called <strong>data.json</strong> stored in an <strong>Assets</strong> folder:</p>
+<p><a href="/blog/wp-content/uploads/2013/09/image.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wp-content/uploads/2013/09/image_thumb.png" width="272" height="237" /></a></p>
+<p>And the file’s <strong>Build Action</strong> is set to <strong>Content:</strong></p>
+<p><a href="/blog/wp-content/uploads/2013/09/image1.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wp-content/uploads/2013/09/image_thumb1.png" width="546" height="212" /></a></p>
+<p>Change the value passed to the <strong>Uri</strong> constructor and … the file will be loaded successfully. Once loaded, I used the strongly typed generic <strong>DeserializeObject</strong> method to convert the Json data to a class called <strong>DemoData</strong>.</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1939</post-id>	</item>
+		<item>
+		<title>How to find an element in a DataTemplate in WinRT/XAML.</title>
+		<link>/blog/index.php/archives/1730</link>
+					<comments>/blog/index.php/archives/1730#comments</comments>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sat, 08 Sep 2012 01:51:30 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[C#]]></category>
+		<category><![CDATA[Windows 8]]></category>
+		<category><![CDATA[WinRT]]></category>
+		<category><![CDATA[Xaml]]></category>
+		<guid isPermaLink="false">/blog/?p=1730</guid>
+
+					<description><![CDATA[Here’s one way to find a named element in a DataTemplate in XAML in Windows 8 XAML. You might try FindName to discover it doesn’t work. That’s because it’s not recursive. So, I created a simple extension method to do the same thing: public static class FrameworkElementExtensions { public static FrameworkElement FindDescendantByName(this FrameworkElement element, string [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Here’s one way to find a named element in a DataTemplate in XAML in Windows 8 XAML.</p>
+<p>You might try FindName to discover it doesn’t work. That’s because it’s not recursive.</p>
+<p>So, I created a simple extension method to do the same thing:</p>
+<pre class="code"><span style="background: white; color: blue">public static class </span><span style="background: white; color: #2b91af">FrameworkElementExtensions
+</span><span style="background: white; color: black">{
+    </span><span style="background: white; color: blue">public static </span><span style="background: white; color: #2b91af">FrameworkElement </span><span style="background: white; color: black">FindDescendantByName(</span><span style="background: white; color: blue">this </span><span style="background: white; color: #2b91af">FrameworkElement </span><span style="background: white; color: black">element, </span><span style="background: white; color: blue">string </span><span style="background: white; color: black">name)
+    {
+        </span><span style="background: white; color: blue">if </span><span style="background: white; color: black">(element == </span><span style="background: white; color: blue">null </span><span style="background: white; color: black">|| </span><span style="background: white; color: blue">string</span><span style="background: white; color: black">.IsNullOrWhiteSpace(name)) { </span><span style="background: white; color: blue">return null</span><span style="background: white; color: black">; }
+
+        </span><span style="background: white; color: blue">if </span><span style="background: white; color: black">(name.Equals(element.Name, </span><span style="background: white; color: #2b91af">StringComparison</span><span style="background: white; color: black">.OrdinalIgnoreCase))
+        {
+            </span><span style="background: white; color: blue">return </span><span style="background: white; color: black">element;
+        }
+        </span><span style="background: white; color: blue">var </span><span style="background: white; color: black">childCount = </span><span style="background: white; color: #2b91af">VisualTreeHelper</span><span style="background: white; color: black">.GetChildrenCount(element);
+        </span><span style="background: white; color: blue">for </span><span style="background: white; color: black">(</span><span style="background: white; color: blue">int </span><span style="background: white; color: black">i = 0; i &lt; childCount; i++)
+        {
+            </span><span style="background: white; color: blue">var </span><span style="background: white; color: black">result = (</span><span style="background: white; color: #2b91af">VisualTreeHelper</span><span style="background: white; color: black">.GetChild(element, i) </span><span style="background: white; color: blue">as </span><span style="background: white; color: #2b91af">FrameworkElement</span><span style="background: white; color: black">).FindDescendantByName(name);
+            </span><span style="background: white; color: blue">if </span><span style="background: white; color: black">(result != </span><span style="background: white; color: blue">null</span><span style="background: white; color: black">) { </span><span style="background: white; color: blue">return </span><span style="background: white; color: black">result; }
+        }
+        </span><span style="background: white; color: blue">return null</span><span style="background: white; color: black">;
+    }
+}</span></pre>
+<p>The code above loops through the children and attempts to match by name. </p>
+<p>A simple usage (admittedly, this is stupid and clunky as lists are often virtualized, but …)</p>
+<pre class="code"><span style="background: white; color: blue">private void </span><span style="background: white; color: black">Page_Loaded_1(</span><span style="background: white; color: blue">object </span><span style="background: white; color: black">sender, Windows.UI.Xaml.</span><span style="background: white; color: #2b91af">RoutedEventArgs </span><span style="background: white; color: black">e)
+{
+    </span><span style="background: white; color: blue">for </span><span style="background: white; color: black">(</span><span style="background: white; color: blue">int </span><span style="background: white; color: black">i = 0; i &lt; myPeeps.Items.Count; i++)
+    {
+        </span><span style="background: white; color: blue">var </span><span style="background: white; color: black">element = myPeeps.ItemContainerGenerator.ContainerFromIndex(i) </span><span style="background: white; color: blue">as </span><span style="background: white; color: #2b91af">FrameworkElement</span><span style="background: white; color: black">;
+        </span><span style="background: white; color: blue">if </span><span style="background: white; color: black">(element != </span><span style="background: white; color: blue">null</span><span style="background: white; color: black">)
+        {
+            </span><span style="background: white; color: blue">var </span><span style="background: white; color: black">tb = element.FindDescendantByName(</span><span style="background: white; color: #a31515">&quot;tbValue&quot;</span><span style="background: white; color: black">) </span><span style="background: white; color: blue">as </span><span style="background: white; color: #2b91af">TextBlock</span><span style="background: white; color: black">;
+            </span><span style="background: white; color: blue">if </span><span style="background: white; color: black">(tb != </span><span style="background: white; color: blue">null</span><span style="background: white; color: black">)
+            {
+                tb.Text = i.ToString();
+            }
+        }
+    }
+}</span></pre>
+<p>Given this DataTemplate and Page:</p>
+<pre class="code"><span style="background: white; color: blue">&lt;</span><span style="background: white; color: #a31515">Page.Resources</span><span style="background: white; color: blue">&gt;
+    &lt;</span><span style="background: white; color: #a31515">local</span><span style="background: white; color: blue">:</span><span style="background: white; color: #a31515">SampleDataSource </span><span style="background: white; color: red">x</span><span style="background: white; color: blue">:</span><span style="background: white; color: red">Key</span><span style="background: white; color: blue">=&quot;sampleData&quot; /&gt;
+    &lt;</span><span style="background: white; color: #a31515">DataTemplate </span><span style="background: white; color: red">x</span><span style="background: white; color: blue">:</span><span style="background: white; color: red">Key</span><span style="background: white; color: blue">=&quot;SampleDataTemplate&quot;&gt;
+        &lt;</span><span style="background: white; color: #a31515">Grid </span><span style="background: white; color: blue">&gt;
+            &lt;</span><span style="background: white; color: #a31515">Grid.RowDefinitions</span><span style="background: white; color: blue">&gt;
+                &lt;</span><span style="background: white; color: #a31515">RowDefinition </span><span style="background: white; color: red">Height</span><span style="background: white; color: blue">=&quot;Auto&quot;/&gt;
+                &lt;</span><span style="background: white; color: #a31515">RowDefinition </span><span style="background: white; color: red">Height</span><span style="background: white; color: blue">=&quot;Auto&quot;/&gt;
+            &lt;/</span><span style="background: white; color: #a31515">Grid.RowDefinitions</span><span style="background: white; color: blue">&gt;
+            &lt;</span><span style="background: white; color: #a31515">TextBlock </span><span style="background: white; color: red">HorizontalAlignment</span><span style="background: white; color: blue">=&quot;Left&quot; </span><span style="background: white; color: red">Text</span><span style="background: white; color: blue">=&quot;{</span><span style="background: white; color: #a31515">Binding </span><span style="background: white; color: red">Name</span><span style="background: white; color: blue">}&quot; /&gt;
+            &lt;</span><span style="background: white; color: #a31515">TextBlock </span><span style="background: white; color: red">Grid.Row</span><span style="background: white; color: blue">=&quot;1&quot; </span><span style="background: white; color: red">Name</span><span style="background: white; color: blue">=&quot;tbValue&quot; /&gt;
+        &lt;/</span><span style="background: white; color: #a31515">Grid</span><span style="background: white; color: blue">&gt;
+    &lt;/</span><span style="background: white; color: #a31515">DataTemplate</span><span style="background: white; color: blue">&gt;
+&lt;/</span><span style="background: white; color: #a31515">Page.Resources</span><span style="background: white; color: blue">&gt;
+
+&lt;</span><span style="background: white; color: #a31515">Grid </span><span style="background: white; color: red">Background</span><span style="background: white; color: blue">=&quot;{</span><span style="background: white; color: #a31515">StaticResource </span><span style="background: white; color: red">ApplicationPageBackgroundThemeBrush</span><span style="background: white; color: blue">}&quot; 
+      </span><span style="background: white; color: red">DataContext</span><span style="background: white; color: blue">=&quot;{</span><span style="background: white; color: #a31515">StaticResource </span><span style="background: white; color: red">sampleData</span><span style="background: white; color: blue">}&quot;&gt;
+    &lt;</span><span style="background: white; color: #a31515">ItemsControl </span><span style="background: white; color: red">x</span><span style="background: white; color: blue">:</span><span style="background: white; color: red">Name</span><span style="background: white; color: blue">=&quot;myPeeps&quot;
+        </span><span style="background: white; color: red">ItemsSource </span><span style="background: white; color: blue">= &quot;{</span><span style="background: white; color: #a31515">Binding </span><span style="background: white; color: red">Persons</span><span style="background: white; color: blue">}&quot;
+        </span><span style="background: white; color: red">ItemTemplate</span><span style="background: white; color: blue">=&quot;{</span><span style="background: white; color: #a31515">StaticResource </span><span style="background: white; color: red">SampleDataTemplate</span><span style="background: white; color: blue">}&quot; </span><span style="background: white; color: red">FontSize</span><span style="background: white; color: blue">=&quot;22&quot;/&gt;
+&lt;/</span><span style="background: white; color: #a31515">Grid</span><span style="background: white; color: blue">&gt;</span></pre>
+<p>And this sample data:</p>
+<pre class="code"><span style="background: white; color: blue">public class </span><span style="background: white; color: #2b91af">Person </span><span style="background: white; color: black">{
+    </span><span style="background: white; color: blue">public string </span><span style="background: white; color: black">Name { </span><span style="background: white; color: blue">get</span><span style="background: white; color: black">; </span><span style="background: white; color: blue">set</span><span style="background: white; color: black">; }        
+}    
+
+</span><span style="background: white; color: blue">public class </span><span style="background: white; color: #2b91af">SampleDataSource </span><span style="background: white; color: black">{
+    </span><span style="background: white; color: blue">public </span><span style="background: white; color: #2b91af">IEnumerable</span><span style="background: white; color: black">&lt;</span><span style="background: white; color: #2b91af">Person</span><span style="background: white; color: black">&gt; Persons { </span><span style="background: white; color: blue">get</span><span style="background: white; color: black">; </span><span style="background: white; color: blue">private set</span><span style="background: white; color: black">; }
+    
+    
+    </span><span style="background: white; color: blue">public </span><span style="background: white; color: black">SampleDataSource () {
+        </span><span style="background: white; color: blue">var </span><span style="background: white; color: black">list = </span><span style="background: white; color: blue">new </span><span style="background: white; color: #2b91af">List</span><span style="background: white; color: black">&lt;</span><span style="background: white; color: #2b91af">Person</span><span style="background: white; color: black">&gt;();
+        
+        list.Add(</span><span style="background: white; color: blue">new </span><span style="background: white; color: #2b91af">Person </span><span style="background: white; color: black">{ Name = </span><span style="background: white; color: #a31515">&quot;Alex&quot; </span><span style="background: white; color: black">});
+        list.Add(</span><span style="background: white; color: blue">new </span><span style="background: white; color: #2b91af">Person </span><span style="background: white; color: black">{ Name = </span><span style="background: white; color: #a31515">&quot;Betsy&quot; </span><span style="background: white; color: black">});
+        list.Add(</span><span style="background: white; color: blue">new </span><span style="background: white; color: #2b91af">Person </span><span style="background: white; color: black">{ Name = </span><span style="background: white; color: #a31515">&quot;Carla&quot; </span><span style="background: white; color: black">});
+        list.Add(</span><span style="background: white; color: blue">new </span><span style="background: white; color: #2b91af">Person </span><span style="background: white; color: black">{ Name = </span><span style="background: white; color: #a31515">&quot;Donald&quot; </span><span style="background: white; color: black">});
+        list.Add(</span><span style="background: white; color: blue">new </span><span style="background: white; color: #2b91af">Person </span><span style="background: white; color: black">{ Name = </span><span style="background: white; color: #a31515">&quot;Erica&quot; </span><span style="background: white; color: black">});
+        list.Add(</span><span style="background: white; color: blue">new </span><span style="background: white; color: #2b91af">Person </span><span style="background: white; color: black">{ Name = </span><span style="background: white; color: #a31515">&quot;Francis&quot; </span><span style="background: white; color: black">});            
+        
+        </span><span style="background: white; color: blue">this</span><span style="background: white; color: black">.Persons = list;
+    }            
+}</span></pre>
+<p>You’ll get results like this:</p>
+<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2012/09/image.png" width="497" height="582" /></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/blog/index.php/archives/1730/feed</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1730</post-id>	</item>
+		<item>
+		<title>Windows 8 WinRT/Metro Missing UpdateSourceTrigger</title>
+		<link>/blog/index.php/archives/1701</link>
+					<comments>/blog/index.php/archives/1701#comments</comments>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sun, 05 Aug 2012 20:53:15 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[C#]]></category>
+		<category><![CDATA[Metro]]></category>
+		<category><![CDATA[WinRT]]></category>
+		<guid isPermaLink="false">/blog/?p=1701</guid>
+
+					<description><![CDATA[If you’ve done WPF or Silverlight programming, you may have found an occasion where using the Binding property UpdateSourceTrigger set to PropertyChanged was extremely useful. (I know I have!) It may have looked something like this: &#60;TextBox Text=&#34;{Binding Path=Value, UpdateSourceTrigger=PropertyChanged}&#34; /&#62; The key feature was the live updating of the property through the binding. For [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>If you’ve done WPF or Silverlight programming, you may have found an occasion where using the Binding property <a href="http://msdn.microsoft.com/en-us/library/system.windows.data.binding.updatesourcetrigger(v=vs.110).aspx" target="_blank">UpdateSourceTrigger</a> set to PropertyChanged was extremely useful. (I know I have!)</p>
+<p>It may have looked something like this:</p>
+<pre class="code"><span style="background: white; color: blue">&lt;</span><span style="background: white; color: #a31515">TextBox </span><span style="background: white; color: red">Text</span><span style="background: white; color: blue">=</span><span style="background: white; color: black">&quot;</span><span style="background: white; color: blue">{Binding Path=Value, UpdateSourceTrigger=PropertyChanged}</span><span style="background: white; color: black">&quot; </span><span style="background: white; color: blue">/&gt;</span></pre>
+<p>The key feature was the live updating of the property through the binding. For example, as the user typed in the TextBox above, the property <strong>Value</strong> in the bound object would have been updated as the user typed. The default behavior in Silverlight 5 and WPF is to use LostFocus: the <strong>Value</strong> is only updated when the TextBox loses focus. Sometimes, that’s OK. </p>
+<p>In WinRT/Metro however, this option was completely removed, and no decent replacement was provided unfortunately. In searching for a reasonable work-around, I discovered a few other related missing pieces from WinRT/XAML:</p>
+<ul>
+<li>BindingOptions.<a href="http://msdn.microsoft.com/en-us/library/system.windows.data.bindingoperations.getbinding(v=vs.110).aspx" target="_blank">GetBinding</a>: This allowed the WPF programmer a method for retrieving a Binding object. I was interested in this option as I wanted to clone the original Binding, make it two-way, and attach to the TextChanged event so that a new binding could be updated when the text changed, with the new binding pointing to the same property as the Text property. (My solution uses the basic idea as this).</li>
+<li>FrameworkElement.<a href="http://msdn.microsoft.com/en-us/library/system.windows.frameworkelement.getbindingexpression(v=vs.110).aspx" target="_blank">GetBindingExpression</a>: Again, gone. Same basic logic as above. (Probably uses same underlying support that just isn’t there).</li>
+<li>XamlWriter.Save: XamlWriter is completely gone. I thought maybe I’d save an instance of the TextBox to Xaml, and create a new one with adjusted bindings from the Xaml. XamlReader does exist.</li>
+</ul>
+<p>You can start to feel how Xaml really is just a thin wrapper on the Windows 8 run time as you start to look around to see what remains from WPF. Even traditional Silverlight features are gone unfortunately. Maybe Windows 9? <img style="border-bottom-style: none; border-left-style: none; border-top-style: none; border-right-style: none" class="wlEmoticon wlEmoticon-smile" alt="Smile" src="/blog/wp-content/uploads/2012/08/wlEmoticon-smile.png" /></p>
+<p>So, I took a round-about approach to solving this problem. </p>
+<pre class="code"><span style="background: white; color: black"> </span><span style="background: white; color: blue">public class </span><span style="background: white; color: #2b91af">UpdateSourceHelper </span><span style="background: white; color: black">: </span><span style="background: white; color: #2b91af">FrameworkElement
+ </span><span style="background: white; color: black">{
+     </span><span style="background: white; color: blue">public static string </span><span style="background: white; color: black">GetUpdateSourceText(</span><span style="background: white; color: #2b91af">DependencyObject </span><span style="background: white; color: black">obj)
+     {
+         </span><span style="background: white; color: blue">return </span><span style="background: white; color: black">(</span><span style="background: white; color: blue">string</span><span style="background: white; color: black">)obj.GetValue(UpdateSourceTextProperty);
+     }
+
+     </span><span style="background: white; color: blue">public static void </span><span style="background: white; color: black">SetUpdateSourceText(</span><span style="background: white; color: #2b91af">DependencyObject </span><span style="background: white; color: black">obj, </span><span style="background: white; color: blue">string </span><span style="background: white; color: black">value)
+     {
+         obj.SetValue(UpdateSourceTextProperty, value);
+     }
+
+     </span><span style="background: white; color: green">// Using a DependencyProperty as the backing store for UpdateSourceText.  This enables animation, styling, binding, etc...
+     </span><span style="background: white; color: blue">public static readonly </span><span style="background: white; color: #2b91af">DependencyProperty </span><span style="background: white; color: black">UpdateSourceTextProperty =
+         </span><span style="background: white; color: #2b91af">DependencyProperty</span><span style="background: white; color: black">.RegisterAttached(</span><span style="background: white; color: #a31515">&quot;UpdateSourceText&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: blue">typeof</span><span style="background: white; color: black">(</span><span style="background: white; color: blue">string</span><span style="background: white; color: black">), </span><span style="background: white; color: blue">typeof</span><span style="background: white; color: black">(</span><span style="background: white; color: #2b91af">UpdateSourceHelper</span><span style="background: white; color: black">), </span><span style="background: white; color: blue">new </span><span style="background: white; color: #2b91af">PropertyMetadata</span><span style="background: white; color: black">(</span><span style="background: white; color: #a31515">&quot;&quot;</span><span style="background: white; color: black">));
+     
+     </span><span style="background: white; color: blue">public static bool </span><span style="background: white; color: black">GetIsEnabled(</span><span style="background: white; color: #2b91af">DependencyObject </span><span style="background: white; color: black">obj)
+     {
+         </span><span style="background: white; color: blue">return </span><span style="background: white; color: black">(</span><span style="background: white; color: blue">bool</span><span style="background: white; color: black">)obj.GetValue(IsEnabledProperty);
+     }
+
+     </span><span style="background: white; color: blue">public static void </span><span style="background: white; color: black">SetIsEnabled(</span><span style="background: white; color: #2b91af">DependencyObject </span><span style="background: white; color: black">obj, </span><span style="background: white; color: blue">bool </span><span style="background: white; color: black">value)
+     {
+         obj.SetValue(IsEnabledProperty, value);
+     }
+
+     </span><span style="background: white; color: green">// Using a DependencyProperty as the backing store for IsEnabled.  This enables animation, styling, binding, etc...
+     </span><span style="background: white; color: blue">public static readonly </span><span style="background: white; color: #2b91af">DependencyProperty </span><span style="background: white; color: black">IsEnabledProperty =
+         </span><span style="background: white; color: #2b91af">DependencyProperty</span><span style="background: white; color: black">.RegisterAttached(</span><span style="background: white; color: #a31515">&quot;IsEnabled&quot;</span><span style="background: white; color: black">, </span><span style="background: white; color: blue">typeof</span><span style="background: white; color: black">(</span><span style="background: white; color: blue">bool</span><span style="background: white; color: black">), </span><span style="background: white; color: blue">typeof</span><span style="background: white; color: black">(</span><span style="background: white; color: #2b91af">UpdateSourceHelper</span><span style="background: white; color: black">), 
+             </span><span style="background: white; color: blue">new </span><span style="background: white; color: #2b91af">PropertyMetadata</span><span style="background: white; color: black">(</span><span style="background: white; color: blue">false</span><span style="background: white; color: black">, 
+             </span><span style="background: white; color: green">// property changed
+             </span><span style="background: white; color: black">(obj, args)=&gt; 
+             {                    
+                 </span><span style="background: white; color: blue">if </span><span style="background: white; color: black">(obj </span><span style="background: white; color: blue">is </span><span style="background: white; color: #2b91af">TextBox</span><span style="background: white; color: black">)
+                 {
+                     </span><span style="background: white; color: #2b91af">TextBox </span><span style="background: white; color: black">tb = (</span><span style="background: white; color: #2b91af">TextBox</span><span style="background: white; color: black">)obj;
+                     </span><span style="background: white; color: blue">if </span><span style="background: white; color: black">((</span><span style="background: white; color: blue">bool</span><span style="background: white; color: black">)args.NewValue)
+                     {                                                                                      
+                         tb.TextChanged += AttachedTextBoxTextChanged;
+                     }
+                     </span><span style="background: white; color: blue">else
+                     </span><span style="background: white; color: black">{
+                         tb.TextChanged -= AttachedTextBoxTextChanged;
+                     }
+                 }
+             }
+         ));
+
+     </span><span style="background: white; color: blue">static void </span><span style="background: white; color: black">AttachedTextBoxTextChanged(</span><span style="background: white; color: blue">object </span><span style="background: white; color: black">sender, </span><span style="background: white; color: #2b91af">TextChangedEventArgs </span><span style="background: white; color: black">e)
+     {
+         </span><span style="background: white; color: blue">if </span><span style="background: white; color: black">(sender </span><span style="background: white; color: blue">is </span><span style="background: white; color: #2b91af">TextBox</span><span style="background: white; color: black">)
+         {
+             </span><span style="background: white; color: blue">var </span><span style="background: white; color: black">tb = (</span><span style="background: white; color: #2b91af">TextBox</span><span style="background: white; color: black">)sender;
+             tb.SetValue(</span><span style="background: white; color: #2b91af">UpdateSourceHelper</span><span style="background: white; color: black">.UpdateSourceTextProperty, tb.Text);                
+         }
+     }        
+ }</span></pre>
+<p>And here it is in use:</p>
+<pre class="code"><span style="background: white; color: red">xmlns</span><span style="background: white; color: blue">:</span><span style="background: white; color: red">local</span><span style="background: white; color: blue">=&quot;using:WiredPrairie.Converter&quot;</span></pre>
+<p>(The above namespace is needed to provide context to the Xaml parser for the attached properties. Change it to whatever you need).</p>
+<pre class="code"><span style="background: white; color: blue">&lt;</span><span style="background: white; color: #a31515">TextBox </span><span style="background: white; color: red">Height</span><span style="background: white; color: blue">=&quot;Auto&quot; </span><span style="background: white; color: red">Margin</span><span style="background: white; color: blue">=&quot;0,6&quot; </span><span style="background: white; color: red">Grid.Row</span><span style="background: white; color: blue">=&quot;1&quot; </span><span style="background: white; color: red">TextWrapping</span><span style="background: white; color: blue">=&quot;Wrap&quot; </span><span style="background: white; color: red">TabIndex</span><span style="background: white; color: blue">=&quot;0&quot; 
+         </span><span style="background: white; color: red">Text</span><span style="background: white; color: blue">=&quot;{</span><span style="background: white; color: #a31515">Binding </span><span style="background: white; color: red">Value</span><span style="background: white; color: blue">}&quot; 
+         </span><span style="background: white; color: red">local</span><span style="background: white; color: blue">:</span><span style="background: white; color: red">UpdateSourceHelper.IsEnabled</span><span style="background: white; color: blue">=&quot;True&quot; 
+         </span><span style="background: white; color: red">local</span><span style="background: white; color: blue">:</span><span style="background: white; color: red">UpdateSourceHelper.UpdateSourceText</span><span style="background: white; color: blue">=&quot;{</span><span style="background: white; color: #a31515">Binding </span><span style="background: white; color: red">Value</span><span style="background: white; color: blue">, </span><span style="background: white; color: red">Mode</span><span style="background: white; color: blue">=TwoWay}&quot;/&gt;</span></pre>
+<p>A classic pattern in WPF for extending built in controls without subclassing was to create an attached behavior. Thankfully, this pattern still works.</p>
+<p>The core concept is to attach to the original instance of the TextBox by using an enabling property. In this case, an <a href="http://msdn.microsoft.com/query/dev11.query?appId=Dev11IDEF1&amp;l=EN-US&amp;k=k(Windows.UI.Xaml.DependencyProperty.RegisterAttached);k(TargetFrameworkMoniker-.NETCore,Version%3Dv4.5);k(DevLang-csharp)&amp;rd=true" target="_blank">attached property</a>&#160; called IsEnabled is added to the TextBox.</p>
+<p>When the value of the IsEnabled property changes from the default of false, the <a href="http://msdn.microsoft.com/en-us/library/windows.ui.xaml.propertychangedcallback.aspx" target="_blank">PropertyChanged</a> callback is called. It’s here that the simple magic happens. As long as the attached property is attached to an instance of TextBox, it wires up to the TextChanged event. </p>
+<p>In the TextChanged event handler, the value of the attached TextBox (Text property) is set into the second binding’s value. By doing this, it then sets the datasource’s object’s bound property to the new value immediately. </p>
+<p>The annoying part about this solution really is the extra binding that is required. As there isn’t a documented/known API for reading an existing binding, this technique requires that the developer specify the binding <strong><em>twice</em></strong>. </p>
+<p><span style="background: white; color: red">local</span><span style="background: white; color: blue">:</span><span style="background: white; color: red">UpdateSourceHelper.UpdateSourceText</span><span style="background: white; color: blue">=&quot;{</span><span style="background: white; color: #a31515">Binding </span><span style="background: white; color: red">Value</span><span style="background: white; color: blue">, </span><span style="background: white; color: red">Mode</span><span style="background: white; color: blue">=TwoWay}&quot;</span></p>
+<p>In WPF, it would have been possible to declare the UpdateSourceText as defaulting to TwoWay binding. But, again, that feature has been removed. Without the TwoWay binding mode, the SetValue call in the TextChanged event handler will not update the object’s bound property. It’s one way.</p>
+<p>I looked low and high for a more elegant solution, but couldn’t find one. If you find something better, please leave a comment!</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/blog/index.php/archives/1701/feed</wfw:commentRss>
+			<slash:comments>5</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1701</post-id>	</item>
+	</channel>
+</rss>

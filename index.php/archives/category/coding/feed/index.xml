@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>Coding &#8211; WiredPrairie</title>
+	<atom:link href="/blog/index.php/archives/category/coding/feed" rel="self" type="application/rss+xml" />
+	<link>/blog</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Wed, 16 May 2018 00:24:37 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+<site xmlns="com-wordpress:feed-additions:1">193486638</site>	<item>
+		<title>Visual Studio 2017 Anaconda Prompt Fix</title>
+		<link>/blog/index.php/archives/2257</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Wed, 16 May 2018 00:24:37 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[General]]></category>
+		<guid isPermaLink="false">/blog/?p=2257</guid>
+
+					<description><![CDATA[For some reason, if you install the Python Tools for Visual Studio 2017, you&#8217;ll end up with an Anaconda command prompt that won&#8217;t work. It apparently is due to a path length limitation where the total target path exceeds some ridiculously small number in Windows for a shortcut. Thankfully, the fix isn&#8217;t painful &#8212; it&#8217;s [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>For some reason, if you install the Python Tools for Visual Studio 2017, you&#8217;ll end up with an Anaconda command prompt that won&#8217;t work. It apparently is due to a path length limitation where the total target path exceeds some ridiculously small number in Windows for a shortcut.</p>
+<p><a href="/blog/wp-content/uploads/2018/05/Anaconda-Prompt.png"><img data-attachment-id="2258" data-permalink="/blog/index.php/archives/2257/anaconda-prompt" data-orig-file="/blog/wp-content/uploads/2018/05/Anaconda-Prompt.png" data-orig-size="544,585" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Anaconda Prompt" data-image-description="" data-image-caption="" data-medium-file="/blog/wp-content/uploads/2018/05/Anaconda-Prompt-279x300.png" data-large-file="/blog/wp-content/uploads/2018/05/Anaconda-Prompt.png" loading="lazy" class="aligncenter size-full wp-image-2258" src="/blog/wp-content/uploads/2018/05/Anaconda-Prompt.png" alt="" width="544" height="585" srcset="/blog/wp-content/uploads/2018/05/Anaconda-Prompt.png 544w, /blog/wp-content/uploads/2018/05/Anaconda-Prompt-279x300.png 279w" sizes="(max-width: 544px) 100vw, 544px" /></a></p>
+<p>Thankfully, the fix isn&#8217;t painful &#8212; it&#8217;s just frustrating that it needs to be done.</p>
+<p>I&#8217;ve seen suggestions to use the old-school DOS 8.3 file paths, but I prefer to use something that still reads well and maps to other dev command line tools on my workstation.</p>
+<p>I created a directory junction in an existing folder <strong>C:\Dev:</strong></p>
+<pre>mklink /d c:\Dev\Anaconda3_64 "c:\Program Files (x86)\Microsoft Visual Studio\Shared\Anaconda3_64"</pre>
+<p>Specifically, I created:</p>
+<pre>C:\Dev\Anaconda3_64</pre>
+<p>which is a junction to:</p>
+<pre>c:\Program Files (x86)\Microsoft Visual Studio\Shared\Anaconda3_64</pre>
+<p>You can use any junction directory you want, but remember that it can&#8217;t be too long, or you&#8217;ll have the same problem with a different name/path. :) When using <strong>mklink</strong>, be sure to quote the path for the Anaconda install in the Visual Studio directory as shown above in the mklink example.</p>
+<p>Next, I updated the command prompt with the new path:</p>
+<pre>c:\Dev\Anaconda3_64\pythonw.exe C:\Dev\Anaconda3_64\cwp.py C:\Dev\Anaconda3_64 %windir%\system32\cmd.exe /k c:\Dev\Anaconda3_64\Scripts\activate.bat c:\Dev\Anaconda3_64</pre>
+<p>Of course, you&#8217;ll need to substitute the path you used (just copy and paste into Notepad and do a quick search and replace with the full path I used).</p>
+<p>It should start up without issue now.</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2257</post-id>	</item>
+		<item>
+		<title>Class Decorator with TypeScript and React</title>
+		<link>/blog/index.php/archives/2247</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sat, 21 Apr 2018 02:27:19 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[Web]]></category>
+		<guid isPermaLink="false">/blog/?p=2247</guid>
+
+					<description><![CDATA[The syntax for creation and use of a class decorator written in TypeScript that works with a React.js component wasn&#8217;t obvious &#8230;, so I thought I&#8217;d document it here. The decorator takes a constructor/class which could be used how ever you&#8217;d like (or substituted for something else entirely). View the code on Gist. &#160;]]></description>
+										<content:encoded><![CDATA[<p>The syntax for creation and use of a class decorator written in TypeScript that works with a React.js component wasn&#8217;t obvious &#8230;, so I thought I&#8217;d document it here.</p>
+<p>The decorator takes a constructor/class which could be used how ever you&#8217;d like (or substituted for something else entirely).</p>
+<p>View the code on <a href="https://gist.github.com/wiredprairie/a405d3eda19b8ceccb26f67ffe84b3fe">Gist</a>.</p>
+<p>&nbsp;</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2247</post-id>	</item>
+		<item>
+		<title>TS2688 with TypeScript, React Native, and MobX</title>
+		<link>/blog/index.php/archives/2241</link>
+					<comments>/blog/index.php/archives/2241#comments</comments>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Fri, 02 Mar 2018 01:59:42 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<guid isPermaLink="false">/blog/?p=2241</guid>
+
+					<description><![CDATA[To preserve my sanity if I should run into this again&#8230;.  I created a React Native project, ejected it, and then converted it to use TypeScript. Things were going well until I started to use MobX. The following error occurred: node_modules/mobx/lib/utils/utils.d.ts(1,23): error TS2688: Cannot find type definition file for 'node'. Something as simple as: import { [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><em>To preserve my sanity if I should run into this again&#8230;. </em></p>
+<p>I created a React Native project, ejected it, and then converted it to use TypeScript. Things were going well until I started to use MobX. The following error occurred:</p>
+<pre>node_modules/mobx/lib/utils/utils.d.ts(1,23): error TS2688: Cannot find type definition file for 'node'.</pre>
+<p>Something as simple as:</p>
+<div>
+<pre>import { observable } from "mobx";</pre>
+<div>may cause the error shown above. If you look at the <strong>utils.d.ts</strong> file mentioned in the TS2688 error line, you&#8217;ll see what&#8217;s causing the error:</div>
+</div>
+<div>
+<div>
+<pre>/// &lt;reference types="node" /&gt;</pre>
+</div>
+</div>
+<div>It seems like a harmless error and easily resolved. Usually when there are missing types, your first step should be to add them to your project. My first attempt was to add the <strong>@types/node</strong> to the project.</div>
+<pre>yarn add -D @types/node</pre>
+<div><strong>Bzzt</strong>. That produces a whole new batch of errors due to duplicate definitions. There are quite a few classes and functions that are duplicates when React Native and Node declarations are both imported.</div>
+<div></div>
+<div>Apparently, this needs a stub for node so that the error can be bypassed (without changing or using other compiler switches like <strong>&#8211;skipLibCheck</strong>).</div>
+<div></div>
+<div>I created a new folder in the <strong>src</strong> tree called <strong>typings</strong>. In that folder, I created another folder, this time called <strong>node</strong>. And finally, in that folder, I created a nearly empty file called <strong>index.d.ts </strong>(the file contains a comment about why I created the file and a link to this blog post).</div>
+<div></div>
+<div><a href="/blog/wp-content/uploads/2018/03/2018-03-01-19_53_15-utils.d.ts-ReactNative-BggDemo-1-Visual-Studio-Code.png"><img data-attachment-id="2242" data-permalink="/blog/index.php/archives/2241/2018-03-01-19_53_15-utils-d-ts-reactnative-bggdemo-1-visual-studio-code" data-orig-file="/blog/wp-content/uploads/2018/03/2018-03-01-19_53_15-utils.d.ts-ReactNative-BggDemo-1-Visual-Studio-Code.png" data-orig-size="217,71" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Folder structure" data-image-description="" data-image-caption="" data-medium-file="/blog/wp-content/uploads/2018/03/2018-03-01-19_53_15-utils.d.ts-ReactNative-BggDemo-1-Visual-Studio-Code.png" data-large-file="/blog/wp-content/uploads/2018/03/2018-03-01-19_53_15-utils.d.ts-ReactNative-BggDemo-1-Visual-Studio-Code.png" loading="lazy" class="aligncenter size-full wp-image-2242" src="/blog/wp-content/uploads/2018/03/2018-03-01-19_53_15-utils.d.ts-ReactNative-BggDemo-1-Visual-Studio-Code.png" alt="Folder structure" width="217" height="71" /></a></div>
+<div></div>
+<div>The project now compiles without issue. The declaration types that were needed by MobX are already included elsewhere, but the pesky reference directive forces the compiler to try to locate the types.</div>
+<div></div>
+<div></div>
+<div>
+<div></div>
+</div>
+]]></content:encoded>
+					
+					<wfw:commentRss>/blog/index.php/archives/2241/feed</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2241</post-id>	</item>
+		<item>
+		<title>Flutter Demo application linking to BoardGameGeek.Com&#8217;s Hot Game List</title>
+		<link>/blog/index.php/archives/2224</link>
+					<comments>/blog/index.php/archives/2224#comments</comments>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Tue, 27 Feb 2018 01:49:12 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[General]]></category>
+		<category><![CDATA[Mobile]]></category>
+		<category><![CDATA[Phone]]></category>
+		<guid isPermaLink="false">/blog/?p=2224</guid>
+
+					<description><![CDATA[I&#8217;ve built a slightly more interesting application using Flutter.  Using an XML feed from BoardGameGeek&#8217;s API, the application displays a list of the current hot games complete with thumbnail images. Here&#8216;s the code. I used a standard Flutter app template and also added a few packages to the project. I&#8217;ve coded a substantial amount of [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;ve built a slightly more interesting application using Flutter.  Using an XML feed from <a href="https://boardgamegeek.com/wiki/page/BGG_XML_API2">BoardGameGeek&#8217;s API</a>, the application displays a list of the current hot games complete with thumbnail images.</p>
+<p><a href="/blog/wp-content/uploads/2018/02/2018-02-25-15_41_40-Android-Emulator-Nexus_5X_API_26_-_Flutter_5554.png"><img data-attachment-id="2225" data-permalink="/blog/index.php/archives/2224/2018-02-25-15_41_40-android-emulator-nexus_5x_api_26_-_flutter_5554" data-orig-file="/blog/wp-content/uploads/2018/02/2018-02-25-15_41_40-Android-Emulator-Nexus_5X_API_26_-_Flutter_5554.png" data-orig-size="324,650" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Android Screen" data-image-description="" data-image-caption="" data-medium-file="/blog/wp-content/uploads/2018/02/2018-02-25-15_41_40-Android-Emulator-Nexus_5X_API_26_-_Flutter_5554-150x300.png" data-large-file="/blog/wp-content/uploads/2018/02/2018-02-25-15_41_40-Android-Emulator-Nexus_5X_API_26_-_Flutter_5554.png" loading="lazy" class="aligncenter wp-image-2225 size-full" src="/blog/wp-content/uploads/2018/02/2018-02-25-15_41_40-Android-Emulator-Nexus_5X_API_26_-_Flutter_5554.png" alt="Android Screen" width="324" height="650" srcset="/blog/wp-content/uploads/2018/02/2018-02-25-15_41_40-Android-Emulator-Nexus_5X_API_26_-_Flutter_5554.png 324w, /blog/wp-content/uploads/2018/02/2018-02-25-15_41_40-Android-Emulator-Nexus_5X_API_26_-_Flutter_5554-150x300.png 150w" sizes="(max-width: 324px) 100vw, 324px" /></a></p>
+<p><a href="https://github.com/wiredprairie/flutter_app1">Here</a>&#8216;s the code. I used a standard Flutter app template and also added a few <a href="https://github.com/wiredprairie/flutter_app1/blob/master/pubspec.yaml">packages</a> to the project.</p>
+<p>I&#8217;ve coded a substantial amount of Windows Presentation Foundation (WPF) and Silverlight code over the years. One of the concerns that often came up was the UI tree &#8230;, the more complex it was, the slower the app often was without lots of tricks. Using the new inspector for Flutter apps, I selected one of the images in the UI. Needless to say, there are a <strong>few</strong> objects created to represent the UI tree. In fact, I had trouble capturing the image for this blog post. :)</p>
+<p><a href="/blog/wp-content/uploads/2018/02/2018-02-25-15_57_02-Flutter-Inspector.png"><br />
+<img data-attachment-id="2226" data-permalink="/blog/index.php/archives/2224/2018-02-25-15_57_02-flutter-inspector" data-orig-file="/blog/wp-content/uploads/2018/02/2018-02-25-15_57_02-Flutter-Inspector.png" data-orig-size="2014,2024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="2018-02-25 15_57_02-Flutter Inspector" data-image-description="" data-image-caption="" data-medium-file="/blog/wp-content/uploads/2018/02/2018-02-25-15_57_02-Flutter-Inspector-300x300.png" data-large-file="/blog/wp-content/uploads/2018/02/2018-02-25-15_57_02-Flutter-Inspector-1019x1024.png" loading="lazy" class="aligncenter size-medium wp-image-2226" src="/blog/wp-content/uploads/2018/02/2018-02-25-15_57_02-Flutter-Inspector-300x300.png" alt="Flutter Nesting" width="300" height="300" srcset="/blog/wp-content/uploads/2018/02/2018-02-25-15_57_02-Flutter-Inspector-300x300.png 300w, /blog/wp-content/uploads/2018/02/2018-02-25-15_57_02-Flutter-Inspector-150x150.png 150w, /blog/wp-content/uploads/2018/02/2018-02-25-15_57_02-Flutter-Inspector-1019x1024.png 1019w, /blog/wp-content/uploads/2018/02/2018-02-25-15_57_02-Flutter-Inspector.png 2014w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>I don&#8217;t have evidence that this generally will be a performance problem. Maybe with relatively simple mobile applications, a deep rich object based UI hierarchy won&#8217;t affect performance as much as it might in a desktop application of reasonable complexity. Regardless, it&#8217;s worth considering as you build a UI.</p>
+<p>Back to what I built. When a user taps on a board game in the list, I&#8217;ve wired the code to call the <strong>_showGameItem</strong> below. I appreciate that there&#8217;s an easy way to navigate to a new page on the stack and show a UI, all within a single function. Of course, I could have split it into multiple builder functions if needed.</p>
+<p>View the code on <a href="https://gist.github.com/wiredprairie/c0af9bb18c1460b6cfb4c61386e8dfda">Gist</a>.</p>
+<p>To register an event callback for the <strong>onTap</strong>, I&#8217;d tried finding a Widget that exposed it directly. I&#8217;m accustomed to elements having events (often bubbling events) that would have exposed something like <strong>onTap</strong>. However, with the exception of specialized widgets like Buttons for example, it&#8217;s not exposed on most Widgets (even those that have UI). So, at the outer layer of the items being shown in the <strong>ListView</strong>, I used a <strong>GestureDetector </strong>to capture the tap event:</p>
+<p>View the code on <a href="https://gist.github.com/wiredprairie/990d80ecf69700a2cd430032de29db28">Gist</a>.</p>
+<p>I would have preferred that the <strong>Container</strong> to have the event available. Maybe it&#8217;s not as <em>pure, </em>but, meh. I&#8217;d like to reduce the noise of building a UI and adding yet another layer just to capture an event is a distraction.</p>
+<blockquote><p>Architectural elegance does not always lead to a framework that is easy or friendly.</p></blockquote>
+<p>While I wasn&#8217;t really concerned about performance of my application or the possible impact from hitting the BoardGameGeek API a few times, I used application storage to cache a copy of the XML data that&#8217;s retrieved from BoardGameGeek just to get some experience with the APIs. Further, I added code to store the next time the file can be updated to the SharedPreferences object instance (to prevent it from being updated too frequently). I liked the simple exception handling in Dart as it&#8217;s relatively low impact to handle a specific exception type without caring about the details by using the <strong>on</strong> clause (just by dropping the <strong>catch(e)</strong>).</p>
+<p>View the code on <a href="https://gist.github.com/wiredprairie/dde9e1dde91fc35de9f1d42e37903cf7">Gist</a>.</p>
+<p>I noticed that the exception handler can specify one or two parameters. The first is always the exception and the second is the stack trace (<a href="https://api.dartlang.org/stable/dart-core/StackTrace-class.html">StackTrace</a>).  I&#8217;m not sure why the stack trace isn&#8217;t part of the exception object though.</p>
+<p>When the file is cached completely and successfully, the Widget state is updated, which triggers an application refresh, which is what happens on lines 29-32.</p>
+<p>Had Flutter been an option in the earlier days of Android, it would have been a strong contender in the application building space, especially that it runs on Android and iOS. From reading some of the issues on Github, the general consensus is that the cross-platform Flutter competitor to beat is React Native. In fact, I&#8217;m surprised that it has taken Google this long to produce a potentially viable alternative to the Java Android development tools. I&#8217;d honestly thought they&#8217;d announce something several years ago (I&#8217;ve watched Google I/O for many years for the announcement).</p>
+<p>If Android devices were upgraded more routinely (as are iOS devices), web technologies such as installed progressive web applications could be a serious contender and alternative for many application types. But, modern Android operating system versions are very slow to roll out (if ever) to the majority of devices.  Over half of Android devices are running Android 6.0 or earlier.</p>
+<p><a href="/blog/wp-content/uploads/2018/02/2018-02-26-19_19_35-Dashboards-_-Android-Developers.png"><img data-attachment-id="2233" data-permalink="/blog/index.php/archives/2224/2018-02-26-19_19_35-dashboards-_-android-developers" data-orig-file="/blog/wp-content/uploads/2018/02/2018-02-26-19_19_35-Dashboards-_-Android-Developers.png" data-orig-size="352,532" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Android Developer Version Distribution" data-image-description="" data-image-caption="" data-medium-file="/blog/wp-content/uploads/2018/02/2018-02-26-19_19_35-Dashboards-_-Android-Developers-198x300.png" data-large-file="/blog/wp-content/uploads/2018/02/2018-02-26-19_19_35-Dashboards-_-Android-Developers.png" loading="lazy" class="aligncenter wp-image-2233 size-full" src="/blog/wp-content/uploads/2018/02/2018-02-26-19_19_35-Dashboards-_-Android-Developers.png" alt="Android Developer Version Distribution" width="352" height="532" srcset="/blog/wp-content/uploads/2018/02/2018-02-26-19_19_35-Dashboards-_-Android-Developers.png 352w, /blog/wp-content/uploads/2018/02/2018-02-26-19_19_35-Dashboards-_-Android-Developers-198x300.png 198w" sizes="(max-width: 352px) 100vw, 352px" /></a></p>
+<p>Until the Android OEM ecosystem delivers timely updates to all phones newer than 5 years, solutions like Flutter (and competitors) remain a potentially reasonable way to reach a large variety of devices without needing to update to recent OS releases. However, it may be that the hardware hosting older versions, such as 6.0/Marshmallow and earlier are not capable of adequately executing a modern app built with technology like is used by Flutter.</p>
+<h3>Continued concerns</h3>
+<p>I still find the syntax of building a UI to be cumbersome and frustrating for several reasons:</p>
+<ol>
+<li>Using code to describe the UI is not effective for me. I can&#8217;t as quickly look at a block of code and determine what the UI is likely to be. It&#8217;s just too noisy.</li>
+<li>I&#8217;m constantly frustrated by getting the right number of closing parentheses to match the open parentheses. Using the auto formatting tools of Android Studio for Dart doesn&#8217;t make it easier. There are 10 lines that are marking the closing of some block. I&#8217;ll add an example below of how messy it starts to look if they&#8217;re combined in a way that the auto formatter suggests.</li>
+<li>In fact, if it were easy, I&#8217;d want to lines to start with the Widget type rather than <strong>child: new WidgetName</strong>(. But, there&#8217;s not an obvious way to format the code that way as the named parameters (<strong>child</strong>) are needed to provide the widget instance.</li>
+<li>Layout is a mess of classes and initialization. The examples on the web site make general sense, but when I&#8217;ve tried to innovate on my own and understand how to build other UI patterns, I&#8217;ve struggled to find the right combination of Widget classes that represent a desired layout. I imagine that with practice I&#8217;d get better, but I also would likely create multiple stateless Widgets to make some of the common patterns I&#8217;d expect to use routinely.</li>
+</ol>
+<p><a href="/blog/wp-content/uploads/2018/02/2018-02-26-19_45_39-Hulk-Smash-Meme-Generator-Imgflip.png"><img data-attachment-id="2239" data-permalink="/blog/index.php/archives/2224/2018-02-26-19_45_39-hulk-smash-meme-generator-imgflip" data-orig-file="/blog/wp-content/uploads/2018/02/2018-02-26-19_45_39-Hulk-Smash-Meme-Generator-Imgflip.png" data-orig-size="487,579" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Hulk Smash" data-image-description="" data-image-caption="" data-medium-file="/blog/wp-content/uploads/2018/02/2018-02-26-19_45_39-Hulk-Smash-Meme-Generator-Imgflip-252x300.png" data-large-file="/blog/wp-content/uploads/2018/02/2018-02-26-19_45_39-Hulk-Smash-Meme-Generator-Imgflip.png" loading="lazy" class="aligncenter size-full wp-image-2239" src="/blog/wp-content/uploads/2018/02/2018-02-26-19_45_39-Hulk-Smash-Meme-Generator-Imgflip.png" alt="Hulk Smash Layout" width="487" height="579" srcset="/blog/wp-content/uploads/2018/02/2018-02-26-19_45_39-Hulk-Smash-Meme-Generator-Imgflip.png 487w, /blog/wp-content/uploads/2018/02/2018-02-26-19_45_39-Hulk-Smash-Meme-Generator-Imgflip-252x300.png 252w" sizes="(max-width: 487px) 100vw, 487px" /></a></p>
+<p>Does Flutter have a future? Would you want to build an app that you wanted to still be building on 3-4 years from now? As it&#8217;s still in Alpha form, I wouldn&#8217;t do anything but explore.</p>
+<p>Then, there&#8217;s Dart. The strength of many development options for mobile and web development is the ability to concentrate on one programming language and have it work on client and server. With Flutter and Dart, if you don&#8217;t have a serverless-style architecture in place, you&#8217;ll need to use a second programming language. And that may limit its adoption. Of course, developers that work on multiple app platforms today have accepted this is just the price they have to pay, so maybe that&#8217;s not a big deal. If you&#8217;ve got a development shop that can have developers specialize, then this may be a non-issue entirely. For startups and very small teams, it&#8217;s a potential obstacle that must be considered.</p>
+<p>&nbsp;</p>
+<h3>Notes</h3>
+<p>If you try the code as I&#8217;ve put it on GitHub, you may encounter an error with a codec. This is actually a bug in the Flutter framework and apparently is fixed already and will be available generally at some point in a mainline branch. You&#8217;ll just need to rerun it.</p>
+<h3>Example of Auto Formatting</h3>
+<p>Note the parentheses on lines 20 and 21. That style causes me to just keep adding closing parentheses until the syntax is correct or the error is different. They&#8217;re very difficult to count.</p>
+<p>View the code on <a href="https://gist.github.com/wiredprairie/cb6362a3a125bea1b65994a837035bd6">Gist</a>.</p>
+<h3>Android Studio</h3>
+<p>Android Studio is an acquired taste from a theme and style perspective. With a few adjustments, it&#8217;s tolerable.</p>
+<p><a href="/blog/wp-content/uploads/2018/02/2018-02-26-19_29_41-Settings.png"><img data-attachment-id="2234" data-permalink="/blog/index.php/archives/2224/2018-02-26-19_29_41-settings" data-orig-file="/blog/wp-content/uploads/2018/02/2018-02-26-19_29_41-Settings.png" data-orig-size="782,694" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="2018-02-26 19_29_41-Settings" data-image-description="" data-image-caption="" data-medium-file="/blog/wp-content/uploads/2018/02/2018-02-26-19_29_41-Settings-300x266.png" data-large-file="/blog/wp-content/uploads/2018/02/2018-02-26-19_29_41-Settings.png" loading="lazy" class="aligncenter size-medium wp-image-2234" src="/blog/wp-content/uploads/2018/02/2018-02-26-19_29_41-Settings-300x266.png" alt="Android Studio Font and Color Settings" width="300" height="266" srcset="/blog/wp-content/uploads/2018/02/2018-02-26-19_29_41-Settings-300x266.png 300w, /blog/wp-content/uploads/2018/02/2018-02-26-19_29_41-Settings-768x682.png 768w, /blog/wp-content/uploads/2018/02/2018-02-26-19_29_41-Settings.png 782w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>I&#8217;m not sure why Keywords in the Darcula theme are bright, bolded orange. While keywords are important, they&#8217;re unnecessarily vibrant, especially in code blocks describing the UI:</p>
+<p><a href="/blog/wp-content/uploads/2018/02/2018-02-26-19_31_36-2018-02-26-07_18_26-flutter_app1e.png-‎-Photos.png"><img data-attachment-id="2235" data-permalink="/blog/index.php/archives/2224/2018-02-26-19_31_36-2018-02-26-07_18_26-flutter_app1e-png-%e2%80%8e-photos" data-orig-file="/blog/wp-content/uploads/2018/02/2018-02-26-19_31_36-2018-02-26-07_18_26-flutter_app1e.png-‎-Photos.png" data-orig-size="440,304" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Code Block Example" data-image-description="" data-image-caption="" data-medium-file="/blog/wp-content/uploads/2018/02/2018-02-26-19_31_36-2018-02-26-07_18_26-flutter_app1e.png-‎-Photos-300x207.png" data-large-file="/blog/wp-content/uploads/2018/02/2018-02-26-19_31_36-2018-02-26-07_18_26-flutter_app1e.png-‎-Photos.png" loading="lazy" class="aligncenter size-full wp-image-2235" src="/blog/wp-content/uploads/2018/02/2018-02-26-19_31_36-2018-02-26-07_18_26-flutter_app1e.png-‎-Photos.png" alt="Bright Bold Orange Code Block" width="440" height="304" srcset="/blog/wp-content/uploads/2018/02/2018-02-26-19_31_36-2018-02-26-07_18_26-flutter_app1e.png-‎-Photos.png 440w, /blog/wp-content/uploads/2018/02/2018-02-26-19_31_36-2018-02-26-07_18_26-flutter_app1e.png-‎-Photos-300x207.png 300w" sizes="(max-width: 440px) 100vw, 440px" /></a></p>
+<p>I turned off the bold minimally and changed the color of class names as an experiment &#8230; it&#8217;s better, but not right yet.</p>
+<p><a href="/blog/wp-content/uploads/2018/02/2018-02-26-19_33_37-flutter_app1-C__Users_Aaron_Dev_AndroidStudioProjects_flutter_app1-flutte.png"><img data-attachment-id="2236" data-permalink="/blog/index.php/archives/2224/2018-02-26-19_33_37-flutter_app1-c__users_aaron_dev_androidstudioprojects_flutter_app1-flutte" data-orig-file="/blog/wp-content/uploads/2018/02/2018-02-26-19_33_37-flutter_app1-C__Users_Aaron_Dev_AndroidStudioProjects_flutter_app1-flutte.png" data-orig-size="420,325" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Android Studio with custom class name" data-image-description="" data-image-caption="" data-medium-file="/blog/wp-content/uploads/2018/02/2018-02-26-19_33_37-flutter_app1-C__Users_Aaron_Dev_AndroidStudioProjects_flutter_app1-flutte-300x232.png" data-large-file="/blog/wp-content/uploads/2018/02/2018-02-26-19_33_37-flutter_app1-C__Users_Aaron_Dev_AndroidStudioProjects_flutter_app1-flutte.png" loading="lazy" class="aligncenter size-full wp-image-2236" src="/blog/wp-content/uploads/2018/02/2018-02-26-19_33_37-flutter_app1-C__Users_Aaron_Dev_AndroidStudioProjects_flutter_app1-flutte.png" alt="Android Studio with custom class name" width="420" height="325" srcset="/blog/wp-content/uploads/2018/02/2018-02-26-19_33_37-flutter_app1-C__Users_Aaron_Dev_AndroidStudioProjects_flutter_app1-flutte.png 420w, /blog/wp-content/uploads/2018/02/2018-02-26-19_33_37-flutter_app1-C__Users_Aaron_Dev_AndroidStudioProjects_flutter_app1-flutte-300x232.png 300w" sizes="(max-width: 420px) 100vw, 420px" /></a></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/blog/index.php/archives/2224/feed</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2224</post-id>	</item>
+		<item>
+		<title>Flutter.io First Impressions</title>
+		<link>/blog/index.php/archives/2211</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Fri, 23 Feb 2018 01:49:12 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[General]]></category>
+		<guid isPermaLink="false">/blog/?p=2211</guid>
+
+					<description><![CDATA[I&#8217;ve been tinkering with Flutter.io for a few days now and wanted to document a few early impressions. It uses the programming language Dart. I&#8217;d looked at a lot of Dart code when it was first announced, but hadn&#8217;t looked at it much since. I couldn&#8217;t see it gaining meaningful traction against the JavaScript juggernaut [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;ve been tinkering with <a href="https://flutter.io/">Flutter.io</a> for a few days now and wanted to document a few early impressions.</p>
+<p>It uses the programming language <a href="https://www.dartlang.org/">Dart</a>. I&#8217;d looked at a lot of Dart code when it was first announced, but hadn&#8217;t looked at it much since. I couldn&#8217;t see it gaining meaningful traction against the JavaScript juggernaut as a transpiled option (as it added too much overhead from the complaints I&#8217;d read) and there was zero evidence that any company besides Google was considering integrating it as a native option for Web pages. Without broad industry cross-browser support (from desktop to mobile as well), it seemed like a dead-end option that didn&#8217;t add measurable value. In some ways it was doomed to fail as it was trying to be a better JavaScript rather than rethinking the whole client development experience. It was just a new web programming language.</p>
+<p>Originally, Dart&#8217;s messaging was broad and suggested that it was an ideal language for everywhere. That has changed since it&#8217;s original announcements to be focused on client development. But, that shift was recent and apparently connected with the announcement of Flutter.</p>
+<p>From November 1, 2011:</p>
+<p><img data-attachment-id="2214" data-permalink="/blog/index.php/archives/2211/2018-02-22-07_17_59-dart-_-structured-web-programming" data-orig-file="/blog/wp-content/uploads/2018/02/2018-02-22-07_17_59-Dart-_-Structured-web-programming-e1519305672804.png" data-orig-size="724,308" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Dart Language Home Page, 2011-11-01" data-image-description="" data-image-caption="" data-medium-file="/blog/wp-content/uploads/2018/02/2018-02-22-07_17_59-Dart-_-Structured-web-programming-e1519305672804-300x128.png" data-large-file="/blog/wp-content/uploads/2018/02/2018-02-22-07_17_59-Dart-_-Structured-web-programming-e1519305672804.png" loading="lazy" class="aligncenter wp-image-2214 size-full" src="/blog/wp-content/uploads/2018/02/2018-02-22-07_17_59-Dart-_-Structured-web-programming-e1519305672804.png" alt="Dart Language Home Page" width="724" height="308" srcset="/blog/wp-content/uploads/2018/02/2018-02-22-07_17_59-Dart-_-Structured-web-programming-e1519305672804.png 724w, /blog/wp-content/uploads/2018/02/2018-02-22-07_17_59-Dart-_-Structured-web-programming-e1519305672804-300x128.png 300w" sizes="(max-width: 724px) 100vw, 724px" /></p>
+<p>&nbsp;</p>
+<p>to late February 2018:</p>
+<p><a href="/blog/wp-content/uploads/2018/02/2018-02-22-07_21_36-Dart-programming-language-_-Dart.png"><img data-attachment-id="2215" data-permalink="/blog/index.php/archives/2211/2018-02-22-07_21_36-dart-programming-language-_-dart" data-orig-file="/blog/wp-content/uploads/2018/02/2018-02-22-07_21_36-Dart-programming-language-_-Dart.png" data-orig-size="538,260" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Dart Home Page, 2018-02" data-image-description="" data-image-caption="" data-medium-file="/blog/wp-content/uploads/2018/02/2018-02-22-07_21_36-Dart-programming-language-_-Dart-300x145.png" data-large-file="/blog/wp-content/uploads/2018/02/2018-02-22-07_21_36-Dart-programming-language-_-Dart.png" loading="lazy" class="aligncenter size-full wp-image-2215" src="/blog/wp-content/uploads/2018/02/2018-02-22-07_21_36-Dart-programming-language-_-Dart.png" alt="Dart Home Page, 2018-02" width="538" height="260" srcset="/blog/wp-content/uploads/2018/02/2018-02-22-07_21_36-Dart-programming-language-_-Dart.png 538w, /blog/wp-content/uploads/2018/02/2018-02-22-07_21_36-Dart-programming-language-_-Dart-300x145.png 300w" sizes="(max-width: 538px) 100vw, 538px" /></a></p>
+<p>Even as recent as May 2017, the Dart team was still considering server development as a potential platform target:</p>
+<p><a href="/blog/wp-content/uploads/2018/02/2018-02-22-07_23_39-Dart-programming-language-_-Dart.png"><img data-attachment-id="2216" data-permalink="/blog/index.php/archives/2211/2018-02-22-07_23_39-dart-programming-language-_-dart" data-orig-file="/blog/wp-content/uploads/2018/02/2018-02-22-07_23_39-Dart-programming-language-_-Dart.png" data-orig-size="587,321" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Dart home page, May 2018" data-image-description="" data-image-caption="" data-medium-file="/blog/wp-content/uploads/2018/02/2018-02-22-07_23_39-Dart-programming-language-_-Dart-300x164.png" data-large-file="/blog/wp-content/uploads/2018/02/2018-02-22-07_23_39-Dart-programming-language-_-Dart.png" loading="lazy" class="aligncenter size-full wp-image-2216" src="/blog/wp-content/uploads/2018/02/2018-02-22-07_23_39-Dart-programming-language-_-Dart.png" alt="Dart home page, May 2018" width="587" height="321" srcset="/blog/wp-content/uploads/2018/02/2018-02-22-07_23_39-Dart-programming-language-_-Dart.png 587w, /blog/wp-content/uploads/2018/02/2018-02-22-07_23_39-Dart-programming-language-_-Dart-300x164.png 300w" sizes="(max-width: 587px) 100vw, 587px" /></a></p>
+<p>It seems logical that the team would pivot to concentrate on a single target platform type, the &#8220;client.&#8221; Dart hadn&#8217;t gained substantial traction in server development or client development. While a recent video I&#8217;d watched suggested there were 70 million lines of Dart code on Github, I&#8217;m not sure who&#8217;s writing all that code and why. The <a href="https://github.com/dart-lang/sdk">dart-lang repository</a> hosted on GitHub hasn&#8217;t seen a lot of &#8220;Star&#8221; love.</p>
+<p><a href="/blog/wp-content/uploads/2018/02/2018-02-22-07_29_04-dart-lang_sdk_-The-Dart-SDK-including-the-VM-dart2js-core-libraries-and-more.png"><img data-attachment-id="2217" data-permalink="/blog/index.php/archives/2211/2018-02-22-07_29_04-dart-lang_sdk_-the-dart-sdk-including-the-vm-dart2js-core-libraries-and-more" data-orig-file="/blog/wp-content/uploads/2018/02/2018-02-22-07_29_04-dart-lang_sdk_-The-Dart-SDK-including-the-VM-dart2js-core-libraries-and-more.png" data-orig-size="377,50" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Dart language SDK GitHub stats" data-image-description="" data-image-caption="" data-medium-file="/blog/wp-content/uploads/2018/02/2018-02-22-07_29_04-dart-lang_sdk_-The-Dart-SDK-including-the-VM-dart2js-core-libraries-and-more-300x40.png" data-large-file="/blog/wp-content/uploads/2018/02/2018-02-22-07_29_04-dart-lang_sdk_-The-Dart-SDK-including-the-VM-dart2js-core-libraries-and-more.png" loading="lazy" class="aligncenter size-full wp-image-2217" src="/blog/wp-content/uploads/2018/02/2018-02-22-07_29_04-dart-lang_sdk_-The-Dart-SDK-including-the-VM-dart2js-core-libraries-and-more.png" alt="1500 Stars on Github" width="377" height="50" srcset="/blog/wp-content/uploads/2018/02/2018-02-22-07_29_04-dart-lang_sdk_-The-Dart-SDK-including-the-VM-dart2js-core-libraries-and-more.png 377w, /blog/wp-content/uploads/2018/02/2018-02-22-07_29_04-dart-lang_sdk_-The-Dart-SDK-including-the-VM-dart2js-core-libraries-and-more-300x40.png 300w" sizes="(max-width: 377px) 100vw, 377px" /></a></p>
+<p>Compare those numbers to TypeScript for example:<a href="/blog/wp-content/uploads/2018/02/2018-02-22-07_31_05-Microsoft_TypeScript_-TypeScript-is-a-superset-of-JavaScript-that-compiles-to-cl.png"><br />
+<img data-attachment-id="2218" data-permalink="/blog/index.php/archives/2211/2018-02-22-07_31_05-microsoft_typescript_-typescript-is-a-superset-of-javascript-that-compiles-to-cl" data-orig-file="/blog/wp-content/uploads/2018/02/2018-02-22-07_31_05-Microsoft_TypeScript_-TypeScript-is-a-superset-of-JavaScript-that-compiles-to-cl.png" data-orig-size="405,51" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="TypeScript Github stats" data-image-description="" data-image-caption="" data-medium-file="/blog/wp-content/uploads/2018/02/2018-02-22-07_31_05-Microsoft_TypeScript_-TypeScript-is-a-superset-of-JavaScript-that-compiles-to-cl-300x38.png" data-large-file="/blog/wp-content/uploads/2018/02/2018-02-22-07_31_05-Microsoft_TypeScript_-TypeScript-is-a-superset-of-JavaScript-that-compiles-to-cl.png" loading="lazy" class="aligncenter size-full wp-image-2218" src="/blog/wp-content/uploads/2018/02/2018-02-22-07_31_05-Microsoft_TypeScript_-TypeScript-is-a-superset-of-JavaScript-that-compiles-to-cl.png" alt="31,301 Stars on Github" width="405" height="51" srcset="/blog/wp-content/uploads/2018/02/2018-02-22-07_31_05-Microsoft_TypeScript_-TypeScript-is-a-superset-of-JavaScript-that-compiles-to-cl.png 405w, /blog/wp-content/uploads/2018/02/2018-02-22-07_31_05-Microsoft_TypeScript_-TypeScript-is-a-superset-of-JavaScript-that-compiles-to-cl-300x38.png 300w" sizes="(max-width: 405px) 100vw, 405px" /></a>Nearly 30,000 more stars (and TypeScript was announced about a year after Dart).</p>
+<p>I wouldn&#8217;t choose Dart for new development outside of Flutter. My initial impression is disappointment that the Flutter team is using Dart as it adds one more language to the client-side development smörgåsbord. I don&#8217;t know that the world needs another programming/UI toolkit lock-in option right now added to the buffet. I like variety and competition, so I&#8217;m all for that, but I also worry that limited adoption of frameworks leads to abandonment and frustrated developers. I can speculate why they choose Dart, especially as it&#8217;s staffed by Google developers, and I can see the appeal of the language, but&#8230;.</p>
+<p><strong>I don&#8217;t need more programming languages right now in my solutions toolbox</strong>. It&#8217;s one more thing to learn and master. Since Flutter is also new, it has made the initial ramp-up time longer than I&#8217;d expected and wanted.  And because the language syntax is very familiar by design, it&#8217;s unfortunately likely that habits from other C-like and TypeScript-like will find their way into coding I do in Dart.</p>
+<p>While the community at large apparently considers the Widget building syntax to be a strength of Flutter, I can&#8217;t say that I&#8217;m excited about it. It&#8217;s chatty and verbose. (And I haven&#8217;t been able to tell if the enthusiasm about the current syntax is just from the early adopters or fans, or it&#8217;s generally well liked). It absolutely doesn&#8217;t feel like it&#8217;s moving the needle when compared to all of the other GUI frameworks that have come before it. In fact, it reminds me of my earliest coding experiences using <a href="https://en.wikipedia.org/wiki/Turbo_Vision">Turbo Vision</a>. <em><strong>Yeah</strong></em>. Turbo Vision from <a href="https://en.wikipedia.org/wiki/Borland">Borland</a>. (Wow &#8212; the past 20 years of IDEs and development tools originally from Borland has undergone an amazing number of ownership changes).</p>
+<p><img data-attachment-id="2212" data-permalink="/blog/index.php/archives/2211/2018-02-21-20_17_36-turbo_vision_version_2-0_programming_guide_1992-pdf" data-orig-file="/blog/wp-content/uploads/2018/02/2018-02-21-20_17_36-Turbo_Vision_Version_2.0_Programming_Guide_1992.pdf.png" data-orig-size="663,858" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Turbo Vision Programming Guide" data-image-description="" data-image-caption="" data-medium-file="/blog/wp-content/uploads/2018/02/2018-02-21-20_17_36-Turbo_Vision_Version_2.0_Programming_Guide_1992.pdf-232x300.png" data-large-file="/blog/wp-content/uploads/2018/02/2018-02-21-20_17_36-Turbo_Vision_Version_2.0_Programming_Guide_1992.pdf.png" loading="lazy" class="size-medium wp-image-2212 aligncenter" src="/blog/wp-content/uploads/2018/02/2018-02-21-20_17_36-Turbo_Vision_Version_2.0_Programming_Guide_1992.pdf-232x300.png" alt="Turbo Vision Programming Guide" width="232" height="300" srcset="/blog/wp-content/uploads/2018/02/2018-02-21-20_17_36-Turbo_Vision_Version_2.0_Programming_Guide_1992.pdf-232x300.png 232w, /blog/wp-content/uploads/2018/02/2018-02-21-20_17_36-Turbo_Vision_Version_2.0_Programming_Guide_1992.pdf.png 663w" sizes="(max-width: 232px) 100vw, 232px" /></p>
+<p>(Yes, it&#8217;s not really like that too much, but I had some flashbacks to my Turbo Pascal days).</p>
+<p>Here&#8217;s a snippet of some code, written in Dart which represents a single item (more about this in a later post), with a thumbnail, a name, and a year published.</p>
+<p>View the code on <a href="https://gist.github.com/wiredprairie/39249b188c8eab4427a09bf930677bf1">Gist</a>.</p>
+<p>Of course, alternatives have been proposed, like a <a href="https://github.com/flutter/flutter/issues/11609">JSX-like syntax</a>. This proposal brought out the best and worst of engineers of course. A few of the collaborators on Flutter were so dismissive of the idea I nearly stopped looking at Flutter.  As Flutter is in its early days, and backed by Google, I expect ideas are rationally considered and individuals to be treated with respect, even if there is disagreement. I&#8217;ve done years of WPF, Silverlight, and UWP development which used XAML. While there continue to be some rough spots in XAML, I appreciated the structured document for building a UI. I don&#8217;t know that I&#8217;d go in that direction for Flutter, but I don&#8217;t think describing complex user interfaces entirely in code is the best for its future viability, especially as it needs to compete with a variety of other frameworks and options.</p>
+<p>Ignoring the syntax of how to describe a UI though for a moment, I&#8217;m still having trouble with wrapping my head around the idea that State actually renders a UI:</p>
+<p>View the code on <a href="https://gist.github.com/wiredprairie/1d23b8d168fd148cb1c6bfe8194984ce">Gist</a>.</p>
+<p>It&#8217;s the <strong>build</strong> method that returns the object hierarchy that describes the widget tree, not the class that subclasses <a href="https://docs.flutter.io/flutter/widgets/StatefulWidget-class.html"><strong>StatefulWidget</strong></a>.  If you instead use a <a href="https://docs.flutter.io/flutter/widgets/StatelessWidget-class.html"><strong>StatelessWidget</strong></a>, it builds its Widget hierarchy directly within the class. I can see how they arrived at this implementation, but it just feels inconsistent.</p>
+<p>I like the <strong>async</strong>/<strong>await</strong> support in Dart. I do wish that I wouldn&#8217;t need to specifically declare the return type as <strong>Future&lt;T&gt;</strong>. The code has already signaled that it&#8217;s <strong>async</strong>, so if <strong>Future&lt;T&gt;</strong> could just be <strong>T</strong>, some code clutter would be eliminated.</p>
+<p>View the code on <a href="https://gist.github.com/wiredprairie/06a72c5aaf23989359584de986fc7e3c">Gist</a>.</p>
+<p><img data-attachment-id="2221" data-permalink="/blog/index.php/archives/2211/2018-02-22-19_43_09-flutter_app1-c__users_aaron_dev_androidstudioprojects_flutter_app1-flutte" data-orig-file="/blog/wp-content/uploads/2018/02/2018-02-22-19_43_09-flutter_app1-C__Users_Aaron_Dev_AndroidStudioProjects_flutter_app1-flutte.png" data-orig-size="1472,1070" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="AndroidStudio" data-image-description="" data-image-caption="" data-medium-file="/blog/wp-content/uploads/2018/02/2018-02-22-19_43_09-flutter_app1-C__Users_Aaron_Dev_AndroidStudioProjects_flutter_app1-flutte-300x218.png" data-large-file="/blog/wp-content/uploads/2018/02/2018-02-22-19_43_09-flutter_app1-C__Users_Aaron_Dev_AndroidStudioProjects_flutter_app1-flutte-1024x744.png" loading="lazy" class="wp-image-2221 size-large alignright" src="/blog/wp-content/uploads/2018/02/2018-02-22-19_43_09-flutter_app1-C__Users_Aaron_Dev_AndroidStudioProjects_flutter_app1-flutte-1024x744.png" alt="AndroidStudio" width="730" height="530" srcset="/blog/wp-content/uploads/2018/02/2018-02-22-19_43_09-flutter_app1-C__Users_Aaron_Dev_AndroidStudioProjects_flutter_app1-flutte-1024x744.png 1024w, /blog/wp-content/uploads/2018/02/2018-02-22-19_43_09-flutter_app1-C__Users_Aaron_Dev_AndroidStudioProjects_flutter_app1-flutte-300x218.png 300w, /blog/wp-content/uploads/2018/02/2018-02-22-19_43_09-flutter_app1-C__Users_Aaron_Dev_AndroidStudioProjects_flutter_app1-flutte-768x558.png 768w, /blog/wp-content/uploads/2018/02/2018-02-22-19_43_09-flutter_app1-C__Users_Aaron_Dev_AndroidStudioProjects_flutter_app1-flutte-1200x872.png 1200w, /blog/wp-content/uploads/2018/02/2018-02-22-19_43_09-flutter_app1-C__Users_Aaron_Dev_AndroidStudioProjects_flutter_app1-flutte.png 1472w" sizes="(max-width: 730px) 100vw, 730px" /></p>
+<p>The the code above, it&#8217;s great that the <strong>return</strong> value is automatically wrapped in a <strong>Future</strong> without any special code, but taking it a bit further would make Dart and Flutter more appealing.</p>
+<p>I&#8217;ve been using TypeScript long enough that <strong>let </strong>and <strong>const </strong>functionality is second-nature. Unfortunately, Dart&#8217;s language is subtly different and I end up trying to use <strong>const </strong>where I meant to use <strong><a href="https://www.dartlang.org/guides/language/language-tour#final-and-const">final</a>. </strong>That&#8217;s my problem of course, but it&#8217;s just a gotcha. <strong>Const</strong> in Dart is for compile-time constants.</p>
+<p>I&#8217;ve been generally pleased with using Android Studio with the Flutter plugin. It performs reasonably well, and it&#8217;s a good editor with lots of bells and whistles. The build/debug times are quite long, even for a basic app. It&#8217;s about 25-30 seconds for a build and deploy to an emulator. Thankfully, the plugin and Flutter both support hot reloading, so many changes to the code can be updated without needing to do a new build/deploy. While that&#8217;s very helpful, I&#8217;d like to see a significantly reduced build and deploy time.</p>
+<p>In a market saturated with options for building cross-platform application UIs, it&#8217;s not clear how Flutter fits in. I&#8217;ve liked the experience enough that I&#8217;m going to build out a few simple apps and will show off more details in a later post of an app I&#8217;ve been tinkering with as I learn the platform and development environment. Flutter is in an &#8220;alpha&#8221; state right now, so a lot could change before it&#8217;s available in a final release (if it ever is). According to their <a href="https://github.com/flutter/flutter/milestone/21">Github</a> repository, they have currently 86 issues open for their &#8220;beta&#8221; milestone. There&#8217;s no meaningful date associated with the transition though.</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2211</post-id>	</item>
+		<item>
+		<title>Quick demo of Go&#8217;s context.WithTimeout</title>
+		<link>/blog/index.php/archives/2189</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sat, 29 Apr 2017 01:14:45 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[General]]></category>
+		<category><![CDATA[GoLang]]></category>
+		<guid isPermaLink="false">/blog/?p=2189</guid>
+
+					<description><![CDATA[To better understand Go&#8217;s context withTimeout functionality (and as a reference for myself), I&#8217;ve created this small self-contained demo. I didn&#8217;t find the published documentation&#8217;s example to be clear enough. The interesting part, coming from other programming languages and platforms, was that the WithTimeout function only was a signal that something happened. It doesn&#8217;t do anything [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>To better understand Go&#8217;s context <a href="https://golang.org/pkg/context/#WithTimeout"><strong>withTimeout </strong></a>functionality (and as a reference for myself), I&#8217;ve created this small self-contained demo. I didn&#8217;t find the published documentation&#8217;s example to be clear enough. The interesting part, coming from other programming languages and platforms, was that the <strong>WithTimeout</strong> function only was a signal that something happened. It doesn&#8217;t do anything when there&#8217;s a time out (like abort a goroutine or anything dramatic like that).</p>
+<p>The essential pieces:</p>
+<ol>
+<li>Call <strong>WithTimeout</strong> passing the <strong>Background()</strong> context and specify the timeout (I&#8217;ve specified  3.2 seconds)</li>
+<li>Be a good citizen and <strong>defer</strong> the cancellation (to be sure that it&#8217;s called) and <strong>defer close </strong>the channel</li>
+<li>Start the go routine which waits for the <strong>Done </strong>channel</li>
+<li>When the <strong>Done</strong> is signaled, display the current time in seconds and what caused the signal</li>
+<li>The main app is waiting for the goroutine to end, so signal that.</li>
+<li>In the main function, the code sleeps and wakes emitting some time stamps to the console</li>
+<li>Depending on whether <strong>cancel</strong> is called, the goroutine signal may be one of two things.
+<ol>
+<li>If <strong>cancel</strong> is not called prior to the second sleep in the code, the <strong>ctx.Err() </strong>returns
+<pre class=""><span class="stdout">&lt;-ctx.Done():  context deadline exceeded</span></pre>
+</li>
+<li>If <strong>cancel</strong> however is called, the ctx.Err() returns:
+<pre class=""><span class="stdout">&lt;-ctx.Done():  context canceled</span></pre>
+</li>
+</ol>
+</li>
+<li>Then, the goroutine uses the channel to signal completion (<strong>wait&lt;-true</strong>).</li>
+</ol>
+<p>View the code on <a href="https://gist.github.com/wiredprairie/f8b322866b885be484cdff97bad19e9c">Gist</a>.</p>
+<p>You can experiment with this sample <a href="https://play.golang.org/p/ulikEClQE3">here</a>.</p>
+<p>With cancel called (the line <strong>cancel()</strong> not commented out):</p>
+<pre class=""><span class="stdout">first sleep completed,  02.00
+Timeout: 02.00
+in &lt;-ctx.Done():  context canceled
+</span><span class="stdout">after second sleep done,  04.00</span></pre>
+<p>And, with <strong>// cancel() </strong>commented out:</p>
+<pre class=""><span class="stdout">first sleep completed,  02.00
+</span><span class="stdout">Timeout: 03.20
+in &lt;-ctx.Done():  context deadline exceeded
+</span><span class="stdout">after second sleep done,  04.00
+</span></pre>
+<p>Hopefully this helps someone besides me.</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2189</post-id>	</item>
+		<item>
+		<title>Automatic Reconnection of iSCSI Targets in Windows 10 using PowerShell</title>
+		<link>/blog/index.php/archives/2165</link>
+					<comments>/blog/index.php/archives/2165#comments</comments>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Wed, 05 Apr 2017 00:56:26 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[General]]></category>
+		<category><![CDATA[Windows10]]></category>
+		<category><![CDATA[certificates]]></category>
+		<category><![CDATA[powershell]]></category>
+		<category><![CDATA[windows10]]></category>
+		<guid isPermaLink="false">/blog/?p=2165</guid>
+
+					<description><![CDATA[When my highly recommended Synology Disk Station reboots for a required update (I&#8217;ve got it set to automatically reboot), a shared Windows 10 PC in our house cannot always successfully reconnect to the iSCSI targets without manual intervention. Unfortunately, I haven&#8217;t always noticed which has led to several features of Windows not functioning the way [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>When my highly recommended <strong><a href="http://amzn.to/2n932GE">Synology </a>Disk Station</strong> reboots for a required update (I&#8217;ve got it set to automatically reboot), a shared Windows 10 PC in our house cannot always successfully reconnect to the iSCSI targets without manual intervention. Unfortunately, I haven&#8217;t always noticed which has led to several features of Windows not functioning the way I want (I have mapped the iSCSI drives/disks via Windows and made them into network shares for the other PCs/laptops in our house &#8212; this way I can use Windows bitlocker encryption on the iSCSI drive contents).</p>
+<p>To make the connection more automatic, I created a simple one line PowerShell script that periodically attempts to connect to any disconnected iSCSI targets using the Windows Task Scheduler.</p>
+<p>I saved this into a script file called <strong>reconnect-iscsi-targets.ps1</strong>:</p>
+<pre>Get-IscsiTarget | where ($_.isConnected -eq $false) | Connect-IscsiTarget</pre>
+<p>Then, in the Task Scheduler, I created a new task set to run every 10 minutes daily. The script just gets all iSCSI targets, filters only those that aren&#8217;t connected, and then passes the results to the connection cmdlet.</p>
+<p>For the action, I selected <strong>&#8220;Start a program&#8221;</strong> for program/script, I entered: <strong>&#8220;powershell.exe&#8221;</strong>, and then added the arguments &#8220;<strong>-File</strong>&#8221; and the full path to the file name, like:</p>
+<pre>-File c:\Users\aaron\Documents\reconnect-iscsi-targets.ps1</pre>
+<p>If there are spaces in the path to the PowerShell file, be sure to add quotes around the full path and file name.</p>
+<p><img data-attachment-id="2168" data-permalink="/blog/index.php/archives/2165/2017-04-04_19-07-23" data-orig-file="/blog/wp-content/uploads/2017/04/2017-04-04_19-07-23.png" data-orig-size="460,500" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Action properties for Task" data-image-description="" data-image-caption="" data-medium-file="/blog/wp-content/uploads/2017/04/2017-04-04_19-07-23-276x300.png" data-large-file="/blog/wp-content/uploads/2017/04/2017-04-04_19-07-23.png" loading="lazy" class="aligncenter wp-image-2168 size-full" src="/blog/wp-content/uploads/2017/04/2017-04-04_19-07-23.png" alt="" width="460" height="500" srcset="/blog/wp-content/uploads/2017/04/2017-04-04_19-07-23.png 460w, /blog/wp-content/uploads/2017/04/2017-04-04_19-07-23-276x300.png 276w" sizes="(max-width: 460px) 100vw, 460px" /></p>
+<p>You shouldn&#8217;t need the <strong>start in</strong> option set (leave it empty if you&#8217;d like).</p>
+<p>On the General tab of the task, make sure you&#8217;ve set the &#8220;<strong>Run whether user is logged on or not</strong>&#8221; option and &#8220;<strong>Run with highest privileges</strong>.&#8221;</p>
+<p>Next up &#8212; how to quickly<a href="/blog/index.php/archives/2170"> create a Self-Signed Code-Signing</a> certificate. And, how to actually allow scripts to run!</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/blog/index.php/archives/2165/feed</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2165</post-id>	</item>
+		<item>
+		<title>Frustrated by the DocumentDB Emulator</title>
+		<link>/blog/index.php/archives/2163</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Tue, 03 Jan 2017 02:21:58 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<guid isPermaLink="false">/blog/?p=2163</guid>
+
+					<description><![CDATA[I was very excited about the announcement of a DocumentDB emulator! I could finally explore the magic of this new document-based database (I can&#8217;t say &#8220;NoSQL&#8221; as it supports a SQL dialect) without spending money just to explore the database (it was a &#8220;pay to play&#8221;). However, it&#8217;s not to be for me: Worst: It supports [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I was very excited about the announcement of a <a href="https://docs.microsoft.com/en-us/azure/documentdb/documentdb-nosql-local-emulator">DocumentDB emulator</a>!</p>
+<p>I could finally explore the magic of this new document-based database (I can&#8217;t say &#8220;NoSQL&#8221; as it supports a <a href="https://www.documentdb.com/sql/demo">SQL dialect</a>) without spending money just to explore the database (it was a &#8220;pay to play&#8221;).</p>
+<p>However, it&#8217;s not to be for me:</p>
+<ol>
+<li><span style="color: #ff0000;"><strong>Worst</strong></span>: It supports requests from LOCALHOST only. Its ports are bound to 127.0.0.1 rather than 0.0.0.0, thus preventing it from being usable from other machines. I wanted to install this on an always-on PC in our house rather than install it on my home workstation. I can sort of see why they want to limit it, but come-on, this is for development purposes. It&#8217;s not set up for availability, performance, etc. One simple right click of the app-tray icon resets and clears all the data. There are a number of effective ways for making it developer only &#8212; and I wouldn&#8217;t have picked this one.</li>
+<li>It has constantly used CPU, even when it&#8217;s not being used. On my laptop for example, it was hovering around 10-15% CPU, even when there were zero active connections. This problem isn&#8217;t consistent as I installed it on a secondary workstation and it&#8217;s using a lot of RAM (nearly 400MB), but only 1% CPU.</li>
+<li>It&#8217;s Windows only. This is actually a minor point if you&#8217;re using Windows, but if you want to use a Mac and do development, even with a VM hosted emulator, you won&#8217;t be able to.</li>
+</ol>
+<p>So, for the best experience with DocumentDB, you&#8217;ll likely need to stick with the pay-to-play option of hosting it in Azure. I&#8217;m disappointed. I&#8217;ll look for a different database &#8230; something that doesn&#8217;t have this limitation.</p>
+<p>Bummer.</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2163</post-id>	</item>
+		<item>
+		<title>Tree walking and display console app in Go</title>
+		<link>/blog/index.php/archives/2078</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Fri, 18 Nov 2016 13:44:10 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[GoLang]]></category>
+		<guid isPermaLink="false">/blog/?p=2078</guid>
+
+					<description><![CDATA[I hadn’t done anything at all interesting in Go. And some might say, I still haven’t. However, I wanted to do something that I’d find occasionally useful. On Linux, this is already available, but the the Windows version is lacking. I wanted a tiny console app that would display a tree of the directory and [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I hadn’t done anything at all interesting in Go. And some might say, I still haven’t. However, I wanted to do something that I’d find occasionally useful.</p>
+<p>On Linux, this is already available, but the the Windows version is lacking. I wanted a tiny console app that would display a tree of the directory and file structure.</p>
+<p>So, that’s what I built. <img class="wlEmoticon wlEmoticon-smile" style="border-style: none;" src="/blog/wp-content/uploads/2016/11/wlEmoticon-smile.png" alt="Smile" /></p>
+<p>It’s one small file with one external library dependency.</p>
+<p>I did notice that the Go packages for directory scanning like <strong>ReadDir </strong>suffer from a common issue when using the traditional Win32 APIs: they do not adequately handle file paths longer than about 250 characters. When you have NodeJS source code on your system with lots of deeply nested paths, many Windows programs fail miserably when doing file/folder management operations (Windows Explorer, I&#8217;m looking at <strong>YOU</strong>). <em>Using the one &#8220;easy&#8221; trick</em> of prepending the path with <strong>\\?\</strong>, you can use the APIs like ReadDir reasonably reliably. Whereas in earlier versions of my tree app it would crash, it now can handle deeply nested directory structures.</p>
+<p><a href="/blog/wp-content/uploads/2016/11/image-2.png"><img loading="lazy" style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border: 0px;" title="image" src="/blog/wp-content/uploads/2016/11/image_thumb-2.png" alt="image" width="499" height="318" border="0" /></a></p>
+<pre>go get github.com/fatih/color</pre>
+<p>View the code on <a href="https://gist.github.com/wiredprairie/e9ba85bdfb74799239fc974c2beeb0b8">Gist</a>.</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2078</post-id>	</item>
+		<item>
+		<title>Customize the External VS Code Console</title>
+		<link>/blog/index.php/archives/2070</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Fri, 11 Nov 2016 13:35:16 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[Code]]></category>
+		<category><![CDATA[Visual Studio]]></category>
+		<guid isPermaLink="false">/blog/?p=2070</guid>
+
+					<description><![CDATA[I have Visual Studio 2015 installed and when I launch a command prompt on Windows, it’s generally the Visual Studio 2015 Developer Command prompt (in fact, I have it pinned to my Windows 10 task bar). On Windows, using Visual Studio Code 1.7+, pressing SHIFT+CTRL+C opens a Windows Command prompt from the root directory of [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I have Visual Studio 2015 installed and when I launch a command prompt on Windows, it’s generally the Visual Studio 2015 Developer Command prompt (in fact, I have it pinned to my Windows 10 task bar).</p>
+<p><a href="/blog/wp-content/uploads/2016/11/image.png"><img loading="lazy" style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border: 0px;" title="image" src="/blog/wp-content/uploads/2016/11/image_thumb.png" alt="image" width="380" height="271" border="0" /></a></p>
+<p>On Windows, using Visual Studio Code 1.7+, pressing SHIFT+CTRL+C opens a Windows Command prompt from the root directory of your opened folder. It’s super useful.</p>
+<p>I wanted the Developer Command prompt to open instead of a standard command prompt.</p>
+<p>To change that, open the User Settings:</p>
+<p><a href="/blog/wp-content/uploads/2016/11/image-1.png"><img loading="lazy" style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border: 0px;" title="image" src="/blog/wp-content/uploads/2016/11/image_thumb-1.png" alt="image" width="400" height="460" border="0" /></a></p>
+<p>Add the following:</p>
+<pre>
+"terminal.external.windowsExec": "C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\Tools\\VsDevCmd.bat"
+</pre>
+<p>Of course, you can use other batch or command files to customize the prompt. I just wanted all of the standard developer tools I have installed to be available.</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2070</post-id>	</item>
+	</channel>
+</rss>

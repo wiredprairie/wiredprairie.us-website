@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Feed them &#8230; and they may show up &#8230;	</title>
+	<atom:link href="/blog/index.php/archives/188/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/188</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Wed, 07 May 2008 12:51:34 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: WiredPrairie - OK, One more shot of the Orioles &#8230;		</title>
+		<link>/blog/index.php/archives/188/comment-page-1#comment-74</link>
+
+		<dc:creator><![CDATA[WiredPrairie - OK, One more shot of the Orioles &#8230;]]></dc:creator>
+		<pubDate>Wed, 07 May 2008 12:51:34 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/188#comment-74</guid>
+
+					<description><![CDATA[[...] through a window in the dim morning light hand holding the camera), but here were four of the 6 orioles that were on our deck this morning (much to our [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] through a window in the dim morning light hand holding the camera), but here were four of the 6 orioles that were on our deck this morning (much to our [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

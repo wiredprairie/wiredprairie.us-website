@@ -1,0 +1,951 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>Silverlight &#8211; WiredPrairie</title>
+	<atom:link href="/blog/index.php/archives/category/silverlight/feed" rel="self" type="application/rss+xml" />
+	<link>/blog</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Thu, 02 Aug 2012 15:29:56 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+<site xmlns="com-wordpress:feed-additions:1">193486638</site>	<item>
+		<title>Silverlight to become Microsoft&#8217;s next VB6?</title>
+		<link>/blog/index.php/archives/1162</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Tue, 02 Nov 2010 01:37:43 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[General]]></category>
+		<category><![CDATA[Silverlight]]></category>
+		<guid isPermaLink="false">/blog/index.php/archives/1162</guid>
+
+					<description><![CDATA[There was a huge uproar in the tech blogs this past week regarding some comments made by Bob Muglia (of Microsoft) as reported by Mary Joe Foley in a post entitled, “Microsoft: Our Strategy with Silverlight has shifted.” The quotes that caused the most ruckus are: “Silverlight is our development platform for Windows Phone,” he [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>There was a huge uproar in the tech blogs this past week regarding some comments made by Bob Muglia (of Microsoft) as reported by Mary Joe Foley in a post entitled, “<a href="http://www.zdnet.com/blog/microsoft/microsoft-our-strategy-with-silverlight-has-shifted/7834?tag=mantle_skin;content">Microsoft: Our Strategy with Silverlight has shifted</a>.” </p>
+<p>The quotes that caused the most ruckus are:</p>
+<blockquote>
+<p>“<a href="http://www.zdnet.com/blog/microsoft/microsofts-new-pitch-every-net-developer-just-became-a-windows-phone-developer/5316">Silverlight is our development platform for Windows Phone</a>,” he said. Silverlight also has some “sweet spots” in media and line-of-business applications, he said.</p>
+<p>&#160;</p>
+<p>But when it comes to touting Silverlight as Microsoft’s vehicle for delivering a cross-platform runtime, “our strategy has shifted,” Muglia told me.</p>
+<p>&#160;</p>
+<p>Silverlight will continue to be a cross-platform solution, working on a variety of operating system/browser platforms, going forward, he said. “But HTML is the only true cross platform solution for everything, including (Apple’s) iOS platform,” Muglia said.</p>
+</blockquote>
+<p>OK, so many who read this read a lot between the lines. </p>
+<ul>
+<li><a href="http://techcrunch.com/2010/10/30/rip-silverlight-on-the-web/">Microsoft Has Seen The Light. And It’s Not Silverlight.</a> </li>
+</ul>
+<p>Whatever HTML5 means to you (and your definition is likely different than mine unfortunately), it can’t do everything. There’s still a place for Silverlight and Flash in this world. Many consumer facing web sites, simply don’t need Flash or Silverlight. Either of these browser plug-ins can enhance the consumer experience, but rarely are they needed for the average web site. You won’t likely see more Flash or Silverlight on traditional consumer facing web sites.</p>
+<p>Thankfully, BobMu <a href="http://team.silverlight.net/announcement/pdc-and-silverlight/">responded</a> and tried to calm some fears (which was only somewhat effective).</p>
+<p>I’d consider there are a few places where HTML (4+) is not yet rich enough to provide the type of experience demanded by users:</p>
+<ul>
+<li><strong>Games</strong>. JavaScript and HTML just isn’t yet up to the task of creating a good rich game. It’s not really the platform’s fault – it just wasn’t designed with it in mind. </li>
+<li><strong>Business Applications. </strong>It’s great that Twitter can run completely in the web browser or that you’re able to enter a street address to collect a consumer’s home shipping address for a package (with the ability to provide some text hinting as a bonus). But, business applications are far more complex, and require robust data and input handling that are very challenging to handle, especially cross browser. Layout of complex data (tables or not) can be maddening and extremely inefficient in browsers, when data needs to be truncated, formatted, centered, sorted, etc.
+<p>It’s easy to build a ineffective web application in HTML that doesn’t consider the user. Too easy. That’s where the plug-ins can excel when used properly.</li>
+</ul>
+<p>Many things can be hacked to work in the web browser without Silverlight. However, this comes at a great cost of development and maintenance and QA. How many times have you written a web application and not needed to fix an issue that happens only in one browser (and worse, only in a particular version)? If you haven’t, it’s likely you haven’t written a complex web application or that your needs are very simple. </p>
+<p>This is where Silverlight (and Flash/Flex) both shine. They provide a consistent and robust user experience across supported browsers and platforms. Write it once, and it really should run nearly anywhere the plug-ins are supported without issue. Furthermore, they both provide a better debugging and development experience than JavaScript/HTML. </p>
+<p>Even though Silverlight and Flex are best used in Enterprise development, I worry that Microsoft may still abandon the platform sooner rather than later.</p>
+<p>Microsoft totally missed the boat on Silverlight for games. If they had gotten a better foothold in that market, I’d be much less worried. I’ve never encountered a game that was written in Silverlight that wasn’t pointed by some Silverlight blog I follow. Flash I encounter all the time. Silverlight should be a decent gaming platform, but the development and design tools for gaming in Silverlight <strong>suck</strong><strong> </strong>in comparison to those provided by Flash. <strong>Suck</strong>. There’s no real consideration for the type of animation and character creation that the Flash tools provide that game development shops need.</p>
+<p>Blend – phhpt. Don’t get me started on how awful that would be to use as an animator. Expression Design? <strong>Ha!</strong> That thing is a joke compared to Flash CS5. At best, an animator could painfully create illustrations in Photoshop or Illustrator and then import them as layers into Blend, and then try to manage them … yuck. Too many tools and not enough interaction between them. </p>
+<p>This is a new game that demonstrated at Adobe Max – beautifully done. It’s using Flash. I can’t imagine it being done in any other platform today.</p>
+<p><object width="480" height="385"><param name="movie" value="http://www.youtube.com/v/zvGJ9FRt2y4?fs=1&amp;hl=en_US"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param></object></p>
+<p>So, that leaves business applications as the other major distinguishing feature of these plug-ins. </p>
+<p>But, will that be enough?</p>
+<p>It’s absolutely enough to keep them alive for another 3-5 years without any issues. Even once HTML5 settles into place and the major 3 or 4 browsers implement most of the features, there still will be a lack of good support for typical business applications. Again, it’s just not something HTML 5 was built for. It would require enhancements. HTML 6 maybe? </p>
+<p>Eventually, browsers will support the typical enterprise web application needs. It’s at that point that the Flash and Silverlight’s we know of today will be retired. But, neither Microsoft or Adobe is going to sit idly by and watch their platforms die a slow miserable death. Both sell tools. That’s how they make money. The plug-ins generate no real money. It’s the tools. Once the tools stop being profitable, the technologies will be retired or open sourced. For the sake of enterprise development shops, one could hope for the latter (but my guess is that intellectual property issues surrounding much of the plug-in will make this impractical, especially video/audio codecs.).</p>
+<p>The best chance for both Adobe and Microsoft seems to be in the application market. Not a pure web application delivered via the browser, but an out-of-the-browser application. Adobe AIR and Silverlight both provide a reasonably robust (and continuously improving) out of the browser experience that in some ways exceeds the native platform capabilities in terms of developer and designer productivity. Both allow developers to be far more productive than the equivalent HTML/JavaScript solution of reasonable complexity.</p>
+<p>Furthermore, both are cross platform (Mac OS X and Windows). That’s a huge win for both companies. Although some predict that the rise of “tablets/pads” prove that the end is near for personal computers, Apple’s recent Macbook Air (2010) debut shows the opposite. It’s a slick lightweight laptop. (There are some Win7 notebooks that have similar characteristics). The keyboard is not dead. Giant 8 pound laptops are hopefully dead (except for those who want a “desktop replacement.” The traditional PC tower may be going away for many <u>consumers</u>, but typing and mouse driven interaction isn’t going away any time soon (and laptops aren’t generally very cheap or effective in an enterprise, especially where mobility isn’t important). You may be able to casually browse the web for a couple of hours (?!) on a touch screen tablet (like the iPad), but could you do data entry? Not for very long before you wanted to toss it out the window, or, attach a keyboard. </p>
+<p>There’s still a place for many different form factors. As long as there are sufficient business enterprises in need of rich interactive applications, delivered over the web, using web services, there will be a place for Silverlight and Adobe’s Flash. When the time comes and they aren’t necessary anymore, it will be time to port and convert. Microsoft and Adobe won’t want to abandon you in that case either as they’ll want to provide new tools to help you move to the next “web platform.” </p>
+<p>Eventually, Microsoft will announce, “Silverlight is being retired. We will support it for the next 3 years.” At that point, you may start the panic. For now though, continue on as usual. Always pick a solution based on the product. Don’t use Silverlight just because you think it’s more fun than HTML. Pick the right tool for the job.</p>
+<p>As I said, it will happen. HTML 5 and its friends have accelerated its end, but it’s not happening so soon you should be considering throwing out all of your Silverlight books. Keep them. In fact, <a href="http://www.amazon.com/gp/product/1935182374?ie=UTF8&amp;tag=wiredp-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=1935182374">this</a> is a good one.</p>
+<p>(I would predict today though that Adobe’s products will outlast Microsoft’s)</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1162</post-id>	</item>
+		<item>
+		<title>How to bind ListBoxItem.IsSelected to a bound item in Silverlight 4.0</title>
+		<link>/blog/index.php/archives/1113</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Tue, 27 Jul 2010 01:56:17 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[Silverlight]]></category>
+		<guid isPermaLink="false">/blog/index.php/archives/1113</guid>
+
+					<description><![CDATA[This technique requires the Blend 4.0 SDK (which is included in Blend 4.0 and is also available as a free download. Someone on StackOverflow asked how to bind a collection of items to a ListBox in Silverlight where the IsSelected property of the ListBoxItem is bound to an IsSelected property of the data item. WPF [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>This technique requires the Blend 4.0 SDK (which is included in Blend 4.0 and is also available as a <a href="http://www.microsoft.com/downloads/details.aspx?FamilyID=d197f51a-de07-4edf-9cba-1f1b4a22110d&amp;displaylang=en">free download</a>.</p>
+<p>Someone on StackOverflow asked how to bind a collection of items to a ListBox in Silverlight where the IsSelected property of the ListBoxItem is bound to an IsSelected property of the data item. </p>
+<p>WPF has the native ability within a style to set the a style’s setter property IsSelected to a value of the two way binding to an IsSelected Property. Slick.</p>
+<p>Silverlight, has no such thing unfortunately.</p>
+<p>But, there’s a work around that isn’t too awful. Seriously.</p>
+<p><img loading="lazy" style="border-bottom: 0px; border-left: 0px; margin: 0px; display: inline; border-top: 0px; border-right: 0px" class="wlDisabledImage" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2010/07/image2.png" width="335" height="204" /></p>
+<p>What I’ve done is mapped the look and feel of the ListBoxItem selection to the DataTemplate for the item and removed it from the standard ListBoxItemContainer style:</p>
+<pre class="code"><span style="color: blue">&lt;</span><span style="color: #a31515">UserControl
+    </span><span style="color: red">xmlns</span><span style="color: blue">=&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;
+    </span><span style="color: red">xmlns</span><span style="color: blue">:</span><span style="color: red">x</span><span style="color: blue">=&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;
+    </span><span style="color: red">xmlns</span><span style="color: blue">:</span><span style="color: red">d</span><span style="color: blue">=&quot;http://schemas.microsoft.com/expression/blend/2008&quot;
+    </span><span style="color: red">xmlns</span><span style="color: blue">:</span><span style="color: red">mc</span><span style="color: blue">=&quot;http://schemas.openxmlformats.org/markup-compatibility/2006&quot;
+    </span><span style="color: red">xmlns</span><span style="color: blue">:</span><span style="color: red">local</span><span style="color: blue">=&quot;clr-namespace:TestSilverlightTodoListItem&quot; </span><span style="color: red">xmlns</span><span style="color: blue">:</span><span style="color: red">i</span><span style="color: blue">=&quot;http://schemas.microsoft.com/expression/2010/interactivity&quot; </span><span style="color: red">xmlns</span><span style="color: blue">:</span><span style="color: red">ei</span><span style="color: blue">=&quot;http://schemas.microsoft.com/expression/2010/interactions&quot; </span><span style="color: red">x</span><span style="color: blue">:</span><span style="color: red">Class</span><span style="color: blue">=&quot;TestSilverlightTodoListItem.MainPage&quot;
+    </span><span style="color: red">mc</span><span style="color: blue">:</span><span style="color: red">Ignorable</span><span style="color: blue">=&quot;d&quot;
+    </span><span style="color: red">d</span><span style="color: blue">:</span><span style="color: red">DesignHeight</span><span style="color: blue">=&quot;300&quot; </span><span style="color: red">d</span><span style="color: blue">:</span><span style="color: red">DesignWidth</span><span style="color: blue">=&quot;400&quot;&gt;
+
+    &lt;</span><span style="color: #a31515">UserControl.Resources</span><span style="color: blue">&gt;        
+
+        &lt;</span><span style="color: #a31515">local</span><span style="color: blue">:</span><span style="color: #a31515">PeopleList </span><span style="color: red">x</span><span style="color: blue">:</span><span style="color: red">Key</span><span style="color: blue">=&quot;PeopleListDataSource&quot; </span><span style="color: red">d</span><span style="color: blue">:</span><span style="color: red">IsDataSource</span><span style="color: blue">=&quot;True&quot;/&gt;        
+
+        &lt;</span><span style="color: #a31515">Style </span><span style="color: red">x</span><span style="color: blue">:</span><span style="color: red">Key</span><span style="color: blue">=&quot;ListBoxItemStyle1&quot; </span><span style="color: red">TargetType</span><span style="color: blue">=&quot;ListBoxItem&quot;&gt;
+            &lt;</span><span style="color: #a31515">Setter </span><span style="color: red">Property</span><span style="color: blue">=&quot;Padding&quot; </span><span style="color: red">Value</span><span style="color: blue">=&quot;3&quot;/&gt;
+            &lt;</span><span style="color: #a31515">Setter </span><span style="color: red">Property</span><span style="color: blue">=&quot;HorizontalContentAlignment&quot; </span><span style="color: red">Value</span><span style="color: blue">=&quot;Stretch&quot;/&gt;
+            &lt;</span><span style="color: #a31515">Setter </span><span style="color: red">Property</span><span style="color: blue">=&quot;VerticalContentAlignment&quot; </span><span style="color: red">Value</span><span style="color: blue">=&quot;Top&quot;/&gt;
+            &lt;</span><span style="color: #a31515">Setter </span><span style="color: red">Property</span><span style="color: blue">=&quot;Background&quot; </span><span style="color: red">Value</span><span style="color: blue">=&quot;Transparent&quot;/&gt;
+            &lt;</span><span style="color: #a31515">Setter </span><span style="color: red">Property</span><span style="color: blue">=&quot;BorderThickness&quot; </span><span style="color: red">Value</span><span style="color: blue">=&quot;1&quot;/&gt;
+            &lt;</span><span style="color: #a31515">Setter </span><span style="color: red">Property</span><span style="color: blue">=&quot;TabNavigation&quot; </span><span style="color: red">Value</span><span style="color: blue">=&quot;Local&quot;/&gt;            
+            &lt;</span><span style="color: #a31515">Setter </span><span style="color: red">Property</span><span style="color: blue">=&quot;Template&quot;&gt;
+                &lt;</span><span style="color: #a31515">Setter.Value</span><span style="color: blue">&gt;
+                    &lt;</span><span style="color: #a31515">ControlTemplate </span><span style="color: red">TargetType</span><span style="color: blue">=&quot;ListBoxItem&quot;&gt;
+                        &lt;</span><span style="color: #a31515">Grid </span><span style="color: red">Background</span><span style="color: blue">=&quot;{</span><span style="color: #a31515">TemplateBinding </span><span style="color: red">Background</span><span style="color: blue">}&quot;&gt;
+                            &lt;</span><span style="color: #a31515">VisualStateManager.VisualStateGroups</span><span style="color: blue">&gt;
+                                &lt;</span><span style="color: #a31515">VisualStateGroup </span><span style="color: red">x</span><span style="color: blue">:</span><span style="color: red">Name</span><span style="color: blue">=&quot;CommonStates&quot;&gt;
+                                    &lt;</span><span style="color: #a31515">VisualState </span><span style="color: red">x</span><span style="color: blue">:</span><span style="color: red">Name</span><span style="color: blue">=&quot;Normal&quot;/&gt;
+                                    &lt;</span><span style="color: #a31515">VisualState </span><span style="color: red">x</span><span style="color: blue">:</span><span style="color: red">Name</span><span style="color: blue">=&quot;MouseOver&quot;&gt;
+                                    &lt;/</span><span style="color: #a31515">VisualState</span><span style="color: blue">&gt;
+                                    &lt;</span><span style="color: #a31515">VisualState </span><span style="color: red">x</span><span style="color: blue">:</span><span style="color: red">Name</span><span style="color: blue">=&quot;Disabled&quot;&gt;
+                                    &lt;/</span><span style="color: #a31515">VisualState</span><span style="color: blue">&gt;
+                                &lt;/</span><span style="color: #a31515">VisualStateGroup</span><span style="color: blue">&gt;
+                                &lt;</span><span style="color: #a31515">VisualStateGroup </span><span style="color: red">x</span><span style="color: blue">:</span><span style="color: red">Name</span><span style="color: blue">=&quot;SelectionStates&quot;&gt;
+                                    &lt;</span><span style="color: #a31515">VisualState </span><span style="color: red">x</span><span style="color: blue">:</span><span style="color: red">Name</span><span style="color: blue">=&quot;Unselected&quot;/&gt;
+                                    &lt;</span><span style="color: #a31515">VisualState </span><span style="color: red">x</span><span style="color: blue">:</span><span style="color: red">Name</span><span style="color: blue">=&quot;Selected&quot;&gt;
+                                    &lt;/</span><span style="color: #a31515">VisualState</span><span style="color: blue">&gt;
+                                &lt;/</span><span style="color: #a31515">VisualStateGroup</span><span style="color: blue">&gt;
+                                &lt;</span><span style="color: #a31515">VisualStateGroup </span><span style="color: red">x</span><span style="color: blue">:</span><span style="color: red">Name</span><span style="color: blue">=&quot;FocusStates&quot;&gt;
+                                    &lt;</span><span style="color: #a31515">VisualState </span><span style="color: red">x</span><span style="color: blue">:</span><span style="color: red">Name</span><span style="color: blue">=&quot;Focused&quot;&gt;
+                                        &lt;</span><span style="color: #a31515">Storyboard</span><span style="color: blue">&gt;
+                                            &lt;</span><span style="color: #a31515">ObjectAnimationUsingKeyFrames </span><span style="color: red">Duration</span><span style="color: blue">=&quot;0&quot; </span><span style="color: red">Storyboard.TargetProperty</span><span style="color: blue">=&quot;Visibility&quot; </span><span style="color: red">Storyboard.TargetName</span><span style="color: blue">=&quot;FocusVisualElement&quot;&gt;
+                                                &lt;</span><span style="color: #a31515">DiscreteObjectKeyFrame </span><span style="color: red">KeyTime</span><span style="color: blue">=&quot;0&quot;&gt;
+                                                    &lt;</span><span style="color: #a31515">DiscreteObjectKeyFrame.Value</span><span style="color: blue">&gt;
+                                                        &lt;</span><span style="color: #a31515">Visibility</span><span style="color: blue">&gt;</span><span style="color: #a31515">Visible</span><span style="color: blue">&lt;/</span><span style="color: #a31515">Visibility</span><span style="color: blue">&gt;
+                                                    &lt;/</span><span style="color: #a31515">DiscreteObjectKeyFrame.Value</span><span style="color: blue">&gt;
+                                                &lt;/</span><span style="color: #a31515">DiscreteObjectKeyFrame</span><span style="color: blue">&gt;
+                                            &lt;/</span><span style="color: #a31515">ObjectAnimationUsingKeyFrames</span><span style="color: blue">&gt;
+                                        &lt;/</span><span style="color: #a31515">Storyboard</span><span style="color: blue">&gt;
+                                    &lt;/</span><span style="color: #a31515">VisualState</span><span style="color: blue">&gt;
+                                    &lt;</span><span style="color: #a31515">VisualState </span><span style="color: red">x</span><span style="color: blue">:</span><span style="color: red">Name</span><span style="color: blue">=&quot;Unfocused&quot;/&gt;
+                                &lt;/</span><span style="color: #a31515">VisualStateGroup</span><span style="color: blue">&gt;
+                            &lt;/</span><span style="color: #a31515">VisualStateManager.VisualStateGroups</span><span style="color: blue">&gt;
+                            &lt;</span><span style="color: #a31515">ContentPresenter </span><span style="color: red">x</span><span style="color: blue">:</span><span style="color: red">Name</span><span style="color: blue">=&quot;contentPresenter&quot; </span><span style="color: red">ContentTemplate</span><span style="color: blue">=&quot;{</span><span style="color: #a31515">TemplateBinding </span><span style="color: red">ContentTemplate</span><span style="color: blue">}&quot; </span><span style="color: red">Content</span><span style="color: blue">=&quot;{</span><span style="color: #a31515">TemplateBinding </span><span style="color: red">Content</span><span style="color: blue">}&quot; </span><span style="color: red">HorizontalAlignment</span><span style="color: blue">=&quot;{</span><span style="color: #a31515">TemplateBinding </span><span style="color: red">HorizontalContentAlignment</span><span style="color: blue">}&quot; </span><span style="color: red">Margin</span><span style="color: blue">=&quot;{</span><span style="color: #a31515">TemplateBinding </span><span style="color: red">Padding</span><span style="color: blue">}&quot;/&gt;
+                            &lt;</span><span style="color: #a31515">Rectangle </span><span style="color: red">x</span><span style="color: blue">:</span><span style="color: red">Name</span><span style="color: blue">=&quot;FocusVisualElement&quot; </span><span style="color: red">RadiusY</span><span style="color: blue">=&quot;1&quot; </span><span style="color: red">RadiusX</span><span style="color: blue">=&quot;1&quot; </span><span style="color: red">Stroke</span><span style="color: blue">=&quot;#FF6DBDD1&quot; </span><span style="color: red">StrokeThickness</span><span style="color: blue">=&quot;1&quot; </span><span style="color: red">Visibility</span><span style="color: blue">=&quot;Collapsed&quot;/&gt;
+                        &lt;/</span><span style="color: #a31515">Grid</span><span style="color: blue">&gt;
+                    &lt;/</span><span style="color: #a31515">ControlTemplate</span><span style="color: blue">&gt;
+                &lt;/</span><span style="color: #a31515">Setter.Value</span><span style="color: blue">&gt;
+            &lt;/</span><span style="color: #a31515">Setter</span><span style="color: blue">&gt;
+        &lt;/</span><span style="color: #a31515">Style</span><span style="color: blue">&gt;
+
+        &lt;</span><span style="color: #a31515">DataTemplate </span><span style="color: red">x</span><span style="color: blue">:</span><span style="color: red">Key</span><span style="color: blue">=&quot;PersonTemplate&quot;&gt;
+            &lt;</span><span style="color: #a31515">Grid</span><span style="color: blue">&gt;
+                &lt;</span><span style="color: #a31515">Grid.ColumnDefinitions</span><span style="color: blue">&gt;
+                    &lt;</span><span style="color: #a31515">ColumnDefinition </span><span style="color: red">Width</span><span style="color: blue">=&quot;Auto&quot;/&gt;
+                    &lt;</span><span style="color: #a31515">ColumnDefinition </span><span style="color: red">Width</span><span style="color: blue">=&quot;*&quot;/&gt;
+                &lt;/</span><span style="color: #a31515">Grid.ColumnDefinitions</span><span style="color: blue">&gt;
+                &lt;</span><span style="color: #a31515">i</span><span style="color: blue">:</span><span style="color: #a31515">Interaction.Behaviors</span><span style="color: blue">&gt;
+                    &lt;</span><span style="color: #a31515">ei</span><span style="color: blue">:</span><span style="color: #a31515">DataStateBehavior </span><span style="color: red">Binding</span><span style="color: blue">=&quot;{</span><span style="color: #a31515">Binding </span><span style="color: red">IsSelected</span><span style="color: blue">, </span><span style="color: red">Mode</span><span style="color: blue">=TwoWay}&quot; </span><span style="color: red">Value</span><span style="color: blue">=&quot;True&quot; </span><span style="color: red">TrueState</span><span style="color: blue">=&quot;Selected&quot; </span><span style="color: red">FalseState</span><span style="color: blue">=&quot;Unselected&quot;/&gt;                    
+                &lt;/</span><span style="color: #a31515">i</span><span style="color: blue">:</span><span style="color: #a31515">Interaction.Behaviors</span><span style="color: blue">&gt;
+                &lt;</span><span style="color: #a31515">VisualStateManager.VisualStateGroups</span><span style="color: blue">&gt;
+                    &lt;</span><span style="color: #a31515">VisualStateGroup </span><span style="color: red">x</span><span style="color: blue">:</span><span style="color: red">Name</span><span style="color: blue">=&quot;Selection&quot;&gt;
+                        &lt;</span><span style="color: #a31515">VisualStateGroup.Transitions</span><span style="color: blue">&gt;
+                            &lt;</span><span style="color: #a31515">VisualTransition </span><span style="color: red">GeneratedDuration</span><span style="color: blue">=&quot;0:0:0.25&quot;/&gt;
+                        &lt;/</span><span style="color: #a31515">VisualStateGroup.Transitions</span><span style="color: blue">&gt;
+                        &lt;</span><span style="color: #a31515">VisualState </span><span style="color: red">x</span><span style="color: blue">:</span><span style="color: red">Name</span><span style="color: blue">=&quot;Selected&quot;&gt;
+                            &lt;</span><span style="color: #a31515">Storyboard</span><span style="color: blue">&gt;
+                                &lt;</span><span style="color: #a31515">DoubleAnimation </span><span style="color: red">Duration</span><span style="color: blue">=&quot;0&quot; </span><span style="color: red">To</span><span style="color: blue">=&quot;1&quot; </span><span style="color: red">Storyboard.TargetProperty</span><span style="color: blue">=&quot;(UIElement.Opacity)&quot; </span><span style="color: red">Storyboard.TargetName</span><span style="color: blue">=&quot;fillColor&quot; </span><span style="color: red">d</span><span style="color: blue">:</span><span style="color: red">IsOptimized</span><span style="color: blue">=&quot;True&quot;/&gt;
+                                &lt;</span><span style="color: #a31515">DoubleAnimation </span><span style="color: red">Duration</span><span style="color: blue">=&quot;0&quot; </span><span style="color: red">To</span><span style="color: blue">=&quot;1&quot; </span><span style="color: red">Storyboard.TargetProperty</span><span style="color: blue">=&quot;(UIElement.Opacity)&quot; </span><span style="color: red">Storyboard.TargetName</span><span style="color: blue">=&quot;fillColor2&quot; </span><span style="color: red">d</span><span style="color: blue">:</span><span style="color: red">IsOptimized</span><span style="color: blue">=&quot;True&quot;/&gt;
+                            &lt;/</span><span style="color: #a31515">Storyboard</span><span style="color: blue">&gt;
+                        &lt;/</span><span style="color: #a31515">VisualState</span><span style="color: blue">&gt;
+                        &lt;</span><span style="color: #a31515">VisualState </span><span style="color: red">x</span><span style="color: blue">:</span><span style="color: red">Name</span><span style="color: blue">=&quot;Unselected&quot;/&gt;
+                    &lt;/</span><span style="color: #a31515">VisualStateGroup</span><span style="color: blue">&gt;
+                &lt;/</span><span style="color: #a31515">VisualStateManager.VisualStateGroups</span><span style="color: blue">&gt;
+                &lt;</span><span style="color: #a31515">VisualStateManager.CustomVisualStateManager</span><span style="color: blue">&gt;
+                    &lt;</span><span style="color: #a31515">ei</span><span style="color: blue">:</span><span style="color: #a31515">ExtendedVisualStateManager</span><span style="color: blue">/&gt;
+                &lt;/</span><span style="color: #a31515">VisualStateManager.CustomVisualStateManager</span><span style="color: blue">&gt;
+                &lt;</span><span style="color: #a31515">Rectangle </span><span style="color: red">x</span><span style="color: blue">:</span><span style="color: red">Name</span><span style="color: blue">=&quot;fillColor&quot; </span><span style="color: red">Fill</span><span style="color: blue">=&quot;#FFBADDE9&quot; </span><span style="color: red">IsHitTestVisible</span><span style="color: blue">=&quot;False&quot; </span><span style="color: red">Opacity</span><span style="color: blue">=&quot;0&quot; </span><span style="color: red">RadiusY</span><span style="color: blue">=&quot;1&quot; </span><span style="color: red">RadiusX</span><span style="color: blue">=&quot;1&quot; </span><span style="color: red">Grid.ColumnSpan</span><span style="color: blue">=&quot;2&quot;/&gt;
+                &lt;</span><span style="color: #a31515">Rectangle </span><span style="color: red">x</span><span style="color: blue">:</span><span style="color: red">Name</span><span style="color: blue">=&quot;fillColor2&quot; </span><span style="color: red">Fill</span><span style="color: blue">=&quot;#FFBADDE9&quot; </span><span style="color: red">IsHitTestVisible</span><span style="color: blue">=&quot;False&quot; </span><span style="color: red">Opacity</span><span style="color: blue">=&quot;0&quot; </span><span style="color: red">RadiusY</span><span style="color: blue">=&quot;1&quot; </span><span style="color: red">RadiusX</span><span style="color: blue">=&quot;1&quot; </span><span style="color: red">Grid.ColumnSpan</span><span style="color: blue">=&quot;2&quot;/&gt;
+                &lt;</span><span style="color: #a31515">CheckBox </span><span style="color: red">IsChecked</span><span style="color: blue">=&quot;{</span><span style="color: #a31515">Binding </span><span style="color: red">IsSelected</span><span style="color: blue">, </span><span style="color: red">Mode</span><span style="color: blue">=TwoWay}&quot; </span><span style="color: red">Grid.ColumnSpan</span><span style="color: blue">=&quot;1&quot;/&gt;
+                &lt;</span><span style="color: #a31515">TextBlock </span><span style="color: red">x</span><span style="color: blue">:</span><span style="color: red">Name</span><span style="color: blue">=&quot;textBlock&quot; </span><span style="color: red">Text</span><span style="color: blue">=&quot;{</span><span style="color: #a31515">Binding </span><span style="color: red">Name</span><span style="color: blue">}&quot; </span><span style="color: red">Grid.Column</span><span style="color: blue">=&quot;1&quot;/&gt;
+            &lt;/</span><span style="color: #a31515">Grid</span><span style="color: blue">&gt;
+        &lt;/</span><span style="color: #a31515">DataTemplate</span><span style="color: blue">&gt;
+    &lt;/</span><span style="color: #a31515">UserControl.Resources</span><span style="color: blue">&gt;
+    &lt;</span><span style="color: #a31515">Grid </span><span style="color: red">x</span><span style="color: blue">:</span><span style="color: red">Name</span><span style="color: blue">=&quot;LayoutRoot&quot; </span><span style="color: red">Background</span><span style="color: blue">=&quot;White&quot; </span><span style="color: red">DataContext</span><span style="color: blue">=&quot;{</span><span style="color: #a31515">Binding </span><span style="color: red">Source</span><span style="color: blue">={</span><span style="color: #a31515">StaticResource </span><span style="color: red">PeopleListDataSource</span><span style="color: blue">}}&quot; &gt;
+        &lt;</span><span style="color: #a31515">ListBox </span><span style="color: red">x</span><span style="color: blue">:</span><span style="color: red">Name</span><span style="color: blue">=&quot;myList&quot; </span><span style="color: red">ItemsSource</span><span style="color: blue">=&quot;{</span><span style="color: #a31515">Binding</span><span style="color: blue">}&quot; 
+            </span><span style="color: red">ItemContainerStyle</span><span style="color: blue">=&quot;{</span><span style="color: #a31515">StaticResource </span><span style="color: red">ListBoxItemStyle1</span><span style="color: blue">}&quot; 
+            </span><span style="color: red">ItemTemplate</span><span style="color: blue">=&quot;{</span><span style="color: #a31515">StaticResource </span><span style="color: red">PersonTemplate</span><span style="color: blue">}&quot; 
+            </span><span style="color: red">SelectionMode</span><span style="color: blue">=&quot;Multiple&quot; /&gt;
+    &lt;/</span><span style="color: #a31515">Grid</span><span style="color: blue">&gt;
+&lt;/</span><span style="color: #a31515">UserControl</span><span style="color: blue">&gt;
+
+</span></pre>
+<p>The real magic is using the DataStateBehavior (which is included in the Blend 4.0 SDK):</p>
+<pre class="code"><span style="color: blue">&lt;</span><span style="color: #a31515">i</span><span style="color: blue">:</span><span style="color: #a31515">Interaction.Behaviors</span><span style="color: blue">&gt;
+    &lt;</span><span style="color: #a31515">ei</span><span style="color: blue">:</span><span style="color: #a31515">DataStateBehavior </span><span style="color: red">Binding</span><span style="color: blue">=&quot;{</span><span style="color: #a31515">Binding </span><span style="color: red">IsSelected</span><span style="color: blue">, </span><span style="color: red">Mode</span><span style="color: blue">=TwoWay}&quot; </span><span style="color: red">Value</span><span style="color: blue">=&quot;True&quot; </span><span style="color: red">TrueState</span><span style="color: blue">=&quot;Selected&quot; </span><span style="color: red">FalseState</span><span style="color: blue">=&quot;Unselected&quot;/&gt;                    
+&lt;/</span><span style="color: #a31515">i</span><span style="color: blue">:</span><span style="color: #a31515">Interaction.Behaviors</span><span style="color: blue">&gt;
+
+</span></pre>
+<p>This ties the IsSelected property of the Person class (see below) to two VisualStates that I defined in the DataTemplate. A “Selected” and an “Unselected” state.</p>
+<p>I grabbed the rectangle from the standard ListBoxItem container template template. </p>
+<p>In the code behind, I wired up the selection changed event:</p>
+<pre class="code"><span style="color: blue">public partial class </span><span style="color: #2b91af">MainPage </span>: <span style="color: #2b91af">UserControl
+</span>{
+    <span style="color: blue">private </span><span style="color: #2b91af">PeopleList </span>_items = <span style="color: blue">new </span><span style="color: #2b91af">PeopleList</span>();
+
+    <span style="color: blue">public </span>MainPage()
+    {
+        <span style="color: blue">this</span>.DataContext = _items;
+        InitializeComponent();
+        myList.SelectionChanged += <span style="color: blue">new </span><span style="color: #2b91af">SelectionChangedEventHandler</span>(myList_SelectionChanged); 
+    }
+
+    <span style="color: blue">void </span>myList_SelectionChanged(<span style="color: blue">object </span>sender, <span style="color: #2b91af">SelectionChangedEventArgs </span>e)
+    {
+        <span style="color: green">// these both just need to toggle 
+        </span><span style="color: blue">foreach </span>(<span style="color: blue">object </span>o <span style="color: blue">in </span>e.AddedItems)
+        {
+            <span style="color: #2b91af">Person </span>p = o <span style="color: blue">as </span><span style="color: #2b91af">Person</span>;
+            p.IsSelected = !p.IsSelected;
+        }
+        <span style="color: blue">foreach </span>(<span style="color: blue">object </span>o <span style="color: blue">in </span>e.RemovedItems)
+        {
+            <span style="color: #2b91af">Person </span>p = o <span style="color: blue">as </span><span style="color: #2b91af">Person</span>;
+            p.IsSelected = !p.IsSelected;
+        }
+    }
+
+    <span style="color: blue">void </span>myList_KeyUp(<span style="color: blue">object </span>sender, <span style="color: #2b91af">KeyEventArgs </span>e)
+    {
+        <span style="color: blue">if </span>(e.Key == <span style="color: #2b91af">Key</span>.Space  )
+        {
+            <span style="color: blue">if </span>(e.OriginalSource <span style="color: blue">is </span><span style="color: #2b91af">ListBoxItem</span>)
+            {
+                <span style="color: #2b91af">Person </span>p = (e.OriginalSource <span style="color: blue">as </span><span style="color: #2b91af">ListBoxItem</span>).DataContext <span style="color: blue">as </span><span style="color: #2b91af">Person</span>;
+                <span style="color: blue">if </span>(p != <span style="color: blue">null</span>)
+                {
+                    p.IsSelected = !p.IsSelected;
+                }
+            }
+        }
+    }
+}</pre>
+<p>The selection changed toggles the state of each item. Without doing that, the selection doesn’t behave correctly. The SelectedItems list on the listbox no longer reflects the reality of the bound data items – but that shouldn’t matter in this case as the property of the item reflects the real state accurately.</p>
+<p>For testing:</p>
+<pre class="code"><span style="color: blue">public class </span><span style="color: #2b91af">PeopleList </span>: <span style="color: #2b91af">ObservableCollection</span>&lt;<span style="color: #2b91af">Person</span>&gt;
+{
+    <span style="color: blue">public </span>PeopleList()
+    {
+      <span style="color: blue">this</span>.Add( <span style="color: blue">new </span><span style="color: #2b91af">Person </span>{ Name = <span style="color: #a31515">&quot;Henry&quot;</span>, IsSelected = <span style="color: blue">true </span>});
+      <span style="color: blue">this</span>.Add(<span style="color: blue">new </span><span style="color: #2b91af">Person </span>{ Name = <span style="color: #a31515">&quot;Bonnie&quot;</span>, IsSelected = <span style="color: blue">true </span>});
+      <span style="color: blue">this</span>.Add( <span style="color: blue">new </span><span style="color: #2b91af">Person </span>{ Name = <span style="color: #a31515">&quot;Clyde&quot;</span>, IsSelected = <span style="color: blue">false </span>});
+      <span style="color: blue">this</span>.Add( <span style="color: blue">new </span><span style="color: #2b91af">Person </span>{ Name = <span style="color: #a31515">&quot;Ervin&quot;</span>, IsSelected = <span style="color: blue">false </span>});
+      <span style="color: blue">this</span>.Add( <span style="color: blue">new </span><span style="color: #2b91af">Person </span>{ Name = <span style="color: #a31515">&quot;Timmy&quot;</span>, IsSelected = <span style="color: blue">true </span>});
+      <span style="color: blue">this</span>.Add( <span style="color: blue">new </span><span style="color: #2b91af">Person </span>{ Name = <span style="color: #a31515">&quot;Jane&quot;</span>, IsSelected = <span style="color: blue">true </span>});
+
+    }
+}</pre>
+<p> And:</p>
+<pre class="code"><span style="color: blue">public class </span><span style="color: #2b91af">Person </span>: <span style="color: #2b91af">INotifyPropertyChanged
+</span>{
+    <span style="color: blue">private bool </span>_isSelected;
+    <span style="color: blue">private string </span>_name;
+
+    <span style="color: blue">public string </span>Name
+    {
+        <span style="color: blue">get </span>{ <span style="color: blue">return </span>_name; }
+        <span style="color: blue">set
+        </span>{
+            <span style="color: blue">if </span>(<span style="color: blue">value </span>!= _name)
+            {
+                _name = <span style="color: blue">value</span>;
+                RaisePropertyChanged(<span style="color: #a31515">&quot;Name&quot;</span>);
+            }
+        }
+    }
+
+    <span style="color: blue">public bool </span>IsSelected
+    {
+        <span style="color: blue">get </span>{ <span style="color: blue">return </span>_isSelected; }
+        <span style="color: blue">set
+        </span>{
+            <span style="color: blue">if </span>(_isSelected != <span style="color: blue">value</span>)
+            {
+                _isSelected = <span style="color: blue">value</span>;
+                RaisePropertyChanged(<span style="color: #a31515">&quot;IsSelected&quot;</span>);
+            }
+        }
+    }
+
+    <span style="color: blue">private void </span>RaisePropertyChanged(<span style="color: blue">string </span>propertyName)
+    {
+        <span style="color: blue">if </span>(PropertyChanged != <span style="color: blue">null</span>)
+        {
+            PropertyChanged(<span style="color: blue">this</span>, <span style="color: blue">new </span><span style="color: #2b91af">PropertyChangedEventArgs</span>(propertyName));
+        }
+
+    }
+
+    <span style="color: blue">public event </span><span style="color: #2b91af">PropertyChangedEventHandler </span>PropertyChanged;
+}</pre>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1113</post-id>	</item>
+		<item>
+		<title>Using Visual State Manager from a UserControl</title>
+		<link>/blog/index.php/archives/1111</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Mon, 26 Jul 2010 12:50:53 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[Silverlight]]></category>
+		<guid isPermaLink="false">/blog/index.php/archives/1111</guid>
+
+					<description><![CDATA[To aid in an answer on StackOverflow that I had recently answered, I’m providing part of the response here. The question was essentially, “what’s a way to use DataTriggers in Silverlight, without DataTriggers?” I had suggested one idea would just to use VisualStates and a code behind file. That’s what I’ve done here. I created [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>To aid in an answer on <a href="http://stackoverflow.com/questions/3330010/changing-a-style-of-silverlight-custom-control-when-another-property-changes/3331013#3331013">StackOverflow</a> that I had recently answered, I’m providing part of the response here.</p>
+<p>The question was essentially, “what’s a way to use DataTriggers in Silverlight, without DataTriggers?”</p>
+<p>I had suggested one idea would just to use VisualStates and a code behind file.</p>
+<p>That’s what I’ve done here. I created an enum of type AnimateState, which has three possible values, Top, Left, and Right. By clicking on one of three buttons on the simple UI, it changes the value of the property, which in turn calls one of the VisualStates defined in the XAML.</p>
+<p>In the example, it animates the position of the orange ellipse to various positions on the canvas. </p>
+<pre class="code"><span style="color: blue">using </span>System;
+<span style="color: blue">using </span>System.Collections.Generic;
+<span style="color: blue">using </span>System.Linq;
+<span style="color: blue">using </span>System.Net;
+<span style="color: blue">using </span>System.Windows;
+<span style="color: blue">using </span>System.Windows.Controls;
+<span style="color: blue">using </span>System.Windows.Documents;
+<span style="color: blue">using </span>System.Windows.Input;
+<span style="color: blue">using </span>System.Windows.Media;
+<span style="color: blue">using </span>System.Windows.Media.Animation;
+<span style="color: blue">using </span>System.Windows.Shapes;
+
+<span style="color: blue">namespace </span>DemoShowVisualStateManager
+{    
+    <span style="color: blue">public partial class </span><span style="color: #2b91af">MainPage </span>: <span style="color: #2b91af">UserControl
+    </span>{
+        <span style="color: blue">private </span><span style="color: #2b91af">AnimateState </span>_animateState;
+
+        <span style="color: blue">public </span>MainPage()
+        {
+            InitializeComponent();
+        }
+
+        <span style="color: blue">public </span><span style="color: #2b91af">AnimateState </span>State
+        {
+            <span style="color: blue">get </span>{ <span style="color: blue">return </span>_animateState; }
+
+            <span style="color: blue">set
+            </span>{
+                <span style="color: blue">if </span>(_animateState != <span style="color: blue">value </span>&amp;&amp; <span style="color: #2b91af">Enum</span>.IsDefined(<span style="color: blue">typeof</span>(<span style="color: #2b91af">AnimateState</span>), <span style="color: blue">value</span>))
+                {
+                    _animateState = <span style="color: blue">value</span>;
+
+                    <span style="color: #2b91af">VisualStateManager</span>.GoToState(<span style="color: blue">this</span>, <span style="color: blue">value</span>.ToString(), <span style="color: blue">true</span>);
+                }
+            }
+
+        }
+
+        <span style="color: blue">private void </span>Button_Click(<span style="color: blue">object </span>sender, System.Windows.<span style="color: #2b91af">RoutedEventArgs </span>e)
+        {
+            <span style="color: #2b91af">AnimateState </span>state;
+            <span style="color: blue">if </span>(<span style="color: #2b91af">AnimateState</span>.TryParse((sender <span style="color: blue">as </span><span style="color: #2b91af">Button</span>).Content.ToString(), <span style="color: blue">out </span>state)) 
+            {
+                State = state;
+            }
+            
+        }
+    }
+
+    <span style="color: blue">public enum </span><span style="color: #2b91af">AnimateState
+    </span>{
+        Top,
+        Left,
+        Right
+    }
+}</pre>
+<p>&#160;</p>
+<pre class="code"><span style="color: blue">&lt;</span><span style="color: #a31515">UserControl </span><span style="color: red">x</span><span style="color: blue">:</span><span style="color: red">Class</span><span style="color: blue">=&quot;DemoShowVisualStateManager.MainPage&quot;
+    </span><span style="color: red">xmlns</span><span style="color: blue">=&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;
+    </span><span style="color: red">xmlns</span><span style="color: blue">:</span><span style="color: red">x</span><span style="color: blue">=&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;
+    </span><span style="color: red">xmlns</span><span style="color: blue">:</span><span style="color: red">d</span><span style="color: blue">=&quot;http://schemas.microsoft.com/expression/blend/2008&quot;
+    </span><span style="color: red">xmlns</span><span style="color: blue">:</span><span style="color: red">mc</span><span style="color: blue">=&quot;http://schemas.openxmlformats.org/markup-compatibility/2006&quot;
+    </span><span style="color: red">mc</span><span style="color: blue">:</span><span style="color: red">Ignorable</span><span style="color: blue">=&quot;d&quot;
+    </span><span style="color: red">Width</span><span style="color: blue">=&quot;500&quot; </span><span style="color: red">Height</span><span style="color: blue">=&quot;500&quot;&gt;
+
+    &lt;</span><span style="color: #a31515">UserControl.Resources</span><span style="color: blue">&gt;
+    &lt;/</span><span style="color: #a31515">UserControl.Resources</span><span style="color: blue">&gt;
+    &lt;</span><span style="color: #a31515">Canvas </span><span style="color: red">x</span><span style="color: blue">:</span><span style="color: red">Name</span><span style="color: blue">=&quot;LayoutRoot&quot; </span><span style="color: red">Background</span><span style="color: blue">=&quot;White&quot;&gt;
+        &lt;</span><span style="color: #a31515">VisualStateManager.VisualStateGroups</span><span style="color: blue">&gt;
+            &lt;</span><span style="color: #a31515">VisualStateGroup </span><span style="color: red">x</span><span style="color: blue">:</span><span style="color: red">Name</span><span style="color: blue">=&quot;Positions&quot;&gt;
+                &lt;</span><span style="color: #a31515">VisualStateGroup.Transitions</span><span style="color: blue">&gt;
+                    &lt;</span><span style="color: #a31515">VisualTransition </span><span style="color: red">GeneratedDuration</span><span style="color: blue">=&quot;0:0:3&quot;/&gt;
+                &lt;/</span><span style="color: #a31515">VisualStateGroup.Transitions</span><span style="color: blue">&gt;
+                &lt;</span><span style="color: #a31515">VisualState </span><span style="color: red">x</span><span style="color: blue">:</span><span style="color: red">Name</span><span style="color: blue">=&quot;Right&quot;&gt;
+                    &lt;</span><span style="color: #a31515">Storyboard</span><span style="color: blue">&gt;
+                        &lt;</span><span style="color: #a31515">DoubleAnimation </span><span style="color: red">Duration</span><span style="color: blue">=&quot;0&quot; </span><span style="color: red">To</span><span style="color: blue">=&quot;389&quot; </span><span style="color: red">Storyboard.TargetProperty</span><span style="color: blue">=&quot;(UIElement.RenderTransform).(CompositeTransform.TranslateY)&quot; </span><span style="color: red">Storyboard.TargetName</span><span style="color: blue">=&quot;ball&quot; </span><span style="color: red">d</span><span style="color: blue">:</span><span style="color: red">IsOptimized</span><span style="color: blue">=&quot;True&quot;/&gt;
+                        &lt;</span><span style="color: #a31515">DoubleAnimation </span><span style="color: red">Duration</span><span style="color: blue">=&quot;0&quot; </span><span style="color: red">To</span><span style="color: blue">=&quot;198&quot; </span><span style="color: red">Storyboard.TargetProperty</span><span style="color: blue">=&quot;(UIElement.RenderTransform).(CompositeTransform.TranslateX)&quot; </span><span style="color: red">Storyboard.TargetName</span><span style="color: blue">=&quot;ball&quot; </span><span style="color: red">d</span><span style="color: blue">:</span><span style="color: red">IsOptimized</span><span style="color: blue">=&quot;True&quot;/&gt;
+                    &lt;/</span><span style="color: #a31515">Storyboard</span><span style="color: blue">&gt;
+                &lt;/</span><span style="color: #a31515">VisualState</span><span style="color: blue">&gt;
+                &lt;</span><span style="color: #a31515">VisualState </span><span style="color: red">x</span><span style="color: blue">:</span><span style="color: red">Name</span><span style="color: blue">=&quot;Left&quot;&gt;
+                    &lt;</span><span style="color: #a31515">Storyboard</span><span style="color: blue">&gt;
+                        &lt;</span><span style="color: #a31515">DoubleAnimation </span><span style="color: red">Duration</span><span style="color: blue">=&quot;0&quot; </span><span style="color: red">To</span><span style="color: blue">=&quot;-199&quot; </span><span style="color: red">Storyboard.TargetProperty</span><span style="color: blue">=&quot;(UIElement.RenderTransform).(CompositeTransform.TranslateX)&quot; </span><span style="color: red">Storyboard.TargetName</span><span style="color: blue">=&quot;ball&quot; </span><span style="color: red">d</span><span style="color: blue">:</span><span style="color: red">IsOptimized</span><span style="color: blue">=&quot;True&quot;/&gt;
+                        &lt;</span><span style="color: #a31515">DoubleAnimation </span><span style="color: red">Duration</span><span style="color: blue">=&quot;0&quot; </span><span style="color: red">To</span><span style="color: blue">=&quot;390&quot; </span><span style="color: red">Storyboard.TargetProperty</span><span style="color: blue">=&quot;(UIElement.RenderTransform).(CompositeTransform.TranslateY)&quot; </span><span style="color: red">Storyboard.TargetName</span><span style="color: blue">=&quot;ball&quot; </span><span style="color: red">d</span><span style="color: blue">:</span><span style="color: red">IsOptimized</span><span style="color: blue">=&quot;True&quot;/&gt;
+                    &lt;/</span><span style="color: #a31515">Storyboard</span><span style="color: blue">&gt;
+                &lt;/</span><span style="color: #a31515">VisualState</span><span style="color: blue">&gt;
+                &lt;</span><span style="color: #a31515">VisualState </span><span style="color: red">x</span><span style="color: blue">:</span><span style="color: red">Name</span><span style="color: blue">=&quot;Top&quot;/&gt;
+            &lt;/</span><span style="color: #a31515">VisualStateGroup</span><span style="color: blue">&gt;
+        &lt;/</span><span style="color: #a31515">VisualStateManager.VisualStateGroups</span><span style="color: blue">&gt;
+
+        &lt;</span><span style="color: #a31515">Ellipse </span><span style="color: red">x</span><span style="color: blue">:</span><span style="color: red">Name</span><span style="color: blue">=&quot;ball&quot; </span><span style="color: red">Stroke</span><span style="color: blue">=&quot;#FFFFD9B8&quot; </span><span style="color: red">RenderTransformOrigin</span><span style="color: blue">=&quot;0.5,0.5&quot; </span><span style="color: red">Height</span><span style="color: blue">=&quot;100&quot; </span><span style="color: red">VerticalAlignment</span><span style="color: blue">=&quot;Top&quot; </span><span style="color: red">Canvas.Top</span><span style="color: blue">=&quot;10&quot; </span><span style="color: red">Width</span><span style="color: blue">=&quot;100&quot; </span><span style="color: red">Canvas.Left</span><span style="color: blue">=&quot;200&quot;&gt;
+            &lt;</span><span style="color: #a31515">Ellipse.RenderTransform</span><span style="color: blue">&gt;
+                &lt;</span><span style="color: #a31515">CompositeTransform</span><span style="color: blue">/&gt;
+            &lt;/</span><span style="color: #a31515">Ellipse.RenderTransform</span><span style="color: blue">&gt;
+            &lt;</span><span style="color: #a31515">Ellipse.Fill</span><span style="color: blue">&gt;
+                &lt;</span><span style="color: #a31515">RadialGradientBrush </span><span style="color: red">Center</span><span style="color: blue">=&quot;0.388,0.328&quot; </span><span style="color: red">GradientOrigin</span><span style="color: blue">=&quot;0.388,0.328&quot; </span><span style="color: red">RadiusX</span><span style="color: blue">=&quot;0.63&quot;&gt;
+                    &lt;</span><span style="color: #a31515">GradientStop </span><span style="color: red">Color</span><span style="color: blue">=&quot;#FFF97200&quot; </span><span style="color: red">Offset</span><span style="color: blue">=&quot;1&quot;/&gt;
+                    &lt;</span><span style="color: #a31515">GradientStop </span><span style="color: red">Color</span><span style="color: blue">=&quot;#FFFFD9B8&quot;/&gt;
+                &lt;/</span><span style="color: #a31515">RadialGradientBrush</span><span style="color: blue">&gt;
+            &lt;/</span><span style="color: #a31515">Ellipse.Fill</span><span style="color: blue">&gt;
+        &lt;/</span><span style="color: #a31515">Ellipse</span><span style="color: blue">&gt;
+        &lt;</span><span style="color: #a31515">Button </span><span style="color: red">Content</span><span style="color: blue">=&quot;Left&quot; </span><span style="color: red">Height</span><span style="color: blue">=&quot;33&quot; </span><span style="color: red">Canvas.Left</span><span style="color: blue">=&quot;200&quot; </span><span style="color: red">Canvas.Top</span><span style="color: blue">=&quot;229&quot; </span><span style="color: red">Width</span><span style="color: blue">=&quot;100&quot; </span><span style="color: red">Click</span><span style="color: blue">=&quot;Button_Click&quot;/&gt;
+        &lt;</span><span style="color: #a31515">Button </span><span style="color: red">Content</span><span style="color: blue">=&quot;Top&quot; </span><span style="color: red">Height</span><span style="color: blue">=&quot;33&quot; </span><span style="color: red">Canvas.Left</span><span style="color: blue">=&quot;200&quot; </span><span style="color: red">Canvas.Top</span><span style="color: blue">=&quot;266&quot; </span><span style="color: red">Width</span><span style="color: blue">=&quot;100&quot; </span><span style="color: red">Click</span><span style="color: blue">=&quot;Button_Click&quot;/&gt;
+        &lt;</span><span style="color: #a31515">Button </span><span style="color: red">Content</span><span style="color: blue">=&quot;Right&quot; </span><span style="color: red">Height</span><span style="color: blue">=&quot;33&quot; </span><span style="color: red">Canvas.Left</span><span style="color: blue">=&quot;200&quot; </span><span style="color: red">Canvas.Top</span><span style="color: blue">=&quot;303&quot; </span><span style="color: red">Width</span><span style="color: blue">=&quot;100&quot; </span><span style="color: red">Click</span><span style="color: blue">=&quot;Button_Click&quot;/&gt;
+
+    &lt;/</span><span style="color: #a31515">Canvas</span><span style="color: blue">&gt;
+&lt;/</span><span style="color: #a31515">UserControl</span><span style="color: blue">&gt;
+
+</span></pre>
+<p><img loading="lazy" style="border-bottom: 0px; border-left: 0px; margin: 0px; display: inline; border-top: 0px; border-right: 0px" class="wlDisabledImage" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2010/07/image1.png" width="213" height="214" /></p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1111</post-id>	</item>
+		<item>
+		<title>Silverlight Analog/Retro Flip Numbers</title>
+		<link>/blog/index.php/archives/1084</link>
+					<comments>/blog/index.php/archives/1084#comments</comments>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Thu, 10 Jun 2010 01:55:55 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[Silverlight]]></category>
+		<guid isPermaLink="false">/blog/index.php/archives/1084</guid>
+
+					<description><![CDATA[I’m not sure what to call these exactly. I’ve created a relatively simple Silverlight 4 control that emulates the old mechanical flip style numbers (or letters) displays found at airports and in old clock-radios. I call it the RetroFlipper. It’s easy to use (at least for my needs). Declare an instance of the control in [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I’m not sure what to call these exactly. I’ve created a relatively simple Silverlight 4 control that emulates the old mechanical flip style numbers (or letters) displays found at airports and in old clock-radios. </p>
+<p><a title="Working demo" href="http://www.wiredprairie.us/examples/silverlight/RetroFlipper/" target="_blank"><img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2010/06/image.png" width="402" height="214" /></a> </p>
+<p>I call it the RetroFlipper.</p>
+<p>It’s easy to use (at least for my needs). Declare an instance of the control in XAML:</p>
+<pre class="code"><span style="color: red">xmlns</span><span style="color: blue">:</span><span style="color: red">wpcontrols</span><span style="color: blue">=&quot;clr-namespace:WiredPrairie.Controls;assembly=WiredPrairie.RetroFlipperControl&quot;             
+</span></pre>
+<p>&#160;</p>
+<pre class="code">        <span style="color: blue">&lt;</span><span style="color: #a31515">wpcontrols</span><span style="color: blue">:</span><span style="color: #a31515">RetroFlipper </span><span style="color: red">Margin</span><span style="color: blue">=&quot;5,20&quot; 
+                                 </span><span style="color: red">x</span><span style="color: blue">:</span><span style="color: red">Name</span><span style="color: blue">=&quot;numberFlip100&quot; </span><span style="color: red">Grid.RowSpan</span><span style="color: blue">=&quot;1&quot; </span><span style="color: red">Grid.Column</span><span style="color: blue">=&quot;1&quot;/&gt;
+
+</span></pre>
+<p>And then respond to the “Flipped” event and set the “Text” property as needed.</p>
+<pre class="code">            numberFlip0.Flipped += <span style="color: blue">new </span><span style="color: #2b91af">EventHandler</span>(numberFlip1_Flipped);
+            numberFlip0.Text = <span style="color: #a31515">&quot;0&quot;</span>; <span style="color: green">//(0, 0);
+
+</span></pre>
+<p><a href="http://11011.net/software/vspaste"></a></p>
+<p>The default animation speed can be adjusted:</p>
+<pre class="code">numberFlip0.AnimationSpeed = 1;</pre>
+<p><a href="http://11011.net/software/vspaste"></a></p>
+<p>It’s a percentage – 1.0 is the default. If you want the animation of the flip to be half speed for example, just set it to <strong>.5</strong>.</p>
+<p>The class that drives the demo is really simple:</p>
+<pre class="code"><span style="color: blue">public partial class </span><span style="color: #2b91af">MainPage </span>: <span style="color: #2b91af">UserControl
+</span>{
+    <span style="color: blue">private </span><span style="color: #2b91af">DispatcherTimer </span>_timer;
+    <span style="color: blue">private int </span>_inc = 0;
+
+    <span style="color: blue">public </span>MainPage()
+    {
+        InitializeComponent();
+        numberFlip0.Text = <span style="color: #a31515">&quot;0&quot;</span>; <span style="color: green">//(0, 0);
+        </span>numberFlip0.AnimationSpeed = 1;
+        numberFlip10.Text = <span style="color: #a31515">&quot;0&quot;</span>; <span style="color: green">//(0, 0);
+        </span>numberFlip10.AnimationSpeed = .7;
+        numberFlip100.Text = <span style="color: #a31515">&quot;0&quot;</span>; <span style="color: green">//(0, 0);
+        </span>numberFlip100.AnimationSpeed = .4;
+        _timer = <span style="color: blue">new </span><span style="color: #2b91af">DispatcherTimer</span>();
+        _timer.Interval = <span style="color: #2b91af">TimeSpan</span>.FromSeconds(.5);
+        _timer.Tick += <span style="color: blue">new </span><span style="color: #2b91af">EventHandler</span>(_timer_Tick); 
+        
+    }
+
+    <span style="color: blue">void </span>_timer_Tick(<span style="color: blue">object </span>sender, <span style="color: #2b91af">EventArgs </span>e)
+    {
+        <span style="color: blue">int </span>current = _inc;
+        <span style="color: blue">int </span>next = ++_inc;
+        <span style="color: blue">if </span>(next % 10 == 0)
+        {
+            numberFlip10.Text = <span style="color: #2b91af">Math</span>.Floor(next / 10 % 10).ToString(); 
+        }
+        <span style="color: blue">if </span>(next % 100 == 0)
+        {
+            numberFlip100.Text = <span style="color: #2b91af">Math</span>.Floor(next / 100 % 100).ToString(); 
+        }
+
+        numberFlip0.Text = (next % 10).ToString();            
+    }
+
+    <span style="color: blue">private void </span>Button_Click(<span style="color: blue">object </span>sender, System.Windows.<span style="color: #2b91af">RoutedEventArgs </span>e)
+    {
+        _timer.Start();
+    }
+}</pre>
+<p><a href="http://11011.net/software/vspaste"></a></p>
+<p>(And no, it doesn’t handle numbers &gt; 1000).</p>
+<p>Building the control required a few tricks. </p>
+<p>The most interesting was that I decided to use 4 layers to actually represent and animate the flip cards:</p>
+<p><img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2010/06/image1.png" width="277" height="214" /> </p>
+<p>Using a few OpacityMasks</p>
+<pre class="code"><span style="color: blue">&lt;</span><span style="color: #a31515">Border.OpacityMask</span><span style="color: blue">&gt;
+    &lt;</span><span style="color: #a31515">LinearGradientBrush </span><span style="color: red">EndPoint</span><span style="color: blue">=&quot;0.5,1&quot; </span><span style="color: red">StartPoint</span><span style="color: blue">=&quot;0.5,0&quot;&gt;
+        &lt;</span><span style="color: #a31515">GradientStop </span><span style="color: red">Color</span><span style="color: blue">=&quot;Transparent&quot; </span><span style="color: red">Offset</span><span style="color: blue">=&quot;0.5&quot;/&gt;
+        &lt;</span><span style="color: #a31515">GradientStop </span><span style="color: red">Color</span><span style="color: blue">=&quot;Black&quot; </span><span style="color: red">Offset</span><span style="color: blue">=&quot;1&quot;/&gt;
+        &lt;</span><span style="color: #a31515">GradientStop </span><span style="color: red">Color</span><span style="color: blue">=&quot;Black&quot; </span><span style="color: red">Offset</span><span style="color: blue">=&quot;0.5&quot;/&gt;
+        &lt;</span><span style="color: #a31515">GradientStop </span><span style="color: red">Color</span><span style="color: blue">=&quot;Transparent&quot;/&gt;
+    &lt;/</span><span style="color: #a31515">LinearGradientBrush</span><span style="color: blue">&gt;
+&lt;/</span><span style="color: #a31515">Border.OpacityMask</span><span style="color: blue">&gt;
+
+</span></pre>
+<p>and some creative PlaneProjection and animations,</p>
+<pre class="code"><span style="color: blue">&lt;</span><span style="color: #a31515">DoubleAnimationUsingKeyFrames </span><span style="color: red">Storyboard.TargetProperty</span><span style="color: blue">=&quot;(UIElement.Projection).(PlaneProjection.RotationX)&quot; </span><span style="color: red">Storyboard.TargetName</span><span style="color: blue">=&quot;backBottom&quot;&gt;
+    &lt;</span><span style="color: #a31515">EasingDoubleKeyFrame </span><span style="color: red">KeyTime</span><span style="color: blue">=&quot;0:0:0.17&quot; </span><span style="color: red">Value</span><span style="color: blue">=&quot;270&quot;/&gt;
+    &lt;</span><span style="color: #a31515">EasingDoubleKeyFrame </span><span style="color: red">KeyTime</span><span style="color: blue">=&quot;0:0:0.27&quot; </span><span style="color: red">Value</span><span style="color: blue">=&quot;180&quot;/&gt;
+    &lt;</span><span style="color: #a31515">EasingDoubleKeyFrame </span><span style="color: red">KeyTime</span><span style="color: blue">=&quot;0:0:0.30&quot; </span><span style="color: red">Value</span><span style="color: blue">=&quot;220&quot;/&gt;
+    &lt;</span><span style="color: #a31515">EasingDoubleKeyFrame </span><span style="color: red">KeyTime</span><span style="color: blue">=&quot;0:0:0.32&quot; </span><span style="color: red">Value</span><span style="color: blue">=&quot;180&quot;/&gt;
+&lt;/</span><span style="color: #a31515">DoubleAnimationUsingKeyFrames</span><span style="color: blue">&gt;
+</span></pre>
+<p>it’s possible to create the illusion of the mechanical parts moving. </p>
+<p>Any text may be set into the Text property – it’s automatically sized to fill. So, it could be words, double digits, anything you’d like, as long as it’s text.</p>
+<p>In any case, the demo is <a href="http://www.wiredprairie.us/examples/silverlight/RetroFlipper" target="_blank">here</a>.</p>
+<p>The source code, licensed under BSD, is <a href="http://www.wiredprairie.us/downloads/RetroFlipper.zip" target="_blank">here</a>.</p>
+<p>Enjoy.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/blog/index.php/archives/1084/feed</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1084</post-id>	</item>
+		<item>
+		<title>How to embed and use the Google Web Fonts in Silverlight</title>
+		<link>/blog/index.php/archives/1076</link>
+					<comments>/blog/index.php/archives/1076#comments</comments>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sun, 23 May 2010 17:08:55 +0000</pubDate>
+				<category><![CDATA[Silverlight]]></category>
+		<guid isPermaLink="false">/blog/index.php/archives/1076</guid>
+
+					<description><![CDATA[There are a few steps necessary to using one of the Google Web Fonts in Silverlight. Step 1 Go to the directory of web fonts here. &#160; Step 2 Pick your favorite font and click the embed link: Step 3 Verify the license is acceptable to your needs. Step 4 Click the “Get the code” [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>There are a few steps necessary to using one of the <a href="http://code.google.com/webfonts">Google Web Fonts</a> in Silverlight. </p>
+<h1>Step 1</h1>
+<p>Go to the directory of web fonts <a href="http://code.google.com/webfonts">here</a>.</p>
+<p>&#160; <a href="http://code.google.com/webfonts"><img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; margin-left: 0px; border-top: 0px; margin-right: 0px; border-right: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2010/05/image10.png" width="120" height="330" /></a></p>
+<h1>Step 2</h1>
+<p>Pick your favorite font and click the embed link:</p>
+<p><img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="SNAGHTML5af9c8a9" border="0" alt="SNAGHTML5af9c8a9" src="/blog/wp-content/uploads/2010/05/SNAGHTML5af9c8a9.png" width="450" height="92" /></p>
+<h1>Step 3</h1>
+<p><strong>Verify the license is acceptable to your needs.</strong></p>
+<p><img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="SNAGHTML5afad2c6" border="0" alt="SNAGHTML5afad2c6" src="/blog/wp-content/uploads/2010/05/SNAGHTML5afad2c6.png" width="450" height="214" /></p>
+<h1>Step 4</h1>
+<p>Click the “Get the code” tab:</p>
+<p><img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2010/05/image2.png" width="450" height="52" /> </p>
+<p>Copy the location of the CSS and open it in your favorite editor. I just paste it into a new tab in Chrome. But you could open it in Visual Studio if you’d like for example (just File &gt; Open).</p>
+<h1>Step 5</h1>
+<p>Grab the font URL from the CSS (copy the link to the clipboard).</p>
+<p><a href="/blog/wp-content/uploads/2010/05/image3.png"><img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2010/05/image_thumb.png" width="450" height="63" /></a></p>
+<h1>Step 6</h1>
+<p>From the same tab in Chrome, I paste in that value which prompts me to download the file:</p>
+<p>Give the font a file name and save it locally. </p>
+<p><img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2010/05/image4.png" width="368" height="70" /> </p>
+<h1>Step 7</h1>
+<p>In Windows 7, installing Fonts is easy (as easy as it should have been for years). For other operating systems, consult your OS docs.</p>
+<p><a href="/blog/wp-content/uploads/2010/05/SNAGHTML5aff9164.png"><img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="SNAGHTML5aff9164" border="0" alt="SNAGHTML5aff9164" src="/blog/wp-content/uploads/2010/05/SNAGHTML5aff9164_thumb.png" width="273" height="214" /></a></p>
+<p>In Windows 7, simply click the <img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2010/05/image5.png" width="86" height="29" /> button.</p>
+<h1>Step 8-Blend 4 (RC)</h1>
+<p>In Blend 4, to use the font, you’ll need to select it once as a Font choice:</p>
+<p>&#160;<a href="/blog/wp-content/uploads/2010/05/image6.png"><img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2010/05/image_thumb1.png" width="250" height="311" /></a> </p>
+<p>Click the “Embed” checkbox to include it in your XAP file. </p>
+<p><img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2010/05/image7.png" width="405" height="122" /> </p>
+<h1>Step 8-Visual Studio 2010</h1>
+<p>In Visual Studio 2010, copy the font file to a new folder (suggest something like Fonts). Set the build action to <strong>Resource:</strong></p>
+<p><a href="/blog/wp-content/uploads/2010/05/image8.png"><img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2010/05/image_thumb2.png" width="250" height="326" /></a> </p>
+<h1>Step 9</h1>
+<p>Then, to use the font, set the FontFamily to be the <strong>Path/FileName.ext#FontName</strong> as shown here:</p>
+<p><img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2010/05/image9.png" width="326" height="15" /> </p>
+<pre class="code"><span style="color: blue">&lt;</span><span style="color: #a31515">Button </span><span style="color: red">Content</span><span style="color: blue">=&quot;Login&quot; </span><span style="color: red">Height</span><span style="color: blue">=&quot;54&quot; </span><span style="color: red">Margin</span><span style="color: blue">=&quot;21,156,16,0&quot; 
+                </span><span style="color: red">x</span><span style="color: blue">:</span><span style="color: red">Name</span><span style="color: blue">=&quot;button1&quot; 
+                </span><span style="color: red">VerticalAlignment</span><span style="color: blue">=&quot;Top&quot; </span><span style="color: red">Click</span><span style="color: blue">=&quot;button1_Click&quot; </span><span style="color: red">Grid.Row</span><span style="color: blue">=&quot;1&quot; </span><span style="color: red">Grid.Column</span><span style="color: blue">=&quot;1&quot; 
+                </span><span style="color: red">FontFamily</span><span style="color: blue">=&quot;FONTS/INCONSOLATA.TTF#Inconsolata&quot; /&gt;
+</span></pre>
+<p>&#160;</p>
+<h1>Step 10</h1>
+<p>Sit back and enjoy the new font. </p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/blog/index.php/archives/1076/feed</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1076</post-id>	</item>
+		<item>
+		<title>Impressive LiveCycle Data Services Numbers</title>
+		<link>/blog/index.php/archives/1059</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Thu, 13 May 2010 12:47:23 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[Silverlight]]></category>
+		<category><![CDATA[Flash]]></category>
+		<category><![CDATA[Flex]]></category>
+		<guid isPermaLink="false">/blog/index.php/archives/1059</guid>
+
+					<description><![CDATA[My knowledge of Adobe’s LiveCycle Data Services platform is very limited as I’ve experimented with it only once. However, I’m impressed with the ability of the LiveCycle Data Services (LCDS) to push what seems like a massive amount of messages per second to client machines running Adobe Flash/AIR applications. http://www.dcooper.org/blog/client/index.cfm?mode=entry&#38;entry=084D6DDA-4E22-1671-5EFB301D42924692 LCDS in their scenario was [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>My knowledge of Adobe’s LiveCycle Data Services platform is very limited as I’ve experimented with it only once. However, I’m impressed with the ability of the LiveCycle Data Services (LCDS) to push what seems like a massive amount of messages per second to client machines running Adobe Flash/AIR applications. </p>
+<p><a href="http://www.dcooper.org/blog/client/index.cfm?mode=entry&amp;entry=084D6DDA-4E22-1671-5EFB301D42924692">http://www.dcooper.org/blog/client/index.cfm?mode=entry&amp;entry=084D6DDA-4E22-1671-5EFB301D42924692</a></p>
+<p>LCDS in their scenario was able to push 400,000 messages to 500 concurrent clients with an average latency of less than 15 milliseconds on a single dual-processor Intel machine.</p>
+<p>I know there were some <a href="http://tomasz.janczuk.org/2010/03/comparison-of-http-polling-duplex-and.html">big improvements</a> in the network stack and polling API in Silverlight 4 (in particular the http stack added multiple messages per poll) – but I don’t know how it compares from a performance perspective to the Adobe options. </p>
+<p>Anyone know of any real-world comparisons?</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1059</post-id>	</item>
+		<item>
+		<title>Silverlight Stopwatch Class, Part 2</title>
+		<link>/blog/index.php/archives/1030</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Fri, 02 Apr 2010 15:35:15 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[Silverlight]]></category>
+		<guid isPermaLink="false">/blog/index.php/archives/1030</guid>
+
+					<description><![CDATA[I recently made a fix to a Silverlight stopwatch class I wrote last year. In doing so, I decided to kick it up a notch. using (new StopwatchPlus("Constructor")) { //Debug.WriteLine("Initialized: Ellapsed Ticks: {0}, Ellapsed Milliseconds: {1}", sw.EllapsedTicks, sw.EllapsedMilliseconds); InitializeComponent(); Thread.Sleep(600); } Instead of just a simple Stopwatch class, I added functionality to make it easy [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I recently made a fix to a <a href="/blog/index.php/archives/723">Silverlight stopwatch</a> class I wrote last year.</p>
+<p>In doing so, I decided to kick it up a notch.</p>
+<pre class="code"><span style="color: blue;">using </span>(<span style="color: blue;">new </span><span style="color: #2b91af;">StopwatchPlus</span>(<span style="color: #a31515;">"Constructor"</span>))
+{
+    <span style="color: green;">//Debug.WriteLine("Initialized: Ellapsed Ticks: {0}, Ellapsed Milliseconds: {1}", sw.EllapsedTicks, sw.EllapsedMilliseconds); </span>InitializeComponent();
+    <span style="color: #2b91af;">Thread</span>.Sleep(600);            
+}</pre>
+<p>Instead of just a simple Stopwatch class, I added functionality to make it easy to capture timings for blocks of code, output to the Debug Output window, and perform any custom start/stop action.</p>
+<p>&nbsp;</p>
+<pre class="code"><span style="color: #2b91af;">StopwatchPlus </span>sp1 = <span style="color: blue;">new </span><span style="color: #2b91af;">StopwatchPlus</span>(sw2 =&gt; 
+        <span style="color: #2b91af;">Debug</span>.WriteLine(<span style="color: #a31515;">"Time! {0}"</span>, sw2.EllapsedMilliseconds));
+<span style="color: #2b91af;">Thread</span>.Sleep(500);
+sp1.Stop();    <span style="color: green;">// this will call the stopAction defined in the constructor </span></pre>
+<p>&nbsp;</p>
+<p>In non-debug builds, the StopwatchPlus class does not send output to the debug window. (I used the ConditionalAttribute … I know I could have used conditional compilation statements, but I didn’t. :-) ).</p>
+<pre class="code"><span style="color: blue;">using </span>System;
+<span style="color: blue;">using </span>System.Diagnostics;
+
+<span style="color: blue;">namespace </span>WiredPrairie.Silverlight
+{
+    <span style="color: gray;">/// &lt;summary&gt; /// </span><span style="color: green;">StopwatchPlus is used to measure the general performance of Silverlight functionality. Silverlight </span><span style="color: gray;">/// </span><span style="color: green;">does not provide a high resolution timer as is available in many operating systems, </span><span style="color: gray;">/// </span><span style="color: green;">so the resolution of this timer is limited to milliseconds. This class is best used to measure </span><span style="color: gray;">/// </span><span style="color: green;">the relative performance of functions over many iterations. </span><span style="color: gray;">/// &lt;/summary&gt; </span><span style="color: blue;">public sealed class </span><span style="color: #2b91af;">StopwatchPlus </span>: <span style="color: #2b91af;">IDisposable </span>{
+        <span style="color: blue;">private long </span>_startTick;
+        <span style="color: blue;">private long </span>_elapsed;
+        <span style="color: blue;">private bool </span>_isRunning;
+        <span style="color: blue;">private string </span>_name;
+        <span style="color: blue;">private </span><span style="color: #2b91af;">Action</span>&lt;<span style="color: #2b91af;">StopwatchPlus</span>&gt; _startAction;
+        <span style="color: blue;">private </span><span style="color: #2b91af;">Action</span>&lt;<span style="color: #2b91af;">StopwatchPlus</span>&gt; _stopAction;
+
+        <span style="color: gray;">/// &lt;summary&gt; /// </span><span style="color: green;">Creates an instance of the StopwatchPlus class and starts the timer. By </span><span style="color: gray;">/// </span><span style="color: green;">providing a value to the name parameter, the Debug Console automatically </span><span style="color: gray;">/// </span><span style="color: green;">will include the current values when the timer was started and stopped with </span><span style="color: gray;">/// </span><span style="color: green;">this name. </span><span style="color: gray;">/// &lt;/summary&gt; /// &lt;param name="name"&gt;&lt;/param&gt; </span><span style="color: blue;">public </span>StopwatchPlus(<span style="color: blue;">string </span>name)
+            : <span style="color: blue;">this</span>(name, WriteStart, WriteResults) { } 
+
+        <span style="color: gray;">/// &lt;summary&gt; /// </span><span style="color: green;">Creates an instance of the StopwatchPlus class and starts the timer. </span><span style="color: gray;">/// &lt;/summary&gt; /// &lt;param name="stopAction"&gt;</span><span style="color: green;">Action to take when the Stop method is called.</span><span style="color: gray;">&lt;/param&gt; </span><span style="color: blue;">public </span>StopwatchPlus(<span style="color: #2b91af;">Action</span>&lt;<span style="color: #2b91af;">StopwatchPlus</span>&gt; stopAction)
+            :<span style="color: blue;">this</span>(<span style="color: blue;">null</span>, stopAction)
+        {
+        }
+
+        <span style="color: gray;">/// &lt;summary&gt; /// </span><span style="color: green;">Creates an instance of the StopwatchPlus class and starts the timer. </span><span style="color: gray;">/// &lt;/summary&gt; /// &lt;param name="startAction"&gt;</span><span style="color: green;">Action to take when the timer starts.</span><span style="color: gray;">&lt;/param&gt; /// &lt;param name="stopAction"&gt;</span><span style="color: green;">Action to take when the Stop method is called.</span><span style="color: gray;">&lt;/param&gt; </span><span style="color: blue;">public </span>StopwatchPlus(<span style="color: #2b91af;">Action</span>&lt;<span style="color: #2b91af;">StopwatchPlus</span>&gt; startAction,
+            <span style="color: #2b91af;">Action</span>&lt;<span style="color: #2b91af;">StopwatchPlus</span>&gt; stopAction)
+            :<span style="color: blue;">this</span>(<span style="color: blue;">null</span>, startAction, stopAction)
+        {
+        }
+
+        <span style="color: gray;">/// &lt;summary&gt; /// </span><span style="color: green;">Creates an instance of the StopwatchPlus class and starts the timer. </span><span style="color: gray;">/// &lt;/summary&gt; /// &lt;param name="name"&gt;</span><span style="color: green;">Name of this stop watch (used as output)</span><span style="color: gray;">&lt;/param&gt; /// &lt;param name="startAction"&gt;</span><span style="color: green;">Action to take when the timer starts.</span><span style="color: gray;">&lt;/param&gt; /// &lt;param name="stopAction"&gt;</span><span style="color: green;">Action to take when the Stop method is called.</span><span style="color: gray;">&lt;/param&gt; </span><span style="color: blue;">public </span>StopwatchPlus(<span style="color: blue;">string </span>name,
+            <span style="color: #2b91af;">Action</span>&lt;<span style="color: #2b91af;">StopwatchPlus</span>&gt; startAction, 
+            <span style="color: #2b91af;">Action</span>&lt;<span style="color: #2b91af;">StopwatchPlus</span>&gt; stopAction)
+        {
+            _name = name;
+            _startAction = startAction;
+            _stopAction = stopAction;
+            Start();
+        }
+
+        <span style="color: blue;">public string </span>Name
+        {
+            <span style="color: blue;">get </span>{ <span style="color: blue;">return </span>_name; }
+        }
+
+        <span style="color: gray;">/// &lt;summary&gt; /// </span><span style="color: green;">Completely resets and deactivates the timer. </span><span style="color: gray;">/// &lt;/summary&gt; </span><span style="color: blue;">public void </span>Reset()
+        {
+            _elapsed = 0;
+            _isRunning = <span style="color: blue;">false</span>;
+            _startTick = 0;
+        }
+
+        <span style="color: gray;">/// &lt;summary&gt; /// </span><span style="color: green;">Begins the timer. </span><span style="color: gray;">/// &lt;/summary&gt; </span><span style="color: blue;">public void </span>Start()
+        {
+            <span style="color: blue;">if </span>(!_isRunning)
+            {
+                _startTick = GetCurrentTicks();
+                _isRunning = <span style="color: blue;">true</span>;
+                <span style="color: blue;">if </span>(_startAction != <span style="color: blue;">null</span>)
+                {
+                    _startAction(<span style="color: blue;">this</span>);
+                }
+            }
+        }
+
+        <span style="color: gray;">/// &lt;summary&gt; /// </span><span style="color: green;">Stops the current timer. </span><span style="color: gray;">/// &lt;/summary&gt; </span><span style="color: blue;">public void </span>Stop()
+        {
+            <span style="color: blue;">if </span>(_isRunning)
+            {
+                _elapsed += GetCurrentTicks() - _startTick;
+                _isRunning = <span style="color: blue;">false</span>;
+                <span style="color: blue;">if </span>(_stopAction != <span style="color: blue;">null</span>)
+                {
+                    _stopAction(<span style="color: blue;">this</span>);
+                }
+            }
+        }
+
+        <span style="color: gray;">/// &lt;summary&gt; /// </span><span style="color: green;">Gets a value indicating whether the instance is currently recording. </span><span style="color: gray;">/// &lt;/summary&gt; </span><span style="color: blue;">public bool </span>IsRunning
+        {
+            <span style="color: blue;">get </span>{ <span style="color: blue;">return </span>_isRunning; }
+        }
+
+        <span style="color: gray;">/// &lt;summary&gt; /// </span><span style="color: green;">Gets the Ellapsed time as a Timespan. </span><span style="color: gray;">/// &lt;/summary&gt; </span><span style="color: blue;">public </span><span style="color: #2b91af;">TimeSpan </span>Ellapsed
+        {
+            <span style="color: blue;">get </span>{ <span style="color: blue;">return </span><span style="color: #2b91af;">TimeSpan</span>.FromMilliseconds(EllapsedMilliseconds); }
+        }
+
+        <span style="color: gray;">/// &lt;summary&gt; /// </span><span style="color: green;">Gets the Ellapsed time as the total number of milliseconds. </span><span style="color: gray;">/// &lt;/summary&gt; </span><span style="color: blue;">public long </span>EllapsedMilliseconds
+        {
+            <span style="color: blue;">get </span>{ <span style="color: blue;">return </span>GetCurrentElapsedTicks() / <span style="color: #2b91af;">TimeSpan</span>.TicksPerMillisecond; }
+        }
+
+        <span style="color: gray;">/// &lt;summary&gt; /// </span><span style="color: green;">Gets the Ellapsed time as the total number of ticks (which is faked </span><span style="color: gray;">/// </span><span style="color: green;">as Silverlight doesn't have a way to get at the actual "Ticks") </span><span style="color: gray;">/// &lt;/summary&gt; </span><span style="color: blue;">public long </span>EllapsedTicks
+        {
+            <span style="color: blue;">get </span>{ <span style="color: blue;">return </span>GetCurrentElapsedTicks(); }
+        }
+
+        <span style="color: blue;">private long </span>GetCurrentElapsedTicks()
+        {
+            <span style="color: blue;">return </span>(<span style="color: blue;">long</span>)(<span style="color: blue;">this</span>._elapsed + (IsRunning ? (GetCurrentTicks() - _startTick) : 0));
+        }
+
+        <span style="color: blue;">private long </span>GetCurrentTicks()
+        {
+            <span style="color: green;">// TickCount: Gets the number of milliseconds elapsed since the system started. </span><span style="color: blue;">return </span><span style="color: #2b91af;">Environment</span>.TickCount * <span style="color: #2b91af;">TimeSpan</span>.TicksPerMillisecond;
+        }
+
+        <span style="color: blue;">#region </span>IDisposable Members
+
+        <span style="color: blue;">public void </span>Dispose()
+        {
+            Stop();
+        }
+
+        <span style="color: blue;">#endregion private static void </span>WriteStart(<span style="color: #2b91af;">StopwatchPlus </span>sw)
+        {
+            WriteStartInternal(sw);
+        }
+
+        <span style="color: green;">// This is not called in a Release build </span>[<span style="color: #2b91af;">Conditional</span>(<span style="color: #a31515;">"DEBUG"</span>)]
+        <span style="color: blue;">private static void </span>WriteStartInternal(<span style="color: #2b91af;">StopwatchPlus </span>sw)
+        {
+            <span style="color: #2b91af;">Debug</span>.WriteLine(<span style="color: #a31515;">"BEGIN\t{0}"</span>, sw._name);
+
+        }
+
+        <span style="color: blue;">private static void </span>WriteResults(<span style="color: #2b91af;">StopwatchPlus </span>sw)
+        {
+            WriteResultsInternal(sw);
+        }
+
+        <span style="color: green;">// This is not called in a Release build </span>[<span style="color: #2b91af;">Conditional</span>(<span style="color: #a31515;">"DEBUG"</span>)]
+        <span style="color: blue;">private static void </span>WriteResultsInternal(<span style="color: #2b91af;">StopwatchPlus </span>sw) 
+        {
+            <span style="color: #2b91af;">Debug</span>.WriteLine(<span style="color: #a31515;">"END\t{0}\t{1}"</span>, sw._name, sw.EllapsedMilliseconds);
+        }
+    }
+}</pre>
+<p>&nbsp;</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1030</post-id>	</item>
+		<item>
+		<title>My first Windows Phone 7 Experiment</title>
+		<link>/blog/index.php/archives/925</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Mon, 15 Mar 2010 22:36:22 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[Phone]]></category>
+		<category><![CDATA[Silverlight]]></category>
+		<guid isPermaLink="false">/blog/index.php/archives/925</guid>
+
+					<description><![CDATA[OK, It doesn’t look like much. It’s not. I was experimenting with some CompositionTarget Rendering and WriteableBitmap stuff on the plane ride out to Mix 2010 on Sunday and created a little animating blue line thing. (I don’t know what to to call it). But it was a work in progress. I took the code [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>OK, It doesn’t look like much. It’s not. I was experimenting with some CompositionTarget Rendering and WriteableBitmap stuff on the plane ride out to Mix 2010 on Sunday and created a little animating blue line thing. (I don’t know what to to call it). But it was a work in progress. </p>
+<p>I took the code and copied it into a Windows Phone 7 Silverlight application and hit run. It worked right out of the box. (Using the CTP download from <a href="http://www.microsoft.com/downloads/details.aspx?FamilyID=2338b5d1-79d8-46af-b828-380b0f854203&amp;displaylang=en#filelist">here</a>).</p>
+<p><img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2010/03/image5.png" width="300" height="584" /></p>
+<pre class="code"><span style="color: #2b91af">CompositionTarget</span>.Rendering += <span style="color: blue">new </span><span style="color: #2b91af">EventHandler</span>(CompositionTarget_Rendering);</pre>
+<p>The event:</p>
+<pre class="code"><span style="color: blue">void </span>CompositionTarget_Rendering(<span style="color: blue">object </span>sender, <span style="color: #2b91af">EventArgs </span>e)
+{
+    <span style="color: blue">int </span>indx = _shapes.Count - 1;
+    <span style="color: blue">double </span>littleCircleHeight = littleCircle.ActualHeight;
+
+    <span style="color: blue">while </span>(indx &gt;= 0)
+    {
+        <span style="color: #2b91af">Sparkle </span>sparkle = _shapes[indx];
+        sparkle.Y += sparkle.VY;
+        sparkle.X += sparkle.VX;
+        <span style="color: blue">if </span>(sparkle.Y - (littleCircleHeight / 2) &gt; _rect.Height)
+        {
+            _shapes.RemoveAt(indx);
+        }
+        <span style="color: blue">else
+        </span>{
+            <span style="color: green">// grab the cached one
+            </span><span style="color: #2b91af">TranslateTransform </span>t = sparkle.Transform <span style="color: blue">as </span><span style="color: #2b91af">TranslateTransform</span>;
+            t.X = sparkle.X - (littleCircle.ActualWidth / 2);
+            t.Y = sparkle.Y - (littleCircleHeight / 2);
+            _bitmap.Render(littleCircle, sparkle.Transform);
+        }
+        indx--;
+
+    }
+
+    <span style="color: blue">int </span>x = _random.Next(_bitmap.PixelWidth);
+    <span style="color: blue">int </span>y = 0; 
+
+    <span style="color: #2b91af">Sparkle </span>newsparkle = <span style="color: blue">new </span><span style="color: #2b91af">Sparkle</span>();
+    newsparkle.X = x;
+    newsparkle.Y = y;
+    newsparkle.VX = _random.NextDouble() + .001;
+    newsparkle.VX = (_random.Next(10) &gt; 5 ? newsparkle.VX : newsparkle.VX * -1.0);
+    newsparkle.VY = _random.NextDouble() * 5 + 1.0;
+    newsparkle.Transform = <span style="color: blue">new </span><span style="color: #2b91af">TranslateTransform</span>() { Y = newsparkle.Y, X = newsparkle.X };
+
+    _shapes.Add(newsparkle);
+    _bitmap.Invalidate();
+}</pre>
+<p><a href="http://11011.net/software/vspaste"></a></p>
+<p>Sizing:</p>
+<pre class="code"><span style="color: blue">void </span>MainPage_SizeChanged(<span style="color: blue">object </span>sender, <span style="color: #2b91af">SizeChangedEventArgs </span>e)
+{
+    _bitmap = <span style="color: blue">new </span><span style="color: #2b91af">WriteableBitmap</span>((<span style="color: blue">int</span>)e.NewSize.Width, (<span style="color: blue">int</span>)e.NewSize.Height);
+    _bitmap.Clear(<span style="color: #2b91af">Colors</span>.Black);
+    _rect = <span style="color: blue">new </span><span style="color: #2b91af">Rect</span>(0, 0, e.NewSize.Width, e.NewSize.Height);
+    dest.Source = _bitmap;
+}</pre>
+<p><a href="http://11011.net/software/vspaste"></a></p>
+<p>The sparkle class:</p>
+<pre class="code"><span style="color: blue">public class </span><span style="color: #2b91af">Sparkle
+</span>{
+    <span style="color: blue">public double </span>X { <span style="color: blue">get</span>; <span style="color: blue">set</span>; }
+    <span style="color: blue">public double </span>Y { <span style="color: blue">get</span>; <span style="color: blue">set</span>; }
+
+    <span style="color: blue">public double </span>VX { <span style="color: blue">get</span>; <span style="color: blue">set</span>; }
+    <span style="color: blue">public double </span>VY { <span style="color: blue">get</span>; <span style="color: blue">set</span>; }
+
+    <span style="color: blue">public </span><span style="color: #2b91af">Transform </span>Transform { <span style="color: blue">get</span>; <span style="color: blue">set</span>; }
+}</pre>
+<p><a href="http://11011.net/software/vspaste"></a>And it also uses a few functions from the <a href="http://writeablebitmapex.codeplex.com/">WriteableBitmap</a> extension classes on CodePlex.</p>
+<p>It doesn’t perform nearly as well as it does in stand-alone Silverlight – but it’s running in a VM on my laptop, without accelerated graphics ….. I blame my hardware. </p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">925</post-id>	</item>
+		<item>
+		<title>Finally, someone admits that Silverlight and WPF will (likely) converge</title>
+		<link>/blog/index.php/archives/870</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Wed, 02 Dec 2009 03:00:05 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[Silverlight]]></category>
+		<guid isPermaLink="false">/blog/index.php/archives/870</guid>
+
+					<description><![CDATA[However, will Silverlight and WPF merge? From Pete Brown: The Future of Client App Dev : WPF and Silverlight Convergence As a Microsoft employee (Developer Community Program Manager for Windows Client), he said: What the Future Holds – Convergence of WPF and Silverlight &#160; I recently spoke with Ian Ellison-Taylor at Microsoft. Ian is a [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>However, will Silverlight and WPF merge? </p>
+<p>From Pete Brown:</p>
+<p><a href="http://feedproxy.google.com/~r/PeteBrown/~3/yUan4BWpyJM/The-Future-of-Client-App-Dev-_3A00_-WPF-and-Silverlight-Convergence.aspx">The Future of Client App Dev : WPF and Silverlight Convergence</a></p>
+<p>As a Microsoft employee (Developer Community Program Manager for Windows Client), he said:</p>
+<blockquote>
+<h5><strong>What the Future Holds – Convergence of WPF and Silverlight</strong></h5>
+<p>&#160;</p>
+<p>I recently spoke with Ian Ellison-Taylor at Microsoft. Ian is a General Manager at Microsoft, reporting directly to Scott Guthrie. Among other things, his group handles both Silverlight and WPF (and RIA services and a lot of other stuff). I figured if I wanted the skinny on the future, he’d be the guy to talk to. So, he and I talked about the convergence of Silverlight and WPF, and later exchanged some email on the topic.</p>
+<p>&#160;</p>
+<p>In the future, it is very likely that both Silverlight and WPF will be a single technology with a single codebase. After all, Silverlight was originally known as WPF/E (E as in Everywhere), and in an amazing 180 degree reversal of our usual approach, we took an ugly codename and created a great product name (Silverlight) from it.</p>
+</blockquote>
+<p>D’uh. Like it wasn’t obvious, especially with the explosive growth and capabilities of Silverlight, why wouldn’t this be on the road map? </p>
+<p>Of course, there’s no time frame mentioned, so don’t plan on your Silverlight application being able to use real 3D and actual DataTriggers any time soon.</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">870</post-id>	</item>
+		<item>
+		<title>Impressive Silverlight game engine? Or something else entirely&#8230;.?</title>
+		<link>/blog/index.php/archives/864</link>
+					<comments>/blog/index.php/archives/864#comments</comments>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Mon, 30 Nov 2009 13:49:38 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[Silverlight]]></category>
+		<guid isPermaLink="false">/blog/index.php/archives/864</guid>
+
+					<description><![CDATA[A game in Silverlight – since I can’t read Chinese, I’m not sure what it’s all about, but it looks decent, and doesn’t seem to spike my CPU when playing. I don’t understand the point of the demo/game that’s there and it seems to be impossibly difficult (as you can see from the screen shot). [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>A game in Silverlight – since I can’t read Chinese, I’m not sure what it’s all about, but it looks decent, and doesn’t seem to spike my CPU when playing.</p>
+<p>I don’t understand the point of the demo/game that’s there and it seems to <strong>be impossibly difficult </strong>(as you can see from the screen shot).</p>
+<p>Try it here:</p>
+<p><a href="http://silverfuture.cn/">http://silverfuture.cn/</a></p>
+<p><img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" src="/blog/wp-content/uploads/2009/11/image8.png" border="0" alt="image" width="411" height="395" /></p>
+<p>Found via <a href="http://silverlike.net/silverlight-mmorpg-game-engine/" target="_blank">Silverlike</a>.</p>
+<p>As best as I can determine, here are the functions of the various features along the bottom:</p>
+<p><img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" src="/blog/wp-content/uploads/2009/11/image9.png" border="0" alt="image" width="454" height="108" /></p>
+<p><strong>Update: </strong>The comments have a better explanation of what the various items along the bottom do in the &#8220;game.&#8221;</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/blog/index.php/archives/864/feed</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">864</post-id>	</item>
+	</channel>
+</rss>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>TECHED &#8211; WiredPrairie</title>
+	<atom:link href="/blog/index.php/archives/tag/teched/feed" rel="self" type="application/rss+xml" />
+	<link>/blog</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Tue, 03 Jun 2008 01:48:00 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+<site xmlns="com-wordpress:feed-additions:1">193486638</site>	<item>
+		<title>In Orlando &#8212; at Tech Ed 2008 &#8211; Developers</title>
+		<link>/blog/index.php/archives/316</link>
+					<comments>/blog/index.php/archives/316#comments</comments>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Tue, 03 Jun 2008 01:48:00 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[TECHED]]></category>
+		<guid isPermaLink="false">/blog/index.php/archives/316</guid>
+
+					<description><![CDATA[On the way to the hotel &#8230; From the plane &#8230; (I liked the colors in this reflecting off the lakes): &#160; The clouds were forming and ready to storm &#8230; The calm before the storm &#8230; (we registered this evening rather than fighting the rush in the morning). &#160; &#160;]]></description>
+										<content:encoded><![CDATA[<p>On the way to the hotel &#8230;</p>
+<p><a href="/blog/wp-content/uploads/2008/06/img-0477.jpg"><img loading="lazy" style="border-right: 0px; border-top: 0px; border-left: 0px; border-bottom: 0px" height="320" alt="IMG_0477" src="/blog/wp-content/uploads/2008/06/img-0477-thumb.jpg" width="245" border="0"/></a> </p>
+<p>From the plane &#8230; (I liked the colors in this reflecting off the lakes):</p>
+<p><a href="/blog/wp-content/uploads/2008/06/img-0470.jpg"><img loading="lazy" style="border-right: 0px; border-top: 0px; border-left: 0px; border-bottom: 0px" height="213" alt="IMG_0470" src="/blog/wp-content/uploads/2008/06/img-0470-thumb.jpg" width="277" border="0"/></a>&nbsp;</p>
+<p>The clouds were forming and ready to storm &#8230;</p>
+<p><a href="/blog/wp-content/uploads/2008/06/img-0469.jpg"><img loading="lazy" style="border-right: 0px; border-top: 0px; border-left: 0px; border-bottom: 0px" height="213" alt="IMG_0469" src="/blog/wp-content/uploads/2008/06/img-0469-thumb.jpg" width="277" border="0"/></a></p>
+<p>The calm before the storm &#8230; (we registered this evening rather than fighting the rush in the morning). </p>
+<p><a href="/blog/wp-content/uploads/2008/06/img-0478.jpg"><img loading="lazy" style="border-right: 0px; border-top: 0px; border-left: 0px; border-bottom: 0px" height="213" alt="IMG_0478" src="/blog/wp-content/uploads/2008/06/img-0478-thumb.jpg" width="277" border="0"/></a></p>
+<p>&nbsp;<a href="/blog/wp-content/uploads/2008/06/img-0479.jpg"><img loading="lazy" style="border-right: 0px; border-top: 0px; border-left: 0px; border-bottom: 0px" height="213" alt="IMG_0479" src="/blog/wp-content/uploads/2008/06/img-0479-thumb.jpg" width="277" border="0"/></a></p>
+<p>&nbsp;<a href="/blog/wp-content/uploads/2008/06/img-0481.jpg"><img loading="lazy" style="border-right: 0px; border-top: 0px; border-left: 0px; border-bottom: 0px" height="386" alt="IMG_0481" src="/blog/wp-content/uploads/2008/06/img-0481-thumb.jpg" width="295" border="0"/></a> </p>
+<p><a href="/blog/wp-content/uploads/2008/06/img-0483.jpg"><img loading="lazy" style="border-right: 0px; border-top: 0px; border-left: 0px; border-bottom: 0px" height="213" alt="IMG_0483" src="/blog/wp-content/uploads/2008/06/img-0483-thumb.jpg" width="277" border="0"/></a></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/blog/index.php/archives/316/feed</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">316</post-id>	</item>
+	</channel>
+</rss>

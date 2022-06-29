@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Nest Thermostat Wifi Connectivity Issues?	</title>
+	<atom:link href="/blog/index.php/archives/1799/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/1799</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Mon, 09 Dec 2013 13:03:01 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/1799/comment-page-1#comment-39520</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Mon, 09 Dec 2013 13:03:01 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1799#comment-39520</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1799/comment-page-1#comment-39481&quot;&gt;Matthew Woodget&lt;/a&gt;.
+
+I continue to see dropped connections, even with approved wireless access equipment. It&#039;s very disappointing.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/1799/comment-page-1#comment-39481">Matthew Woodget</a>.</p>
+<p>I continue to see dropped connections, even with approved wireless access equipment. It&#8217;s very disappointing.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Matthew Woodget		</title>
+		<link>/blog/index.php/archives/1799/comment-page-1#comment-39481</link>
+
+		<dc:creator><![CDATA[Matthew Woodget]]></dc:creator>
+		<pubDate>Mon, 09 Dec 2013 04:17:50 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1799#comment-39481</guid>
+
+					<description><![CDATA[I&#039;m having similar WiFi dropout issues with Nest. Two nest thermostats both with C-Wire and both are randomly dropping off of WiFi. Sometimes they reconnect. Sometimes not. Sometimes when they don&#039;t a simple forced (at the thermostat) reconnect works, often not and have to do it twice to get it to re-connect.
+
+After solving the c-wire issue (didn&#039;t initially have) I&#039;m much happier with my nests, however this latest issue adds to the disappointment. Apart from that, and lack of Windows Phone app, I love them :)]]></description>
+			<content:encoded><![CDATA[<p>I&#8217;m having similar WiFi dropout issues with Nest. Two nest thermostats both with C-Wire and both are randomly dropping off of WiFi. Sometimes they reconnect. Sometimes not. Sometimes when they don&#8217;t a simple forced (at the thermostat) reconnect works, often not and have to do it twice to get it to re-connect.</p>
+<p>After solving the c-wire issue (didn&#8217;t initially have) I&#8217;m much happier with my nests, however this latest issue adds to the disappointment. Apart from that, and lack of Windows Phone app, I love them :)</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Matt Buford		</title>
+		<link>/blog/index.php/archives/1799/comment-page-1#comment-21965</link>
+
+		<dc:creator><![CDATA[Matt Buford]]></dc:creator>
+		<pubDate>Thu, 28 Feb 2013 04:03:06 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1799#comment-21965</guid>
+
+					<description><![CDATA[For what it&#039;s worth, here are my Nest wifi experiences:
+
+I bought 2 nest thermostats and installed them yesterday.  I quickly discovered that they dropped off the network regularly.  Whenever one was off the network, all I had to do was walk up to it.  The screen would turn on, and it would rejoin wifi.  Sometimes only one would drop off, and sometimes both would drop off.  They&#039;d eventually come back, then drop off again, in an endless cycle.
+
+My home network uses two e3000 dual-channel access points (not acting as routers) running DD-WRT.  I use a linux system that I run myself as a router.  When the Nests would drop off the wireless, it was easy for me to do a packet capture and see what was going on.  What I saw was the router ARPing for the Nests, but no answer back.
+
+I have lots of hardware lying around, so I pulled out an E2000 running stock firmware and set it up real quick to create a new wifi network just for my Nests.  I put it on the same channel, same encryption, but a new SSID and WPA2 personal password.  The Nests joined this new network and have been completely stable ever since.
+
+So, it does appear that the bouncing wifi connectivity is specific to wireless AP hardware/firmware, and the way they seem to recover when I&#039;m using them but break when they&#039;re mostly idle seems in line with it being related to power saving.
+
+Nest may be right about it being the wireless router&#039;s fault for not properly supporting the power saving feature, but I still find that to be a terrible argument.  My Nests have a C wire so there is plenty of power.  If the extreme power saving mode they are using breaks with many common routers (or router firmwares), Nest should obviously have an option to disable that feature (or even automatically only use that feature when power isn&#039;t plentiful).  Saying it is someone else&#039;s fault and leaving their customers to suffer is terrible customer service on their part.  No matter whose fault it is, they can fix this trivially and seem to resist doing so for no good reason.]]></description>
+			<content:encoded><![CDATA[<p>For what it&#8217;s worth, here are my Nest wifi experiences:</p>
+<p>I bought 2 nest thermostats and installed them yesterday.  I quickly discovered that they dropped off the network regularly.  Whenever one was off the network, all I had to do was walk up to it.  The screen would turn on, and it would rejoin wifi.  Sometimes only one would drop off, and sometimes both would drop off.  They&#8217;d eventually come back, then drop off again, in an endless cycle.</p>
+<p>My home network uses two e3000 dual-channel access points (not acting as routers) running DD-WRT.  I use a linux system that I run myself as a router.  When the Nests would drop off the wireless, it was easy for me to do a packet capture and see what was going on.  What I saw was the router ARPing for the Nests, but no answer back.</p>
+<p>I have lots of hardware lying around, so I pulled out an E2000 running stock firmware and set it up real quick to create a new wifi network just for my Nests.  I put it on the same channel, same encryption, but a new SSID and WPA2 personal password.  The Nests joined this new network and have been completely stable ever since.</p>
+<p>So, it does appear that the bouncing wifi connectivity is specific to wireless AP hardware/firmware, and the way they seem to recover when I&#8217;m using them but break when they&#8217;re mostly idle seems in line with it being related to power saving.</p>
+<p>Nest may be right about it being the wireless router&#8217;s fault for not properly supporting the power saving feature, but I still find that to be a terrible argument.  My Nests have a C wire so there is plenty of power.  If the extreme power saving mode they are using breaks with many common routers (or router firmwares), Nest should obviously have an option to disable that feature (or even automatically only use that feature when power isn&#8217;t plentiful).  Saying it is someone else&#8217;s fault and leaving their customers to suffer is terrible customer service on their part.  No matter whose fault it is, they can fix this trivially and seem to resist doing so for no good reason.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Martin Cowley		</title>
+		<link>/blog/index.php/archives/1799/comment-page-1#comment-21194</link>
+
+		<dc:creator><![CDATA[Martin Cowley]]></dc:creator>
+		<pubDate>Mon, 28 Jan 2013 14:42:33 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1799#comment-21194</guid>
+
+					<description><![CDATA[I noticed 3.0.5 was rolled out last week.  My second floor Nest had gone from intermittent wifi access to none at all - it was staying disconnected all the time, despite my first floor Nest and other wifi devices having no issues.  Even when trying to coax it into joining my wifi network manually via the thermostat itself, it kept reporting a failure to connect.  After some experimentation, I was able to get it to connect to a separate, temporary wifi network long enough for it to download 3.0.5, after which it was able to rejoin my main wifi network without issue, and has stayed connected to it since (this was two days ago).  So it appears in my case that 3.0.5 fixed a problem, although nothing wifi-related is mentioned in the change log.  Also, it&#039;s odd that my identical first floor Nest had no connectivity issues at all when on 3.0.4.]]></description>
+			<content:encoded><![CDATA[<p>I noticed 3.0.5 was rolled out last week.  My second floor Nest had gone from intermittent wifi access to none at all &#8211; it was staying disconnected all the time, despite my first floor Nest and other wifi devices having no issues.  Even when trying to coax it into joining my wifi network manually via the thermostat itself, it kept reporting a failure to connect.  After some experimentation, I was able to get it to connect to a separate, temporary wifi network long enough for it to download 3.0.5, after which it was able to rejoin my main wifi network without issue, and has stayed connected to it since (this was two days ago).  So it appears in my case that 3.0.5 fixed a problem, although nothing wifi-related is mentioned in the change log.  Also, it&#8217;s odd that my identical first floor Nest had no connectivity issues at all when on 3.0.4.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Chris Nolan		</title>
+		<link>/blog/index.php/archives/1799/comment-page-1#comment-21036</link>
+
+		<dc:creator><![CDATA[Chris Nolan]]></dc:creator>
+		<pubDate>Wed, 23 Jan 2013 16:21:56 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1799#comment-21036</guid>
+
+					<description><![CDATA[I have noticed a similar issue with my 2nd Gen Nest and Airport Express. I have the 802.11g Express. It seems like every few days the network will become unconnectable. It shows up in the wireless network list of my various computers, but any attempt to connect to it ends with &quot;A Connection Timeout Occurred&quot;. This happens with all clients connected to this Express. Simply unplugging the express clears the issue for a few days, but it always comes back.
+
+I hadn&#039;t thought that this could be Nest related. I have another 802.11n Express that runs a different SSID. I will join the Nest to that network and see if the problem stays with the old Express or moves to the new Express.
+
+I&#039;d estimate that this started around Christmas, but seems to be happening with increasing frequency.]]></description>
+			<content:encoded><![CDATA[<p>I have noticed a similar issue with my 2nd Gen Nest and Airport Express. I have the 802.11g Express. It seems like every few days the network will become unconnectable. It shows up in the wireless network list of my various computers, but any attempt to connect to it ends with &#8220;A Connection Timeout Occurred&#8221;. This happens with all clients connected to this Express. Simply unplugging the express clears the issue for a few days, but it always comes back.</p>
+<p>I hadn&#8217;t thought that this could be Nest related. I have another 802.11n Express that runs a different SSID. I will join the Nest to that network and see if the problem stays with the old Express or moves to the new Express.</p>
+<p>I&#8217;d estimate that this started around Christmas, but seems to be happening with increasing frequency.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Martin Cowley		</title>
+		<link>/blog/index.php/archives/1799/comment-page-1#comment-21034</link>
+
+		<dc:creator><![CDATA[Martin Cowley]]></dc:creator>
+		<pubDate>Wed, 23 Jan 2013 15:50:15 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1799#comment-21034</guid>
+
+					<description><![CDATA[I&#039;m seeing the same thing.  I have two Nests - one on the first floor and one on the second.  My wifi access point (an Astaro AP30) is on top of kitchen cabinets on the first floor (so roughly equidistant to both Nests, and with a similar number of walls and other obstructions in between).  Both are hooked up via a 24V common wire so power shouldn&#039;t be an issue.  My Astaro gateway reports 96% signal strength for my first floor Nest, and 100% for the second floor.  Both had been working fine (barring known Nest system outages) since I got them a year ago, but in the last month or two I&#039;ve noticed the second floor Nest losing connectivity intermittently, and at one point had completely forgotten about my network (I had to rejoin my WiFi network via the config screens on the Nest itself).  When my second floor nest is unavailable, it normally comes back online within a few minutes without my having to do anything.  I&#039;m assuming the 3.0.4 Nest software has some WiFi issues of some kind - the software update history page on Nest.com mentions &quot;improved remote control availability&quot; as the only update in that release, so there must have been some bugs in that area, apparently some of which are still there.]]></description>
+			<content:encoded><![CDATA[<p>I&#8217;m seeing the same thing.  I have two Nests &#8211; one on the first floor and one on the second.  My wifi access point (an Astaro AP30) is on top of kitchen cabinets on the first floor (so roughly equidistant to both Nests, and with a similar number of walls and other obstructions in between).  Both are hooked up via a 24V common wire so power shouldn&#8217;t be an issue.  My Astaro gateway reports 96% signal strength for my first floor Nest, and 100% for the second floor.  Both had been working fine (barring known Nest system outages) since I got them a year ago, but in the last month or two I&#8217;ve noticed the second floor Nest losing connectivity intermittently, and at one point had completely forgotten about my network (I had to rejoin my WiFi network via the config screens on the Nest itself).  When my second floor nest is unavailable, it normally comes back online within a few minutes without my having to do anything.  I&#8217;m assuming the 3.0.4 Nest software has some WiFi issues of some kind &#8211; the software update history page on Nest.com mentions &#8220;improved remote control availability&#8221; as the only update in that release, so there must have been some bugs in that area, apparently some of which are still there.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: David Brandon		</title>
+		<link>/blog/index.php/archives/1799/comment-page-1#comment-21033</link>
+
+		<dc:creator><![CDATA[David Brandon]]></dc:creator>
+		<pubDate>Wed, 23 Jan 2013 15:40:04 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1799#comment-21033</guid>
+
+					<description><![CDATA[I&#039;ve been seeing this recently with mine as well.  A couple of times in the last month I&#039;ve ended up with the &quot;?&quot; status.  In general, I&#039;ve found that I can (a) wait, and they&#039;ll come back eventually or I can (b) reboot the thermostat and that fixes the problem.  I suppose it&#039;s inevitable that once a thermostat became a computer it would have to be rebooted every once in a while.]]></description>
+			<content:encoded><![CDATA[<p>I&#8217;ve been seeing this recently with mine as well.  A couple of times in the last month I&#8217;ve ended up with the &#8220;?&#8221; status.  In general, I&#8217;ve found that I can (a) wait, and they&#8217;ll come back eventually or I can (b) reboot the thermostat and that fixes the problem.  I suppose it&#8217;s inevitable that once a thermostat became a computer it would have to be rebooted every once in a while.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

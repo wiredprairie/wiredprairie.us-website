@@ -1,0 +1,770 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>Thermostat &#8211; WiredPrairie</title>
+	<atom:link href="/blog/index.php/archives/tag/thermostat/feed" rel="self" type="application/rss+xml" />
+	<link>/blog</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Wed, 29 Jun 2022 16:00:40 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+<site xmlns="com-wordpress:feed-additions:1">193486638</site>	<item>
+		<title>Nest Thermostat Wifi Connectivity Issues?</title>
+		<link>/blog/index.php/archives/1799</link>
+					<comments>/blog/index.php/archives/1799#comments</comments>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Wed, 23 Jan 2013 13:47:29 +0000</pubDate>
+				<category><![CDATA[Recommendations]]></category>
+		<category><![CDATA[Connectivity]]></category>
+		<category><![CDATA[Nest]]></category>
+		<category><![CDATA[Thermostat]]></category>
+		<category><![CDATA[Wifi]]></category>
+		<guid isPermaLink="false">/blog/?p=1799</guid>
+
+					<description><![CDATA[I’ve been seeing more Wifi issues recently with my Nest thermostats. I don’t see a pattern to the problem, and it seems to randomly affect all of them (sometimes at the same time, but often just one). I’ve got a supported Wifi router (Apple Airport Express), and it’s within reasonable range to all of the [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I’ve been seeing more Wifi issues recently with my Nest thermostats. I don’t see a pattern to the problem, and it seems to randomly affect all of them (sometimes at the same time, but often just one).</p>
+<p><img alt="image" src="/blog/wp-content/uploads/2012/03/image6.png" /></p>
+<p>I’ve got a supported Wifi router (Apple Airport Express), and it’s within reasonable range to all of the thermostats in our house (no more than 20 foot from any thermostat). While it’s unfortunately overlapping with a similar band/frequency in our house, the router is dedicated to only the Thermostats right now (a unique SSID). </p>
+<p>It doesn’t have any settings that seem necessary to change:</p>
+<p><a href="/blog/wp-content/uploads/2013/01/SNAGHTMLe2a23de.png"><img loading="lazy" title="SNAGHTMLe2a23de" style="display: inline" alt="SNAGHTMLe2a23de" src="/blog/wp-content/uploads/2013/01/SNAGHTMLe2a23de_thumb.png" width="640" height="358" /></a></p>
+<p><a href="/blog/wp-content/uploads/2013/01/image.png"><img loading="lazy" title="image" style="display: inline" alt="image" src="/blog/wp-content/uploads/2013/01/image_thumb.png" width="640" height="313" /></a></p>
+<p>Any ideas? </p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/blog/index.php/archives/1799/feed</wfw:commentRss>
+			<slash:comments>7</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1799</post-id>	</item>
+		<item>
+		<title>Added Away/Home to unofficial-nest-api</title>
+		<link>/blog/index.php/archives/1788</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sun, 30 Dec 2012 23:13:00 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[JavaScript]]></category>
+		<category><![CDATA[Nest]]></category>
+		<category><![CDATA[Node]]></category>
+		<category><![CDATA[npm]]></category>
+		<category><![CDATA[Thermostat]]></category>
+		<guid isPermaLink="false">/blog/?p=1788</guid>
+
+					<description><![CDATA[I just finished adding a new simple feature to control the away status for a structure to my unofficial-nest-api published on GitHub and available as a node package (npm). Usage is simple as calling setAway or setHome on the nest instance after authentication and a successful status has been returned (see commented calls below). [javascript] [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I just finished adding a new simple feature to control the away status for a structure to my unofficial-nest-api published on <a href="https://github.com/wiredprairie/unofficial_nodejs_nest">GitHub</a> and available as a node package (<a href="https://npmjs.org/package/unofficial-nest-api">npm</a>).</p>
+<p>Usage is simple as calling <strong>setAway </strong>or <strong>setHome</strong> on the nest instance after authentication and a successful status has been returned (see commented calls below).</p>
+<p>[javascript]<br />
+if (username &amp;&amp; password) {<br />
+    username = trimQuotes(username);<br />
+    password = trimQuotes(password);<br />
+    nest.login(username, password, function (data) {<br />
+        if (!data) {<br />
+            console.log(&#8216;Login failed.&#8217;);<br />
+            process.exit(1);<br />
+            return;<br />
+        }<br />
+        console.log(&#8216;Logged in.&#8217;);<br />
+        nest.fetchStatus(function (data) {<br />
+            for (var deviceId in data.device) {<br />
+                if (data.device.hasOwnProperty(deviceId)) {<br />
+                    var device = data.shared[deviceId];<br />
+                    console.log(util.format(&quot;%s [%s], Current temperature = %d F target=%d&quot;,<br />
+                        device.name, deviceId,<br />
+                        nest.ctof(device.current_temperature),<br />
+                        nest.ctof(device.target_temperature)));<br />
+                }<br />
+            }<br />
+            subscribe();<br />
+            //nest.setAway();<br />
+            //nest.setHome();<br />
+        });<br />
+    });<br />
+}<br />
+[/javascript]</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1788</post-id>	</item>
+		<item>
+		<title>Unofficial Nest API for Node JS as an NPM</title>
+		<link>/blog/index.php/archives/1784</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Fri, 21 Dec 2012 01:54:36 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[JavaScript]]></category>
+		<category><![CDATA[Nest]]></category>
+		<category><![CDATA[Node]]></category>
+		<category><![CDATA[npm]]></category>
+		<category><![CDATA[Thermostat]]></category>
+		<guid isPermaLink="false">/blog/?p=1784</guid>
+
+					<description><![CDATA[Per the request of an anonymous user on Bitbucket, I have: Moved the code for the Nest API to GitHub. While I did have a preference for Bitbucket (free private hosting!!!), I moved it anyway. I also created an npm called the unofficial-nest-api. Enjoy.]]></description>
+										<content:encoded><![CDATA[<p>Per the request of an anonymous user on Bitbucket, I have:</p>
+<p>Moved the code for the Nest API to <a href="https://github.com/wiredprairie/unofficial_nodejs_nest">GitHub</a>. While I did have a preference for Bitbucket (free private hosting!!!), I moved it anyway. <img class="wlEmoticon wlEmoticon-smile" style="border-top-style: none; border-left-style: none; border-bottom-style: none; border-right-style: none" alt="Smile" src="/blog/wp-content/uploads/2012/12/wlEmoticon-smile.png" /></p>
+<p>I also created an npm called the <strong><a href="https://npmjs.org/package/unofficial-nest-api">unofficial-nest-api</a>.</strong></p>
+<p>Enjoy.</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1784</post-id>	</item>
+		<item>
+		<title>Spinning SVG Animation</title>
+		<link>/blog/index.php/archives/1638</link>
+					<comments>/blog/index.php/archives/1638#comments</comments>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Tue, 17 Apr 2012 01:36:13 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[Html]]></category>
+		<category><![CDATA[JavaScript]]></category>
+		<category><![CDATA[SVG]]></category>
+		<category><![CDATA[Thermostat]]></category>
+		<guid isPermaLink="false">/blog/?p=1638</guid>
+
+					<description><![CDATA[Interested in learning a few capabilities of SVG animation this evening from JavaScript in a web page, I put together a simple demonstration. Click on the image to launch the demo. Animating SVG in a modern browser (including IE9) is generally easy enough. This example was slightly more interesting in that I wanted the thicker [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Interested in learning a few capabilities of SVG animation this evening from JavaScript in a web page, I put together a simple demonstration.</p>
+<p>Click on the image to launch the demo.</p>
+<p><a href="http://www.wiredprairie.us/examples/svg/demo1.html" target="_blank"><img loading="lazy" style="background-image: none; border-right-width: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2012/04/image23.png" width="308" height="307" /></a></p>
+<p>Animating SVG in a modern browser (including IE9) is generally easy enough. This example was slightly more interesting in that I wanted the thicker line to rotate based on the center point of the image, rather than the location of the line itself.</p>
+<p>Not what I wanted:</p>
+<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2012/04/image24.png" width="308" height="307" /></p>
+<p>Desired rotation:</p>
+<p><img loading="lazy" style="background-image: none; border-right-width: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2012/04/image25.png" width="308" height="307" /></p>
+<p>The white bar would rotate around the center point (marked by the red arrow above).</p>
+<p>I’ve included all of the code at the bottom of the post. (There’s quite a lot of path information).</p>
+<p>The JavaScript just used an interval to move the line around the point:</p>
+<p><pre class="code">(<span style="color: blue">function </span>() {
+    window.onload = loaded;
+    <span style="color: blue">function </span>loaded() {
+        <span style="color: blue">var </span>colorTemp = document.getElementById(<span style="color: maroon">&quot;color-temp&quot;</span>);
+        <span style="color: blue">var </span>reading = document.getElementById(<span style="color: maroon">'current-reading'</span>);
+        <span style="color: blue">var </span>currentAngle = 0;
+        <span style="color: blue">var </span>fill;
+
+        <span style="color: blue">var </span>direction = 1;
+        setInterval(<span style="color: blue">function </span>() {
+            currentAngle += direction;
+            <span style="color: blue">if </span>(currentAngle &gt;= 120 || currentAngle &lt;= -120) {
+                direction *= -1;
+            } <span style="color: blue">else if </span>(currentAngle === 0) {
+                fill = direction === 1 ? <span style="color: maroon">&quot;#BE1E2D&quot; </span>: <span style="color: maroon">&quot;#10A2DC&quot;</span>;
+                colorTemp.setAttribute(<span style="color: maroon">&quot;fill&quot;</span>, fill);
+            }
+            <span style="color: #006400">// adjust the opacity
+            </span>colorTemp.setAttribute(<span style="color: maroon">&quot;opacity&quot;</span>, Math.abs(currentAngle) / 120.0);
+
+            reading.setAttribute(<span style="color: maroon">&quot;transform&quot;</span>, <span style="color: maroon">&quot;rotate(&quot; </span>+ currentAngle + <span style="color: maroon">&quot;)&quot;</span>);
+
+        }, 25);
+    }
+})();</pre>
+<p>  The angle is fixed between 120 and –120 degrees. When the angle reaches zero, the fill color is toggled. </p>
+<p>As the angle adjusts, the line is updated as well as the opacity of the fill.</p>
+<p>The overall size of the SVG drawing is 600&#215;600. Knowing that (and wanting the exact center), I translated a group to an offset of 300x, 300y containing the line:</p>
+<pre class="code"><span style="color: blue">&lt;</span><span style="color: maroon">g </span><span style="color: red">id</span><span style="color: blue">=&quot;temp-transform&quot; </span><span style="color: red">transform</span><span style="color: blue">=&quot;translate(300,300)&quot;&gt;
+        &lt;</span><span style="color: maroon">line </span><span style="color: red">id</span><span style="color: blue">=&quot;current-reading&quot; </span><span style="color: red">fill</span><span style="color: blue">=&quot;none&quot; </span><span style="color: red">stroke</span><span style="color: blue">=&quot;#FFFFFF&quot;
+              </span><span style="color: red">stroke-width</span><span style="color: blue">=&quot;5&quot; </span><span style="color: red">stroke-linecap</span><span style="color: blue">=&quot;round&quot;
+              </span><span style="color: red">stroke-miterlimit</span><span style="color: blue">=&quot;10&quot; </span><span style="color: red">x1</span><span style="color: blue">=&quot;0&quot; </span><span style="color: red">y1</span><span style="color: blue">=&quot;-180&quot; </span><span style="color: red">x2</span><span style="color: blue">=&quot;0&quot; </span><span style="color: red">y2</span><span style="color: blue">=&quot;-120&quot;/&gt;
+&lt;/</span><span style="color: maroon">g</span><span style="color: blue">&gt;
+</span></pre>
+<p>This effectively made the rotation now work from the center, once the line coordinates were adjusted to reflect the new translation. </p>
+<p>This works because the contents of the outer group caused the new starting point (origin) to be 300x, 300y rather than the default 0x, 0y. You can see the line is from y –120 to y –180. That’s because I wanted the line to start in the top middle (as the x is set to 0 for the line).</p>
+<p>I used Adobe Illustrator CS 5.5 to create the SVG image. Illustrator typically does not always handle fonts well when exporting as SVG. The final text node was this:</p>
+<div style="border-bottom: silver 1px solid; text-align: left; border-left: silver 1px solid; padding-bottom: 4px; line-height: 12pt; background-color: #f4f4f4; margin: 20px 0px 10px; padding-left: 4px; width: 97.5%; padding-right: 4px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; max-height: 200px; font-size: 8pt; overflow: auto; border-top: silver 1px solid; cursor: text; border-right: silver 1px solid; padding-top: 4px" id="codeSnippetWrapper">
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: #f4f4f4; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px" id="codeSnippet">&lt;text transform=<span style="color: #006080">&quot;matrix(1 0 0 1 254.1387 83.3198)&quot;</span> fill=<span style="color: #006080">&quot;#D1D3D4&quot;</span> font-family=<span style="color: #006080">&quot;'Arial'&quot;</span><br />      font-weight=<span style="color: #006080">&quot;bold&quot;</span> font-size=<span style="color: #006080">&quot;29.4616&quot;</span>&gt;thermo&lt;/text&gt;<br /></pre>
+<p></div>
+<p>To make it work across browsers, I needed to modify the text node below slightly. Note the font name and missing bold attribute. It’s not a hard switch, but it’s annoying if you need to make changes to your SVG multiple times.</p>
+<div style="border-bottom: silver 1px solid; text-align: left; border-left: silver 1px solid; padding-bottom: 4px; line-height: 12pt; background-color: #f4f4f4; margin: 20px 0px 10px; padding-left: 4px; width: 97.5%; padding-right: 4px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; max-height: 200px; font-size: 8pt; overflow: auto; border-top: silver 1px solid; cursor: text; border-right: silver 1px solid; padding-top: 4px" id="codeSnippetWrapper">
+<pre style="border-bottom-style: none; text-align: left; padding-bottom: 0px; line-height: 12pt; background-color: #f4f4f4; margin: 0em; border-left-style: none; padding-left: 0px; width: 100%; padding-right: 0px; font-family: &#39;Courier New&#39;, courier, monospace; direction: ltr; border-top-style: none; color: black; border-right-style: none; font-size: 8pt; overflow: visible; padding-top: 0px" id="codeSnippet">&lt;text transform=<span style="color: #006080">&quot;matrix(1 0 0 1 254.1387 83.3198)&quot;</span> fill=<span style="color: #006080">&quot;#D1D3D4&quot;</span> <br />font-family=<span style="color: #006080">&quot;'Arial-BoldMT'&quot;</span> font-size=<span style="color: #006080">&quot;29.4616&quot;</span>&gt;thermo&lt;/text&gt;</pre>
+<p></div>
+<p>If you have any questions, please leave a comment!</p>
+<pre class="code"><span style="color: blue">&lt;!</span><span style="color: maroon">DOCTYPE </span><span style="color: red">HTML</span><span style="color: blue">&gt;
+&lt;</span><span style="color: maroon">html</span><span style="color: blue">&gt;
+&lt;</span><span style="color: maroon">head</span><span style="color: blue">&gt;
+    &lt;</span><span style="color: maroon">title</span><span style="color: blue">&gt;</span>Svg Spinner Demo<span style="color: blue">&lt;/</span><span style="color: maroon">title</span><span style="color: blue">&gt;
+    &lt;</span><span style="color: maroon">style</span><span style="color: blue">&gt;
+        </span><span style="color: maroon">#demo1 svg </span>{
+            <span style="color: red">width</span>: <span style="color: blue">300px</span>;
+            <span style="color: red">height</span>: <span style="color: blue">300px</span>;
+        }
+
+    <span style="color: blue">&lt;/</span><span style="color: maroon">style</span><span style="color: blue">&gt;
+&lt;/</span><span style="color: maroon">head</span><span style="color: blue">&gt;
+&lt;</span><span style="color: maroon">body</span><span style="color: blue">&gt;
+
+&lt;</span><span style="color: maroon">div </span><span style="color: red">id</span><span style="color: blue">=&quot;demo1&quot;&gt;
+&lt;</span><span style="color: maroon">svg </span><span style="color: red">version</span><span style="color: blue">=&quot;1.0&quot; </span><span style="color: red">id</span><span style="color: blue">=&quot;Layer_1&quot; </span><span style="color: red">xmlns</span><span style="color: blue">=&quot;http://www.w3.org/2000/svg&quot; </span><span style="color: red">xmlns</span><span style="color: blue">:</span><span style="color: red">xlink</span><span style="color: blue">=&quot;http://www.w3.org/1999/xlink&quot; </span><span style="color: red">x</span><span style="color: blue">=&quot;0px&quot; </span><span style="color: red">y</span><span style="color: blue">=&quot;0px&quot;
+     </span><span style="color: red">width</span><span style="color: blue">=&quot;600px&quot; </span><span style="color: red">height</span><span style="color: blue">=&quot;600px&quot; </span><span style="color: red">viewBox</span><span style="color: blue">=&quot;0 0 600 600&quot; </span><span style="color: red">enable-background</span><span style="color: blue">=&quot;new 0 0 600 600&quot; </span><span style="color: red">xml</span><span style="color: blue">:</span><span style="color: red">space</span><span style="color: blue">=&quot;preserve&quot;&gt;
+&lt;</span><span style="color: maroon">g</span><span style="color: blue">&gt;
+    &lt;</span><span style="color: maroon">radialGradient </span><span style="color: red">id</span><span style="color: blue">=&quot;SVGID_1_&quot; </span><span style="color: red">cx</span><span style="color: blue">=&quot;298.9106&quot; </span><span style="color: red">cy</span><span style="color: blue">=&quot;196.146&quot; </span><span style="color: red">r</span><span style="color: blue">=&quot;399.267&quot; </span><span style="color: red">gradientUnits</span><span style="color: blue">=&quot;userSpaceOnUse&quot;&gt;
+        &lt;</span><span style="color: maroon">stop  </span><span style="color: red">offset</span><span style="color: blue">=&quot;0&quot; </span><span style="color: red">style</span><span style="color: blue">=&quot;</span><span style="color: red">stop-color</span><span style="color: blue">:#D9D9D9&quot;/&gt;
+        &lt;</span><span style="color: maroon">stop  </span><span style="color: red">offset</span><span style="color: blue">=&quot;1&quot; </span><span style="color: red">style</span><span style="color: blue">=&quot;</span><span style="color: red">stop-color</span><span style="color: blue">:#C2C2C2&quot;/&gt;
+    &lt;/</span><span style="color: maroon">radialGradient</span><span style="color: blue">&gt;
+    &lt;</span><span style="color: maroon">path </span><span style="color: red">fill</span><span style="color: blue">=&quot;url(#SVGID_1_)&quot; </span><span style="color: red">d</span><span style="color: blue">=&quot;M300.646,595.41c-78.957,0-153.188-30.747-209.02-86.579C35.795,453,5.048,378.77,5.048,299.812
+        c0-78.957,30.748-153.188,86.579-209.02S221.689,4.214,300.646,4.214c78.958,0,153.188,30.748,209.019,86.579
+        c55.832,55.831,86.579,130.063,86.579,209.02c0,78.958-30.747,153.188-86.579,209.019
+        C453.834,564.663,379.604,595.41,300.646,595.41z&quot;/&gt;
+    &lt;</span><span style="color: maroon">path </span><span style="color: red">fill</span><span style="color: blue">=&quot;#808285&quot; </span><span style="color: red">d</span><span style="color: blue">=&quot;M300.646,6.214c39.637,0,78.086,7.762,114.281,23.071c34.961,14.787,66.359,35.957,93.324,62.922
+        s48.135,58.364,62.923,93.325c15.309,36.193,23.07,74.643,23.07,114.28s-7.762,78.086-23.07,114.281
+        c-14.788,34.961-35.958,66.359-62.923,93.324s-58.363,48.135-93.324,62.923c-36.194,15.309-74.644,23.07-114.281,23.07
+        s-78.087-7.762-114.28-23.07c-34.961-14.788-66.36-35.958-93.325-62.923s-48.135-58.363-62.922-93.324
+        C14.81,377.898,7.048,339.449,7.048,299.812s7.762-78.087,23.071-114.28c14.787-34.961,35.957-66.36,62.922-93.325
+        s58.364-48.135,93.325-62.922C222.559,13.976,261.009,6.214,300.646,6.214 M300.646,2.214
+        C136.287,2.214,3.048,135.453,3.048,299.812S136.287,597.41,300.646,597.41s297.598-133.239,297.598-297.598
+        S465.005,2.214,300.646,2.214L300.646,2.214z&quot;/&gt;
+&lt;/</span><span style="color: maroon">g</span><span style="color: blue">&gt;
+&lt;</span><span style="color: maroon">g</span><span style="color: blue">&gt;
+    &lt;</span><span style="color: maroon">radialGradient </span><span style="color: red">id</span><span style="color: blue">=&quot;SVGID_2_&quot; </span><span style="color: red">cx</span><span style="color: blue">=&quot;299.0464&quot; </span><span style="color: red">cy</span><span style="color: blue">=&quot;204.2632&quot; </span><span style="color: red">r</span><span style="color: blue">=&quot;368.0053&quot; </span><span style="color: red">gradientUnits</span><span style="color: blue">=&quot;userSpaceOnUse&quot;&gt;
+        &lt;</span><span style="color: maroon">stop  </span><span style="color: red">offset</span><span style="color: blue">=&quot;0&quot; </span><span style="color: red">style</span><span style="color: blue">=&quot;</span><span style="color: red">stop-color</span><span style="color: blue">:#141414&quot;/&gt;
+        &lt;</span><span style="color: maroon">stop  </span><span style="color: red">offset</span><span style="color: blue">=&quot;1&quot; </span><span style="color: red">style</span><span style="color: blue">=&quot;</span><span style="color: red">stop-color</span><span style="color: blue">:#080808&quot;/&gt;
+    &lt;/</span><span style="color: maroon">radialGradient</span><span style="color: blue">&gt;
+    &lt;</span><span style="color: maroon">path </span><span style="color: red">fill</span><span style="color: blue">=&quot;url(#SVGID_2_)&quot; </span><span style="color: red">d</span><span style="color: blue">=&quot;M300.646,572.266c-72.775,0-141.194-28.34-192.654-79.8c-51.459-51.46-79.8-119.879-79.8-192.654
+        s28.34-141.194,79.8-192.654s119.879-79.8,192.654-79.8s141.194,28.34,192.654,79.8c51.46,51.46,79.8,119.879,79.8,192.654
+        s-28.34,141.194-79.8,192.654S373.421,572.266,300.646,572.266z&quot;/&gt;
+    &lt;</span><span style="color: maroon">path </span><span style="color: red">d</span><span style="color: blue">=&quot;M300.646,29.358c36.512,0,71.931,7.15,105.271,21.252c32.205,13.622,61.129,33.123,85.968,57.962
+        c24.84,24.839,44.341,53.763,57.963,85.968c14.102,33.34,21.252,68.759,21.252,105.271c0,36.512-7.15,71.931-21.252,105.271
+        c-13.622,32.205-33.123,61.129-57.963,85.968c-24.839,24.84-53.763,44.341-85.968,57.963
+        c-33.34,14.102-68.759,21.252-105.271,21.252c-36.513,0-71.931-7.15-105.271-21.252c-32.205-13.622-61.129-33.123-85.968-57.963
+        c-24.839-24.839-44.34-53.763-57.962-85.968c-14.102-33.34-21.252-68.759-21.252-105.271c0-36.513,7.15-71.931,21.252-105.271
+        c13.622-32.205,33.123-61.129,57.962-85.968s53.763-44.34,85.968-57.962C228.715,36.509,264.133,29.358,300.646,29.358
+         M300.646,25.358c-151.577,0-274.454,122.877-274.454,274.454c0,151.576,122.877,274.454,274.454,274.454
+        c151.576,0,274.454-122.878,274.454-274.454C575.1,148.235,452.222,25.358,300.646,25.358L300.646,25.358z&quot;/&gt;
+&lt;/</span><span style="color: maroon">g</span><span style="color: blue">&gt;
+&lt;</span><span style="color: maroon">g</span><span style="color: blue">&gt;
+    &lt;</span><span style="color: maroon">radialGradient </span><span style="color: red">id</span><span style="color: blue">=&quot;SVGID_3_&quot; </span><span style="color: red">cx</span><span style="color: blue">=&quot;299.5176&quot; </span><span style="color: red">cy</span><span style="color: blue">=&quot;232.4409&quot; </span><span style="color: red">r</span><span style="color: blue">=&quot;259.4771&quot; </span><span style="color: red">gradientUnits</span><span style="color: blue">=&quot;userSpaceOnUse&quot;&gt;
+        &lt;</span><span style="color: maroon">stop  </span><span style="color: red">offset</span><span style="color: blue">=&quot;0&quot; </span><span style="color: red">style</span><span style="color: blue">=&quot;</span><span style="color: red">stop-color</span><span style="color: blue">:#212121&quot;/&gt;
+        &lt;</span><span style="color: maroon">stop  </span><span style="color: red">offset</span><span style="color: blue">=&quot;1&quot; </span><span style="color: red">style</span><span style="color: blue">=&quot;</span><span style="color: red">stop-color</span><span style="color: blue">:#0D0D0D&quot;/&gt;
+    &lt;/</span><span style="color: maroon">radialGradient</span><span style="color: blue">&gt;
+    &lt;</span><span style="color: maroon">path </span><span style="color: red">fill</span><span style="color: blue">=&quot;url(#SVGID_3_)&quot; </span><span style="color: red">d</span><span style="color: blue">=&quot;M300.646,491.916c-105.927,0-192.104-86.178-192.104-192.104
+        c0-105.927,86.178-192.104,192.104-192.104c105.926,0,192.104,86.178,192.104,192.104
+        C492.75,405.738,406.572,491.916,300.646,491.916z&quot;/&gt;
+    &lt;</span><span style="color: maroon">path </span><span style="color: red">d</span><span style="color: blue">=&quot;M300.646,109.708c25.666,0,50.561,5.026,73.996,14.938c22.638,9.575,42.968,23.283,60.429,40.743
+        c17.46,17.46,31.167,37.791,40.742,60.428c9.912,23.435,14.938,48.331,14.938,73.996s-5.025,50.561-14.938,73.996
+        c-9.575,22.638-23.282,42.968-40.742,60.429c-17.461,17.46-37.791,31.167-60.429,40.742c-23.435,9.912-48.33,14.938-73.996,14.938
+        s-50.562-5.025-73.996-14.938c-22.637-9.575-42.968-23.282-60.428-40.742c-17.46-17.461-31.168-37.791-40.743-60.429
+        c-9.912-23.435-14.938-48.33-14.938-73.996s5.026-50.562,14.938-73.996c9.575-22.637,23.283-42.968,40.743-60.428
+        s37.791-31.168,60.428-40.743C250.084,114.733,274.98,109.708,300.646,109.708 M300.646,105.708
+        c-107.201,0-194.104,86.903-194.104,194.104c0,107.201,86.903,194.104,194.104,194.104c107.201,0,194.104-86.903,194.104-194.104
+        C494.75,192.611,407.847,105.708,300.646,105.708L300.646,105.708z&quot;/&gt;
+&lt;/</span><span style="color: maroon">g</span><span style="color: blue">&gt;
+&lt;</span><span style="color: maroon">g </span><span style="color: red">opacity</span><span style="color: blue">=&quot;0.8&quot;&gt;
+    &lt;</span><span style="color: maroon">path </span><span style="color: red">id</span><span style="color: blue">=&quot;color-temp&quot; </span><span style="color: red">fill</span><span style="color: blue">=&quot;#BE1E2D&quot; </span><span style="color: red">opacity</span><span style="color: blue">=&quot;0&quot; </span><span style="color: red">d</span><span style="color: blue">=&quot;M300.646,489.309c-104.489,0-189.497-85.008-189.497-189.497c0-104.489,85.008-189.497,189.497-189.497
+        c104.489,0,189.497,85.008,189.497,189.497C490.143,404.301,405.135,489.309,300.646,489.309z&quot;/&gt;
+    &lt;</span><span style="color: maroon">path </span><span style="color: red">d</span><span style="color: blue">=&quot;M300.646,110.815c25.515,0,50.266,4.997,73.566,14.852c22.505,9.519,42.718,23.146,60.075,40.504
+        s30.984,37.57,40.504,60.075c9.854,23.3,14.852,48.051,14.852,73.566s-4.997,50.266-14.852,73.566
+        c-9.52,22.505-23.146,42.718-40.504,60.075s-37.57,30.984-60.075,40.504c-23.3,9.854-48.051,14.852-73.566,14.852
+        s-50.266-4.997-73.566-14.852c-22.505-9.52-42.718-23.146-60.075-40.504s-30.985-37.57-40.504-60.075
+        c-9.855-23.3-14.852-48.051-14.852-73.566s4.997-50.266,14.852-73.566c9.519-22.505,23.146-42.718,40.504-60.075
+        s37.57-30.985,60.075-40.504C250.38,115.812,275.131,110.815,300.646,110.815 M300.646,109.815
+        c-104.933,0-189.997,85.064-189.997,189.997c0,104.932,85.064,189.997,189.997,189.997c104.932,0,189.997-85.064,189.997-189.997
+        C490.643,194.879,405.578,109.815,300.646,109.815L300.646,109.815z&quot;/&gt;
+&lt;/</span><span style="color: maroon">g</span><span style="color: blue">&gt;
+&lt;</span><span style="color: maroon">g </span><span style="color: red">id</span><span style="color: blue">=&quot;temperature-markings&quot;&gt;
+        &lt;</span><span style="color: maroon">line </span><span style="color: red">fill</span><span style="color: blue">=&quot;none&quot; </span><span style="color: red">stroke</span><span style="color: blue">=&quot;#C7C8CA&quot; </span><span style="color: red">stroke-width</span><span style="color: blue">=&quot;5&quot; </span><span style="color: red">stroke-miterlimit</span><span style="color: blue">=&quot;10&quot;
+              </span><span style="color: red">x1</span><span style="color: blue">=&quot;300.646&quot; </span><span style="color: red">y1</span><span style="color: blue">=&quot;123.751&quot; </span><span style="color: red">x2</span><span style="color: blue">=&quot;300.646&quot; </span><span style="color: red">y2</span><span style="color: blue">=&quot;161.603&quot;/&gt;
+        &lt;</span><span style="color: maroon">line </span><span style="color: red">fill</span><span style="color: blue">=&quot;none&quot; </span><span style="color: red">stroke</span><span style="color: blue">=&quot;#C7C8CA&quot; </span><span style="color: red">stroke-width</span><span style="color: blue">=&quot;5&quot; </span><span style="color: red">stroke-miterlimit</span><span style="color: blue">=&quot;10&quot;
+              </span><span style="color: red">x1</span><span style="color: blue">=&quot;422.102&quot; </span><span style="color: red">y1</span><span style="color: blue">=&quot;371.971&quot; </span><span style="color: red">x2</span><span style="color: blue">=&quot;454.881&quot; </span><span style="color: red">y2</span><span style="color: blue">=&quot;390.896&quot;/&gt;
+        &lt;</span><span style="color: maroon">line </span><span style="color: red">fill</span><span style="color: blue">=&quot;none&quot; </span><span style="color: red">stroke</span><span style="color: blue">=&quot;#C7C8CA&quot; </span><span style="color: red">stroke-width</span><span style="color: blue">=&quot;5&quot; </span><span style="color: red">stroke-miterlimit</span><span style="color: blue">=&quot;10&quot;
+              </span><span style="color: red">x1</span><span style="color: blue">=&quot;146.41&quot; </span><span style="color: red">y1</span><span style="color: blue">=&quot;390.896&quot; </span><span style="color: red">x2</span><span style="color: blue">=&quot;179.191&quot; </span><span style="color: red">y2</span><span style="color: blue">=&quot;371.97&quot;/&gt;
+&lt;/</span><span style="color: maroon">g</span><span style="color: blue">&gt;
+&lt;</span><span style="color: maroon">g </span><span style="color: red">id</span><span style="color: blue">=&quot;temp-transform&quot; </span><span style="color: red">transform</span><span style="color: blue">=&quot;translate(300,300)&quot;&gt;
+        &lt;</span><span style="color: maroon">line </span><span style="color: red">id</span><span style="color: blue">=&quot;current-reading&quot; </span><span style="color: red">fill</span><span style="color: blue">=&quot;none&quot; </span><span style="color: red">stroke</span><span style="color: blue">=&quot;#FFFFFF&quot;
+              </span><span style="color: red">stroke-width</span><span style="color: blue">=&quot;5&quot; </span><span style="color: red">stroke-linecap</span><span style="color: blue">=&quot;round&quot;
+              </span><span style="color: red">stroke-miterlimit</span><span style="color: blue">=&quot;10&quot; </span><span style="color: red">x1</span><span style="color: blue">=&quot;0&quot; </span><span style="color: red">y1</span><span style="color: blue">=&quot;-180&quot; </span><span style="color: red">x2</span><span style="color: blue">=&quot;0&quot; </span><span style="color: red">y2</span><span style="color: blue">=&quot;-120&quot;/&gt;
+&lt;/</span><span style="color: maroon">g</span><span style="color: blue">&gt;
+    &lt;</span><span style="color: maroon">text </span><span style="color: red">transform</span><span style="color: blue">=&quot;matrix(1 0 0 1 254.1387 83.3198)&quot; </span><span style="color: red">fill</span><span style="color: blue">=&quot;#D1D3D4&quot; </span><span style="color: red">font-family</span><span style="color: blue">=&quot;'Arial'&quot;
+          </span><span style="color: red">font-weight</span><span style="color: blue">=&quot;bold&quot; </span><span style="color: red">font-size</span><span style="color: blue">=&quot;29.4616&quot;&gt;</span>thermo<span style="color: blue">&lt;/</span><span style="color: maroon">text</span><span style="color: blue">&gt;
+&lt;/</span><span style="color: maroon">svg</span><span style="color: blue">&gt;
+
+
+&lt;/</span><span style="color: maroon">div</span><span style="color: blue">&gt;
+
+
+&lt;</span><span style="color: maroon">script </span><span style="color: red">type</span><span style="color: blue">=&quot;text/javascript&quot;&gt;
+
+    </span>(<span style="color: blue">function </span>() {
+
+        window.onload = loaded;
+
+        <span style="color: blue">function </span>loaded() {
+            <span style="color: blue">var </span>colorTemp = document.getElementById(<span style="color: maroon">&quot;color-temp&quot;</span>);
+            <span style="color: blue">var </span>reading = document.getElementById(<span style="color: maroon">'current-reading'</span>);
+            <span style="color: blue">var </span>currentAngle = 0;
+            <span style="color: blue">var </span>fill;
+
+            <span style="color: blue">var </span>direction = 1;
+            setInterval(<span style="color: blue">function </span>() {
+                currentAngle += direction;
+                <span style="color: blue">if </span>(currentAngle &gt;= 120 || currentAngle &lt;= -120) {
+                    direction *= -1;
+                } <span style="color: blue">else if </span>(currentAngle === 0) {
+                    fill = direction === 1 ? <span style="color: maroon">&quot;#BE1E2D&quot; </span>: <span style="color: maroon">&quot;#10A2DC&quot;</span>;
+                    colorTemp.setAttribute(<span style="color: maroon">&quot;fill&quot;</span>, fill);
+                }
+                <span style="color: #006400">// adjust the opacity
+                </span>colorTemp.setAttribute(<span style="color: maroon">&quot;opacity&quot;</span>, Math.abs(currentAngle) / 120.0);
+
+                reading.setAttribute(<span style="color: maroon">&quot;transform&quot;</span>, <span style="color: maroon">&quot;rotate(&quot; </span>+ currentAngle + <span style="color: maroon">&quot;)&quot;</span>);
+
+            }, 25);
+        }
+    })();
+
+
+<span style="color: blue">&lt;/</span><span style="color: maroon">script</span><span style="color: blue">&gt;
+&lt;/</span><span style="color: maroon">body</span><span style="color: blue">&gt;
+&lt;/</span><span style="color: maroon">html</span><span style="color: blue">&gt;
+</span></pre>
+]]></content:encoded>
+					
+					<wfw:commentRss>/blog/index.php/archives/1638/feed</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1638</post-id>	</item>
+		<item>
+		<title>Nest Thermostat, Software Update 2.0</title>
+		<link>/blog/index.php/archives/1631</link>
+					<comments>/blog/index.php/archives/1631#comments</comments>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Tue, 10 Apr 2012 13:00:05 +0000</pubDate>
+				<category><![CDATA[General]]></category>
+		<category><![CDATA[Software]]></category>
+		<category><![CDATA[Usability]]></category>
+		<category><![CDATA[Nest]]></category>
+		<category><![CDATA[Review]]></category>
+		<category><![CDATA[Thermostat]]></category>
+		<guid isPermaLink="false">/blog/?p=1631</guid>
+
+					<description><![CDATA[Nest recently released a new update to the software of the thermostat device (as well as their corresponding web and mobile applications). Some of the details may be found on their blog. A few of the new features include an historical view of the heating/cooling usage: On Friday, April 6th for example, you can see [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Nest recently released a new update to the software of the thermostat device (as well as their corresponding web and mobile applications). </p>
+<p>Some of the details may be found on their <a href="http://www.nest.com/2012/04/05/nest_thermostat_software_brings_more_info_savings_access/">blog</a>.</p>
+<p>A few of the new features include an <a href="http://www.nest.com/2012/04/05/saving-energy-with-energy-history/">historical view</a> of the heating/cooling usage:</p>
+<p><a href="/blog/wp-content/uploads/2012/04/image11.png"><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2012/04/image_thumb1.png" width="449" height="482" /></a></p>
+<p>On Friday, April 6th for example, you can see when the heat turned on and what the set points were for the day for my First Floor thermostat. The data isn’t as interesting during our Midwest Spring as the furnace doesn’t run nearly as much. </p>
+<p>Here’s from another day:</p>
+<p><a href="/blog/wp-content/uploads/2012/04/image12.png"><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2012/04/image_thumb2.png" width="502" height="46" /></a></p>
+<p>I doubt I’ll use this feature much. It only has 10 days of information available apparently right now, so I just can’t see this being very useful. I’m skeptical that this will affect my choices as it comes to how we use our HVAC system. I could see potentially how aggregate data of many users (in a similar geographical area) could become more compelling and potentially a source of data that Nest might be able to sell. </p>
+<p>The settings for a thermostat have been tweaked visually. The same basic data is available as before:</p>
+<p><a href="/blog/wp-content/uploads/2012/04/image13.png"><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2012/04/image_thumb3.png" width="502" height="215" /></a></p>
+<p>The learning tab has been cleaned up as well:</p>
+<p><a href="/blog/wp-content/uploads/2012/04/image14.png"><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2012/04/image_thumb4.png" width="502" height="202" /></a></p>
+<p>For some reason, our thermostat that we’ve had for four months is apparently still in training (Time to Temp). That seems like an issue that maybe I’ll look into. Although I don’t really care much about the “time to temp” feature normally as I don’t manually adjust the affected thermostat much.</p>
+<p>The “Away” tab changed:</p>
+<p><a href="/blog/wp-content/uploads/2012/04/image15.png"><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2012/04/image_thumb5.png" width="502" height="202" /></a></p>
+<p>Not a big improvement for usability. Probably more touch friendly (and it’s logically correct as it heats when less than 58 degrees for example), but it feels wrong. Thermostats aren’t normally left to right oriented (temp goes up and down), so this breaks a typical UX model. </p>
+<p>On the Equipment tab, they’ve tweaked the UI as well:</p>
+<p><a href="/blog/wp-content/uploads/2012/04/image16.png"><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2012/04/image_thumb6.png" width="502" height="163" /></a></p>
+<p><font style="style">I clicked on the <strong>Safety Temp</strong> word (? it’s not a button, nor a link, so I don’t know what to call it) and the above UI displayed. The same temperature range UX is displayed, but here I like it even less. I suppose we don’t have a maximum temperature in the house during cooling season, but this is clunky. (And given that it’s safety related, I wish it were more clear). I can hear some of you say, “but it’s clear to me.” I do understand it, but I’m confident there is a better way of displaying and adjusting these temperatures that would be more obvious.</font></p>
+<p>(And Nest Labs, go ahead and spell out “TEMP” please? Thanks!)</p>
+<p> The technical info tab is the same basically. </p>
+<p>There’s now a lock feature (which I have no need for, and am not going to experiment with right now):</p>
+<p><a href="/blog/wp-content/uploads/2012/04/image17.png"><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2012/04/image_thumb7.png" width="502" height="193" /></a></p>
+<p>One of the big new TM’ed features is called <a href="http://support.nest.com/customer/portal/articles/453244-">Airwave</a><img src="https://s.w.org/images/core/emoji/14.0.0/72x72/2122.png" alt="™" class="wp-smiley" style="height: 1em; max-height: 1em;" />. Apparently, when it’s hot and the humidity is low (not typical for Wisconsin, as our summers are usually hot and humid), the thermostat apparently will try to do more cooling by turning off the air conditioning system early and using the fan more. (I always thought our air conditioner already did that as the compressor turns off before the fans). If it helps lower our electricity bill, awesome. I’ll report back if I can tell that it is working and helping (without historical data though, it will be difficult for us, especially as we added solar panels to our house last fall).</p>
+<p>The scheduling tab looks basically unchanged. The support tab has more content, so you don’t have to go to their web site to read the information. That’s a nice improvement.</p>
+<hr />
+<p><font style="style">OK, this was very strange. As I was writing this post (and in the middle of using the application), I saw the following:</font></p>
+<p><a href="/blog/wp-content/uploads/2012/04/image18.png"><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2012/04/image_thumb8.png" width="502" height="478" /></a></p>
+<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2012/04/image19.png" width="502" height="478" /></p>
+<p><a href="/blog/wp-content/uploads/2012/04/image20.png"><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2012/04/image_thumb9.png" width="502" height="478" /></a></p>
+<p>Now, the thermostats are all disconnected in some odd way:</p>
+<p><a href="/blog/wp-content/uploads/2012/04/image21.png"><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2012/04/image_thumb10.png" width="502" height="210" /></a></p>
+<p>A few minutes later, things improved (but not perfect):</p>
+<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2012/04/image22.png" width="365" height="244" />&#160;</p>
+<p>Twenty minutes later, the BASEMENT thermostat is still disconnected. I reset the thermostat and it’s back now. </p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/blog/index.php/archives/1631/feed</wfw:commentRss>
+			<slash:comments>5</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1631</post-id>	</item>
+		<item>
+		<title>Nest Thermostat Review, Update #10: Wifi Settings Missing</title>
+		<link>/blog/index.php/archives/1576</link>
+					<comments>/blog/index.php/archives/1576#comments</comments>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sat, 24 Mar 2012 14:47:40 +0000</pubDate>
+				<category><![CDATA[Recommendations]]></category>
+		<category><![CDATA[Nest]]></category>
+		<category><![CDATA[Thermostat]]></category>
+		<guid isPermaLink="false">/blog/?p=1576</guid>
+
+					<description><![CDATA[One more brief update about our Nest thermostats. After a few weeks of limited use of our HVAC system due to a very unusually warm late winter and early spring, I’d set the whole house to AWAY mode last evening. However, a bit later, I heard the furnace running. Odd. I walked to the thermostat [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>One more brief update about our Nest thermostats. After a few weeks of limited use of our HVAC system due to a very unusually warm late winter and early spring, I’d set the whole house to AWAY mode last evening. However, a bit later, I heard the furnace running. Odd. I walked to the thermostat that I’d set to away and confirmed it was still “AWAY.”</p>
+<p><img loading="lazy" style="background-image: none; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; float: right; padding-top: 0px; border: 0px;" title="image" src="/blog/wp-content/uploads/2012/03/image6.png" alt="image" width="107" height="131" align="right" border="0" />I grabbed the iPad and used the Nest app. The thermostat that I had set AWAY to was reporting the same error that I’d seen back in <a href="/blog/index.php/archives/1508">January</a>: the giant question mark. Tapping the image resulted in the message:</p>
+<p><strong>Thermostat Disconnected – The thermostat First Floor last connected to the nest.com more than 3 days ago.</strong></p>
+<p>Three days?</p>
+<p><img loading="lazy" style="display: inline; float: left;" src="/blog/wp-content/uploads/2012/01/image_thumb3.png" alt="image" width="132" height="136" align="left" /></p>
+<p>So, I went to the thermostat and checked it’s settings. Great, no wifi and no account information. It had apparently forgotten it’s wifi connection information completely and also my account information.</p>
+<p>Seriously, I’d want to fire myself if I wrote code that was this bad. Why would it EVER dump that information? It’s literally its key to being a smart thermostat.</p>
+<p>Thankfully, as we still have 2 other thermostats in the house, it was simple to add the account back to the thermostat after entering the wifi password again, as the thermostat recognized that there were other Nests nearby.</p>
+<p>Without the wifi connection, you still have a thermostat (thankfully!). However, you loose all remote scheduling capabilities via their web site or apps.</p>
+<p>I still can’t recommend these thermostats. While the “BETA” label has been finally removed from their remote access web application, the device itself still has numerous unresolved issues.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/blog/index.php/archives/1576/feed</wfw:commentRss>
+			<slash:comments>24</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1576</post-id>	</item>
+		<item>
+		<title>.NET API for Nest Thermostat</title>
+		<link>/blog/index.php/archives/1449</link>
+					<comments>/blog/index.php/archives/1449#comments</comments>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Tue, 10 Jan 2012 02:50:22 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[General]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[CSharp]]></category>
+		<category><![CDATA[Nest]]></category>
+		<category><![CDATA[Thermostat]]></category>
+		<guid isPermaLink="false">/blog/?p=1449</guid>
+
+					<description><![CDATA[I just finished a preliminary read-only (think version 0.1) wrapper around the Nest Thermostat API that is used by their mobile phone and web applications. As Nest doesn’t have a formal API yet, the code could break at any time and may not be suitable for any use. However, it is working today. The project [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I just finished a preliminary <strong>read-only</strong> (think version 0.1) wrapper around the Nest Thermostat API that is used by their mobile phone and web applications. As Nest doesn’t have a formal API yet, the code could break at any time and may not be suitable for any use. However, it is working today. <img style="border-bottom-style: none; border-left-style: none; border-top-style: none; border-right-style: none" class="wlEmoticon wlEmoticon-smile" alt="Smile" src="/blog/wp-content/uploads/2012/01/wlEmoticon-smile3.png" /></p>
+<p>The project is hosted on <a href="https://github.com/wiredprairie/Nest-Thermostat-DotNET-API">GitHub</a>. It uses <a href="http://james.newtonking.com/pages/json-net.aspx">JSON.NET</a> for parsing the return values from the Nest servers.</p>
+<p>There are three projects, with the lib containing the assembly that is used by the two test applications. One is a console app and the other a simple WPF application:</p>
+<p><a href="/blog/wp-content/uploads/2012/01/SNAGHTML88bff0b3.png"><img loading="lazy" style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="SNAGHTML88bff0b3" border="0" alt="SNAGHTML88bff0b3" src="/blog/wp-content/uploads/2012/01/SNAGHTML88bff0b3_thumb.png" width="424" height="332" /></a></p>
+<p>(My thermostats are named Zero, One, and Two).</p>
+<p>If there’s interest, I plan on adding some methods to the library which allow modification of data (such as the current temperature), and ideally, support for live updates from the devices if I can make sense of the data that is <a href="/blog/index.php/archives/1442">returned</a>.</p>
+<p>FYI: I’ve now written a Node version of the API, detailed <a href="/blog/index.php/archives/1754" target="_blank">here</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/blog/index.php/archives/1449/feed</wfw:commentRss>
+			<slash:comments>18</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1449</post-id>	</item>
+		<item>
+		<title>Nest Thermostat API/Protocol</title>
+		<link>/blog/index.php/archives/1442</link>
+					<comments>/blog/index.php/archives/1442#comments</comments>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sun, 08 Jan 2012 17:21:05 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[General]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[Nest]]></category>
+		<category><![CDATA[Protocol]]></category>
+		<category><![CDATA[Thermostat]]></category>
+		<guid isPermaLink="false">/blog/?p=1442</guid>
+
+					<description><![CDATA[While Nest Labs hasn’t released a formal (documented &#38; supported) API, I thought I’d do a bit of digging to see how they’re using the network and what might be achievable. A few things are going on, the majority as you’d probably expect. The web interface is using a long polling technique apparently to watch [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>While Nest Labs hasn’t released a formal (documented &amp; supported) API, I thought I’d do a bit of digging to see how they’re using the network and what might be achievable.</p>
+<p>A few things are going on, the majority as you’d probably expect.</p>
+<p>The web interface is using a long polling technique apparently to watch for updates to the schedule, temperature, etc.</p>
+<p><a href="/blog/wp-content/uploads/2012/01/image7.png"><img loading="lazy" style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-width: 0px;" title="image" src="/blog/wp-content/uploads/2012/01/image_thumb7.png" alt="image" width="381" height="225" border="0"/></a></p>
+<p>I haven’t determined what the frequency is though, or the wait time. It’s very inconsistent, even when I wouldn’t expect much new “live” data to be available on the network, it frequently updates and polls again.</p>
+<p>There are a few constants set in the HOME page script:</p>
+<pre class="csharpcode">C.ABSENT_USER_THRESHOLD     = +(<span class="str">'300'</span>) || 0;  <span class="rem">// seconds</span>
+C.DEAD_DEVICE_THRESHOLD     = +(<span class="str">'300'</span>) || 0;  <span class="rem">// seconds</span>
+C.pollingInterval           = +(<span class="str">'2500'</span>) || 0;       <span class="rem">// ms</span>
+C.WEATHER_POLLING_INTERVAL  = +(<span class="str">'120000'</span>) || 0; <span class="rem">// ms</span></pre>
+<p>&nbsp;</p>
+<p>If the C.pollingInterval value were for the subscribe endpoint mentioned above, I’d see a LOT more calls than I do – so I’m still not clear how the polling interval is decided.</p>
+<p>The API calls, for the most part are using JSONP syntax over an HTTPS connection.</p>
+<p>The most frequent request is to “subscribe.” It sends as part of the GET request a large block of encoded JSON (using encodeURIComponent and then JSON.stringify).</p>
+<p>I&#8217;m not familiar with the key/value system that they’re using (it may just be something they’ve constructed in-house – although given the number of <a href="/blog/index.php/archives/1397">open source JavaScript</a> libraries they’re using, I thought someone might recognize it):</p>
+<p>“<strong>key</strong>”, “{<strong>actualkey</strong>}.{<strong>value</strong>}”</p>
+<p>I don’t understand why they’ve redundantly specified “key” in a list of keys when it’s evident that the <em>actual key </em>is contained within the value as a delimited string. It’s more data to send and more data to parse this way. So, again, maybe it’s based on some DB or model system I’m not familiar with. (Anyone recognize it?)</p>
+<p>I’ve substituted the actual values (as they are serial numbers of my devices) with text representations of what the value represented below:</p>
+<pre class="csharpcode">{<span class="str">"keys"</span>:
+    [{<span class="str">"key"</span>:<span class="str">"user.#USERID#"</span>,
+        <span class="str">"version"</span>:209478897,<span class="str">"timestamp"</span>:1324159145000},
+    {<span class="str">"key"</span>:<span class="str">"user_alert_dialog.#USERID#"</span>,
+        <span class="str">"version"</span>:-1320296685,<span class="str">"timestamp"</span>:1325967612000},
+    {<span class="str">"key"</span>:<span class="str">"structure.#STRUCTURE-GUID#"</span>,
+        <span class="str">"version"</span>:656192675,<span class="str">"timestamp"</span>:1325967612000},
+    {<span class="str">"key"</span>:<span class="str">"device.#DEVICE 1 SERIAL NUMBER#"</span>,
+        <span class="str">"version"</span>:1485027516,<span class="str">"timestamp"</span>:1326034984000},
+    {<span class="str">"key"</span>:<span class="str">"shared.#DEVICE 1 SERIAL NUMBER#"</span>,
+        <span class="str">"version"</span>:588844038,<span class="str">"timestamp"</span>:1326034818000},
+    {<span class="str">"key"</span>:<span class="str">"schedule.#DEVICE 1 SERIAL NUMBER#"</span>,
+        <span class="str">"version"</span>:1187107985,<span class="str">"timestamp"</span>:1326005677000},
+    {<span class="str">"key"</span>:<span class="str">"track.#DEVICE 1 SERIAL NUMBER#"</span>,
+        <span class="str">"timestamp"</span>:1326035650601,<span class="str">"version"</span>:1041047847},
+    {<span class="str">"key"</span>:<span class="str">"device.#DEVICE 2 SERIAL NUMBER#"</span>,
+        <span class="str">"version"</span>:149169270,<span class="str">"timestamp"</span>:1326034820000},
+    {<span class="str">"key"</span>:<span class="str">"shared.#DEVICE 2 SERIAL NUMBER#"</span>,
+        <span class="str">"version"</span>:659841570,<span class="str">"timestamp"</span>:1326034820000},
+    {<span class="str">"key"</span>:<span class="str">"schedule.#DEVICE 2 SERIAL NUMBER#"</span>,
+        <span class="str">"version"</span>:-2016290692,<span class="str">"timestamp"</span>:1326005625000},
+    {<span class="str">"key"</span>:<span class="str">"track.#DEVICE 2 SERIAL NUMBER#"</span>,
+        <span class="str">"timestamp"</span>:1326035650862,<span class="str">"version"</span>:528978433},
+    {<span class="str">"key"</span>:<span class="str">"device.#DEVICE 3 SERIAL NUMBER#"</span>,
+        <span class="str">"version"</span>:1637112547,<span class="str">"timestamp"</span>:1326035399000},
+    {<span class="str">"key"</span>:<span class="str">"shared.#DEVICE 3 SERIAL NUMBER#"</span>,
+        <span class="str">"version"</span>:760504326,<span class="str">"timestamp"</span>:1326035397000},
+    {<span class="str">"key"</span>:<span class="str">"schedule.#DEVICE 3 SERIAL NUMBER#"</span>,
+        <span class="str">"version"</span>:-314552357,<span class="str">"timestamp"</span>:1326003402000},
+    {<span class="str">"key"</span>:<span class="str">"track.#DEVICE 3 SERIAL NUMBER#"</span>,
+        <span class="str">"version"</span>:-645931164,<span class="str">"timestamp"</span>:1326035531802}]}"</pre>
+<p>We’ve got three thermostats, so there are always three sets of subscription requests for each call to <strong>subscribe.</strong></p>
+<p>Using my iPad, I adjusted the set point for our second story (#DEVICE 2#) down one degree Fahrenheit (to 67°).</p>
+<p>Within approximately a second, the most recent pending <strong>subscribe</strong> request returned with a far more interesting payload:</p>
+<pre class="csharpcode">jQuery17108417355176061392_1326035646750(
+    { <span class="str">"status"</span>: 200,
+        <span class="str">"headers"</span>: {
+            <span class="str">"X-nl-skv-key"</span>: <span class="str">"shared.#DEVICE 2 SERIAL NUMBER#"</span>,
+            <span class="str">"X-nl-skv-version"</span>: 869022424,
+            <span class="str">"X-nl-skv-timestamp"</span>: 1326038279000,
+            <span class="str">"X-nl-service-timestamp"</span>: 1326038279825
+        },
+        <span class="str">"payload"</span>: {
+            <span class="str">"current_temperature"</span>: 19.98,
+            <span class="str">"hvac_fan_state"</span>: <span class="kwrd">false</span>,
+            <span class="str">"name"</span>: <span class="str">"TWO"</span>, <span class="str">"hvac_heat_x2_state"</span>: <span class="kwrd">false</span>,
+            <span class="str">"hvac_ac_state"</span>: <span class="kwrd">false</span>,
+            <span class="str">"can_cool"</span>: <span class="kwrd">true</span>,
+            <span class="str">"auto_away"</span>: 0,
+            <span class="str">"compressor_lockout_enabled"</span>: <span class="kwrd">false</span>,
+            <span class="str">"target_temperature_low"</span>: 16.66667,
+            <span class="str">"target_temperature_high"</span>: 26.66667,
+            <span class="str">"compressor_lockout_timeout"</span>: 0,
+            <span class="str">"hvac_heater_state"</span>: <span class="kwrd">false</span>,
+            <span class="str">"hvac_aux_heater_state"</span>: <span class="kwrd">false</span>,
+            <span class="str">"target_temperature"</span>: 19.44444,
+            <span class="str">"can_heat"</span>: <span class="kwrd">true</span>,
+            <span class="str">"target_temperature_type"</span>: <span class="str">"heat"</span>,
+            <span class="str">"target_change_pending"</span>: <span class="kwrd">true</span>
+        }
+    });</pre>
+<p>Everything above is needed to update the current state of the UI. As you can see, the current temperature (returned as Celsius apparently) is 19.98 (67.964°F). The current temperature as displayed on the thermostat and the web UI was 68.</p>
+<p><em>Seeing these return values makes me think that they may be using Ruby and Rails (as the naming convention tends to follow Rails naming using underscores between words). I know for example, I wouldn’t name variables/columns that way when building a C#/JavaScript MVC project.</em></p>
+<p><span style="color: #333333;">Rather than just a delta payload of what’s changed, they’ve currently opted for a full update of all information related to the thermostat state. </span></p>
+<p><span style="color: #333333;">Several seconds later, a much larger payload was returned to a <strong>subscribe </strong>request:</span></p>
+<pre class="csharpcode"><span class="str">"status"</span>: 200,
+<span class="str">"headers"</span>: {
+    <span class="str">"X-nl-skv-key"</span>: <span class="str">"device.#DEVICE 2 SERIAL NUMBER#"</span>,
+    <span class="str">"X-nl-skv-version"</span>: -2086438581,
+    <span class="str">"X-nl-skv-timestamp"</span>: 1326038378000,
+    <span class="str">"X-nl-service-timestamp"</span>: 1326038379023
+},
+<span class="str">"payload"</span>: {
+    <span class="str">"ob_orientation"</span>: <span class="str">"O"</span>,
+    <span class="str">"upper_safety_temp"</span>: 1000.0,
+    <span class="str">"forced_air"</span>: <span class="kwrd">true</span>,
+    <span class="str">"creation_time"</span>: 1324142042019,
+    <span class="str">"switch_preconditioning_control"</span>: <span class="kwrd">false</span>,
+    <span class="str">"click_sound"</span>: <span class="str">"on"</span>,
+    <span class="str">"leaf"</span>: <span class="kwrd">false</span>, <span class="str">"user_brightness"</span>: <span class="str">"auto"</span>,
+    <span class="str">"learning_state"</span>: <span class="str">"steady"</span>,
+    <span class="str">"heat_pump_comp_threshold"</span>: -1000.0,
+    <span class="str">"local_ip"</span>: <span class="str">"10.0.0.205"</span>,
+    <span class="str">"backplate_serial_number"</span>: <span class="str">"#SHOULD BE DEVICE 2 SERIAL NUMBER, BUT ISN'T?#"</span>,
+    <span class="str">"capability_level"</span>: 1.03,
+    <span class="str">"postal_code"</span>: <span class="str">"#POSTALCODE#"</span>,
+    <span class="str">"upper_safety_temp_enabled"</span>: <span class="kwrd">false</span>,
+    <span class="str">"heat_pump_aux_threshold"</span>: 10.0,
+    <span class="str">"lower_safety_temp_enabled"</span>: <span class="kwrd">true</span>,
+    <span class="str">"serial_number"</span>: <span class="str">"#DEVICE 2 SERIAL NUMBER#"</span>,
+    <span class="str">"temperature_lock"</span>: <span class="kwrd">false</span>,
+    <span class="str">"learning_time"</span>: 1002,
+    <span class="str">"current_version"</span>: <span class="str">"1.0.4"</span>,
+    <span class="str">"model_version"</span>: <span class="str">"Diamond-1.10"</span>,
+    <span class="str">"backplate_bsl_info"</span>: <span class="str">"BSL"</span>,
+    <span class="str">"auto_away_enable"</span>: <span class="kwrd">true</span>,
+    <span class="str">"heat_pump_comp_threshold_enabled"</span>: <span class="kwrd">false</span>,
+    <span class="str">"fan_mode"</span>: <span class="str">"auto"</span>,
+    <span class="str">"range_enable"</span>: <span class="kwrd">false</span>,
+    <span class="str">"temperature_scale"</span>: <span class="str">"F"</span>,
+    <span class="str">"backplate_mono_info"</span>: <span class="str">"TFE (BP_DVT) 3.5.2 (ehs@ubuntu) 2011-11-05 12:00:00"</span>,
+    <span class="str">"backplate_bsl_version"</span>: <span class="str">"1.1"</span>,
+    <span class="str">"equipment_type"</span>: <span class="str">"gas"</span>,
+    <span class="str">"range_mode"</span>: <span class="kwrd">false</span>,
+    <span class="str">"lower_safety_temp"</span>: 7.0,
+    <span class="str">"has_fan"</span>: <span class="kwrd">true</span>,
+    <span class="str">"hvac_wires"</span>: <span class="str">"Heat,Cool,Fan,Common Wire,Rc"</span>,
+    <span class="str">"learning_mode"</span>: <span class="kwrd">true</span>,
+    <span class="str">"away_temperature_high"</span>: 32.0,
+    <span class="str">"switch_system_off"</span>: <span class="kwrd">false</span>,
+    <span class="str">"time_to_target"</span>: 1326039444,
+    <span class="str">"away_temperature_low"</span>: 14.444444444444445,
+    <span class="str">"current_humidity"</span>: 45,
+    <span class="str">"mac_address"</span>: <span class="str">"#MACADDR#"</span>,
+    <span class="str">"backplate_mono_version"</span>: <span class="str">"3.5.2"</span>,
+    <span class="str">"has_aux_heat"</span>: <span class="kwrd">false</span>,
+    <span class="str">"type"</span>: <span class="str">"TBD"</span>,
+    <span class="str">"hvac_pins"</span>: <span class="str">"W1,Y1,C,Rc,G"</span>,
+    <span class="str">"has_heat_pump"</span>: <span class="kwrd">false</span>,
+    <span class="str">"heat_pump_aux_threshold_enabled"</span>: <span class="kwrd">true</span>,
+    <span class="str">"battery_level"</span>: 3.945,
+    <span class="str">"target_time_confidence"</span>: 1.0
+}</pre>
+<p>&nbsp;</p>
+<p>A few things to note:</p>
+<ul>
+<li><strong>Upper_safety_temperature </strong>is just a bit beyond my comfort zone at 1832°F. I don’t know why it’s sending a value like that to the client, and why it’s stupidly high.</li>
+<li>The backplate serial number doesn’t match with the thermostat according to the payload response. I don’t know why this might be as I confirmed that the numbers matched through visual inspection of the device just now.</li>
+<li>The majority of these details are exposed in one way or another in the details area of the web UI.</li>
+<li>Time to target (payload.time_to_target) is unusual in that it’s a JavaScript Date value, divided by 1000. So, in the example above, the time to target is: <strong>new Date(1326039444 * 1000).toString() = &gt;&#8221;Sun Jan 08 2012 10:17:24 GMT-0600 (Central Standard Time)&#8221;</strong>Next, a payload is returned with the new status:
+<pre class="csharpcode"><span class="str">"status"</span>: 200,
+<span class="str">"headers"</span>: {
+    <span class="str">"X-nl-skv-key"</span>: <span class="str">"shared.#DEVICE 2 SERIAL NUMBER#"</span>,
+    <span class="str">"X-nl-skv-version"</span>: 1689916148,
+    <span class="str">"X-nl-skv-timestamp"</span>: 1326038378000,
+    <span class="str">"X-nl-service-timestamp"</span>: 1326038379151
+},
+<span class="str">"payload"</span>: {
+    <span class="str">"hvac_fan_state"</span>: <span class="kwrd">false</span>,
+    <span class="str">"name"</span>: <span class="str">"TWO"</span>,
+    <span class="str">"hvac_heat_x2_state"</span>: <span class="kwrd">false</span>,
+    <span class="str">"hvac_ac_state"</span>: <span class="kwrd">false</span>,
+    <span class="str">"can_cool"</span>: <span class="kwrd">true</span>,
+    <span class="str">"auto_away"</span>: 0,
+    <span class="str">"compressor_lockout_enabled"</span>: <span class="kwrd">false</span>,
+    <span class="str">"target_temperature_low"</span>: 16.66667,
+    <span class="str">"current_temperature"</span>: 19.53,
+    <span class="str">"target_temperature_high"</span>: 26.66667,
+    <span class="str">"compressor_lockout_timeout"</span>: 0,
+    <span class="str">"target_change_pending"</span>: <span class="kwrd">false</span>,
+    <span class="str">"hvac_aux_heater_state"</span>: <span class="kwrd">false</span>,
+    <span class="str">"target_temperature"</span>: 20.55556,
+    <span class="str">"can_heat"</span>: <span class="kwrd">true</span>,
+    <span class="str">"target_temperature_type"</span>: <span class="str">"heat"</span>,
+    <span class="str">"hvac_heater_state"</span>: <span class="kwrd">true</span>
+}</pre>
+<p>&nbsp;</p>
+<p>Here, the <strong>hvac_heater_state</strong> is set to <strong>true</strong>. The furnace is on.</p>
+<p>A little while later, that value is set to <strong>false.</strong></p>
+<p>Occasionally, the payload includes the complete schedule for the thermostat. I’m not going to reproduce the entire payload here as it’s too large, and quite boring. Here’s a snippet of what it returns:</p>
+<pre class="csharpcode"><span class="str">"schedule"</span>: {
+    <span class="str">"#DEVICE 2 SERIAL NUMBER#"</span>: {
+        <span class="str">"$version"</span>: 1187107985,
+        <span class="str">"$timestamp"</span>: 1326005677000,
+        <span class="str">"name"</span>: <span class="str">"One Current Schedule"</span>,
+        <span class="str">"days"</span>: {
+            <span class="str">"0"</span>: {
+                <span class="str">"0"</span>: {
+                    <span class="str">"type"</span>: <span class="str">"HEAT"</span>,
+                    <span class="str">"temp"</span>: 14.445,
+                    <span class="str">"time"</span>: 0,
+                    <span class="str">"entry_type"</span>: <span class="str">"continuation"</span>
+                },
+                <span class="str">"1"</span>: {
+                    <span class="str">"type"</span>: <span class="str">"HEAT"</span>,
+                    <span class="str">"temp"</span>: 14.445,
+                    <span class="str">"time"</span>: 27900,
+                    <span class="str">"entry_type"</span>: <span class="str">"setpoint"</span>
+                },
+                <span class="str">"2"</span>: {
+                    <span class="str">"type"</span>: <span class="str">"HEAT"</span>,
+                    <span class="str">"temp"</span>: 20.556,
+                    <span class="str">"time"</span>: 63000,
+                    <span class="str">"entry_type"</span>: <span class="str">"setpoint"</span>
+                },
+                <span class="str">"3"</span>: {
+                    <span class="str">"type"</span>: <span class="str">"HEAT"</span>,
+                    <span class="str">"temp"</span>: 14.445,
+                    <span class="str">"time"</span>: 70200,
+                    <span class="str">"entry_type"</span>: <span class="str">"setpoint"</span>
+                }
+            },
+            <span class="str">"1"</span>: {
+                <span class="str">"0"</span>: {
+                    <span class="str">"type"</span>: <span class="str">"HEAT"</span>,
+                    <span class="str">"temp"</span>: 14.445,
+                    <span class="str">"time"</span>: 0,
+                    <span class="str">"entry_type"</span>: <span class="str">"continuation"</span>
+                },
+                <span class="str">"1"</span>: {
+                    <span class="str">"type"</span>: <span class="str">"HEAT"</span>,
+                    <span class="str">"temp"</span>: 18.889,
+                    <span class="str">"time"</span>: 20700,
+                    <span class="str">"entry_type"</span>: <span class="str">"setpoint"</span>
+                },</pre>
+<p>&nbsp;</p>
+<p>It’s a basic table structure. The first set point of the day is at 0, and is a “continuation.” These don’t show up in the UI.</p>
+<p>Here’s what the day 1 looks like on the Nest thermostat UI:</p>
+<p><a href="/blog/wp-content/uploads/2012/01/image8.png"><img loading="lazy" style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-width: 0px;" title="image" src="/blog/wp-content/uploads/2012/01/image_thumb8.png" alt="image" width="500" height="37" border="0"/></a></p>
+<p>When changing a temperature setpoint, I’m a bit disappointed to see that the entire schedule is sent with every request apparently. I just wouldn’t have expected that given that the more setpoints that there are, the bigger the payload must be. The UI is often sluggish when rapidly making adjustments in the schedule, and this could be one of the factors.</p>
+<p>In the example below (which I’ve snipped most of the payload sent again as a JSONP request), I’ve set the first set point to 57F.</p>
+<pre class="csharpcode">    <span class="str">"payload"</span>: {
+        <span class="str">"days"</span>: {
+            <span class="str">"0"</span>: {
+                <span class="str">"0"</span>: {
+                    <span class="str">"type"</span>: <span class="str">"HEAT"</span>,
+                    <span class="str">"temp"</span>: 14.685,
+                    <span class="str">"time"</span>: 0,
+                    <span class="str">"entry_type"</span>: <span class="str">"continuation"</span>
+                },
+                <span class="str">"1"</span>: {
+                    <span class="str">"type"</span>: <span class="str">"HEAT"</span>,
+                    <span class="str">"temp"</span>: 15.000444444444444,
+                    <span class="str">"time"</span>: 24300,
+                    <span class="str">"entry_type"</span>: <span class="str">"setpoint"</span>
+                },</pre>
+<p>For the JSONP requests sent as “MAKE CHANGE” (easily could have been PUT), they each contained the following attributes as shown below. All JSONP requests are apparently routed on the web server using “headers” rather than a RESTful URL based system:</p>
+<pre class="csharpcode">    },
+    <span class="str">"headers"</span>: {
+        <span class="str">"X-nl-client-timestamp"</span>: 1326041210566,
+        <span class="str">"X-nl-session-id"</span>: <span class="str">"#SESSION ID#"</span>,
+        <span class="str">"X-nl-protocol-version"</span>: 1,
+        <span class="str">"Authorization"</span>: <span class="str">"Basic #BASIC AUTH#"</span>
+    },
+    <span class="str">"path"</span>: <span class="str">"/v1/put/schedule.#DEVICE 2 SERIAL NUMBER#"</span>,
+    <span class="str">"redir"</span>: <span class="str">"https://home.nest.com/post_jsonp"</span>,
+    <span class="str">"jsonp"</span>: <span class="str">"4_"</span>
+}</pre>
+<p>It’s RESTful in spirit as there is a route (“path”), but it’s managed by some internal routing engine. (Now, I think that they’re not using Ruby and Rails).</p>
+<p>For something simple, like changing the current temperature of a thermostat, the request is thankfully simple:</p>
+<pre class="csharpcode">{
+    <span class="str">"payload"</span>: {
+        <span class="str">"shared"</span>: {
+            <span class="str">"#DEVICE 2 SERIAL NUMBER#"</span>: {
+                <span class="str">"target_temperature"</span>: 18.333333333333336
+            }
+        }
+    },
+    <span class="str">"headers"</span>: {
+        <span class="str">"X-nl-client-timestamp"</span>: 1326041744556,
+        <span class="str">"X-nl-session-id"</span>: <span class="str">"#SESSION ID#"</span>,
+        <span class="str">"X-nl-protocol-version"</span>: 1,
+        <span class="str">"Authorization"</span>: <span class="str">"Basic #BASIC AUTH#"</span>
+    },
+    <span class="str">"path"</span>: <span class="str">"/v1/put"</span>,
+    <span class="str">"redir"</span>: <span class="str">"https://home.nest.com/post_jsonp"</span>,
+    <span class="str">"jsonp"</span>: <span class="str">"14_"</span>
+}</pre>
+<p>While, I haven’t taken the time to try to write a custom UI for this undocumented API yet, it looks like it should be relatively easy to do, especially as it relates to the schedule and current temperature settings. I know there’s been some Siri proxy stuff that’s been written – but I don’t have any interest in trying to get that to work.</p>
+<p>As with most APIs like this, the trick is often getting authorization correct. For Nest, it appears that making a POST request to <strong>https://home.nest.com/accounts/login/</strong> with <strong>username</strong> and <strong>password</strong> as form data, that the server responds with 2 cookies:</p>
+<ol>
+<li>sessionid == used in X-nl-session-id in headers</li>
+<li>cztoken == used as the Authorization in headers (prepended with the text “Basic “</li>
+</ol>
+<p>FYI: I also have a <a href="/blog/index.php/archives/1754">Node</a> version of the API that is more up to date than this.</li>
+</ul>
+]]></content:encoded>
+					
+					<wfw:commentRss>/blog/index.php/archives/1442/feed</wfw:commentRss>
+			<slash:comments>13</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1442</post-id>	</item>
+	</channel>
+</rss>

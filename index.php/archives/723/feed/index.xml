@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Silverlight Stopwatch class in C#	</title>
+	<atom:link href="/blog/index.php/archives/723/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/723</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Thu, 29 Apr 2010 20:02:52 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/723/comment-page-1#comment-3024</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Thu, 29 Apr 2010 20:02:52 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/723#comment-3024</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/723/comment-page-1#comment-3018&quot;&gt;claudio&lt;/a&gt;.
+
+@claudio: Whoops! Must have done a search/replace and managed to spell it wrong. Need to spell check my APIs! :)  I&#039;ve fixed the problem. Thanks for the heads-up!]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/723/comment-page-1#comment-3018">claudio</a>.</p>
+<p>@claudio: Whoops! Must have done a search/replace and managed to spell it wrong. Need to spell check my APIs! :)  I&#8217;ve fixed the problem. Thanks for the heads-up!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: claudio		</title>
+		<link>/blog/index.php/archives/723/comment-page-1#comment-3018</link>
+
+		<dc:creator><![CDATA[claudio]]></dc:creator>
+		<pubDate>Sat, 24 Apr 2010 19:19:37 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/723#comment-3018</guid>
+
+					<description><![CDATA[Hi,
+This class will be used in my solution by files shared between Silverlight and .NET 4.0.
+So for compatibility issue, you should correct the word Ellapsed with Elapsed. It&#039;s just cosmetic, but it can produce compilation problem in case of shared code.
+Anyway Thanx
+-Claudio]]></description>
+			<content:encoded><![CDATA[<p>Hi,<br />
+This class will be used in my solution by files shared between Silverlight and .NET 4.0.<br />
+So for compatibility issue, you should correct the word Ellapsed with Elapsed. It&#8217;s just cosmetic, but it can produce compilation problem in case of shared code.<br />
+Anyway Thanx<br />
+-Claudio</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: WiredPrairie - Silverlight Stopwatch Class, Part 2		</title>
+		<link>/blog/index.php/archives/723/comment-page-1#comment-2966</link>
+
+		<dc:creator><![CDATA[WiredPrairie - Silverlight Stopwatch Class, Part 2]]></dc:creator>
+		<pubDate>Fri, 02 Apr 2010 15:35:21 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/723#comment-2966</guid>
+
+					<description><![CDATA[[...] recently made a fix to a Silverlight stopwatch class I wrote last [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] recently made a fix to a Silverlight stopwatch class I wrote last [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/723/comment-page-1#comment-2965</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Fri, 02 Apr 2010 15:24:24 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/723#comment-2965</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/723/comment-page-1#comment-2964&quot;&gt;Vincent&lt;/a&gt;.
+
+I&#039;ve updated the code, and tested it.  Thanks all for the suggestions. Not sure why my tests worked when I wrote it.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/723/comment-page-1#comment-2964">Vincent</a>.</p>
+<p>I&#8217;ve updated the code, and tested it.  Thanks all for the suggestions. Not sure why my tests worked when I wrote it.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Vincent		</title>
+		<link>/blog/index.php/archives/723/comment-page-1#comment-2964</link>
+
+		<dc:creator><![CDATA[Vincent]]></dc:creator>
+		<pubDate>Fri, 02 Apr 2010 13:46:51 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/723#comment-2964</guid>
+
+					<description><![CDATA[Fixed functions:
+
+// Timespan expects the value indiciated as 100ns .. thats 1 / 10000 of a ms.
+ public TimeSpan Ellapsed
+{
+            get { return new TimeSpan( GetCurrentElapsed() * 10000 ); } 
+}
+
+// GetCurrentElapsed() returns the MS already, no need to adjust that
+public long EllapsedMilliseconds
+{
+      get { return GetCurrentElapsed(); }
+}
+
+// getting value in milliseconds, gotta recalculate to turn it into ticks
+public long EllapsedTicks
+{
+      get { return GetCurrentElapsed() * TimeSpan.TicksPerMillisecond; }
+}]]></description>
+			<content:encoded><![CDATA[<p>Fixed functions:</p>
+<p>// Timespan expects the value indiciated as 100ns .. thats 1 / 10000 of a ms.<br />
+ public TimeSpan Ellapsed<br />
+{<br />
+            get { return new TimeSpan( GetCurrentElapsed() * 10000 ); }<br />
+}</p>
+<p>// GetCurrentElapsed() returns the MS already, no need to adjust that<br />
+public long EllapsedMilliseconds<br />
+{<br />
+      get { return GetCurrentElapsed(); }<br />
+}</p>
+<p>// getting value in milliseconds, gotta recalculate to turn it into ticks<br />
+public long EllapsedTicks<br />
+{<br />
+      get { return GetCurrentElapsed() * TimeSpan.TicksPerMillisecond; }<br />
+}</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Vincent		</title>
+		<link>/blog/index.php/archives/723/comment-page-1#comment-2963</link>
+
+		<dc:creator><![CDATA[Vincent]]></dc:creator>
+		<pubDate>Fri, 02 Apr 2010 13:40:17 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/723#comment-2963</guid>
+
+					<description><![CDATA[There is a mistake. Has been said 3 times by now. this is the 4th. The fact you say the documentation leads you to think its correct, suggest you haven&#039;t tested it nor read the documentation correctly.
+
+http://msdn.microsoft.com/en-us/library/system.environment.tickcount.aspx
+
+Clearly states it returns a value in milliseconds and not ticks.
+
+Other then that, a big thanks for the code :) Works fine after some minor bug fixing]]></description>
+			<content:encoded><![CDATA[<p>There is a mistake. Has been said 3 times by now. this is the 4th. The fact you say the documentation leads you to think its correct, suggest you haven&#8217;t tested it nor read the documentation correctly.</p>
+<p><a href="http://msdn.microsoft.com/en-us/library/system.environment.tickcount.aspx" rel="nofollow ugc">http://msdn.microsoft.com/en-us/library/system.environment.tickcount.aspx</a></p>
+<p>Clearly states it returns a value in milliseconds and not ticks.</p>
+<p>Other then that, a big thanks for the code :) Works fine after some minor bug fixing</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Rui Fan		</title>
+		<link>/blog/index.php/archives/723/comment-page-1#comment-2704</link>
+
+		<dc:creator><![CDATA[Rui Fan]]></dc:creator>
+		<pubDate>Wed, 05 Aug 2009 09:15:57 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/723#comment-2704</guid>
+
+					<description><![CDATA[Pospa and Chad Riddle are saying the samething. 
+Environment.TickCount is the milliseconds.
+From MSDN:
+TickCount is different from the Ticks property, which is the number of 100-nanosecond intervals that have elapsed since 1/1/0001, 12:00am.]]></description>
+			<content:encoded><![CDATA[<p>Pospa and Chad Riddle are saying the samething.<br />
+Environment.TickCount is the milliseconds.<br />
+From MSDN:<br />
+TickCount is different from the Ticks property, which is the number of 100-nanosecond intervals that have elapsed since 1/1/0001, 12:00am.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Sree		</title>
+		<link>/blog/index.php/archives/723/comment-page-1#comment-2701</link>
+
+		<dc:creator><![CDATA[Sree]]></dc:creator>
+		<pubDate>Sun, 26 Jul 2009 03:48:43 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/723#comment-2701</guid>
+
+					<description><![CDATA[Thanks for the code. I could not make it work as is but Chad Riddle&#039;s comments worked for me.
+
+Sree]]></description>
+			<content:encoded><![CDATA[<p>Thanks for the code. I could not make it work as is but Chad Riddle&#8217;s comments worked for me.</p>
+<p>Sree</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/723/comment-page-1#comment-2684</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Wed, 01 Jul 2009 00:39:41 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/723#comment-2684</guid>
+
+					<description><![CDATA[Popsa -- if that&#039;s the case, what would the right answer be? The documentation doesn&#039;t lead me to believe it&#039;s wrong, and that would be an inconsistency in the framework.]]></description>
+			<content:encoded><![CDATA[<p>Popsa &#8212; if that&#8217;s the case, what would the right answer be? The documentation doesn&#8217;t lead me to believe it&#8217;s wrong, and that would be an inconsistency in the framework.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Pospa		</title>
+		<link>/blog/index.php/archives/723/comment-page-1#comment-2679</link>
+
+		<dc:creator><![CDATA[Pospa]]></dc:creator>
+		<pubDate>Fri, 26 Jun 2009 09:19:58 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/723#comment-2679</guid>
+
+					<description><![CDATA[There is an error in this implementation. Because TimeSpan.TicksPerMillisecond in mos of cases does not corespondent with ticks/s used for Environment.TickCount computing. You should to review your code.]]></description>
+			<content:encoded><![CDATA[<p>There is an error in this implementation. Because TimeSpan.TicksPerMillisecond in mos of cases does not corespondent with ticks/s used for Environment.TickCount computing. You should to review your code.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

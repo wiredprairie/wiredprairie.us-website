@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Blue Iris 3 and Samsung SmartCam SNH-1011N	</title>
+	<atom:link href="/blog/index.php/archives/1963/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/1963</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Mon, 26 May 2014 14:13:56 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/1963/comment-page-1#comment-43116</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Mon, 26 May 2014 14:13:56 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1963#comment-43116</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1963/comment-page-1#comment-43112&quot;&gt;Allison Rose&lt;/a&gt;.
+
+OK? &quot;Every camera model?&quot; I&#039;m extremely skeptical.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/1963/comment-page-1#comment-43112">Allison Rose</a>.</p>
+<p>OK? &#8220;Every camera model?&#8221; I&#8217;m extremely skeptical.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Allison Rose		</title>
+		<link>/blog/index.php/archives/1963/comment-page-1#comment-43112</link>
+
+		<dc:creator><![CDATA[Allison Rose]]></dc:creator>
+		<pubDate>Mon, 26 May 2014 11:35:48 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1963#comment-43112</guid>
+
+					<description><![CDATA[I use IP Camera Viewer with the Y-Cam cameras.  It has a built in profile for every camera model]]></description>
+			<content:encoded><![CDATA[<p>I use IP Camera Viewer with the Y-Cam cameras.  It has a built in profile for every camera model</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/1963/comment-page-1#comment-42048</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Thu, 13 Mar 2014 00:38:31 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1963#comment-42048</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1963/comment-page-1#comment-42047&quot;&gt;Jon&lt;/a&gt;.
+
+Excellent question -- I thought I&#039;d mentioned it ... I looked at the network traffic using a tool called Wireshark. That may have been unnecessarily complex, but I knew how to use it. :)]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/1963/comment-page-1#comment-42047">Jon</a>.</p>
+<p>Excellent question &#8212; I thought I&#8217;d mentioned it &#8230; I looked at the network traffic using a tool called Wireshark. That may have been unnecessarily complex, but I knew how to use it. :)</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Jon		</title>
+		<link>/blog/index.php/archives/1963/comment-page-1#comment-42047</link>
+
+		<dc:creator><![CDATA[Jon]]></dc:creator>
+		<pubDate>Thu, 13 Mar 2014 00:36:37 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1963#comment-42047</guid>
+
+					<description><![CDATA[How did you figure out what the video path was in the first place? Is there a list of variables that can be used?]]></description>
+			<content:encoded><![CDATA[<p>How did you figure out what the video path was in the first place? Is there a list of variables that can be used?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/1963/comment-page-1#comment-42046</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Thu, 13 Mar 2014 00:32:37 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1963#comment-42046</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1963/comment-page-1#comment-42041&quot;&gt;Jon&lt;/a&gt;.
+
+Odd, I don&#039;t have an unreasonable delay in the first place in my setup. However, thanks for the tip as it might help someone else! :)]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/1963/comment-page-1#comment-42041">Jon</a>.</p>
+<p>Odd, I don&#8217;t have an unreasonable delay in the first place in my setup. However, thanks for the tip as it might help someone else! :)</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Jon		</title>
+		<link>/blog/index.php/archives/1963/comment-page-1#comment-42041</link>
+
+		<dc:creator><![CDATA[Jon]]></dc:creator>
+		<pubDate>Wed, 12 Mar 2014 19:15:52 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1963#comment-42041</guid>
+
+					<description><![CDATA[I played around with the setting and now have it down to about 1-2 sec delay using the video path of &quot;/profile2/media.smp&quot;. I tried using &quot;profile1&quot; instead but ended up with most of the screen green with just the top viewable. 2 seems to be the magic number with minimal delay.]]></description>
+			<content:encoded><![CDATA[<p>I played around with the setting and now have it down to about 1-2 sec delay using the video path of &#8220;/profile2/media.smp&#8221;. I tried using &#8220;profile1&#8221; instead but ended up with most of the screen green with just the top viewable. 2 seems to be the magic number with minimal delay.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Jon		</title>
+		<link>/blog/index.php/archives/1963/comment-page-1#comment-42040</link>
+
+		<dc:creator><![CDATA[Jon]]></dc:creator>
+		<pubDate>Wed, 12 Mar 2014 18:52:56 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1963#comment-42040</guid>
+
+					<description><![CDATA[I&#039;m getting 10-12 secs delays using this setup compared to only 1-2 secs when viewing through the SmartCam app. Any ideas why this feed method is so slow? People are at my front door or in my garage for more than 10 secs before I even see them. Many times already gone before I know they were there in the first place.]]></description>
+			<content:encoded><![CDATA[<p>I&#8217;m getting 10-12 secs delays using this setup compared to only 1-2 secs when viewing through the SmartCam app. Any ideas why this feed method is so slow? People are at my front door or in my garage for more than 10 secs before I even see them. Many times already gone before I know they were there in the first place.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

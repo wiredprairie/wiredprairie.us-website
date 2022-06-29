@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: You gotta be freakin&#8217; kidding me!	</title>
+	<atom:link href="/blog/index.php/archives/812/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/812</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Wed, 05 Aug 2009 05:08:01 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: Technology Slice		</title>
+		<link>/blog/index.php/archives/812/comment-page-1#comment-2703</link>
+
+		<dc:creator><![CDATA[Technology Slice]]></dc:creator>
+		<pubDate>Wed, 05 Aug 2009 05:08:01 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/812#comment-2703</guid>
+
+					<description><![CDATA[That&#039;s hilarious. On what grounds is she suing the college if she is not personally employable?]]></description>
+			<content:encoded><![CDATA[<p>That&#8217;s hilarious. On what grounds is she suing the college if she is not personally employable?</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

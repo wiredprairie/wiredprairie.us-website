@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: WPF and Powershell Series &#8212; I don&#8217;t get it.	</title>
+	<atom:link href="/blog/index.php/archives/288/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/288</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Tue, 03 Jun 2008 13:55:32 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: PowerShell and WPF: WTF at ITS Tech Blog		</title>
+		<link>/blog/index.php/archives/288/comment-page-1#comment-290</link>
+
+		<dc:creator><![CDATA[PowerShell and WPF: WTF at ITS Tech Blog]]></dc:creator>
+		<pubDate>Tue, 03 Jun 2008 13:55:32 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/288#comment-290</guid>
+
+					<description><![CDATA[[...] series and are &#034;asking WTF?&#034;.&#160; Arron has a blog entry, WPF and PowerShell Series - I don&#039;t get it.&#160; Caywen left a comment on the first in posting saying, &#034;Ugh, I could make a peanut [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] series and are &quot;asking WTF?&quot;.&nbsp; Arron has a blog entry, WPF and PowerShell Series &#8211; I don&#8217;t get it.&nbsp; Caywen left a comment on the first in posting saying, &quot;Ugh, I could make a peanut [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/288/comment-page-1#comment-184</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Tue, 27 May 2008 12:27:59 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/288#comment-184</guid>
+
+					<description><![CDATA[WPF -- still the heavyweight champion in the .NET world of frameworks and working set (and GPU and machine requirements) --- feels wrong to be paried with a shell script. I know they&#039;re trying to improve things, and there are some nice things that are possible (although many are easy to do in WinForms) ... still feels wrong.
+
+I&#039;m not saying Powershell isn&#039;t useful. It certainly is for some (again, hasn&#039;t been for me) .... 
+
+I&#039;m happy that Microsoft is enabling this path for you and the others. It shouldn&#039;t be a substitute for a full GUI application calling cmdlets or any similar API (object model) for controlling, etc. 
+
+I&#039;m sure some will disagree, but I believe Microsoft needs to make sure they don&#039;t spread themselves too thin trying to address to many problems, without spending the proper amount of time concentrating on the bigger issues facing their customers -- both enterprise and consumers.]]></description>
+			<content:encoded><![CDATA[<p>WPF &#8212; still the heavyweight champion in the .NET world of frameworks and working set (and GPU and machine requirements) &#8212; feels wrong to be paried with a shell script. I know they&#8217;re trying to improve things, and there are some nice things that are possible (although many are easy to do in WinForms) &#8230; still feels wrong.</p>
+<p>I&#8217;m not saying Powershell isn&#8217;t useful. It certainly is for some (again, hasn&#8217;t been for me) &#8230;. </p>
+<p>I&#8217;m happy that Microsoft is enabling this path for you and the others. It shouldn&#8217;t be a substitute for a full GUI application calling cmdlets or any similar API (object model) for controlling, etc. </p>
+<p>I&#8217;m sure some will disagree, but I believe Microsoft needs to make sure they don&#8217;t spread themselves too thin trying to address to many problems, without spending the proper amount of time concentrating on the bigger issues facing their customers &#8212; both enterprise and consumers.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Mike Schinkel		</title>
+		<link>/blog/index.php/archives/288/comment-page-1#comment-183</link>
+
+		<dc:creator><![CDATA[Mike Schinkel]]></dc:creator>
+		<pubDate>Tue, 27 May 2008 04:50:29 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/288#comment-183</guid>
+
+					<description><![CDATA[GUIs implemented via Powershell scripts are soooo needed. I always hated that I couldn&#039;t get the same from Windows Scripting Host.  The great part is to just be able to slap a GUI together in script and not have to deal with the structure and overhead of Visual Studio when you need something simple; dynamic languages ROCK!
+
+Although I&#039;m not a &quot;power&quot; Powershell user, I am a programmer and definitely appreciate it. Actually, if I had to pick my favorite *language* it would be Powershell (used to be Python), and I definitely consider myself to be a developer and *not* an IT person.  
+
+What can a developer do with Powershell? Lots of things but most recently I needed to batch rename thousands of files, and I needed to do it using lots of different logic. So I divided and conquered; I created a directory select to match a set of files and then ran a one-liner to rename each set, continuing until I had all them renamed. As an aside, the files I needed to rename were images for use on a website I&#039;m working on (that is written in PHP and will be running on Linux, Apache, and MySQL!)
+
+My only complaint about Powershell is that I can&#039;t use it to develop web apps (w/o having to go build my own framework, which I don&#039;t have time to do.)]]></description>
+			<content:encoded><![CDATA[<p>GUIs implemented via Powershell scripts are soooo needed. I always hated that I couldn&#8217;t get the same from Windows Scripting Host.  The great part is to just be able to slap a GUI together in script and not have to deal with the structure and overhead of Visual Studio when you need something simple; dynamic languages ROCK!</p>
+<p>Although I&#8217;m not a &#8220;power&#8221; Powershell user, I am a programmer and definitely appreciate it. Actually, if I had to pick my favorite *language* it would be Powershell (used to be Python), and I definitely consider myself to be a developer and *not* an IT person.  </p>
+<p>What can a developer do with Powershell? Lots of things but most recently I needed to batch rename thousands of files, and I needed to do it using lots of different logic. So I divided and conquered; I created a directory select to match a set of files and then ran a one-liner to rename each set, continuing until I had all them renamed. As an aside, the files I needed to rename were images for use on a website I&#8217;m working on (that is written in PHP and will be running on Linux, Apache, and MySQL!)</p>
+<p>My only complaint about Powershell is that I can&#8217;t use it to develop web apps (w/o having to go build my own framework, which I don&#8217;t have time to do.)</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Windows PowerShell : PowerShell and WPF: WTF		</title>
+		<link>/blog/index.php/archives/288/comment-page-1#comment-181</link>
+
+		<dc:creator><![CDATA[Windows PowerShell : PowerShell and WPF: WTF]]></dc:creator>
+		<pubDate>Mon, 26 May 2008 22:58:48 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/288#comment-181</guid>
+
+					<description><![CDATA[[...] /blog/index.php/archives/288   Monday, May 26, 2008 3:51 PM by Aaron [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] <a href="/blog/index.php/archives/288" rel="nofollow ugc">/blog/index.php/archives/288</a>   Monday, May 26, 2008 3:51 PM by Aaron [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: bruceatk		</title>
+		<link>/blog/index.php/archives/288/comment-page-1#comment-179</link>
+
+		<dc:creator><![CDATA[bruceatk]]></dc:creator>
+		<pubDate>Mon, 26 May 2008 16:38:47 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/288#comment-179</guid>
+
+					<description><![CDATA[I consider Perl &quot;write only&quot; for the most part.  I find it hard to go back and maintain anything but simple Perl scripts.  I suppose that the way some people are writing their PowerShell scripts you could probably say the same thing about it.  
+
+PowerShell provides some powerful commands that free you from doing the plumbing code required in normal languages.  For example:
+
+$ImportedFile = import-csv  c:\some_file.csv
+
+Will read in the entire file and place it into an object collection where each field described in the first line of the csv file is now a property of the object.  
+
+If you have csv file like:
+
+first_name, last_name, id_number
+Bruce, Atkinson, 01234
+
+the example line of PowerShell above would let you reference them like this:
+
+$ImportedFile[0].first_name
+$ImportedFile[0].last_name
+$ImportedFile[0].id_number
+
+In a regular language you would have to loop through the file parsing out the data.  In PowerShell it&#039;s already done for you and it&#039;s fast.  There are tons of commands like that in PowerShell.
+
+In PowerShell I&#039;m not limited to just PowerShell.  I can call an existing perl script or PowerBasic console command and capture the output into an object.  So PowerShell is sort of like command central where I can easily orchestrate the interaction of diverse technologies.]]></description>
+			<content:encoded><![CDATA[<p>I consider Perl &#8220;write only&#8221; for the most part.  I find it hard to go back and maintain anything but simple Perl scripts.  I suppose that the way some people are writing their PowerShell scripts you could probably say the same thing about it.  </p>
+<p>PowerShell provides some powerful commands that free you from doing the plumbing code required in normal languages.  For example:</p>
+<p>$ImportedFile = import-csv  c:\some_file.csv</p>
+<p>Will read in the entire file and place it into an object collection where each field described in the first line of the csv file is now a property of the object.  </p>
+<p>If you have csv file like:</p>
+<p>first_name, last_name, id_number<br />
+Bruce, Atkinson, 01234</p>
+<p>the example line of PowerShell above would let you reference them like this:</p>
+<p>$ImportedFile[0].first_name<br />
+$ImportedFile[0].last_name<br />
+$ImportedFile[0].id_number</p>
+<p>In a regular language you would have to loop through the file parsing out the data.  In PowerShell it&#8217;s already done for you and it&#8217;s fast.  There are tons of commands like that in PowerShell.</p>
+<p>In PowerShell I&#8217;m not limited to just PowerShell.  I can call an existing perl script or PowerBasic console command and capture the output into an object.  So PowerShell is sort of like command central where I can easily orchestrate the interaction of diverse technologies.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/288/comment-page-1#comment-178</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Mon, 26 May 2008 16:07:41 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/288#comment-178</guid>
+
+					<description><![CDATA[Bruceatk - 
+
+Powershell is definitely is more &quot;IT&quot; focused -- that&#039;s why I&#039;ve never needed it ... I&#039;ve dabbled, but never found it valuable in my day to day development/architecting needs. 
+
+It sounds like you put it to all sorts of good uses. Why do you use it over Perl/PowerBasic?]]></description>
+			<content:encoded><![CDATA[<p>Bruceatk &#8211; </p>
+<p>Powershell is definitely is more &#8220;IT&#8221; focused &#8212; that&#8217;s why I&#8217;ve never needed it &#8230; I&#8217;ve dabbled, but never found it valuable in my day to day development/architecting needs. </p>
+<p>It sounds like you put it to all sorts of good uses. Why do you use it over Perl/PowerBasic?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: bruceatk		</title>
+		<link>/blog/index.php/archives/288/comment-page-1#comment-177</link>
+
+		<dc:creator><![CDATA[bruceatk]]></dc:creator>
+		<pubDate>Mon, 26 May 2008 16:00:37 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/288#comment-177</guid>
+
+					<description><![CDATA[Aaron, I&#039;m a 28 year developer/IT/Admin/DBA kind of person.   I have always worked in a small group and have had to do all kinds of things.   I always look for ways to automate stuff and I have used batch files, 4nt, VB Script, C++, VB, PowerBasic, Python, and Perl to do the tasks that I need to do.    It&#039;s important that I get the most productivity that I can out of the tools that I use.   I&#039;ve been looking at PowerShell to see if I can use it to replace most of the other tools that I use for automating tasks.   While it doesn&#039;t behave exactly the way that I would like it to from the command line and it doesn&#039;t perform as well as something like PowerBasic or Perl, it does have the capabilities to replace the tools I use and to make my life easier.  
+
+I currently use PowerShell to do things like:
+
+1. Process data contained in multiple spreadsheets and convert the data to something that PADS (a system that shares information about personnel that work at Nuclear Power Plants) will accept.
+2. Display status information on several IIS servers that I am responsible for.
+3. Automate a multi step process of a vendor install into a single step.
+4. Automate a clean startup of Oracle Application Server on a Windows server.
+5. Import podcasts into iTunes from the folder structure that Juice downloads into.]]></description>
+			<content:encoded><![CDATA[<p>Aaron, I&#8217;m a 28 year developer/IT/Admin/DBA kind of person.   I have always worked in a small group and have had to do all kinds of things.   I always look for ways to automate stuff and I have used batch files, 4nt, VB Script, C++, VB, PowerBasic, Python, and Perl to do the tasks that I need to do.    It&#8217;s important that I get the most productivity that I can out of the tools that I use.   I&#8217;ve been looking at PowerShell to see if I can use it to replace most of the other tools that I use for automating tasks.   While it doesn&#8217;t behave exactly the way that I would like it to from the command line and it doesn&#8217;t perform as well as something like PowerBasic or Perl, it does have the capabilities to replace the tools I use and to make my life easier.  </p>
+<p>I currently use PowerShell to do things like:</p>
+<p>1. Process data contained in multiple spreadsheets and convert the data to something that PADS (a system that shares information about personnel that work at Nuclear Power Plants) will accept.<br />
+2. Display status information on several IIS servers that I am responsible for.<br />
+3. Automate a multi step process of a vendor install into a single step.<br />
+4. Automate a clean startup of Oracle Application Server on a Windows server.<br />
+5. Import podcasts into iTunes from the folder structure that Juice downloads into.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Marco Shaw		</title>
+		<link>/blog/index.php/archives/288/comment-page-1#comment-174</link>
+
+		<dc:creator><![CDATA[Marco Shaw]]></dc:creator>
+		<pubDate>Mon, 26 May 2008 02:07:09 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/288#comment-174</guid>
+
+					<description><![CDATA[Aaron,
+
+What can PowerShell do for you?  It may not be for everyone.  That is understandable, and you may not have any use for it at all, depending on your day-to-day stuff.
+
+As for can a GUI run a PowerShell command...  For sure.  Basically that&#039;s how the Exchange 2007 admin interface runs: The GUI is actually calling cmdlets in the backend to complete all the user&#039;s requests.  Exchange is just one example...]]></description>
+			<content:encoded><![CDATA[<p>Aaron,</p>
+<p>What can PowerShell do for you?  It may not be for everyone.  That is understandable, and you may not have any use for it at all, depending on your day-to-day stuff.</p>
+<p>As for can a GUI run a PowerShell command&#8230;  For sure.  Basically that&#8217;s how the Exchange 2007 admin interface runs: The GUI is actually calling cmdlets in the backend to complete all the user&#8217;s requests.  Exchange is just one example&#8230;</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/288/comment-page-1#comment-173</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sun, 25 May 2008 20:50:19 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/288#comment-173</guid>
+
+					<description><![CDATA[Bruce - what do you use powershell for? What type of user are you (IT, developer, artists, chef, ... :) )? 
+
+Seriously -- I can&#039;t think of a single reason I would need powershell on even a monthly basis -- but maybe I&#039;m missing something.
+
+Having never tried -- is it possible to use the cmdlets within a GUI (write a gui app which uses Powershell code, rather than the other way around)?]]></description>
+			<content:encoded><![CDATA[<p>Bruce &#8211; what do you use powershell for? What type of user are you (IT, developer, artists, chef, &#8230; :) )? </p>
+<p>Seriously &#8212; I can&#8217;t think of a single reason I would need powershell on even a monthly basis &#8212; but maybe I&#8217;m missing something.</p>
+<p>Having never tried &#8212; is it possible to use the cmdlets within a GUI (write a gui app which uses Powershell code, rather than the other way around)?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: bruceatk		</title>
+		<link>/blog/index.php/archives/288/comment-page-1#comment-172</link>
+
+		<dc:creator><![CDATA[bruceatk]]></dc:creator>
+		<pubDate>Sun, 25 May 2008 20:37:48 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/288#comment-172</guid>
+
+					<description><![CDATA[I find it hard to believe that Powershell doesn&#039;t help solve any problems that you have.  You must not have any problems then? :)
+
+I am really interested in WPF and Powershell because there are many times when creating useful scripts that decisions need to be made.  Those decision points can be presented in a useful way in a GUI better than in a limiting console.   It&#039;s nicer to select a file than to have to type it in or pick from a long list of items in a list box than a long list of items on a console.
+
+Bruce]]></description>
+			<content:encoded><![CDATA[<p>I find it hard to believe that Powershell doesn&#8217;t help solve any problems that you have.  You must not have any problems then? :)</p>
+<p>I am really interested in WPF and Powershell because there are many times when creating useful scripts that decisions need to be made.  Those decision points can be presented in a useful way in a GUI better than in a limiting console.   It&#8217;s nicer to select a file than to have to type it in or pick from a long list of items in a list box than a long list of items on a console.</p>
+<p>Bruce</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

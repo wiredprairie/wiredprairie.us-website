@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: A post not related to Nest thermostat hardware&#8230;.	</title>
+	<atom:link href="/blog/index.php/archives/1397/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/1397</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Tue, 10 Jan 2012 11:48:45 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/1397/comment-page-1#comment-3858</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Tue, 10 Jan 2012 11:48:45 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1397#comment-3858</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1397/comment-page-1#comment-3855&quot;&gt;Brian Stormont&lt;/a&gt;.
+
+You are a braver man than I sir! ;) thanks for detailing your findings.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/1397/comment-page-1#comment-3855">Brian Stormont</a>.</p>
+<p>You are a braver man than I sir! ;) thanks for detailing your findings.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Brian Stormont		</title>
+		<link>/blog/index.php/archives/1397/comment-page-1#comment-3855</link>
+
+		<dc:creator><![CDATA[Brian Stormont]]></dc:creator>
+		<pubDate>Tue, 10 Jan 2012 03:29:52 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1397#comment-3855</guid>
+
+					<description><![CDATA[Regarding the &quot;debug&quot; mode on the web site, I tried a few of the menu items.
+
+In the &quot;Device Connect&quot; option, if you first select a thermostat, you get a text display of all the settings for that thermostat.   Also, what isn&#039;t obvious, but I stumbled upon is if you click on a text value, a dialog box pops up letting you change the value (if it is changeable).   I didn&#039;t try to change any values, so can&#039;t say for sure it actually works.
+
+The &quot;Go Nuts&quot; option appears to randomly alter the position of the web elements on the page, so stuff starts tilting and drifting around on the screen.   It doesn&#039;t appear to do any actual harm - if you just refresh the page it all goes back to normal.
+
+The &quot;show auto-pairing dialog&quot; option does just that - it pops up the dialog box showing a new Nest has been discovered on your local network (even though best I can tell it didn&#039;t really re-discover one, it&#039;s just a test of the dialog box display).
+
+I wasn&#039;t brave enough to try the &quot;Trigger compressor lockout&quot; so can&#039;t say what that does.]]></description>
+			<content:encoded><![CDATA[<p>Regarding the &#8220;debug&#8221; mode on the web site, I tried a few of the menu items.</p>
+<p>In the &#8220;Device Connect&#8221; option, if you first select a thermostat, you get a text display of all the settings for that thermostat.   Also, what isn&#8217;t obvious, but I stumbled upon is if you click on a text value, a dialog box pops up letting you change the value (if it is changeable).   I didn&#8217;t try to change any values, so can&#8217;t say for sure it actually works.</p>
+<p>The &#8220;Go Nuts&#8221; option appears to randomly alter the position of the web elements on the page, so stuff starts tilting and drifting around on the screen.   It doesn&#8217;t appear to do any actual harm &#8211; if you just refresh the page it all goes back to normal.</p>
+<p>The &#8220;show auto-pairing dialog&#8221; option does just that &#8211; it pops up the dialog box showing a new Nest has been discovered on your local network (even though best I can tell it didn&#8217;t really re-discover one, it&#8217;s just a test of the dialog box display).</p>
+<p>I wasn&#8217;t brave enough to try the &#8220;Trigger compressor lockout&#8221; so can&#8217;t say what that does.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Nest Thermostat API - WiredPrairie		</title>
+		<link>/blog/index.php/archives/1397/comment-page-1#comment-3848</link>
+
+		<dc:creator><![CDATA[Nest Thermostat API - WiredPrairie]]></dc:creator>
+		<pubDate>Sun, 08 Jan 2012 17:21:12 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1397#comment-3848</guid>
+
+					<description><![CDATA[[...] using (it may just be something they’ve constructed in-house – although given the number of open source JavaScript libraries they’re using, I thought someone might recognize [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] using (it may just be something they’ve constructed in-house – although given the number of open source JavaScript libraries they’re using, I thought someone might recognize [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

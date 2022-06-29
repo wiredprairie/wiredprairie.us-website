@@ -1,0 +1,974 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>JavaScript &#8211; WiredPrairie</title>
+	<atom:link href="/blog/index.php/archives/tag/javascript/feed" rel="self" type="application/rss+xml" />
+	<link>/blog</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Wed, 29 Jun 2022 15:21:02 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+<site xmlns="com-wordpress:feed-additions:1">193486638</site>	<item>
+		<title>Animating an element&#8217;s visibility using AngularJS</title>
+		<link>/blog/index.php/archives/1996</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sat, 01 Feb 2014 02:51:22 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[Angular]]></category>
+		<category><![CDATA[JavaScript]]></category>
+		<guid isPermaLink="false">/blog/?p=1996</guid>
+
+					<description><![CDATA[There was a question on StackOverflow about animating an element and I wanted to give it a shot, so here goes: http://jsfiddle.net/wiredprairie/5tFCZ/1/ &#160; Imagine nearly the simplest Angular JS application possible: &#60;div ng-app=&#34;App&#34;&#62; &#60;div ng-init=&#34;checked=true&#34;&#62; &#60;div&#62; &#60;label&#62; &#60;input type=&#34;checkbox&#34; ng-model=&#34;checked&#34; /&#62;Is Visible...&#60;/label&#62; &#60;/div&#62; &#60;div class=&#34;sample&#34; ng-class=&#34;{ hidden: !checked }&#34;&#62;Visible...&#60;/div&#62; &#60;/div&#62; &#60;/div&#62; There is only a [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>There was a question on StackOverflow about animating an element and I wanted to give it a shot, so here goes:</p>
+<p><a title="http://jsfiddle.net/wiredprairie/5tFCZ/1/" href="http://jsfiddle.net/wiredprairie/5tFCZ/1/">http://jsfiddle.net/wiredprairie/5tFCZ/1/</a></p>
+<p><a href="/blog/wp-content/uploads/2014/01/image.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wp-content/uploads/2014/01/image_thumb.png" width="192" height="113" /></a></p>
+<p>&#160;</p>
+<p>Imagine nearly the simplest Angular JS application possible:</p>
+<pre class="csharpcode"><span class="kwrd">&lt;</span><span class="html">div</span> <span class="attr">ng-app</span><span class="kwrd">=&quot;App&quot;</span><span class="kwrd">&gt;</span>
+    <span class="kwrd">&lt;</span><span class="html">div</span> <span class="attr">ng-init</span><span class="kwrd">=&quot;checked=true&quot;</span><span class="kwrd">&gt;</span>
+        <span class="kwrd">&lt;</span><span class="html">div</span><span class="kwrd">&gt;</span>
+            <span class="kwrd">&lt;</span><span class="html">label</span><span class="kwrd">&gt;</span>
+                <span class="kwrd">&lt;</span><span class="html">input</span> <span class="attr">type</span><span class="kwrd">=&quot;checkbox&quot;</span> <span class="attr">ng-model</span><span class="kwrd">=&quot;checked&quot;</span> <span class="kwrd">/&gt;</span>Is Visible...<span class="kwrd">&lt;/</span><span class="html">label</span><span class="kwrd">&gt;</span>
+        <span class="kwrd">&lt;/</span><span class="html">div</span><span class="kwrd">&gt;</span>
+        <span class="kwrd">&lt;</span><span class="html">div</span> <span class="attr">class</span><span class="kwrd">=&quot;sample&quot;</span> <span class="attr">ng-class</span><span class="kwrd">=&quot;{ hidden: !checked }&quot;</span><span class="kwrd">&gt;</span>Visible...<span class="kwrd">&lt;/</span><span class="html">div</span><span class="kwrd">&gt;</span>
+    <span class="kwrd">&lt;/</span><span class="html">div</span><span class="kwrd">&gt;</span>
+<span class="kwrd">&lt;/</span><span class="html">div</span><span class="kwrd">&gt;</span></pre>
+<p><style type="text/css">
+.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }</style>
+</p>
+<p>There is only a single property called <strong>checked</strong> as part of the data model. There’s a <strong>checkbox </strong>that when unchecked, will cause the text “Visible” to be hidden.</p>
+<p>I’m going to use jQuery as the simple animation engine, but you could use what ever you’d like. The latest versions of jQuery, angular, and angular-animate are needed:</p>
+<pre class="csharpcode"><span class="kwrd">&lt;</span><span class="html">script</span> <span class="attr">src</span><span class="kwrd">=&quot;http://code.jquery.com/jquery-1.10.1.min.js&quot;</span><span class="kwrd">&gt;&lt;/</span><span class="html">script</span><span class="kwrd">&gt;</span>
+&lt;script src=<span class="str">&quot;http://code.angularjs.org/1.2.10/angular.min.js&quot;</span>&gt;&lt;/script&gt;
+&lt;script src=<span class="str">&quot;http://code.angularjs.org/1.2.10/angular-animate.min.js&quot;</span>&gt;<span class="kwrd">&lt;/</span><span class="html">script</span><span class="kwrd">&gt;</span></pre>
+<style type="text/css">
+.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }</style>
+<p>Using the <strong>ng-class</strong> directive (<a href="http://docs.angularjs.org/api/ng.directive:ngClass" target="_blank">reference</a>), a CSS <strong>class </strong>named <strong>hidden</strong> is added when the <strong>checkbox </strong>is <strong>not </strong>checked. </p>
+<p>The application module and animation API are defined:</p>
+<pre class="csharpcode">angular.module(<span class="str">'App'</span>, [<span class="str">'ngAnimate'</span>]).animation(<span class="str">'.sample'</span>, <span class="kwrd">function</span> () {
+    <span class="kwrd">return</span> {
+        addClass: <span class="kwrd">function</span> (element, className, done) {
+            <span class="kwrd">if</span> (className === <span class="str">'hidden'</span>) {
+                jQuery(element)
+                    .css({
+                    opacity: 1
+                })
+                    .animate({
+                    opacity: 0
+                }, 500, done);
+            } <span class="kwrd">else</span> {
+                done();
+            }
+        },
+        removeClass: <span class="kwrd">function</span> (element, className, done) {
+            <span class="kwrd">if</span> (className === <span class="str">'hidden'</span>) {
+                jQuery(element)
+                    .css({
+                    opacity: 0
+                })
+                    .animate({
+                    opacity: 1
+                }, 500, done);
+            } <span class="kwrd">else</span> {
+                done();
+            }
+        }
+    }
+});</pre>
+<p>&#160;</p>
+<p>The only element animated on the page is using a CSS <strong>class </strong>name of <strong>sample. </strong>Whenever Angular adds or removes a CSS <strong>class</strong> from a matching HTML element, the corresponding code is executed. As it’s possible for multiple class names to be passed to the functions, per the guidelines, I’ve made sure that the code only executes when appropriate by filtering on the class name of <strong>hidden</strong>. As it’s toggling the state, the first action taken is to fully make opaque or transparent, then animate to zero or one depending on whether the <strong>class</strong> is being added or removed.</p>
+<p>And that’s it! Of course, the code could have been more sophisticated, but it was all I needed.</p>
+<p>By the way, there’s no need for a CSS class named hidden that has any CSS properties (it can be undefined completely). The animation code handles the visibility properly. </p>
+<style type="text/css">
+.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }</style></p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1996</post-id>	</item>
+		<item>
+		<title>Sending a socket to a forked process in Node.JS</title>
+		<link>/blog/index.php/archives/1930</link>
+					<comments>/blog/index.php/archives/1930#comments</comments>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Wed, 28 Aug 2013 01:21:00 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[JavaScript]]></category>
+		<category><![CDATA[NodeJs]]></category>
+		<guid isPermaLink="false">/blog/?p=1930</guid>
+
+					<description><![CDATA[If you want to fork a process in Node and pass a socket, the current Node documentation has a rather odd example, so I’ve simplified it here for my own sanity (further complicated by the fact that the WebStorm debugger can’t debug a forked Node.JS process, which confused me for too long). Hopefully someone else [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>If you want to fork a process in Node and pass a socket, the current Node documentation has a rather odd example, so I’ve simplified it here for my own sanity (further complicated by the fact that the WebStorm debugger can’t debug a forked Node.JS process, which confused me for too long). Hopefully someone else finds this useful at some point.</p>
+
+
+
+<p>Step 1, in a file called <strong>app.js:</strong></p>
+
+
+
+<pre class="wp-block-preformatted"><span class="kwrd">var</span> child = require(<span class="str">'child_process'</span>).fork(<span class="str">'socket_handler.js'</span>);
+
+<span class="rem">// Open up the server and send sockets to child</span>
+<span class="kwrd">var</span> server = require(<span class="str">'net'</span>).createServer();
+
+server.on(<span class="str">'connection'</span>, <span class="kwrd">function</span> (socket) {
+    child.send(<span class="str">'socket'</span>, socket);
+    server.getConnections(<span class="kwrd">function</span>(err, count) {
+        console.log(<span class="str">"Connections: "</span> + count);
+    });
+});
+server.listen(1337);
+<style type="text/css">br /> margin: 0em;&amp;amp;amp;lt;br /> }&amp;amp;amp;lt;br /> .csharpcode .lnum { color: #606060; }</style>
+And then, in a file called <strong>socket_handler</strong>.<strong>js</strong> which is located in the same directory as <strong>app.js:</strong></pre>
+
+
+
+<pre class="wp-block-preformatted">process.on(<span class="str">'message'</span>, <span class="kwrd">function</span>(message, socket) {
+    socket.on(<span class="str">'data'</span>, <span class="kwrd">function</span>(data) {
+        <span class="rem">// really poor echo ... :)</span>
+        socket.write(data);
+    });
+});</pre>
+
+
+
+<p>In this case, the fork happens upon application startup by calling the <strong>fork</strong> method of the <strong>child_process</strong> module. It starts by executing the code in <strong>socket_handler</strong>.<strong>js</strong>. As this is a new instance of the V8 engine used by Node.JS, remember there’s a sizable overhead to a forked process.</p>
+
+
+
+<p>After creating the server and listening on port 1337, when a connection is made (which can be tested by a terminal emulator or telnet), the socket is passed to the forked process. In fact, it’s not really the object as much as it’s the handle to the new socket.</p>
+
+
+
+<p>The <strong>send</strong> method takes two parameters, a string message which can be any identifier you want, and the the handle, or socket in this case.</p>
+
+
+
+<p>The forked process receives the message via the <strong>message</strong> event on the process. If you’re sending more than one message, you can add conditional logic to handle the type of message in the event handler. As part of the call to <strong>fork</strong>, you can also pass command line arguments and read them using <strong>process</strong>.<strong>argv</strong>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/blog/index.php/archives/1930/feed</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1930</post-id>	</item>
+		<item>
+		<title>Using Windows CSCRIPT to compile a Handlebar.js template</title>
+		<link>/blog/index.php/archives/1880</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Fri, 29 Mar 2013 00:54:53 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[General]]></category>
+		<category><![CDATA[cscript]]></category>
+		<category><![CDATA[JavaScript]]></category>
+		<category><![CDATA[wscript]]></category>
+		<guid isPermaLink="false">/blog/?p=1880</guid>
+
+					<description><![CDATA[I was looking for an alternative to using Node.JS for a JavaScript build process today on a Windows machine. I wanted something that relied as much on natively installed elements of a modern Windows PC as possible so that the build process would be portable. So, I broke out my rusty Windows Script Host skills. [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I was looking for an alternative to using Node.JS for a JavaScript build process today on a Windows machine. I wanted something that relied as much on natively installed elements of a modern Windows PC as possible so that the build process would be portable.</p>
+<p>So, I broke out my rusty <a href="http://msdn.microsoft.com/en-us/library/9bbdkx3k(v=vs.84).aspx" target="_blank">Windows Script Host</a> skills.</p>
+<p>First, I created a file called, <strong>compile.wsf </strong>with the following contents:</p>
+<p><a href="/blog/wp-content/uploads/2013/03/image9.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wp-content/uploads/2013/03/image_thumb8.png" width="548" height="186" /></a></p>
+<p>When using <strong>cscript.exe</strong>, you can execute a more complex combination of scripts and include other script files by using a <a href="http://msdn.microsoft.com/en-us/library/15x4407c(v=vs.84).aspx" target="_blank">Windows Script File</a>. The content of the file is an XML definition of jobs. A job represents a unit of work. If you only have one job in a file, the name won’t matter as the script engine will select it by default. If you do have more than one job you’d like to store in a single WSF file, you can use the <strong>/Job:{id}</strong> parameter of <strong>cscript.exe</strong> to run a single job.</p>
+<p> Using the WSF file, you can include other script files using a script element (much like the script tag in HTML). In the example above, I’ve referenced a local copy of <strong>handlebars.js</strong> and a custom script called <strong>compile.js</strong>.</p>
+<p>You can also inline script as shown above. After doing a basic check on the number of arguments provided to the script, <strong>compile</strong> is called, which is from the <strong>compile.js</strong> script reference.</p>
+<p><strong>Compile.js</strong> is simple:</p>
+<p><a href="/blog/wp-content/uploads/2013/03/image10.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wp-content/uploads/2013/03/image_thumb9.png" width="539" height="320" /></a></p>
+<p>Using an instance of the <a href="http://msdn.microsoft.com/en-us/library/6kxy1a51(v=vs.84).aspx" target="_blank">FileSystemObject</a>, first the input file is verified to exist. Next, both the input and output files are opened. The Handlebars object is available globally by including it in the WSF definition and is used to precompile the contents of the input file’s template definition. Once compiled, it’s written to the output file and both files are closed.</p>
+<p>I threw the three files in a folder called <strong>lib</strong>, and created a simple batch file called handlebars.bat which called the cscript executable with the Windows Script File shown above as the first parameter and then the values of the other parameters passed along:</p>
+<p><a href="/blog/wp-content/uploads/2013/03/image11.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wp-content/uploads/2013/03/image_thumb10.png" width="238" height="22" /></a></p>
+<p>While this solution only works on Windows, it doesn’t hurt to keep the Windows Script Host in mind when throwing together general repeatable tasks that you:</p>
+<ul>
+<li>consider too complex for a batch file</li>
+<li>consider too simple for a full .NET application</li>
+<li>require usage of existing JavaScript libraries, like Handlebars.js for some work</li>
+</ul>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1880</post-id>	</item>
+		<item>
+		<title>How to debug an underscore.js template</title>
+		<link>/blog/index.php/archives/1837</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Wed, 13 Feb 2013 20:00:00 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[JavaScript]]></category>
+		<category><![CDATA[underscorejs]]></category>
+		<guid isPermaLink="false">/blog/?p=1837</guid>
+
+					<description><![CDATA[Given a simple template like this: &#60;div class=&#34;solution&#34; data-question-id=&#34;&#60;%= model.get('Id') %&#62;&#34;&#62; &#60;div class=&#34;title&#34;&#62;&#60;%= model.get('Name') %&#62;&#60;/div&#62; &#60;div class=&#34;company&#34;&#62;&#60;%= model.get('Company') %&#62;&#60;/div&#62; &#60;div class=&#34;version&#34;&#62;&#60;%= model.get('Version') %&#62;&#60;/div&#62; &#60;div class=&#34;detail&#34;&#62;&#60;%= model.get('Summary') %&#62;&#60;/div&#62; &#60;div class=&#34;actions&#34;&#62; &#60;a href=&#34;/#solution/&#60;%= Id %&#62;/&#60;%= model.get('Id') %&#62;&#34;&#62;Detail&#60;/a&#62; &#60;/div&#62; &#60;/div&#62; And using your favorite JavaScript interactive debugger (Visual Studio 2012 is my favorite when I’m doing MVC 4 [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Given a simple template like this:</p>
+<pre class="csharpcode"><span class="kwrd">&lt;</span><span class="html">div</span> <span class="attr">class</span><span class="kwrd">=&quot;solution&quot;</span> <span class="attr">data-question-id</span><span class="kwrd">=&quot;&lt;%= model.get('Id') %&gt;&quot;</span><span class="kwrd">&gt;</span>    
+    <span class="kwrd">&lt;</span><span class="html">div</span> <span class="attr">class</span><span class="kwrd">=&quot;title&quot;</span><span class="kwrd">&gt;</span><span class="asp">&lt;%</span>= model.get(<span class="str">'Name'</span>) <span class="asp">%&gt;</span><span class="kwrd">&lt;/</span><span class="html">div</span><span class="kwrd">&gt;</span>
+    <span class="kwrd">&lt;</span><span class="html">div</span> <span class="attr">class</span><span class="kwrd">=&quot;company&quot;</span><span class="kwrd">&gt;</span><span class="asp">&lt;%</span>= model.get(<span class="str">'Company'</span>) <span class="asp">%&gt;</span><span class="kwrd">&lt;/</span><span class="html">div</span><span class="kwrd">&gt;</span>
+    <span class="kwrd">&lt;</span><span class="html">div</span> <span class="attr">class</span><span class="kwrd">=&quot;version&quot;</span><span class="kwrd">&gt;</span><span class="asp">&lt;%</span>= model.get(<span class="str">'Version'</span>) <span class="asp">%&gt;</span><span class="kwrd">&lt;/</span><span class="html">div</span><span class="kwrd">&gt;</span>
+    <span class="kwrd">&lt;</span><span class="html">div</span> <span class="attr">class</span><span class="kwrd">=&quot;detail&quot;</span><span class="kwrd">&gt;</span><span class="asp">&lt;%</span>= model.get(<span class="str">'Summary'</span>) <span class="asp">%&gt;</span><span class="kwrd">&lt;/</span><span class="html">div</span><span class="kwrd">&gt;</span>
+    <span class="kwrd">&lt;</span><span class="html">div</span> <span class="attr">class</span><span class="kwrd">=&quot;actions&quot;</span><span class="kwrd">&gt;</span>
+        <span class="kwrd">&lt;</span><span class="html">a</span> <span class="attr">href</span><span class="kwrd">=&quot;/#solution/&lt;%= Id %&gt;/&lt;%= model.get('Id') %&gt;&quot;</span><span class="kwrd">&gt;</span>Detail<span class="kwrd">&lt;/</span><span class="html">a</span><span class="kwrd">&gt;</span>
+    <span class="kwrd">&lt;/</span><span class="html">div</span><span class="kwrd">&gt;</span>
+<span class="kwrd">&lt;/</span><span class="html">div</span><span class="kwrd">&gt;</span></pre>
+<p>And using your favorite JavaScript interactive debugger (Visual Studio 2012 is my favorite when I’m doing MVC 4 Razor development), just add a debugger statement within your template temporarily:</p>
+<pre class="csharpcode"><span class="kwrd">&lt;</span><span class="html">div</span> <span class="attr">class</span><span class="kwrd">=&quot;solution&quot;</span> <span class="attr">data-question-id</span><span class="kwrd">=&quot;&lt;%= model.get('Id') %&gt;&quot;</span><span class="kwrd">&gt;</span>
+    <span class="asp">&lt;%</span> debugger; <span class="asp">%&gt;</span>
+    <span class="kwrd">&lt;</span><span class="html">div</span> <span class="attr">class</span><span class="kwrd">=&quot;title&quot;</span><span class="kwrd">&gt;</span><span class="asp">&lt;%</span>= model.get(<span class="str">'Name'</span>) <span class="asp">%&gt;</span><span class="kwrd">&lt;/</span><span class="html">div</span><span class="kwrd">&gt;</span></pre>
+<style type="text/css">
+.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }</style>
+<p>Assuming debugging is enabled, this will break (in Visual Studio for example) on the debugger line whenever your code template is executed.</p>
+<p>The emitted template code thankfully has line feeds embedded so it’s readable:</p>
+<pre class="csharpcode"><span class="kwrd">function</span> anonymous(obj,_) {
+<span class="kwrd">var</span> __t,__p=<span class="str">''</span>,__j=Array.prototype.join,print=<span class="kwrd">function</span>(){__p+=__j.call(arguments,<span class="str">''</span>);};
+with(obj||{}){
+__p+=<span class="str">'&lt;div class=&quot;solution&quot; data-question-id=&quot;'</span>+
+((__t=( model.get(<span class="str">'Id'</span>) ))==<span class="kwrd">null</span>?<span class="str">''</span>:__t)+
+<span class="str">'&quot;&gt;\r\n    '</span>;
+ debugger; 
+__p+=<span class="str">'\r\n    &lt;div class=&quot;title&quot;&gt;'</span>+
+((__t=( model.get(<span class="str">'Name'</span>) ))==<span class="kwrd">null</span>?<span class="str">''</span>:__t)+
+<span class="str">'&lt;/div&gt;\r\n    &lt;div class=&quot;company&quot;&gt;'</span>+
+((__t=( model.get(<span class="str">'Company'</span>) ))==<span class="kwrd">null</span>?<span class="str">''</span>:__t)+
+<span class="str">'&lt;/div&gt;\r\n    &lt;div class=&quot;version&quot;&gt;'</span>+
+((__t=( model.get(<span class="str">'Version'</span>) ))==<span class="kwrd">null</span>?<span class="str">''</span>:__t)+
+<span class="str">'&lt;/div&gt;\r\n    &lt;div class=&quot;detail&quot;&gt;'</span>+
+((__t=( model.get(<span class="str">'Summary'</span>) ))==<span class="kwrd">null</span>?<span class="str">''</span>:__t)+
+<span class="str">'&lt;/div&gt;\r\n    &lt;div class=&quot;actions&quot;&gt;\r\n        &lt;a href=&quot;/#solution/'</span>+
+((__t=( Id ))==<span class="kwrd">null</span>?<span class="str">''</span>:__t)+
+<span class="str">'/'</span>+
+((__t=( model.get(<span class="str">'Id'</span>) ))==<span class="kwrd">null</span>?<span class="str">''</span>:__t)+
+<span class="str">'&quot;&gt;Detail&lt;/a&gt;\r\n    &lt;/div&gt;\r\n&lt;/div&gt;\r\n'</span>;
+}
+<span class="kwrd">return</span> __p;
+
+}</pre>
+<p>You&#8217;ll see the debugger emitted in-line. It’s very handy for inspect the values of variables, objects, etc. In the example above, I wanted to confirm that the model being passed was in the proper format. </p>
+<p>I’ve used it many times to help debug a template that wasn’t working the way I’d expected.</p>
+<p>This also works well in Chrome’s debugger. </p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1837</post-id>	</item>
+		<item>
+		<title>Smarter queuing of files using jQuery deferred and when</title>
+		<link>/blog/index.php/archives/1836</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Wed, 13 Feb 2013 13:45:00 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[JavaScript]]></category>
+		<guid isPermaLink="false">/blog/?p=1836</guid>
+
+					<description><![CDATA[I had a somewhat simple need …a single web page style application using Backbone.JS had multiple template files it needed to download, if and only if the files hadn’t already been downloaded before. While I suppose I could have relied on browser caching, I wanted to manage the requests in JavaScript. The trick was that [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I had a somewhat simple need …a single web page style application using <a href="http://backbonejs.org/">Backbone.JS</a> had multiple template files it needed to download, if and only if the files hadn’t already been downloaded before. </p>
+<p>While I suppose I could have relied on browser caching, I wanted to manage the requests in JavaScript. The trick was that at any given time, a request might include one or more template files, and some of the request might have already been made, or in progress.</p>
+<p>Here’s the queuing function:</p>
+<pre class="csharpcode">(<span class="kwrd">function</span>() {
+    <span class="kwrd">var</span> allFiles = {};
+    <span class="kwrd">var</span> allResults = {};
+
+    <span class="kwrd">var</span> queueRequest = <span class="kwrd">function</span> (path, files, options) {
+        options = options || {};
+        files = $.isArray(files) ? files : [files];
+        
+        <span class="rem">// this will contain all of the deferreds that will be </span>
+        <span class="rem">// wrapped with a `when` deferred</span>
+        <span class="kwrd">var</span> when = [];
+        <span class="rem">// might want to override some defaults...</span>
+        <span class="kwrd">var</span> ajaxOpt = $.extend({
+            dataType: <span class="str">'json'</span>,
+            type: <span class="str">'GET'</span>
+        }, options.ajax || {});
+
+        <span class="rem">// go thru each file</span>
+        $.each(files, <span class="kwrd">function</span> (i, file) {
+            <span class="kwrd">var</span> xhr;
+            <span class="rem">// if we've not seen it before</span>
+            <span class="kwrd">if</span> (<span class="kwrd">typeof</span> allFiles[file] === <span class="str">'undefined'</span>) {
+                <span class="rem">// kick it off</span>
+                xhr = $.ajax(path + file, ajaxOpt).done(<span class="kwrd">function</span> (data) {
+                    <span class="rem">// store the file results in the hash index</span>
+                    allResults[file] = data;
+                });
+                <span class="rem">// keep the deferred for later use</span>
+                allFiles[file] = xhr;
+                <span class="rem">// and keey this for later</span>
+                when.push(xhr);
+            } <span class="kwrd">else</span> {
+                <span class="rem">// already seen this, so just pack it on</span>
+                when.push(allFiles[file]);
+            }
+        });
+        <span class="rem">// return all of the built up deferreds as a </span>
+        <span class="rem">// single when. this will then wait until </span>
+        <span class="rem">// all are satisfied</span>
+        <span class="kwrd">return</span> $.when.apply(<span class="kwrd">this</span>, when).done(<span class="kwrd">function</span> () {
+            <span class="kwrd">if</span> ($.isFunction(options.done)) {
+                options.done.call(<span class="kwrd">this</span>, allResults);
+            }
+        }).fail(options.error);
+    };
+
+    window.Queue = queueRequest;
+})();</pre>
+<p>Queuing is easy enough:</p>
+<pre class="csharpcode">Queue(app_url(<span class="str">&quot;api/template/&quot;</span>), templates, {
+    done: <span class="kwrd">function</span> (allFiles) {
+        _.each(templates, <span class="kwrd">function</span> (n) {
+            <span class="rem">// compile only if needed</span>
+            <span class="kwrd">if</span> (<span class="kwrd">typeof</span> allTemplates[n] === <span class="str">'undefined'</span>) {
+                allTemplates[n] = _.template(allFiles[n]);
+            }
+        });
+        <span class="kwrd">if</span> (<span class="kwrd">typeof</span> callback === <span class="str">'function'</span>) {
+            callback.call(context, allTemplates);
+        }
+    }
+});</pre>
+<p><strong>allTemplates</strong> is a list of compiled underscore templates stored elsewhere.</p>
+<style type="text/css">
+.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }</style>
+</p>
+<p>The first parameter to the Queue function is the full path to the templates. I’ve got a simple MVC controller that responds with a template given a key, so that’s the path that is provided in the example above. The list of templates (as an array) is passed. </p>
+<p>The Queue code returns a jQuery deferred <a href="http://api.jquery.com/jQuery.when/">when</a>. The function returns both active and completed ajax requests … which means that the jQuery when function may immediately fire … or not. When simply waits for all of the async operations to complete, and then calls the callback passed to <a href="http://api.jquery.com/deferred.done/">done</a>. </p>
+<p>When complete, the code passes all results back to the requesting function. It’s not filtered as I trusted the caller (no reason to unnecessarily clone the array and waste CPU time). :)&#160; </p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1836</post-id>	</item>
+		<item>
+		<title>Knockout binding for JavaScript route fixup</title>
+		<link>/blog/index.php/archives/1820</link>
+					<comments>/blog/index.php/archives/1820#comments</comments>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sat, 26 Jan 2013 02:48:30 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[ASP.NET]]></category>
+		<category><![CDATA[JavaScript]]></category>
+		<category><![CDATA[Knockout]]></category>
+		<category><![CDATA[MVC]]></category>
+		<guid isPermaLink="false">/blog/?p=1820</guid>
+
+					<description><![CDATA[Part one. After the first round, I felt compelled to KnockOut the code a bit more. I’d mentioned I wasn’t pleased with the code exactly. It needed some refactoring. So, I’ve created a new Knockout binding handler. This binding handler replaces&#160; named parameters with a model’s properties in a path. For example, given this object: [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="/blog/index.php/archives/1800">Part one.</a></p>
+<p>After the first round, I felt compelled to KnockOut the code a bit more. I’d mentioned I wasn’t pleased with the code exactly. It needed some refactoring.</p>
+<p>So, I’ve created a new Knockout binding handler. This binding handler replaces&#160; named parameters with a model’s properties in a path. </p>
+<p>For example, given this object:</p>
+<table cellspacing="0" cellpadding="2" width="400" border="1">
+<tbody>
+<tr>
+<td valign="top" width="200"><strong>Property Name</strong></td>
+<td valign="top" width="200"><strong>Value</strong></td>
+</tr>
+<tr>
+<td valign="top" width="200">id</td>
+<td valign="top" width="200">A123</td>
+</tr>
+<tr>
+<td valign="top" width="200">first_name</td>
+<td valign="top" width="200">Aaron</td>
+</tr>
+<tr>
+<td valign="top" width="200">state</td>
+<td valign="top" width="200">WI</td>
+</tr>
+</tbody>
+</table>
+<p>The following paths would be converted thusly:</p>
+<table cellspacing="0" cellpadding="2" width="400" border="1">
+<tbody>
+<tr>
+<td valign="top" width="200"><strong>Original</strong></td>
+<td valign="top" width="200"><strong>Replaced</strong></td>
+</tr>
+<tr>
+<td valign="top" width="200">/person/{id}</td>
+<td valign="top" width="200">/person/A123</td>
+</tr>
+<tr>
+<td valign="top" width="200">/person/{state}/{id}</td>
+<td valign="top" width="200">/person/WI/A123</td>
+</tr>
+</tbody>
+</table>
+<p>You get the idea. Here’s the JavaScript code:</p>
+<pre class="csharpcode">ko.bindingHandlers[<span class="str">'route'</span>] = {
+    <span class="rem">// Examples: </span>
+    <span class="rem">//      &lt;a data-bind=&quot;route: {model: $data, url: 'person_details', attr: 'href' }&quot; &gt;</span>
+    <span class="rem">// or, you can shortcut the syntax to default to the currently bound object and just pass </span>
+    <span class="rem">// the url or the route name as a string directly</span>
+    <span class="rem">//      &lt;a data-bind=&quot;route: 'person_details' }&quot; &gt;</span>
+    update: <span class="kwrd">function</span> (element, valueAccessor, allBindingsAccessor, $data) {
+        <span class="kwrd">var</span> valueUnwrapped = ko.utils.unwrapObservable(valueAccessor());
+        <span class="kwrd">var</span> options = ko.bindingHandlers.route.options || {};
+
+        <span class="rem">// look for the model property </span>
+        <span class="kwrd">var</span> model = ko.utils.unwrapObservable(valueUnwrapped[<span class="str">'model'</span>]);
+        <span class="kwrd">if</span> (<span class="kwrd">typeof</span> model !== <span class="str">'object'</span>) {
+
+            model = ko.utils.unwrapObservable($data);
+            <span class="kwrd">if</span> (<span class="kwrd">typeof</span> model === <span class="str">'undefined'</span> || model === <span class="kwrd">null</span>) {
+                <span class="kwrd">throw</span> <span class="kwrd">new</span> Error(<span class="str">'set route model to object (or nothing bound?)'</span>);
+            }
+        }
+
+        <span class="rem">// look for the url property first</span>
+        <span class="kwrd">var</span> url = ko.utils.unwrapObservable(valueUnwrapped[<span class="str">'url'</span>]);
+        <span class="rem">// validate we've got something as a url (might be a name, might be a full url)        </span>
+        <span class="kwrd">if</span> (<span class="kwrd">typeof</span> url !== <span class="str">'string'</span> || url == <span class="str">&quot;&quot;</span>) {
+            url = valueUnwrapped;
+            <span class="kwrd">if</span> (<span class="kwrd">typeof</span> url !== <span class="str">'string'</span> || url == <span class="str">&quot;&quot;</span>) {
+                <span class="kwrd">throw</span> <span class="kwrd">new</span> Error(<span class="str">&quot;set route url property to route name or url directly&quot;</span>);
+            }
+        }
+
+        <span class="rem">// is it on the keyed collection?</span>
+        <span class="kwrd">var</span> map = options.map;
+        <span class="kwrd">if</span> (<span class="kwrd">typeof</span> map !== <span class="str">'undefined'</span> &amp;&amp; map !== <span class="kwrd">null</span>) {
+            <span class="kwrd">if</span> (map.hasOwnProperty(url)) {
+                url = map[url];
+            }
+        }
+        <span class="rem">// check for a routing function as well</span>
+        <span class="kwrd">var</span> fn = options.routeNameToUrl;
+        <span class="kwrd">if</span> (<span class="kwrd">typeof</span> fn === <span class="str">'function'</span>) { url = fn.call(<span class="kwrd">null</span>, url); }
+        <span class="rem">// did we get something meaningful?</span>
+        <span class="kwrd">if</span> (url !== <span class="kwrd">null</span> &amp;&amp; url !== <span class="str">''</span> &amp;&amp; url.length &gt; 0) {
+            url = ko.bindingHandlers.route.buildUrl(url, model);            
+        }
+        <span class="rem">// the url might need some fixin after a routing, anything goes here (might just be a default)</span>
+        fn = options.fixUrl;
+        <span class="kwrd">if</span> (<span class="kwrd">typeof</span> fn === <span class="str">'function'</span>) { url = fn.call(<span class="kwrd">null</span>, url); }
+        element.setAttribute(ko.utils.unwrapObservable(valueUnwrapped[<span class="str">'attr'</span>]) || <span class="str">'href'</span>, url);
+    },    
+
+    <span class="rem">// given a model, this function replaces named parameters in a simple string </span>
+    <span class="rem">// with values from the model</span>
+    <span class="rem">//     /path/to/some/{id}/{category}</span>
+    <span class="rem">// with object { 'id' : 'abc', 'category' : 'cars' }</span>
+    <span class="rem">// becomes</span>
+    <span class="rem">//     /path/to/some/abc/cars</span>
+    buildUrl : <span class="kwrd">function</span>(url, model) {
+        <span class="rem">// unfixed if there's not a thing</span>
+        <span class="kwrd">if</span> (<span class="kwrd">typeof</span> model === <span class="str">'undefined'</span> || model === <span class="kwrd">null</span>) { <span class="kwrd">return</span> url; }
+
+        <span class="kwrd">var</span> propValue;
+        <span class="kwrd">for</span> (<span class="kwrd">var</span> propName <span class="kwrd">in</span> model) {                
+            <span class="kwrd">if</span> (model.hasOwnProperty(propName)) {
+                propValue = model[propName];
+                <span class="kwrd">if</span> (ko) { propValue = ko.utils.unwrapObservable(propValue); }
+
+                <span class="kwrd">if</span> (<span class="kwrd">typeof</span> propValue === <span class="str">'undefined'</span> || propValue === <span class="kwrd">null</span>) {
+                    propValue = <span class="str">&quot;&quot;</span>;
+                } <span class="kwrd">else</span> {
+                    propValue = propValue.toString();
+                }
+                url = url.replace(<span class="str">'{'</span> + propName.toLowerCase() + <span class="str">'}'</span>, propValue);
+            }
+        }
+        <span class="kwrd">return</span> url;
+    },
+
+    options: {
+        <span class="rem">// ** convert a route name to a url through whatever means you'd like</span>
+        <span class="rem">// routeNameToUrl : function(routeName) { return url; } </span>
+
+        <span class="rem">// ** anything you want, called after routeNameToUrl, might add a virtual directory</span>
+        <span class="rem">// ** for example</span>
+        <span class="rem">// fixUrl: function(url) { return url;  }  </span>
+
+        <span class="rem">// ** A map route names to URLs **</span>
+        <span class="rem">// all other functions are called if set (to possibly override this)</span>
+        <span class="rem">// this is not required if you use one of the other functions</span>
+        <span class="rem">// map : { 'a_route_name' : '/path/to/something/{id}/{action}' }        </span>
+    }
+};</pre>
+<style type="text/css">
+.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }</style>
+<style type="text/css">
+.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }</style>
+<p>In another JavaScript file, I did initialize some of the options:</p>
+<pre class="csharpcode">ko.bindingHandlers.route.options.routeNameToUrl = getRoute;
+ko.bindingHandlers.route.options.fixUrl = app_url;</pre>
+<style type="text/css">
+.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }</style>
+<p>The <strong>getRoute</strong> function just maps a route name to a path, and the <strong>app_url</strong> prepends the virtual directory to the path as needed.</p>
+<p>Here it is in use:</p>
+<pre class="csharpcode"><span class="kwrd">&lt;</span><span class="html">div</span> <span class="attr">data-bind</span><span class="kwrd">=&quot;foreach: data.persons&quot;</span><span class="kwrd">&gt;</span>
+    <span class="kwrd">&lt;</span><span class="html">h3</span> <span class="attr">class</span><span class="kwrd">=&quot;title&quot;</span> <span class="attr">data-bind</span><span class="kwrd">=&quot;text: Title&quot;</span><span class="kwrd">&gt;&lt;/</span><span class="html">h3</span><span class="kwrd">&gt;</span>
+    <span class="kwrd">&lt;</span><span class="html">div</span><span class="kwrd">&gt;</span>
+        <span class="kwrd">&lt;</span><span class="html">a</span> <span class="attr">data-bind</span><span class="kwrd">=&quot;route: { model: $data, url: 'person_details', attr: 'href' } &quot;</span><span class="kwrd">&gt;</span>Details2<span class="kwrd">&lt;/</span><span class="html">a</span><span class="kwrd">&gt;</span>
+        <span class="kwrd">&lt;</span><span class="html">a</span> <span class="attr">data-bind</span><span class="kwrd">=&quot;route: '/data/details/{id}/{title}' &quot;</span><span class="kwrd">&gt;</span>Details<span class="kwrd">&lt;/</span><span class="html">a</span><span class="kwrd">&gt;</span>
+        <span class="kwrd">&lt;</span><span class="html">a</span> <span class="attr">data-bind</span><span class="kwrd">=&quot;route: 'person_details' &quot;</span><span class="kwrd">&gt;</span>Details<span class="kwrd">&lt;/</span><span class="html">a</span><span class="kwrd">&gt;</span>
+    <span class="kwrd">&lt;/</span><span class="html">div</span><span class="kwrd">&gt;</span>
+<span class="kwrd">&lt;/</span><span class="html">div&gt;</span></pre>
+<style type="text/css">
+.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }</style>
+<style type="text/css">
+.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }</style>
+<p>You’ll probably like the new way better syntactically at least compared to the <a href="/blog/index.php/archives/1800">old</a> way. A route binding requires one input when used in it’s most basic form:</p>
+<ul>
+<li><strong>url = </strong>the URL or route name to use as the template for the replacement. It should contain (or later resolve to) curly-braced enclosed property name keys which will be substituted by values from the model. The value of the property could be either a route name (see options below) or a path.</li>
+</ul>
+<p>When using just the basic form you can use the shortened syntax:</p>
+<pre class="csharpcode"><span class="kwrd">&lt;</span><span class="html">a</span> <span class="attr">data-bind</span><span class="kwrd">=&quot;route: 'research_details' &quot;</span><span class="kwrd">&gt;</span>Details<span class="kwrd">&lt;/</span><span class="html">a</span><span class="kwrd">&gt;</span></pre>
+<p>This handily binds to the current object (via the bindingContext.$data property of the bindingHandler update function call, which is <strong>also </strong>the fourth parameter, which I’ve renamed to $data rather than the typical viewModel). So, you won’t need to necessarily (explicitly) set the model for the binding.</p>
+<p>If you need a a bit more control, you can change the syntax and get access to a few other options (including direct access to the model you want to bind to if the current item isn’t directly what you want to use).</p>
+<ul>
+<li><strong>model</strong> = this is the object that contains the properties and values to be used as replacements within the url </li>
+<li><strong>attr </strong>(optional) = the name of the attribute to set the generated url into. Defaults to href if not set.</li>
+</ul>
+<p>There are a few global options you can control as well:</p>
+<ul>
+<li><strong>routeNameToUrl </strong>= (function)(routeName) optionally, given a route name, should return the path (or the original value). Here you can do a lookup of routeName to path. </li>
+<li><strong>map</strong> = {object} the object properties should be route names and set equal to the path. this optional lookup is performed before the routeNameToUrl function is called. </li>
+<li><strong>fixUrl</strong> = (function)(url) do anything here. this is called after the mapping and routeNameToUrl is optionally called. I use this to correct javascript Ajax request paths by appending the application virtual directory</li>
+</ul>
+<p>(Thanks to <a href="http://www.knockmeout.net/">Ryan</a> for the suggestion to use the $data on the bindingContext, and then again for the nudge to just use the 4th parameter. <img class="wlEmoticon wlEmoticon-smile" style="border-top-style: none; border-left-style: none; border-bottom-style: none; border-right-style: none" alt="Smile" src="/blog/wp-content/uploads/2013/01/wlEmoticon-smile.png" /> )</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/blog/index.php/archives/1820/feed</wfw:commentRss>
+			<slash:comments>5</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1820</post-id>	</item>
+		<item>
+		<title>Added Away/Home to unofficial-nest-api</title>
+		<link>/blog/index.php/archives/1788</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sun, 30 Dec 2012 23:13:00 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[JavaScript]]></category>
+		<category><![CDATA[Nest]]></category>
+		<category><![CDATA[Node]]></category>
+		<category><![CDATA[npm]]></category>
+		<category><![CDATA[Thermostat]]></category>
+		<guid isPermaLink="false">/blog/?p=1788</guid>
+
+					<description><![CDATA[I just finished adding a new simple feature to control the away status for a structure to my unofficial-nest-api published on GitHub and available as a node package (npm). Usage is simple as calling setAway or setHome on the nest instance after authentication and a successful status has been returned (see commented calls below). [javascript] [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I just finished adding a new simple feature to control the away status for a structure to my unofficial-nest-api published on <a href="https://github.com/wiredprairie/unofficial_nodejs_nest">GitHub</a> and available as a node package (<a href="https://npmjs.org/package/unofficial-nest-api">npm</a>).</p>
+<p>Usage is simple as calling <strong>setAway </strong>or <strong>setHome</strong> on the nest instance after authentication and a successful status has been returned (see commented calls below).</p>
+<p>[javascript]<br />
+if (username &amp;&amp; password) {<br />
+    username = trimQuotes(username);<br />
+    password = trimQuotes(password);<br />
+    nest.login(username, password, function (data) {<br />
+        if (!data) {<br />
+            console.log(&#8216;Login failed.&#8217;);<br />
+            process.exit(1);<br />
+            return;<br />
+        }<br />
+        console.log(&#8216;Logged in.&#8217;);<br />
+        nest.fetchStatus(function (data) {<br />
+            for (var deviceId in data.device) {<br />
+                if (data.device.hasOwnProperty(deviceId)) {<br />
+                    var device = data.shared[deviceId];<br />
+                    console.log(util.format(&quot;%s [%s], Current temperature = %d F target=%d&quot;,<br />
+                        device.name, deviceId,<br />
+                        nest.ctof(device.current_temperature),<br />
+                        nest.ctof(device.target_temperature)));<br />
+                }<br />
+            }<br />
+            subscribe();<br />
+            //nest.setAway();<br />
+            //nest.setHome();<br />
+        });<br />
+    });<br />
+}<br />
+[/javascript]</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1788</post-id>	</item>
+		<item>
+		<title>Unofficial Nest API for Node JS as an NPM</title>
+		<link>/blog/index.php/archives/1784</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Fri, 21 Dec 2012 01:54:36 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[JavaScript]]></category>
+		<category><![CDATA[Nest]]></category>
+		<category><![CDATA[Node]]></category>
+		<category><![CDATA[npm]]></category>
+		<category><![CDATA[Thermostat]]></category>
+		<guid isPermaLink="false">/blog/?p=1784</guid>
+
+					<description><![CDATA[Per the request of an anonymous user on Bitbucket, I have: Moved the code for the Nest API to GitHub. While I did have a preference for Bitbucket (free private hosting!!!), I moved it anyway. I also created an npm called the unofficial-nest-api. Enjoy.]]></description>
+										<content:encoded><![CDATA[<p>Per the request of an anonymous user on Bitbucket, I have:</p>
+<p>Moved the code for the Nest API to <a href="https://github.com/wiredprairie/unofficial_nodejs_nest">GitHub</a>. While I did have a preference for Bitbucket (free private hosting!!!), I moved it anyway. <img class="wlEmoticon wlEmoticon-smile" style="border-top-style: none; border-left-style: none; border-bottom-style: none; border-right-style: none" alt="Smile" src="/blog/wp-content/uploads/2012/12/wlEmoticon-smile.png" /></p>
+<p>I also created an npm called the <strong><a href="https://npmjs.org/package/unofficial-nest-api">unofficial-nest-api</a>.</strong></p>
+<p>Enjoy.</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1784</post-id>	</item>
+		<item>
+		<title>A bit of reflow, using TweenJS</title>
+		<link>/blog/index.php/archives/1664</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sun, 13 May 2012 16:59:54 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[JavaScript]]></category>
+		<category><![CDATA[Metro]]></category>
+		<category><![CDATA[TweenJS]]></category>
+		<guid isPermaLink="false">/blog/?p=1664</guid>
+
+					<description><![CDATA[Inspired by some modern applications (especially the “Metro” look and feel), I wanted to put together an animated tile reflow script for an HTML page I was creating. As the size of the page changes, the tiles move into their new positions. You can try it here, if you’re using a modern browser (IE9+, Chrome, [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Inspired by some modern applications (especially the “Metro” look and feel), I wanted to put together an animated tile reflow script for an HTML page I was creating. </p>
+<p>As the size of the page changes, the tiles move into their new positions.</p>
+<p><a href="http://www.wiredprairie.us/examples/easeljs/reflow1/" target="_blank"><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="SNAGHTML113b633f[4]" border="0" alt="SNAGHTML113b633f[4]" src="/blog/wp-content/uploads/2012/05/SNAGHTML113b633f4.png" width="502" height="408" /></a></p>
+<p>You can try it <a href="http://www.wiredprairie.us/examples/easeljs/reflow1/" target="_blank">here</a>, if you’re using a modern browser (IE9+, Chrome, FF, Safari, etc.).</p>
+<p>Dependencies:</p>
+<ol>
+<li><a href="http://createjs.com/#!/TweenJS" target="_blank">TweenJS</a></li>
+<li><a href="http://createjs.com/#!/EaselJS" target="_blank">EaselJS</a> (for the ticker used in TweenJS)</li>
+<li>CSSPlugin (an add on to the the TweenJS library)</li>
+<li><a href="http://www.jquery.com/" target="_blank">jQuery</a> (1.7.2)</li>
+</ol>
+<p> Relayouts are queued (as to prevent multiple from running).</p>
+<p>Only boxes that will be visible to the end user (either animating to the screen or off the screen) are animated. It does not animate elements that do not start or end in the current viewport including boxes that would animate “through” the current viewport. I considered the latter to not add anything to the overall experience and just uses more CPU to perform the animations, so I intentionally left it out.</p>
+<p>In the layout loop, the code verifies that the animation needs to run:</p>
+<pre class="code"><span style="color: #006400">// here's the final destination
+</span>pos = { left: Math.round(x), top: Math.round(y) };
+
+<span style="color: #006400">// check old and new positions, if either are in the viewport, we'll animate
+</span><span style="color: blue">if </span>(isScrolledIntoView(pos.top + parentOfBoxesOffsetTop, boxH) || isScrolledIntoView(box.y + parentOfBoxesOffsetTop, boxH)) {
+    Tween.get(box.e).to(pos, 500 + 500 * Math.random(), 
+        Ease.quadInOut).call(<span style="color: blue">function </span>() {
+            --layoutPending;
+            <span style="color: blue">if </span>(!layoutPending &amp;&amp; queuedLayout) { queueLayout(); }
+    });
+} <span style="color: blue">else </span>{</pre>
+<p>If it needs to animate, the code uses the static Tween method “get” to start an animation on the current element. </p>
+<ol>
+<li>Tween.get(box.e) creates a new instance of the Tween class (initialized with the element to tween).</li>
+<li>Using that Tween instance, the CSS attributes (thanks to the handy CSSPlugin), for left and top are animated for at least 500ms and up to a full second. The easing function I chose is quadInOut. Tip: <a href="http://www.createjs.com/#!/TweenJS/demos/sparkTable" target="_blank">Here’s</a> a great way to visualize easing options using TweenJS.</li>
+<li>Finally, when the animation completes, an anonymous function is called which decrements the number of pending animations and if there are no remaining elements to animate, and there’s something queued, another cycle is started.</li>
+</ol>
+<p>All the code used by the demo is in default.html.</p>
+<p>Colors of the boxes were set using hsl (only available in modern browsers):</p>
+<pre class="code">box.style.backgroundColor = <span style="color: maroon">&quot;hsl(&quot; </span>+ c + <span style="color: maroon">&quot;, 100%, 50%)&quot;</span>;</pre>
+<p>Where “c” is:</p>
+<pre class="code">c = (i / boxes * 360).toFixed(1);</pre>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1664</post-id>	</item>
+		<item>
+		<title>SVG Setting Text Content Dynamically</title>
+		<link>/blog/index.php/archives/1643</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Tue, 17 Apr 2012 12:53:00 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[Html]]></category>
+		<category><![CDATA[HTML5]]></category>
+		<category><![CDATA[JavaScript]]></category>
+		<category><![CDATA[SVG]]></category>
+		<guid isPermaLink="false">/blog/?p=1643</guid>
+
+					<description><![CDATA[Continuing on a theme of animating SVG, I’ve added a label in the center of the animation which contains the current angle of the ever-rotating marker (in fact in a centered horizontally and vertically SVG text node). (Click image below to try it.) At the bottom of the file from the previous post, I’ve added [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Continuing on a <a href="/blog/index.php/archives/1638">theme</a> of animating SVG, I’ve added a label in the center of the animation which contains the current angle of the ever-rotating marker (in fact in a centered horizontally and vertically SVG text node). </p>
+<p>(Click image below to try it.)</p>
+<p><a href="http://www.wiredprairie.us/examples/svg/demo2.html" target="_blank"><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2012/04/image26.png" width="316" height="313" /></a></p>
+<p>At the bottom of the file from the <a href="/blog/index.php/archives/1638">previous</a> post, I’ve added the following:</p>
+<pre class="code">    <span style="color: blue">&lt;</span><span style="color: maroon">text </span><span style="color: red">id</span><span style="color: blue">=&quot;currentValueAsText&quot; </span><span style="color: red">x</span><span style="color: blue">=&quot;300&quot; </span><span style="color: red">y</span><span style="color: blue">=&quot;300&quot; 
+        </span><span style="color: red">style</span><span style="color: blue">=&quot;</span><span style="color: red">text-anchor</span><span style="color: blue">: middle;</span><span style="color: red">alignment-baseline</span><span style="color: blue">:middle&quot; 
+        </span><span style="color: red">fill</span><span style="color: blue">=&quot;#FFFFFF&quot; </span><span style="color: red">font-family</span><span style="color: blue">=&quot;'Arial'&quot; </span><span style="color: red">font-size</span><span style="color: blue">=&quot;96&quot; </span><span style="color: red">opacity</span><span style="color: blue">=&quot;.6&quot;&gt;</span>0<span style="color: blue">&lt;/</span><span style="color: maroon">text</span><span style="color: blue">&gt;
+
+</span></pre>
+<p>It’s a new text node. It’s set to centered both horizontally and vertically (using the text-anchor and alignment-baseline style properties respectively) at 300,300. </p>
+<p>Setting the content is simple as well:</p>
+<pre class="code">(<span style="color: blue">function </span>() {
+    window.onload = loaded;
+    <span style="color: blue">function </span>loaded() {
+        <span style="color: blue">var </span>colorTemp = document.getElementById(<span style="color: maroon">&quot;color-temp&quot;</span>);
+        <span style="color: blue">var </span>reading = document.getElementById(<span style="color: maroon">'current-reading'</span>);
+<font style="background-color: #ffff00">        <span style="color: blue">var </span>currentVal = document.getElementById(<span style="color: maroon">&quot;currentValueAsText&quot;</span>);
+</font>        <span style="color: blue">var </span>currentAngle = 0;
+        <span style="color: blue">var </span>fill;
+
+        <span style="color: blue">var </span>direction = 1;
+        setInterval(<span style="color: blue">function </span>() {
+            currentAngle += direction;
+            <span style="color: blue">if </span>(currentAngle &gt;= 120 || currentAngle &lt;= -120) {
+                direction *= -1;
+            } <span style="color: blue">else if </span>(currentAngle === 0) {
+                fill = direction === 1 ? <span style="color: maroon">&quot;#BE1E2D&quot; </span>: <span style="color: maroon">&quot;#10A2DC&quot;</span>;
+                colorTemp.setAttribute(<span style="color: maroon">&quot;fill&quot;</span>, fill);
+            }
+            <span style="color: #006400">// adjust the opacity
+            </span>colorTemp.setAttribute(<span style="color: maroon">&quot;opacity&quot;</span>, Math.abs(currentAngle) / 120.0);
+            reading.setAttribute(<span style="color: maroon">&quot;transform&quot;</span>, <span style="color: maroon">&quot;rotate(&quot; </span>+ currentAngle + <span style="color: maroon">&quot;)&quot;</span>);
+<font style="background-color: #ffff00">            currentValueAsText.textContent = currentAngle.toString();
+</font>
+        }, 25);
+    }
+})();</pre>
+<p>Use the <strong>textContent</strong> property of the SVG text node to set the text. </p>
+<p>Done. <img style="border-bottom-style: none; border-left-style: none; border-top-style: none; border-right-style: none" class="wlEmoticon wlEmoticon-smile" alt="Smile" src="/blog/wp-content/uploads/2012/04/wlEmoticon-smile2.png" /></p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1643</post-id>	</item>
+	</channel>
+</rss>

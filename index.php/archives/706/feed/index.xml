@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: 5 Great Online Color Palette selection and design tools	</title>
+	<atom:link href="/blog/index.php/archives/706/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/706</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Sat, 14 Feb 2009 01:55:42 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/706/comment-page-1#comment-2238</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sat, 14 Feb 2009 01:55:42 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/706#comment-2238</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/706/comment-page-1#comment-2237&quot;&gt;Gareth J M Saunders&lt;/a&gt;.
+
+I&#039;ve tried that one in the past (and liked it!), but with the free ones that are available these days, I&#039;m seeing no reason to buy.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/706/comment-page-1#comment-2237">Gareth J M Saunders</a>.</p>
+<p>I&#8217;ve tried that one in the past (and liked it!), but with the free ones that are available these days, I&#8217;m seeing no reason to buy.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Gareth J M Saunders		</title>
+		<link>/blog/index.php/archives/706/comment-page-1#comment-2237</link>
+
+		<dc:creator><![CDATA[Gareth J M Saunders]]></dc:creator>
+		<pubDate>Fri, 13 Feb 2009 22:52:26 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/706#comment-2237</guid>
+
+					<description><![CDATA[I use ColorImpact from Tiger Color (http://www.tigercolor.com/) which is a commercial Windows-only application and therefore obviously not free or Web-based, but worth checking out none-the-less.]]></description>
+			<content:encoded><![CDATA[<p>I use ColorImpact from Tiger Color (<a href="http://www.tigercolor.com/" rel="nofollow ugc">http://www.tigercolor.com/</a>) which is a commercial Windows-only application and therefore obviously not free or Web-based, but worth checking out none-the-less.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: SasyBoy		</title>
+		<link>/blog/index.php/archives/706/comment-page-1#comment-2234</link>
+
+		<dc:creator><![CDATA[SasyBoy]]></dc:creator>
+		<pubDate>Fri, 13 Feb 2009 09:09:35 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/706#comment-2234</guid>
+
+					<description><![CDATA[Sound this will come is useful.  Thanks.]]></description>
+			<content:encoded><![CDATA[<p>Sound this will come is useful.  Thanks.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

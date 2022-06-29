@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>Ajax; JavaScript &#8211; WiredPrairie</title>
+	<atom:link href="/blog/index.php/archives/tag/ajax-javascript/feed" rel="self" type="application/rss+xml" />
+	<link>/blog</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Tue, 08 Feb 2011 14:18:37 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+<site xmlns="com-wordpress:feed-additions:1">193486638</site>	<item>
+		<title>MSBuild Task Reference and Ajax Minification</title>
+		<link>/blog/index.php/archives/1178</link>
+					<comments>/blog/index.php/archives/1178#comments</comments>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sat, 05 Feb 2011 17:53:33 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[Ajax; JavaScript]]></category>
+		<guid isPermaLink="false">/blog/index.php/archives/1178</guid>
+
+					<description><![CDATA[I’m not one for dumping all scripts into a single folder and calling it a day. The template project for ASP.NET MVC 3 does that unfortunately. So, after a bit of cleanup and adding a few more JavaScript libraries that I needed, I’m left with a reasonably organized folder structure. I’ve added a folder for [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><img loading="lazy" style="background-image: none; border-right-width: 0px; margin: ; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2011/02/image2.png" width="470" height="318" /></p>
+<p>I’m not one for dumping all scripts into a single folder and calling it a day. </p>
+<p>The template project for ASP.NET MVC 3 does that unfortunately. So, after a bit of cleanup and adding a few more JavaScript libraries that I needed, I’m left with a reasonably organized folder structure. </p>
+<p>I’ve added a folder for JavaScript files associated with Views, in this case, it’s located here: Scripts\Views\ViewName\…</p>
+<p>I want to create minified versions of scripts, yet not minify scripts that have already been minified by other processes. The Microsoft Ajax Minifier (download <a href="http://aspnet.codeplex.com/releases/view/40584">here</a>) includes a msbuild task, making the effort of creating minified scripts painless.</p>
+<p>I followed these basic instructions for adding the build task:</p>
+<p><a href="http://www.asp.net/ajaxlibrary/AjaxMinQuickStart.ashx">http://www.asp.net/ajaxlibrary/AjaxMinQuickStart.ashx</a></p>
+<p>I did not however, as I mentioned, want to compress all JavaScript files. </p>
+<p>So, based on <a href="http://msdn.microsoft.com/en-us/library/ms171453(v=VS.100).aspx">this</a> documentation (MSBuild Items), I changed the basic <strong>Include</strong> settings to reflect my folder structure.</p>
+<pre class="code">  <span style="color: blue">&lt;</span><span style="color: #a31515">Import </span><span style="color: red">Project</span><span style="color: blue">=</span>&quot;<span style="color: blue">$(MSBuildExtensionsPath)\Microsoft\MicrosoftAjax\ajaxmin.tasks</span>&quot; <span style="color: blue">/&gt;
+  &lt;</span><span style="color: #a31515">Target </span><span style="color: red">Name</span><span style="color: blue">=</span>&quot;<span style="color: blue">AfterBuild</span>&quot;<span style="color: blue">&gt;
+    &lt;</span><span style="color: #a31515">ItemGroup</span><span style="color: blue">&gt;
+      &lt;</span><span style="color: #a31515">JS </span><span style="color: red">Include</span><span style="color: blue">=</span>&quot;<span style="color: blue">Scripts\Views\\**\*.js</span>&quot; <span style="color: red">Exclude</span><span style="color: blue">=</span>&quot;<span style="color: blue">Scripts\Views\\</span><span style="color: blue">**\*.min.js;</span>&quot; <span style="color: blue">/&gt;
+    &lt;/</span><span style="color: #a31515">ItemGroup</span><span style="color: blue">&gt;
+    &lt;</span><span style="color: #a31515">ItemGroup</span><span style="color: blue">&gt;
+      &lt;</span><span style="color: #a31515">CSS </span><span style="color: red">Include</span><span style="color: blue">=</span>&quot;<span style="color: blue">**\*.css</span>&quot; <span style="color: red">Exclude</span><span style="color: blue">=</span>&quot;<span style="color: blue">**\*.min.css</span>&quot; <span style="color: blue">/&gt;
+    &lt;/</span><span style="color: #a31515">ItemGroup</span><span style="color: blue">&gt;
+    &lt;</span><span style="color: #a31515">AjaxMin </span><span style="color: red">JsSourceFiles</span><span style="color: blue">=</span>&quot;<span style="color: blue">@(JS)</span>&quot; <span style="color: red">JsSourceExtensionPattern</span><span style="color: blue">=</span>&quot;<span style="color: blue">\.js$</span>&quot; <span style="color: red">JsTargetExtension</span><span style="color: blue">=</span>&quot;<span style="color: blue">.min.js</span>&quot; <span style="color: red">CssSourceFiles</span><span style="color: blue">=</span>&quot;<span style="color: blue">@(CSS)</span>&quot; <span style="color: red">CssSourceExtensionPattern</span><span style="color: blue">=</span>&quot;<span style="color: blue">\.css$</span>&quot; <span style="color: red">CssTargetExtension</span><span style="color: blue">=</span>&quot;<span style="color: blue">.min.css</span>&quot; <span style="color: blue">/&gt;
+  &lt;/</span><span style="color: #a31515">Target</span><span style="color: blue">&gt;
+
+</span></pre>
+<p>What I wanted specifically, is to only process JavaScript files found in the Scripts\Views subfolders. So, I changed the <strong>Include</strong> attribute to:</p>
+<p><strong>Scripts\Views\**\*.js</strong></p>
+<p>Roughly translated to English, the above:</p>
+<ol>
+<li>Recursively, find all JavaScript files under the folder Scripts\Views </li>
+<li>Skip anything that is already named *.min.js </li>
+<li>Minify. </li>
+</ol>
+]]></content:encoded>
+					
+					<wfw:commentRss>/blog/index.php/archives/1178/feed</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1178</post-id>	</item>
+	</channel>
+</rss>

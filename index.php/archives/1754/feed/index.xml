@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Nest Thermostat API using Node JS and Nest API Update	</title>
+	<atom:link href="/blog/index.php/archives/1754/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/1754</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Fri, 26 Apr 2013 18:05:59 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: Tim Nicholson		</title>
+		<link>/blog/index.php/archives/1754/comment-page-1#comment-23898</link>
+
+		<dc:creator><![CDATA[Tim Nicholson]]></dc:creator>
+		<pubDate>Fri, 26 Apr 2013 18:05:59 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1754#comment-23898</guid>
+
+					<description><![CDATA[Thanks, Aaron. Javascript must include 3 decimal points on the time or something as compared to PHP. What I ended up doing was just dividing the timestamp by 1000 and then it works fine with the PHP date function.
+
+I&#039;ve now got my PHP program working pretty nicely in that it outputs either RSS format or HTML format for displaying in a browser. I&#039;ve got it so I can pass in warning temperatures for low and high and it will include a warning message in the output.
+
+My goal is to get IfThisThenThat (ifttt.com) to monitor the RSS for warning and text me if one is triggered. It should check periodically for a new item in the RSS feed and check for the keyword &quot;Warning&quot; without me having to run my PHP recursively. 
+
+Thanks again for turning me on to the Nest API and providing the details needed to be able to make sense of the data! I didn&#039;t want to have to mess with node.js and this has been a fun little PHP project.]]></description>
+			<content:encoded><![CDATA[<p>Thanks, Aaron. Javascript must include 3 decimal points on the time or something as compared to PHP. What I ended up doing was just dividing the timestamp by 1000 and then it works fine with the PHP date function.</p>
+<p>I&#8217;ve now got my PHP program working pretty nicely in that it outputs either RSS format or HTML format for displaying in a browser. I&#8217;ve got it so I can pass in warning temperatures for low and high and it will include a warning message in the output.</p>
+<p>My goal is to get IfThisThenThat (ifttt.com) to monitor the RSS for warning and text me if one is triggered. It should check periodically for a new item in the RSS feed and check for the keyword &#8220;Warning&#8221; without me having to run my PHP recursively. </p>
+<p>Thanks again for turning me on to the Nest API and providing the details needed to be able to make sense of the data! I didn&#8217;t want to have to mess with node.js and this has been a fun little PHP project.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/1754/comment-page-1#comment-23653</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sun, 21 Apr 2013 15:07:36 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1754#comment-23653</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1754/comment-page-1#comment-23651&quot;&gt;Tim Nicholson&lt;/a&gt;.
+
+The time stamps I&#039;ve looked at are all JavaScript friendly time stamps: new Date(1349697004000).toString() =&gt; &#039;Mon Oct 08 2012 06:50:04 GMT-0500 (Central Daylight Time)&#039;  This post on stackoverflow might help: http://stackoverflow.com/questions/11897331/javascript-gettime-to-php-date  (JavaScript includes milliseconds)]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/1754/comment-page-1#comment-23651">Tim Nicholson</a>.</p>
+<p>The time stamps I&#8217;ve looked at are all JavaScript friendly time stamps: new Date(1349697004000).toString() => &#8216;Mon Oct 08 2012 06:50:04 GMT-0500 (Central Daylight Time)&#8217;  This post on stackoverflow might help: <a href="http://stackoverflow.com/questions/11897331/javascript-gettime-to-php-date" rel="nofollow ugc">http://stackoverflow.com/questions/11897331/javascript-gettime-to-php-date</a>  (JavaScript includes milliseconds)</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Tim Nicholson		</title>
+		<link>/blog/index.php/archives/1754/comment-page-1#comment-23651</link>
+
+		<dc:creator><![CDATA[Tim Nicholson]]></dc:creator>
+		<pubDate>Sun, 21 Apr 2013 15:00:11 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1754#comment-23651</guid>
+
+					<description><![CDATA[Thanks so much for posting this. It has been instrumental to me in writing a simpler PHP/Curl based program to read the thermostat&#039;s temperatures. 
+
+I&#039;m finding very strange timestamp values in the json response, though. Do you have any idea which key has the actual timestamp that the thermostat last reported its temperature? I would have assumed the &quot;shared&quot; key which is the only place where the current temp is stored. However, the timestamps have way too high of numbers in them reporting the year as 44971 instead of 2013. The timestamps in the &quot;track&quot; and other keys are similarly large.]]></description>
+			<content:encoded><![CDATA[<p>Thanks so much for posting this. It has been instrumental to me in writing a simpler PHP/Curl based program to read the thermostat&#8217;s temperatures. </p>
+<p>I&#8217;m finding very strange timestamp values in the json response, though. Do you have any idea which key has the actual timestamp that the thermostat last reported its temperature? I would have assumed the &#8220;shared&#8221; key which is the only place where the current temp is stored. However, the timestamps have way too high of numbers in them reporting the year as 44971 instead of 2013. The timestamps in the &#8220;track&#8221; and other keys are similarly large.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/1754/comment-page-1#comment-20516</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Mon, 31 Dec 2012 01:41:01 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1754#comment-20516</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1754/comment-page-1#comment-20512&quot;&gt;Charlie&lt;/a&gt;.
+
+That&#039;s very cool Charlie!]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/1754/comment-page-1#comment-20512">Charlie</a>.</p>
+<p>That&#8217;s very cool Charlie!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Charlie		</title>
+		<link>/blog/index.php/archives/1754/comment-page-1#comment-20512</link>
+
+		<dc:creator><![CDATA[Charlie]]></dc:creator>
+		<pubDate>Sun, 30 Dec 2012 22:28:59 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1754#comment-20512</guid>
+
+					<description><![CDATA[Cool. I just set up my home automation to put my nest to away mode whenever I put my alarm to away. I found the auto-away a bit too slow to figure it out. So this should work much better. Thanks!]]></description>
+			<content:encoded><![CDATA[<p>Cool. I just set up my home automation to put my nest to away mode whenever I put my alarm to away. I found the auto-away a bit too slow to figure it out. So this should work much better. Thanks!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/1754/comment-page-1#comment-20511</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sun, 30 Dec 2012 22:14:16 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1754#comment-20511</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1754/comment-page-1#comment-20508&quot;&gt;Charlie&lt;/a&gt;.
+
+I&#039;ve never seen it set to anything other than 0.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/1754/comment-page-1#comment-20508">Charlie</a>.</p>
+<p>I&#8217;ve never seen it set to anything other than 0.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/1754/comment-page-1#comment-20510</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sun, 30 Dec 2012 22:11:15 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1754#comment-20510</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1754/comment-page-1#comment-20509&quot;&gt;Charlie&lt;/a&gt;.
+
+D&#039;oh! Parens added by WebStorm&#039;s auto function-needs-parens feature. I guess I must have done that after the last test. Fixed on GitHub and npm.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/1754/comment-page-1#comment-20509">Charlie</a>.</p>
+<p>D&#8217;oh! Parens added by WebStorm&#8217;s auto function-needs-parens feature. I guess I must have done that after the last test. Fixed on GitHub and npm.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Charlie		</title>
+		<link>/blog/index.php/archives/1754/comment-page-1#comment-20509</link>
+
+		<dc:creator><![CDATA[Charlie]]></dc:creator>
+		<pubDate>Sun, 30 Dec 2012 21:51:42 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1754#comment-20509</guid>
+
+					<description><![CDATA[I&#039;m getting an error. You should remove the parens in this line and the next line:
+https://github.com/wiredprairie/unofficial_nodejs_nest/blob/master/index.js#L474]]></description>
+			<content:encoded><![CDATA[<p>I&#8217;m getting an error. You should remove the parens in this line and the next line:<br />
+<a href="https://github.com/wiredprairie/unofficial_nodejs_nest/blob/master/index.js#L474" rel="nofollow ugc">https://github.com/wiredprairie/unofficial_nodejs_nest/blob/master/index.js#L474</a></p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Charlie		</title>
+		<link>/blog/index.php/archives/1754/comment-page-1#comment-20508</link>
+
+		<dc:creator><![CDATA[Charlie]]></dc:creator>
+		<pubDate>Sun, 30 Dec 2012 21:37:07 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1754#comment-20508</guid>
+
+					<description><![CDATA[Thanks. I tried to implement something similar, but your solution is more robust. Do you know what away_setter is for?]]></description>
+			<content:encoded><![CDATA[<p>Thanks. I tried to implement something similar, but your solution is more robust. Do you know what away_setter is for?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/1754/comment-page-1#comment-20507</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sun, 30 Dec 2012 20:41:51 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1754#comment-20507</guid>
+
+					<description><![CDATA[@Charlie, I just added setHome/setAway to the API on Github (and via npm).]]></description>
+			<content:encoded><![CDATA[<p>@Charlie, I just added setHome/setAway to the API on Github (and via npm).</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

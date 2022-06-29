@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: AndroidStudio	</title>
+	<atom:link href="/blog/index.php/archives/2211/2018-02-22-19_43_09-flutter_app1-c__users_aaron_dev_androidstudioprojects_flutter_app1-flutte/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/2211/2018-02-22-19_43_09-flutter_app1-c__users_aaron_dev_androidstudioprojects_flutter_app1-flutte</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Fri, 23 Feb 2018 01:44:06 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+</channel>
+</rss>

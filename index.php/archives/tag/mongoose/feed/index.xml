@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>Mongoose &#8211; WiredPrairie</title>
+	<atom:link href="/blog/index.php/archives/tag/mongoose/feed" rel="self" type="application/rss+xml" />
+	<link>/blog</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Wed, 29 Jun 2022 15:26:05 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+<site xmlns="com-wordpress:feed-additions:1">193486638</site>	<item>
+		<title>Mongoose plugin runs for every new Schema</title>
+		<link>/blog/index.php/archives/1928</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Mon, 26 Aug 2013 12:44:10 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[MongoDB]]></category>
+		<category><![CDATA[Mongoose]]></category>
+		<guid isPermaLink="false">/blog/?p=1928</guid>
+
+					<description><![CDATA[If you want to consistently apply changes to every Schema in Mongoose, it’s simple. Below is an example. var mongoose = require('mongoose'); var checkForHexRegExp = new RegExp("^[0-9a-fA-F]{24}"); mongoose.plugin(function(schema, opts) { schema.statics.isObjectId = function(id) { if(id) { return checkForHexRegExp.test(id); } return false; }; }); var AnimalSchema = mongoose.Schema({ name: String }); var Animal = mongoose.model("Animal", AnimalSchema); [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>If you want to consistently apply changes to every <a href="http://mongoosejs.com/docs/guide.html" target="_blank" rel="noopener">Schema</a> in <a href="http://mongoosejs.com/index.html" target="_blank" rel="noopener">Mongoose</a>, it’s simple. Below is an example.</p>
+
+
+
+<pre class="wp-block-preformatted"><span class="kwrd">var</span> mongoose = require(<span class="str">'mongoose'</span>);
+
+<span class="kwrd">var</span> checkForHexRegExp = <span class="kwrd">new</span> RegExp(<span class="str">"^[0-9a-fA-F]{24}</span>");
+mongoose.plugin(<span class="kwrd">function</span>(schema, opts) { 
+    schema.statics.isObjectId = <span class="kwrd">function</span>(id) { 
+        <span class="kwrd">if</span>(id) { 
+            <span class="kwrd">return</span> checkForHexRegExp.test(id); 
+        } 
+        <span class="kwrd">return</span> <span class="kwrd">false</span>; 
+    }; 
+}); 
+<span class="kwrd">var</span> AnimalSchema = mongoose.Schema({ name: String }); 
+<span class="kwrd">var</span> Animal = mongoose.model(<span class="str">"Animal"</span>, AnimalSchema); <span class="kwrd">if</span>(Animal.isObjectId(<span class="str">"521b4891039857e07aae695a"</span>)) { 
+    <span class="kwrd">var</span> animal = <span class="kwrd">new</span> Animal(); <span class="rem">// something more interesting here ...</span> 
+}</pre>
+
+
+
+<p>The code above uses the <strong>plugin</strong> function on the global mongoose object to add a new plugin. When you add a plugin using that technique, it runs for every schema that is constructed.</p>
+
+
+
+<p>So, in this case, I’ve added a static function to every Schema called <strong>isObjectId</strong> which uses a simple regular expression (<a href="https://github.com/mongodb/js-bson/blob/master/lib/bson/objectid.js#L16" target="_blank" rel="noopener">liberally borrowed</a> straight from the bson ObjectId source code) to test whether a string looks like a valid ObjectId (in fact, a 24 character HEX string).</p>
+
+
+
+<p>Now, as new models are created (<strong>mongoose.model)</strong>, the Schema is first passed to any defined plugins. The plugin adds the new function <strong>isObjectId</strong>. As you can see, the new <strong>Model</strong> has a static method called <strong>isObjectId</strong>.</p>
+
+
+
+<p>The plugin will not affect any Schemas/Models that were defined before the plugin was added.</p>
+
+
+
+<p>Using this technique, you could add standardized fields, indexes, etc. without repeating the same code to all Schemas. Of course, you can also use the <strong>plugin</strong> method defined on a Schema to selectively add functionality.</p>
+
+
+
+<pre class="wp-block-preformatted"><span class="kwrd">var</span> isObjectIdPlugin = <span class="kwrd">function</span>(schema, opts) {
+    schema.statics.isObjectId = <span class="kwrd">function</span>(id) {
+        <span class="kwrd">if</span>(id) {
+            <span class="kwrd">return</span> checkForHexRegExp.test(id);
+        }
+        <span class="kwrd">return</span> <span class="kwrd">false</span>;
+    };
+};
+
+
+<span class="kwrd">var</span> AnimalSchema = mongoose.Schema({
+    name: String
+});
+
+AnimalSchema.plugin(isObjectIdPlugin);
+
+<span class="kwrd">var</span> Animal = mongoose.model(<span class="str">"Animal"</span>, AnimalSchema);
+
+<span class="kwrd">if</span>(Animal.isObjectId(<span class="str">"521b4891039857e07aae695a"</span>)) {
+    <span class="kwrd">var</span> animal = <span class="kwrd">new</span> Animal();
+    <span class="rem">// something more interesting here ...</span>
+}</pre>
+
+
+
+<p></p>
+
+
+
+<p>Above, the code applies the plugin to only the AnimalSchema using the <strong>plugin</strong> method.</p>
+
+
+
+<p><em>Of course, adding the same method statically may not be very useful – instead it probably belongs somewhere in a utility class (and really it’s too bad it’s not just exposed directly by the BSON ObjectId class).</em></p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1928</post-id>	</item>
+	</channel>
+</rss>

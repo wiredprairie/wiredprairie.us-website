@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: SharePoint as an Operating System?	</title>
+	<atom:link href="/blog/index.php/archives/561/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/561</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Sat, 13 Sep 2008 20:58:03 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: Nick Malik		</title>
+		<link>/blog/index.php/archives/561/comment-page-1#comment-768</link>
+
+		<dc:creator><![CDATA[Nick Malik]]></dc:creator>
+		<pubDate>Sat, 13 Sep 2008 20:58:03 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/561#comment-768</guid>
+
+					<description><![CDATA[I don&#039;t think it is appropriate to use the term &quot;operating system&quot; with respect to Sharepoint.  It *is* appropriate to consider Sharepoint as a web application server.  In that way, it is a platform, not an OS.  
+
+Yes, it has some difficulties.  Sharepoint waded into a wide-open area and began meeting needs that were not being well met by other tools.  It is not difficult to install, and is very easy for small IT shops to set up, so folks adopted it.  
+
+Big time.  
+
+Usability for a general purpose tool is never easy, because there may be thousands of different ways that the tool can be used.  For some folks, it will be harder to use than for others.  Tradeoffs happen, usually in favor of the &quot;most common&quot; cases.  But what are the most common cases?  
+
+The problem, with any new product, is that the &quot;most common&quot; scenarios are not known.  It was a gamble.  Now, we *know* what we could only *guess* before, and those problems are being addressed.
+
+No product is perfect.  It takes time.]]></description>
+			<content:encoded><![CDATA[<p>I don&#8217;t think it is appropriate to use the term &#8220;operating system&#8221; with respect to Sharepoint.  It *is* appropriate to consider Sharepoint as a web application server.  In that way, it is a platform, not an OS.  </p>
+<p>Yes, it has some difficulties.  Sharepoint waded into a wide-open area and began meeting needs that were not being well met by other tools.  It is not difficult to install, and is very easy for small IT shops to set up, so folks adopted it.  </p>
+<p>Big time.  </p>
+<p>Usability for a general purpose tool is never easy, because there may be thousands of different ways that the tool can be used.  For some folks, it will be harder to use than for others.  Tradeoffs happen, usually in favor of the &#8220;most common&#8221; cases.  But what are the most common cases?  </p>
+<p>The problem, with any new product, is that the &#8220;most common&#8221; scenarios are not known.  It was a gamble.  Now, we *know* what we could only *guess* before, and those problems are being addressed.</p>
+<p>No product is perfect.  It takes time.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

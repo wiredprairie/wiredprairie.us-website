@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: PRTG Network Monitor for Windows	</title>
+	<atom:link href="/blog/index.php/archives/1901/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/1901</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Fri, 19 Jul 2013 12:52:37 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: PRTG Network Monitor, Part 2 - WiredPrairie		</title>
+		<link>/blog/index.php/archives/1901/comment-page-1#comment-27025</link>
+
+		<dc:creator><![CDATA[PRTG Network Monitor, Part 2 - WiredPrairie]]></dc:creator>
+		<pubDate>Fri, 19 Jul 2013 12:52:37 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1901#comment-27025</guid>
+
+					<description><![CDATA[[...] my last post on the PRTG monitor, I’ve added some more probes (thanks to their offer of a free upgrade to 30 [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] my last post on the PRTG monitor, I’ve added some more probes (thanks to their offer of a free upgrade to 30 [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Tobias		</title>
+		<link>/blog/index.php/archives/1901/comment-page-1#comment-26806</link>
+
+		<dc:creator><![CDATA[Tobias]]></dc:creator>
+		<pubDate>Wed, 17 Jul 2013 08:47:26 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1901#comment-26806</guid>
+
+					<description><![CDATA[Hey Aaron,
+
+thanks for the review!
+You can easily go to your dashboard without login if you add the username and password to your URL like so:
+
+https://your-IP-or-DNSname/dashboard.htm?username=myuser&#038;password=mypassword
+
+You can use the passhash instead of the password as well!
+username=myuser&#038;passhash=hash
+
+Regards!]]></description>
+			<content:encoded><![CDATA[<p>Hey Aaron,</p>
+<p>thanks for the review!<br />
+You can easily go to your dashboard without login if you add the username and password to your URL like so:</p>
+<p><a href="https://your-IP-or-DNSname/dashboard.htm?username=myuser&#038;password=mypassword" rel="nofollow ugc">https://your-IP-or-DNSname/dashboard.htm?username=myuser&#038;password=mypassword</a></p>
+<p>You can use the passhash instead of the password as well!<br />
+username=myuser&amp;passhash=hash</p>
+<p>Regards!</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

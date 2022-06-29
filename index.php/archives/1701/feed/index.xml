@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Windows 8 WinRT/Metro Missing UpdateSourceTrigger	</title>
+	<atom:link href="/blog/index.php/archives/1701/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/1701</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Mon, 08 Apr 2013 20:45:02 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: Petr Bálek		</title>
+		<link>/blog/index.php/archives/1701/comment-page-1#comment-22864</link>
+
+		<dc:creator><![CDATA[Petr Bálek]]></dc:creator>
+		<pubDate>Mon, 08 Apr 2013 20:45:02 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1701#comment-22864</guid>
+
+					<description><![CDATA[Thank you very much! Microsoft dislikes developers :/
+
+Petr
+The Czech Republic]]></description>
+			<content:encoded><![CDATA[<p>Thank you very much! Microsoft dislikes developers :/</p>
+<p>Petr<br />
+The Czech Republic</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: csb		</title>
+		<link>/blog/index.php/archives/1701/comment-page-1#comment-20094</link>
+
+		<dc:creator><![CDATA[csb]]></dc:creator>
+		<pubDate>Sat, 01 Dec 2012 19:43:05 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1701#comment-20094</guid>
+
+					<description><![CDATA[Thanks for this solution.  Windows 8 app support for XAML is totally weak!]]></description>
+			<content:encoded><![CDATA[<p>Thanks for this solution.  Windows 8 app support for XAML is totally weak!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Rodrigo		</title>
+		<link>/blog/index.php/archives/1701/comment-page-1#comment-10413</link>
+
+		<dc:creator><![CDATA[Rodrigo]]></dc:creator>
+		<pubDate>Thu, 01 Nov 2012 20:47:24 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1701#comment-10413</guid>
+
+					<description><![CDATA[Great code thanks]]></description>
+			<content:encoded><![CDATA[<p>Great code thanks</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Frode Nilsen		</title>
+		<link>/blog/index.php/archives/1701/comment-page-1#comment-5009</link>
+
+		<dc:creator><![CDATA[Frode Nilsen]]></dc:creator>
+		<pubDate>Thu, 04 Oct 2012 10:48:18 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1701#comment-5009</guid>
+
+					<description><![CDATA[This shortcoming is one of the more irritating one of Win8 Metro. I haven&#039;t found a better solution than yours yet either - at least this is better than manually coding KeyDown listeners for every TextBox you need this functionality on. Thanks for sharing!]]></description>
+			<content:encoded><![CDATA[<p>This shortcoming is one of the more irritating one of Win8 Metro. I haven&#8217;t found a better solution than yours yet either &#8211; at least this is better than manually coding KeyDown listeners for every TextBox you need this functionality on. Thanks for sharing!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Windows 8 Developer Links &#8211; 2012-08-06Dan Rigby &#124; Dan Rigby		</title>
+		<link>/blog/index.php/archives/1701/comment-page-1#comment-4731</link>
+
+		<dc:creator><![CDATA[Windows 8 Developer Links &#8211; 2012-08-06Dan Rigby &#124; Dan Rigby]]></dc:creator>
+		<pubDate>Mon, 06 Aug 2012 04:26:50 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1701#comment-4731</guid>
+
+					<description><![CDATA[[...] show you how to get your development environment setup to support your porting effort&#8230;&#8221;Windows 8 WinRT/Metro Missing UpdateSourceTrigger (Aaron C)&#8220;If you&#8217;ve done WPF or Silverlight programming, you may have found an occasion [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] show you how to get your development environment setup to support your porting effort&#8230;&#8221;Windows 8 WinRT/Metro Missing UpdateSourceTrigger (Aaron C)&#8220;If you&#8217;ve done WPF or Silverlight programming, you may have found an occasion [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>knockoutjs &#8211; WiredPrairie</title>
+	<atom:link href="/blog/index.php/archives/tag/knockoutjs/feed" rel="self" type="application/rss+xml" />
+	<link>/blog</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Sat, 10 Mar 2012 15:50:58 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+<site xmlns="com-wordpress:feed-additions:1">193486638</site>	<item>
+		<title>Knockout.JS: Dictionary/Index and ObservableArray, Part 2</title>
+		<link>/blog/index.php/archives/1565</link>
+					<comments>/blog/index.php/archives/1565#comments</comments>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sat, 10 Mar 2012 15:50:56 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[dictionary]]></category>
+		<category><![CDATA[hash]]></category>
+		<category><![CDATA[index]]></category>
+		<category><![CDATA[JavaScript]]></category>
+		<category><![CDATA[knockoutjs]]></category>
+		<guid isPermaLink="false">/blog/?p=1565</guid>
+
+					<description><![CDATA[Ryan suggested an alternative in a comment (and corresponding jsFiddle) to the technique that I’d used in my previous Knockout.JS post. Following his suggestion, I made a few tweaks to my original function (and renamed it yet again): ko.observableArray.fn.withIndex = function (keyName) { var index = ko.computed(function () { var list = this() &#124;&#124; []; [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="http://www.knockmeout.net/">Ryan</a> suggested an alternative in a comment (and corresponding jsFiddle) to the technique that I’d used in my previous Knockout.JS <a href="/blog/index.php/archives/1563">post</a>.</p>
+<p>Following his suggestion, I made a few tweaks to my original function (and renamed it yet again):</p>
+<pre class="code">ko.observableArray.fn.withIndex = <span style="color: blue">function </span>(keyName) {        
+    <span style="color: blue">var </span>index = ko.computed(<span style="color: blue">function </span>() {
+        <span style="color: blue">var </span>list = <span style="color: blue">this</span>() || [];    <span style="color: #006400">// the internal array
+        </span><span style="color: blue">var </span>keys = {};              <span style="color: #006400">// a place for key/value
+        </span>ko.utils.arrayForEach(list, <span style="color: blue">function </span>(v) {
+            <span style="color: blue">if </span>(keyName) {          <span style="color: #006400">// if there is a key
+                </span>keys[v[keyName]] = v;    <span style="color: #006400">// use it
+            </span>} <span style="color: blue">else </span>{
+                keys[v] = v;
+            }
+        });
+        <span style="color: blue">return </span>keys;
+    }, <span style="color: blue">this</span>);
+
+    <span style="color: #006400">// also add a handy add on function to find
+    // by key ... uses a closure to access the 
+    // index function created above
+    </span><span style="color: blue">this</span>.findByKey = <span style="color: blue">function </span>(key) {
+        <span style="color: blue">return </span>index()[key];
+    };
+
+    <span style="color: blue">return this</span>;
+};</pre>
+<p>To use, just tag on the withIndex function call:</p>
+<pre class="code"><span style="color: blue">var </span>ViewModel = <span style="color: blue">function </span>() {
+    <span style="color: blue">this</span>.uniqueNumber = 0;
+    <span style="color: blue">this</span>.list = ko.observableArray([]).withIndex(<span style="color: maroon">'id'</span>);
+};</pre>
+<p>In the example above, the objects stored in the “list” observableArray will be indexed by the “id” property.</p>
+<p>By adding the <strong>withIndex</strong> function call to the <strong>observableArray</strong> creation, an additional function is added to the array object, <strong>findByKey</strong>. </p>
+<pre class="code">$(<span style="color: maroon">&quot;#btnAdd&quot;</span>).on(<span style="color: maroon">&quot;click&quot;</span>, <span style="color: blue">function </span>() {
+    <span style="color: blue">var </span>id = vm.uniqueNumber++;
+    vm.list.push({
+            id: id,
+            time: <span style="color: blue">new </span>Date().toLocaleTimeString()});
+    <span style="color: blue">var </span>data = vm.list.findByKey(id);
+});</pre>
+<p>In the above example, a new “log” object is added to the list, and then retrieved by the key a moment later (dumb, yes, but hopefully instructive). </p>
+<p>I intentionally added the findByKey only to array instances that include the indexing functionality added by <strong>withIndex</strong>. One reason was to not have the function be available for all arrays (as it doesn’t work for non-indexed arrays) and the second was that it makes possible a bit of slick JavaScript closure value hiding. This way, the index is never stored anywhere on the original view model. Instead, it’s kept entirely within the closure. </p>
+<p>But there’s more! </p>
+<p>What if you want to have multiple keys or don’t like the name of the find function?</p>
+<p>Here’s the kicked up a notch version:</p>
+<pre class="code">ko.observableArray.fn.withIndex = <span style="color: blue">function </span>(keyName, useName) {
+    <span style="color: #006400">/// keyName == the name of the property used as the index
+    ///            value.
+    /// useName == when false, a function named findByKey 
+    ///            is added to the observableArray.
+    ///            when true, the function is named based
+    ///            on the name of the index property &amp;
+    ///            capitalized (like id becomes findById)
+    </span><span style="color: blue">var </span>index = ko.computed(<span style="color: blue">function </span>() {
+        <span style="color: blue">var </span>list = <span style="color: blue">this</span>() || [];    <span style="color: #006400">// the internal array
+        </span><span style="color: blue">var </span>keys = {};              <span style="color: #006400">// a place for key/value
+        </span>ko.utils.arrayForEach(list, <span style="color: blue">function </span>(v) {
+            <span style="color: blue">if </span>(keyName) {          <span style="color: #006400">// if there is a key
+                </span>keys[v[keyName]] = v;    <span style="color: #006400">// use it
+            </span>} <span style="color: blue">else </span>{
+                keys[v] = v;
+            }
+        });
+        <span style="color: blue">return </span>keys;
+    }, <span style="color: blue">this</span>);
+
+    <span style="color: blue">var </span>fnName = <span style="color: maroon">&quot;&quot;</span>;
+    <span style="color: blue">if </span>(useName &amp;&amp; keyName) {
+        <span style="color: blue">var </span>cap = keyName.substr(0, 1).toUpperCase();
+        <span style="color: blue">if </span>(keyName.length &gt; 1) {
+            fnName = cap + keyName.substring(1);
+        } <span style="color: blue">else </span>{
+            fnName = cap;
+        }
+    } <span style="color: blue">else </span>{
+        fnName = <span style="color: maroon">&quot;Key&quot;</span>;
+    }
+
+    <span style="color: blue">var </span>fnName = <span style="color: maroon">&quot;findBy&quot; </span>+ fnName;
+    <span style="color: blue">this</span>[fnName] = <span style="color: blue">function </span>(key) {
+        <span style="color: blue">return </span>index()[key];
+    };
+
+    <span style="color: blue">return this</span>;
+};</pre>
+<p>This optionally uses the name of the key parameter to build a findByXYZ function using the pattern of findBy{KeyName}. It also capitalizes the function name to follow typical JavaScript coding conventions. Here it is in when initialized:</p>
+<pre class="code"><span style="color: blue">this</span>.list = ko.observableArray([])
+                .withIndex(<span style="color: maroon">'id'</span>, <span style="color: blue">true</span>)
+                .withIndex(<span style="color: maroon">'time'</span>, <span style="color: blue">true</span>);</pre>
+<p>(note that they’re chained above) … and in use:</p>
+<pre class="code"><span style="color: blue">var </span>data = vm.list.findById(id);
+data = vm.list.findByTime(time);</pre>
+<p>You’ll see how the “findBy” functions are named “findById” and “findByTime” as the original call to “withIndex” used the optional second parameter set to <strong>true</strong>. I suppose this follows a tiny bit of the automatic mix-in style of Ruby on Rails (but is optional).</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/blog/index.php/archives/1565/feed</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1565</post-id>	</item>
+		<item>
+		<title>Knockout.JS: AsDictionary</title>
+		<link>/blog/index.php/archives/1563</link>
+					<comments>/blog/index.php/archives/1563#comments</comments>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sat, 10 Mar 2012 02:27:30 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[hash]]></category>
+		<category><![CDATA[JavaScript]]></category>
+		<category><![CDATA[knockoutjs]]></category>
+		<guid isPermaLink="false">/blog/?p=1563</guid>
+
+					<description><![CDATA[I frequently find that I have an array of objects in JavaScript that I want to display in a particular order and also have the ability to quickly locate an object by an ID or a key (and not use the indexOf function). As my recent project is using Knockout.JS, I decided to throw together [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I frequently find that I have an array of objects in JavaScript that I want to display in a particular order and also have the ability to quickly locate an object by an ID or a key (and not use the indexOf function). As my recent project is using <a href="http://knockoutjs.com/">Knockout.JS</a>, I decided to throw together a function that makes having keyed lookups based on an array simple to maintain.</p>
+<p>Here’s an example ViewModel definition:</p>
+<pre class="code"><span style="color: blue">var </span>ViewModel = <span style="color: blue">function </span>() {
+    <span style="color: blue">this</span>.uniqueNumber = ko.observable();
+    <span style="color: blue">this</span>.list = ko.observableArray([]);      
+    <span style="color: blue">this</span>.list_by_keys = <span style="color: blue">this</span>.list.asDictionary(<span style="color: maroon">'id'</span>);
+};</pre>
+<p>The definition includes an array, a unique number (more on that a bit later), the list (to which the code will bind the UI to), and finally the keyed list. </p>
+<p>After a few attempts at a good name, I settled for something that I hated the least. <img style="border-bottom-style: none; border-left-style: none; border-top-style: none; border-right-style: none" class="wlEmoticon wlEmoticon-smile" alt="Smile" src="/blog/wp-content/uploads/2012/03/wlEmoticon-smile1.png" /> In any case, usage is simple. </p>
+<p>After creating the observable array:</p>
+<pre class="code"><span style="color: blue">this</span>.list = ko.observableArray([]); </pre>
+<p>The code creates a second field which will contain all of the objects in the original array, but in a quickly accessible index (thanks to the nature of JavaScript objects). </p>
+<pre class="code"><span style="color: blue">this</span>.list_by_keys = <span style="color: blue">this</span>.list.asDictionary(<span style="color: maroon">'id'</span>);</pre>
+<p>In the preceding line, the <strong>asDictionary </strong>function (which I’ve added to the observableArray definition as you’ll see below) is used and passed the string ‘id’. The ‘id’ is the name of the property of the JavaScript object that is later added to the list that will contain the key (the primary key, although it’s not checked for duplicates). </p>
+<p>As you’ll note below, an instance of the ViewModel is created and bound to the UI.</p>
+<pre class="code"><span style="color: blue">var </span>vm = <span style="color: blue">new </span>ViewModel();
+ko.applyBindings(vm);
+
+$(<span style="color: maroon">&quot;#btnAdd&quot;</span>).on(<span style="color: maroon">&quot;click&quot;</span>, <span style="color: blue">function </span>() {
+    <span style="color: blue">var </span>id = vm.uniqueNumber.inc()();
+    vm.list.push({ id: id, <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; time: <span style="color: blue">new </span>Date().toLocaleTimeString() });
+});</pre>
+<p>With a click of a button (using jQuery syntax), a new sample object containing an ‘id’ and ‘time’ property is added to the master list. When the new object is added, the asDictionary code is executed. Why? Because of the use of the <a href="http://knockoutjs.com/documentation/computedObservables.html">computed</a> function as shown below. Knockout.JS has computed observables which automatically track dependencies and execute any time that the source property changes. In this case, it’s tracking the “this” object, which just happens to be the observableArray (list). </p>
+<pre class="code">ko.observableArray.fn.asDictionary = <span style="color: blue">function </span>(keyName) {
+    <span style="color: blue">return </span>ko.computed(<span style="color: blue">function </span>() {
+        <span style="color: blue">var </span>list = <span style="color: blue">this</span>() || [];    <span style="color: #006400">// the internal array
+        </span><span style="color: blue">var </span>keys = {};              <span style="color: #006400">// a place for key/value
+        </span>ko.utils.arrayForEach(list, <span style="color: blue">function </span>(v) {
+            <span style="color: blue">if </span>(keyName) {          <span style="color: #006400">// if there is a key
+                </span>keys[v[keyName]] = v;    <span style="color: #006400">// use it
+            </span>} <span style="color: blue">else </span>{
+                keys[v] = v;
+            }
+        });
+        <span style="color: blue">return </span>keys;
+    }, <span style="color: blue">this</span>);
+};</pre>
+<p>The function loops through each of the elements of the array and stores each object by the key (if provided, otherwise by the value).&#160; Unfortunately, because there are many ways to adjust an array in JavaScript, this isn’t as efficient as I’d like. Every time something is added to the array, the entire “dictionary” is recreated. While this isn’t terrible in reasonable cases, it’s still a bit annoying. You could add a bit of code to disable the rebuilding conditionally though if performance is going to be a big concern. </p>
+<p>I also was experimenting with a unique number generator. It’s really quite dumb, but I ‘m posting in nonetheless.</p>
+<pre class="code">ko.observable.fn.inc = <span style="color: blue">function </span>(incExtra) {
+    incExtra = incExtra || 1;            
+    <span style="color: blue">var </span>current = <span style="color: blue">this</span>() || 0;
+    current += incExtra;            
+    <span style="color: blue">this</span>(current);
+    <span style="color: blue">return this</span>;
+};
+
+ko.observable.fn.dec = <span style="color: blue">function </span>(decExtra) {
+    <span style="color: blue">return </span>ko.observable.fn.inc(decExtra || -1);
+};</pre>
+<p>To use it and retrieve the value, call it like this:</p>
+<pre class="code"><span style="color: blue">var </span>id = vm.uniqueNumber.inc()();</pre>
+<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px 20px 0px 0px; padding-left: 0px; padding-right: 0px; display: inline; float: left; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" align="left" src="/blog/wp-content/uploads/2012/03/image3.png" width="263" height="233" />The odd syntax calls the inc (increment) function which returns the original object (in support of chaining). Then, to get the value, it calls the properties’ getter function (the second set of parentheses).&#160; (As I said, it was just messing around).</p>
+<p>The HTML for the data binding looked like this:</p>
+<pre class="code">&lt;div class=<span style="color: maroon">&quot;log&quot; </span>data-bind=<span style="color: maroon">&quot;foreach: list&quot; </span>&gt;
+    &lt;div class=<span style="color: maroon">&quot;item&quot;</span>&gt;
+        &lt;span data-bind=<span style="color: maroon">&quot;text: id&quot; </span>class=<span style="color: maroon">&quot;id&quot;</span>&gt;&lt;/span&gt;
+        &lt;span data-bind=<span style="color: maroon">&quot;text: time&quot;</span>&gt;&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+]]></content:encoded>
+					
+					<wfw:commentRss>/blog/index.php/archives/1563/feed</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1563</post-id>	</item>
+	</channel>
+</rss>

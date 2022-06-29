@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: How to find an element in a DataTemplate in WinRT/XAML.	</title>
+	<atom:link href="/blog/index.php/archives/1730/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/1730</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Wed, 05 Jun 2013 07:50:14 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: A		</title>
+		<link>/blog/index.php/archives/1730/comment-page-1#comment-24765</link>
+
+		<dc:creator><![CDATA[A]]></dc:creator>
+		<pubDate>Wed, 05 Jun 2013 07:50:14 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1730#comment-24765</guid>
+
+					<description><![CDATA[Thank you very much]]></description>
+			<content:encoded><![CDATA[<p>Thank you very much</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Windows 8 Developer Links &#8211; 2012-09-10Dan Rigby &#124; Dan Rigby		</title>
+		<link>/blog/index.php/archives/1730/comment-page-1#comment-4870</link>
+
+		<dc:creator><![CDATA[Windows 8 Developer Links &#8211; 2012-09-10Dan Rigby &#124; Dan Rigby]]></dc:creator>
+		<pubDate>Mon, 10 Sep 2012 03:53:19 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1730#comment-4870</guid>
+
+					<description><![CDATA[[...] animations to provide a visual feedback to the user while taking some photos/videos&#8230;&#8221;How to find an element in a DataTemplate in WinRT/XAML (Aaron C)&#8220;Here&#8217;s one way to find a named element in a DataTemplate in XAML in Windows 8 [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] animations to provide a visual feedback to the user while taking some photos/videos&#8230;&#8221;How to find an element in a DataTemplate in WinRT/XAML (Aaron C)&#8220;Here&#8217;s one way to find a named element in a DataTemplate in XAML in Windows 8 [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>Razor &#8211; WiredPrairie</title>
+	<atom:link href="/blog/index.php/archives/tag/razor/feed" rel="self" type="application/rss+xml" />
+	<link>/blog</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Fri, 01 Apr 2011 01:35:03 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+<site xmlns="com-wordpress:feed-additions:1">193486638</site>	<item>
+		<title>Return of syntax highlighting and code completion for KnockoutJS in VS2010 (when using Razor)</title>
+		<link>/blog/index.php/archives/1204</link>
+					<comments>/blog/index.php/archives/1204#comments</comments>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Fri, 01 Apr 2011 01:35:03 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[MVC]]></category>
+		<category><![CDATA[Razor]]></category>
+		<guid isPermaLink="false">/blog/index.php/archives/1204</guid>
+
+					<description><![CDATA[OK, admittedly, this is a workaround for an issue where the syntax of jQuery Templates (used by KnockoutJS) doesn’t lend itself to the most pleasant editing experience in Visual Studio, but eh. This was inspired after talking with Ryan a bit and seeing a recent post on his new web site. Here’s what I came [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>OK, admittedly, this is a workaround for an issue where the syntax of <a href="http://api.jquery.com/jquery.tmpl/">jQuery Templates</a> (used by <a href="http://knockoutjs.com/">KnockoutJS</a>) doesn’t lend itself to the most pleasant editing experience in Visual Studio, but eh.</p>
+<p>This was inspired after talking with Ryan a bit and seeing a recent <a href="http://www.knockmeout.net/2011/03/using-external-jquery-template-files.html">post</a> on his new web site. Here’s what I came up with.</p>
+<p>Following a similar pattern to the <a href="http://msdn.microsoft.com/en-us/library/dd410596.aspx">BeginForm</a> Helper, I created a “Template” helper. It’s simple to use as the code below demonstrates (the example is taken from the KnockoutJS web site).</p>
+<pre class="code"><span style="color: blue">&lt;</span><span style="color: maroon">div </span><span style="color: red">data-bind</span><span style="color: blue">='template: &quot;personTemplate&quot;'&gt; &lt;/</span><span style="color: maroon">div</span><span style="color: blue">&gt;
+
+</span><span style="background: yellow">@</span><span style="color: blue">using </span>(Html.Template(<span style="color: #a31515">&quot;personTemplate&quot;</span>))
+{ <span style="background: yellow">&lt;text&gt;</span>    
+    ${ name } is ${ age } years old
+    <span style="color: blue">&lt;</span><span style="color: maroon">button </span><span style="color: red">data-bind</span><span style="color: blue">='click: makeOlder'&gt;</span>Make older<span style="color: blue">&lt;/</span><span style="color: maroon">button</span><span style="color: blue">&gt;
+</span><span style="background: yellow">&lt;/text&gt;</span> }
+     
+<span style="color: blue">&lt;</span><span style="color: maroon">script </span><span style="color: red">type</span><span style="color: blue">='text/javascript'&gt;
+    var </span>viewModel = {
+        name: ko.observable(<span style="color: maroon">'Bert'</span>),
+        age: ko.observable(78),
+        makeOlder: <span style="color: blue">function </span>() {
+            <span style="color: blue">this</span>.age(<span style="color: blue">this</span>.age() + 1);
+        }
+    };
+    ko.applyBindings(viewModel);
+<span style="color: blue">&lt;/</span><span style="color: maroon">script</span><span style="color: blue">&gt;
+
+</span></pre>
+<p>Sometimes, the Razor compiler/engine is confused by the template syntax however, so to work around that, you’ll need to add the &lt;text&gt;…&lt;/text&gt; block to prevent the template syntax from being parsed as Razor syntax. The example above shouldn’t require it. The one that causes problems I’ve found mostly right now is the conditional {{ if }} block which apparently looks like Razor/C# code, and fails. The &lt;text&gt; tag syntax isn’t tragic. The most annoying part is that it highlights as bright yellow.</p>
+<p>The Template Helper emits the start and end &lt;script&gt; tags appropriately. There’s an optional second parameter that allows the developer to override the default of the type being text/html.</p>
+<pre class="code"><span style="color: blue">using </span>System;
+<span style="color: blue">using </span>System.Collections.Generic;
+<span style="color: blue">using </span>System.Linq;
+<span style="color: blue">using </span>System.Web;
+<span style="color: blue">using </span>System.Web.Mvc;
+
+<span style="color: blue">namespace </span>TestMVC.Web
+{
+    <span style="color: blue">public static class </span><span style="color: #2b91af">MvcExtensions
+    </span>{
+        <span style="color: gray">/// &lt;summary&gt;
+        /// </span><span style="color: green">Automatically generates a script block, useful for non-typical script
+        </span><span style="color: gray">/// </span><span style="color: green">tags that have HTML content inside (like those in jquery templates for example)
+        </span><span style="color: gray">/// </span><span style="color: green">Always use this within using statement as Dispose must be called to properly close
+        </span><span style="color: gray">/// </span><span style="color: green">the script tag.
+        </span><span style="color: gray">/// &lt;/summary&gt;
+        /// &lt;param name=&quot;helper&quot;&gt;</span><span style="color: green">Html Helper object</span><span style="color: gray">&lt;/param&gt;
+        /// &lt;param name=&quot;id&quot;&gt;</span><span style="color: green">The ID for the generated script tag.</span><span style="color: gray">&lt;/param&gt;
+        /// &lt;returns&gt;</span><span style="color: green">TemplateBlock object which must be disposed to properly emit
+        </span><span style="color: gray">/// </span><span style="color: green">the necessary script tags.</span><span style="color: gray">&lt;/returns&gt;
+        </span><span style="color: blue">public static </span><span style="color: #2b91af">TemplateBlock </span>Template(<span style="color: blue">this </span><span style="color: #2b91af">HtmlHelper </span>helper, <span style="color: blue">string </span>id)
+        {
+            <span style="color: blue">return </span>Template(helper, id, <span style="color: #a31515">&quot;&quot;</span>);
+        }
+
+        <span style="color: gray">/// &lt;summary&gt;
+        /// </span><span style="color: green">Automatically generates a script block, useful for non-typical script
+        </span><span style="color: gray">/// </span><span style="color: green">tags that have HTML content inside (like those in jquery templates for example)
+        </span><span style="color: gray">/// </span><span style="color: green">Always use this within using statement as Dispose must be called to properly close
+        </span><span style="color: gray">/// </span><span style="color: green">the script tag.
+        </span><span style="color: gray">/// &lt;/summary&gt;
+        /// &lt;param name=&quot;helper&quot;&gt;</span><span style="color: green">Html Helper object</span><span style="color: gray">&lt;/param&gt;
+        /// &lt;param name=&quot;id&quot;&gt;</span><span style="color: green">The ID for the generated script tag.</span><span style="color: gray">&lt;/param&gt;
+        /// &lt;param name=&quot;type&quot;&gt;</span><span style="color: green">Defaults to text/html, but may be overriden by setting
+        </span><span style="color: gray">/// </span><span style="color: green">this parameter.</span><span style="color: gray">&lt;/param&gt;
+        /// &lt;returns&gt;</span><span style="color: green">TemplateBlock object which must be disposed to properly emit
+        </span><span style="color: gray">/// </span><span style="color: green">the necessary script tags.</span><span style="color: gray">&lt;/returns&gt;
+        </span><span style="color: blue">public static </span><span style="color: #2b91af">TemplateBlock </span>Template(<span style="color: blue">this </span><span style="color: #2b91af">HtmlHelper </span>helper, <span style="color: blue">string </span>id, <span style="color: blue">string </span>type)
+        {
+            <span style="color: blue">return new </span><span style="color: #2b91af">TemplateBlock</span>(helper.ViewContext, id, type);
+        }
+    
+    }
+
+    <span style="color: blue">public class </span><span style="color: #2b91af">TemplateBlock </span>: <span style="color: #2b91af">IDisposable
+    </span>{
+        <span style="color: blue">private bool </span>_disposed = <span style="color: blue">false</span>;
+        <span style="color: blue">public </span><span style="color: #2b91af">ViewContext </span>ViewContext { <span style="color: blue">get</span>; <span style="color: blue">private set</span>; }
+        
+        <span style="color: blue">public </span>TemplateBlock(<span style="color: #2b91af">ViewContext </span>context, <span style="color: blue">string </span>id, <span style="color: blue">string </span>type)
+        {
+            <span style="color: blue">this</span>.ViewContext = context;
+            type = <span style="color: blue">string</span>.IsNullOrWhiteSpace(type) ? <span style="color: #a31515">&quot;text/html&quot; </span>: type;
+            context.Writer.Write(<span style="color: #a31515">&quot;&lt;script type='{0}' id='{1}'&gt;\n&quot;</span>, type, id);
+        }
+
+        <span style="color: blue">private void </span>Disposing(<span style="color: blue">bool </span>disposing)
+        {
+            <span style="color: blue">if </span>(!_disposed)
+            {
+                _disposed = <span style="color: blue">true</span>;
+                ViewContext.Writer.Write(<span style="color: #a31515">&quot;&lt;/script&gt;\n&quot;</span>);
+            }
+        }
+        <span style="color: blue">public void </span>Dispose()
+        {
+            <span style="color: blue">this</span>.Disposing(<span style="color: blue">true</span>);            
+        }
+    }
+
+}</pre>
+<p>Enjoy.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/blog/index.php/archives/1204/feed</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1204</post-id>	</item>
+	</channel>
+</rss>

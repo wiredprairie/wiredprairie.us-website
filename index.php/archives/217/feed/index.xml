@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: The ASP.NET Single Page Interface and AJAX Patterns	</title>
+	<atom:link href="/blog/index.php/archives/217/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/217</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Sat, 07 Jun 2008 01:02:54 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/217/comment-page-1#comment-352</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sat, 07 Jun 2008 01:02:54 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/217#comment-352</guid>
+
+					<description><![CDATA[If you&#039;re &quot;in&quot; to the principles of one GIANT page -- then SPI probably fits -- but I certainly don&#039;t buy into it -- feels like the wrong way to go for nearly any web application. 
+Thanks for your comments! :)]]></description>
+			<content:encoded><![CDATA[<p>If you&#8217;re &#8220;in&#8221; to the principles of one GIANT page &#8212; then SPI probably fits &#8212; but I certainly don&#8217;t buy into it &#8212; feels like the wrong way to go for nearly any web application.<br />
+Thanks for your comments! :)</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Code Principles		</title>
+		<link>/blog/index.php/archives/217/comment-page-1#comment-333</link>
+
+		<dc:creator><![CDATA[Code Principles]]></dc:creator>
+		<pubDate>Thu, 05 Jun 2008 18:46:03 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/217#comment-333</guid>
+
+					<description><![CDATA[I agree with DrPizza, but having to build that idle code and restarting the counter every time is a pain.
+
+Is there any benefit to and SPI?  It might be good for enterprises, then you throw in the fact that only a few developers can work on it, and you screwed.]]></description>
+			<content:encoded><![CDATA[<p>I agree with DrPizza, but having to build that idle code and restarting the counter every time is a pain.</p>
+<p>Is there any benefit to and SPI?  It might be good for enterprises, then you throw in the fact that only a few developers can work on it, and you screwed.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: DrPizza		</title>
+		<link>/blog/index.php/archives/217/comment-page-1#comment-103</link>
+
+		<dc:creator><![CDATA[DrPizza]]></dc:creator>
+		<pubDate>Sat, 10 May 2008 21:40:10 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/217#comment-103</guid>
+
+					<description><![CDATA[&quot;idle&quot; for the purposes of a web page is surely easy?  It&#039;s idle if there are no clicks on the page and no typing, both of which are (in principle) fairly easily trappable.
+ 
+Either way, expiring users&#039; sessions is terrible.]]></description>
+			<content:encoded><![CDATA[<p>&#8220;idle&#8221; for the purposes of a web page is surely easy?  It&#8217;s idle if there are no clicks on the page and no typing, both of which are (in principle) fairly easily trappable.</p>
+<p>Either way, expiring users&#8217; sessions is terrible.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/217/comment-page-1#comment-99</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sat, 10 May 2008 20:22:34 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/217#comment-99</guid>
+
+					<description><![CDATA[DrPizza -- detecting idle is the tricky part -- it&#039;s too bad that the browser can&#039;t natively provide that information efficiently.
+
+Big enterprise class SAN hard disks are anything but cheap -- but I&#039;d definitely agree that just making the thing scale better (maybe caching, more RAM, etc.) would be better than making the user understand the concept of Session.]]></description>
+			<content:encoded><![CDATA[<p>DrPizza &#8212; detecting idle is the tricky part &#8212; it&#8217;s too bad that the browser can&#8217;t natively provide that information efficiently.</p>
+<p>Big enterprise class SAN hard disks are anything but cheap &#8212; but I&#8217;d definitely agree that just making the thing scale better (maybe caching, more RAM, etc.) would be better than making the user understand the concept of Session.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: DrPizza		</title>
+		<link>/blog/index.php/archives/217/comment-page-1#comment-98</link>
+
+		<dc:creator><![CDATA[DrPizza]]></dc:creator>
+		<pubDate>Sat, 10 May 2008 19:06:15 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/217#comment-98</guid>
+
+					<description><![CDATA[Surely the simplest and best solution is to just refresh less often when idle and buy a server that can cope with 1 refresh every 20 minutes from all the idle sessions?  It might be worth making sessions last longer (session state can be dumped into a database anyway, and hard disks are cheap) so that refreshes can be more infrequent, but that&#039;s a minor detail.]]></description>
+			<content:encoded><![CDATA[<p>Surely the simplest and best solution is to just refresh less often when idle and buy a server that can cope with 1 refresh every 20 minutes from all the idle sessions?  It might be worth making sessions last longer (session state can be dumped into a database anyway, and hard disks are cheap) so that refreshes can be more infrequent, but that&#8217;s a minor detail.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

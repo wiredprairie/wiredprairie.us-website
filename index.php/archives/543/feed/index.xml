@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Where do you &#034;event&#034;?	</title>
+	<atom:link href="/blog/index.php/archives/543/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/543</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Sat, 06 Sep 2008 11:34:19 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: poems		</title>
+		<link>/blog/index.php/archives/543/comment-page-1#comment-724</link>
+
+		<dc:creator><![CDATA[poems]]></dc:creator>
+		<pubDate>Sat, 06 Sep 2008 11:34:19 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/543#comment-724</guid>
+
+					<description><![CDATA[neil, if you don&#039;t mind tell me about your rudimentary command implementation created by you]]></description>
+			<content:encoded><![CDATA[<p>neil, if you don&#8217;t mind tell me about your rudimentary command implementation created by you</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Neil Mosafi		</title>
+		<link>/blog/index.php/archives/543/comment-page-1#comment-717</link>
+
+		<dc:creator><![CDATA[Neil Mosafi]]></dc:creator>
+		<pubDate>Fri, 05 Sep 2008 13:51:50 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/543#comment-717</guid>
+
+					<description><![CDATA[You might be interested, I have built a rudimentary command implementation in my Silverstone framework (which I struggle to maintain anymore!)...
+
+http://neilmosafi.blogspot.com/2008/03/very-simple-icommand-implementation-for.html]]></description>
+			<content:encoded><![CDATA[<p>You might be interested, I have built a rudimentary command implementation in my Silverstone framework (which I struggle to maintain anymore!)&#8230;</p>
+<p><a href="http://neilmosafi.blogspot.com/2008/03/very-simple-icommand-implementation-for.html" rel="nofollow ugc">http://neilmosafi.blogspot.com/2008/03/very-simple-icommand-implementation-for.html</a></p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Are web developers &#8220;stupid and arrogant&#8221;?	</title>
+	<atom:link href="/blog/index.php/archives/861/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/861</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Sat, 28 Nov 2009 15:32:39 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/861/comment-page-1#comment-2843</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sat, 28 Nov 2009 15:32:39 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/861#comment-2843</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/861/comment-page-1#comment-2842&quot;&gt;Neil Weber&lt;/a&gt;.
+
+What about Flash/Flex or Silverlight as the new &quot;Java&quot; -- a better Java?]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/861/comment-page-1#comment-2842">Neil Weber</a>.</p>
+<p>What about Flash/Flex or Silverlight as the new &#8220;Java&#8221; &#8212; a better Java?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Neil Weber		</title>
+		<link>/blog/index.php/archives/861/comment-page-1#comment-2842</link>
+
+		<dc:creator><![CDATA[Neil Weber]]></dc:creator>
+		<pubDate>Sat, 28 Nov 2009 05:22:18 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/861#comment-2842</guid>
+
+					<description><![CDATA[Personally, I have never felt there was a problem with deploying rich clients.  It&#039;s very easy for a desktop application to download a newer version of itself in the background and then either, with user permission, install the new version right away or install it on next launch.  This is exactly what Firefox, Paint.NET, and numerous other applications do.
+
+The thing about web applications is that they are perceived to be easier to write than are desktop applications.  In my experience of writing both, I have found that desktop applications take a lot less development effort.
+
+One reason web applications are still necessary is because there is no runtime environment that is truly cross platform.  Java is close, but Apple has consistently not kept up to date with it&#039;s JRE.]]></description>
+			<content:encoded><![CDATA[<p>Personally, I have never felt there was a problem with deploying rich clients.  It&#8217;s very easy for a desktop application to download a newer version of itself in the background and then either, with user permission, install the new version right away or install it on next launch.  This is exactly what Firefox, Paint.NET, and numerous other applications do.</p>
+<p>The thing about web applications is that they are perceived to be easier to write than are desktop applications.  In my experience of writing both, I have found that desktop applications take a lot less development effort.</p>
+<p>One reason web applications are still necessary is because there is no runtime environment that is truly cross platform.  Java is close, but Apple has consistently not kept up to date with it&#8217;s JRE.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

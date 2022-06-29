@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Great Silverlight technology demonstration	</title>
+	<atom:link href="/blog/index.php/archives/214/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/214</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Thu, 08 May 2008 21:27:56 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: Ramon de Klein		</title>
+		<link>/blog/index.php/archives/214/comment-page-1#comment-87</link>
+
+		<dc:creator><![CDATA[Ramon de Klein]]></dc:creator>
+		<pubDate>Thu, 08 May 2008 21:27:56 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/214#comment-87</guid>
+
+					<description><![CDATA[Great link!!! I work for a customer that is working in the healthcare business and is thinking about WPF. This information is very valuable for me.]]></description>
+			<content:encoded><![CDATA[<p>Great link!!! I work for a customer that is working in the healthcare business and is thinking about WPF. This information is very valuable for me.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Silverlight Sample &#171; Rams On It - .NET		</title>
+		<link>/blog/index.php/archives/214/comment-page-1#comment-86</link>
+
+		<dc:creator><![CDATA[Silverlight Sample &#171; Rams On It - .NET]]></dc:creator>
+		<pubDate>Thu, 08 May 2008 17:47:21 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/214#comment-86</guid>
+
+					<description><![CDATA[[...] Great Silverlight technology demonstration [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] Great Silverlight technology demonstration [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

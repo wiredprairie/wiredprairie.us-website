@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>Code &#8211; WiredPrairie</title>
+	<atom:link href="/blog/index.php/archives/tag/code/feed" rel="self" type="application/rss+xml" />
+	<link>/blog</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Fri, 11 Nov 2016 19:22:09 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+<site xmlns="com-wordpress:feed-additions:1">193486638</site>	<item>
+		<title>Customize the External VS Code Console</title>
+		<link>/blog/index.php/archives/2070</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Fri, 11 Nov 2016 13:35:16 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[Code]]></category>
+		<category><![CDATA[Visual Studio]]></category>
+		<guid isPermaLink="false">/blog/?p=2070</guid>
+
+					<description><![CDATA[I have Visual Studio 2015 installed and when I launch a command prompt on Windows, it’s generally the Visual Studio 2015 Developer Command prompt (in fact, I have it pinned to my Windows 10 task bar). On Windows, using Visual Studio Code 1.7+, pressing SHIFT+CTRL+C opens a Windows Command prompt from the root directory of [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I have Visual Studio 2015 installed and when I launch a command prompt on Windows, it’s generally the Visual Studio 2015 Developer Command prompt (in fact, I have it pinned to my Windows 10 task bar).</p>
+<p><a href="/blog/wp-content/uploads/2016/11/image.png"><img loading="lazy" style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border: 0px;" title="image" src="/blog/wp-content/uploads/2016/11/image_thumb.png" alt="image" width="380" height="271" border="0" /></a></p>
+<p>On Windows, using Visual Studio Code 1.7+, pressing SHIFT+CTRL+C opens a Windows Command prompt from the root directory of your opened folder. It’s super useful.</p>
+<p>I wanted the Developer Command prompt to open instead of a standard command prompt.</p>
+<p>To change that, open the User Settings:</p>
+<p><a href="/blog/wp-content/uploads/2016/11/image-1.png"><img loading="lazy" style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border: 0px;" title="image" src="/blog/wp-content/uploads/2016/11/image_thumb-1.png" alt="image" width="400" height="460" border="0" /></a></p>
+<p>Add the following:</p>
+<pre>
+"terminal.external.windowsExec": "C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\Tools\\VsDevCmd.bat"
+</pre>
+<p>Of course, you can use other batch or command files to customize the prompt. I just wanted all of the standard developer tools I have installed to be available.</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2070</post-id>	</item>
+	</channel>
+</rss>

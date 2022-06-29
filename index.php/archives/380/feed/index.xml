@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Coding Challenge #11	</title>
+	<atom:link href="/blog/index.php/archives/380/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/380</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Fri, 04 Jul 2008 20:36:06 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: poems		</title>
+		<link>/blog/index.php/archives/380/comment-page-1#comment-455</link>
+
+		<dc:creator><![CDATA[poems]]></dc:creator>
+		<pubDate>Fri, 04 Jul 2008 20:36:06 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/380#comment-455</guid>
+
+					<description><![CDATA[I was not aware that If two segments  have similar length I should return the last segment found.  Thanks for this tip]]></description>
+			<content:encoded><![CDATA[<p>I was not aware that If two segments  have similar length I should return the last segment found.  Thanks for this tip</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

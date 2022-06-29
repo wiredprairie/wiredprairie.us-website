@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Nest Thermostat Review, Update #6	</title>
+	<atom:link href="/blog/index.php/archives/1420/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/1420</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Mon, 30 Apr 2012 14:14:55 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: Andrew		</title>
+		<link>/blog/index.php/archives/1420/comment-page-1#comment-4471</link>
+
+		<dc:creator><![CDATA[Andrew]]></dc:creator>
+		<pubDate>Mon, 30 Apr 2012 14:14:55 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1420#comment-4471</guid>
+
+					<description><![CDATA[That power stealing of the Nest was a real problem for me.  We did nor know it for a few weeks but the Nest&#039;s power stealing was pulsing the outside compressor on and off (my A/C tech &quot;oh, that&#039;s not good when I played an audio of it&quot;).  He determined that the transformer in the Rheem compressor was not capable of matching the Nest&#039;s power demands (he said the unit outside was 24 V/ 40 VA and the Nest would need 24 V/75 VA) and was tripping the unit on and off.  Had this been a roof mount like in many condos in FL it would have gone undetected until the unit failed.   I spent my money of two tech visits to figure out the problem, none of the Nest solutions on the website worked and my AC company was not impressed and did not like the thing and noticed it could not manage the newer high efficiency units they sell now.
+The really stupid thing, and my real problem with Nest Labs, is that Nest Labs refuses to take back the unit since it is beyond the &quot;30-day&quot; return window!  They are already hiding behind &quot;policy&quot; when dealing with their early adopters.  Basically Nest Labs is an arrogant little company with it&#039;s head in the sand fooling around with people&#039;s very expensive HVAC systems.   Definitely a beta product.   Stay away.]]></description>
+			<content:encoded><![CDATA[<p>That power stealing of the Nest was a real problem for me.  We did nor know it for a few weeks but the Nest&#8217;s power stealing was pulsing the outside compressor on and off (my A/C tech &#8220;oh, that&#8217;s not good when I played an audio of it&#8221;).  He determined that the transformer in the Rheem compressor was not capable of matching the Nest&#8217;s power demands (he said the unit outside was 24 V/ 40 VA and the Nest would need 24 V/75 VA) and was tripping the unit on and off.  Had this been a roof mount like in many condos in FL it would have gone undetected until the unit failed.   I spent my money of two tech visits to figure out the problem, none of the Nest solutions on the website worked and my AC company was not impressed and did not like the thing and noticed it could not manage the newer high efficiency units they sell now.<br />
+The really stupid thing, and my real problem with Nest Labs, is that Nest Labs refuses to take back the unit since it is beyond the &#8220;30-day&#8221; return window!  They are already hiding behind &#8220;policy&#8221; when dealing with their early adopters.  Basically Nest Labs is an arrogant little company with it&#8217;s head in the sand fooling around with people&#8217;s very expensive HVAC systems.   Definitely a beta product.   Stay away.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: MarCow		</title>
+		<link>/blog/index.php/archives/1420/comment-page-1#comment-4074</link>
+
+		<dc:creator><![CDATA[MarCow]]></dc:creator>
+		<pubDate>Fri, 24 Feb 2012 15:14:25 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1420#comment-4074</guid>
+
+					<description><![CDATA[Me too - it&#039;s very unpredictable.  I do have a couple of small cats in the house, but given the location of my Nests I think the cats would be far below its field of view at all times.
+
+Next week I&#039;m hoping to have time to play with your Nest client code.  I should be able to switch Nest to/from Away mode based on whether my iPhone is visible on my Wi-Fi network (assuming that&#039;s reliable and that my iPhone really is connected to the Wi-Fi network all the time when I&#039;m at home - don&#039;t know if it ever disconnects to save power), or based on email alerts from my security system.  If I can get this working, then it would beat Auto Away hands-down in my opinion!]]></description>
+			<content:encoded><![CDATA[<p>Me too &#8211; it&#8217;s very unpredictable.  I do have a couple of small cats in the house, but given the location of my Nests I think the cats would be far below its field of view at all times.</p>
+<p>Next week I&#8217;m hoping to have time to play with your Nest client code.  I should be able to switch Nest to/from Away mode based on whether my iPhone is visible on my Wi-Fi network (assuming that&#8217;s reliable and that my iPhone really is connected to the Wi-Fi network all the time when I&#8217;m at home &#8211; don&#8217;t know if it ever disconnects to save power), or based on email alerts from my security system.  If I can get this working, then it would beat Auto Away hands-down in my opinion!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/1420/comment-page-1#comment-4071</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Thu, 23 Feb 2012 11:50:08 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1420#comment-4071</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1420/comment-page-1#comment-4070&quot;&gt;MarCow&lt;/a&gt;.
+
+Thanks for the very thoughtful comment Marcow.  I still don&#039;t understand auto away and it&#039;s triggers. I&#039;d expect some consistency day to day, but it&#039;s not.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/1420/comment-page-1#comment-4070">MarCow</a>.</p>
+<p>Thanks for the very thoughtful comment Marcow.  I still don&#8217;t understand auto away and it&#8217;s triggers. I&#8217;d expect some consistency day to day, but it&#8217;s not.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: MarCow		</title>
+		<link>/blog/index.php/archives/1420/comment-page-1#comment-4070</link>
+
+		<dc:creator><![CDATA[MarCow]]></dc:creator>
+		<pubDate>Wed, 22 Feb 2012 14:57:35 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1420#comment-4070</guid>
+
+					<description><![CDATA[I&#039;ve got two Nests - one for my downstairs zone and one for upstairs.  I installed them on New Year&#039;s Eve, so with a late night and a holiday the next day it threw the initial schedule learning for a loop (I was surprised that it claimed to have learned my schedule after only one weekend day and one weekday - seems a little presumptuous that every owner works a standard work week).  Since this initial schedule was not the norm, I set up a correct schedule manually via the Nest web site.
+
+Since then, things have been working fairly well.  I&#039;ve had a couple of instances where the learning slipped up and made a wacky change, forgot a set point, etc. but I decided to persevere, especially given the relatively frequent software updates.  This Monday was Presidents&#039; Day, and so my schedule was different from the last several weeks; I adjusted the downstairs thermostat so it was running at a higher heating set point for the day.  The following day I checked the Nest status on my way to work via the iPhone app, and was surprised to see the heating was running downstairs at the temperature I&#039;d set the previous day.  I checked the schedule, and saw that Nest had &quot;learned&quot; that I wanted my heating turned up to 68 degrees during the day every day of the week!  This was after just one day of a modified schedule, and for a holiday too.  You&#039;d think Nest, being web-connected, would understand holiday dates and ignore any unusual activity on those days.  Even without that, it shouldn&#039;t change my entire weekday schedule just because of one day&#039;s temperature change - I thought it was supposed to detect behavioral patterns over time.
+
+So, I decided my perseverance with schedule learning wasn&#039;t worth the hassle that came with it; schedule learning is now paused on both my Nests.  I&#039;ve fixed the schedule manually, and all is now well.  As an attractive, programmable and web-connected thermostat it&#039;s still a great albeit pricey piece of equipment - programming is especially convenient and far quicker than thermostats I&#039;ve owned before.  The schedule learning just appears to be broken and/or misguided - it simply doesn&#039;t work in its current form, and at best requires a lot of babysitting.  As a learner, it&#039;s definitely more like a toddler (requiring constant correction) than the college math whiz Nest portray it as.  I&#039;m not going to bother until it grows up a bit.
+
+Here&#039;s what I would suggest to Nest; 1) have schedule learning monitor the owner&#039;s habits for 2 weeks - don&#039;t rush the learning process; 2) provide an option to stick to the learned schedule once that 2-week period is up, so it amounts to an easy initial setup method rather than an ongoing learning process; 3) consider monitoring user habits compared to their schedule, and notify them if it looks like the two are out of whack - give a simple yes/no option to update to the new schedule, possibly even showing it too them first via email, app notification, etc. instead of assuming they want it applied; 4) if learning does indeed stay as an ongoing process, fix the algorithm so it gives appropriate weighting to rare temperature changes; 5) have the Nest understand holidays, and give the option to exclude them from learning (or just do that anyway by default).
+
+My other issue is Auto Away.  It takes 4+ hours to turn on, if it ever turns on at all, and sometimes turns off unexpectedly.  I think they could do something better and potentially simpler here than the current ; look for my family&#039;s iPhones on the Wi-Fi network for example, and if it doesn&#039;t see them switch to Away mode; integrate with my security system which is always armed Away when I&#039;m out of the house.  These two options would switch it to Away almost immediately, rather than continuing to run my heating for 4 hours after I leave.  Again, this is too much babysitting to keep track of whether Auto Away has kicked in, and also means I have to adjust my schedule so it turns down the heat around about the time I leave the house so I&#039;m not burning fuel for 4 extra hours every day.  This seems counter-productive; why not have a more reliable approach to detecting whether I&#039;m away, and allow me just to set daytime and nighttime temperatures - if that were the case, it would turn the heating down whenever I leave the house, and whenever I came back it would go back to an appropriate temperature for the time of day.  I shouldn&#039;t have to schedule (or have the Nest learn) a heating set point change around the time I leave the house - it should *know* when I&#039;ve left the house the moment it happens, and switch to an away temp immediately.
+
+As you can probably tell, I&#039;m on the verge of disabling Auto Away too.  As soon as Nest has an API, I&#039;ll be programming to it to switch Away mode on/off based on my home security system arming status (the system sends email notifications of arming events, so I can switch the Nest status based on those assuming I can figure out how to intercept them, such as via IMAP).  With your reverse-engineered API I might be able to do that now, even before a supported version comes along from Nest.
+
+So, I agree that some of the features Nest is really pushing are not ready for prime time.  They&#039;ve gone with a complex approach for the schedule learning and auto-away (multiple sensors, sophisticated algorithms, etc.) in an attempt to keep things simple for the user.  This would be great if they worked well, which today they do not.  I think the approaches they&#039;ve used under the hood to solve these problems are overly complicated as highlighted by the current problems with them, and it seems to me they could be doing something simpler such as my suggestions above.  Apart from these gripes I do really like my Nests, but users who aren&#039;t as patient with new technology as I am must be getting frustrated with the quirks, and potentially even seeing their heating bills going up instead of down.]]></description>
+			<content:encoded><![CDATA[<p>I&#8217;ve got two Nests &#8211; one for my downstairs zone and one for upstairs.  I installed them on New Year&#8217;s Eve, so with a late night and a holiday the next day it threw the initial schedule learning for a loop (I was surprised that it claimed to have learned my schedule after only one weekend day and one weekday &#8211; seems a little presumptuous that every owner works a standard work week).  Since this initial schedule was not the norm, I set up a correct schedule manually via the Nest web site.</p>
+<p>Since then, things have been working fairly well.  I&#8217;ve had a couple of instances where the learning slipped up and made a wacky change, forgot a set point, etc. but I decided to persevere, especially given the relatively frequent software updates.  This Monday was Presidents&#8217; Day, and so my schedule was different from the last several weeks; I adjusted the downstairs thermostat so it was running at a higher heating set point for the day.  The following day I checked the Nest status on my way to work via the iPhone app, and was surprised to see the heating was running downstairs at the temperature I&#8217;d set the previous day.  I checked the schedule, and saw that Nest had &#8220;learned&#8221; that I wanted my heating turned up to 68 degrees during the day every day of the week!  This was after just one day of a modified schedule, and for a holiday too.  You&#8217;d think Nest, being web-connected, would understand holiday dates and ignore any unusual activity on those days.  Even without that, it shouldn&#8217;t change my entire weekday schedule just because of one day&#8217;s temperature change &#8211; I thought it was supposed to detect behavioral patterns over time.</p>
+<p>So, I decided my perseverance with schedule learning wasn&#8217;t worth the hassle that came with it; schedule learning is now paused on both my Nests.  I&#8217;ve fixed the schedule manually, and all is now well.  As an attractive, programmable and web-connected thermostat it&#8217;s still a great albeit pricey piece of equipment &#8211; programming is especially convenient and far quicker than thermostats I&#8217;ve owned before.  The schedule learning just appears to be broken and/or misguided &#8211; it simply doesn&#8217;t work in its current form, and at best requires a lot of babysitting.  As a learner, it&#8217;s definitely more like a toddler (requiring constant correction) than the college math whiz Nest portray it as.  I&#8217;m not going to bother until it grows up a bit.</p>
+<p>Here&#8217;s what I would suggest to Nest; 1) have schedule learning monitor the owner&#8217;s habits for 2 weeks &#8211; don&#8217;t rush the learning process; 2) provide an option to stick to the learned schedule once that 2-week period is up, so it amounts to an easy initial setup method rather than an ongoing learning process; 3) consider monitoring user habits compared to their schedule, and notify them if it looks like the two are out of whack &#8211; give a simple yes/no option to update to the new schedule, possibly even showing it too them first via email, app notification, etc. instead of assuming they want it applied; 4) if learning does indeed stay as an ongoing process, fix the algorithm so it gives appropriate weighting to rare temperature changes; 5) have the Nest understand holidays, and give the option to exclude them from learning (or just do that anyway by default).</p>
+<p>My other issue is Auto Away.  It takes 4+ hours to turn on, if it ever turns on at all, and sometimes turns off unexpectedly.  I think they could do something better and potentially simpler here than the current ; look for my family&#8217;s iPhones on the Wi-Fi network for example, and if it doesn&#8217;t see them switch to Away mode; integrate with my security system which is always armed Away when I&#8217;m out of the house.  These two options would switch it to Away almost immediately, rather than continuing to run my heating for 4 hours after I leave.  Again, this is too much babysitting to keep track of whether Auto Away has kicked in, and also means I have to adjust my schedule so it turns down the heat around about the time I leave the house so I&#8217;m not burning fuel for 4 extra hours every day.  This seems counter-productive; why not have a more reliable approach to detecting whether I&#8217;m away, and allow me just to set daytime and nighttime temperatures &#8211; if that were the case, it would turn the heating down whenever I leave the house, and whenever I came back it would go back to an appropriate temperature for the time of day.  I shouldn&#8217;t have to schedule (or have the Nest learn) a heating set point change around the time I leave the house &#8211; it should *know* when I&#8217;ve left the house the moment it happens, and switch to an away temp immediately.</p>
+<p>As you can probably tell, I&#8217;m on the verge of disabling Auto Away too.  As soon as Nest has an API, I&#8217;ll be programming to it to switch Away mode on/off based on my home security system arming status (the system sends email notifications of arming events, so I can switch the Nest status based on those assuming I can figure out how to intercept them, such as via IMAP).  With your reverse-engineered API I might be able to do that now, even before a supported version comes along from Nest.</p>
+<p>So, I agree that some of the features Nest is really pushing are not ready for prime time.  They&#8217;ve gone with a complex approach for the schedule learning and auto-away (multiple sensors, sophisticated algorithms, etc.) in an attempt to keep things simple for the user.  This would be great if they worked well, which today they do not.  I think the approaches they&#8217;ve used under the hood to solve these problems are overly complicated as highlighted by the current problems with them, and it seems to me they could be doing something simpler such as my suggestions above.  Apart from these gripes I do really like my Nests, but users who aren&#8217;t as patient with new technology as I am must be getting frustrated with the quirks, and potentially even seeing their heating bills going up instead of down.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: GAR		</title>
+		<link>/blog/index.php/archives/1420/comment-page-1#comment-3864</link>
+
+		<dc:creator><![CDATA[GAR]]></dc:creator>
+		<pubDate>Wed, 11 Jan 2012 04:57:23 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1420#comment-3864</guid>
+
+					<description><![CDATA[My two Nest thermostats worked well for several days...then the fan started running continuously on the one attached to my older furnace.   I called support and they had me run several tests, then told me there was a short in the Nest base so they would send me a new one.  The guy took down my shipping info, but then after being put on hold so he could check with their tech department, he came back on and told me they couldn&#039;t help me after all.  He said they&#039;d gotten several complaints like this, and realized that old systems like mine have voltage spikes from the furnace transformer.  That fuses the circuit, so if they sent me a new one it would just happen again.   Now I have to decide:  get a refund, or spent $ on replacing the transformer and hope that really does solve the problem.]]></description>
+			<content:encoded><![CDATA[<p>My two Nest thermostats worked well for several days&#8230;then the fan started running continuously on the one attached to my older furnace.   I called support and they had me run several tests, then told me there was a short in the Nest base so they would send me a new one.  The guy took down my shipping info, but then after being put on hold so he could check with their tech department, he came back on and told me they couldn&#8217;t help me after all.  He said they&#8217;d gotten several complaints like this, and realized that old systems like mine have voltage spikes from the furnace transformer.  That fuses the circuit, so if they sent me a new one it would just happen again.   Now I have to decide:  get a refund, or spent $ on replacing the transformer and hope that really does solve the problem.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: johnk		</title>
+		<link>/blog/index.php/archives/1420/comment-page-1#comment-3861</link>
+
+		<dc:creator><![CDATA[johnk]]></dc:creator>
+		<pubDate>Tue, 10 Jan 2012 23:03:28 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1420#comment-3861</guid>
+
+					<description><![CDATA[The user community really should set up a NEST forum.  Between bug discovery, behavior questions, tips/tricks, and now the API there is a lot going on and it&#039;s spread in many places.  That being said, I have a question regarding NEST behavior on recovery from a setback.  How long does it wait before engaging 2nd stage heat?  The NEST website explains how it should work, but I&#039;d like to know what peoples experience is with 2nd stage as related to heat pumps and resistive electric 2nd stage.  Ability to have good control over 2nd stage I believe is critical to achieving energy savings with heat pumps.  It would appear nest is headed in the right direction in this area but without a detailed technical guide or installers manual available, it&#039;s not clear how the function (and the related aux lockout) functions work.  Does lockout use the web interface to get weather data?
+http://support.nest.com/customer/portal/articles/210646-how-does-nest-manage-second-stage-and-auxiliary-heat-]]></description>
+			<content:encoded><![CDATA[<p>The user community really should set up a NEST forum.  Between bug discovery, behavior questions, tips/tricks, and now the API there is a lot going on and it&#8217;s spread in many places.  That being said, I have a question regarding NEST behavior on recovery from a setback.  How long does it wait before engaging 2nd stage heat?  The NEST website explains how it should work, but I&#8217;d like to know what peoples experience is with 2nd stage as related to heat pumps and resistive electric 2nd stage.  Ability to have good control over 2nd stage I believe is critical to achieving energy savings with heat pumps.  It would appear nest is headed in the right direction in this area but without a detailed technical guide or installers manual available, it&#8217;s not clear how the function (and the related aux lockout) functions work.  Does lockout use the web interface to get weather data?<br />
+<a href="http://support.nest.com/customer/portal/articles/210646-how-does-nest-manage-second-stage-and-auxiliary-heat-" rel="nofollow ugc">http://support.nest.com/customer/portal/articles/210646-how-does-nest-manage-second-stage-and-auxiliary-heat-</a></p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Jon H		</title>
+		<link>/blog/index.php/archives/1420/comment-page-1#comment-3860</link>
+
+		<dc:creator><![CDATA[Jon H]]></dc:creator>
+		<pubDate>Tue, 10 Jan 2012 22:33:06 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1420#comment-3860</guid>
+
+					<description><![CDATA[Status update on the fan running continuously issue - I contacted support by phone and got right through to a support rep who took me through troubleshooting the Nest.  It turns out that there was apparently something wrong with the base, as whatever wire was contacted to the &quot;G&quot; port would be activated.  It turns out that I didn&#039;t really need the &quot;G&quot; wire to be connected on a gas furnace if I only wanted the fan to run when the heat is on.  Therefore, I was able to disconnect it while they sent me a new unit which arrived already today.
+
+I installed it and it appears to be running properly.  I guess that the use of the Rc line for a trickle charge is not an issue with a gas forced air system.  Hopefully this unit will continue to work properly and Nest will refine their software to accomplish what they more-or-less advertised.
+
+Side note - interestingly, Nest support contacted me about my website submitted requests approx. 10 min after I got off the phone with the support call I initiated.  Kind of an interesting coincidence.]]></description>
+			<content:encoded><![CDATA[<p>Status update on the fan running continuously issue &#8211; I contacted support by phone and got right through to a support rep who took me through troubleshooting the Nest.  It turns out that there was apparently something wrong with the base, as whatever wire was contacted to the &#8220;G&#8221; port would be activated.  It turns out that I didn&#8217;t really need the &#8220;G&#8221; wire to be connected on a gas furnace if I only wanted the fan to run when the heat is on.  Therefore, I was able to disconnect it while they sent me a new unit which arrived already today.</p>
+<p>I installed it and it appears to be running properly.  I guess that the use of the Rc line for a trickle charge is not an issue with a gas forced air system.  Hopefully this unit will continue to work properly and Nest will refine their software to accomplish what they more-or-less advertised.</p>
+<p>Side note &#8211; interestingly, Nest support contacted me about my website submitted requests approx. 10 min after I got off the phone with the support call I initiated.  Kind of an interesting coincidence.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/1420/comment-page-1#comment-3850</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Mon, 09 Jan 2012 02:18:04 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1420#comment-3850</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1420/comment-page-1#comment-3849&quot;&gt;Marc&lt;/a&gt;.
+
+Thanks for the kind words Marc! My goal is to educate those who have not yet decided to drop the cash for one or more of these thermostats, so that they can make a more informed decision while the Nest thermostat is not ready for prime-time.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/1420/comment-page-1#comment-3849">Marc</a>.</p>
+<p>Thanks for the kind words Marc! My goal is to educate those who have not yet decided to drop the cash for one or more of these thermostats, so that they can make a more informed decision while the Nest thermostat is not ready for prime-time.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Marc		</title>
+		<link>/blog/index.php/archives/1420/comment-page-1#comment-3849</link>
+
+		<dc:creator><![CDATA[Marc]]></dc:creator>
+		<pubDate>Sun, 08 Jan 2012 23:31:58 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1420#comment-3849</guid>
+
+					<description><![CDATA[Aaron,
+
+So glad I found your blog. I only wish I&#039;d found it before I plunked down my $250 for the not-ready-for-prime-time Nest. I&#039;ve had all the problems you and others have been mentioning -- my manual schedule entries mysteriously disappearing, Nest failing to turn on at scheduled times, inaccurate temperature sensing, Nest&#039;s inability to schedule a target-heat-at-target-time (as opposed to turn-on-at-preset-time), etc. I hope that by continuing to pester Nest support with our questions and criticisms we can get the company to improve the software. It sounds as if it should all be do-able. BTW, I loved your detailed account of your installation. It&#039;s so much better than Nest&#039;s own. I just wish I&#039;d read it first, as well. Keep up the good work and the updates.]]></description>
+			<content:encoded><![CDATA[<p>Aaron,</p>
+<p>So glad I found your blog. I only wish I&#8217;d found it before I plunked down my $250 for the not-ready-for-prime-time Nest. I&#8217;ve had all the problems you and others have been mentioning &#8212; my manual schedule entries mysteriously disappearing, Nest failing to turn on at scheduled times, inaccurate temperature sensing, Nest&#8217;s inability to schedule a target-heat-at-target-time (as opposed to turn-on-at-preset-time), etc. I hope that by continuing to pester Nest support with our questions and criticisms we can get the company to improve the software. It sounds as if it should all be do-able. BTW, I loved your detailed account of your installation. It&#8217;s so much better than Nest&#8217;s own. I just wish I&#8217;d read it first, as well. Keep up the good work and the updates.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Nest Thermostat Review, Update #7 - WiredPrairie		</title>
+		<link>/blog/index.php/archives/1420/comment-page-1#comment-3840</link>
+
+		<dc:creator><![CDATA[Nest Thermostat Review, Update #7 - WiredPrairie]]></dc:creator>
+		<pubDate>Sat, 07 Jan 2012 22:08:39 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1420#comment-3840</guid>
+
+					<description><![CDATA[[...] Update #6, Update #5, Update #4, Update #3, Update #2, Update #1, Install [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] Update #6, Update #5, Update #4, Update #3, Update #2, Update #1, Install [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

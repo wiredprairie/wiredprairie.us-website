@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Silverlight Weather Demonstration	</title>
+	<atom:link href="/blog/index.php/archives/388/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/388</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Sat, 19 Mar 2011 15:33:28 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/388/comment-page-1#comment-3418</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sat, 19 Mar 2011 15:33:28 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/388#comment-3418</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/388/comment-page-1#comment-3417&quot;&gt;Malli&lt;/a&gt;.
+
+How are you hosting this?
+
+You&#039;ll either need to host it and have the GetWeather.ashx on the same domain or use a cross domain file to access the data.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/388/comment-page-1#comment-3417">Malli</a>.</p>
+<p>How are you hosting this?</p>
+<p>You&#8217;ll either need to host it and have the GetWeather.ashx on the same domain or use a cross domain file to access the data.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Malli		</title>
+		<link>/blog/index.php/archives/388/comment-page-1#comment-3417</link>
+
+		<dc:creator><![CDATA[Malli]]></dc:creator>
+		<pubDate>Sat, 19 Mar 2011 04:57:04 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/388#comment-3417</guid>
+
+					<description><![CDATA[{System.Security.SecurityException: Security error.
+   at System.Net.Browser.BrowserHttpWebRequest.InternalEndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Browser.BrowserHttpWebRequest.c__DisplayClass5.b__4(Object sendState)
+   at System.Net.Browser.AsyncHelper.c__DisplayClass2.b__0(Object sendState)}
+
+getting an error. pls suggest me how to resolve]]></description>
+			<content:encoded><![CDATA[<p>{System.Security.SecurityException: Security error.<br />
+   at System.Net.Browser.BrowserHttpWebRequest.InternalEndGetResponse(IAsyncResult asyncResult)<br />
+   at System.Net.Browser.BrowserHttpWebRequest.c__DisplayClass5.b__4(Object sendState)<br />
+   at System.Net.Browser.AsyncHelper.c__DisplayClass2.b__0(Object sendState)}</p>
+<p>getting an error. pls suggest me how to resolve</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

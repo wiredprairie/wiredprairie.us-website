@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Silverlight Stars/Sparkles	</title>
+	<atom:link href="/blog/index.php/archives/668/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/668</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Thu, 27 Aug 2009 10:08:18 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: TCSWeekly Episode 003 - Silverlight, Moonlight, Kaxaml, Facebook, Multi-touch - AdamKinney.com		</title>
+		<link>/blog/index.php/archives/668/comment-page-1#comment-2722</link>
+
+		<dc:creator><![CDATA[TCSWeekly Episode 003 - Silverlight, Moonlight, Kaxaml, Facebook, Multi-touch - AdamKinney.com]]></dc:creator>
+		<pubDate>Thu, 27 Aug 2009 10:08:18 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/668#comment-2722</guid>
+
+					<description><![CDATA[[...] Stars Demo [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] Stars Demo [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/668/comment-page-1#comment-2190</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Fri, 30 Jan 2009 17:57:02 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/668#comment-2190</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/668/comment-page-1#comment-2188&quot;&gt;Bryant Likes&lt;/a&gt;.
+
+D&#039;oh!  Fixed the image link as well.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/668/comment-page-1#comment-2188">Bryant Likes</a>.</p>
+<p>D&#8217;oh!  Fixed the image link as well.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Bryant Likes		</title>
+		<link>/blog/index.php/archives/668/comment-page-1#comment-2188</link>
+
+		<dc:creator><![CDATA[Bryant Likes]]></dc:creator>
+		<pubDate>Fri, 30 Jan 2009 16:26:53 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/668#comment-2188</guid>
+
+					<description><![CDATA[Very cool! The link on the image is still pointing to the wrong url.]]></description>
+			<content:encoded><![CDATA[<p>Very cool! The link on the image is still pointing to the wrong url.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/668/comment-page-1#comment-2151</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Mon, 19 Jan 2009 21:35:59 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/668#comment-2151</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/668/comment-page-1#comment-2150&quot;&gt;Ben Vanik&lt;/a&gt;.
+
+Oops! Fixed.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/668/comment-page-1#comment-2150">Ben Vanik</a>.</p>
+<p>Oops! Fixed.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Ben Vanik		</title>
+		<link>/blog/index.php/archives/668/comment-page-1#comment-2150</link>
+
+		<dc:creator><![CDATA[Ben Vanik]]></dc:creator>
+		<pubDate>Mon, 19 Jan 2009 18:02:18 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/668#comment-2150</guid>
+
+					<description><![CDATA[Cool! Getting a 404 on both demo and source links, though ;(]]></description>
+			<content:encoded><![CDATA[<p>Cool! Getting a 404 on both demo and source links, though ;(</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Setup for the Asante VoyagerIP Cameras: Wireless Woes	</title>
+	<atom:link href="/blog/index.php/archives/1214/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/1214</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Wed, 21 Mar 2012 19:48:31 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/1214/comment-page-1#comment-4301</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Wed, 21 Mar 2012 19:48:31 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/1214#comment-4301</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1214/comment-page-1#comment-4297&quot;&gt;lukebudi&lt;/a&gt;.
+
+I&#039;ve not found one.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/1214/comment-page-1#comment-4297">lukebudi</a>.</p>
+<p>I&#8217;ve not found one.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: lukebudi		</title>
+		<link>/blog/index.php/archives/1214/comment-page-1#comment-4297</link>
+
+		<dc:creator><![CDATA[lukebudi]]></dc:creator>
+		<pubDate>Wed, 21 Mar 2012 16:50:39 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/1214#comment-4297</guid>
+
+					<description><![CDATA[I just got mine. Do you know if there is iphone ap for this? 
+thanks for your post.]]></description>
+			<content:encoded><![CDATA[<p>I just got mine. Do you know if there is iphone ap for this?<br />
+thanks for your post.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

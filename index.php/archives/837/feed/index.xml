@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Transparent Window Sample in WPF	</title>
+	<atom:link href="/blog/index.php/archives/837/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/837</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Tue, 15 Dec 2009 03:47:46 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/837/comment-page-1#comment-2856</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Tue, 15 Dec 2009 03:47:46 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/837#comment-2856</guid>
+
+					<description><![CDATA[You can only grab the ellipse because that&#039;s what&#039;s handling the mouse down currently. If you change what&#039;s handling the message, you&#039;ll get different results. Since I wanted a transparent ellipse -- that&#039;s the way I coded it. You could handle the mouse_down in the grid for example and it would change what caused the window to move.]]></description>
+			<content:encoded><![CDATA[<p>You can only grab the ellipse because that&#8217;s what&#8217;s handling the mouse down currently. If you change what&#8217;s handling the message, you&#8217;ll get different results. Since I wanted a transparent ellipse &#8212; that&#8217;s the way I coded it. You could handle the mouse_down in the grid for example and it would change what caused the window to move.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: tshad		</title>
+		<link>/blog/index.php/archives/837/comment-page-1#comment-2855</link>
+
+		<dc:creator><![CDATA[tshad]]></dc:creator>
+		<pubDate>Mon, 14 Dec 2009 20:21:18 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/837#comment-2855</guid>
+
+					<description><![CDATA[Also, I found I couldn&#039;t make this work until I put:
+ AllowsTransparency=&quot;True&quot;
+
+I changed the window area to:
+
+WindowStyle=&quot;None&quot; AllowsTransparency=&quot;True&quot;
+
+It turns out you don&#039;t need the Background=&quot;Transparent&quot;.  The AllowsTransparency handles that (I think).
+
+But I was curious, if I put the background to green in the Grid. You can&#039;t see through it and you can grab the corners of the window outside of the ellipse (which you can&#039;t do if it is transparent).  Why can I grab and move the window inside the elipse (which is also transparent) and not the outside corners?
+
+Thanks,
+
+Tom]]></description>
+			<content:encoded><![CDATA[<p>Also, I found I couldn&#8217;t make this work until I put:<br />
+ AllowsTransparency=&#8221;True&#8221;</p>
+<p>I changed the window area to:</p>
+<p>WindowStyle=&#8221;None&#8221; AllowsTransparency=&#8221;True&#8221;</p>
+<p>It turns out you don&#8217;t need the Background=&#8221;Transparent&#8221;.  The AllowsTransparency handles that (I think).</p>
+<p>But I was curious, if I put the background to green in the Grid. You can&#8217;t see through it and you can grab the corners of the window outside of the ellipse (which you can&#8217;t do if it is transparent).  Why can I grab and move the window inside the elipse (which is also transparent) and not the outside corners?</p>
+<p>Thanks,</p>
+<p>Tom</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Tshad		</title>
+		<link>/blog/index.php/archives/837/comment-page-1#comment-2854</link>
+
+		<dc:creator><![CDATA[Tshad]]></dc:creator>
+		<pubDate>Mon, 14 Dec 2009 08:45:24 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/837#comment-2854</guid>
+
+					<description><![CDATA[You&#039;re right.
+
+I had missed that part.  When you say the origin of the gradient changed you meant the white part (circle) inside of the black circle would change position - which it does and the whole circle moves as well.
+
+Thanks,
+
+Tom]]></description>
+			<content:encoded><![CDATA[<p>You&#8217;re right.</p>
+<p>I had missed that part.  When you say the origin of the gradient changed you meant the white part (circle) inside of the black circle would change position &#8211; which it does and the whole circle moves as well.</p>
+<p>Thanks,</p>
+<p>Tom</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/837/comment-page-1#comment-2853</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sat, 12 Dec 2009 15:34:22 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/837#comment-2853</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/837/comment-page-1#comment-2852&quot;&gt;Tshad&lt;/a&gt;.
+
+That&#039;s what the code does -- it moves the gradient to where ever the mouse is during the mouse down, exactly as it says in the blog post. Is that what you mean?]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/837/comment-page-1#comment-2852">Tshad</a>.</p>
+<p>That&#8217;s what the code does &#8212; it moves the gradient to where ever the mouse is during the mouse down, exactly as it says in the blog post. Is that what you mean?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Tshad		</title>
+		<link>/blog/index.php/archives/837/comment-page-1#comment-2852</link>
+
+		<dc:creator><![CDATA[Tshad]]></dc:creator>
+		<pubDate>Sat, 12 Dec 2009 11:36:22 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/837#comment-2852</guid>
+
+					<description><![CDATA[I finally got it to work.
+
+But when I did, I found that the gradient changed.  The white part of the circle (that starts out in the middle) moves to where ever the mouse is during the left mouse down.
+
+Why does it do that?
+
+Thanks,
+
+Tom]]></description>
+			<content:encoded><![CDATA[<p>I finally got it to work.</p>
+<p>But when I did, I found that the gradient changed.  The white part of the circle (that starts out in the middle) moves to where ever the mouse is during the left mouse down.</p>
+<p>Why does it do that?</p>
+<p>Thanks,</p>
+<p>Tom</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Tshad		</title>
+		<link>/blog/index.php/archives/837/comment-page-1#comment-2851</link>
+
+		<dc:creator><![CDATA[Tshad]]></dc:creator>
+		<pubDate>Fri, 11 Dec 2009 07:58:51 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/837#comment-2851</guid>
+
+					<description><![CDATA[Is it possible to get the download?
+
+The page doesn&#039;t seem to be here.
+
+I couldn&#039;t make the code work but I am just starting to use WPF.
+
+Thanks,
+
+Tom]]></description>
+			<content:encoded><![CDATA[<p>Is it possible to get the download?</p>
+<p>The page doesn&#8217;t seem to be here.</p>
+<p>I couldn&#8217;t make the code work but I am just starting to use WPF.</p>
+<p>Thanks,</p>
+<p>Tom</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

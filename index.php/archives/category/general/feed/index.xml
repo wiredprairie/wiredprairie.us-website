@@ -1,0 +1,758 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>General &#8211; WiredPrairie</title>
+	<atom:link href="/blog/index.php/archives/category/general/feed" rel="self" type="application/rss+xml" />
+	<link>/blog</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Thu, 10 Oct 2019 00:46:48 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+<site xmlns="com-wordpress:feed-additions:1">193486638</site>	<item>
+		<title>My 2019 (near) Silent PC Build</title>
+		<link>/blog/index.php/archives/2340</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sun, 06 Oct 2019 22:28:29 +0000</pubDate>
+				<category><![CDATA[General]]></category>
+		<guid isPermaLink="false">/blog/?p=2340</guid>
+
+					<description><![CDATA[Puget Systems assembles really nice custom PCs and especially great quiet PCs. However, when I last priced out a system I wanted to build, it was well outside of my budget (by about $1500USD). So, I built my own. It was an experience that took several months to research and to gather the right desired [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>Puget Systems assembles really nice custom PCs and especially great <a href="https://www.pugetsystems.com/serenity.php">quiet PCs</a>. However, when I last priced out a system I wanted to build, it was well outside of my budget (by about $1500USD).</p>
+
+
+
+<p><strong>So, I built my own.</strong></p>
+
+
+
+<p>It was an experience that took several months to research and to gather the right desired parts.</p>
+
+
+
+<p>My requirements list included:</p>
+
+
+
+<ul><li><strong>Quiet</strong></li><li>Modern processor with many cores</li><li>More RAM than my software would need&#8230; apps like:<ul><li>Visual Studio 2019</li><li>Visual Studio Code</li><li>Rhino 6 (3d)</li><li>ZBrush 2019</li><li>And all the tabs I keep open in Chrome (ha ha!)</li></ul></li><li><a href="https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-overview-and-requirements-faq">Bitlocker </a>ready for disk encryption</li><li>Decent graphics card, modern CUDA support for Machine learning via GPU</li><li><strong>Quiet</strong></li></ul>
+
+
+
+<p>A modern desktop processor runs <strong>HOT</strong>. And to keep that processor cool and quiet, you&#8217;ll need a good case and a number of cooling solutions. My previous Puget Systems desktop PC relied on liquid cooling, but after a significant amount of research, I decided that fans would offer the same amount of cooling and often be as quiet (or more quiet) than the liquid cooling system. (I&#8217;m sure there are examples where the inverse is true, but I had a budget!!).</p>
+
+
+
+<p>So, in no particular order:</p>
+
+
+
+<h2> Intel Core i9-9900X X-Series Processor 10 Cores up to 4.4GHz Turbo Unlocked LGA2066 X299 Series 165W Processors (999AC5) </h2>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter is-resized"><a href="https://www.amazon.com/gp/product/B07JDV1MMR/ref=as_li_ss_il?ie=UTF8&amp;psc=1&amp;linkCode=li3&amp;tag=wiredp-20&amp;linkId=e7013b865993295c39a137331157dbea&amp;language=en_US" target="_blank" rel="noreferrer noopener"><img src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;ASIN=B07JDV1MMR&amp;Format=_SL250_&amp;ID=AsinImage&amp;MarketPlace=US&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=wiredp-20&amp;language=en_US" alt="" width="276" height="276"/></a><figcaption> Intel Core i9-9900X X-Series Processor 10 Cores up to 4.4GHz Turbo Unlocked LGA2066 X299 Series 165W Processors (999AC5) </figcaption></figure></div>
+
+
+
+<p>The i9-9900x was high end, but not crazy high end. I gave up trying to decide between the X and the K series. The X supported: </p>
+
+
+
+<p><a href="https://ark.intel.com/content/www/us/en/ark/products/189124/intel-core-i9-9900x-x-series-processor-19-25m-cache-up-to-4-50-ghz.html">https://ark.intel.com/content/www/us/en/ark/products/189124/intel-core-i9-9900x-x-series-processor-19-25m-cache-up-to-4-50-ghz.html</a></p>
+
+
+
+<figure class="wp-block-image"><img data-attachment-id="2341" data-permalink="/blog/index.php/archives/2340/2019-10-06-16_16_02-task-manager" data-orig-file="/blog/wp-content/uploads/2019/10/2019-10-06-16_16_02-Task-Manager.png" data-orig-size="815,576" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="2019-10-06-16_16_02-Task-Manager" data-image-description="" data-image-caption="" data-medium-file="/blog/wp-content/uploads/2019/10/2019-10-06-16_16_02-Task-Manager-300x212.png" data-large-file="/blog/wp-content/uploads/2019/10/2019-10-06-16_16_02-Task-Manager.png" loading="lazy" width="815" height="576" src="/blog/wp-content/uploads/2019/10/2019-10-06-16_16_02-Task-Manager.png" alt="" class="wp-image-2341" srcset="/blog/wp-content/uploads/2019/10/2019-10-06-16_16_02-Task-Manager.png 815w, /blog/wp-content/uploads/2019/10/2019-10-06-16_16_02-Task-Manager-300x212.png 300w, /blog/wp-content/uploads/2019/10/2019-10-06-16_16_02-Task-Manager-768x543.png 768w" sizes="(max-width: 815px) 100vw, 815px" /><figcaption>Ha. Not really keeping them busy right now.</figcaption></figure>
+
+
+
+<p>But, here&#8217;s some video encoding&#8230;. the cores are bit busier when using queues in <a href="https://handbrake.fr/">Handbrake</a>. </p>
+
+
+
+<figure class="wp-block-image"><img data-attachment-id="2350" data-permalink="/blog/index.php/archives/2340/2019-10-09-19_37_23-task-manager" data-orig-file="/blog/wp-content/uploads/2019/10/2019-10-09-19_37_23-Task-Manager.png" data-orig-size="826,626" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="2019-10-09-19_37_23-Task-Manager" data-image-description="" data-image-caption="" data-medium-file="/blog/wp-content/uploads/2019/10/2019-10-09-19_37_23-Task-Manager-300x227.png" data-large-file="/blog/wp-content/uploads/2019/10/2019-10-09-19_37_23-Task-Manager.png" loading="lazy" width="826" height="626" src="/blog/wp-content/uploads/2019/10/2019-10-09-19_37_23-Task-Manager.png" alt="" class="wp-image-2350" srcset="/blog/wp-content/uploads/2019/10/2019-10-09-19_37_23-Task-Manager.png 826w, /blog/wp-content/uploads/2019/10/2019-10-09-19_37_23-Task-Manager-300x227.png 300w, /blog/wp-content/uploads/2019/10/2019-10-09-19_37_23-Task-Manager-768x582.png 768w" sizes="(max-width: 826px) 100vw, 826px" /></figure>
+
+
+
+<h2> MSI Performance Gaming Intel X299 LGA 2066 DDR4 USB 3.1 SLI ATX Motherboard (X299 Gaming PRO Carbon) </h2>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter is-resized"><a href="https://www.amazon.com/gp/product/B072JWYHVX/ref=as_li_ss_il?ie=UTF8&amp;psc=1&amp;linkCode=li3&amp;tag=wiredp-20&amp;linkId=f2f1eb0057f5dbca73aefcf3247582ca&amp;language=en_US" target="_blank" rel="noreferrer noopener"><img loading="lazy" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;ASIN=B072JWYHVX&amp;Format=_SL250_&amp;ID=AsinImage&amp;MarketPlace=US&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=wiredp-20&amp;language=en_US" alt="" width="355" height="236"/></a></figure></div>
+
+
+
+<p>Choosing a motherboard was a long process. You&#8217;ll want to read reviews, but I couldn&#8217;t find a single motherboard that was amazingly well rated and had the limited features I needed (mostly the ability to enable bitlocker). I went with MSI as it&#8217;s a decent brand, had extended support for RAM (I went with 64GB) and didn&#8217;t have too many bells-and-whistles. It has a lot of fan control for local (temporary) in PC changes and as many in the BIOS settings. </p>
+
+
+
+<p>I&#8217;ve set the BIOS settings to control the fans such that they are quiet except when the CPU is running really hot. </p>
+
+
+
+<p>You can also enable the Trusted execution environment settings to enable bitlocker without buying a TPM chip (and trust me!!! buying a TPM chip is a lot more challenging than you&#8217;d think &#8212; they&#8217;re often out of stock or the wrong model. I gave up and went with this on board option).</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter"><img data-attachment-id="2343" data-permalink="/blog/index.php/archives/2340/bios-2019-10-06-171017" data-orig-file="/blog/wp-content/uploads/2019/10/bios-2019-10-06-171017.jpeg" data-orig-size="1977,1407" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="bios-2019-10-06-171017" data-image-description="" data-image-caption="" data-medium-file="/blog/wp-content/uploads/2019/10/bios-2019-10-06-171017-300x214.jpeg" data-large-file="/blog/wp-content/uploads/2019/10/bios-2019-10-06-171017-1024x729.jpeg" loading="lazy" width="1024" height="729" src="/blog/wp-content/uploads/2019/10/bios-2019-10-06-171017-1024x729.jpeg" alt="" class="wp-image-2343" srcset="/blog/wp-content/uploads/2019/10/bios-2019-10-06-171017-1024x729.jpeg 1024w, /blog/wp-content/uploads/2019/10/bios-2019-10-06-171017-300x214.jpeg 300w, /blog/wp-content/uploads/2019/10/bios-2019-10-06-171017-768x547.jpeg 768w, /blog/wp-content/uploads/2019/10/bios-2019-10-06-171017-1200x854.jpeg 1200w, /blog/wp-content/uploads/2019/10/bios-2019-10-06-171017.jpeg 1977w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption>For Bitlocker in Windows 10, Enable Security Device Support and Set TPM to PTT. </figcaption></figure></div>
+
+
+
+<p>Why is Bitlocker so important to me? Drives fail. Warranties work. I&#8217;ve owned a LOT of HDDs and SDDs over the years and had many fail under warranty. I have no concerns about sending in a drive if the contents are completely encrypted. Hence Bitlocker. Built in. Reliable. </p>
+
+
+
+<h1 id="title">Noctua NF-A14 PWM, 4-Pin Premium Quiet Cooling Fan (140mm, Brown)</h1>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter is-resized"><a href="https://www.amazon.com/gp/product/B00CP6QLY6/ref=as_li_ss_il?ie=UTF8&amp;psc=1&amp;linkCode=li2&amp;tag=wiredp-20&amp;linkId=fea5e3c3febf439cbb0d8d5d269f7a82&amp;language=en_US" target="_blank" rel="noreferrer noopener"><img loading="lazy" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;ASIN=B00CP6QLY6&amp;Format=_SL160_&amp;ID=AsinImage&amp;MarketPlace=US&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=wiredp-20&amp;language=en_US" alt="" width="237" height="301"/></a><figcaption>Keeping things cool&#8230;.</figcaption></figure></div>
+
+
+
+<p>I knew I wanted some of the best fans in the new case &#8230; and these are very highly rated everywhere. I haven&#8217;t been disappointed. I ordered 6 of these to replace the built in case fans in my new desktop case (and actually only used 5 as I couldn&#8217;t find a spot for the sixth that did any good). The general advice, buy an odd number, so that you&#8217;ll have more air pulling through.</p>
+
+
+
+<h1 id="title">Corsair LPX 16GB DDR4 DRAM 2666MHz C16 Memory Kit CMK16GX4M1A2666C16</h1>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter is-resized"><a href="https://www.amazon.com/gp/product/B019HVO62A/ref=as_li_ss_il?ie=UTF8&amp;psc=1&amp;linkCode=li3&amp;tag=wiredp-20&amp;linkId=768a845228dbef79c6428ec4ef96b722&amp;language=en_US" target="_blank" rel="noreferrer noopener"><img loading="lazy" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;ASIN=B019HVO62A&amp;Format=_SL250_&amp;ID=AsinImage&amp;MarketPlace=US&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=wiredp-20&amp;language=en_US" alt="" width="353" height="353"/></a><figcaption>64 GB!</figcaption></figure></div>
+
+
+
+<p>I bought 4 sticks of this in black. The recommended clock speed for RAM with the i9-9900 and the motherboard is 2666MHz. So, that&#8217;s what I bought. I don&#8217;t want to destabilize my PC. Again, a super highly rated brand and model of RAM. It&#8217;s called Vengeance &#8212; so it must be amazing, right?</p>
+
+
+
+<h1 id="title">EVGA Supernova 750 PQ, 80+ Platinum 750W, Semi Modular, EVGA ECO Mode, 10 Year Warranty, Power Supply 210-PQ-0750-X1</h1>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter is-resized"><a href="https://www.amazon.com/gp/product/B07BVZXW55/ref=as_li_ss_il?ie=UTF8&amp;psc=1&amp;linkCode=li3&amp;tag=wiredp-20&amp;linkId=41bca68bf7e6c7a5f01eae3e2e2e83e2&amp;language=en_US" target="_blank" rel="noreferrer noopener"><img loading="lazy" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;ASIN=B07BVZXW55&amp;Format=_SL250_&amp;ID=AsinImage&amp;MarketPlace=US&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=wiredp-20&amp;language=en_US" alt="" width="383" height="288"/></a></figure></div>
+
+
+
+<p>Lots of good ratings, 80 PLUS Platinum certified (so less wasted energy). It had plenty of power connections for all the accessories I wanted to use. </p>
+
+
+
+<h1 id="title">Samsung 970 PRO Series &#8211; 1TB PCIe NVMe &#8211; M.2 Internal SSD Black/Red (MZ-V7P1T0BW)</h1>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter is-resized"><a href="https://www.amazon.com/gp/product/B07BYHGNB5/ref=as_li_ss_il?ie=UTF8&amp;psc=1&amp;linkCode=li3&amp;tag=wiredp-20&amp;linkId=da37c49fbecab294ab471bb2619c2966&amp;language=en_US" target="_blank" rel="noreferrer noopener"><img loading="lazy" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;ASIN=B07BYHGNB5&amp;Format=_SL250_&amp;ID=AsinImage&amp;MarketPlace=US&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=wiredp-20&amp;language=en_US" alt="" width="427" height="285"/></a></figure></div>
+
+
+
+<p>Big primary drive. Fit nicely into one of the M.2 slots on the MSI motherboard. Screaming fast and amazingly good reviews. Highly recommended. Further, I liked the fact that this has a 5 year warranty (which isn&#8217;t as common in drives these days unfortunately). If it fails, I&#8217;ll get it replaced and won&#8217;t worry about my data &#8212; Bitlocker. :)</p>
+
+
+
+<h1 id="title">ASUS ROG Strix GeForce GTX 1660 Ti 6GB Overclocked Edition</h1>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter is-resized"><a href="https://www.amazon.com/gp/product/B07NHQ5HNW/ref=as_li_ss_il?ie=UTF8&amp;psc=1&amp;linkCode=li3&amp;tag=wiredp-20&amp;linkId=3870c2bc7f27838f80d86b14cb71fc1d&amp;language=en_US" target="_blank" rel="noreferrer noopener"><img loading="lazy" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;ASIN=B07NHQ5HNW&amp;Format=_SL250_&amp;ID=AsinImage&amp;MarketPlace=US&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=wiredp-20&amp;language=en_US" alt="" width="403" height="403"/></a></figure></div>
+
+
+
+<p>Graphics cards are amazingly high priced these days. I wanted something that supported modern CUDA/Tensor/Deep learning tools, so I couldn&#8217;t start at the bottom of options. I have 3 large displays, so I needed the multiple monitor support. It&#8217;s also been noted that this is a normally quiet graphics card. I&#8217;d agree &#8212; I&#8217;ve never heard it spin up in the last 3 months of using it. It stays cool enough in my PC case apparently. </p>
+
+
+
+<blockquote class="wp-block-quote"><p>Don&#8217;t get confused by Amazon&#8217;s &#8220;there is a newer model&#8221; for this or other graphics cards. I&#8217;m not sure what system creates those links, but they&#8217;re more often than not, <strong>not</strong> a newer graphics card and instead just a different model. </p></blockquote>
+
+
+
+<p>I&#8217;m not a PC gamer anymore, so I can&#8217;t speak to its gaming street cred. I&#8217;m sure there are plenty of thorough web sites that can do it justice if you&#8217;re interested in that.</p>
+
+
+
+<h1 id="title">Noctua NH-D15, Premium CPU Cooler with 2x NF-A15 PWM 140mm Fans</h1>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter"><a href="https://www.amazon.com/Noctua-NH-D15-heatpipe-NF-A15-140mm/dp/B00L7UZMAK/ref=as_li_ss_il?keywords=Noctua+NH-D15+SSO2+D-Type+Premium+CPU+Cooler,+NF-A15+x+2+PWM+Fans&amp;qid=1570397921&amp;s=electronics&amp;sr=1-1&amp;linkCode=li3&amp;tag=wiredp-20&amp;linkId=9aa5b3cf894a2dd92be3ca3dc99a02ec&amp;language=en_US" target="_blank" rel="noreferrer noopener"><img src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;ASIN=B00L7UZMAK&amp;Format=_SL250_&amp;ID=AsinImage&amp;MarketPlace=US&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=wiredp-20&amp;language=en_US" alt=""/></a></figure></div>
+
+
+
+<p>Make sure your case and fan configuration will allow a beast like this. This is a great way to keep the CPU cool, but it requires a substantial amount of headroom. </p>
+
+
+
+<blockquote class="wp-block-quote"><p><strong>There may be blood.</strong></p></blockquote>
+
+
+
+<p> Also, the metal fins, they&#8217;re SHARP. Like, I cut myself twice getting the thing arranged and installed. </p>
+
+
+
+<h2>The Case</h2>
+
+
+
+<p>I bought a monster case for this thing. </p>
+
+
+
+<figure class="wp-block-embed-wordpress wp-block-embed is-type-wp-embed is-provider-fractal-design"><div class="wp-block-embed__wrapper">
+<blockquote class="wp-embedded-content" data-secret="E7IrkDUTq6"><a href="https://www.fractal-design.com/ja/products/cases/define/define-r6-usb-c/">Define R6 USB-C</a></blockquote><iframe title="&#8220;Define R6 USB-C&#8221; &#8212; Fractal Design" class="wp-embedded-content" sandbox="allow-scripts" security="restricted" style="position: absolute; clip: rect(1px, 1px, 1px, 1px);" src="https://www.fractal-design.com/ja/products/cases/define/define-r6-usb-c/embed/#?secret=E7IrkDUTq6" data-secret="E7IrkDUTq6" width="600" height="338" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+</div><figcaption><br /> </figcaption></figure>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter"><img data-attachment-id="2342" data-permalink="/blog/index.php/archives/2340/2019-10-06-16_42_49-define-r6-usb-c-fractal-design" data-orig-file="/blog/wp-content/uploads/2019/10/2019-10-06-16_42_49-Define-R6-USB-C-—-Fractal-Design.png" data-orig-size="551,546" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="2019-10-06-16_42_49-Define-R6-USB-C-—-Fractal-Design" data-image-description="" data-image-caption="" data-medium-file="/blog/wp-content/uploads/2019/10/2019-10-06-16_42_49-Define-R6-USB-C-—-Fractal-Design-300x297.png" data-large-file="/blog/wp-content/uploads/2019/10/2019-10-06-16_42_49-Define-R6-USB-C-—-Fractal-Design.png" loading="lazy" width="551" height="546" src="/blog/wp-content/uploads/2019/10/2019-10-06-16_42_49-Define-R6-USB-C-—-Fractal-Design.png" alt="" class="wp-image-2342" srcset="/blog/wp-content/uploads/2019/10/2019-10-06-16_42_49-Define-R6-USB-C-—-Fractal-Design.png 551w, /blog/wp-content/uploads/2019/10/2019-10-06-16_42_49-Define-R6-USB-C-—-Fractal-Design-150x150.png 150w, /blog/wp-content/uploads/2019/10/2019-10-06-16_42_49-Define-R6-USB-C-—-Fractal-Design-300x297.png 300w" sizes="(max-width: 551px) 100vw, 551px" /><figcaption>Huge.</figcaption></figure></div>
+
+
+
+<p>If you have space, buy a big case. You&#8217;ll be able to get more fans (running at slower speeds). If  you don&#8217;t, you&#8217;ll really need to be careful that the components you&#8217;ve selected fit in the case. </p>
+
+
+
+<h2>Noise</h2>
+
+
+
+<p>Out of the box, with default settings, this combination will have a substantial amount of fan noise. I thought I&#8217;d messed up it was so loud.</p>
+
+
+
+<p>The default configuration seems to want to keep the CPUs at about 35C, regardless, so the fans will spin up. I adjusted the fan settings to ramp up the fans around 55C and rarely do the fans become more than a whisper in the background (and when they do spin up, it&#8217;s temporary). Make these changes in the BIOS and not just using the desktop software as the desktop software isn&#8217;t &#8220;permanent&#8221; settings. </p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter"><img data-attachment-id="2344" data-permalink="/blog/index.php/archives/2340/bios-2019-10-06-171021" data-orig-file="/blog/wp-content/uploads/2019/10/bios-2019-10-06-171021.jpeg" data-orig-size="1536,954" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="bios-2019-10-06-171021" data-image-description="" data-image-caption="" data-medium-file="/blog/wp-content/uploads/2019/10/bios-2019-10-06-171021-300x186.jpeg" data-large-file="/blog/wp-content/uploads/2019/10/bios-2019-10-06-171021-1024x636.jpeg" loading="lazy" width="1024" height="636" src="/blog/wp-content/uploads/2019/10/bios-2019-10-06-171021-1024x636.jpeg" alt="" class="wp-image-2344" srcset="/blog/wp-content/uploads/2019/10/bios-2019-10-06-171021-1024x636.jpeg 1024w, /blog/wp-content/uploads/2019/10/bios-2019-10-06-171021-300x186.jpeg 300w, /blog/wp-content/uploads/2019/10/bios-2019-10-06-171021-768x477.jpeg 768w, /blog/wp-content/uploads/2019/10/bios-2019-10-06-171021-1200x745.jpeg 1200w, /blog/wp-content/uploads/2019/10/bios-2019-10-06-171021.jpeg 1536w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption>You&#8217;ll have a LOT of control over the fan behavior with the MSI X299 LGA motherboard</figcaption></figure></div>
+
+
+
+<blockquote class="wp-block-quote"><p>I&#8217;m super happy with the results of the build so far. It&#8217;s been running solid since late June 2019. </p></blockquote>
+
+
+
+<p>Bar none, this is the fastest PC I&#8217;ve ever owned. By the way, I contemplated buying a gaming ready portable laptop as making that my desktop, but the prices and lack of upgradability made me rethink that option completely.</p>
+
+
+
+<h2>Price</h2>
+
+
+
+<p>Total price of all components (and a few minor things I bought to make the assembly and fan control simpler) was very close to $3200 USD. Assembly time was about 3 hours. If I&#8217;d planned the fans a bit better from the start, it would have been a little less than 3 hours. I hadn&#8217;t built a PC in more than 10 years, so I was familiar, but very rusty. </p>
+
+
+
+<p>Again, I&#8217;d highly recommend Puget Systems and have purchased 3 of their computers in the past, but it was time to build my own again. I&#8217;m glad I did.</p>
+
+
+
+<p>Please help support this site by using the Amazon product links. Thanks!</p>
+
+
+
+<blockquote class="wp-block-quote"><p>One public service announcement &#8212; buy a backup drive for your data, or pay for a cloud service if you trust them and have the bandwidth and no data caps  </p></blockquote>
+
+
+
+<div class="wp-block-image"><figure class="alignleft"><a href="https://www.amazon.com/gp/product/B01LQQH86A/ref=as_li_ss_il?ie=UTF8&amp;psc=1&amp;linkCode=li2&amp;tag=wiredp-20&amp;linkId=d2ac13bf6042ea72cb84e6789e134851&amp;language=en_US" target="_blank" rel="noreferrer noopener"><img src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;ASIN=B01LQQH86A&amp;Format=_SL160_&amp;ID=AsinImage&amp;MarketPlace=US&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=wiredp-20&amp;language=en_US" alt=""/></a><figcaption>4TB Western Digital</figcaption></figure></div>
+
+
+
+<p>And use <a href="https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-overview-and-requirements-faq">BITLOCKER </a>(or other OS equivalent). Don&#8217;t just copy files to it. If it dies (and it may), you should not want to send it in for warranty service if the files aren&#8217;t encrypted. </p>
+
+
+
+<p><em>I&#8217;ve got the external drive I linked to set up as a Windows 10 File History destination. </em></p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2340</post-id>	</item>
+		<item>
+		<title>You don&#8217;t need it, but you might want it any way: Ubiquiti Unifi</title>
+		<link>/blog/index.php/archives/2278</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Thu, 26 Jul 2018 01:27:43 +0000</pubDate>
+				<category><![CDATA[General]]></category>
+		<category><![CDATA[Recommendations]]></category>
+		<guid isPermaLink="false">/blog/?p=2278</guid>
+
+					<description><![CDATA[TL;DR; The Ubiquiti Networks UniFi products are absolutely worth considering if you&#8217;re looking to upgrade your home or small office network to a reasonably affordable, manageable, configurable, and expandable setup. A complete setup probably costs more than you&#8217;re comfortable spending on network infrastructure, but you&#8217;re worth it. Details There&#8217;s a lot of information available generally [&#8230;]]]></description>
+										<content:encoded><![CDATA[<h2>TL;DR;</h2>
+<p>The <a href="https://amzn.to/2JDau32">Ubiquiti Networks UniFi</a> products are absolutely worth considering if you&#8217;re looking to upgrade your home or small office network to a reasonably affordable, manageable, configurable, and expandable setup.</p>
+<p>A complete setup probably costs more than you&#8217;re comfortable spending on network infrastructure, but you&#8217;re worth it.</p>
+<h2>Details</h2>
+<p>There&#8217;s a lot of information available generally about this company and their products available on the Internet. I won&#8217;t attempt to do a <a href="https://arstechnica.com/information-technology/2018/07/enterprise-wi-fi-at-home-part-two-reflecting-on-almost-three-years-with-pro-gear/">15-25 page Ars Technica</a> style expose on the details. Instead, I&#8217;ll focus on the features that I&#8217;ve been using and the some highs and lows of the product experience.</p>
+<h3>Lesson 1</h3>
+<p><a href="/blog/wp-content/uploads/2018/07/cloudkey.png"><img data-attachment-id="2282" data-permalink="/blog/index.php/archives/2278/cloudkey" data-orig-file="/blog/wp-content/uploads/2018/07/cloudkey.png" data-orig-size="400,162" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="cloudkey" data-image-description="" data-image-caption="" data-medium-file="/blog/wp-content/uploads/2018/07/cloudkey-300x122.png" data-large-file="/blog/wp-content/uploads/2018/07/cloudkey.png" loading="lazy" class="size-full wp-image-2282 alignright" src="/blog/wp-content/uploads/2018/07/cloudkey.png" alt="Cloud key" width="400" height="162" srcset="/blog/wp-content/uploads/2018/07/cloudkey.png 400w, /blog/wp-content/uploads/2018/07/cloudkey-300x122.png 300w" sizes="(max-width: 400px) 100vw, 400px" /></a>I made the mistake of installing the controller software on a laptop first. I hadn&#8217;t understood that for maximal data logging and the best management experience, it&#8217;s best if it&#8217;s installed on a server or workstation that is available 24&#215;7. I decided the ideal option is the <a href="https://amzn.to/2uEtREj">Ubiquiti Cloud Key</a> was the most effective choice. Low power, no moving parts, plug and play. The cloud software uses a bunch of software like Java that you may not want to install on your server or shared workstation, so take my advice and include one in your budget for a robust Ubiquiti setup. There are instructions available for installation on a Raspberry Pi if you&#8217;re so inclined to go it on your own tiny hardware.</p>
+<p>I will say that I&#8217;ve needed to reboot the device/software a few times over the past few months, but it&#8217;s been generally very stable. I&#8217;m not sure what caused the issue. So, make sure you don&#8217;t tuck this away so far you can&#8217;t unplug and restart it if necessary.</p>
+<h3>Devices</h3>
+<p>I live in a larger house and when we built it I had 4 ethernet jacks installed in nearly every room. Rather than try to determine which jacks had equipment installed, I&#8217;ve always had every jack wired for ethernet to a series of network switches. So, for the Ubiquiti equipment, I bought 3 <a href="https://amzn.to/2NCJHX8">Ubiquiti US-24</a> managed switches. These switches don&#8217;t support power over ethernet, so if you&#8217;re considering it, you&#8217;ll need to upgrade to the more expensive <a href="https://amzn.to/2NCJHX8">US-24 250W</a>.  Not wanting to connect the switches with a boring Ethernet cable, I opted for several sets of the fiber connections, the <a href="https://amzn.to/2LBuZ1V">Ubiquiti Networks UF-MM-1G</a>. Compared to the overall setup price, these and the corresponding fiber cable is inexpensive. By using the fiber connection, none of the ethernet ports were used as interconnects.</p>
+<h3>Patch Cables</h3>
+<h2><a href="/blog/wp-content/uploads/2018/07/2018-07-22-20_08_19-Monoprice-SlimRun-Cat6-Ethernet-Patch-Cable-Snagless-RJ45-Stranded-550Mhz-U.png"><img data-attachment-id="2285" data-permalink="/blog/index.php/archives/2278/2018-07-22-20_08_19-monoprice-slimrun-cat6-ethernet-patch-cable-snagless-rj45-stranded-550mhz-u" data-orig-file="/blog/wp-content/uploads/2018/07/2018-07-22-20_08_19-Monoprice-SlimRun-Cat6-Ethernet-Patch-Cable-Snagless-RJ45-Stranded-550Mhz-U.png" data-orig-size="338,550" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="2018-07-22 20_08_19-Monoprice SlimRun Cat6 Ethernet Patch Cable &#8211; Snagless RJ45, Stranded, 550Mhz, U" data-image-description="" data-image-caption="" data-medium-file="/blog/wp-content/uploads/2018/07/2018-07-22-20_08_19-Monoprice-SlimRun-Cat6-Ethernet-Patch-Cable-Snagless-RJ45-Stranded-550Mhz-U-184x300.png" data-large-file="/blog/wp-content/uploads/2018/07/2018-07-22-20_08_19-Monoprice-SlimRun-Cat6-Ethernet-Patch-Cable-Snagless-RJ45-Stranded-550Mhz-U.png" loading="lazy" class="wp-image-2285 size-medium alignright" src="/blog/wp-content/uploads/2018/07/2018-07-22-20_08_19-Monoprice-SlimRun-Cat6-Ethernet-Patch-Cable-Snagless-RJ45-Stranded-550Mhz-U-184x300.png" alt="SlimRun" width="184" height="300" srcset="/blog/wp-content/uploads/2018/07/2018-07-22-20_08_19-Monoprice-SlimRun-Cat6-Ethernet-Patch-Cable-Snagless-RJ45-Stranded-550Mhz-U-184x300.png 184w, /blog/wp-content/uploads/2018/07/2018-07-22-20_08_19-Monoprice-SlimRun-Cat6-Ethernet-Patch-Cable-Snagless-RJ45-Stranded-550Mhz-U.png 338w" sizes="(max-width: 184px) 100vw, 184px" /></a></h2>
+<p>I took it as an opportunity to recable the patch panel connection terminals as well with what is now my favorite network cable, the <a href="https://amzn.to/2uZ0LyK">Monoprice SlimRun Ethernet 6A patch cable</a>. As my new setup was about double the length from where I&#8217;d mounted two network switches in the past, new cables were necessary. I bought a few different colors to indicate types of connections &#8230;, but the result was so pleasing&#8230;, just a nice manageable bundle of cables. It felt almost organized vs. a cabling nightmare. These cables are more expensive and the boot is 50-100% longer than typical patch cables. So, be sure that you have room to accommodate them, especially if you&#8217;re using a patch panel. My patch panel with these cables isn&#8217;t a perfect fit, but I made it work.</p>
+<p>I picked colors based on cable prices. There&#8217;s a variety of colors and it seems if you buy them on Amazon that they vary quite a lot in price depending on the color and length combination. Blue and a gray were the least expensive when I purchased. I bought some orange to indicate &#8220;interconnects&#8221; (between managed switches) and &#8220;red&#8221; to indicate a power over Ethernet style connection or other critical infrastructure.</p>
+<h3>Software Defined Networking</h3>
+<p>I&#8217;ve explored quite a few networking switches, routers, firewalls, SOHO devices, custom firmware, including consumer, prosumer, and professional models over the years. There have been a lot of highs and lows. I used various open source routers for many years with a &#8220;<a href="https://advancedtomato.com/">Tomato</a>&#8221; based firmware replacement (on various pieces of hardware). While it was generally very stable and had a number of useful features, it wasn&#8217;t fun anymore (and new features useful to me weren&#8217;t being added). I wanted to try something new.</p>
+<p>My first attempt was Google&#8217;s OnHub and later I added a more complete <a href="https://amzn.to/2LrIxjZ">Google&#8217;s Wifi</a> setup. Admittedly, I bought in too early. The Google Wifi was missing a lot of features from the Tomato firmware (and other competitive products). But, over a period of 18 months, it reached a reasonable feature parity (and exceeded in several cases). Most of the functionality was easy to use. I liked the setup well enough that I bought one for my father&#8217;s house so I can help him when he&#8217;s having trouble. It&#8217;s been rock solid for 9+ months for him with no unplanned reboots needed. If you read reviews of Google Wifi, make sure the reviews are recent, as there was a lot of people that bought it too early, and then complained LOUDLY when they realized that it didn&#8217;t have the features they wanted (even though Google hadn&#8217;t mentioned them in marketing literature &#8212; there was just an expectation that it would have an identical or better feature set).</p>
+<p>My biggest issue was that I have a number of Internet of Things devices that just wouldn&#8217;t work with the Google Wifi. Several of the devices in my house still require 2.4Ghz connections and couldn&#8217;t successfully negotiate with Google Wifi. So, I had to strategically place a few older 2.4Ghz routers around my house to provide service to the older devices. Honestly, it was workable, but sucked from a configuration and reliability perspective. I&#8217;m sure I didn&#8217;t have the frequencies adequately arranged and there were likely constant conflicts.</p>
+<p>Ultimately, I decided that I wanted a setup that would allow me to have more control over my network without needing multiple Wifi access points around to service both new and old devices. I also really wanted a <strong>web</strong> based portal for configuration. Google Wifi is only through an Android or iPhone app (there isn&#8217;t even an app that takes advantage of an iPad&#8217;s larger screen &#8212; it&#8217;s simply a scaled iPhone app).</p>
+<p>In the prosumer price point, Ubiquiti hardware seems to lead the pack. They have lines for consumer as well, but I wanted the middle ground option.</p>
+<h3>Their Software</h3>
+<p>Given that their solution is built to provide a software defined networking stack, I&#8217;ll walk you through a bit of the experience from my perspective.</p>
+<p>Firstly, I mentioned I had some experience with a number of hardware and firmware options. The easiest to use overall was Google Wifi. The hardest is a race to the bottom, many of the options blur together in my memory to form a perfectly awful experience. Ubiquiti can never be as simple to use as Google Wifi &#8212; they just are not in the same markets nor are the features comparable. That being said, I&#8217;m remarkably competent using the Ubiquiti Cloud Controller software. Thankfully Ubiquiti has seriously good documentation for many real world scenarios that you might want to use. Some of the documentation is a bit out of date, but the core is generally still accurate and gets the job done.</p>
+<p>For example, it took about 10 minutes to setup a robust L2TP/IPSec VPN service so that I could connect from my devices back to my home network. It&#8217;s great as it&#8217;s supported on iOS and Windows 10 out of the box.</p>
+<ul>
+<li><a href="https://help.ubnt.com/hc/en-us/articles/115005445768">UniFi &#8211; USG VPN: L2TP Remote Access VPN with USG as RADIUS Server</a></li>
+<li><a href="https://help.ubnt.com/hc/en-us/articles/219654087-UniFi-USW-Using-VLANs-with-UniFi-Wireless-Routing-Switching-Hardware">UniFi &#8211; USW: Using VLANs with UniFi Wireless, Routing &amp; Switching Hardware</a></li>
+<li><a href="https://help.ubnt.com/hc/en-us/articles/115000166827-UniFi-Wireless-Guest-Network-Setup">UniFi &#8211; Wireless Guest Network Setup</a></li>
+</ul>
+<p><img data-attachment-id="2287" data-permalink="/blog/index.php/archives/2278/photo-jul-23-7-24-31-pm" data-orig-file="/blog/wp-content/uploads/2018/07/Photo-Jul-23-7-24-31-PM-e1532393842190.jpg" data-orig-size="3447,1703" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;2.2&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;iPhone 6s&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;1532373871&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;4.15&quot;,&quot;iso&quot;:&quot;200&quot;,&quot;shutter_speed&quot;:&quot;0.058823529411765&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="Photo Jul 23, 7 24 31 PM" data-image-description="" data-image-caption="" data-medium-file="/blog/wp-content/uploads/2018/07/Photo-Jul-23-7-24-31-PM-e1532393842190-300x148.jpg" data-large-file="/blog/wp-content/uploads/2018/07/Photo-Jul-23-7-24-31-PM-e1532393842190-1024x506.jpg" loading="lazy" class="aligncenter wp-image-2287 size-large" src="/blog/wp-content/uploads/2018/07/Photo-Jul-23-7-24-31-PM-e1532393842190-1024x506.jpg" alt="" width="730" height="361" srcset="/blog/wp-content/uploads/2018/07/Photo-Jul-23-7-24-31-PM-e1532393842190-1024x506.jpg 1024w, /blog/wp-content/uploads/2018/07/Photo-Jul-23-7-24-31-PM-e1532393842190-300x148.jpg 300w, /blog/wp-content/uploads/2018/07/Photo-Jul-23-7-24-31-PM-e1532393842190-768x379.jpg 768w, /blog/wp-content/uploads/2018/07/Photo-Jul-23-7-24-31-PM-e1532393842190-1200x593.jpg 1200w" sizes="(max-width: 730px) 100vw, 730px" /></p>
+<p>I&#8217;d never had a virtual LAN setup in a useful way in our house before. I&#8217;d tried, but it was always very limited and only functioned with a select group of Wifi connected devices. Now I can configure VLANs both for physical connections and for wifi connections. For example, in the photo above, there&#8217;s a red cable on the right side that connects to a PoE (externally powered) security camera (I use red to indicate it&#8217;s a special connection). I&#8217;d read enough scary things about cheaper IP based security cameras that I decided to sandbox it entirely. My security camera software can access it directly, but the camera can&#8217;t access other devices on the network.</p>
+<p><img data-attachment-id="2302" data-permalink="/blog/index.php/archives/2278/distrustediot" data-orig-file="/blog/wp-content/uploads/2018/07/DistrustedIot.png" data-orig-size="392,343" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="DistrustedIot" data-image-description="" data-image-caption="" data-medium-file="/blog/wp-content/uploads/2018/07/DistrustedIot-300x263.png" data-large-file="/blog/wp-content/uploads/2018/07/DistrustedIot.png" loading="lazy" class="aligncenter size-full wp-image-2302" src="/blog/wp-content/uploads/2018/07/DistrustedIot.png" alt="Distrusted IOT VLAN" width="392" height="343" srcset="/blog/wp-content/uploads/2018/07/DistrustedIot.png 392w, /blog/wp-content/uploads/2018/07/DistrustedIot-300x263.png 300w" sizes="(max-width: 392px) 100vw, 392px" /></p>
+<p>There are actually two reasonable ways of putting in a VLAN. As a device, or via a specific port. As shown above, I&#8217;ve chosen to associate the device with the <strong>Distrusted IOT</strong> VLAN explicitly. Otherwise, I could have selected a port and placed it in the desired profile (again, the Distrusted IOT profile as shown below).<img data-attachment-id="2303" data-permalink="/blog/index.php/archives/2278/port-vlan-option" data-orig-file="/blog/wp-content/uploads/2018/07/Port-VLAN-option.png" data-orig-size="392,457" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Port-VLAN-option" data-image-description="" data-image-caption="" data-medium-file="/blog/wp-content/uploads/2018/07/Port-VLAN-option-257x300.png" data-large-file="/blog/wp-content/uploads/2018/07/Port-VLAN-option.png" loading="lazy" class="aligncenter size-full wp-image-2303" src="/blog/wp-content/uploads/2018/07/Port-VLAN-option.png" alt="Ports Port Profile" width="392" height="457" srcset="/blog/wp-content/uploads/2018/07/Port-VLAN-option.png 392w, /blog/wp-content/uploads/2018/07/Port-VLAN-option-257x300.png 257w" sizes="(max-width: 392px) 100vw, 392px" /></p>
+<h3>Configuration of a Virtual LAN</h3>
+<p>As with many things in the Ubiquiti Cloud Controller software, it&#8217;s only a few straightforward steps. Below, I&#8217;ve added a Network called <strong>Distrusted IOT </strong>and assigned it the VLAN identifier of 100.</p>
+<p><img data-attachment-id="2313" data-permalink="/blog/index.php/archives/2278/vlan-4" data-orig-file="/blog/wp-content/uploads/2018/07/VLAN-4.png" data-orig-size="962,246" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="VLAN (4)" data-image-description="" data-image-caption="" data-medium-file="/blog/wp-content/uploads/2018/07/VLAN-4-300x77.png" data-large-file="/blog/wp-content/uploads/2018/07/VLAN-4.png" loading="lazy" class="aligncenter size-full wp-image-2313" src="/blog/wp-content/uploads/2018/07/VLAN-4.png" alt="" width="962" height="246" srcset="/blog/wp-content/uploads/2018/07/VLAN-4.png 962w, /blog/wp-content/uploads/2018/07/VLAN-4-300x77.png 300w, /blog/wp-content/uploads/2018/07/VLAN-4-768x196.png 768w" sizes="(max-width: 962px) 100vw, 962px" /></p>
+<p>On the settings page for the new VLAN, I&#8217;ve specified the ID (100), I gave it a custom gateway/subnet (for example, you could use 192.168.100.1/24), provided a custom domain name, DHCP Server and a DHCP range. To prevent rogue DHCP servers, I&#8217;ve also enabled DHCP guarding. As I wanted to lock this one down, I&#8217;ve disabled UPnP LAN support. I&#8217;ve found that some devices need IGMP snooping to work correctly, so I did enable it. It&#8217;s up to you.</p>
+<p><a href="/blog/wp-content/uploads/2018/07/VLAN-3.png"><br />
+</a><a href="/blog/wp-content/uploads/2018/07/VLAN-3.png"><img data-attachment-id="2312" data-permalink="/blog/index.php/archives/2278/vlan-3" data-orig-file="/blog/wp-content/uploads/2018/07/VLAN-3.png" data-orig-size="958,886" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="VLAN (3)" data-image-description="" data-image-caption="" data-medium-file="/blog/wp-content/uploads/2018/07/VLAN-3-300x277.png" data-large-file="/blog/wp-content/uploads/2018/07/VLAN-3.png" loading="lazy" class="aligncenter wp-image-2312 size-full" src="/blog/wp-content/uploads/2018/07/VLAN-3.png" alt="Configuration of VLAN" width="958" height="886" srcset="/blog/wp-content/uploads/2018/07/VLAN-3.png 958w, /blog/wp-content/uploads/2018/07/VLAN-3-300x277.png 300w, /blog/wp-content/uploads/2018/07/VLAN-3-768x710.png 768w" sizes="(max-width: 958px) 100vw, 958px" /></a>Finally, I added a Firewall WAN Traffic rule (Settings &gt; Routing &amp; Firewall &gt; Firewall &gt; WAN OUT). Click [+ CREATE NEW RULE]</p>
+<p><a href="/blog/wp-content/uploads/2018/07/VLAN-2.png"><img data-attachment-id="2311" data-permalink="/blog/index.php/archives/2278/vlan-2" data-orig-file="/blog/wp-content/uploads/2018/07/VLAN-2.png" data-orig-size="961,282" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="VLAN (2)" data-image-description="" data-image-caption="" data-medium-file="/blog/wp-content/uploads/2018/07/VLAN-2-300x88.png" data-large-file="/blog/wp-content/uploads/2018/07/VLAN-2.png" loading="lazy" class="aligncenter wp-image-2311 size-full" src="/blog/wp-content/uploads/2018/07/VLAN-2.png" alt="Firewall WLAN" width="961" height="282" srcset="/blog/wp-content/uploads/2018/07/VLAN-2.png 961w, /blog/wp-content/uploads/2018/07/VLAN-2-300x88.png 300w, /blog/wp-content/uploads/2018/07/VLAN-2-768x225.png 768w" sizes="(max-width: 961px) 100vw, 961px" /></a></p>
+<p>Then:</p>
+<ul>
+<li>name it (like Block All IOT WAN TRAFFIC)</li>
+<li>enable it</li>
+<li>select that it runs Before predefined rrules</li>
+<li>Action: Drop</li>
+<li>IPv4 Protocol: All</li>
+<li>Advanced
+<ul>
+<li>Enable Logging (optional)</li>
+<li>IPSec: Don&#8217;t match</li>
+</ul>
+</li>
+<li>Source:
+<ul>
+<li>Source Type: Network</li>
+<li>Pick the VLAN you created earlier (like <strong>Distrusted IOT</strong>)</li>
+</ul>
+</li>
+<li>Destination
+<ul>
+<li>Address Port/Group
+<ul>
+<li>Group: Any</li>
+<li>Port: Any</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><a href="/blog/wp-content/uploads/2018/07/2018-07-24-20_02_41-UniFi.png"><img data-attachment-id="2314" data-permalink="/blog/index.php/archives/2278/2018-07-24-20_02_41-unifi" data-orig-file="/blog/wp-content/uploads/2018/07/2018-07-24-20_02_41-UniFi.png" data-orig-size="948,1150" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="2018-07-24 20_02_41-UniFi" data-image-description="" data-image-caption="" data-medium-file="/blog/wp-content/uploads/2018/07/2018-07-24-20_02_41-UniFi-247x300.png" data-large-file="/blog/wp-content/uploads/2018/07/2018-07-24-20_02_41-UniFi-844x1024.png" loading="lazy" class="aligncenter size-full wp-image-2314" src="/blog/wp-content/uploads/2018/07/2018-07-24-20_02_41-UniFi.png" alt="" width="948" height="1150" srcset="/blog/wp-content/uploads/2018/07/2018-07-24-20_02_41-UniFi.png 948w, /blog/wp-content/uploads/2018/07/2018-07-24-20_02_41-UniFi-247x300.png 247w, /blog/wp-content/uploads/2018/07/2018-07-24-20_02_41-UniFi-768x932.png 768w, /blog/wp-content/uploads/2018/07/2018-07-24-20_02_41-UniFi-844x1024.png 844w" sizes="(max-width: 948px) 100vw, 948px" /></a></p>
+<p>Now, the security camera is isolated on it&#8217;s own distrusted network, but my security camera software can still access it by IP address. Beautiful. I have the POWER! (Use your imagination to picture He-man right now!).</p>
+<h3>Insights</h3>
+<p>As a resident of rural Wisconsin, I find the insight functionality of &#8220;neighboring access points&#8221; far more fascinating than I probably should. <em><strong>Seriously</strong></em>. The nearest neighbor is 300 foot (100m) away and the nearest secondary road is about 1200 foot (365m). I presume some of these are phones and cars &#8212; but the fact that Ubiquiti catches these and logs these is tremendously interesting.</p>
+<p><img data-attachment-id="2300" data-permalink="/blog/index.php/archives/2278/2018-07-23-20_10_50-window" data-orig-file="/blog/wp-content/uploads/2018/07/2018-07-23-20_10_50-Window.png" data-orig-size="1390,485" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="2018-07-23 20_10_50-Window" data-image-description="" data-image-caption="" data-medium-file="/blog/wp-content/uploads/2018/07/2018-07-23-20_10_50-Window-300x105.png" data-large-file="/blog/wp-content/uploads/2018/07/2018-07-23-20_10_50-Window-1024x357.png" loading="lazy" class="aligncenter size-large wp-image-2300" src="/blog/wp-content/uploads/2018/07/2018-07-23-20_10_50-Window-1024x357.png" alt="Neighboring Access Points" width="730" height="255" srcset="/blog/wp-content/uploads/2018/07/2018-07-23-20_10_50-Window-1024x357.png 1024w, /blog/wp-content/uploads/2018/07/2018-07-23-20_10_50-Window-300x105.png 300w, /blog/wp-content/uploads/2018/07/2018-07-23-20_10_50-Window-768x268.png 768w, /blog/wp-content/uploads/2018/07/2018-07-23-20_10_50-Window-1200x419.png 1200w, /blog/wp-content/uploads/2018/07/2018-07-23-20_10_50-Window.png 1390w" sizes="(max-width: 730px) 100vw, 730px" /></p>
+<h3>Static IP</h3>
+<p>It&#8217;s thankfully easy to configure fixed IP addresses. Select Clients, click on the device you want to configure, select the Configuration tab, click &#8220;Use fixed IP address&#8221; and then type in the IP Address.</p>
+<p><img data-attachment-id="2298" data-permalink="/blog/index.php/archives/2278/static-ip" data-orig-file="/blog/wp-content/uploads/2018/07/static-ip.png" data-orig-size="410,408" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="static-ip" data-image-description="" data-image-caption="" data-medium-file="/blog/wp-content/uploads/2018/07/static-ip-300x300.png" data-large-file="/blog/wp-content/uploads/2018/07/static-ip.png" loading="lazy" class="aligncenter size-full wp-image-2298" src="/blog/wp-content/uploads/2018/07/static-ip.png" alt="Static-ip" width="410" height="408" srcset="/blog/wp-content/uploads/2018/07/static-ip.png 410w, /blog/wp-content/uploads/2018/07/static-ip-150x150.png 150w, /blog/wp-content/uploads/2018/07/static-ip-300x300.png 300w" sizes="(max-width: 410px) 100vw, 410px" /></p>
+<h3>Upgrading</h3>
+<p>Upgrading a Ubiquiti device is stupidly simple.</p>
+<p><img data-attachment-id="2305" data-permalink="/blog/index.php/archives/2278/2018-07-24-07_38_43-window" data-orig-file="/blog/wp-content/uploads/2018/07/2018-07-24-07_38_43-Window.png" data-orig-size="1485,383" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="2018-07-24 07_38_43-Window" data-image-description="" data-image-caption="" data-medium-file="/blog/wp-content/uploads/2018/07/2018-07-24-07_38_43-Window-300x77.png" data-large-file="/blog/wp-content/uploads/2018/07/2018-07-24-07_38_43-Window-1024x264.png" loading="lazy" class="aligncenter size-large wp-image-2305" src="/blog/wp-content/uploads/2018/07/2018-07-24-07_38_43-Window-1024x264.png" alt="" width="730" height="188" srcset="/blog/wp-content/uploads/2018/07/2018-07-24-07_38_43-Window-1024x264.png 1024w, /blog/wp-content/uploads/2018/07/2018-07-24-07_38_43-Window-300x77.png 300w, /blog/wp-content/uploads/2018/07/2018-07-24-07_38_43-Window-768x198.png 768w, /blog/wp-content/uploads/2018/07/2018-07-24-07_38_43-Window-1200x309.png 1200w, /blog/wp-content/uploads/2018/07/2018-07-24-07_38_43-Window.png 1485w" sizes="(max-width: 730px) 100vw, 730px" /></p>
+<p>When logging in, you&#8217;ll see a notice that one more more devices has firmware updates available. After navigating to the Devices tab, you&#8217;ll see the word UPGRADE next to any of the devices that has an upgrade available. Click upgrade and a confirmation shows (by default) and a second click later, the process begins. Minor updates take a few minutes at most.</p>
+<p><img data-attachment-id="2304" data-permalink="/blog/index.php/archives/2278/2018-07-24-07_39_21-window" data-orig-file="/blog/wp-content/uploads/2018/07/2018-07-24-07_39_21-Window.png" data-orig-size="1112,388" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="2018-07-24 07_39_21-Window" data-image-description="" data-image-caption="" data-medium-file="/blog/wp-content/uploads/2018/07/2018-07-24-07_39_21-Window-300x105.png" data-large-file="/blog/wp-content/uploads/2018/07/2018-07-24-07_39_21-Window-1024x357.png" loading="lazy" class="aligncenter size-large wp-image-2304" src="/blog/wp-content/uploads/2018/07/2018-07-24-07_39_21-Window-1024x357.png" alt="" width="730" height="255" srcset="/blog/wp-content/uploads/2018/07/2018-07-24-07_39_21-Window-1024x357.png 1024w, /blog/wp-content/uploads/2018/07/2018-07-24-07_39_21-Window-300x105.png 300w, /blog/wp-content/uploads/2018/07/2018-07-24-07_39_21-Window-768x268.png 768w, /blog/wp-content/uploads/2018/07/2018-07-24-07_39_21-Window.png 1112w" sizes="(max-width: 730px) 100vw, 730px" /></p>
+<p>Of course, there&#8217;s a little downtime when the device reboots, so plan accordingly. I applaud the developers for making this so painless. I don&#8217;t need to find a SUPPORT link and DOWNLOAD link on their web site, carefully match hardware revisions, find the correct update given the devices current patch level, download a binary gzipped file and use a crappy uploader to install the firmware. It&#8217;s one or two clicks.</p>
+<h3>Dashboard</h3>
+<p>The dashboard looks great. I don&#8217;t find it very useful though. It&#8217;s not &#8220;real time&#8221; enough to satisfy my needs. In particular, I&#8217;d like real-time throughput of download and upload. There are a LOT of folks that bought the hardware expecting the functionality. I however, had done sufficient research to know it didn&#8217;t exist. So, my expectations were set properly. Their forums mention it a lot, but it hasn&#8217;t gotten traction. Don&#8217;t hold your breath until it shows up.</p>
+<p><a href="/blog/wp-content/uploads/2018/07/u-dashboard.png"><img data-attachment-id="2317" data-permalink="/blog/index.php/archives/2278/u-dashboard" data-orig-file="/blog/wp-content/uploads/2018/07/u-dashboard.png" data-orig-size="800,731" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="u-dashboard" data-image-description="" data-image-caption="" data-medium-file="/blog/wp-content/uploads/2018/07/u-dashboard-300x274.png" data-large-file="/blog/wp-content/uploads/2018/07/u-dashboard.png" loading="lazy" class="aligncenter size-full wp-image-2317" src="/blog/wp-content/uploads/2018/07/u-dashboard.png" alt="dashboard" width="800" height="731" srcset="/blog/wp-content/uploads/2018/07/u-dashboard.png 800w, /blog/wp-content/uploads/2018/07/u-dashboard-300x274.png 300w, /blog/wp-content/uploads/2018/07/u-dashboard-768x702.png 768w" sizes="(max-width: 800px) 100vw, 800px" /></a></p>
+<h3>Missing Features</h3>
+<p>Here are some things I&#8217;d like to see added:</p>
+<ul>
+<li>A better live view of what devices are using an unfair share of Internet. I mentioned this already, but there&#8217;s not a way to at a glance see all known clients and their current usage. In fact, there&#8217;s not a way to reliably do it all. The Edge Router series apparently has it, but it won&#8217;t integrate with the controller, so you may not want that combination.</li>
+<li>A way to shape traffic live, and demote or promote specific devices for a length of time (or maybe indefinitely)</li>
+<li>A method to limit a class/network of devices to a maximum total amount of bandwidth (for example, all IoT devices limited to .25Mb of upload traffic). You can limit a class of devices to each have a specific bandwidth cap, but it&#8217;s applied individually rather than as a group.</li>
+<li>A few wizards for common workflows.</li>
+<li>The setup and configuration for the UniFi Security Gateway feels out of place &#8212; while it&#8217;s part of the overall system, it requires love and attention on its own, which is confusing at first, and later, and later&#8230;.</li>
+</ul>
+<h3>Final Thoughts</h3>
+<p>Even though the product has a few warts and missing features, I&#8217;m generally very happy with the hardware and software. Like many things reviewed, not everyone&#8217;s experience has been like mine, but of course, many people with successful installations don&#8217;t bother talking about it. It&#8217;s the people with problems that are often loud. So, make sure you temper what you may read in forums with a healthy dose of reality. The product does work and can work very successfully if you properly manage expectations and use it in the manner in which it was designed.</p>
+<p>As of the end of July 2018, I&#8217;d recommend their products.</p>
+<p>If you&#8217;ve found this helpful and are ready to make a purchase, you may of course buy the hardware from various parties on Amazon. As few (if any) are authorized resellers, you may want to opt for one of the few authorized resellers: <a href="https://www.bhphotovideo.com/buy/Shop-by-Brand-Ubiquiti-Networks/ci/4/phd/3927199258/N/4294255798/BI/2907/KBID/3842/kwid/000/DFF/d10-v1-t2-z3927199258">B&amp;H Photo and Video</a>. As the links are affiliate links and don&#8217;t add anything to the cost/price of the purchase, I&#8217;d certainly appreciate it if you used them.</p>
+<ul>
+<li><a href="https://www.bhphotovideo.com/c/product/1073518-REG/ubiquiti_networks_usg_unifi_security_gateway_router.html/BI/2907/KBID/3842/kw/UBUSG/DFF/d10-v2-t1-xUBUSG" target="_blank" rel="noopener">Ubiquiti Networks UniFi Enterprise Gateway Router with Gigabit Ethernet</a>  (<a href="https://amzn.to/2NIvdFg">Amazon</a>)</li>
+<li><a href="https://www.bhphotovideo.com/c/product/1049763-REG/ubiquiti_networks_uap_lr_enterprise_ap_lr_unifi.html/BI/2907/KBID/3842/kw/UBUAPLR/DFF/d10-v2-t1-xUBUAPLR" target="_blank" rel="noopener">Ubiquiti Networks UniFi Access Point Long Range Enterprise Wi-Fi System (Single Pack)</a> (<a href="https://amzn.to/2A8Db8B">Amazon</a>)</li>
+<li><a href="https://www.bhphotovideo.com/c/product/1296855-REG/ubiquiti_networks_uap_ac_m_us_unifi_ac_mesh.html/BI/2907/KBID/3842/kw/UBUAPACMUS/DFF/d10-v2-t1-xUBUAPACMUS" target="_blank" rel="noopener">Ubiquiti Networks UAP-AC-M-US UniFi AC Mesh Wide-Area Indoor/Outdoor Dual-Band Access Point</a> (<a href="https://amzn.to/2NLErRa">Amazon</a>)</li>
+<li><a href="https://www.bhphotovideo.com/c/product/1267263-REG/ubiquiti_networks_us_24_24_port_unifi.html/BI/2907/KBID/3842/kw/UBUS24/DFF/d10-v2-t1-xUBUS24" target="_blank" rel="noopener">Ubiquiti Networks US-24 24-Port UniFi Managed Gigabit Switch with SFP</a>  (<a href="https://amzn.to/2uPuDP5">Amazon</a>)</li>
+<li><a href="https://www.bhphotovideo.com/c/product/1296853-REG/ubiquiti_networks_us_8_full_managed_8_port.html/BI/2907/KBID/3842/kw/UBUS8/DFF/d10-v2-t1-xUBUS8" target="_blank" rel="noopener">Ubiquiti Networks US-8 UniFi 8-Port Gigabit PoE Compliant Managed Switch</a> (<a href="https://amzn.to/2JUDaF5">Amazon</a>)</li>
+<li><a href="https://www.bhphotovideo.com/c/product/1315899-REG/ubiquiti_networks_uf_mm_1g_u_fiber_sfp_mini_gbic.html/BI/2907/KBID/3842/kw/UBUFMM1G/DFF/d10-v2-t1-xUBUFMM1G" target="_blank" rel="noopener">Ubiquiti Networks UF-MM-1G SFP Multi-Mode Fiber Module (2-Pack)</a> (<a href="https://amzn.to/2OivO1u">Amazon</a>)</li>
+<li><a href="https://www.bhphotovideo.com/c/buy/unifi_cloud_key/Ntt/unifi%2Bcloud%2Bkey/N/0/kw/search/BI/2907/KBID/3842/DFF/d10-v1-t12" target="_blank" rel="noopener">Ubiquiti Networks UniFi Cloud Key</a> (<a href="https://amzn.to/2LPMeNc">Amazon</a>)</li>
+</ul>
+<p>Thanks for reading! I hope this was helpful. If you have any questions, ask away! :)</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2278</post-id>	</item>
+		<item>
+		<title>Ubiquiti UniFi WiFi and Haiku Big A** Fans Wall Controllers</title>
+		<link>/blog/index.php/archives/2270</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Thu, 19 Jul 2018 00:37:23 +0000</pubDate>
+				<category><![CDATA[General]]></category>
+		<guid isPermaLink="false">/blog/?p=2270</guid>
+
+					<description><![CDATA[If you&#8217;ve purchased either a UniFi access point or a Haiku/Big A** Fan recently, you may encounter a problem with wall controllers failing to control the associated fan. While the setup nearly works, the final verification step for the wall controller always fails from the app. Further, and confusingly, if you look at the clients [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>If you&#8217;ve purchased either a UniFi access point or a Haiku/Big A** Fan recently, you may encounter a problem with wall controllers failing to control the associated fan. While the setup nearly works, the final verification step for the wall controller always fails from the app. Further, and confusingly, if you look at the clients list in the Ubiquiti controller, it&#8217;s very likely that you&#8217;ll see the wall controller listed with a valid IP address. However, that&#8217;s not enough to make everything work as expected.</p>
+<p>There are two settings that seem to enable the wall controller to work properly. I discovered these after reading an article about setting up a <a href="https://help.ubnt.com/hc/en-us/articles/360001004034-UniFi-Best-Practices-for-Managing-Chromecast-Google-Home-on-UniFi-Network">Google Home/Chromecast</a>. You don&#8217;t necessarily need to setup a new SSID and VLAN for your wall controller. <strong>That&#8217;s up to you</strong>. However, you will need to enable <strong>IGMP Snooping</strong> and <strong>MulticastDNS </strong>for the Wifi that the wall controller and the fan use.</p>
+<p>IGMP Snooping / multicast enhancement is found here: Settings &gt; Wireless Networks&gt; WIRELESS NETWORK [EDIT] &gt; Advanced Options and at the end, Enable multicast enhancement (IGMPv3).<a href="/blog/wp-content/uploads/2018/07/edit-wifi-1.png"><img data-attachment-id="2275" data-permalink="/blog/index.php/archives/2270/edit-wifi-1" data-orig-file="/blog/wp-content/uploads/2018/07/edit-wifi-1.png" data-orig-size="625,766" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Edit Wifi Settings to Enable ICMP" data-image-description="" data-image-caption="" data-medium-file="/blog/wp-content/uploads/2018/07/edit-wifi-1-245x300.png" data-large-file="/blog/wp-content/uploads/2018/07/edit-wifi-1.png" loading="lazy" class="aligncenter size-full wp-image-2275" src="/blog/wp-content/uploads/2018/07/edit-wifi-1.png" alt="Edit Wifi Settings to Enable ICMP" width="625" height="766" srcset="/blog/wp-content/uploads/2018/07/edit-wifi-1.png 625w, /blog/wp-content/uploads/2018/07/edit-wifi-1-245x300.png 245w" sizes="(max-width: 625px) 100vw, 625px" /></a></p>
+<p>Next, enable multicast DNS: Settings &gt; Services &gt; MDNS &gt; [ON]</p>
+<p><a href="/blog/wp-content/uploads/2018/07/edit-wifi-2.png"><img data-attachment-id="2274" data-permalink="/blog/index.php/archives/2270/edit-wifi-2" data-orig-file="/blog/wp-content/uploads/2018/07/edit-wifi-2.png" data-orig-size="1102,367" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Enable Multicast DNS" data-image-description="" data-image-caption="" data-medium-file="/blog/wp-content/uploads/2018/07/edit-wifi-2-300x100.png" data-large-file="/blog/wp-content/uploads/2018/07/edit-wifi-2-1024x341.png" loading="lazy" class="aligncenter size-full wp-image-2274" src="/blog/wp-content/uploads/2018/07/edit-wifi-2.png" alt="Enable Multicast DNS" width="1102" height="367" srcset="/blog/wp-content/uploads/2018/07/edit-wifi-2.png 1102w, /blog/wp-content/uploads/2018/07/edit-wifi-2-300x100.png 300w, /blog/wp-content/uploads/2018/07/edit-wifi-2-768x256.png 768w, /blog/wp-content/uploads/2018/07/edit-wifi-2-1024x341.png 1024w" sizes="(max-width: 1102px) 100vw, 1102px" /></a></p>
+<p>As soon as I enabled these, the two wall controllers we have for two Haiku fans began to operate nearly immediately.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2270</post-id>	</item>
+		<item>
+		<title>Visual Studio 2017 Anaconda Prompt Fix</title>
+		<link>/blog/index.php/archives/2257</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Wed, 16 May 2018 00:24:37 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[General]]></category>
+		<guid isPermaLink="false">/blog/?p=2257</guid>
+
+					<description><![CDATA[For some reason, if you install the Python Tools for Visual Studio 2017, you&#8217;ll end up with an Anaconda command prompt that won&#8217;t work. It apparently is due to a path length limitation where the total target path exceeds some ridiculously small number in Windows for a shortcut. Thankfully, the fix isn&#8217;t painful &#8212; it&#8217;s [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>For some reason, if you install the Python Tools for Visual Studio 2017, you&#8217;ll end up with an Anaconda command prompt that won&#8217;t work. It apparently is due to a path length limitation where the total target path exceeds some ridiculously small number in Windows for a shortcut.</p>
+<p><a href="/blog/wp-content/uploads/2018/05/Anaconda-Prompt.png"><img data-attachment-id="2258" data-permalink="/blog/index.php/archives/2257/anaconda-prompt" data-orig-file="/blog/wp-content/uploads/2018/05/Anaconda-Prompt.png" data-orig-size="544,585" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Anaconda Prompt" data-image-description="" data-image-caption="" data-medium-file="/blog/wp-content/uploads/2018/05/Anaconda-Prompt-279x300.png" data-large-file="/blog/wp-content/uploads/2018/05/Anaconda-Prompt.png" loading="lazy" class="aligncenter size-full wp-image-2258" src="/blog/wp-content/uploads/2018/05/Anaconda-Prompt.png" alt="" width="544" height="585" srcset="/blog/wp-content/uploads/2018/05/Anaconda-Prompt.png 544w, /blog/wp-content/uploads/2018/05/Anaconda-Prompt-279x300.png 279w" sizes="(max-width: 544px) 100vw, 544px" /></a></p>
+<p>Thankfully, the fix isn&#8217;t painful &#8212; it&#8217;s just frustrating that it needs to be done.</p>
+<p>I&#8217;ve seen suggestions to use the old-school DOS 8.3 file paths, but I prefer to use something that still reads well and maps to other dev command line tools on my workstation.</p>
+<p>I created a directory junction in an existing folder <strong>C:\Dev:</strong></p>
+<pre>mklink /d c:\Dev\Anaconda3_64 "c:\Program Files (x86)\Microsoft Visual Studio\Shared\Anaconda3_64"</pre>
+<p>Specifically, I created:</p>
+<pre>C:\Dev\Anaconda3_64</pre>
+<p>which is a junction to:</p>
+<pre>c:\Program Files (x86)\Microsoft Visual Studio\Shared\Anaconda3_64</pre>
+<p>You can use any junction directory you want, but remember that it can&#8217;t be too long, or you&#8217;ll have the same problem with a different name/path. :) When using <strong>mklink</strong>, be sure to quote the path for the Anaconda install in the Visual Studio directory as shown above in the mklink example.</p>
+<p>Next, I updated the command prompt with the new path:</p>
+<pre>c:\Dev\Anaconda3_64\pythonw.exe C:\Dev\Anaconda3_64\cwp.py C:\Dev\Anaconda3_64 %windir%\system32\cmd.exe /k c:\Dev\Anaconda3_64\Scripts\activate.bat c:\Dev\Anaconda3_64</pre>
+<p>Of course, you&#8217;ll need to substitute the path you used (just copy and paste into Notepad and do a quick search and replace with the full path I used).</p>
+<p>It should start up without issue now.</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2257</post-id>	</item>
+		<item>
+		<title>Flutter Demo application linking to BoardGameGeek.Com&#8217;s Hot Game List</title>
+		<link>/blog/index.php/archives/2224</link>
+					<comments>/blog/index.php/archives/2224#comments</comments>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Tue, 27 Feb 2018 01:49:12 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[General]]></category>
+		<category><![CDATA[Mobile]]></category>
+		<category><![CDATA[Phone]]></category>
+		<guid isPermaLink="false">/blog/?p=2224</guid>
+
+					<description><![CDATA[I&#8217;ve built a slightly more interesting application using Flutter.  Using an XML feed from BoardGameGeek&#8217;s API, the application displays a list of the current hot games complete with thumbnail images. Here&#8216;s the code. I used a standard Flutter app template and also added a few packages to the project. I&#8217;ve coded a substantial amount of [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;ve built a slightly more interesting application using Flutter.  Using an XML feed from <a href="https://boardgamegeek.com/wiki/page/BGG_XML_API2">BoardGameGeek&#8217;s API</a>, the application displays a list of the current hot games complete with thumbnail images.</p>
+<p><a href="/blog/wp-content/uploads/2018/02/2018-02-25-15_41_40-Android-Emulator-Nexus_5X_API_26_-_Flutter_5554.png"><img data-attachment-id="2225" data-permalink="/blog/index.php/archives/2224/2018-02-25-15_41_40-android-emulator-nexus_5x_api_26_-_flutter_5554" data-orig-file="/blog/wp-content/uploads/2018/02/2018-02-25-15_41_40-Android-Emulator-Nexus_5X_API_26_-_Flutter_5554.png" data-orig-size="324,650" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Android Screen" data-image-description="" data-image-caption="" data-medium-file="/blog/wp-content/uploads/2018/02/2018-02-25-15_41_40-Android-Emulator-Nexus_5X_API_26_-_Flutter_5554-150x300.png" data-large-file="/blog/wp-content/uploads/2018/02/2018-02-25-15_41_40-Android-Emulator-Nexus_5X_API_26_-_Flutter_5554.png" loading="lazy" class="aligncenter wp-image-2225 size-full" src="/blog/wp-content/uploads/2018/02/2018-02-25-15_41_40-Android-Emulator-Nexus_5X_API_26_-_Flutter_5554.png" alt="Android Screen" width="324" height="650" srcset="/blog/wp-content/uploads/2018/02/2018-02-25-15_41_40-Android-Emulator-Nexus_5X_API_26_-_Flutter_5554.png 324w, /blog/wp-content/uploads/2018/02/2018-02-25-15_41_40-Android-Emulator-Nexus_5X_API_26_-_Flutter_5554-150x300.png 150w" sizes="(max-width: 324px) 100vw, 324px" /></a></p>
+<p><a href="https://github.com/wiredprairie/flutter_app1">Here</a>&#8216;s the code. I used a standard Flutter app template and also added a few <a href="https://github.com/wiredprairie/flutter_app1/blob/master/pubspec.yaml">packages</a> to the project.</p>
+<p>I&#8217;ve coded a substantial amount of Windows Presentation Foundation (WPF) and Silverlight code over the years. One of the concerns that often came up was the UI tree &#8230;, the more complex it was, the slower the app often was without lots of tricks. Using the new inspector for Flutter apps, I selected one of the images in the UI. Needless to say, there are a <strong>few</strong> objects created to represent the UI tree. In fact, I had trouble capturing the image for this blog post. :)</p>
+<p><a href="/blog/wp-content/uploads/2018/02/2018-02-25-15_57_02-Flutter-Inspector.png"><br />
+<img data-attachment-id="2226" data-permalink="/blog/index.php/archives/2224/2018-02-25-15_57_02-flutter-inspector" data-orig-file="/blog/wp-content/uploads/2018/02/2018-02-25-15_57_02-Flutter-Inspector.png" data-orig-size="2014,2024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="2018-02-25 15_57_02-Flutter Inspector" data-image-description="" data-image-caption="" data-medium-file="/blog/wp-content/uploads/2018/02/2018-02-25-15_57_02-Flutter-Inspector-300x300.png" data-large-file="/blog/wp-content/uploads/2018/02/2018-02-25-15_57_02-Flutter-Inspector-1019x1024.png" loading="lazy" class="aligncenter size-medium wp-image-2226" src="/blog/wp-content/uploads/2018/02/2018-02-25-15_57_02-Flutter-Inspector-300x300.png" alt="Flutter Nesting" width="300" height="300" srcset="/blog/wp-content/uploads/2018/02/2018-02-25-15_57_02-Flutter-Inspector-300x300.png 300w, /blog/wp-content/uploads/2018/02/2018-02-25-15_57_02-Flutter-Inspector-150x150.png 150w, /blog/wp-content/uploads/2018/02/2018-02-25-15_57_02-Flutter-Inspector-1019x1024.png 1019w, /blog/wp-content/uploads/2018/02/2018-02-25-15_57_02-Flutter-Inspector.png 2014w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>I don&#8217;t have evidence that this generally will be a performance problem. Maybe with relatively simple mobile applications, a deep rich object based UI hierarchy won&#8217;t affect performance as much as it might in a desktop application of reasonable complexity. Regardless, it&#8217;s worth considering as you build a UI.</p>
+<p>Back to what I built. When a user taps on a board game in the list, I&#8217;ve wired the code to call the <strong>_showGameItem</strong> below. I appreciate that there&#8217;s an easy way to navigate to a new page on the stack and show a UI, all within a single function. Of course, I could have split it into multiple builder functions if needed.</p>
+<p>View the code on <a href="https://gist.github.com/wiredprairie/c0af9bb18c1460b6cfb4c61386e8dfda">Gist</a>.</p>
+<p>To register an event callback for the <strong>onTap</strong>, I&#8217;d tried finding a Widget that exposed it directly. I&#8217;m accustomed to elements having events (often bubbling events) that would have exposed something like <strong>onTap</strong>. However, with the exception of specialized widgets like Buttons for example, it&#8217;s not exposed on most Widgets (even those that have UI). So, at the outer layer of the items being shown in the <strong>ListView</strong>, I used a <strong>GestureDetector </strong>to capture the tap event:</p>
+<p>View the code on <a href="https://gist.github.com/wiredprairie/990d80ecf69700a2cd430032de29db28">Gist</a>.</p>
+<p>I would have preferred that the <strong>Container</strong> to have the event available. Maybe it&#8217;s not as <em>pure, </em>but, meh. I&#8217;d like to reduce the noise of building a UI and adding yet another layer just to capture an event is a distraction.</p>
+<blockquote><p>Architectural elegance does not always lead to a framework that is easy or friendly.</p></blockquote>
+<p>While I wasn&#8217;t really concerned about performance of my application or the possible impact from hitting the BoardGameGeek API a few times, I used application storage to cache a copy of the XML data that&#8217;s retrieved from BoardGameGeek just to get some experience with the APIs. Further, I added code to store the next time the file can be updated to the SharedPreferences object instance (to prevent it from being updated too frequently). I liked the simple exception handling in Dart as it&#8217;s relatively low impact to handle a specific exception type without caring about the details by using the <strong>on</strong> clause (just by dropping the <strong>catch(e)</strong>).</p>
+<p>View the code on <a href="https://gist.github.com/wiredprairie/dde9e1dde91fc35de9f1d42e37903cf7">Gist</a>.</p>
+<p>I noticed that the exception handler can specify one or two parameters. The first is always the exception and the second is the stack trace (<a href="https://api.dartlang.org/stable/dart-core/StackTrace-class.html">StackTrace</a>).  I&#8217;m not sure why the stack trace isn&#8217;t part of the exception object though.</p>
+<p>When the file is cached completely and successfully, the Widget state is updated, which triggers an application refresh, which is what happens on lines 29-32.</p>
+<p>Had Flutter been an option in the earlier days of Android, it would have been a strong contender in the application building space, especially that it runs on Android and iOS. From reading some of the issues on Github, the general consensus is that the cross-platform Flutter competitor to beat is React Native. In fact, I&#8217;m surprised that it has taken Google this long to produce a potentially viable alternative to the Java Android development tools. I&#8217;d honestly thought they&#8217;d announce something several years ago (I&#8217;ve watched Google I/O for many years for the announcement).</p>
+<p>If Android devices were upgraded more routinely (as are iOS devices), web technologies such as installed progressive web applications could be a serious contender and alternative for many application types. But, modern Android operating system versions are very slow to roll out (if ever) to the majority of devices.  Over half of Android devices are running Android 6.0 or earlier.</p>
+<p><a href="/blog/wp-content/uploads/2018/02/2018-02-26-19_19_35-Dashboards-_-Android-Developers.png"><img data-attachment-id="2233" data-permalink="/blog/index.php/archives/2224/2018-02-26-19_19_35-dashboards-_-android-developers" data-orig-file="/blog/wp-content/uploads/2018/02/2018-02-26-19_19_35-Dashboards-_-Android-Developers.png" data-orig-size="352,532" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Android Developer Version Distribution" data-image-description="" data-image-caption="" data-medium-file="/blog/wp-content/uploads/2018/02/2018-02-26-19_19_35-Dashboards-_-Android-Developers-198x300.png" data-large-file="/blog/wp-content/uploads/2018/02/2018-02-26-19_19_35-Dashboards-_-Android-Developers.png" loading="lazy" class="aligncenter wp-image-2233 size-full" src="/blog/wp-content/uploads/2018/02/2018-02-26-19_19_35-Dashboards-_-Android-Developers.png" alt="Android Developer Version Distribution" width="352" height="532" srcset="/blog/wp-content/uploads/2018/02/2018-02-26-19_19_35-Dashboards-_-Android-Developers.png 352w, /blog/wp-content/uploads/2018/02/2018-02-26-19_19_35-Dashboards-_-Android-Developers-198x300.png 198w" sizes="(max-width: 352px) 100vw, 352px" /></a></p>
+<p>Until the Android OEM ecosystem delivers timely updates to all phones newer than 5 years, solutions like Flutter (and competitors) remain a potentially reasonable way to reach a large variety of devices without needing to update to recent OS releases. However, it may be that the hardware hosting older versions, such as 6.0/Marshmallow and earlier are not capable of adequately executing a modern app built with technology like is used by Flutter.</p>
+<h3>Continued concerns</h3>
+<p>I still find the syntax of building a UI to be cumbersome and frustrating for several reasons:</p>
+<ol>
+<li>Using code to describe the UI is not effective for me. I can&#8217;t as quickly look at a block of code and determine what the UI is likely to be. It&#8217;s just too noisy.</li>
+<li>I&#8217;m constantly frustrated by getting the right number of closing parentheses to match the open parentheses. Using the auto formatting tools of Android Studio for Dart doesn&#8217;t make it easier. There are 10 lines that are marking the closing of some block. I&#8217;ll add an example below of how messy it starts to look if they&#8217;re combined in a way that the auto formatter suggests.</li>
+<li>In fact, if it were easy, I&#8217;d want to lines to start with the Widget type rather than <strong>child: new WidgetName</strong>(. But, there&#8217;s not an obvious way to format the code that way as the named parameters (<strong>child</strong>) are needed to provide the widget instance.</li>
+<li>Layout is a mess of classes and initialization. The examples on the web site make general sense, but when I&#8217;ve tried to innovate on my own and understand how to build other UI patterns, I&#8217;ve struggled to find the right combination of Widget classes that represent a desired layout. I imagine that with practice I&#8217;d get better, but I also would likely create multiple stateless Widgets to make some of the common patterns I&#8217;d expect to use routinely.</li>
+</ol>
+<p><a href="/blog/wp-content/uploads/2018/02/2018-02-26-19_45_39-Hulk-Smash-Meme-Generator-Imgflip.png"><img data-attachment-id="2239" data-permalink="/blog/index.php/archives/2224/2018-02-26-19_45_39-hulk-smash-meme-generator-imgflip" data-orig-file="/blog/wp-content/uploads/2018/02/2018-02-26-19_45_39-Hulk-Smash-Meme-Generator-Imgflip.png" data-orig-size="487,579" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Hulk Smash" data-image-description="" data-image-caption="" data-medium-file="/blog/wp-content/uploads/2018/02/2018-02-26-19_45_39-Hulk-Smash-Meme-Generator-Imgflip-252x300.png" data-large-file="/blog/wp-content/uploads/2018/02/2018-02-26-19_45_39-Hulk-Smash-Meme-Generator-Imgflip.png" loading="lazy" class="aligncenter size-full wp-image-2239" src="/blog/wp-content/uploads/2018/02/2018-02-26-19_45_39-Hulk-Smash-Meme-Generator-Imgflip.png" alt="Hulk Smash Layout" width="487" height="579" srcset="/blog/wp-content/uploads/2018/02/2018-02-26-19_45_39-Hulk-Smash-Meme-Generator-Imgflip.png 487w, /blog/wp-content/uploads/2018/02/2018-02-26-19_45_39-Hulk-Smash-Meme-Generator-Imgflip-252x300.png 252w" sizes="(max-width: 487px) 100vw, 487px" /></a></p>
+<p>Does Flutter have a future? Would you want to build an app that you wanted to still be building on 3-4 years from now? As it&#8217;s still in Alpha form, I wouldn&#8217;t do anything but explore.</p>
+<p>Then, there&#8217;s Dart. The strength of many development options for mobile and web development is the ability to concentrate on one programming language and have it work on client and server. With Flutter and Dart, if you don&#8217;t have a serverless-style architecture in place, you&#8217;ll need to use a second programming language. And that may limit its adoption. Of course, developers that work on multiple app platforms today have accepted this is just the price they have to pay, so maybe that&#8217;s not a big deal. If you&#8217;ve got a development shop that can have developers specialize, then this may be a non-issue entirely. For startups and very small teams, it&#8217;s a potential obstacle that must be considered.</p>
+<p>&nbsp;</p>
+<h3>Notes</h3>
+<p>If you try the code as I&#8217;ve put it on GitHub, you may encounter an error with a codec. This is actually a bug in the Flutter framework and apparently is fixed already and will be available generally at some point in a mainline branch. You&#8217;ll just need to rerun it.</p>
+<h3>Example of Auto Formatting</h3>
+<p>Note the parentheses on lines 20 and 21. That style causes me to just keep adding closing parentheses until the syntax is correct or the error is different. They&#8217;re very difficult to count.</p>
+<p>View the code on <a href="https://gist.github.com/wiredprairie/cb6362a3a125bea1b65994a837035bd6">Gist</a>.</p>
+<h3>Android Studio</h3>
+<p>Android Studio is an acquired taste from a theme and style perspective. With a few adjustments, it&#8217;s tolerable.</p>
+<p><a href="/blog/wp-content/uploads/2018/02/2018-02-26-19_29_41-Settings.png"><img data-attachment-id="2234" data-permalink="/blog/index.php/archives/2224/2018-02-26-19_29_41-settings" data-orig-file="/blog/wp-content/uploads/2018/02/2018-02-26-19_29_41-Settings.png" data-orig-size="782,694" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="2018-02-26 19_29_41-Settings" data-image-description="" data-image-caption="" data-medium-file="/blog/wp-content/uploads/2018/02/2018-02-26-19_29_41-Settings-300x266.png" data-large-file="/blog/wp-content/uploads/2018/02/2018-02-26-19_29_41-Settings.png" loading="lazy" class="aligncenter size-medium wp-image-2234" src="/blog/wp-content/uploads/2018/02/2018-02-26-19_29_41-Settings-300x266.png" alt="Android Studio Font and Color Settings" width="300" height="266" srcset="/blog/wp-content/uploads/2018/02/2018-02-26-19_29_41-Settings-300x266.png 300w, /blog/wp-content/uploads/2018/02/2018-02-26-19_29_41-Settings-768x682.png 768w, /blog/wp-content/uploads/2018/02/2018-02-26-19_29_41-Settings.png 782w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>I&#8217;m not sure why Keywords in the Darcula theme are bright, bolded orange. While keywords are important, they&#8217;re unnecessarily vibrant, especially in code blocks describing the UI:</p>
+<p><a href="/blog/wp-content/uploads/2018/02/2018-02-26-19_31_36-2018-02-26-07_18_26-flutter_app1e.png-‎-Photos.png"><img data-attachment-id="2235" data-permalink="/blog/index.php/archives/2224/2018-02-26-19_31_36-2018-02-26-07_18_26-flutter_app1e-png-%e2%80%8e-photos" data-orig-file="/blog/wp-content/uploads/2018/02/2018-02-26-19_31_36-2018-02-26-07_18_26-flutter_app1e.png-‎-Photos.png" data-orig-size="440,304" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Code Block Example" data-image-description="" data-image-caption="" data-medium-file="/blog/wp-content/uploads/2018/02/2018-02-26-19_31_36-2018-02-26-07_18_26-flutter_app1e.png-‎-Photos-300x207.png" data-large-file="/blog/wp-content/uploads/2018/02/2018-02-26-19_31_36-2018-02-26-07_18_26-flutter_app1e.png-‎-Photos.png" loading="lazy" class="aligncenter size-full wp-image-2235" src="/blog/wp-content/uploads/2018/02/2018-02-26-19_31_36-2018-02-26-07_18_26-flutter_app1e.png-‎-Photos.png" alt="Bright Bold Orange Code Block" width="440" height="304" srcset="/blog/wp-content/uploads/2018/02/2018-02-26-19_31_36-2018-02-26-07_18_26-flutter_app1e.png-‎-Photos.png 440w, /blog/wp-content/uploads/2018/02/2018-02-26-19_31_36-2018-02-26-07_18_26-flutter_app1e.png-‎-Photos-300x207.png 300w" sizes="(max-width: 440px) 100vw, 440px" /></a></p>
+<p>I turned off the bold minimally and changed the color of class names as an experiment &#8230; it&#8217;s better, but not right yet.</p>
+<p><a href="/blog/wp-content/uploads/2018/02/2018-02-26-19_33_37-flutter_app1-C__Users_Aaron_Dev_AndroidStudioProjects_flutter_app1-flutte.png"><img data-attachment-id="2236" data-permalink="/blog/index.php/archives/2224/2018-02-26-19_33_37-flutter_app1-c__users_aaron_dev_androidstudioprojects_flutter_app1-flutte" data-orig-file="/blog/wp-content/uploads/2018/02/2018-02-26-19_33_37-flutter_app1-C__Users_Aaron_Dev_AndroidStudioProjects_flutter_app1-flutte.png" data-orig-size="420,325" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Android Studio with custom class name" data-image-description="" data-image-caption="" data-medium-file="/blog/wp-content/uploads/2018/02/2018-02-26-19_33_37-flutter_app1-C__Users_Aaron_Dev_AndroidStudioProjects_flutter_app1-flutte-300x232.png" data-large-file="/blog/wp-content/uploads/2018/02/2018-02-26-19_33_37-flutter_app1-C__Users_Aaron_Dev_AndroidStudioProjects_flutter_app1-flutte.png" loading="lazy" class="aligncenter size-full wp-image-2236" src="/blog/wp-content/uploads/2018/02/2018-02-26-19_33_37-flutter_app1-C__Users_Aaron_Dev_AndroidStudioProjects_flutter_app1-flutte.png" alt="Android Studio with custom class name" width="420" height="325" srcset="/blog/wp-content/uploads/2018/02/2018-02-26-19_33_37-flutter_app1-C__Users_Aaron_Dev_AndroidStudioProjects_flutter_app1-flutte.png 420w, /blog/wp-content/uploads/2018/02/2018-02-26-19_33_37-flutter_app1-C__Users_Aaron_Dev_AndroidStudioProjects_flutter_app1-flutte-300x232.png 300w" sizes="(max-width: 420px) 100vw, 420px" /></a></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/blog/index.php/archives/2224/feed</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2224</post-id>	</item>
+		<item>
+		<title>Flutter.io First Impressions</title>
+		<link>/blog/index.php/archives/2211</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Fri, 23 Feb 2018 01:49:12 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[General]]></category>
+		<guid isPermaLink="false">/blog/?p=2211</guid>
+
+					<description><![CDATA[I&#8217;ve been tinkering with Flutter.io for a few days now and wanted to document a few early impressions. It uses the programming language Dart. I&#8217;d looked at a lot of Dart code when it was first announced, but hadn&#8217;t looked at it much since. I couldn&#8217;t see it gaining meaningful traction against the JavaScript juggernaut [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;ve been tinkering with <a href="https://flutter.io/">Flutter.io</a> for a few days now and wanted to document a few early impressions.</p>
+<p>It uses the programming language <a href="https://www.dartlang.org/">Dart</a>. I&#8217;d looked at a lot of Dart code when it was first announced, but hadn&#8217;t looked at it much since. I couldn&#8217;t see it gaining meaningful traction against the JavaScript juggernaut as a transpiled option (as it added too much overhead from the complaints I&#8217;d read) and there was zero evidence that any company besides Google was considering integrating it as a native option for Web pages. Without broad industry cross-browser support (from desktop to mobile as well), it seemed like a dead-end option that didn&#8217;t add measurable value. In some ways it was doomed to fail as it was trying to be a better JavaScript rather than rethinking the whole client development experience. It was just a new web programming language.</p>
+<p>Originally, Dart&#8217;s messaging was broad and suggested that it was an ideal language for everywhere. That has changed since it&#8217;s original announcements to be focused on client development. But, that shift was recent and apparently connected with the announcement of Flutter.</p>
+<p>From November 1, 2011:</p>
+<p><img data-attachment-id="2214" data-permalink="/blog/index.php/archives/2211/2018-02-22-07_17_59-dart-_-structured-web-programming" data-orig-file="/blog/wp-content/uploads/2018/02/2018-02-22-07_17_59-Dart-_-Structured-web-programming-e1519305672804.png" data-orig-size="724,308" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Dart Language Home Page, 2011-11-01" data-image-description="" data-image-caption="" data-medium-file="/blog/wp-content/uploads/2018/02/2018-02-22-07_17_59-Dart-_-Structured-web-programming-e1519305672804-300x128.png" data-large-file="/blog/wp-content/uploads/2018/02/2018-02-22-07_17_59-Dart-_-Structured-web-programming-e1519305672804.png" loading="lazy" class="aligncenter wp-image-2214 size-full" src="/blog/wp-content/uploads/2018/02/2018-02-22-07_17_59-Dart-_-Structured-web-programming-e1519305672804.png" alt="Dart Language Home Page" width="724" height="308" srcset="/blog/wp-content/uploads/2018/02/2018-02-22-07_17_59-Dart-_-Structured-web-programming-e1519305672804.png 724w, /blog/wp-content/uploads/2018/02/2018-02-22-07_17_59-Dart-_-Structured-web-programming-e1519305672804-300x128.png 300w" sizes="(max-width: 724px) 100vw, 724px" /></p>
+<p>&nbsp;</p>
+<p>to late February 2018:</p>
+<p><a href="/blog/wp-content/uploads/2018/02/2018-02-22-07_21_36-Dart-programming-language-_-Dart.png"><img data-attachment-id="2215" data-permalink="/blog/index.php/archives/2211/2018-02-22-07_21_36-dart-programming-language-_-dart" data-orig-file="/blog/wp-content/uploads/2018/02/2018-02-22-07_21_36-Dart-programming-language-_-Dart.png" data-orig-size="538,260" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Dart Home Page, 2018-02" data-image-description="" data-image-caption="" data-medium-file="/blog/wp-content/uploads/2018/02/2018-02-22-07_21_36-Dart-programming-language-_-Dart-300x145.png" data-large-file="/blog/wp-content/uploads/2018/02/2018-02-22-07_21_36-Dart-programming-language-_-Dart.png" loading="lazy" class="aligncenter size-full wp-image-2215" src="/blog/wp-content/uploads/2018/02/2018-02-22-07_21_36-Dart-programming-language-_-Dart.png" alt="Dart Home Page, 2018-02" width="538" height="260" srcset="/blog/wp-content/uploads/2018/02/2018-02-22-07_21_36-Dart-programming-language-_-Dart.png 538w, /blog/wp-content/uploads/2018/02/2018-02-22-07_21_36-Dart-programming-language-_-Dart-300x145.png 300w" sizes="(max-width: 538px) 100vw, 538px" /></a></p>
+<p>Even as recent as May 2017, the Dart team was still considering server development as a potential platform target:</p>
+<p><a href="/blog/wp-content/uploads/2018/02/2018-02-22-07_23_39-Dart-programming-language-_-Dart.png"><img data-attachment-id="2216" data-permalink="/blog/index.php/archives/2211/2018-02-22-07_23_39-dart-programming-language-_-dart" data-orig-file="/blog/wp-content/uploads/2018/02/2018-02-22-07_23_39-Dart-programming-language-_-Dart.png" data-orig-size="587,321" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Dart home page, May 2018" data-image-description="" data-image-caption="" data-medium-file="/blog/wp-content/uploads/2018/02/2018-02-22-07_23_39-Dart-programming-language-_-Dart-300x164.png" data-large-file="/blog/wp-content/uploads/2018/02/2018-02-22-07_23_39-Dart-programming-language-_-Dart.png" loading="lazy" class="aligncenter size-full wp-image-2216" src="/blog/wp-content/uploads/2018/02/2018-02-22-07_23_39-Dart-programming-language-_-Dart.png" alt="Dart home page, May 2018" width="587" height="321" srcset="/blog/wp-content/uploads/2018/02/2018-02-22-07_23_39-Dart-programming-language-_-Dart.png 587w, /blog/wp-content/uploads/2018/02/2018-02-22-07_23_39-Dart-programming-language-_-Dart-300x164.png 300w" sizes="(max-width: 587px) 100vw, 587px" /></a></p>
+<p>It seems logical that the team would pivot to concentrate on a single target platform type, the &#8220;client.&#8221; Dart hadn&#8217;t gained substantial traction in server development or client development. While a recent video I&#8217;d watched suggested there were 70 million lines of Dart code on Github, I&#8217;m not sure who&#8217;s writing all that code and why. The <a href="https://github.com/dart-lang/sdk">dart-lang repository</a> hosted on GitHub hasn&#8217;t seen a lot of &#8220;Star&#8221; love.</p>
+<p><a href="/blog/wp-content/uploads/2018/02/2018-02-22-07_29_04-dart-lang_sdk_-The-Dart-SDK-including-the-VM-dart2js-core-libraries-and-more.png"><img data-attachment-id="2217" data-permalink="/blog/index.php/archives/2211/2018-02-22-07_29_04-dart-lang_sdk_-the-dart-sdk-including-the-vm-dart2js-core-libraries-and-more" data-orig-file="/blog/wp-content/uploads/2018/02/2018-02-22-07_29_04-dart-lang_sdk_-The-Dart-SDK-including-the-VM-dart2js-core-libraries-and-more.png" data-orig-size="377,50" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Dart language SDK GitHub stats" data-image-description="" data-image-caption="" data-medium-file="/blog/wp-content/uploads/2018/02/2018-02-22-07_29_04-dart-lang_sdk_-The-Dart-SDK-including-the-VM-dart2js-core-libraries-and-more-300x40.png" data-large-file="/blog/wp-content/uploads/2018/02/2018-02-22-07_29_04-dart-lang_sdk_-The-Dart-SDK-including-the-VM-dart2js-core-libraries-and-more.png" loading="lazy" class="aligncenter size-full wp-image-2217" src="/blog/wp-content/uploads/2018/02/2018-02-22-07_29_04-dart-lang_sdk_-The-Dart-SDK-including-the-VM-dart2js-core-libraries-and-more.png" alt="1500 Stars on Github" width="377" height="50" srcset="/blog/wp-content/uploads/2018/02/2018-02-22-07_29_04-dart-lang_sdk_-The-Dart-SDK-including-the-VM-dart2js-core-libraries-and-more.png 377w, /blog/wp-content/uploads/2018/02/2018-02-22-07_29_04-dart-lang_sdk_-The-Dart-SDK-including-the-VM-dart2js-core-libraries-and-more-300x40.png 300w" sizes="(max-width: 377px) 100vw, 377px" /></a></p>
+<p>Compare those numbers to TypeScript for example:<a href="/blog/wp-content/uploads/2018/02/2018-02-22-07_31_05-Microsoft_TypeScript_-TypeScript-is-a-superset-of-JavaScript-that-compiles-to-cl.png"><br />
+<img data-attachment-id="2218" data-permalink="/blog/index.php/archives/2211/2018-02-22-07_31_05-microsoft_typescript_-typescript-is-a-superset-of-javascript-that-compiles-to-cl" data-orig-file="/blog/wp-content/uploads/2018/02/2018-02-22-07_31_05-Microsoft_TypeScript_-TypeScript-is-a-superset-of-JavaScript-that-compiles-to-cl.png" data-orig-size="405,51" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="TypeScript Github stats" data-image-description="" data-image-caption="" data-medium-file="/blog/wp-content/uploads/2018/02/2018-02-22-07_31_05-Microsoft_TypeScript_-TypeScript-is-a-superset-of-JavaScript-that-compiles-to-cl-300x38.png" data-large-file="/blog/wp-content/uploads/2018/02/2018-02-22-07_31_05-Microsoft_TypeScript_-TypeScript-is-a-superset-of-JavaScript-that-compiles-to-cl.png" loading="lazy" class="aligncenter size-full wp-image-2218" src="/blog/wp-content/uploads/2018/02/2018-02-22-07_31_05-Microsoft_TypeScript_-TypeScript-is-a-superset-of-JavaScript-that-compiles-to-cl.png" alt="31,301 Stars on Github" width="405" height="51" srcset="/blog/wp-content/uploads/2018/02/2018-02-22-07_31_05-Microsoft_TypeScript_-TypeScript-is-a-superset-of-JavaScript-that-compiles-to-cl.png 405w, /blog/wp-content/uploads/2018/02/2018-02-22-07_31_05-Microsoft_TypeScript_-TypeScript-is-a-superset-of-JavaScript-that-compiles-to-cl-300x38.png 300w" sizes="(max-width: 405px) 100vw, 405px" /></a>Nearly 30,000 more stars (and TypeScript was announced about a year after Dart).</p>
+<p>I wouldn&#8217;t choose Dart for new development outside of Flutter. My initial impression is disappointment that the Flutter team is using Dart as it adds one more language to the client-side development smörgåsbord. I don&#8217;t know that the world needs another programming/UI toolkit lock-in option right now added to the buffet. I like variety and competition, so I&#8217;m all for that, but I also worry that limited adoption of frameworks leads to abandonment and frustrated developers. I can speculate why they choose Dart, especially as it&#8217;s staffed by Google developers, and I can see the appeal of the language, but&#8230;.</p>
+<p><strong>I don&#8217;t need more programming languages right now in my solutions toolbox</strong>. It&#8217;s one more thing to learn and master. Since Flutter is also new, it has made the initial ramp-up time longer than I&#8217;d expected and wanted.  And because the language syntax is very familiar by design, it&#8217;s unfortunately likely that habits from other C-like and TypeScript-like will find their way into coding I do in Dart.</p>
+<p>While the community at large apparently considers the Widget building syntax to be a strength of Flutter, I can&#8217;t say that I&#8217;m excited about it. It&#8217;s chatty and verbose. (And I haven&#8217;t been able to tell if the enthusiasm about the current syntax is just from the early adopters or fans, or it&#8217;s generally well liked). It absolutely doesn&#8217;t feel like it&#8217;s moving the needle when compared to all of the other GUI frameworks that have come before it. In fact, it reminds me of my earliest coding experiences using <a href="https://en.wikipedia.org/wiki/Turbo_Vision">Turbo Vision</a>. <em><strong>Yeah</strong></em>. Turbo Vision from <a href="https://en.wikipedia.org/wiki/Borland">Borland</a>. (Wow &#8212; the past 20 years of IDEs and development tools originally from Borland has undergone an amazing number of ownership changes).</p>
+<p><img data-attachment-id="2212" data-permalink="/blog/index.php/archives/2211/2018-02-21-20_17_36-turbo_vision_version_2-0_programming_guide_1992-pdf" data-orig-file="/blog/wp-content/uploads/2018/02/2018-02-21-20_17_36-Turbo_Vision_Version_2.0_Programming_Guide_1992.pdf.png" data-orig-size="663,858" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Turbo Vision Programming Guide" data-image-description="" data-image-caption="" data-medium-file="/blog/wp-content/uploads/2018/02/2018-02-21-20_17_36-Turbo_Vision_Version_2.0_Programming_Guide_1992.pdf-232x300.png" data-large-file="/blog/wp-content/uploads/2018/02/2018-02-21-20_17_36-Turbo_Vision_Version_2.0_Programming_Guide_1992.pdf.png" loading="lazy" class="size-medium wp-image-2212 aligncenter" src="/blog/wp-content/uploads/2018/02/2018-02-21-20_17_36-Turbo_Vision_Version_2.0_Programming_Guide_1992.pdf-232x300.png" alt="Turbo Vision Programming Guide" width="232" height="300" srcset="/blog/wp-content/uploads/2018/02/2018-02-21-20_17_36-Turbo_Vision_Version_2.0_Programming_Guide_1992.pdf-232x300.png 232w, /blog/wp-content/uploads/2018/02/2018-02-21-20_17_36-Turbo_Vision_Version_2.0_Programming_Guide_1992.pdf.png 663w" sizes="(max-width: 232px) 100vw, 232px" /></p>
+<p>(Yes, it&#8217;s not really like that too much, but I had some flashbacks to my Turbo Pascal days).</p>
+<p>Here&#8217;s a snippet of some code, written in Dart which represents a single item (more about this in a later post), with a thumbnail, a name, and a year published.</p>
+<p>View the code on <a href="https://gist.github.com/wiredprairie/39249b188c8eab4427a09bf930677bf1">Gist</a>.</p>
+<p>Of course, alternatives have been proposed, like a <a href="https://github.com/flutter/flutter/issues/11609">JSX-like syntax</a>. This proposal brought out the best and worst of engineers of course. A few of the collaborators on Flutter were so dismissive of the idea I nearly stopped looking at Flutter.  As Flutter is in its early days, and backed by Google, I expect ideas are rationally considered and individuals to be treated with respect, even if there is disagreement. I&#8217;ve done years of WPF, Silverlight, and UWP development which used XAML. While there continue to be some rough spots in XAML, I appreciated the structured document for building a UI. I don&#8217;t know that I&#8217;d go in that direction for Flutter, but I don&#8217;t think describing complex user interfaces entirely in code is the best for its future viability, especially as it needs to compete with a variety of other frameworks and options.</p>
+<p>Ignoring the syntax of how to describe a UI though for a moment, I&#8217;m still having trouble with wrapping my head around the idea that State actually renders a UI:</p>
+<p>View the code on <a href="https://gist.github.com/wiredprairie/1d23b8d168fd148cb1c6bfe8194984ce">Gist</a>.</p>
+<p>It&#8217;s the <strong>build</strong> method that returns the object hierarchy that describes the widget tree, not the class that subclasses <a href="https://docs.flutter.io/flutter/widgets/StatefulWidget-class.html"><strong>StatefulWidget</strong></a>.  If you instead use a <a href="https://docs.flutter.io/flutter/widgets/StatelessWidget-class.html"><strong>StatelessWidget</strong></a>, it builds its Widget hierarchy directly within the class. I can see how they arrived at this implementation, but it just feels inconsistent.</p>
+<p>I like the <strong>async</strong>/<strong>await</strong> support in Dart. I do wish that I wouldn&#8217;t need to specifically declare the return type as <strong>Future&lt;T&gt;</strong>. The code has already signaled that it&#8217;s <strong>async</strong>, so if <strong>Future&lt;T&gt;</strong> could just be <strong>T</strong>, some code clutter would be eliminated.</p>
+<p>View the code on <a href="https://gist.github.com/wiredprairie/06a72c5aaf23989359584de986fc7e3c">Gist</a>.</p>
+<p><img data-attachment-id="2221" data-permalink="/blog/index.php/archives/2211/2018-02-22-19_43_09-flutter_app1-c__users_aaron_dev_androidstudioprojects_flutter_app1-flutte" data-orig-file="/blog/wp-content/uploads/2018/02/2018-02-22-19_43_09-flutter_app1-C__Users_Aaron_Dev_AndroidStudioProjects_flutter_app1-flutte.png" data-orig-size="1472,1070" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="AndroidStudio" data-image-description="" data-image-caption="" data-medium-file="/blog/wp-content/uploads/2018/02/2018-02-22-19_43_09-flutter_app1-C__Users_Aaron_Dev_AndroidStudioProjects_flutter_app1-flutte-300x218.png" data-large-file="/blog/wp-content/uploads/2018/02/2018-02-22-19_43_09-flutter_app1-C__Users_Aaron_Dev_AndroidStudioProjects_flutter_app1-flutte-1024x744.png" loading="lazy" class="wp-image-2221 size-large alignright" src="/blog/wp-content/uploads/2018/02/2018-02-22-19_43_09-flutter_app1-C__Users_Aaron_Dev_AndroidStudioProjects_flutter_app1-flutte-1024x744.png" alt="AndroidStudio" width="730" height="530" srcset="/blog/wp-content/uploads/2018/02/2018-02-22-19_43_09-flutter_app1-C__Users_Aaron_Dev_AndroidStudioProjects_flutter_app1-flutte-1024x744.png 1024w, /blog/wp-content/uploads/2018/02/2018-02-22-19_43_09-flutter_app1-C__Users_Aaron_Dev_AndroidStudioProjects_flutter_app1-flutte-300x218.png 300w, /blog/wp-content/uploads/2018/02/2018-02-22-19_43_09-flutter_app1-C__Users_Aaron_Dev_AndroidStudioProjects_flutter_app1-flutte-768x558.png 768w, /blog/wp-content/uploads/2018/02/2018-02-22-19_43_09-flutter_app1-C__Users_Aaron_Dev_AndroidStudioProjects_flutter_app1-flutte-1200x872.png 1200w, /blog/wp-content/uploads/2018/02/2018-02-22-19_43_09-flutter_app1-C__Users_Aaron_Dev_AndroidStudioProjects_flutter_app1-flutte.png 1472w" sizes="(max-width: 730px) 100vw, 730px" /></p>
+<p>The the code above, it&#8217;s great that the <strong>return</strong> value is automatically wrapped in a <strong>Future</strong> without any special code, but taking it a bit further would make Dart and Flutter more appealing.</p>
+<p>I&#8217;ve been using TypeScript long enough that <strong>let </strong>and <strong>const </strong>functionality is second-nature. Unfortunately, Dart&#8217;s language is subtly different and I end up trying to use <strong>const </strong>where I meant to use <strong><a href="https://www.dartlang.org/guides/language/language-tour#final-and-const">final</a>. </strong>That&#8217;s my problem of course, but it&#8217;s just a gotcha. <strong>Const</strong> in Dart is for compile-time constants.</p>
+<p>I&#8217;ve been generally pleased with using Android Studio with the Flutter plugin. It performs reasonably well, and it&#8217;s a good editor with lots of bells and whistles. The build/debug times are quite long, even for a basic app. It&#8217;s about 25-30 seconds for a build and deploy to an emulator. Thankfully, the plugin and Flutter both support hot reloading, so many changes to the code can be updated without needing to do a new build/deploy. While that&#8217;s very helpful, I&#8217;d like to see a significantly reduced build and deploy time.</p>
+<p>In a market saturated with options for building cross-platform application UIs, it&#8217;s not clear how Flutter fits in. I&#8217;ve liked the experience enough that I&#8217;m going to build out a few simple apps and will show off more details in a later post of an app I&#8217;ve been tinkering with as I learn the platform and development environment. Flutter is in an &#8220;alpha&#8221; state right now, so a lot could change before it&#8217;s available in a final release (if it ever is). According to their <a href="https://github.com/flutter/flutter/milestone/21">Github</a> repository, they have currently 86 issues open for their &#8220;beta&#8221; milestone. There&#8217;s no meaningful date associated with the transition though.</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2211</post-id>	</item>
+		<item>
+		<title>How to make your too soft Tempur-pedic Bed comfortable</title>
+		<link>/blog/index.php/archives/2197</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sat, 17 Feb 2018 15:59:38 +0000</pubDate>
+				<category><![CDATA[General]]></category>
+		<category><![CDATA[Recommendations]]></category>
+		<guid isPermaLink="false">/blog/?p=2197</guid>
+
+					<description><![CDATA[We&#8217;d suffered far too long. Our 2 year old Temper-pedic mattress was painful to use. I couldn&#8217;t find a comfortable way to sleep anymore and was tired nearly every day and had too many aches and pains many mornings. My wife complained that her neck hurt frequently and that her shoulders and back were sore. As [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><span style="color: #800000;"><strong>We&#8217;d suffered far too long. </strong></span><strong>Our 2 year old Temper-pedic mattress was painful to use. </strong></p>
+<p>I couldn&#8217;t find a comfortable way to sleep anymore and was tired nearly every day and had too many aches and pains many mornings. My wife complained that her neck hurt frequently and that her shoulders and back were sore. As our Temper-pedic mattress was nearly $2500, we were reluctant to replace it so soon. But, we had to do something. I <strong>hated</strong> that bed and was dreading trying to sleep at night. The marketing by manufacturers suggests a memory foam mattress nearly to be the fix to every problem you have sleeping. Yeah, sorry. It&#8217;s not.</p>
+<p>I&#8217;d done quite a bit of research and there were several schools of thought.</p>
+<ol>
+<li>Buy a new mattress. There&#8217;s no fix.</li>
+<li>Place something firm under the mattress.</li>
+<li>Buy a mattress topper of some type</li>
+<li>Crazy ideas&#8230;</li>
+</ol>
+<p>As a last resort, buying a new mattress remained an option. However, not only did we not want to spend that amount of money again on another mattress, we were uncomfortable with throwing out a mattress that was so new. It hasn&#8217;t even developed the slightest hint of wear (there aren&#8217;t any sunken spots where we obviously sleep most frequently).</p>
+<p>The second option didn&#8217;t make much sense given the density of the mattress. While I could see how it could potentially work for traditional box spring mattresses, our mattress didn&#8217;t require or need a base. Further, the base our bed rested on was pretty firm anyway. So, I didn&#8217;t see much reason to pursue that.</p>
+<p>The challenge then was to buy a mattress topper. Was there something that was firm enough that it would mask the overly soft Tempur-pedic bed?</p>
+<p>I read so many blogs and advice sites, with no clear answer. The general opinion was that a mattress topper could help, if you bought the right one and it was properly supported. In fact, some people bought toppers and then placed hard rubber mats underneath the topper to help provide a more solid foundation. As I was worried a bit about the off-gassing and smell of that solution, I looked for other options.</p>
+<p>After extensive research, we settled on this:</p>
+<p><a href="https://www.amazon.com/gp/product/B00UYG9I08/ref=as_li_ss_il?ie=UTF8&amp;psc=1&amp;linkCode=li3&amp;tag=wiredp-20&amp;linkId=d3b5f0476bec1dd310aaba3ab31d8332" target="_blank" rel="noopener"><img loading="lazy" class="aligncenter" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;ASIN=B00UYG9I08&amp;Format=_SL250_&amp;ID=AsinImage&amp;MarketPlace=US&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=wiredp-20" alt="" width="250" height="250" border="0" /></a><img loading="lazy" style="border: none !important; margin: 0px !important;" src="https://ir-na.amazon-adsystem.com/e/ir?t=wiredp-20&amp;l=li3&amp;o=1&amp;a=B00UYG9I08" alt="" width="1" height="1" border="0" /></p>
+<p><a href="http://amzn.to/2HofKaT">Pure Green 100% Natural Latex Mattress Topper &#8211; Firm (3&#8243; King Size)</a></p>
+<p>The king sized topper arrived in a large box, folded once in half, rolled and protected in a thick plastic &#8220;bag.&#8221; We were careful to not damage the bag when removing the mattress topper in case we needed to return the topper. It did make removing the topper from the bag a bit more work than if I&#8217;d carefully sliced the bag open. Thankfully (according to the seller on Amazon), they do accept returns and offer to send a box to return the mattress topper if necessary.</p>
+<p><div id="attachment_2199" style="width: 834px" class="wp-caption aligncenter"><img aria-describedby="caption-attachment-2199" data-attachment-id="2199" data-permalink="/blog/index.php/archives/2197/2018-02-16-20_28_33-amazonsmile_-pure-green-100-natural-latex-mattress-topper-firm-3_-king-size" data-orig-file="/blog/wp-content/uploads/2018/02/2018-02-16-20_28_33-AmazonSmile_-Pure-Green-100-Natural-Latex-Mattress-Topper-Firm-3_-King-Size.png" data-orig-size="824,143" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Return Policy" data-image-description="&lt;p&gt;Can I return the topper if I don&#8217;t like it?&lt;br /&gt;
+Answer: Yes, we follow the standard amazon return policy for any product sold through amazon. We compress our toppers and are always happy to send out a larger box to return the item in, if needed.&lt;br /&gt;
+We want you to be happy with your purchase and are always willing to work with you to ensure you are satisfied. &lt;/p&gt;
+" data-image-caption="&lt;p&gt;Can I return the topper?&lt;br /&gt;
+Yes!&lt;/p&gt;
+" data-medium-file="/blog/wp-content/uploads/2018/02/2018-02-16-20_28_33-AmazonSmile_-Pure-Green-100-Natural-Latex-Mattress-Topper-Firm-3_-King-Size-300x52.png" data-large-file="/blog/wp-content/uploads/2018/02/2018-02-16-20_28_33-AmazonSmile_-Pure-Green-100-Natural-Latex-Mattress-Topper-Firm-3_-King-Size.png" loading="lazy" class="wp-image-2199 size-full" src="/blog/wp-content/uploads/2018/02/2018-02-16-20_28_33-AmazonSmile_-Pure-Green-100-Natural-Latex-Mattress-Topper-Firm-3_-King-Size.png" alt="" width="824" height="143" srcset="/blog/wp-content/uploads/2018/02/2018-02-16-20_28_33-AmazonSmile_-Pure-Green-100-Natural-Latex-Mattress-Topper-Firm-3_-King-Size.png 824w, /blog/wp-content/uploads/2018/02/2018-02-16-20_28_33-AmazonSmile_-Pure-Green-100-Natural-Latex-Mattress-Topper-Firm-3_-King-Size-300x52.png 300w, /blog/wp-content/uploads/2018/02/2018-02-16-20_28_33-AmazonSmile_-Pure-Green-100-Natural-Latex-Mattress-Topper-Firm-3_-King-Size-768x133.png 768w" sizes="(max-width: 824px) 100vw, 824px" /><p id="caption-attachment-2199" class="wp-caption-text">Can I return the topper?<br /> Yes!</p></div></p>
+<p>So, after a few minutes on the floor, we hefted it onto the bed. It&#8217;s not lightweight, and as it&#8217;s extremely flexible, it was more awkward than we would have liked. I&#8217;d recommend folding it back in half so it&#8217;s easier to lift and move onto your bed. As you shouldn&#8217;t need to do this often, I wouldn&#8217;t be concerned about the one time lift. If you&#8217;re by yourself and trying to place a King sized topper, it may take a few more minutes and some grumbling. It apparently weighs about 65 pounds, so some amount of dragging it into place may be necessary.</p>
+<p>Our sheets JUST accommodated the extra height. <strong>Just</strong>. If the topper had been 4&#8243;, the sheets wouldn&#8217;t have worked. The topper, while designed for a king was a bit &#8220;proud&#8221; of the size of the bed and was about 2&#8243; total wider than it needed to be. I&#8217;m not sure if that&#8217;s normal, but it didn&#8217;t affect our sheet fit thankfully. Be prepared to potentially buy new taller sheets.</p>
+<p>The first night was a welcome relief, even though the bed was noticeably more firm. We were both worried at first that the topper would still &#8220;sink&#8221; too much into the Tempur-pedic, but it doesn&#8217;t seem too. The next morning, we both felt far more rested and less sore than we had in 6 months. The second night, ahhh. Nice.</p>
+<p>Some folks online have said it&#8217;s not &#8220;firm&#8221; enough. As firmness is subjective and personal, I can only say that it&#8217;s a comfortable firmness for us. If it were less firm, I&#8217;d suspect that it wouldn&#8217;t do much good. We&#8217;ll probably need to rotate the topper occasionally to prevent sunken/wear spots.</p>
+<p>There was zero smell that we could notice both out of the packaging and when placed on the bed. Older reviews mentioned that the latex would crumble some. As ours is new, we haven&#8217;t experienced that. If it does, we&#8217;ll buy a simple cover for it. The topper is manufactured in many different sizes, from Twin to California King.</p>
+<p>If you&#8217;re like us, suffering for buying a mattress that&#8217;s too soft and doesn&#8217;t offer enough support, I&#8217;d recommend the <a href="http://amzn.to/2HofKaT">mattress topper</a> (or something similar). Of course, it&#8217;s a bit risky to buy something like this sight unseen given the price, but as you shop around, make sure there&#8217;s a liberal return policy and be willing to return it if it doesn&#8217;t work out.</p>
+<p><strong>Two weeks later, our only regret is not buying it sooner.  </strong></p>
+<h3>Other Information</h3>
+<p>Our current memory-foam Tempur-pedic mattress is of medium softness (we own the <a href="https://www.tempurpedic.com/shop-mattresses/tempur-cloud-prima/v/684/">TEMPUR-Cloud Prima</a>). I sleep in nearly every way possible, except flat on my back, and my wife sleeps mostly on her back.</p>
+<p>An IKEA mattress topper was suggested in a number of forums. As we don&#8217;t have a nearby IKEA, we couldn&#8217;t evaluate the option in person. While it is an option that IKEA will sell online, the shipping/handling was extremely high to our location and most people said that it would still need another layer of very firm support under the topper. While overall the option may have been less expensive I suppose, it didn&#8217;t seem as promising as the option we purchased.</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2197</post-id>	</item>
+		<item>
+		<title>Quick demo of Go&#8217;s context.WithTimeout</title>
+		<link>/blog/index.php/archives/2189</link>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sat, 29 Apr 2017 01:14:45 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[General]]></category>
+		<category><![CDATA[GoLang]]></category>
+		<guid isPermaLink="false">/blog/?p=2189</guid>
+
+					<description><![CDATA[To better understand Go&#8217;s context withTimeout functionality (and as a reference for myself), I&#8217;ve created this small self-contained demo. I didn&#8217;t find the published documentation&#8217;s example to be clear enough. The interesting part, coming from other programming languages and platforms, was that the WithTimeout function only was a signal that something happened. It doesn&#8217;t do anything [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>To better understand Go&#8217;s context <a href="https://golang.org/pkg/context/#WithTimeout"><strong>withTimeout </strong></a>functionality (and as a reference for myself), I&#8217;ve created this small self-contained demo. I didn&#8217;t find the published documentation&#8217;s example to be clear enough. The interesting part, coming from other programming languages and platforms, was that the <strong>WithTimeout</strong> function only was a signal that something happened. It doesn&#8217;t do anything when there&#8217;s a time out (like abort a goroutine or anything dramatic like that).</p>
+<p>The essential pieces:</p>
+<ol>
+<li>Call <strong>WithTimeout</strong> passing the <strong>Background()</strong> context and specify the timeout (I&#8217;ve specified  3.2 seconds)</li>
+<li>Be a good citizen and <strong>defer</strong> the cancellation (to be sure that it&#8217;s called) and <strong>defer close </strong>the channel</li>
+<li>Start the go routine which waits for the <strong>Done </strong>channel</li>
+<li>When the <strong>Done</strong> is signaled, display the current time in seconds and what caused the signal</li>
+<li>The main app is waiting for the goroutine to end, so signal that.</li>
+<li>In the main function, the code sleeps and wakes emitting some time stamps to the console</li>
+<li>Depending on whether <strong>cancel</strong> is called, the goroutine signal may be one of two things.
+<ol>
+<li>If <strong>cancel</strong> is not called prior to the second sleep in the code, the <strong>ctx.Err() </strong>returns
+<pre class=""><span class="stdout">&lt;-ctx.Done():  context deadline exceeded</span></pre>
+</li>
+<li>If <strong>cancel</strong> however is called, the ctx.Err() returns:
+<pre class=""><span class="stdout">&lt;-ctx.Done():  context canceled</span></pre>
+</li>
+</ol>
+</li>
+<li>Then, the goroutine uses the channel to signal completion (<strong>wait&lt;-true</strong>).</li>
+</ol>
+<p>View the code on <a href="https://gist.github.com/wiredprairie/f8b322866b885be484cdff97bad19e9c">Gist</a>.</p>
+<p>You can experiment with this sample <a href="https://play.golang.org/p/ulikEClQE3">here</a>.</p>
+<p>With cancel called (the line <strong>cancel()</strong> not commented out):</p>
+<pre class=""><span class="stdout">first sleep completed,  02.00
+Timeout: 02.00
+in &lt;-ctx.Done():  context canceled
+</span><span class="stdout">after second sleep done,  04.00</span></pre>
+<p>And, with <strong>// cancel() </strong>commented out:</p>
+<pre class=""><span class="stdout">first sleep completed,  02.00
+</span><span class="stdout">Timeout: 03.20
+in &lt;-ctx.Done():  context deadline exceeded
+</span><span class="stdout">after second sleep done,  04.00
+</span></pre>
+<p>Hopefully this helps someone besides me.</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2189</post-id>	</item>
+		<item>
+		<title>How to sign Powershell scripts with self-signed certificates in Windows 10</title>
+		<link>/blog/index.php/archives/2170</link>
+					<comments>/blog/index.php/archives/2170#comments</comments>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Wed, 05 Apr 2017 00:57:32 +0000</pubDate>
+				<category><![CDATA[General]]></category>
+		<category><![CDATA[Windows10]]></category>
+		<guid isPermaLink="false">/blog/?p=2170</guid>
+
+					<description><![CDATA[I wanted to allow all signed Powershell scripts to run on a PC in our house on Windows 10. To do that, I needed a code-signing certificate. Unfortunately, the days of easily obtaining a free code signing certificate seem to have ended. Have no fear! You can create a self-signed certificate if you don&#8217;t expect [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I wanted to allow all signed Powershell scripts to run on a PC in our house on Windows 10. To do that, I needed a code-signing certificate.</p>
+<p>Unfortunately, the days of easily obtaining a free code signing certificate seem to have ended. Have no fear! You can create a self-signed certificate if you don&#8217;t expect to use the certificate anywhere but on the PC where the certificate was created.</p>
+<p>First, I enabled Powershell scripts to run. From an administrative Powershell command prompt:</p>
+<pre>&gt; Set-ExecutionPolicy AllSigned</pre>
+<p>Acknowledge the warning and you&#8217;re ready to execute only signed scripts.</p>
+<p>But, if you create your own script, you&#8217;ll need to sign it. To create the necessary code-signing certificate, you&#8217;ll again use Powershell. From an administrative Powershell command prompt:</p>
+<pre>PS C:\Dev&gt;New-SelfSignedCertificate -CertStoreLocation Cert:\LocalMachine\ -Type CodeSigningCert -Subject "CN=PowershellScripts" -NotAfter (Get-Date).AddYears(10)</pre>
+<p>You can change the Common Name (<strong>CN</strong>) to anything you&#8217;d like, or adjust the expiration date (using <strong>-NotAfter</strong>). I&#8217;ve got the expiration as 10 years from today.</p>
+<p>Once you&#8217;ve got the code signing certificate created as shown above, you&#8217;ll need to move the certificate to the Trusted Root Certification Authorities. If you don&#8217;t, when you sign the powershell script, it still won&#8217;t be allowed to run (and the act of signing will produce an UnknownError).</p>
+<p>Start the certificate manager (press Windows key, type cert, and select &#8220;<strong>Manage computer certificates</strong>&#8220;, or hit Windows+R, then type: &#8220;<strong>certmgr.msc</strong>&#8220;).</p>
+<p><img data-attachment-id="2172" data-permalink="/blog/index.php/archives/2170/dragcertificateintotrusted-2" data-orig-file="/blog/wp-content/uploads/2017/04/DragCertificateIntoTrusted-1.gif" data-orig-size="640,397" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Drag Certificate Into Trusted Root" data-image-description="" data-image-caption="" data-medium-file="/blog/wp-content/uploads/2017/04/DragCertificateIntoTrusted-1-300x186.gif" data-large-file="/blog/wp-content/uploads/2017/04/DragCertificateIntoTrusted-1.gif" loading="lazy" class="aligncenter wp-image-2172 size-full" src="/blog/wp-content/uploads/2017/04/DragCertificateIntoTrusted-1.gif" alt="Drag Certificate Into Trusted Root Certification Authorities" width="640" height="397" /></p>
+<p>Expand Trusted Root Certification Authorities first, then expand Personal &gt; Certificates and select the PowershellScripts Code Signing certificate and then drag it into the Trusted Certificates list as shown above (or you can right click, cut, and then paste it as well).</p>
+<p>Now that you&#8217;ve got a trusted code signing cetificate, you can sign your Powershell scripts.</p>
+<p>If you&#8217;ve only got one code signing certificate (which I presume you do otherwise you wouldn&#8217;t have needed a new one), from an administrative Powershell command prompt first switch directories to where the script you want to sign is located, then do these commands:</p>
+<pre>&gt; $cert = (Get-ChildItem Cert:\LocalMachine\my -CodeSigningCert)[0]</pre>
+<pre>&gt; Set-AuthenticodeSignature .\reconnect-iscsi-targets.ps1 $cert</pre>
+<p>You should then see a table with the <strong>SignerCertificate</strong>, <strong>Status</strong>, and the <strong>Path</strong>. If everything went well, the Status should be <strong>Valid.</strong></p>
+<p><a href="/blog/index.php/archives/2165">Here&#8217;s</a> something interesting you can do with iSCSI targets and PowerShell using a signed PowerShell script.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/blog/index.php/archives/2170/feed</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2170</post-id>	</item>
+		<item>
+		<title>Automatic Reconnection of iSCSI Targets in Windows 10 using PowerShell</title>
+		<link>/blog/index.php/archives/2165</link>
+					<comments>/blog/index.php/archives/2165#comments</comments>
+		
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Wed, 05 Apr 2017 00:56:26 +0000</pubDate>
+				<category><![CDATA[Coding]]></category>
+		<category><![CDATA[General]]></category>
+		<category><![CDATA[Windows10]]></category>
+		<category><![CDATA[certificates]]></category>
+		<category><![CDATA[powershell]]></category>
+		<category><![CDATA[windows10]]></category>
+		<guid isPermaLink="false">/blog/?p=2165</guid>
+
+					<description><![CDATA[When my highly recommended Synology Disk Station reboots for a required update (I&#8217;ve got it set to automatically reboot), a shared Windows 10 PC in our house cannot always successfully reconnect to the iSCSI targets without manual intervention. Unfortunately, I haven&#8217;t always noticed which has led to several features of Windows not functioning the way [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>When my highly recommended <strong><a href="http://amzn.to/2n932GE">Synology </a>Disk Station</strong> reboots for a required update (I&#8217;ve got it set to automatically reboot), a shared Windows 10 PC in our house cannot always successfully reconnect to the iSCSI targets without manual intervention. Unfortunately, I haven&#8217;t always noticed which has led to several features of Windows not functioning the way I want (I have mapped the iSCSI drives/disks via Windows and made them into network shares for the other PCs/laptops in our house &#8212; this way I can use Windows bitlocker encryption on the iSCSI drive contents).</p>
+<p>To make the connection more automatic, I created a simple one line PowerShell script that periodically attempts to connect to any disconnected iSCSI targets using the Windows Task Scheduler.</p>
+<p>I saved this into a script file called <strong>reconnect-iscsi-targets.ps1</strong>:</p>
+<pre>Get-IscsiTarget | where ($_.isConnected -eq $false) | Connect-IscsiTarget</pre>
+<p>Then, in the Task Scheduler, I created a new task set to run every 10 minutes daily. The script just gets all iSCSI targets, filters only those that aren&#8217;t connected, and then passes the results to the connection cmdlet.</p>
+<p>For the action, I selected <strong>&#8220;Start a program&#8221;</strong> for program/script, I entered: <strong>&#8220;powershell.exe&#8221;</strong>, and then added the arguments &#8220;<strong>-File</strong>&#8221; and the full path to the file name, like:</p>
+<pre>-File c:\Users\aaron\Documents\reconnect-iscsi-targets.ps1</pre>
+<p>If there are spaces in the path to the PowerShell file, be sure to add quotes around the full path and file name.</p>
+<p><img data-attachment-id="2168" data-permalink="/blog/index.php/archives/2165/2017-04-04_19-07-23" data-orig-file="/blog/wp-content/uploads/2017/04/2017-04-04_19-07-23.png" data-orig-size="460,500" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Action properties for Task" data-image-description="" data-image-caption="" data-medium-file="/blog/wp-content/uploads/2017/04/2017-04-04_19-07-23-276x300.png" data-large-file="/blog/wp-content/uploads/2017/04/2017-04-04_19-07-23.png" loading="lazy" class="aligncenter wp-image-2168 size-full" src="/blog/wp-content/uploads/2017/04/2017-04-04_19-07-23.png" alt="" width="460" height="500" srcset="/blog/wp-content/uploads/2017/04/2017-04-04_19-07-23.png 460w, /blog/wp-content/uploads/2017/04/2017-04-04_19-07-23-276x300.png 276w" sizes="(max-width: 460px) 100vw, 460px" /></p>
+<p>You shouldn&#8217;t need the <strong>start in</strong> option set (leave it empty if you&#8217;d like).</p>
+<p>On the General tab of the task, make sure you&#8217;ve set the &#8220;<strong>Run whether user is logged on or not</strong>&#8221; option and &#8220;<strong>Run with highest privileges</strong>.&#8221;</p>
+<p>Next up &#8212; how to quickly<a href="/blog/index.php/archives/2170"> create a Self-Signed Code-Signing</a> certificate. And, how to actually allow scripts to run!</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/blog/index.php/archives/2165/feed</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2165</post-id>	</item>
+	</channel>
+</rss>

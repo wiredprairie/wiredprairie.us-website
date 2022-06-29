@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Not a WPF Annoyance &#8212; IsOpen on Menus, etc.	</title>
+	<atom:link href="/blog/index.php/archives/276/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/276</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Sat, 24 May 2008 22:10:30 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: Crossed Reality		</title>
+		<link>/blog/index.php/archives/276/comment-page-1#comment-166</link>
+
+		<dc:creator><![CDATA[Crossed Reality]]></dc:creator>
+		<pubDate>Sat, 24 May 2008 22:10:30 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/276#comment-166</guid>
+
+					<description><![CDATA[You are right of course that is makes perfect sense within the WPF framework taken in isolation. Taken as a part of the .Net structure as a whole, however, it does seem somewhat out of place, especially if you&#039;ve transitioned from Win Forms.
+
+That specific example wasn&#039;t all that bad, but it came after an entire morning of fixing random things in a WPF application I&#039;m working on. I might have let my frustration get the better of me a wee bit.]]></description>
+			<content:encoded><![CDATA[<p>You are right of course that is makes perfect sense within the WPF framework taken in isolation. Taken as a part of the .Net structure as a whole, however, it does seem somewhat out of place, especially if you&#8217;ve transitioned from Win Forms.</p>
+<p>That specific example wasn&#8217;t all that bad, but it came after an entire morning of fixing random things in a WPF application I&#8217;m working on. I might have let my frustration get the better of me a wee bit.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

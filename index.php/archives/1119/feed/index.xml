@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Windows Phone 7 Marketplace: Ditch the Annual Fee for Free App Developers!	</title>
+	<atom:link href="/blog/index.php/archives/1119/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/1119</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Fri, 17 Sep 2010 09:40:50 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: techieg		</title>
+		<link>/blog/index.php/archives/1119/comment-page-1#comment-3141</link>
+
+		<dc:creator><![CDATA[techieg]]></dc:creator>
+		<pubDate>Fri, 17 Sep 2010 09:40:50 +0000</pubDate>
+		<guid isPermaLink="false">/blog/index.php/archives/1119#comment-3141</guid>
+
+					<description><![CDATA[It makes sense to make it free for those who want to develop free apps only so that they can only list their apps as free and before they can list paid apps they will need to activate that via payment.
+I only know of one way to get on for free, if you are a student with a .edu email address. I still have my student .edu email address so I used it to enrol for free.]]></description>
+			<content:encoded><![CDATA[<p>It makes sense to make it free for those who want to develop free apps only so that they can only list their apps as free and before they can list paid apps they will need to activate that via payment.<br />
+I only know of one way to get on for free, if you are a student with a .edu email address. I still have my student .edu email address so I used it to enrol for free.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

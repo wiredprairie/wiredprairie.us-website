@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	
+	>
+<channel>
+	<title>
+	Comments on: Nest Thermostat Review, Update #10: Wifi Settings Missing	</title>
+	<atom:link href="/blog/index.php/archives/1576/feed" rel="self" type="application/rss+xml" />
+	<link>/blog/index.php/archives/1576</link>
+	<description>Yet another tech blog.</description>
+	<lastBuildDate>Fri, 14 Dec 2012 13:41:03 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+	<item>
+		<title>
+		By: Aaron		</title>
+		<link>/blog/index.php/archives/1576/comment-page-1#comment-20288</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Fri, 14 Dec 2012 13:41:03 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1576#comment-20288</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/blog/index.php/archives/1576/comment-page-1#comment-20287&quot;&gt;Tannhauer Gate&lt;/a&gt;.
+
+Tannhauer -- I wouldn&#039;t have bought a Nest if I hadn&#039;t had the C wire for power. While I consider their solution to power novel, I wouldn&#039;t recommend a Nest thermostat for an HVAC system without a compatible and reasonable power supply.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/blog/index.php/archives/1576/comment-page-1#comment-20287">Tannhauer Gate</a>.</p>
+<p>Tannhauer &#8212; I wouldn&#8217;t have bought a Nest if I hadn&#8217;t had the C wire for power. While I consider their solution to power novel, I wouldn&#8217;t recommend a Nest thermostat for an HVAC system without a compatible and reasonable power supply.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Tannhauer Gate		</title>
+		<link>/blog/index.php/archives/1576/comment-page-1#comment-20287</link>
+
+		<dc:creator><![CDATA[Tannhauer Gate]]></dc:creator>
+		<pubDate>Fri, 14 Dec 2012 12:12:13 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1576#comment-20287</guid>
+
+					<description><![CDATA[I really, really wanted to love the Nest. But it seems two potential issues have come up based on what I&#039;ve read:
+
+(1) Apparently Nest is incompatible with a large list of wireless routers, something to do with it entering Power Save Mode and therefore losing Wi-Fi connectivity:
+http://support.nest.com/article/Unsupported-Wi-Fi-Access-Points
+
+(2) Without a C common wire for Nest (my heat-only system with manual stat doesn&#039;t have/need one), Nest will pulse or cycle your heating system intermittently (even in the summer) in order to draw power to charge its internal battery. I am concerned about this cycling/pulsing on my system and excessive wear/tear.
+http://www.marco.org/2011/12/17/nest-incompatibility-without-c-wire]]></description>
+			<content:encoded><![CDATA[<p>I really, really wanted to love the Nest. But it seems two potential issues have come up based on what I&#8217;ve read:</p>
+<p>(1) Apparently Nest is incompatible with a large list of wireless routers, something to do with it entering Power Save Mode and therefore losing Wi-Fi connectivity:<br />
+<a href="http://support.nest.com/article/Unsupported-Wi-Fi-Access-Points" rel="nofollow ugc">http://support.nest.com/article/Unsupported-Wi-Fi-Access-Points</a></p>
+<p>(2) Without a C common wire for Nest (my heat-only system with manual stat doesn&#8217;t have/need one), Nest will pulse or cycle your heating system intermittently (even in the summer) in order to draw power to charge its internal battery. I am concerned about this cycling/pulsing on my system and excessive wear/tear.<br />
+<a href="http://www.marco.org/2011/12/17/nest-incompatibility-without-c-wire" rel="nofollow ugc">http://www.marco.org/2011/12/17/nest-incompatibility-without-c-wire</a></p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: PeteP		</title>
+		<link>/blog/index.php/archives/1576/comment-page-1#comment-12109</link>
+
+		<dc:creator><![CDATA[PeteP]]></dc:creator>
+		<pubDate>Tue, 06 Nov 2012 22:48:38 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1576#comment-12109</guid>
+
+					<description><![CDATA[I too have had numerous network issues with my Nest thermostats.  They regularly forget the network password and have to be reconnected.  This reminds me of the network issues that I used to have with my iPad when it was first introduced.  Apple finally figured out the network issues - let&#039;s hope these guys can do the same.  If not, these thinks are $250 pieces of junk.]]></description>
+			<content:encoded><![CDATA[<p>I too have had numerous network issues with my Nest thermostats.  They regularly forget the network password and have to be reconnected.  This reminds me of the network issues that I used to have with my iPad when it was first introduced.  Apple finally figured out the network issues &#8211; let&#8217;s hope these guys can do the same.  If not, these thinks are $250 pieces of junk.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Nest Update #12: Software at 3.0 with New Features - WiredPrairie		</title>
+		<link>/blog/index.php/archives/1576/comment-page-1#comment-5001</link>
+
+		<dc:creator><![CDATA[Nest Update #12: Software at 3.0 with New Features - WiredPrairie]]></dc:creator>
+		<pubDate>Wed, 03 Oct 2012 12:50:05 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1576#comment-5001</guid>
+
+					<description><![CDATA[[...] has improved. I haven’t noticed the same problems as before and I THANKFULLY haven’t had to re-add my account or Wifi information in months to any of our [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] has improved. I haven’t noticed the same problems as before and I THANKFULLY haven’t had to re-add my account or Wifi information in months to any of our [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Frank		</title>
+		<link>/blog/index.php/archives/1576/comment-page-1#comment-4691</link>
+
+		<dc:creator><![CDATA[Frank]]></dc:creator>
+		<pubDate>Sat, 21 Jul 2012 22:06:55 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1576#comment-4691</guid>
+
+					<description><![CDATA[@Matt,
+
+I only use it in one zone and wired the resistor into that zone only.
+It does get very hot but Nest seems to work. I am currently leaving the cover off the furnace panel.]]></description>
+			<content:encoded><![CDATA[<p>@Matt,</p>
+<p>I only use it in one zone and wired the resistor into that zone only.<br />
+It does get very hot but Nest seems to work. I am currently leaving the cover off the furnace panel.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Matt		</title>
+		<link>/blog/index.php/archives/1576/comment-page-1#comment-4654</link>
+
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+		<pubDate>Mon, 09 Jul 2012 01:53:22 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1576#comment-4654</guid>
+
+					<description><![CDATA[@Frank,
+
+I had the same problem (have a Honeywell emm-3 minizone) and like you called tech support and also got sent a resistor.  I have two nests in the house and didn&#039;t really like the resistor option so I pulled new 5-wire (to attach a common wire) to the upstairs thermostat.  It was really easy because it only had a few feet to go and now the upstairs thermostat is working great.  Unfortunately the downstairs thermostat wire wouldnt budge and it has to go up a wall across the ceiling and up another wall to the attic so it didnt seem feasible to pull new wire.  I attached the resistor they sent me and it seems to be working well however the resistor is extremely hot and I&#039;m now worried about it catching on fire or something.  Did yours work out for you and is it hot?]]></description>
+			<content:encoded><![CDATA[<p>@Frank,</p>
+<p>I had the same problem (have a Honeywell emm-3 minizone) and like you called tech support and also got sent a resistor.  I have two nests in the house and didn&#8217;t really like the resistor option so I pulled new 5-wire (to attach a common wire) to the upstairs thermostat.  It was really easy because it only had a few feet to go and now the upstairs thermostat is working great.  Unfortunately the downstairs thermostat wire wouldnt budge and it has to go up a wall across the ceiling and up another wall to the attic so it didnt seem feasible to pull new wire.  I attached the resistor they sent me and it seems to be working well however the resistor is extremely hot and I&#8217;m now worried about it catching on fire or something.  Did yours work out for you and is it hot?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Frank		</title>
+		<link>/blog/index.php/archives/1576/comment-page-1#comment-4648</link>
+
+		<dc:creator><![CDATA[Frank]]></dc:creator>
+		<pubDate>Wed, 04 Jul 2012 17:38:02 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1576#comment-4648</guid>
+
+					<description><![CDATA[I just got the nest and have similar problems with intermittent start of A/C compressor after reaching target temp. Stop &#038; go of compressor at 5sec interval. This cannot be healthy for the unit. Talked to tech support and they told me that Voltage is low and after 2h of troubleshooting are now going to send me a resistor by overnite to bridge something in the control panel to stabilize voltage / current to Nest. I have a 2 zone Honeywell Minizone controller and am using only one zone with Nest. Hopefully this works.]]></description>
+			<content:encoded><![CDATA[<p>I just got the nest and have similar problems with intermittent start of A/C compressor after reaching target temp. Stop &amp; go of compressor at 5sec interval. This cannot be healthy for the unit. Talked to tech support and they told me that Voltage is low and after 2h of troubleshooting are now going to send me a resistor by overnite to bridge something in the control panel to stabilize voltage / current to Nest. I have a 2 zone Honeywell Minizone controller and am using only one zone with Nest. Hopefully this works.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Mark		</title>
+		<link>/blog/index.php/archives/1576/comment-page-1#comment-4577</link>
+
+		<dc:creator><![CDATA[Mark]]></dc:creator>
+		<pubDate>Wed, 13 Jun 2012 13:53:22 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1576#comment-4577</guid>
+
+					<description><![CDATA[I&#039;ve had two Nest thermostats, both with v2.0, over the course of the last 3 months.  The first one had some type of error code (E4 I think) and I noticed that air was coming from the vents but not cold.  Further inspection showed the compressor wasn&#039;t running.  After several calls to Nest support and trying this/that, I had to call an air cond service company, who come out and after a bit of diagnostics figured out that the 24 v wire from the A/C unit to the compressor outside wasn&#039;t getting it&#039;s 24v.  They hooked up a temp cheapo analog thermostat and, whallah!, everything worked.  Nest did overnight me a new thermostat and after I hooked it up, it all worked great, until...
+yesterday.  I came home from work and again, air blowing, but not cold.
+This time no error code so I didn&#039;t think it was the Nest.  I called the ac company again and after another $100 service call, it was definitly the Nest again not sending 24v to the compressor.  (They temporarily hooked up another analog thermostat).
+
+OK, so today I&#039;m calling Nest and complaining (loudly).  This is the second time, second $100 service call.  I can&#039;t afford any more. It&#039;s not like my A/C unit is antique, only 10 years old and it&#039;s been serviced every year and always checks out ok.
+
+I can&#039;t afford the Nest after sale issues.  I hope they have a more permanent solution for me when I call.]]></description>
+			<content:encoded><![CDATA[<p>I&#8217;ve had two Nest thermostats, both with v2.0, over the course of the last 3 months.  The first one had some type of error code (E4 I think) and I noticed that air was coming from the vents but not cold.  Further inspection showed the compressor wasn&#8217;t running.  After several calls to Nest support and trying this/that, I had to call an air cond service company, who come out and after a bit of diagnostics figured out that the 24 v wire from the A/C unit to the compressor outside wasn&#8217;t getting it&#8217;s 24v.  They hooked up a temp cheapo analog thermostat and, whallah!, everything worked.  Nest did overnight me a new thermostat and after I hooked it up, it all worked great, until&#8230;<br />
+yesterday.  I came home from work and again, air blowing, but not cold.<br />
+This time no error code so I didn&#8217;t think it was the Nest.  I called the ac company again and after another $100 service call, it was definitly the Nest again not sending 24v to the compressor.  (They temporarily hooked up another analog thermostat).</p>
+<p>OK, so today I&#8217;m calling Nest and complaining (loudly).  This is the second time, second $100 service call.  I can&#8217;t afford any more. It&#8217;s not like my A/C unit is antique, only 10 years old and it&#8217;s been serviced every year and always checks out ok.</p>
+<p>I can&#8217;t afford the Nest after sale issues.  I hope they have a more permanent solution for me when I call.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Andrew		</title>
+		<link>/blog/index.php/archives/1576/comment-page-1#comment-4479</link>
+
+		<dc:creator><![CDATA[Andrew]]></dc:creator>
+		<pubDate>Fri, 04 May 2012 23:17:08 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1576#comment-4479</guid>
+
+					<description><![CDATA[Update for above comment.Nest relented and took it back. They did the right thing and I wanted to report that. Thank you Nest.]]></description>
+			<content:encoded><![CDATA[<p>Update for above comment.Nest relented and took it back. They did the right thing and I wanted to report that. Thank you Nest.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: andrew		</title>
+		<link>/blog/index.php/archives/1576/comment-page-1#comment-4467</link>
+
+		<dc:creator><![CDATA[andrew]]></dc:creator>
+		<pubDate>Sat, 28 Apr 2012 14:52:22 +0000</pubDate>
+		<guid isPermaLink="false">/blog/?p=1576#comment-4467</guid>
+
+					<description><![CDATA[After a whole saga with a Nest my basic issue is with the company itself. We discovered a incompatibility in the power stealing feature on our 4 wire system.
+The internal fan and air handler ran normally but it turned out that unknown to us the outdoor compressor and exhuast fan was being cycled on and off.  We happened to be outside one night and heard the start and stopping. We observed it for a few days and called our highly qualified AC company to check. They did two visits and eventually eliminated every possible before determining that the Nest&#039;s power stealing a real problem, and that the Nest solution of hooking up the C wire would not eliminate the problem. Having done all that and spending $400 with the AC guys I wrote Nest to request a return and refund. After a day they decided that since it was beyond the initial 30 days since the purchase they would not take it back. Such arrogance for a company barely 180 days old. For my good faith honest effort all I got was a brush off. Basically these guys cannot be trusted if they hide behind one sided written disclaimers. So be aware that the Nest product may not work. I just checked the website today and my system is still showing as compatible.]]></description>
+			<content:encoded><![CDATA[<p>After a whole saga with a Nest my basic issue is with the company itself. We discovered a incompatibility in the power stealing feature on our 4 wire system.<br />
+The internal fan and air handler ran normally but it turned out that unknown to us the outdoor compressor and exhuast fan was being cycled on and off.  We happened to be outside one night and heard the start and stopping. We observed it for a few days and called our highly qualified AC company to check. They did two visits and eventually eliminated every possible before determining that the Nest&#8217;s power stealing a real problem, and that the Nest solution of hooking up the C wire would not eliminate the problem. Having done all that and spending $400 with the AC guys I wrote Nest to request a return and refund. After a day they decided that since it was beyond the initial 30 days since the purchase they would not take it back. Such arrogance for a company barely 180 days old. For my good faith honest effort all I got was a brush off. Basically these guys cannot be trusted if they hide behind one sided written disclaimers. So be aware that the Nest product may not work. I just checked the website today and my system is still showing as compatible.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>
