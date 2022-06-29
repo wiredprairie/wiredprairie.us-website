@@ -161,7 +161,7 @@
 		<guid isPermaLink="false">/blog/?p=1528</guid>
 
 					<description><![CDATA[If you recently added an icon to your WPF project (any .NET version, including .NET 3.5, and .NET 4.0) and it has support for an alpha channel (often referred to as the Vista icon format), stop. Why? Your WPF application won’t run on the latest service pack of XP as it’s not capable of decoding [&#8230;]]]></description>
-										<content:encoded><![CDATA[<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; float: right; border-top: 0px; border-right: 0px; padding-top: 0px" title="SNAGHTML4534e6a2" border="0" alt="SNAGHTML4534e6a2" align="right" src="/blog/wp-content/uploads/2012/02/SNAGHTML4534e6a2.png" width="242" height="216" />If you recently added an icon to your WPF project (any .NET version, including .NET 3.5, and .NET 4.0) and it has support for an alpha channel (often referred to as the Vista icon format), <strong>stop</strong>. Why? Your WPF application won’t run on the latest service pack of XP as it’s not capable of decoding the format unfortunately. It’s a very frustrating error and a stupid &quot;feature that Microsoft overlooked. I’ve hit this a few times unfortunately. </p>
+										<content:encoded><![CDATA[<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; float: right; border-top: 0px; border-right: 0px; padding-top: 0px" title="SNAGHTML4534e6a2" border="0" alt="SNAGHTML4534e6a2" align="right" src="/blog/wpcontent/uploads/2012/02/SNAGHTML4534e6a2.png" width="242" height="216" />If you recently added an icon to your WPF project (any .NET version, including .NET 3.5, and .NET 4.0) and it has support for an alpha channel (often referred to as the Vista icon format), <strong>stop</strong>. Why? Your WPF application won’t run on the latest service pack of XP as it’s not capable of decoding the format unfortunately. It’s a very frustrating error and a stupid &quot;feature that Microsoft overlooked. I’ve hit this a few times unfortunately. </p>
 <p>To fix, remove all of the alpha channel images from the ICO file and recompile.</p>
 ]]></content:encoded>
 					
@@ -185,7 +185,7 @@
 					<description><![CDATA[After dealing with lost settings, an unclear upgrade path, and my own confusion surrounding the magic of Settings in a .NET client application, I decided to build my own. You’re probably familiar with this UI in Visual Studio. It hasn’t changed much since it was first created: A list of properties, data type, scope and [&#8230;]]]></description>
 										<content:encoded><![CDATA[<p>After dealing with lost settings, an unclear upgrade path, and my own confusion surrounding the magic of <a href="http://msdn.microsoft.com/en-us/library/system.configuration.applicationsettingsbase.aspx">Settings</a> in a .NET client application, I decided to build my own. </p>
 <p>You’re probably familiar with this UI in Visual Studio. It hasn’t changed much since it was first created:</p>
-<p><img loading="lazy" style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2012/02/image.png" width="420" height="322" /></p>
+<p><img loading="lazy" style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wpcontent/uploads/2012/02/image.png" width="420" height="322" /></p>
 <p>A list of properties, data type, scope and a default value. Admittedly, it makes things simple. However, with my WPF .NET application that I created a few years ago (<a href="http://www.wiredprairie.us/SnugUp/">SnugUp</a>), I’ve always been troubled by the magic of the settings. It was too easy to get in a situation where a user would loose their settings doing uninstalls, reinstalls, upgrades. </p>
 <p>While I’m sure it’s possible to make the built in settings classes to work, it wasn’t worth the effort for me to understand them and learn what the nuances of where they’re placed, how to do a decent upgrade, how not to loose them, etc. </p>
 <p>In the SnugUp WPF UI, the code uses a two-way bindings to directly edit the settings of the application (like: &quot;{Binding AppSettings.DebugMode}&quot;). It was simple, and all I needed. It’s handy that ApplicationSettingsBase implements the INotifyPropertyChanged interface which WPF needs for simple two-way data bindings.</p>
@@ -412,7 +412,7 @@
 <p>By keeping all of the property names the same and making a few tweaks to the types of some fields in my application, I had swapped out the entire “settings” infrastructure in about 45 minutes. </p>
 <p>I’m planning some other JSON activities within my application, so the overhead of using JSON.NET is acceptable. </p>
 <p>The best part of this alternative is that there isn’t any magic. It’s all easy to manage. Further, I can easily modify my installer to properly handle/update, etc., the settings file with just a few clicks. </p>
-<p>I’m not going back to the built-in .NET settings support again. I’ve learned my lesson.&#160; <img style="border-bottom-style: none; border-left-style: none; border-top-style: none; border-right-style: none" class="wlEmoticon wlEmoticon-smile" alt="Smile" src="/blog/wp-content/uploads/2012/02/wlEmoticon-smile.png" /></p>
+<p>I’m not going back to the built-in .NET settings support again. I’ve learned my lesson.&#160; <img style="border-bottom-style: none; border-left-style: none; border-top-style: none; border-right-style: none" class="wlEmoticon wlEmoticon-smile" alt="Smile" src="/blog/wpcontent/uploads/2012/02/wlEmoticon-smile.png" /></p>
 <p>What have you done for “user” settings?</p>
 ]]></content:encoded>
 					
@@ -434,7 +434,7 @@
 
 					<description><![CDATA[I had need of sending embedded images within an e-mail. .NET has had a few handy classes for sending an email using SMTP for a few versions. While there were a few examples floating around the internet, none were as clean and easy to follow as I expected. So, I decided to create a simple [&#8230;]]]></description>
 										<content:encoded><![CDATA[<p>I had need of sending embedded images within an e-mail. .NET has had a few handy classes for sending an email using SMTP for a few versions. While there were a few examples floating around the internet, none were as clean and easy to follow as I expected. So, I decided to create a simple sample application in C# which demonstrates how to embed an image (or other content) in a email that contains both plain text and HTML content. It’s really not difficult. A number of examples ignore the fact that almost all of the objects need to be disposed, so I corrected that. This code is intentionally written synchronously to keep the sample simpler and easier to follow (and I didn’t need asynchronous sending for my learning exercise). </p>
-<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2011/07/image.png" width="289" height="142" /></p>
+<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wpcontent/uploads/2011/07/image.png" width="289" height="142" /></p>
 <p>Above is the output (if you happen to have a picture of NYC). The example code uses Gmail as the SMTP host (it has the settings that generally work for gmail in most situations, including using SSL).</p>
 <pre class="code"><span style="color: blue">using </span>System;
 <span style="color: blue">using </span>System.Collections.Generic;
@@ -531,7 +531,7 @@
         }
     }
 }</pre>
-<p>Use this only for good. <img style="border-bottom-style: none; border-left-style: none; border-top-style: none; border-right-style: none" class="wlEmoticon wlEmoticon-smile" alt="Smile" src="/blog/wp-content/uploads/2011/07/wlEmoticon-smile.png" /></p>
+<p>Use this only for good. <img style="border-bottom-style: none; border-left-style: none; border-top-style: none; border-right-style: none" class="wlEmoticon wlEmoticon-smile" alt="Smile" src="/blog/wpcontent/uploads/2011/07/wlEmoticon-smile.png" /></p>
 ]]></content:encoded>
 					
 		

@@ -41,7 +41,7 @@
 										<content:encoded><![CDATA[<p>While Nest Labs hasn’t released a formal (documented &amp; supported) API, I thought I’d do a bit of digging to see how they’re using the network and what might be achievable.</p>
 <p>A few things are going on, the majority as you’d probably expect.</p>
 <p>The web interface is using a long polling technique apparently to watch for updates to the schedule, temperature, etc.</p>
-<p><a href="/blog/wp-content/uploads/2012/01/image7.png"><img loading="lazy" style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-width: 0px;" title="image" src="/blog/wp-content/uploads/2012/01/image_thumb7.png" alt="image" width="381" height="225" border="0"/></a></p>
+<p><a href="/blog/wpcontent/uploads/2012/01/image7.png"><img loading="lazy" style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-width: 0px;" title="image" src="/blog/wpcontent/uploads/2012/01/image_thumb7.png" alt="image" width="381" height="225" border="0"/></a></p>
 <p>I haven’t determined what the frequency is though, or the wait time. It’s very inconsistent, even when I wouldn’t expect much new “live” data to be available on the network, it frequently updates and polls again.</p>
 <p>There are a few constants set in the HOME page script:</p>
 <pre class="csharpcode">C.ABSENT_USER_THRESHOLD     = +(<span class="str">'300'</span>) || 0;  <span class="rem">// seconds</span>
@@ -264,7 +264,7 @@ C.WEATHER_POLLING_INTERVAL  = +(<span class="str">'120000'</span>) || 0; <span c
 <p>&nbsp;</p>
 <p>It’s a basic table structure. The first set point of the day is at 0, and is a “continuation.” These don’t show up in the UI.</p>
 <p>Here’s what the day 1 looks like on the Nest thermostat UI:</p>
-<p><a href="/blog/wp-content/uploads/2012/01/image8.png"><img loading="lazy" style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-width: 0px;" title="image" src="/blog/wp-content/uploads/2012/01/image_thumb8.png" alt="image" width="500" height="37" border="0"/></a></p>
+<p><a href="/blog/wpcontent/uploads/2012/01/image8.png"><img loading="lazy" style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-width: 0px;" title="image" src="/blog/wpcontent/uploads/2012/01/image_thumb8.png" alt="image" width="500" height="37" border="0"/></a></p>
 <p>When changing a temperature setpoint, I’m a bit disappointed to see that the entire schedule is sent with every request apparently. I just wouldn’t have expected that given that the more setpoints that there are, the bigger the payload must be. The UI is often sluggish when rapidly making adjustments in the schedule, and this could be one of the factors.</p>
 <p>In the example below (which I’ve snipped most of the payload sent again as a JSONP request), I’ve set the first set point to 57F.</p>
 <pre class="csharpcode">    <span class="str">"payload"</span>: {

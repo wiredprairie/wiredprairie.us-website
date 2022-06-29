@@ -35,7 +35,7 @@
 
 					<description><![CDATA[I had need of sending embedded images within an e-mail. .NET has had a few handy classes for sending an email using SMTP for a few versions. While there were a few examples floating around the internet, none were as clean and easy to follow as I expected. So, I decided to create a simple [&#8230;]]]></description>
 										<content:encoded><![CDATA[<p>I had need of sending embedded images within an e-mail. .NET has had a few handy classes for sending an email using SMTP for a few versions. While there were a few examples floating around the internet, none were as clean and easy to follow as I expected. So, I decided to create a simple sample application in C# which demonstrates how to embed an image (or other content) in a email that contains both plain text and HTML content. It’s really not difficult. A number of examples ignore the fact that almost all of the objects need to be disposed, so I corrected that. This code is intentionally written synchronously to keep the sample simpler and easier to follow (and I didn’t need asynchronous sending for my learning exercise). </p>
-<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2011/07/image.png" width="289" height="142" /></p>
+<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wpcontent/uploads/2011/07/image.png" width="289" height="142" /></p>
 <p>Above is the output (if you happen to have a picture of NYC). The example code uses Gmail as the SMTP host (it has the settings that generally work for gmail in most situations, including using SSL).</p>
 <pre class="code"><span style="color: blue">using </span>System;
 <span style="color: blue">using </span>System.Collections.Generic;
@@ -132,7 +132,7 @@
         }
     }
 }</pre>
-<p>Use this only for good. <img style="border-bottom-style: none; border-left-style: none; border-top-style: none; border-right-style: none" class="wlEmoticon wlEmoticon-smile" alt="Smile" src="/blog/wp-content/uploads/2011/07/wlEmoticon-smile.png" /></p>
+<p>Use this only for good. <img style="border-bottom-style: none; border-left-style: none; border-top-style: none; border-right-style: none" class="wlEmoticon wlEmoticon-smile" alt="Smile" src="/blog/wpcontent/uploads/2011/07/wlEmoticon-smile.png" /></p>
 ]]></content:encoded>
 					
 		

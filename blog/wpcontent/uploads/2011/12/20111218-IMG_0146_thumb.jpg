@@ -2,13 +2,13 @@
 <html>
 	<head>
 		<title>Redirecting...</title>
-		<meta http-equiv="refresh" content="0;url=https://wiredprairie.us/blog/wp-content/uploads/2011/12/20111218-IMG_0146_thumb.jpg">
+		<meta http-equiv="refresh" content="0;url=https://wiredprairie.us/blog/wpcontent/uploads/2011/12/20111218-IMG_0146_thumb.jpg">
 	</head>
 	<body>
 		<script type="text/javascript">
-			window.location = "https://wiredprairie.us/blog/wp-content/uploads/2011/12/20111218-IMG_0146_thumb.jpg";
+			window.location = "https://wiredprairie.us/blog/wpcontent/uploads/2011/12/20111218-IMG_0146_thumb.jpg";
 		</script>
 
-		<p>You are being redirected to <a href="https://wiredprairie.us/blog/wp-content/uploads/2011/12/20111218-IMG_0146_thumb.jpg">https://wiredprairie.us/blog/wp-content/uploads/2011/12/20111218-IMG_0146_thumb.jpg</a></p>
+		<p>You are being redirected to <a href="https://wiredprairie.us/blog/wpcontent/uploads/2011/12/20111218-IMG_0146_thumb.jpg">https://wiredprairie.us/blog/wpcontent/uploads/2011/12/20111218-IMG_0146_thumb.jpg</a></p>
 	</body>
 </html>

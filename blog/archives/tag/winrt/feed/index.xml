@@ -42,9 +42,9 @@
 <p>What seemed like it should have been a common example on MSDN was not …, and after a bit of searching and reading, I believe the above code represents at least a common and safe way of loading data. </div>
 </div>
 <p>I’ve got a file called <strong>data.json</strong> stored in an <strong>Assets</strong> folder:</p>
-<p><a href="/blog/wp-content/uploads/2013/09/image.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wp-content/uploads/2013/09/image_thumb.png" width="272" height="237" /></a></p>
+<p><a href="/blog/wpcontent/uploads/2013/09/image.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wpcontent/uploads/2013/09/image_thumb.png" width="272" height="237" /></a></p>
 <p>And the file’s <strong>Build Action</strong> is set to <strong>Content:</strong></p>
-<p><a href="/blog/wp-content/uploads/2013/09/image1.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wp-content/uploads/2013/09/image_thumb1.png" width="546" height="212" /></a></p>
+<p><a href="/blog/wpcontent/uploads/2013/09/image1.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wpcontent/uploads/2013/09/image_thumb1.png" width="546" height="212" /></a></p>
 <p>Change the value passed to the <strong>Uri</strong> constructor and … the file will be loaded successfully. Once loaded, I used the strongly typed generic <strong>DeserializeObject</strong> method to convert the Json data to a class called <strong>DemoData</strong>.</p>
 ]]></content:encoded>
 					
@@ -149,7 +149,7 @@
     }            
 }</span></pre>
 <p>You’ll get results like this:</p>
-<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2012/09/image.png" width="497" height="582" /></p>
+<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wpcontent/uploads/2012/09/image.png" width="497" height="582" /></p>
 ]]></content:encoded>
 					
 					<wfw:commentRss>/blog/index.php/archives/1730/feed</wfw:commentRss>
@@ -181,7 +181,7 @@
 <li>FrameworkElement.<a href="http://msdn.microsoft.com/en-us/library/system.windows.frameworkelement.getbindingexpression(v=vs.110).aspx" target="_blank">GetBindingExpression</a>: Again, gone. Same basic logic as above. (Probably uses same underlying support that just isn’t there).</li>
 <li>XamlWriter.Save: XamlWriter is completely gone. I thought maybe I’d save an instance of the TextBox to Xaml, and create a new one with adjusted bindings from the Xaml. XamlReader does exist.</li>
 </ul>
-<p>You can start to feel how Xaml really is just a thin wrapper on the Windows 8 run time as you start to look around to see what remains from WPF. Even traditional Silverlight features are gone unfortunately. Maybe Windows 9? <img style="border-bottom-style: none; border-left-style: none; border-top-style: none; border-right-style: none" class="wlEmoticon wlEmoticon-smile" alt="Smile" src="/blog/wp-content/uploads/2012/08/wlEmoticon-smile.png" /></p>
+<p>You can start to feel how Xaml really is just a thin wrapper on the Windows 8 run time as you start to look around to see what remains from WPF. Even traditional Silverlight features are gone unfortunately. Maybe Windows 9? <img style="border-bottom-style: none; border-left-style: none; border-top-style: none; border-right-style: none" class="wlEmoticon wlEmoticon-smile" alt="Smile" src="/blog/wpcontent/uploads/2012/08/wlEmoticon-smile.png" /></p>
 <p>So, I took a round-about approach to solving this problem. </p>
 <pre class="code"><span style="background: white; color: black"> </span><span style="background: white; color: blue">public class </span><span style="background: white; color: #2b91af">UpdateSourceHelper </span><span style="background: white; color: black">: </span><span style="background: white; color: #2b91af">FrameworkElement
  </span><span style="background: white; color: black">{

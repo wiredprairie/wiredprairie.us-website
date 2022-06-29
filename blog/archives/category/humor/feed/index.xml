@@ -34,9 +34,9 @@
 
 					<description><![CDATA[I had moved my mouse over an image on a local bank’s web site, and was surprised to see the name of the file pop-up. The reason is that their web developer apparently doesn’t understand the meaning or intention behind the alt or title attribute of an HTML element. Not that it isn’t handy to [&#8230;]]]></description>
 										<content:encoded><![CDATA[<p>I had moved my mouse over an image on a local bank’s web site, and was surprised to see the name of the file pop-up. </p>
-<p><a href="http://www.anchorbank.com/business/splash.aspx"><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="SNAGHTML3867720c" border="0" alt="SNAGHTML3867720c" src="/blog/wp-content/uploads/2012/04/SNAGHTML3867720c.png" width="378" height="114" /></a></p>
+<p><a href="http://www.anchorbank.com/business/splash.aspx"><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="SNAGHTML3867720c" border="0" alt="SNAGHTML3867720c" src="/blog/wpcontent/uploads/2012/04/SNAGHTML3867720c.png" width="378" height="114" /></a></p>
 <p>The reason is that their web developer apparently doesn’t understand the meaning or intention behind the <a href="http://en.wikipedia.org/wiki/Alt_attribute">alt</a> or title attribute of an HTML element. </p>
-<p>Not that it isn’t handy to know the name of the file…. <img style="border-bottom-style: none; border-left-style: none; border-top-style: none; border-right-style: none" class="wlEmoticon wlEmoticon-smile" alt="Smile" src="/blog/wp-content/uploads/2012/04/wlEmoticon-smile1.png" /></p>
+<p>Not that it isn’t handy to know the name of the file…. <img style="border-bottom-style: none; border-left-style: none; border-top-style: none; border-right-style: none" class="wlEmoticon wlEmoticon-smile" alt="Smile" src="/blog/wpcontent/uploads/2012/04/wlEmoticon-smile1.png" /></p>
 <p>Maybe they could have used:</p>
 <ul>
 <li>Passionate bank web site user</li>
@@ -67,7 +67,7 @@
 					<description><![CDATA[Or not really. I joined SuperUser.com last year to ask one question that was unresolved at work. It has been my first and only question. I find it funny that this yet unanswered question has given me a gold badge. I apparently am not the only person who needed help with this issue. Now, if [&#8230;]]]></description>
 										<content:encoded><![CDATA[<p>Or not really. </p>
 <p>I joined SuperUser.com last year to ask <a href="http://superuser.com/questions/116541/what-is-a-valid-trust-anchor-in-windows-7-relating-to-wifi">one question</a> that was unresolved at work. It has been my <strong>first and only</strong> question.</p>
-<p><a href="/blog/wp-content/uploads/2012/04/image10.png"><img loading="lazy" style="background-image: none; border-right-width: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2012/04/image_thumb.png" width="502" height="275" /></a></p>
+<p><a href="/blog/wpcontent/uploads/2012/04/image10.png"><img loading="lazy" style="background-image: none; border-right-width: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wpcontent/uploads/2012/04/image_thumb.png" width="502" height="275" /></a></p>
 <p>I find it funny that this yet unanswered question has given me a gold badge. I apparently am not the only person who needed help with this issue. </p>
 <p><a href="http://www.xkcd.com/979/"><img style="display: block; float: none; margin-left: auto; margin-right: auto" alt="Wisdom of the Ancients" src="http://imgs.xkcd.com/comics/wisdom_of_the_ancients.png" /></a></p>
 <p>Now, if only these badges could be turned into some real coin, or prizes like in an arcade ….</p>
@@ -89,7 +89,7 @@
 
 					<description><![CDATA[On a Google site this morning, Captcha: As I have a US English keyboard – I was unable to type the first word. (Anyone know what language that is? I thought Greek at first, but the “n” didn’t make sense.) I then proceeded to skip through 8 more captcha’s before I found one I could [&#8230;]]]></description>
 										<content:encoded><![CDATA[<p>On a Google site this morning, Captcha:</p>
-<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2012/03/image5.png" width="307" height="69" /></p>
+<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wpcontent/uploads/2012/03/image5.png" width="307" height="69" /></p>
 <p>As I have a US English keyboard – I was unable to type the first word. (Anyone know what language that is? I thought Greek at first, but the “n” didn’t make sense.)</p>
 <p>I then proceeded to skip through 8 more captcha’s before I found one I could actually recognize. Sigh.</p>
 ]]></content:encoded>
@@ -109,7 +109,7 @@
 
 					<description><![CDATA[OK, this is broken: I’m thankful I don’t need to use the old cascading menus anymore, but this just ain’t right. What’s in your start menu from Microsoft (or other companies)?]]></description>
 										<content:encoded><![CDATA[<p>OK, this is broken:</p>
-<p><img loading="lazy" style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2010/09/image3.png" width="250" height="418" /></p>
+<p><img loading="lazy" style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wpcontent/uploads/2010/09/image3.png" width="250" height="418" /></p>
 <p>I’m thankful I don’t need to use the old cascading menus anymore, but this just ain’t right.</p>
 <p>What’s in your start menu from Microsoft (or other companies)?</p>
 ]]></content:encoded>
@@ -128,7 +128,7 @@
 
 					<description><![CDATA[I found this experience quite amusing today…]]></description>
 										<content:encoded><![CDATA[<p>I found this experience quite amusing today…</p>
-<p><img loading="lazy" style="border-bottom: 0px; border-left: 0px; margin: 0px; display: inline; border-top: 0px; border-right: 0px" class="wlDisabledImage" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2010/07/image.png" width="450" height="213" /></p>
+<p><img loading="lazy" style="border-bottom: 0px; border-left: 0px; margin: 0px; display: inline; border-top: 0px; border-right: 0px" class="wlDisabledImage" title="image" border="0" alt="image" src="/blog/wpcontent/uploads/2010/07/image.png" width="450" height="213" /></p>
 ]]></content:encoded>
 					
 		
@@ -166,7 +166,7 @@
 
 					<description><![CDATA[From Kayak.com Page not found (404) Sorry, we could not find that page. Probably one of our &#34;genius&#34; programmers made a boo-boo. What can you do about it?]]></description>
 										<content:encoded><![CDATA[<p>From <a href="http://www.kayak.com/" target="_blank">Kayak.com</a></p>
-<p><img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2010/06/image7.png" width="363" height="214" /> </p>
+<p><img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" src="/blog/wpcontent/uploads/2010/06/image7.png" width="363" height="214" /> </p>
 <h4>Page not found (404)</h4>
 <p>Sorry, we could not find that page. Probably one of our &quot;genius&quot; programmers made a boo-boo. What can you do about it?</p>
 ]]></content:encoded>
@@ -187,7 +187,7 @@
 					<description><![CDATA[&#160; From http://www.webdirections.org/sotw10/results/ IE5?!?!?]]></description>
 										<content:encoded><![CDATA[<p>&#160;</p>
 <p>From <a href="http://www.webdirections.org/sotw10/results/">http://www.webdirections.org/sotw10/results/</a></p>
-<p> <img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2010/04/image2.png" width="452" height="488" />   </p>
+<p> <img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" src="/blog/wpcontent/uploads/2010/04/image2.png" width="452" height="488" />   </p>
 <p>IE5?!?!?</p>
 ]]></content:encoded>
 					
@@ -205,7 +205,7 @@
 		<guid isPermaLink="false">/blog/index.php/archives/1036</guid>
 
 					<description><![CDATA[]]></description>
-										<content:encoded><![CDATA[<p><img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2010/04/image1.png" width="416" height="296" /></p>
+										<content:encoded><![CDATA[<p><img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" src="/blog/wpcontent/uploads/2010/04/image1.png" width="416" height="296" /></p>
 ]]></content:encoded>
 					
 		
@@ -223,7 +223,7 @@
 
 					<description><![CDATA[From a message that wasn’t marked as spam in my inbox: “They can offer you all kinds of electronical products which you need like laptops, gps, TV LCD, cell phones, ps3, MP3/4, motorcycles, etc….” I’m as a big of a fan of electronical products as the next guy, but I’m really excited about the electronical [&#8230;]]]></description>
 										<content:encoded><![CDATA[<p>From a message that wasn’t marked as spam in my inbox:</p>
-<p><img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2010/04/image.png" width="450" height="136" /> </p>
+<p><img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" src="/blog/wpcontent/uploads/2010/04/image.png" width="450" height="136" /> </p>
 <p>“They can offer you all kinds of electronical products which you need like laptops, gps, TV LCD, cell phones, ps3, MP3/4, motorcycles, etc….”</p>
 <p>I’m as a big of a fan of <strong>electronical </strong>products as the next guy, but I’m really excited about the <strong>electronical </strong>motorcycle! I’m in a good mood in shopping right now, so I should be set!</p>
 <p>(Yes, I’m aware of the fact that there are <a href="http://www.google.com/search?sourceid=chrome&amp;ie=UTF-8&amp;q=electric+motorcycle">electric motorcycles</a> – I’m just skeptical they did and that they meant to specifically mention it).</p>

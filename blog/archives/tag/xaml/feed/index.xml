@@ -120,7 +120,7 @@
     }            
 }</span></pre>
 <p>You’ll get results like this:</p>
-<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2012/09/image.png" width="497" height="582" /></p>
+<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wpcontent/uploads/2012/09/image.png" width="497" height="582" /></p>
 ]]></content:encoded>
 					
 					<wfw:commentRss>/blog/index.php/archives/1730/feed</wfw:commentRss>
@@ -161,8 +161,8 @@
 <p>Take the GridView above for example (using the template project in Visual Studio 2012).</p>
 <p>I’ve assigned the ItemTemplateSelector to an instance of the TypedTemplateSelector class I’ve created.</p>
 <p>In the Resources for the Page, I added a custom DataTemplate:</p>
-<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2012/08/image.png" width="323" height="186" /></p>
-<p>I’ve added a DataTemplate with a Key called <strong>Type : SampleDataItem</strong> (without the spaces though – they’re auto converted by my WordPress theme to a squiggle face: <img style="border-bottom-style: none; border-left-style: none; border-top-style: none; border-right-style: none" class="wlEmoticon wlEmoticon-confusedsmile" alt="Confused smile" src="/blog/wp-content/uploads/2012/08/wlEmoticon-confusedsmile.png" />).</p>
+<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wpcontent/uploads/2012/08/image.png" width="323" height="186" /></p>
+<p>I’ve added a DataTemplate with a Key called <strong>Type : SampleDataItem</strong> (without the spaces though – they’re auto converted by my WordPress theme to a squiggle face: <img style="border-bottom-style: none; border-left-style: none; border-top-style: none; border-right-style: none" class="wlEmoticon wlEmoticon-confusedsmile" alt="Confused smile" src="/blog/wpcontent/uploads/2012/08/wlEmoticon-confusedsmile.png" />).</p>
 <p>There’s nothing special about the Template, just the name. It must start with <strong>Type:.</strong></p>
 <p>Here the custom template selector is being constructed in the Resources:</p>
 <pre class="code"><span style="background: white; color: black">    </span><span style="background: white; color: blue">&lt;</span><span style="background: white; color: #a31515">local</span><span style="background: white; color: blue">:</span><span style="background: white; color: #a31515">TypedTemplateSelector </span><span style="background: white; color: red">x</span><span style="background: white; color: blue">:</span><span style="background: white; color: red">Key</span><span style="background: white; color: blue">=&quot;typedTemplateSelector&quot;

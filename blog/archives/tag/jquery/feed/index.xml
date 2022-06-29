@@ -35,7 +35,7 @@
 		<guid isPermaLink="false">/blog/?p=1570</guid>
 
 					<description><![CDATA[I needed a simple way to detect when a placeholder DIV (that would contain an image) had scrolled into the current viewport of the browser. I’ve seen a few solutions that worked, and a few that didn’t (hello? test your code!). Here’s my simple solution: function isScrolledIntoView(elem) { elem = $(elem); var win = $(window); [&#8230;]]]></description>
-										<content:encoded><![CDATA[<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; float: right; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" align="right" src="/blog/wp-content/uploads/2012/03/image4.png" width="242" height="133" /></p>
+										<content:encoded><![CDATA[<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; float: right; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" align="right" src="/blog/wpcontent/uploads/2012/03/image4.png" width="242" height="133" /></p>
 <p>I needed a simple way to detect when a placeholder DIV (that would contain an image) had scrolled into the current viewport of the browser. I’ve seen a few solutions that worked, and a few that didn’t (hello? test your code!). Here’s my simple solution:</p>
 <pre class="code"><span style="color: blue">function </span>isScrolledIntoView(elem) {
     elem = $(elem);
@@ -53,7 +53,7 @@
 }</pre>
 <p>Nothing fancy, except it does require jQuery.</p>
 <p>When one of the place holder DIVs scrolled into view, the code would trigger a queued load of the image.</p>
-<p><img loading="lazy" style="display: inline" title="SmugMupBrowser-live" alt="SmugMupBrowser-live" src="/blog/wp-content/uploads/2012/03/SmugMupBrowser-live.gif" width="536" height="332" /></p>
+<p><img loading="lazy" style="display: inline" title="SmugMupBrowser-live" alt="SmugMupBrowser-live" src="/blog/wpcontent/uploads/2012/03/SmugMupBrowser-live.gif" width="536" height="332" /></p>
 <p>As the SmugMug API is poorly designed in a few places, in particular as it relates to showing a thumbnail for a gallery/album, when an album/gallery is scrolled into view, the app loads a list of ALL of the images from the now visible album and selects one of them to show as the thumbnail.<strong> It’s extremely inefficient unfortunately. </strong>Instead, if they could have included that extra piece of data in the gallery list (thumbnail image and thumbnail image key), boom! </p>
 <p>I’ve also included a delay so that the auto loading only occurs after a 1 second pause (either the window being resized or scrolling occurring):</p>
 <pre class="code"><span style="color: blue">function </span>delayLoadNewVisible() {
@@ -64,7 +64,7 @@
         }, 1000);
     }
 }</pre>
-<p>I’m not going to post the code for the other useful aspect of this functionality, but I’ll tell you about it, and leave coding it as an exercise for the reader. <img style="border-bottom-style: none; border-left-style: none; border-top-style: none; border-right-style: none" class="wlEmoticon wlEmoticon-smile" alt="Smile" src="/blog/wp-content/uploads/2012/03/wlEmoticon-smile2.png" /></p>
+<p>I’m not going to post the code for the other useful aspect of this functionality, but I’ll tell you about it, and leave coding it as an exercise for the reader. <img style="border-bottom-style: none; border-left-style: none; border-top-style: none; border-right-style: none" class="wlEmoticon wlEmoticon-smile" alt="Smile" src="/blog/wpcontent/uploads/2012/03/wlEmoticon-smile2.png" /></p>
 <p>When the user scrolls new albums into view, after the pause, they’re added to a load queue. However, as it’s just as likely that the user will scroll the album off the screen, my load code also can remove something from the load queue if it hasn’t been loaded already. This way, visible albums are given precedence. By using the queue in this way, there are a manageable number of outstanding requests at any given time, and ideally only those that are relevant to what’s on the user’s screen. </p>
 ]]></content:encoded>
 					

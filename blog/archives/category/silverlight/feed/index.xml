@@ -93,7 +93,7 @@
 <p>WPF has the native ability within a style to set the a style’s setter property IsSelected to a value of the two way binding to an IsSelected Property. Slick.</p>
 <p>Silverlight, has no such thing unfortunately.</p>
 <p>But, there’s a work around that isn’t too awful. Seriously.</p>
-<p><img loading="lazy" style="border-bottom: 0px; border-left: 0px; margin: 0px; display: inline; border-top: 0px; border-right: 0px" class="wlDisabledImage" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2010/07/image2.png" width="335" height="204" /></p>
+<p><img loading="lazy" style="border-bottom: 0px; border-left: 0px; margin: 0px; display: inline; border-top: 0px; border-right: 0px" class="wlDisabledImage" title="image" border="0" alt="image" src="/blog/wpcontent/uploads/2010/07/image2.png" width="335" height="204" /></p>
 <p>What I’ve done is mapped the look and feel of the ListBoxItem selection to the DataTemplate for the item and removed it from the standard ListBoxItemContainer style:</p>
 <pre class="code"><span style="color: blue">&lt;</span><span style="color: #a31515">UserControl
     </span><span style="color: red">xmlns</span><span style="color: blue">=&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;
@@ -435,7 +435,7 @@
 &lt;/</span><span style="color: #a31515">UserControl</span><span style="color: blue">&gt;
 
 </span></pre>
-<p><img loading="lazy" style="border-bottom: 0px; border-left: 0px; margin: 0px; display: inline; border-top: 0px; border-right: 0px" class="wlDisabledImage" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2010/07/image1.png" width="213" height="214" /></p>
+<p><img loading="lazy" style="border-bottom: 0px; border-left: 0px; margin: 0px; display: inline; border-top: 0px; border-right: 0px" class="wlDisabledImage" title="image" border="0" alt="image" src="/blog/wpcontent/uploads/2010/07/image1.png" width="213" height="214" /></p>
 ]]></content:encoded>
 					
 		
@@ -454,7 +454,7 @@
 
 					<description><![CDATA[I’m not sure what to call these exactly. I’ve created a relatively simple Silverlight 4 control that emulates the old mechanical flip style numbers (or letters) displays found at airports and in old clock-radios. I call it the RetroFlipper. It’s easy to use (at least for my needs). Declare an instance of the control in [&#8230;]]]></description>
 										<content:encoded><![CDATA[<p>I’m not sure what to call these exactly. I’ve created a relatively simple Silverlight 4 control that emulates the old mechanical flip style numbers (or letters) displays found at airports and in old clock-radios. </p>
-<p><a title="Working demo" href="http://www.wiredprairie.us/examples/silverlight/RetroFlipper/" target="_blank"><img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2010/06/image.png" width="402" height="214" /></a> </p>
+<p><a title="Working demo" href="http://www.wiredprairie.us/examples/silverlight/RetroFlipper/" target="_blank"><img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" src="/blog/wpcontent/uploads/2010/06/image.png" width="402" height="214" /></a> </p>
 <p>I call it the RetroFlipper.</p>
 <p>It’s easy to use (at least for my needs). Declare an instance of the control in XAML:</p>
 <pre class="code"><span style="color: red">xmlns</span><span style="color: blue">:</span><span style="color: red">wpcontrols</span><span style="color: blue">=&quot;clr-namespace:WiredPrairie.Controls;assembly=WiredPrairie.RetroFlipperControl&quot;             
@@ -520,7 +520,7 @@
 <p>(And no, it doesn’t handle numbers &gt; 1000).</p>
 <p>Building the control required a few tricks. </p>
 <p>The most interesting was that I decided to use 4 layers to actually represent and animate the flip cards:</p>
-<p><img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2010/06/image1.png" width="277" height="214" /> </p>
+<p><img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" src="/blog/wpcontent/uploads/2010/06/image1.png" width="277" height="214" /> </p>
 <p>Using a few OpacityMasks</p>
 <pre class="code"><span style="color: blue">&lt;</span><span style="color: #a31515">Border.OpacityMask</span><span style="color: blue">&gt;
     &lt;</span><span style="color: #a31515">LinearGradientBrush </span><span style="color: red">EndPoint</span><span style="color: blue">=&quot;0.5,1&quot; </span><span style="color: red">StartPoint</span><span style="color: blue">=&quot;0.5,0&quot;&gt;
@@ -566,39 +566,39 @@
 										<content:encoded><![CDATA[<p>There are a few steps necessary to using one of the <a href="http://code.google.com/webfonts">Google Web Fonts</a> in Silverlight. </p>
 <h1>Step 1</h1>
 <p>Go to the directory of web fonts <a href="http://code.google.com/webfonts">here</a>.</p>
-<p>&#160; <a href="http://code.google.com/webfonts"><img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; margin-left: 0px; border-top: 0px; margin-right: 0px; border-right: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2010/05/image10.png" width="120" height="330" /></a></p>
+<p>&#160; <a href="http://code.google.com/webfonts"><img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; margin-left: 0px; border-top: 0px; margin-right: 0px; border-right: 0px" title="image" border="0" alt="image" src="/blog/wpcontent/uploads/2010/05/image10.png" width="120" height="330" /></a></p>
 <h1>Step 2</h1>
 <p>Pick your favorite font and click the embed link:</p>
-<p><img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="SNAGHTML5af9c8a9" border="0" alt="SNAGHTML5af9c8a9" src="/blog/wp-content/uploads/2010/05/SNAGHTML5af9c8a9.png" width="450" height="92" /></p>
+<p><img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="SNAGHTML5af9c8a9" border="0" alt="SNAGHTML5af9c8a9" src="/blog/wpcontent/uploads/2010/05/SNAGHTML5af9c8a9.png" width="450" height="92" /></p>
 <h1>Step 3</h1>
 <p><strong>Verify the license is acceptable to your needs.</strong></p>
-<p><img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="SNAGHTML5afad2c6" border="0" alt="SNAGHTML5afad2c6" src="/blog/wp-content/uploads/2010/05/SNAGHTML5afad2c6.png" width="450" height="214" /></p>
+<p><img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="SNAGHTML5afad2c6" border="0" alt="SNAGHTML5afad2c6" src="/blog/wpcontent/uploads/2010/05/SNAGHTML5afad2c6.png" width="450" height="214" /></p>
 <h1>Step 4</h1>
 <p>Click the “Get the code” tab:</p>
-<p><img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2010/05/image2.png" width="450" height="52" /> </p>
+<p><img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" src="/blog/wpcontent/uploads/2010/05/image2.png" width="450" height="52" /> </p>
 <p>Copy the location of the CSS and open it in your favorite editor. I just paste it into a new tab in Chrome. But you could open it in Visual Studio if you’d like for example (just File &gt; Open).</p>
 <h1>Step 5</h1>
 <p>Grab the font URL from the CSS (copy the link to the clipboard).</p>
-<p><a href="/blog/wp-content/uploads/2010/05/image3.png"><img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2010/05/image_thumb.png" width="450" height="63" /></a></p>
+<p><a href="/blog/wpcontent/uploads/2010/05/image3.png"><img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" src="/blog/wpcontent/uploads/2010/05/image_thumb.png" width="450" height="63" /></a></p>
 <h1>Step 6</h1>
 <p>From the same tab in Chrome, I paste in that value which prompts me to download the file:</p>
 <p>Give the font a file name and save it locally. </p>
-<p><img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2010/05/image4.png" width="368" height="70" /> </p>
+<p><img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" src="/blog/wpcontent/uploads/2010/05/image4.png" width="368" height="70" /> </p>
 <h1>Step 7</h1>
 <p>In Windows 7, installing Fonts is easy (as easy as it should have been for years). For other operating systems, consult your OS docs.</p>
-<p><a href="/blog/wp-content/uploads/2010/05/SNAGHTML5aff9164.png"><img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="SNAGHTML5aff9164" border="0" alt="SNAGHTML5aff9164" src="/blog/wp-content/uploads/2010/05/SNAGHTML5aff9164_thumb.png" width="273" height="214" /></a></p>
-<p>In Windows 7, simply click the <img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2010/05/image5.png" width="86" height="29" /> button.</p>
+<p><a href="/blog/wpcontent/uploads/2010/05/SNAGHTML5aff9164.png"><img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="SNAGHTML5aff9164" border="0" alt="SNAGHTML5aff9164" src="/blog/wpcontent/uploads/2010/05/SNAGHTML5aff9164_thumb.png" width="273" height="214" /></a></p>
+<p>In Windows 7, simply click the <img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" src="/blog/wpcontent/uploads/2010/05/image5.png" width="86" height="29" /> button.</p>
 <h1>Step 8-Blend 4 (RC)</h1>
 <p>In Blend 4, to use the font, you’ll need to select it once as a Font choice:</p>
-<p>&#160;<a href="/blog/wp-content/uploads/2010/05/image6.png"><img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2010/05/image_thumb1.png" width="250" height="311" /></a> </p>
+<p>&#160;<a href="/blog/wpcontent/uploads/2010/05/image6.png"><img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" src="/blog/wpcontent/uploads/2010/05/image_thumb1.png" width="250" height="311" /></a> </p>
 <p>Click the “Embed” checkbox to include it in your XAP file. </p>
-<p><img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2010/05/image7.png" width="405" height="122" /> </p>
+<p><img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" src="/blog/wpcontent/uploads/2010/05/image7.png" width="405" height="122" /> </p>
 <h1>Step 8-Visual Studio 2010</h1>
 <p>In Visual Studio 2010, copy the font file to a new folder (suggest something like Fonts). Set the build action to <strong>Resource:</strong></p>
-<p><a href="/blog/wp-content/uploads/2010/05/image8.png"><img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2010/05/image_thumb2.png" width="250" height="326" /></a> </p>
+<p><a href="/blog/wpcontent/uploads/2010/05/image8.png"><img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" src="/blog/wpcontent/uploads/2010/05/image_thumb2.png" width="250" height="326" /></a> </p>
 <h1>Step 9</h1>
 <p>Then, to use the font, set the FontFamily to be the <strong>Path/FileName.ext#FontName</strong> as shown here:</p>
-<p><img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2010/05/image9.png" width="326" height="15" /> </p>
+<p><img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" src="/blog/wpcontent/uploads/2010/05/image9.png" width="326" height="15" /> </p>
 <pre class="code"><span style="color: blue">&lt;</span><span style="color: #a31515">Button </span><span style="color: red">Content</span><span style="color: blue">=&quot;Login&quot; </span><span style="color: red">Height</span><span style="color: blue">=&quot;54&quot; </span><span style="color: red">Margin</span><span style="color: blue">=&quot;21,156,16,0&quot; 
                 </span><span style="color: red">x</span><span style="color: blue">:</span><span style="color: red">Name</span><span style="color: blue">=&quot;button1&quot; 
                 </span><span style="color: red">VerticalAlignment</span><span style="color: blue">=&quot;Top&quot; </span><span style="color: red">Click</span><span style="color: blue">=&quot;button1_Click&quot; </span><span style="color: red">Grid.Row</span><span style="color: blue">=&quot;1&quot; </span><span style="color: red">Grid.Column</span><span style="color: blue">=&quot;1&quot; 
@@ -819,7 +819,7 @@ sp1.Stop();    <span style="color: green;">// this will call the stopAction defi
 					<description><![CDATA[OK, It doesn’t look like much. It’s not. I was experimenting with some CompositionTarget Rendering and WriteableBitmap stuff on the plane ride out to Mix 2010 on Sunday and created a little animating blue line thing. (I don’t know what to to call it). But it was a work in progress. I took the code [&#8230;]]]></description>
 										<content:encoded><![CDATA[<p>OK, It doesn’t look like much. It’s not. I was experimenting with some CompositionTarget Rendering and WriteableBitmap stuff on the plane ride out to Mix 2010 on Sunday and created a little animating blue line thing. (I don’t know what to to call it). But it was a work in progress. </p>
 <p>I took the code and copied it into a Windows Phone 7 Silverlight application and hit run. It worked right out of the box. (Using the CTP download from <a href="http://www.microsoft.com/downloads/details.aspx?FamilyID=2338b5d1-79d8-46af-b828-380b0f854203&amp;displaylang=en#filelist">here</a>).</p>
-<p><img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2010/03/image5.png" width="300" height="584" /></p>
+<p><img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" src="/blog/wpcontent/uploads/2010/03/image5.png" width="300" height="584" /></p>
 <pre class="code"><span style="color: #2b91af">CompositionTarget</span>.Rendering += <span style="color: blue">new </span><span style="color: #2b91af">EventHandler</span>(CompositionTarget_Rendering);</pre>
 <p>The event:</p>
 <pre class="code"><span style="color: blue">void </span>CompositionTarget_Rendering(<span style="color: blue">object </span>sender, <span style="color: #2b91af">EventArgs </span>e)
@@ -935,10 +935,10 @@ sp1.Stop();    <span style="color: green;">// this will call the stopAction defi
 <p>I don’t understand the point of the demo/game that’s there and it seems to <strong>be impossibly difficult </strong>(as you can see from the screen shot).</p>
 <p>Try it here:</p>
 <p><a href="http://silverfuture.cn/">http://silverfuture.cn/</a></p>
-<p><img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" src="/blog/wp-content/uploads/2009/11/image8.png" border="0" alt="image" width="411" height="395" /></p>
+<p><img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" src="/blog/wpcontent/uploads/2009/11/image8.png" border="0" alt="image" width="411" height="395" /></p>
 <p>Found via <a href="http://silverlike.net/silverlight-mmorpg-game-engine/" target="_blank">Silverlike</a>.</p>
 <p>As best as I can determine, here are the functions of the various features along the bottom:</p>
-<p><img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" src="/blog/wp-content/uploads/2009/11/image9.png" border="0" alt="image" width="454" height="108" /></p>
+<p><img loading="lazy" style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" src="/blog/wpcontent/uploads/2009/11/image9.png" border="0" alt="image" width="454" height="108" /></p>
 <p><strong>Update: </strong>The comments have a better explanation of what the various items along the bottom do in the &#8220;game.&#8221;</p>
 ]]></content:encoded>
 					

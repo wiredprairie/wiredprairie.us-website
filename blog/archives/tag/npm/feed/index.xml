@@ -78,7 +78,7 @@
 
 					<description><![CDATA[I’d answered a question on StackOverflow about where to put “models” in a NodeJS project. I wanted to elaborate on the simple auto loader I use to load a folder full of models (and I use this pattern other places as well). Normally, I create a folder called models: Inside the Models folder, I have [&#8230;]]]></description>
 										<content:encoded><![CDATA[<p>I’d <a href="http://stackoverflow.com/a/20327684/95190" target="_blank">answered a question</a> on StackOverflow about where to put “models” in a NodeJS project. I wanted to elaborate on the simple auto loader I use to load a folder full of models (and I use this pattern other places as well). Normally, I create a folder called <strong>models</strong>:</p>
-<p><a href="/blog/wp-content/uploads/2013/12/image.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wp-content/uploads/2013/12/image_thumb.png" width="182" height="293" /></a></p>
+<p><a href="/blog/wpcontent/uploads/2013/12/image.png"><img loading="lazy" title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; border-left: 0px; display: block; padding-right: 0px" border="0" alt="image" src="/blog/wpcontent/uploads/2013/12/image_thumb.png" width="182" height="293" /></a></p>
 <p>Inside the Models folder, I have a file called, <strong>models.js</strong>. </p>
 <p>Inside another module (like <strong>app.js</strong>), I’ve got a line of code that looks like this:</p>
 <pre class="csharpcode">
@@ -309,7 +309,7 @@ if (username &amp;&amp; password) {<br />
 
 					<description><![CDATA[Per the request of an anonymous user on Bitbucket, I have: Moved the code for the Nest API to GitHub. While I did have a preference for Bitbucket (free private hosting!!!), I moved it anyway. I also created an npm called the unofficial-nest-api. Enjoy.]]></description>
 										<content:encoded><![CDATA[<p>Per the request of an anonymous user on Bitbucket, I have:</p>
-<p>Moved the code for the Nest API to <a href="https://github.com/wiredprairie/unofficial_nodejs_nest">GitHub</a>. While I did have a preference for Bitbucket (free private hosting!!!), I moved it anyway. <img class="wlEmoticon wlEmoticon-smile" style="border-top-style: none; border-left-style: none; border-bottom-style: none; border-right-style: none" alt="Smile" src="/blog/wp-content/uploads/2012/12/wlEmoticon-smile.png" /></p>
+<p>Moved the code for the Nest API to <a href="https://github.com/wiredprairie/unofficial_nodejs_nest">GitHub</a>. While I did have a preference for Bitbucket (free private hosting!!!), I moved it anyway. <img class="wlEmoticon wlEmoticon-smile" style="border-top-style: none; border-left-style: none; border-bottom-style: none; border-right-style: none" alt="Smile" src="/blog/wpcontent/uploads/2012/12/wlEmoticon-smile.png" /></p>
 <p>I also created an npm called the <strong><a href="https://npmjs.org/package/unofficial-nest-api">unofficial-nest-api</a>.</strong></p>
 <p>Enjoy.</p>
 ]]></content:encoded>

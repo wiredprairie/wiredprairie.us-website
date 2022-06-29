@@ -36,7 +36,7 @@
 		<guid isPermaLink="false">/blog/?p=1597</guid>
 
 					<description><![CDATA[If you’re using SQL Server Compact Editition version 4 or higher, there’s finally a decent and efficient way to do data paging: var streets = db.Query&#60;StreetName&#62;(@&#34;SELECT * FROM StreetNames ORDER BY Id OFFSET @offset ROWS FETCH NEXT @rows ROWS ONLY&#34;, new { offset = group * GroupSize, rows = GroupSize }); The code above uses [&#8230;]]]></description>
-										<content:encoded><![CDATA[<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wp-content/uploads/2012/04/image9.png" width="402" height="338" /></p>
+										<content:encoded><![CDATA[<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px auto; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/blog/wpcontent/uploads/2012/04/image9.png" width="402" height="338" /></p>
 <p>If you’re using <a href="http://www.microsoft.com/sqlserver/en/us/editions/compact.aspx">SQL Server Compact Editition</a> version 4 or higher, there’s finally a decent and efficient way to do data paging:</p>
 <pre class="code"><span style="color: blue">var </span>streets = db.Query&lt;<span style="color: #2b91af">StreetName</span>&gt;(<span style="color: #a31515">@&quot;SELECT * FROM StreetNames
                    ORDER BY Id
@@ -172,7 +172,7 @@ FETCH NEXT @rows ROWS ONLY
     <span style="color: blue">yield return </span><span style="color: #a31515">&quot;York Road&quot;</span>; <span style="color: blue">yield return </span><span style="color: #a31515">&quot;Woodlands Road&quot;</span>; <span style="color: blue">yield return </span><span style="color: #a31515">&quot;Clarence Road&quot;</span>;
     <span style="color: blue">yield return </span><span style="color: #a31515">&quot;School Lane&quot;</span>; <span style="color: blue">yield return </span><span style="color: #a31515">&quot;Cromwell Road&quot;</span>;
 }</pre>
-<p><em>(I’d wanted to use the top 50 USA street names, but they’re far more boring as they’re like: Fourth Street, Fifth Street, Oak Street. <img style="border-bottom-style: none; border-left-style: none; border-top-style: none; border-right-style: none" class="wlEmoticon wlEmoticon-smile" alt="Smile" src="/blog/wp-content/uploads/2012/04/wlEmoticon-smile.png" /> ).</em></p>
+<p><em>(I’d wanted to use the top 50 USA street names, but they’re far more boring as they’re like: Fourth Street, Fifth Street, Oak Street. <img style="border-bottom-style: none; border-left-style: none; border-top-style: none; border-right-style: none" class="wlEmoticon wlEmoticon-smile" alt="Smile" src="/blog/wpcontent/uploads/2012/04/wlEmoticon-smile.png" /> ).</em></p>
 <p>There’s a tiny class to represent a StreetName that’s used later by the Dapper extension functions:</p>
 <pre class="code"><span style="color: blue">public class </span><span style="color: #2b91af">StreetName
 </span>{

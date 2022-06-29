@@ -38,11 +38,11 @@
 
 					<description><![CDATA[I’ve been seeing more Wifi issues recently with my Nest thermostats. I don’t see a pattern to the problem, and it seems to randomly affect all of them (sometimes at the same time, but often just one). I’ve got a supported Wifi router (Apple Airport Express), and it’s within reasonable range to all of the [&#8230;]]]></description>
 										<content:encoded><![CDATA[<p>I’ve been seeing more Wifi issues recently with my Nest thermostats. I don’t see a pattern to the problem, and it seems to randomly affect all of them (sometimes at the same time, but often just one).</p>
-<p><img alt="image" src="/blog/wp-content/uploads/2012/03/image6.png" /></p>
+<p><img alt="image" src="/blog/wpcontent/uploads/2012/03/image6.png" /></p>
 <p>I’ve got a supported Wifi router (Apple Airport Express), and it’s within reasonable range to all of the thermostats in our house (no more than 20 foot from any thermostat). While it’s unfortunately overlapping with a similar band/frequency in our house, the router is dedicated to only the Thermostats right now (a unique SSID). </p>
 <p>It doesn’t have any settings that seem necessary to change:</p>
-<p><a href="/blog/wp-content/uploads/2013/01/SNAGHTMLe2a23de.png"><img loading="lazy" title="SNAGHTMLe2a23de" style="display: inline" alt="SNAGHTMLe2a23de" src="/blog/wp-content/uploads/2013/01/SNAGHTMLe2a23de_thumb.png" width="640" height="358" /></a></p>
-<p><a href="/blog/wp-content/uploads/2013/01/image.png"><img loading="lazy" title="image" style="display: inline" alt="image" src="/blog/wp-content/uploads/2013/01/image_thumb.png" width="640" height="313" /></a></p>
+<p><a href="/blog/wpcontent/uploads/2013/01/SNAGHTMLe2a23de.png"><img loading="lazy" title="SNAGHTMLe2a23de" style="display: inline" alt="SNAGHTMLe2a23de" src="/blog/wpcontent/uploads/2013/01/SNAGHTMLe2a23de_thumb.png" width="640" height="358" /></a></p>
+<p><a href="/blog/wpcontent/uploads/2013/01/image.png"><img loading="lazy" title="image" style="display: inline" alt="image" src="/blog/wpcontent/uploads/2013/01/image_thumb.png" width="640" height="313" /></a></p>
 <p>Any ideas? </p>
 ]]></content:encoded>
 					

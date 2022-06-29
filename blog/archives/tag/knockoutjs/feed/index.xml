@@ -159,7 +159,7 @@ data = vm.list.findByTime(time);</pre>
     <span style="color: blue">this</span>.list_by_keys = <span style="color: blue">this</span>.list.asDictionary(<span style="color: maroon">'id'</span>);
 };</pre>
 <p>The definition includes an array, a unique number (more on that a bit later), the list (to which the code will bind the UI to), and finally the keyed list. </p>
-<p>After a few attempts at a good name, I settled for something that I hated the least. <img style="border-bottom-style: none; border-left-style: none; border-top-style: none; border-right-style: none" class="wlEmoticon wlEmoticon-smile" alt="Smile" src="/blog/wp-content/uploads/2012/03/wlEmoticon-smile1.png" /> In any case, usage is simple. </p>
+<p>After a few attempts at a good name, I settled for something that I hated the least. <img style="border-bottom-style: none; border-left-style: none; border-top-style: none; border-right-style: none" class="wlEmoticon wlEmoticon-smile" alt="Smile" src="/blog/wpcontent/uploads/2012/03/wlEmoticon-smile1.png" /> In any case, usage is simple. </p>
 <p>After creating the observable array:</p>
 <pre class="code"><span style="color: blue">this</span>.list = ko.observableArray([]); </pre>
 <p>The code creates a second field which will contain all of the objects in the original array, but in a quickly accessible index (thanks to the nature of JavaScript objects). </p>
@@ -203,7 +203,7 @@ ko.observable.fn.dec = <span style="color: blue">function </span>(decExtra) {
 };</pre>
 <p>To use it and retrieve the value, call it like this:</p>
 <pre class="code"><span style="color: blue">var </span>id = vm.uniqueNumber.inc()();</pre>
-<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px 20px 0px 0px; padding-left: 0px; padding-right: 0px; display: inline; float: left; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" align="left" src="/blog/wp-content/uploads/2012/03/image3.png" width="263" height="233" />The odd syntax calls the inc (increment) function which returns the original object (in support of chaining). Then, to get the value, it calls the properties’ getter function (the second set of parentheses).&#160; (As I said, it was just messing around).</p>
+<p><img loading="lazy" style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px 20px 0px 0px; padding-left: 0px; padding-right: 0px; display: inline; float: left; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" align="left" src="/blog/wpcontent/uploads/2012/03/image3.png" width="263" height="233" />The odd syntax calls the inc (increment) function which returns the original object (in support of chaining). Then, to get the value, it calls the properties’ getter function (the second set of parentheses).&#160; (As I said, it was just messing around).</p>
 <p>The HTML for the data binding looked like this:</p>
 <pre class="code">&lt;div class=<span style="color: maroon">&quot;log&quot; </span>data-bind=<span style="color: maroon">&quot;foreach: list&quot; </span>&gt;
     &lt;div class=<span style="color: maroon">&quot;item&quot;</span>&gt;
